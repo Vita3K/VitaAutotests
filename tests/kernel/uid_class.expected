@@ -1,0 +1,11 @@
+thread: 0x00000001
+semaphore: 0x00000002
+event flag: 0x00000003
+mutex: 0x00000004
+condition variable: 0x00000005
+timer: 0x00000006
+message pipe: 0x00000007
+callback: 0x00000008
+reader/writer lock: 0x0000000C
+simple event: 0x0000000D
+DONE

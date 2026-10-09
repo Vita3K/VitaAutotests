@@ -1,0 +1,17 @@
+send more than the pipe holds: 0x8002000B
+receive more than the pipe holds: 0x8002000B
+send ASAP of more than fits: 0x00000000
+send ASAP sends what fits: 0x00000004
+the sender waits while it doesn't fit: 0x00000001
+a receive that makes room ends the wait: 0x00000000
+the sender sent all of it: 0x00000008
+the data arrives after what was there: 0x00000000
+in order: 0x00000001
+cancel: 0x00000000
+cancel counts the waiting senders: 0x00000001
+cancel counts the waiting receivers: 0x00000000
+a canceled send: 0x80028007
+cancel empties the pipe: 0x80028223
+delete: 0x00000000
+a send on a deleted pipe: 0x80028006
+DONE

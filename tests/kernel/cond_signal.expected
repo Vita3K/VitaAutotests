@@ -1,0 +1,10 @@
+signal with nobody waiting: 0x00000000
+signal all with nobody waiting: 0x00000000
+a wait after those signals: 0x80028005
+a wait with a timeout of 0: 0x80028005
+the mutex is owned after it: 0x00000000
+signal while holding the mutex: 0x00000000
+delete with nobody waiting: 0x00000000
+signal a deleted condition: 0x800281A1
+the mutex outlives the condition: 0x00000000
+DONE

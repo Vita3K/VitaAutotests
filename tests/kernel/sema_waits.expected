@@ -1,0 +1,9 @@
+a signal of 2 ends two waits: 0x00000002
+nothing is left for the third: 0x80028102
+the next signal ends the third: 0x00000003
+a wait that ended early has time left: 0x00000001
+delete: 0x00000000
+the first wait on the deleted semaphore: 0x80028006
+the second: 0x80028006
+the third: 0x80028006
+DONE

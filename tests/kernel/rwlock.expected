@@ -1,0 +1,18 @@
+try read lock on a free lock: 0x00000000
+read lock again on the same thread: 0x00000000
+another thread can read lock too: 0x00000000
+no thread can write lock while read locked: 0x800281E6
+unlock the first read lock: 0x00000000
+unlock the second read lock: 0x00000000
+unlock a read lock nobody holds: 0x800281E5
+try write lock on a free lock: 0x00000000
+try read lock on a write locked lock: 0x800281E6
+try write lock on a write locked lock: 0x800281E6
+a new reader while a writer waits: 0x800281E6
+the last reader leaving ends the writer's wait: 0x00000000
+a write unlock by a thread that isn't the writer: 0x00000001
+the write unlock wakes the first waiting reader: 0x00000000
+and the second: 0x00000000
+delete: 0x00000000
+a wait on a deleted lock: 0x80028006
+DONE

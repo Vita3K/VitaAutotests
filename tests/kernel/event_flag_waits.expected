@@ -1,0 +1,9 @@
+the waiter for another bit times out: 0x80028005
+the waiter for the set bit wakes: 0x00000000
+the first waiter, which clears, wakes: 0x00000000
+the second one doesn't see the bit: 0x80028005
+the bits are clear after it: 0x800280E3
+the first waiter wakes: 0x00000000
+the clearing waiter behind it wakes too: 0x00000000
+and clears the bit: 0x800280E3
+DONE

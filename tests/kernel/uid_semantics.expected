@@ -1,0 +1,20 @@
+the next object gets the deleted UID back: 0x00000000
+UIDs grow: 0x00000001
+UIDs are odd: 0x00000001
+an opened UID is the object's own: 0x00000000
+opening twice gives the same UID: 0x00000000
+close the first open: 0x00000000
+the second open still works: 0x00000000
+close it: 0x00000000
+close it again: 0x80028101
+close the object's own UID: 0x80028101
+the object after closing its own UID: 0x00000000
+delete while opened: 0x00000000
+the opened UID after the delete: 0x00000000
+open a deleted object: 0x00000000
+delete through an opened UID: 0x80028101
+an opened mutex UID is the mutex's own: 0x00000000
+lock through it: 0x00000000
+try lock through the mutex's own UID: 0x80028142
+close it: 0x00000000
+DONE

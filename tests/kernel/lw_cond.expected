@@ -1,0 +1,13 @@
+create: 0x00000000
+signal with no waiters: 0x00000000
+wait times out: 0x80028005
+a timed out wait owns the mutex again: 0x00000000
+signal: 0x00000000
+a signal ends a wait: 0x00000000
+the waiter owns the mutex after the wait: 0x00000000
+signal all: 0x00000000
+the first of two waiters: 0x00000000
+the second of two waiters: 0x00000000
+delete: 0x00000000
+a wait on a deleted condition: 0x800281C3
+DONE

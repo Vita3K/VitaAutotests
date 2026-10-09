@@ -1,0 +1,10 @@
+the mutex of an ended thread is free: 0x00000000
+a waiter gets the mutex when its owner ends: 0x00000000
+a waiter that got the mutex has time left: 0x00000001
+delete: 0x00000000
+a wait on a deleted mutex: 0x80028006
+the higher priority waiter gets the mutex first: 0x00000001
+the lower priority one after it: 0x00000002
+try lock of a lightweight mutex another thread holds: 0x80028185
+the waiter gets it when it is unlocked: 0x00000000
+DONE

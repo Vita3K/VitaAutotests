@@ -1,0 +1,12 @@
+lock a semaphore as a mutex: 0x80028141
+signal a mutex as a semaphore: 0x80028101
+set a semaphore as an event flag: 0x800280E1
+signal an event flag as a condition variable: 0x800281A1
+read lock a message pipe as a reader/writer lock: 0x800281E1
+receive from a reader/writer lock as a message pipe: 0x80028221
+signal a deleted semaphore: 0x80028101
+delete a semaphore twice: 0x80028101
+the class of a deleted object: 0x00000001
+set a deleted simple event: 0x00000001
+the class of a deleted simple event: 0x00000001
+DONE

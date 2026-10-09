@@ -1,0 +1,14 @@
+create the set event: 0x00000000
+wait OR on two events with one set: 0x00000001
+the first result is for the set event: 0x00000001
+its result: 0x00000000
+its bits: 0x04000000
+wait AND on the same two: 0x80028005
+wait on no events: 0x00000000
+register a callback to an event: 0x00000000
+the callback's notification count after the set: 0x00000000
+its calls after the next check: 0x00000000
+the waiter for the first bit: 0x00000000
+the waiter for the second bit: 0x00000000
+the bits left after waking both: 0x00000004
+DONE

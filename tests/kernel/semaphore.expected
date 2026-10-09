@@ -1,0 +1,17 @@
+poll with nothing to take: 0x80028102
+poll for a count of 0: 0x8002000F
+wait for more than the maximum: 0x8002000F
+signal up to the maximum: 0x00000000
+signal past the maximum: 0x80028103
+poll everything: 0x00000000
+wait times out: 0x80028005
+a timed out wait leaves no time: 0x00000000
+a signal ends a wait: 0x00000000
+cancel to more than the maximum: 0x8002000F
+cancel: 0x00000000
+cancel counts the waiting threads: 0x00000001
+a canceled wait: 0x80028007
+cancel sets the count: 0x00000000
+delete: 0x00000000
+a wait on a deleted semaphore: 0x80028006
+DONE

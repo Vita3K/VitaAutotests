@@ -1,0 +1,16 @@
+the timer event fires: 0x00000000
+setting a new event clears the fired one: 0x00000000
+a new timer is at 0: 0x00000001
+start: 0x00000000
+start again: 0x00000001
+a running timer counts at least the time passed: 0x00000001
+and not much more: 0x00000001
+stop: 0x00000001
+stop again: 0x00000000
+a stopped timer doesn't count: 0x00000001
+set the time returns the old time: 0x00000001
+the time is the one set: 0x00000001
+the first repeat: 0x00000000
+the second repeat: 0x00000000
+a timer event has no user data: 0x00000000
+DONE

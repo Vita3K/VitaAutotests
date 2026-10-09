@@ -1,0 +1,26 @@
+wait for an unknown thread: 0x80028021
+delay of 0: 0x80020005
+delay with callbacks of 0: 0x80020005
+the main thread's priority: 0x000000A0
+a negative exit status: 0xFFFFFFFE
+wait for a thread that exited and deleted itself: 0x80028021
+its status: 0x0000DEAD
+its exit status: 0x80028021
+delete it again: 0x80028021
+change the priority to 0x0: 0x00000000
+the priority after changing it to 0x0: 0x000000A0
+change the priority to 0x10000100: 0x00000000
+the priority after changing it to 0x10000100: 0x000000A0
+change the priority to 0x100000E0: 0x00000000
+the priority after changing it to 0x100000E0: 0x00000080
+change the priority to 0x40: 0x00000000
+the priority after changing it to 0x40: 0x00000040
+change the priority to 0xBF: 0x00000000
+the priority after changing it to 0xBF: 0x000000BF
+change the priority to 0x3F: 0x80028023
+the priority after changing it to 0x3F: 0x000000A0
+change the priority to 0xC0: 0x80028023
+the priority after changing it to 0xC0: 0x000000A0
+change the priority to 0x20: 0x80028023
+the priority after changing it to 0x20: 0x000000A0
+DONE

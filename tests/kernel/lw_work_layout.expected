@@ -1,0 +1,53 @@
+created word 0: 0x00000000
+created word 1: 0x00000000
+created word 2: 0x00000000
+created word 3: 0x00000002
+created word 4: 0x7EA0000A
+created word 5: 0x00000000
+created word 6: 0x00000000
+created word 7: 0x00000000
+locked once word 0: 0x7EAD0001
+locked once word 1: 0x00000000
+locked once word 2: 0x00000001
+locked once word 3: 0x00000002
+locked once word 4: 0x7EA0000A
+locked once word 5: 0x00000000
+locked once word 6: 0x00000000
+locked once word 7: 0x00000000
+locked three times word 0: 0x7EAD0001
+locked three times word 1: 0x00000000
+locked three times word 2: 0x00000003
+locked three times word 3: 0x00000002
+locked three times word 4: 0x7EA0000A
+locked three times word 5: 0x00000000
+locked three times word 6: 0x00000000
+locked three times word 7: 0x00000000
+unlocked word 0: 0x00000000
+unlocked word 1: 0x00000000
+unlocked word 2: 0x00000000
+unlocked word 3: 0x00000002
+unlocked word 4: 0x7EA0000A
+unlocked word 5: 0x00000000
+unlocked word 6: 0x00000000
+unlocked word 7: 0x00000000
+condition created word 0: 0x7EA0000B
+condition created word 1: 0x7EA0000A
+condition created word 2: 0x00000000
+condition created word 3: 0x00000000
+lock the copy: 0x00000000
+unlock the copy: 0x00000000
+condition deleted word 0: 0xFFFFFFFF
+condition deleted word 1: 0xFFFFFFFF
+condition deleted word 2: 0x00000000
+condition deleted word 3: 0x00000000
+deleted word 0: 0x00000000
+deleted word 1: 0x00000000
+deleted word 2: 0x00000000
+deleted word 3: 0x00000002
+deleted word 4: 0x4002005B
+deleted word 5: 0x00000000
+deleted word 6: 0x00000000
+deleted word 7: 0x00000000
+lock a deleted lightweight mutex: 0x00000000
+signal a deleted lightweight condition: 0x800281C1
+DONE

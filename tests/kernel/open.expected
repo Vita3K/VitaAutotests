@@ -1,0 +1,9 @@
+open an openable semaphore: 0x00000000
+the opened UID reaches the same semaphore: 0x00000000
+close it: 0x00000000
+the semaphore outlives the close: 0x00000000
+open a semaphore that isn't openable: 0x00000001
+open a name nothing has: 0x00000001
+a long name on an openable semaphore: 0x80024002
+a long name on a semaphore that isn't openable: 0x00000000
+DONE

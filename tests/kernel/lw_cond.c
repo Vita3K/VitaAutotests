@@ -1,0 +1,62 @@
+#include <psp2/kernel/error.h>
+#include <psp2/kernel/threadmgr.h>
+
+#include "test.h"
+
+static SceKernelLwMutexWork mutex;
+static SceKernelLwCondWork cond;
+static int wait_result[2], unlock_result[2];
+
+static int wait_thread(SceSize args, void *argp) {
+    (void)args;
+    const int i = *(const int *)argp;
+    sceKernelLockLwMutex(&mutex, 1, NULL);
+    wait_result[i] = sceKernelWaitLwCond(&cond, NULL);
+    unlock_result[i] = sceKernelUnlockLwMutex(&mutex, 1);
+    return 0;
+}
+
+// Starts a thread that waits on the condition into slot i of the results
+static SceUID start_waiter(int i) {
+    wait_result[i] = unlock_result[i] = -1;
+    const SceUID thread = test_start_thread_arg(wait_thread, i);
+    test_wait_until_waiting(thread);
+    return thread;
+}
+
+int main(void) {
+    sceKernelCreateLwMutex(&mutex, "mutex", 0, 0, NULL);
+    PRINT("create", sceKernelCreateLwCond(&cond, "cond", 0, &mutex, NULL));
+
+    PRINT("signal with no waiters", sceKernelSignalLwCond(&cond));
+
+    sceKernelLockLwMutex(&mutex, 1, NULL);
+    unsigned int timeout = 1000;
+    PRINT("wait times out", sceKernelWaitLwCond(&cond, &timeout));
+    PRINT("a timed out wait owns the mutex again", sceKernelUnlockLwMutex(&mutex, 1));
+
+    // A waiter owns the mutex again when its wait ends
+    SceUID waiter = start_waiter(0);
+    sceKernelLockLwMutex(&mutex, 1, NULL);
+    PRINT("signal", sceKernelSignalLwCond(&cond));
+    sceKernelUnlockLwMutex(&mutex, 1);
+    test_join_thread(waiter);
+    PRINT("a signal ends a wait", wait_result[0]);
+    PRINT("the waiter owns the mutex after the wait", unlock_result[0]);
+
+    const SceUID first = start_waiter(0);
+    const SceUID second = start_waiter(1);
+    PRINT("signal all", sceKernelSignalLwCondAll(&cond));
+    test_join_thread(first);
+    test_join_thread(second);
+    PRINT("the first of two waiters", wait_result[0]);
+    PRINT("the second of two waiters", wait_result[1]);
+
+    waiter = start_waiter(0);
+    PRINT("delete", sceKernelDeleteLwCond(&cond));
+    test_join_thread(waiter);
+    PRINT("a wait on a deleted condition", wait_result[0]);
+
+    test_exit();
+    return 0;
+}

@@ -1,0 +1,26 @@
+create with the count above the maximum: 0x8002000F
+create with a maximum of 0: 0x8002000F
+create with a negative count: 0x8002000F
+create with a negative maximum: 0x8002000F
+create with attribute 0xFFFF: 0x8002000E
+signal 0: 0x00000000
+signal -1: 0x8002000F
+wait for 0: 0x8002000F
+wait with a timeout of 0 that is met: 0x00000000
+wait with a timeout of 0 that isn't met: 0x80028005
+cancel to -1: 0x00000000
+poll the initial count after it: 0x00000000
+poll one more: 0x80028102
+cancel without a count pointer: 0x00000000
+cancel to -2: 0x00000000
+try lock with a count of 0: 0x8002000F
+cancel to a negative count: 0x00000000
+cancel a non-recursive mutex to a count of 2: 0x8002000F
+create with attribute 0xFFFF: 0x8002000E
+delete a mutex the caller owns: 0x00000000
+unlock it after: 0x80028141
+try lock a lightweight mutex with a count of 0: 0x8002000F
+lock it with a timeout of 0 while free: 0x00000000
+delete it while the caller holds it: 0x00000000
+delete it again: 0x80028181
+DONE

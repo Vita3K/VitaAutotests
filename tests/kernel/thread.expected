@@ -1,0 +1,20 @@
+exit status of a thread never started: 0x80028027
+wait for the end: 0x00000000
+the wait gives the returned status: 0x0000002A
+exit status of an ended thread: 0x00000000
+the exit status is the returned one: 0x0000002A
+start an ended thread again: 0x00000000
+the thread ran twice: 0x00000002
+delete an ended thread: 0x00000000
+exit status of a deleted thread: 0x80028021
+the status given to sceKernelExitThread: 0x00000007
+the argument size: 0x00000004
+the argument block: 0x000004D2
+start a running thread: 0x80028028
+delete a running thread: 0x80028028
+exit status of a running thread: 0x80028028
+wait for the end times out: 0x80028005
+a thread deletes itself: 0x80028022
+change the own priority: 0x00000000
+the current priority is the new one: 0x00000064
+DONE

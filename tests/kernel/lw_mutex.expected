@@ -1,0 +1,21 @@
+create with a negative count: 0x8002000F
+create non-recursive with a count of 2: 0x8002000F
+create recursive with a count of 2: 0x00000000
+lock with a count of 0: 0x8002000F
+lock with a negative count: 0x8002000F
+lock non-recursive with a count of 2: 0x8002000F
+unlock while not locked: 0x80028186
+lock: 0x00000000
+lock again without recursive: 0x80028182
+try lock again without recursive: 0x80028182
+unlock with a count of 0: 0x8002000F
+unlock non-recursive with a count of 2: 0x8002000F
+unlock: 0x00000000
+lock recursive with a count of 2: 0x00000000
+lock recursive again: 0x00000000
+lock recursive past the maximum count: 0x00000000
+unlock more than locked: 0x80028184
+unlock all of it: 0x80028184
+unlock by a thread that doesn't own it: 0x80028186
+lock with a zero timeout while owned: 0x80028005
+DONE

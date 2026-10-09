@@ -1,0 +1,32 @@
+create with a size of 0: 0x8002000B
+create with a size of 1: 0x00000000
+create with an odd size: 0x00000000
+create with type 0: 0x8002000C
+create with attribute 0x100: 0x00000000
+create with attribute 0x1000: 0x8002000E
+create with attribute 0x1100: 0x8002000E
+create with attribute 0x2000: 0x8002000E
+create with attribute 0x2100: 0x8002000E
+create with attribute 0x4000: 0x8002000E
+create with attribute 0x80: 0x00000000
+create with attribute 0x8: 0x00000000
+create with attribute 0x1: 0x00000000
+try send of 0 bytes FULL on an empty pipe: 0x00000000
+its size: 0x00000000
+try send of 0 bytes ASAP on an empty pipe: 0x80028222
+its size: 0x00000000
+try receive of 0 bytes ASAP on an empty pipe: 0x80028223
+its size: 0x00000000
+receive of 0 bytes on an empty pipe: 0x00000000
+its size: 0x00000000
+try send of 0 bytes FULL on a full pipe: 0x00000000
+its size: 0x00000000
+send of 0 bytes on a full pipe: 0x00000000
+its size: 0x00000000
+try receive with mode 0x2: 0x80020010
+try receive with mode 0x1000: 0x80020010
+receive with DONT_WAIT: 0x00000000
+try receive without a size pointer: 0x00000000
+cancel without count pointers: 0x00000000
+try receive after the cancel: 0x80028223
+DONE

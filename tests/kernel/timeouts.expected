@@ -1,0 +1,19 @@
+a wait that succeeds at once: 0x00000000
+its time left: 0x00000002
+a wait of 1 microsecond: 0x80028005
+its time left: 0x00000000
+a wait with the longest timeout that succeeds at once: 0x00000000
+its time left is the same: 0x00000001
+a wait ended by a signal: 0x00000000
+its time left: 0x00000001
+a wait ended by a cancel: 0x80028007
+its time left: 0x00000001
+a wait ended by a delete: 0x80028006
+its time left: 0x00000001
+an event flag wait that times out: 0x80028005
+its time left: 0x00000000
+a condition wait that times out: 0x80028005
+its time left: 0x00000000
+a message pipe receive that times out: 0x80028005
+its time left: 0x00000000
+DONE

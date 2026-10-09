@@ -1,0 +1,25 @@
+a NULL name: 0x80020006
+an empty name: 0x00000000
+a 31 character name on an openable object: 0x00000000
+two openable objects with the same name: 0x80024E02
+info with a size of 0: 0x00000000
+info with a size of 8: 0x00000000
+the UID with a size of 8: 0x00000001
+the maximum with a size of 8: 0x00000000
+info with a size past the struct: 0x8002710B
+info without a pointer: 0x80020006
+the class of UID 0: 0x80024501
+the class of UID -1: 0x80024501
+the class of an unknown UID: 0x80024501
+the class of the process: 0x80024501
+set an event with an interval of 0: 0x00000000
+set an event of type 2: 0x8002000C
+set an event without an interval: 0x80020006
+the time of an unknown timer: 0xFFFFFFFF
+start an unknown timer: 0x80028241
+check runs it: 0x00000001
+it ran: 0x00000001
+its count after returning non-zero: 0x800280A1
+notify it after returning non-zero: 0x800280A1
+check with nothing pending: 0x00000000
+DONE

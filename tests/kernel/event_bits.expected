@@ -1,0 +1,39 @@
+set adds bits: 0x03000004
+clear keeps the bits of its pattern: 0x01000000
+clear with 0 clears every bit: 0x00000000
+pulse clears a bit that was set: 0x02000000
+pulse doesn't leave a bit that wasn't set: 0x02000000
+pulse wakes a waiter for its bit: 0x00000000
+the waiter gets every bit set at the pulse: 0x04000000
+the waiter gets the pulse's user data: 0x00000001
+the other bits are left after the pulse: 0x02000000
+poll for one of two bits: 0x00000000
+the poll gets every bit: 0x02000000
+a manual reset poll keeps the bits: 0x02000000
+a wait for a user bit on a deleted event: 0x80028006
+its result: 0x00000010
+a wait for the delete event on a deleted event: 0x00000000
+its result: 0x00000008
+poll an auto reset event: 0x00000000
+the poll gets every bit: 0x01000000
+the poll clears the bit it waited for: 0x02000004
+poll the other bit: 0x00000000
+that clears it too: 0x00000004
+a pulse with no waiter leaves nothing: 0x00000004
+set adds bits to the flag: 0x00000003
+clear keeps the bits of its pattern: 0x00000001
+an AND wait goes on with one of its bits: 0x00000001
+it ends when the other one is set: 0x00000000
+and gets both: 0x00000003
+an OR wait ends with one of its bits: 0x00000000
+and gets every bit of the flag: 0x00000007
+a wait that clears its pattern: 0x00000000
+gets the bits from before clearing: 0x00000007
+and clears only its pattern: 0x00000006
+a wait that clears every bit: 0x00000000
+gets the bits from before clearing: 0x00000006
+and clears them all: 0x00000000
+a set ends a wait that clears its pattern: 0x00000000
+which gets the bits that were set: 0x00000009
+and clears only its pattern after the set: 0x00000001
+DONE

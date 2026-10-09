@@ -1,0 +1,6 @@
+a stack of 0x1000: 0x00000000
+a stack of 0x100: 0x00000000
+a stack that isn't 4 KiB aligned: 0x00000000
+an empty name: 0x00000000
+no entry: 0x80020006
+DONE

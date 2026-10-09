@@ -1,0 +1,3 @@
+a FIFO semaphore wakes the first waiter first: 0x00000000
+a priority semaphore wakes the higher priority waiter first: 0x00000001
+DONE

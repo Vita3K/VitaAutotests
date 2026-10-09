@@ -1,0 +1,38 @@
+info of the running thread: 0x00000000
+the running thread has no wait type: 0x00000000
+delay: 0x00000000
+delay wait type: 0x00000001
+delay with callbacks: 0x00000000
+delay with callbacks wait type: 0x80000001
+semaphore: 0x00000000
+semaphore wait type: 0x00000020
+semaphore wait UID is the object: 0x00000001
+semaphore with callbacks: 0x00000000
+semaphore with callbacks wait type: 0x80000020
+semaphore with callbacks wait UID is the object: 0x00000001
+event flag: 0x00000000
+event flag wait type: 0x00000010
+event flag wait UID is the object: 0x00000001
+simple event: 0x00000000
+simple event wait type: 0x00010000
+simple event wait UID is the object: 0x00000001
+message pipe: 0x00000000
+message pipe wait type: 0x00040000
+message pipe wait UID is the object: 0x00000001
+mutex: 0x00000000
+mutex wait type: 0x00000040
+mutex wait UID is the object: 0x00000001
+condition variable: 0x00000000
+condition variable wait type: 0x00000100
+condition variable wait UID is the object: 0x00000001
+reader/writer lock: 0x00000000
+reader/writer lock wait type: 0x00000080
+reader/writer lock wait UID is the object: 0x00000001
+lightweight mutex: 0x00000000
+lightweight mutex wait type: 0x00100000
+lightweight condition variable: 0x00000000
+lightweight condition variable wait type: 0x00200000
+thread end: 0x00000000
+thread end wait type: 0x00000002
+thread end wait UID is the object: 0x00000001
+DONE

@@ -1,0 +1,23 @@
+two notifications are pending: 0x00000002
+nothing runs before a check: 0x00000000
+a check runs the callback once: 0x00000001
+the callback gets the notification count: 0x00000002
+the callback gets the last argument: 0x00000002
+nothing is pending after it runs: 0x00000000
+a check with nothing pending runs nothing: 0x00000001
+cancel: 0x00000000
+cancel drops the notification: 0x00000000
+a canceled notification doesn't run: 0x00000001
+a delay that checks callbacks runs them: 0x00000002
+the delay passes the argument: 0x00000004
+a wait that checks callbacks still times out: 0x80028005
+the wait runs the callback: 0x00000003
+delete: 0x00000000
+notify a deleted callback: 0x800280A1
+the waiting thread runs it: 0x00000001
+on its own thread: 0x00000001
+the wait goes on after the callback: 0x00000000
+the wait times out: 0x80028005
+the callback didn't run during the wait: 0x00000000
+it ran at the next check: 0x00000001
+DONE

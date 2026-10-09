@@ -1,0 +1,21 @@
+poll on a clear event fails: 0x80028202
+the result after a failed poll: 0x00000000
+wait on a clear event times out: 0x80028005
+the result after a timed out wait: 0x00000000
+set: 0x00000000
+pulse: 0x00000000
+pulse clears a bit that was set: 0x00000004
+poll for one of two bits: 0x00000000
+the poll gets the bits: 0x02000000
+the poll gets the user data: 0x00000001
+manual reset set wakes both waiters: 0x00000002
+the waiter gets the bit: 0x01000000
+the waiter gets the user data: 0x00000001
+the bit stays set: 0x01000004
+auto reset set wakes one waiter: 0x00000001
+the bit that woke it is cleared: 0x00000004
+setting it again wakes the other: 0x00000002
+a bit that woke nobody stays set: 0x01000004
+pulse wakes both waiters: 0x00000002
+pulse leaves the bit clear: 0x00000004
+DONE

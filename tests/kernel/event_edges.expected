@@ -1,0 +1,24 @@
+poll for pattern 0: 0x80020005
+wait for pattern 0: 0x80020005
+poll with both clear modes: 0x80020010
+poll with mode 0x8: 0x80020010
+poll with mode 0x100: 0x80020010
+poll without a result pointer: 0x00000000
+wait with a timeout of 0 that isn't met: 0x80028005
+cancel with no waiters: 0x00000000
+it counts no waiters: 0x00000000
+the pattern after the cancel: 0x00000006
+create with attribute 0xFFFF: 0x8002000E
+set pattern 0: 0x00000000
+poll for pattern 0: 0x80020005
+set every bit: 0x8002000D
+the bits after setting every bit: 0x00000004
+clear every bit: 0x00000000
+set bit 31: 0x00000000
+pulse bit 31: 0x00000000
+wait with a timeout of 0 that isn't met: 0x80028005
+cancel with no waiters: 0x00000000
+it counts no waiters: 0x00000000
+create with attribute 0xFFFF: 0x8002000E
+create with every bit set: 0x8002000D
+DONE

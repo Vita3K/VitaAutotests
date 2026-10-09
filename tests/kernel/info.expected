@@ -1,0 +1,48 @@
+semaphore info: 0x00000000
+semaphore UID: 0x00000001
+semaphore name: 0x00000001
+semaphore initial count: 0x00000001
+semaphore count: 0x00000003
+semaphore maximum: 0x00000005
+semaphore waiting threads: 0x00000001
+event flag info: 0x00000000
+event flag UID: 0x00000001
+event flag name: 0x00000001
+event flag attributes: 0x00001000
+event flag initial pattern: 0x00000003
+event flag pattern: 0x00000007
+event flag waiting threads: 0x00000001
+mutex info: 0x00000000
+mutex UID: 0x00000001
+mutex name: 0x00000001
+mutex attributes: 0x00000002
+mutex initial count: 0x00000001
+mutex count: 0x00000002
+mutex owner: 0x00000001
+mutex waiting threads: 0x00000001
+condition variable info: 0x00000000
+condition variable UID: 0x00000001
+condition variable name: 0x00000001
+condition variable mutex: 0x00000001
+condition variable waiting threads: 0x00000000
+message pipe info: 0x00000000
+message pipe UID: 0x00000001
+message pipe name: 0x00000001
+message pipe buffer size: 0x00001000
+message pipe free size: 0x00000FF8
+message pipe waiting receivers: 0x00000001
+message pipe waiting senders: 0x00000000
+reader/writer lock info: 0x00000000
+reader/writer lock UID: 0x00000001
+reader/writer lock name: 0x00000001
+reader/writer lock count: 0x00000001
+reader/writer lock writer: 0x00000001
+callback info: 0x00000000
+callback UID: 0x00000001
+callback name: 0x00000001
+callback thread: 0x00000001
+callback function: 0x00000001
+callback common argument: 0x00000001
+callback notifications: 0x00000001
+callback argument: 0x00000077
+DONE

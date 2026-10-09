@@ -1,0 +1,8 @@
+create a lightweight mutex: 0x00000001
+lock a lightweight mutex: 0x00000001
+create a lightweight condition variable: 0x00000001
+wait on a lightweight condition variable: 0x00000001
+the wait leaves the mutex work area alone: 0x00000001
+delete a lightweight condition variable: 0x00000001
+unlock and delete a lightweight mutex: 0x00000001
+DONE

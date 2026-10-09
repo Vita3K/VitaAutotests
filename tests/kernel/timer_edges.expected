@@ -1,0 +1,14 @@
+an event set before the time jumps past it: 0x80028202
+the result pattern: 0x00000000
+set a pulse event: 0x00000000
+poll after a pulse event fired: 0x80028202
+an event of a timer stopped before it: 0x80028202
+the event after starting again: 0x00000000
+the base of a timer never started: 0x00000001
+the base of a started timer is the process time it started at: 0x00000001
+cancel with no waiters: 0x00000000
+it counts no waiters: 0x00000000
+cancel an unknown timer: 0x80028241
+poll an auto reset timer event: 0x00000000
+poll it again: 0x80028202
+DONE

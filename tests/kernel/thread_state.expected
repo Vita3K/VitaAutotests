@@ -1,0 +1,29 @@
+info of a running thread: 0x00000000
+status of a running thread: 0x00000001
+exit status of a running thread: 0x80028028
+info of a new thread: 0x00000000
+status of a new thread: 0x00000010
+exit status of a new thread: 0x80028027
+info of a waiting thread: 0x00000000
+status of a waiting thread: 0x00000008
+exit status of a waiting thread: 0x80028028
+the first wait for the end: 0x00000000
+its status: 0x00000007
+the second wait for the end: 0x00000000
+its status: 0x00000007
+info of a ended thread: 0x00000000
+status of a ended thread: 0x00000010
+exit status of a ended thread: 0x00000007
+wait for the end of a thread that never started: 0x00000000
+its status: 0x80028027
+start with no argument block: 0x00000000
+the argument size: 0x00000000
+the argument pointer is NULL: 0x00000001
+start with a size but no block: 0x00000000
+the stack free size is positive: 0x00000001
+the CPU affinity of the running thread: 0x00070000
+change the affinity to core 0: 0x00070000
+the affinity after the change: 0x00010000
+change the affinity to 0: 0x00010000
+change the affinity to a core games can't use: 0x80028025
+DONE

@@ -1,0 +1,10 @@
+the highest game priority: 0x00000000
+the lowest game priority: 0x00000000
+above the highest game priority: 0x80028023
+below the lowest game priority: 0x80028023
+the default priority: 0x00000000
+the highest relative priority: 0x00000000
+the lowest relative priority: 0x00000000
+above the highest relative priority: 0x80028023
+below the lowest relative priority: 0x80028023
+DONE

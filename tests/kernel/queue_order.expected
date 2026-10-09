@@ -1,0 +1,21 @@
+a small request behind a big one, after a signal of 1: 0x00000000
+the big request: 0x00000000
+the big request after 3 more: 0x00000001
+the small request after 3 more: 0x00000001
+the waiter raised above the other while waiting wakes first: 0x00000001
+try lock right after unlocking to a waiter: 0x80028145
+the waiter got it: 0x00000001
+the first waiting reader goes before the writer: 0x00000000
+the reader behind the writer goes before it: 0x00000000
+the waiting writer's turn: 0x00000001
+the first FIFO receiver gets the first byte: 0x00000061
+the second FIFO receiver gets the second byte: 0x00000062
+create a pipe with attribute 0x1: 0x00000000
+the low priority receiver, which waited first, gets with 0x1: 0x00000061
+create a pipe with attribute 0x2: 0x00000000
+the low priority receiver, which waited first, gets with 0x2: 0x00000062
+create a pipe with attribute 0x4: 0x00000000
+the low priority receiver, which waited first, gets with 0x4: 0x00000061
+create a pipe with attribute 0x8: 0x00000000
+the low priority receiver, which waited first, gets with 0x8: 0x00000061
+DONE

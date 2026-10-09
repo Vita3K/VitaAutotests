@@ -1,0 +1,23 @@
+try receive on an empty pipe: 0x80028223
+try send that fills the pipe: 0x00000000
+try send on a full pipe: 0x80028222
+try receive that empties the pipe: 0x00000000
+try receive on an unknown pipe: 0x80028221
+try receive of zero bytes on an empty pipe: 0x00000000
+try receive of zero bytes receives nothing: 0x00000000
+try receive FULL of more than there is: 0x80028223
+receive DONT_REMOVE: 0x00000000
+receive DONT_REMOVE gets the data: 0x00000003
+receive ASAP of more than there is: 0x00000000
+receive ASAP gets what there is: 0x00000003
+the data is still there after DONT_REMOVE: 0x00000001
+receive ASAP removed it: 0x80028223
+a waiting receive gets the data sent: 0x00000000
+the data received is the data sent: 0x00000001
+cancel: 0x00000000
+cancel counts the waiting senders: 0x00000000
+cancel counts the waiting receivers: 0x00000001
+a canceled receive: 0x80028007
+delete: 0x00000000
+a receive on a deleted pipe: 0x80028006
+DONE

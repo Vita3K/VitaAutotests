@@ -1,0 +1,19 @@
+poll AND with a bit missing: 0x800280E3
+poll OR with one bit set: 0x00000000
+poll gives the bits: 0x00000003
+poll that clears its pattern: 0x00000000
+poll gives the bits from before clearing: 0x00000003
+clearing the pattern clears only it: 0x00000002
+clearing all clears every bit: 0x800280E3
+wait times out: 0x80028005
+a timed out wait gives the bits: 0x00000004
+a second waiter without the multi attribute: 0x800280E2
+cancel: 0x00000000
+cancel counts the waiting threads: 0x00000001
+a canceled wait: 0x80028007
+a canceled wait gives the cancel pattern: 0x00000005
+delete: 0x00000000
+a wait on a deleted flag: 0x80028006
+the first of two waiters: 0x00000000
+the second of two waiters: 0x00000000
+DONE

@@ -1,0 +1,30 @@
+create with a negative count: 0x8002000F
+create non-recursive with a count of 2: 0x8002000F
+create recursive with a count of 2: 0x00000001
+lock with a count of 0: 0x8002000F
+lock with a negative count: 0x8002000F
+lock non-recursive with a count of 2: 0x8002000F
+unlock while not locked: 0x80028146
+lock: 0x00000000
+lock again without recursive: 0x80028142
+try lock again without recursive: 0x80028142
+unlock with a count of 0: 0x8002000F
+unlock non-recursive with a count of 2: 0x8002000F
+unlock: 0x00000000
+lock recursive with a count of 2: 0x00000000
+lock recursive again: 0x00000000
+lock recursive past the maximum count: 0x80028143
+unlock more than locked: 0x80028144
+unlock all of it: 0x00000000
+unlock by a thread that doesn't own it: 0x80028146
+lock with a zero timeout while owned: 0x80028005
+the waiter gets the mutex when it is unlocked: 0x00000000
+the waiter owns it now: 0x80028145
+cancel to a count of 0: 0x00000000
+cancel counts the waiting threads: 0x00000001
+a canceled wait: 0x80028007
+cancel to 0 leaves the mutex unowned: 0x00000000
+cancel to a count of 2: 0x00000000
+the caller owns it with that count: 0x00000000
+and not more: 0x80028146
+DONE

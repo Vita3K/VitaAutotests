@@ -1,0 +1,5 @@
+a delay lasts at least as long as asked: 0x00000001
+a delay doesn't last much longer: 0x00000001
+a timeout lasts at least as long as asked: 0x00000001
+a timeout doesn't last much longer: 0x00000001
+DONE

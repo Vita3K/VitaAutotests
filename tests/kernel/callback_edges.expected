@@ -1,0 +1,18 @@
+a wait whose callback signals it: 0x00000000
+the callback ran: 0x00000001
+check that runs the nesting callback: 0x00000002
+a check from inside a callback: 0x00000000
+a notify from inside a callback: 0x00000000
+callbacks run by that one check: 0x00000002
+the other callback is still pending: 0x00000000
+the next check: 0x00000000
+callbacks run after it: 0x00000002
+a check with two callbacks pending: 0x00000002
+callbacks run by it: 0x00000002
+a delay with callbacks: 0x00000000
+it lasts the whole delay: 0x00000001
+callbacks run during it: 0x00000001
+delete a callback with a notification pending: 0x00000000
+the deleted callback doesn't run: 0x00000000
+cancel a deleted callback: 0x800280A1
+DONE

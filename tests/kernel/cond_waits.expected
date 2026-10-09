@@ -1,0 +1,15 @@
+a mutex locked twice stays owned during the wait: 0x80028145
+the wait ends: 0x00000000
+after it the mutex is locked twice again: 0x00000000
+and not more: 0x80028146
+a signaled waiter waits for the mutex: 0x00000200
+the wait isn't over before it has the mutex: 0x00000001
+it ends once the mutex is free: 0x00000000
+signal the second waiter: 0x00000000
+the second waiter woke: 0x00000001
+the first one still waits: 0x00000000
+signal a thread that isn't waiting: 0x00000001
+one signal wakes one of two waiters: 0x00000001
+the higher priority waiter is the one: 0x00000001
+the next signal wakes the other: 0x00000001
+DONE

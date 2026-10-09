@@ -1,0 +1,22 @@
+wait on a condition without holding its mutex: 0x80028146
+wait on a lightweight condition without holding its mutex: 0x80028186
+signal a thread that isn't waiting: 0x80028022
+signal an unknown thread: 0x80028021
+create on an unknown mutex: 0x80028141
+delete the mutex of a waiting condition: 0x00000000
+the condition wait after its mutex is deleted: 0x800281A2
+delete the lightweight mutex of a waiting condition: 0x00000000
+the lightweight condition wait after its mutex is deleted: 0x800281C2
+write lock: 0x00000000
+write lock again without the recursive attribute: 0x800281E2
+read lock while holding the write lock: 0x800281E6
+read unlock while holding the write lock: 0x800281E7
+write unlock by a thread that isn't the writer: 0x800281E4
+write unlock: 0x00000000
+write unlock while not locked: 0x800281E4
+read lock: 0x00000000
+write lock while holding a read lock: 0x800281E6
+read unlock: 0x00000000
+create with attribute 0x2: 0x00000000
+create with attribute 0xFFFF: 0x8002000E
+DONE

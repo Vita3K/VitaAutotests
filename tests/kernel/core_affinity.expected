@@ -1,0 +1,9 @@
+the affinity of a thread created with mask 0: 0x00000000
+change the affinity of a thread created with mask 0: 0x00000000
+change the affinity of the main thread: 0x00070000
+same priority threads on one core run one after another: 0x00000001
+they do with syscalls too: 0x00000001
+threads on their own cores run one after another: 0x00000000
+a higher priority thread ends before the running lower one: 0x00000001
+a lower priority thread starts after the running higher one ends: 0x00000001
+DONE
