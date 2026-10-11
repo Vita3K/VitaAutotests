@@ -70,6 +70,7 @@ vita_test(multi_events_errors kernel/multi_events_errors.c)
 vita_test(thread_lifecycle kernel/thread_lifecycle.c)
 vita_test(clocks kernel/clocks.c)
 vita_test(tls kernel/tls.c)
+vita_test(thread_create_current_priority kernel/thread_create_current_priority.c)
 
 vita_test(memblock memory/memblock.c)
 

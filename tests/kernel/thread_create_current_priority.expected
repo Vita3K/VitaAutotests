@@ -1,0 +1,15 @@
+the main thread's priority: 0x000000A0
+create with priority 0 from the main thread: 0x00000000
+its initial priority in the info, from the main thread: 0x000000A0
+its current priority in the info, from the main thread: 0x000000A0
+the priority it runs at, from the main thread: 0x000000A0
+change the main thread to 0x50: 0x00000000
+create with priority 0 from the main thread at 0x50: 0x00000000
+its initial priority in the info, from the main thread at 0x50: 0x00000050
+its current priority in the info, from the main thread at 0x50: 0x00000050
+the priority it runs at, from the main thread at 0x50: 0x00000050
+create with priority 0 from a thread at 0x70: 0x00000000
+its initial priority in the info, from a thread at 0x70: 0x00000070
+its current priority in the info, from a thread at 0x70: 0x00000070
+the priority it runs at, from a thread at 0x70: 0x00000070
+DONE
