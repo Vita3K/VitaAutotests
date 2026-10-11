@@ -71,6 +71,7 @@ vita_test(thread_lifecycle kernel/thread_lifecycle.c)
 vita_test(clocks kernel/clocks.c)
 vita_test(tls kernel/tls.c)
 vita_test(thread_create_current_priority kernel/thread_create_current_priority.c)
+vita_test(wait_delete_timeout kernel/wait_delete_timeout.c)
 
 vita_test(memblock memory/memblock.c)
 

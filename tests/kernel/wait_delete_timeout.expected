@@ -1,0 +1,9 @@
+delete a timer with a waiter: 0x00000000
+the timer wait: 0x80028006
+its timeout went down: 0x00000001
+its timeout is above 0: 0x00000001
+delete a semaphore with a waiter: 0x00000000
+the semaphore wait: 0x80028006
+its timeout went down: 0x00000001
+its timeout is above 0: 0x00000001
+DONE
