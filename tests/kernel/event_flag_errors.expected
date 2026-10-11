@@ -1,0 +1,72 @@
+set an unknown UID: 0x800280E1
+clear an unknown UID: 0x800280E1
+wait on an unknown UID: 0x800280E1
+wait with callbacks on an unknown UID: 0x800280E1
+poll an unknown UID: 0x800280E1
+cancel an unknown UID: 0x800280E1
+info of an unknown UID: 0x800280E1
+close an unknown UID: 0x800280E1
+delete an unknown UID: 0x800280E1
+set a deleted event flag: 0x800280E1
+clear a deleted event flag: 0x800280E1
+wait on a deleted event flag: 0x800280E1
+wait with callbacks on a deleted event flag: 0x800280E1
+poll a deleted event flag: 0x800280E1
+cancel a deleted event flag: 0x800280E1
+info of a deleted event flag: 0x800280E1
+close a deleted event flag: 0x800280E1
+delete a deleted event flag: 0x800280E1
+set a semaphore: 0x800280E1
+clear a semaphore: 0x800280E1
+wait on a semaphore: 0x800280E1
+wait with callbacks on a semaphore: 0x800280E1
+poll a semaphore: 0x800280E1
+cancel a semaphore: 0x800280E1
+info of a semaphore: 0x800280E1
+close a semaphore: 0x800280E1
+delete a semaphore: 0x800280E1
+set UID 0: 0x800280E1
+clear UID 0: 0x800280E1
+wait on UID 0: 0x800280E1
+wait with callbacks on UID 0: 0x800280E1
+poll UID 0: 0x800280E1
+cancel UID 0: 0x800280E1
+info of UID 0: 0x800280E1
+close UID 0: 0x800280E1
+delete UID 0: 0x800280E1
+set UID -1: 0x800280E1
+clear UID -1: 0x800280E1
+wait on UID -1: 0x800280E1
+wait with callbacks on UID -1: 0x800280E1
+poll UID -1: 0x800280E1
+cancel UID -1: 0x800280E1
+info of UID -1: 0x800280E1
+close UID -1: 0x800280E1
+delete UID -1: 0x800280E1
+the semaphore survives the event flag calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with every bit set: 0x00000000
+wait with both clear modes: 0x80020010
+wait with mode 0x8: 0x80020010
+wait with a timeout of 0 for a missing bit: 0x80028005
+poll AND for one set and one missing bit: 0x800280E3
+the bits it reports: 0x00000003
+set 0: 0x00000000
+clear with every bit set: 0x00000000
+poll after it: 0x00000000
+a second waiter without the multi attribute: 0x80028005
+cancel with a waiter: 0x00000000
+the waiting count: 0x00000000
+the waiter's result: 0x800280E2
+the bits the cancel set: 0x00000010
+cancel without a waiting count pointer: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+poll without a bits pointer: 0x00000000
+wait without a bits pointer: 0x00000000
+info with a NULL pointer: 0x80020006
+open with a NULL name: 0x80020006
+create with a NULL name: 0x80020006
+DONE

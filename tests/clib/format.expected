@@ -1,0 +1,63 @@
+"%d", 0 gives [0]: 0x00000001
+"%d", -1 gives [-1]: 0x00000002
+"%d", (int)0x80000000 gives [-2147483648]: 0x0000000B
+"%d", 0x7FFFFFFF gives [2147483647]: 0x0000000A
+"%i", -5 gives [-5]: 0x00000002
+"%u", 0xFFFFFFFFu gives [4294967295]: 0x0000000A
+"%x", 0xABCDEFu gives [abcdef]: 0x00000006
+"%X", 0xABCDEFu gives [ABCDEF]: 0x00000006
+"%o", 8u gives [10]: 0x00000002
+"%5d", 42 gives [   42]: 0x00000005
+"%-5d|", 42 gives [42   |]: 0x00000006
+"%05d", 42 gives [00042]: 0x00000005
+"%05d", -42 gives [-0042]: 0x00000005
+"%+d", 42 gives [+42]: 0x00000003
+"% d", 42 gives [ 42]: 0x00000003
+"%#x", 255u gives [0xff]: 0x00000004
+"%#X", 255u gives [0XFF]: 0x00000004
+"%#o", 8u gives [010]: 0x00000003
+"%#x", 0u gives [0]: 0x00000001
+"%.3d", 7 gives [007]: 0x00000003
+"%.0d", 0 gives []: 0x00000000
+"%8.3d", 7 gives [     007]: 0x00000008
+"%*d", 6, 42 gives [    42]: 0x00000006
+"%-*d|", 6, 42 gives [42    |]: 0x00000007
+"%.*d", 4, 42 gives [0042]: 0x00000004
+"%lld", -1LL gives [-1]: 0x00000002
+"%lld", 0x7FFFFFFFFFFFFFFFLL gives [9223372036854775807]: 0x00000013
+"%llx", 0x123456789ABCDEFULL gives [123456789abcdef]: 0x0000000F
+"%llu", 0xFFFFFFFFFFFFFFFFULL gives [18446744073709551615]: 0x00000014
+"%ld", -7L gives [-7]: 0x00000002
+"%lx", 0xDEADBEEFUL gives [deadbeef]: 0x00000008
+"%hd", (short)-2 gives [-2]: 0x00000002
+"%hu", (unsigned short)65535 gives [65535]: 0x00000005
+"%hhd", (signed char)-3 gives [-3]: 0x00000002
+"%hhx", (unsigned char)0xAB gives [ab]: 0x00000002
+"%zu", (SceSize)123 gives [123]: 0x00000003
+"%jd", (long long)-9 gives [-9]: 0x00000002
+"%c", 'A' gives [A]: 0x00000001
+"%3c|", 'B' gives [  B|]: 0x00000004
+"%s", "text" gives [text]: 0x00000004
+"%.2s", "hello" gives [he]: 0x00000002
+"%8s|", "right" gives [   right|]: 0x00000009
+"%-8s|", "left" gives [left    |]: 0x00000009
+"%s", "" gives []: 0x00000000
+"100%%" gives [100%]: 0x00000004
+"%f", 1.5 gives [1.500000]: 0x00000008
+"%.2f", 3.14159 gives [3.14]: 0x00000004
+"%8.3f", -2.5 gives [  -2.500]: 0x00000008
+"%e", 12345.678 gives [2.345678e+03]: 0x0000000C
+"%g", 0.0001 gives [0.0001]: 0x00000006
+"%g", 1e20 gives [0e+12]: 0x00000005
+"%k" gives [k]: 0x00000001
+"%b", 5 gives [b]: 0x00000001
+"%" gives []: 0x00000000
+format abcdef into 4 bytes: 0x00000006
+it keeps 3 and terminates: 0x00000000
+format into 1 byte: 0x00000003
+it only terminates: 0x00000000
+format into 0 bytes: 0x00000003
+it writes nothing: 0x00000001
+"%s", (const char *)NULL gives [(null)]: 0x00000000
+format into a NULL buffer of 0 bytes: 0x00000003
+DONE

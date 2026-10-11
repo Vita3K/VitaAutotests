@@ -1,0 +1,50 @@
+load the fiber module: 0x00000000
+initialize with a 512 byte context: 0x00000000
+initialize with a 504 byte context: 0x80590003
+initialize with a 516 byte context: 0x80590004
+initialize with a misaligned context: 0x80590002
+initialize with a context and size 0: 0x80590004
+initialize without a context or size: 0x00000000
+initialize without a context but a size: 0x80590004
+initialize a misaligned fiber: 0x80590002
+get the running fiber from a thread: 0x00000000
+it writes NULL: 0x00000001
+return to the thread from a thread: 0x80590005
+initialize fiber A: 0x00000000
+initialize it again: 0x00000000
+initialize fiber B: 0x00000000
+switch to a fiber from a thread: 0x80590005
+run fiber A: 0x00000000
+what it got at initialization: 0x00000011
+what it got when run: 0x00000033
+get the running fiber inside it: 0x00000000
+that is fiber A: 0x00000001
+run itself from inside: 0x80590005
+what it returned to the thread: 0x00000055
+info of a suspended fiber: 0x00000000
+its entry: 0x00000001
+its argument: 0x00000011
+its context: 0x00000001
+its context size: 0x00004000
+its name: 0x00000001
+run it again: 0x00000000
+what it got when resumed: 0x00000044
+what fiber B got when switched to: 0x00000077
+what fiber A got back from B: 0x00000088
+what A returned to the thread: 0x00000099
+run fiber B, which A left suspended: 0x00000000
+what B returned to the thread: 0x000000BB
+finalize fiber A: 0x00000000
+finalize it again: 0x80590004
+run a finalized fiber: 0x80590004
+info of a finalized fiber: 0x80590004
+finalize fiber B: 0x00000000
+finalize a suspended fiber: 0x00000000
+run it after that: 0x80590004
+initialize a NULL fiber: 0x80590001
+initialize with a NULL name: 0x80590001
+initialize with a NULL entry: 0x80590001
+run a NULL fiber: 0x80590001
+info into a NULL pointer: 0x80590001
+get the running fiber into a NULL pointer: 0x80590001
+DONE

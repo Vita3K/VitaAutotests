@@ -1,0 +1,10 @@
+process time advances by at least a 20 ms delay: 0x00000001
+and by less than a second: 0x00000001
+get the process time: 0x00000000
+it matches the wide one: 0x00000001
+the low one is the low word of the wide one: 0x00000001
+system time advances by at least a 20 ms delay: 0x00000001
+and by less than a second: 0x00000001
+system time is ahead of process time: 0x00000001
+get the process time into a NULL pointer: 0x80022005
+DONE

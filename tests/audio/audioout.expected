@@ -1,0 +1,96 @@
+main: open stereo at 48 kHz: 0x00000000
+main: open mono at 48 kHz: 0x00000000
+main: open at 8000 Hz: 0x80260008
+main: open at 11025 Hz: 0x80260008
+main: open at 12000 Hz: 0x80260008
+main: open at 16000 Hz: 0x80260008
+main: open at 22050 Hz: 0x80260008
+main: open at 24000 Hz: 0x80260008
+main: open at 32000 Hz: 0x80260008
+main: open at 44100 Hz: 0x80260008
+main: open at 48000 Hz: 0x00000000
+main: open at 96000 Hz: 0x80260008
+main: open with 0 samples: 0x80260006
+main: open with 63 samples: 0x80260006
+main: open with 64 samples: 0x00000000
+main: open with 65 samples: 0x80260006
+main: open with 256 samples: 0x00000000
+main: open with 4096 samples: 0x00000000
+main: open with 65472 samples: 0x00000000
+main: open with 65536 samples: 0x80260006
+bgm: open stereo at 48 kHz: 0x00000000
+bgm: open mono at 48 kHz: 0x00000000
+bgm: open at 8000 Hz: 0x00000000
+bgm: open at 11025 Hz: 0x00000000
+bgm: open at 12000 Hz: 0x00000000
+bgm: open at 16000 Hz: 0x00000000
+bgm: open at 22050 Hz: 0x00000000
+bgm: open at 24000 Hz: 0x00000000
+bgm: open at 32000 Hz: 0x00000000
+bgm: open at 44100 Hz: 0x00000000
+bgm: open at 48000 Hz: 0x00000000
+bgm: open at 96000 Hz: 0x80260008
+bgm: open with 0 samples: 0x80260006
+bgm: open with 63 samples: 0x80260006
+bgm: open with 64 samples: 0x00000000
+bgm: open with 65 samples: 0x80260006
+bgm: open with 256 samples: 0x00000000
+bgm: open with 4096 samples: 0x00000000
+bgm: open with 65472 samples: 0x00000000
+bgm: open with 65536 samples: 0x80260006
+voice: open stereo at 48 kHz: 0x00000000
+voice: open mono at 48 kHz: 0x00000000
+voice: open at 8000 Hz: 0x00000000
+voice: open at 11025 Hz: 0x00000000
+voice: open at 12000 Hz: 0x00000000
+voice: open at 16000 Hz: 0x00000000
+voice: open at 22050 Hz: 0x00000000
+voice: open at 24000 Hz: 0x00000000
+voice: open at 32000 Hz: 0x00000000
+voice: open at 44100 Hz: 0x00000000
+voice: open at 48000 Hz: 0x00000000
+voice: open at 96000 Hz: 0x80260008
+voice: open with 0 samples: 0x80260006
+voice: open with 63 samples: 0x80260006
+voice: open with 64 samples: 0x00000000
+voice: open with 65 samples: 0x80260006
+voice: open with 256 samples: 0x00000000
+voice: open with 4096 samples: 0x00000000
+voice: open with 65472 samples: 0x00000000
+voice: open with 65536 samples: 0x80260006
+open type 3: 0x8026000A
+open type -1: 0x8026000A
+open mode 2: 0x80260007
+open a port: 0x00000001
+its length: 0x00000100
+its frequency: 0x0000BB80
+its mode: 0x00000001
+config type 3: 0x8026000C
+the samples left to play: 0x00000000
+set the length to 512 and keep the rest: 0x80260007
+its length after it: 0x00000100
+its frequency after it: 0x0000BB80
+set the frequency to 44.1 kHz: 0x80260007
+its frequency after that: 0x0000BB80
+set mono: 0x00000000
+its mode after that: 0x00000000
+set a length of 63: 0x80260006
+set a frequency of 12345: 0x80260008
+set both volumes to the maximum: 0x00000000
+set a volume past the maximum: 0x80260009
+set a negative volume: 0x80260009
+set a volume with no channel: 0x00000000
+set a volume with channel flag 4: 0x00000000
+release it: 0x00000000
+release it again: 0x80260001
+the config of a released port: 0x80260001
+release an unknown port: 0x8026000A
+release port -1: 0x8026000A
+main: ports open at once: 0x00000008
+main: the error after the last: 0x80260005
+bgm: ports open at once: 0x00000001
+bgm: the error after the last: 0x80260005
+voice: ports open at once: 0x00000001
+voice: the error after the last: 0x80260005
+set a volume from a NULL pointer: 0x80260004
+DONE

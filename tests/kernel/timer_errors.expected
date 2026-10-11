@@ -1,0 +1,77 @@
+start an unknown UID: 0x80028241
+stop an unknown UID: 0x80028241
+get the time of an unknown UID: 0x80028241
+set the time of an unknown UID: 0x80028241
+get the base of an unknown UID: 0x80028241
+set an event on an unknown UID: 0x80028241
+cancel an unknown UID: 0x80028241
+info of an unknown UID: 0x80028241
+close an unknown UID: 0x80028241
+delete an unknown UID: 0x80028241
+start a deleted timer: 0x80028241
+stop a deleted timer: 0x80028241
+get the time of a deleted timer: 0x80028241
+set the time of a deleted timer: 0x80028241
+get the base of a deleted timer: 0x80028241
+set an event on a deleted timer: 0x80028241
+cancel a deleted timer: 0x80028241
+info of a deleted timer: 0x80028241
+close a deleted timer: 0x80028241
+delete a deleted timer: 0x80028241
+start a semaphore: 0x80028241
+stop a semaphore: 0x80028241
+get the time of a semaphore: 0x80028241
+set the time of a semaphore: 0x80028241
+get the base of a semaphore: 0x80028241
+set an event on a semaphore: 0x80028241
+cancel a semaphore: 0x80028241
+info of a semaphore: 0x80028241
+close a semaphore: 0x80028241
+delete a semaphore: 0x80028241
+start UID 0: 0x80028241
+stop UID 0: 0x80028241
+get the time of UID 0: 0x80028241
+set the time of UID 0: 0x80028241
+get the base of UID 0: 0x80028241
+set an event on UID 0: 0x80028241
+cancel UID 0: 0x80028241
+info of UID 0: 0x80028241
+close UID 0: 0x80028241
+delete UID 0: 0x80028241
+start UID -1: 0x80028241
+stop UID -1: 0x80028241
+get the time of UID -1: 0x80028241
+set the time of UID -1: 0x80028241
+get the base of UID -1: 0x80028241
+set an event on UID -1: 0x80028241
+cancel UID -1: 0x80028241
+info of UID -1: 0x80028241
+close UID -1: 0x80028241
+delete UID -1: 0x80028241
+the semaphore survives the timer calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with the openable attribute: 0x00000000
+create with the priority attribute: 0x00000000
+stop a timer that isn't running: 0x00000000
+start it: 0x00000000
+start it again: 0x00000001
+set the time of a running timer: 0x00000000
+stop it: 0x00000001
+cancel it: 0x00000000
+its waiting count: 0x00000000
+cancel without a waiting count pointer: 0x00000000
+info: 0x00000000
+its UID: 0x00000001
+its attribute: 0x00000000
+it isn't active: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+get the time into a NULL pointer: 0x80020006
+set the time from a NULL pointer: 0x80022005
+get the base into a NULL pointer: 0x80020006
+info with a NULL pointer: 0x80020006
+open with a NULL name: 0x80020006
+create with a NULL name: 0x80020006
+DONE

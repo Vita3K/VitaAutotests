@@ -1,0 +1,62 @@
+set an unknown UID: 0x80028201
+pulse an unknown UID: 0x80028201
+clear an unknown UID: 0x80028201
+get the pattern of an unknown UID: 0x80028201
+poll an unknown UID: 0x80028201
+wait on an unknown UID: 0x80028201
+wait with callbacks on an unknown UID: 0x80028201
+cancel an unknown UID: 0x80028201
+info of an unknown UID: 0x80028201
+close an unknown UID: 0x80028261
+delete an unknown UID: 0x80028261
+set a deleted simple event: 0x80028201
+pulse a deleted simple event: 0x80028201
+clear a deleted simple event: 0x80028201
+get the pattern of a deleted simple event: 0x80028201
+poll a deleted simple event: 0x80028201
+wait on a deleted simple event: 0x80028201
+wait with callbacks on a deleted simple event: 0x80028201
+cancel a deleted simple event: 0x80028201
+info of a deleted simple event: 0x80028201
+close a deleted simple event: 0x80028261
+delete a deleted simple event: 0x80028261
+set a semaphore: 0x80028201
+pulse a semaphore: 0x80028201
+clear a semaphore: 0x80028201
+get the pattern of a semaphore: 0x80028201
+poll a semaphore: 0x80028201
+wait on a semaphore: 0x80028201
+wait with callbacks on a semaphore: 0x80028201
+cancel a semaphore: 0x80028201
+info of a semaphore: 0x80028201
+close a semaphore: 0x80028261
+delete a semaphore: 0x80028261
+set UID 0: 0x80028201
+pulse UID 0: 0x80028201
+clear UID 0: 0x80028201
+get the pattern of UID 0: 0x80028201
+poll UID 0: 0x80028201
+wait on UID 0: 0x80028201
+wait with callbacks on UID 0: 0x80028201
+cancel UID 0: 0x80028201
+info of UID 0: 0x80028201
+close UID 0: 0x80028261
+delete UID 0: 0x80028261
+set UID -1: 0x80028201
+pulse UID -1: 0x80028201
+clear UID -1: 0x80028201
+get the pattern of UID -1: 0x80028201
+poll UID -1: 0x80028201
+wait on UID -1: 0x80028201
+wait with callbacks on UID -1: 0x80028201
+cancel UID -1: 0x80028201
+info of UID -1: 0x80028201
+close UID -1: 0x80028261
+delete UID -1: 0x80028261
+the semaphore survives the simple event calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with the openable attribute: 0x00000000
+create with the priority attribute: 0x00000000
+create with the multi attribute: 0x8002000E
+DONE

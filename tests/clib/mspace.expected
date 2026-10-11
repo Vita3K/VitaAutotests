@@ -1,0 +1,38 @@
+create a memory space: 0x00000001
+it lives in the block: 0x00000001
+new: capacity: 0x00100000
+new: second capacity field: 0x00100000
+new: peak in use: 0x00000280
+new: in use: 0x00000280
+allocate 100 bytes: 0x00000001
+it is 8 byte aligned: 0x00000001
+it is 16 byte aligned: 0x00000001
+its usable size: 0x0000006C
+allocate 0 bytes: 0x00000001
+its usable size: 0x0000000C
+usable size of 1 bytes: 0x0000000C
+usable size of 8 bytes: 0x0000000C
+usable size of 9 bytes: 0x0000000C
+usable size of 24 bytes: 0x0000001C
+usable size of 25 bytes: 0x0000001C
+usable size of 4096 bytes: 0x0000100C
+usable size of 65536 bytes: 0x0001000C
+with two allocations: capacity: 0x00100000
+with two allocations: second capacity field: 0x00100000
+with two allocations: peak in use: 0x00010310
+with two allocations: in use: 0x00000300
+calloc zeroes: 0x00000001
+grow the 100 bytes to 5000: 0x00000001
+it keeps the data: 0x00000001
+allocate aligned to 16: 0x00000001
+allocate aligned to 64: 0x00000001
+allocate aligned to 4096: 0x00000001
+realloc aligned from nothing: 0x00000001
+allocate more than the space holds: 0x00000001
+realloc to more than the space holds: 0x00000001
+after freeing everything: capacity: 0x00100000
+after freeing everything: second capacity field: 0x00100000
+after freeing everything: peak in use: 0x00010310
+after freeing everything: in use: 0x00000280
+create a space of 64 bytes: 0x00000000
+DONE

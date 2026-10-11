@@ -1,0 +1,81 @@
+send to an unknown UID: 0x80028221
+send with callbacks to an unknown UID: 0x80028221
+try send to an unknown UID: 0x80028221
+receive from an unknown UID: 0x80028221
+receive with callbacks from an unknown UID: 0x80028221
+try receive from an unknown UID: 0x80028221
+cancel an unknown UID: 0x80028221
+info of an unknown UID: 0x80028221
+close an unknown UID: 0x80028221
+delete an unknown UID: 0x80028221
+send to a deleted message pipe: 0x80028221
+send with callbacks to a deleted message pipe: 0x80028221
+try send to a deleted message pipe: 0x80028221
+receive from a deleted message pipe: 0x80028221
+receive with callbacks from a deleted message pipe: 0x80028221
+try receive from a deleted message pipe: 0x80028221
+cancel a deleted message pipe: 0x80028221
+info of a deleted message pipe: 0x80028221
+close a deleted message pipe: 0x80028221
+delete a deleted message pipe: 0x80028221
+send to a semaphore: 0x80028221
+send with callbacks to a semaphore: 0x80028221
+try send to a semaphore: 0x80028221
+receive from a semaphore: 0x80028221
+receive with callbacks from a semaphore: 0x80028221
+try receive from a semaphore: 0x80028221
+cancel a semaphore: 0x80028221
+info of a semaphore: 0x80028221
+close a semaphore: 0x80028221
+delete a semaphore: 0x80028221
+send to UID 0: 0x80028221
+send with callbacks to UID 0: 0x80028221
+try send to UID 0: 0x80028221
+receive from UID 0: 0x80028221
+receive with callbacks from UID 0: 0x80028221
+try receive from UID 0: 0x80028221
+cancel UID 0: 0x80028221
+info of UID 0: 0x80028221
+close UID 0: 0x80028221
+delete UID 0: 0x80028221
+send to UID -1: 0x80028221
+send with callbacks to UID -1: 0x80028221
+try send to UID -1: 0x80028221
+receive from UID -1: 0x80028221
+receive with callbacks from UID -1: 0x80028221
+try receive from UID -1: 0x80028221
+cancel UID -1: 0x80028221
+info of UID -1: 0x80028221
+close UID -1: 0x80028221
+delete UID -1: 0x80028221
+the semaphore survives the message pipe calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with type 0x20: 0x8002000C
+create with type 0x80: 0x8002000C
+create with type 0xFF: 0x8002000C
+create with 4 KiB plus 1: 0x00000000
+create with 1 MiB: 0x00000000
+try send FULL of more than the pipe holds: 0x8002000B
+its size: 0x0000DEAD
+send FULL of more than the pipe holds: 0x8002000B
+its size: 0x0000DEAD
+try send ASAP of more than the pipe holds: 0x8002000B
+its size: 0x0000DEAD
+try receive FULL of more than the pipe holds: 0x8002000B
+its size: 0x0000DEAD
+try receive ASAP of more than the pipe holds: 0x8002000B
+its size: 0x0000DEAD
+try send with mode 0x200: 0x80020010
+try send with DONT_REMOVE: 0x80020010
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+create with a huge size: 0x80024804
+try send without a size pointer: 0x00000000
+try send from a NULL buffer: 0x80020006
+try receive into a NULL buffer: 0x80020006
+info with a NULL pointer: 0x80020006
+open with a NULL name: 0x80020006
+create with a NULL name: 0x80020006
+DONE

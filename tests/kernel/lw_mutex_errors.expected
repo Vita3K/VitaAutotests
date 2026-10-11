@@ -1,0 +1,30 @@
+info by UID of an unknown UID: 0x80028181
+info by UID of a deleted lightweight mutex: 0x80028181
+info by UID of a semaphore: 0x80028181
+info by UID of UID 0: 0x80028181
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create twice in the same work area: 0x00000000
+create with a negative count: 0x8002000F
+create recursive with the largest count: 0x00000000
+unlock 0: 0x8002000F
+unlock -1: 0x8002000F
+unlock 2 of 1: 0x80028184
+lock with callbacks: 0x00000000
+unlock all of it: 0x00000000
+unlock once more: 0x80028186
+try lock a mutex another thread holds: 0x80028185
+lock it with a timeout: 0x80028005
+lock it with callbacks and a timeout: 0x80028005
+unlock it: 0x80028186
+its info shows the other owner: 0x00000001
+delete it while held: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+delete it: 0x00000000
+delete it again: 0x80028181
+info with a NULL pointer: 0x80020006
+create with a NULL work area: 0x80020006
+create with a NULL name: 0x80020006
+DONE

@@ -1,0 +1,69 @@
+open a missing file to read: 0x80010002
+open a missing file to write without create: 0x80010002
+create a file: 0x00000000
+write 10 bytes: 0x0000000A
+close it: 0x00000000
+close it again: 0x80010009
+write to the closed file: 0x80010009
+create it again with EXCL: 0x80010011
+open with no access mode: 0x80010016
+open a directory as a file: 0x80010015
+open an empty path: 0x80010002
+open a path without a device: 0x80010016
+open a path on an unknown device: 0x80010013
+open a file under a file: 0x80010014
+write to a file opened to read: 0x8001000D
+read 4 bytes: 0x00000004
+they are the first 4: 0x00000001
+read 0 bytes: 0x00000000
+read past the end: 0x00000006
+read at the end: 0x00000000
+seek to 2: 0x00000002
+seek 3 more: 0x00000005
+seek to the end: 0x0000000A
+seek to one before the end: 0x00000009
+seek before the start: 0x80010016
+the position after it: 0x00000009
+seek past the end: 0x00000064
+read there: 0x00000000
+seek with whence 3: 0x80010016
+read 2 at offset 5: 0x00000002
+they are the bytes there: 0x00000001
+the position after it: 0x00000064
+read at an offset past the end: 0x00000000
+read from a file opened to write: 0x8001000D
+seek past the end to write: 0x00000010
+write there: 0x00000001
+the file grew: 0x00000011
+the gap reads as zeros: 0x00000001
+write 3 bytes in append mode after seeking to 0: 0x00000003
+the size after it: 0x00000014
+the first byte is unchanged: 0x00000001
+write at an offset: 0x00000001
+open with TRUNC: 0x00000000
+the size after it: 0x00000000
+write 0 bytes: 0x00000000
+stat the file: 0x00000000
+it is a regular file: 0x00000001
+its size: 0x0000000A
+stat a missing file: 0x80010002
+stat the directory: 0x00000000
+it is a directory: 0x00000001
+stat by descriptor: 0x00000000
+its size: 0x0000000A
+stat a closed descriptor: 0x80010009
+rename a missing file: 0x80010002
+rename the file: 0x00000000
+the old name is gone: 0x80010002
+the new name has it: 0x0000000A
+rename over an existing file: 0x80010011
+the target's size after it: 0x00000000
+rename it to itself: 0x80010011
+remove a missing file: 0x80010002
+remove a directory: 0x80010015
+remove an open file: 0x00000000
+read from it after the remove: 0x00000000
+read from an unknown descriptor: 0x80010009
+close an unknown descriptor: 0x80010009
+close descriptor 0: 0x80010009
+DONE

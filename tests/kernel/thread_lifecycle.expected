@@ -1,0 +1,50 @@
+the status of a thread that returns 7: 0x00000007
+its exit status: 0x00000000
+the status: 0x00000007
+start it again: 0x00000000
+wait for its second end: 0x00000000
+it ran twice: 0x00000002
+delete it: 0x00000000
+the status of a thread that exits with 9: 0x00000009
+the status of a thread that exits and deletes itself: 0x0000000B
+wait for it again: 0x80028021
+its info: 0x80028021
+delete it: 0x80028021
+start with 0x0 bytes of arguments: 0x00000000
+0x0 bytes: the size it gets: 0x00000000
+0x0 bytes: it gets a NULL pointer: 0x00000001
+0x0 bytes: it gets a copy: 0x00000000
+0x0 bytes: the copy matches: 0x00000000
+0x0 bytes: its thread ID is the created one: 0x00000001
+start with 0x1 bytes of arguments: 0x00000000
+0x1 bytes: the size it gets: 0x00000001
+0x1 bytes: it gets a NULL pointer: 0x00000000
+0x1 bytes: it gets a copy: 0x00000001
+0x1 bytes: the copy matches: 0x00000001
+0x1 bytes: its thread ID is the created one: 0x00000001
+start with 0x4 bytes of arguments: 0x00000000
+0x4 bytes: the size it gets: 0x00000004
+0x4 bytes: it gets a NULL pointer: 0x00000000
+0x4 bytes: it gets a copy: 0x00000001
+0x4 bytes: the copy matches: 0x00000001
+0x4 bytes: its thread ID is the created one: 0x00000001
+start with 0xD bytes of arguments: 0x00000000
+0xD bytes: the size it gets: 0x0000000D
+0xD bytes: it gets a NULL pointer: 0x00000000
+0xD bytes: it gets a copy: 0x00000001
+0xD bytes: the copy matches: 0x00000001
+0xD bytes: its thread ID is the created one: 0x00000001
+start with 0x100 bytes of arguments: 0x00000000
+0x100 bytes: the size it gets: 0x00000100
+0x100 bytes: it gets a NULL pointer: 0x00000000
+0x100 bytes: it gets a copy: 0x00000001
+0x100 bytes: the copy matches: 0x00000001
+0x100 bytes: its thread ID is the created one: 0x00000001
+start with 0x800 bytes of arguments: 0x00000000
+0x800 bytes: the size it gets: 0x00000800
+0x800 bytes: it gets a NULL pointer: 0x00000000
+0x800 bytes: it gets a copy: 0x00000001
+0x800 bytes: the copy matches: 0x00000001
+0x800 bytes: its thread ID is the created one: 0x00000001
+start with more arguments than the stack holds: 0x80020005
+DONE

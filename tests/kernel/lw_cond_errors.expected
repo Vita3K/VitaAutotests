@@ -1,0 +1,28 @@
+info by UID of an unknown UID: 0x800281C1
+info by UID of a deleted lightweight condition variable: 0x800281C1
+info by UID of a semaphore: 0x800281C1
+info by UID of UID 0: 0x800281C1
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with a deleted mutex: 0x80028181
+signal with nobody waiting: 0x00000000
+signal all with nobody waiting: 0x00000000
+signal to this thread: 0x80028022
+signal to an unknown thread: 0x80028021
+signal to thread 0: 0x80028022
+signal to a semaphore: 0x80028021
+wait with a timeout of 0: 0x80028005
+the mutex is held again after it: 0x00000000
+delete the mutex while a condition variable uses it: 0x00000000
+signal after it: 0x00000000
+delete it: 0x00000000
+delete it again: 0x800281C1
+signal a deleted one: 0x800281C1
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002000B
+it leaves the bytes past the struct alone: 0x00000001
+info with a NULL pointer: 0x80020006
+create with a NULL mutex: 0x80020006
+create with a NULL work area: 0x80020006
+create with a NULL name: 0x80020006
+DONE

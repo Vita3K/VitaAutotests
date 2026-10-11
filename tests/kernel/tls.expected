@@ -1,0 +1,21 @@
+slot 0 has an address: 0x00000001
+it is 4 byte aligned: 0x00000001
+the same key gives the same address: 0x00000001
+key 1 is the next word: 0x00000001
+key 15 has an address: 0x00000001
+key 16 has an address: 0x00000001
+key 63 has an address: 0x00000001
+key 64 has an address: 0x00000001
+key 255 has an address: 0x00000001
+key 256 has an address: 0x00000000
+key -1 has an address: 0x00000000
+a new thread's slot 0 has another address: 0x00000001
+it starts as 0: 0x00000001
+the thread reads back its own write: 0x00000001
+this thread's slot keeps its value: 0x00000001
+the other thread's slot by its UID is its slot: 0x00000001
+this thread's slot by its UID: 0x00000001
+this thread's slot by UID 0: 0x00000000
+a slot of an unknown thread: 0x00000000
+a slot of the ended and deleted thread: 0x00000000
+DONE

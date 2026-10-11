@@ -1,0 +1,87 @@
+read lock an unknown UID: 0x800281E1
+read lock with callbacks an unknown UID: 0x800281E1
+try read lock an unknown UID: 0x800281E1
+read unlock an unknown UID: 0x800281E1
+write lock an unknown UID: 0x800281E1
+write lock with callbacks an unknown UID: 0x800281E1
+try write lock an unknown UID: 0x800281E1
+write unlock an unknown UID: 0x800281E1
+cancel an unknown UID: 0x800281E1
+info of an unknown UID: 0x800281E1
+close an unknown UID: 0x800281E1
+delete an unknown UID: 0x800281E1
+read lock a deleted reader/writer lock: 0x800281E1
+read lock with callbacks a deleted reader/writer lock: 0x800281E1
+try read lock a deleted reader/writer lock: 0x800281E1
+read unlock a deleted reader/writer lock: 0x800281E1
+write lock a deleted reader/writer lock: 0x800281E1
+write lock with callbacks a deleted reader/writer lock: 0x800281E1
+try write lock a deleted reader/writer lock: 0x800281E1
+write unlock a deleted reader/writer lock: 0x800281E1
+cancel a deleted reader/writer lock: 0x800281E1
+info of a deleted reader/writer lock: 0x800281E1
+close a deleted reader/writer lock: 0x800281E1
+delete a deleted reader/writer lock: 0x800281E1
+read lock a semaphore: 0x800281E1
+read lock with callbacks a semaphore: 0x800281E1
+try read lock a semaphore: 0x800281E1
+read unlock a semaphore: 0x800281E1
+write lock a semaphore: 0x800281E1
+write lock with callbacks a semaphore: 0x800281E1
+try write lock a semaphore: 0x800281E1
+write unlock a semaphore: 0x800281E1
+cancel a semaphore: 0x800281E1
+info of a semaphore: 0x800281E1
+close a semaphore: 0x800281E1
+delete a semaphore: 0x800281E1
+read lock UID 0: 0x800281E1
+read lock with callbacks UID 0: 0x800281E1
+try read lock UID 0: 0x800281E1
+read unlock UID 0: 0x800281E1
+write lock UID 0: 0x800281E1
+write lock with callbacks UID 0: 0x800281E1
+try write lock UID 0: 0x800281E1
+write unlock UID 0: 0x800281E1
+cancel UID 0: 0x800281E1
+info of UID 0: 0x800281E1
+close UID 0: 0x800281E1
+delete UID 0: 0x800281E1
+read lock UID -1: 0x800281E1
+read lock with callbacks UID -1: 0x800281E1
+try read lock UID -1: 0x800281E1
+read unlock UID -1: 0x800281E1
+write lock UID -1: 0x800281E1
+write lock with callbacks UID -1: 0x800281E1
+try write lock UID -1: 0x800281E1
+write unlock UID -1: 0x800281E1
+cancel UID -1: 0x800281E1
+info of UID -1: 0x800281E1
+close UID -1: 0x800281E1
+delete UID -1: 0x800281E1
+the semaphore survives the reader/writer lock calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with the recursive attribute: 0x00000000
+read lock: 0x00000000
+read lock again: 0x00000000
+read unlock: 0x00000000
+read unlock again: 0x00000000
+read unlock once more: 0x800281E5
+cancel with a waiting writer: 0x00000000
+the waiting readers: 0x00000000
+the waiting writers: 0x00000001
+the writer's result: 0x80028007
+read unlock after the cancel: 0x800281E5
+cancel with flag 1: 0x00000000
+write unlock after it: 0x00000000
+cancel with flag 2: 0x8002000A
+cancel with flag 3: 0x8002000A
+try write lock after the cancels: 0x00000000
+delete it while write locked: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+info with a NULL pointer: 0x80020006
+open with a NULL name: 0x80020006
+create with a NULL name: 0x80020006
+DONE

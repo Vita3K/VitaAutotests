@@ -37,7 +37,10 @@ function(vita_tests_vpk title_id)
 
 	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${sources})
 	target_include_directories(vita-autotests PRIVATE ${PROJECT_SOURCE_DIR}/common ${CMAKE_CURRENT_BINARY_DIR})
-	target_link_libraries(vita-autotests SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub)
+	# Not SceProcessmgr_stub: a Vita refuses to install a vpk that imports from it, with C2-12845-0
+	target_link_libraries(vita-autotests SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceSysmem_stub SceFiber_stub SceSysmodule_stub SceRtc_stub SceAudio_stub SceDisplay_stub)
+	# Room for the import tables vita-elf-create adds after the code, which outgrow the page padding
+	target_link_options(vita-autotests PRIVATE -Wl,--defsym,__sce_headroom=0x4000)
 	vita_create_self(vita-autotests.self vita-autotests)
 	vita_create_vpk(vita-autotests.vpk ${title_id} vita-autotests.self NAME vita-autotests)
 endfunction()

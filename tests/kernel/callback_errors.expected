@@ -1,0 +1,51 @@
+notify an unknown UID: 0x800280A1
+cancel an unknown UID: 0x800280A1
+the count of an unknown UID: 0x800280A1
+info of an unknown UID: 0x800280A1
+delete an unknown UID: 0x800280A1
+notify a deleted callback: 0x800280A1
+cancel a deleted callback: 0x800280A1
+the count of a deleted callback: 0x800280A1
+info of a deleted callback: 0x800280A1
+delete a deleted callback: 0x800280A1
+notify a semaphore: 0x800280A1
+cancel a semaphore: 0x800280A1
+the count of a semaphore: 0x800280A1
+info of a semaphore: 0x800280A1
+delete a semaphore: 0x800280A1
+notify UID 0: 0x800280A1
+cancel UID 0: 0x800280A1
+the count of UID 0: 0x800280A1
+info of UID 0: 0x800280A1
+delete UID 0: 0x800280A1
+notify UID -1: 0x800280A1
+cancel UID -1: 0x800280A1
+the count of UID -1: 0x800280A1
+info of UID -1: 0x800280A1
+delete UID -1: 0x800280A1
+the semaphore survives the callback calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create with attribute 0x1: 0x8002000E
+notify another thread's callback: 0x00000000
+its count: 0x00000001
+check callbacks here: 0x00000000
+its count after the check: 0x00000001
+cancel it: 0x00000000
+delete it: 0x00000000
+notify with argument 0: 0x00000000
+notify with a negative argument: 0x00000000
+the count: 0x00000002
+cancel: 0x00000000
+the count after the cancel: 0x00000000
+cancel again: 0x00000000
+check callbacks with none pending: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+delete it: 0x00000000
+delete it again: 0x800280A1
+info with a NULL pointer: 0x80020006
+create with a NULL function: 0x80020006
+create with a NULL name: 0x80020006
+DONE

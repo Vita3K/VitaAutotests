@@ -1,0 +1,23 @@
+send three pieces: 0x00000000
+the size sent: 0x00000009
+receive into two pieces: 0x00000000
+the size received: 0x00000009
+the first piece holds the first 4 bytes: 0x00000001
+the second piece holds the rest: 0x00000001
+send two empty pieces: 0x00000000
+the size sent: 0x00000000
+send a list of 0 pieces: 0x8002000F
+the size sent: 0x0000DEAD
+receive ASAP with less in the pipe than asked: 0x00000000
+the size received: 0x00000003
+it fills the first piece first: 0x00000001
+receive FULL from an empty pipe: 0x80028005
+the size received: 0x00000000
+send to an unknown UID: 0x80028221
+receive from an unknown UID: 0x80028221
+send a list of 1000 pieces: 0x8002000B
+send with mode 0x200: 0x80020010
+send a NULL list: 0x80020006
+send a piece with a NULL buffer: 0x80020006
+receive into a NULL list: 0x80020006
+DONE

@@ -2,7 +2,7 @@
 
 Small PS Vita homebrew tests, each checking one area of system behavior, with the output a real Vita gives. They can be useful to check an emulator against, or to understand how the system behaves.
 
-The tests so far cover the kernel thread manager and its sync primitives. Other areas can be added in the same format.
+The tests so far cover the kernel thread manager and its sync primitives, memory blocks, file I/O, fibers, system modules, audio output, the display, the RTC library, and the sceClib string, format and memory space calls. Other areas can be added in the same format.
 
 A test prints one line per value it observes, like `lock with a count of 0: 0x8002000F`, and ends with `DONE`. A run passes when the test exits with 0 and its output matches the `.expected` file next to its source. Tests print errors, counts and comparisons, never UIDs, addresses or times, so the output is the same on every run.
 
@@ -45,6 +45,8 @@ Pass the test name as the first argument, and compare the debug output with the 
 
 ## Add a test
 
-Write `tests/kernel/<name>.c` with `PRINT` and `test_exit()` from `common/test.h`, and add it to `tests/CMakeLists.txt`. Run it on a Vita and save its output as `tests/kernel/<name>.expected`.
+Write `tests/<area>/<name>.c` with `PRINT`, `PRINTF` and `test_exit()` from `common/test.h`, and add it to `tests/CMakeLists.txt`. Run it on a Vita and save its output as `tests/<area>/<name>.expected`.
+
+Cases that pass NULL pointers or huge sizes go at the end of a test, so an implementation that crashes on them loses nothing else. An info call given a size past its struct gets a buffer with room behind it, in case it writes that far.
 
 A case that a wrong implementation may crash or hang on, like `wait_own_end`, goes in a test of its own, so it doesn't lose the output of the checks after it.

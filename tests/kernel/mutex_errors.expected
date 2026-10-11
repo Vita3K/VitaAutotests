@@ -1,0 +1,70 @@
+lock an unknown UID: 0x80028141
+lock with callbacks an unknown UID: 0x80028141
+try lock an unknown UID: 0x80028141
+unlock an unknown UID: 0x80028141
+cancel an unknown UID: 0x80028141
+info of an unknown UID: 0x80028141
+close an unknown UID: 0x80028141
+delete an unknown UID: 0x80028141
+lock a deleted mutex: 0x80028141
+lock with callbacks a deleted mutex: 0x80028141
+try lock a deleted mutex: 0x80028141
+unlock a deleted mutex: 0x80028141
+cancel a deleted mutex: 0x80028141
+info of a deleted mutex: 0x80028141
+close a deleted mutex: 0x80028141
+delete a deleted mutex: 0x80028141
+lock a semaphore: 0x80028141
+lock with callbacks a semaphore: 0x80028141
+try lock a semaphore: 0x80028141
+unlock a semaphore: 0x80028141
+cancel a semaphore: 0x80028141
+info of a semaphore: 0x80028141
+close a semaphore: 0x80028141
+delete a semaphore: 0x80028141
+lock UID 0: 0x80028141
+lock with callbacks UID 0: 0x80028141
+try lock UID 0: 0x80028141
+unlock UID 0: 0x80028141
+cancel UID 0: 0x80028141
+info of UID 0: 0x80028141
+close UID 0: 0x80028141
+delete UID 0: 0x80028141
+lock UID -1: 0x80028141
+lock with callbacks UID -1: 0x80028141
+try lock UID -1: 0x80028141
+unlock UID -1: 0x80028141
+cancel UID -1: 0x80028141
+info of UID -1: 0x80028141
+close UID -1: 0x80028141
+delete UID -1: 0x80028141
+the semaphore survives the mutex calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x8002000E
+create recursive with the largest count: 0x00000000
+unlock 0: 0x8002000F
+unlock -1: 0x8002000F
+unlock 2 of 1: 0x80028144
+lock up to the largest count: 0x00000000
+lock past the largest count: 0x80028143
+unlock all of it: 0x00000000
+unlock once more: 0x80028146
+cancel an unlocked mutex to 0: 0x00000000
+its waiting count: 0x00000000
+cancel to 2: 0x00000000
+try lock after the cancel to 2: 0x00000000
+unlock after it: 0x00000000
+cancel to -1: 0x00000000
+cancel to -2: 0x00000000
+cancel a non-recursive mutex to 2: 0x8002000F
+try lock a mutex another thread holds: 0x80028145
+unlock it: 0x80028146
+cancel it: 0x00000000
+delete it while held: 0x00000000
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+info with a NULL pointer: 0x80020006
+open with a NULL name: 0x80020006
+create with a NULL name: 0x80020006
+DONE

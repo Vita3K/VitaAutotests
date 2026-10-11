@@ -1,0 +1,36 @@
+get the refresh rate: 0x00000000
+it in hundredths of a hertz: 0x0000176A
+get the largest framebuffer: 0x00000000
+its width: 0x000003C0
+its height: 0x00000220
+the primary head: 0x00000000
+wait for a vblank: 0x00000000
+the count goes up: 0x00000001
+wait for 3 vblanks: 0x00000000
+the count goes up by at least 2: 0x00000001
+set a framebuffer: 0x00000000
+wait for it to take effect: 0x00000000
+get the framebuffer: 0x00000000
+it is the one set: 0x00000001
+set it immediately: 0x00000000
+set it with sync mode 2: 0x80290006
+set a framebuffer with size 0: 0x80290001
+set a framebuffer with a pitch under its width: 0x80290004
+set a framebuffer with pitch 1024: 0x80022007
+set a framebuffer with pitch 1000: 0x80290004
+set a framebuffer with 480 by 272: 0x00000000
+set a framebuffer with 640 by 368: 0x00000000
+set a framebuffer with 720 by 408: 0x00000000
+set a framebuffer with 800 by 450: 0x80290005
+set a framebuffer with width 0: 0x80290005
+set a framebuffer with height 1088: 0x80290005
+set a framebuffer with the 10 bit format: 0x00000000
+set a framebuffer with format 1: 0x80290003
+set a framebuffer with a base 4 bytes in: 0x80290002
+set a framebuffer with a base 256 bytes in: 0x00000000
+set a framebuffer with a base on the stack: 0x80290002
+get the refresh rate into a NULL pointer: 0x80290002
+set a framebuffer with a NULL base: 0x80290002
+set no framebuffer: 0x00000000
+get the framebuffer into a NULL pointer: 0x80290002
+DONE

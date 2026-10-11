@@ -1,0 +1,32 @@
+get the pattern into a NULL pointer: 0x80020006
+poll 0: 0x00000000
+poll 1: 0x00000000
+poll 2: 0x00000000
+poll 3: 0x00000000
+poll 4: 0x00000000
+poll 5: 0x00000000
+poll 6: 0x00000000
+poll 7: 0x00000000
+poll 8: 0x00000000
+poll 9: 0x00000000
+poll without pointers 0: 0x00000000
+poll without pointers 1: 0x00000000
+poll without pointers 2: 0x00000000
+poll without pointers 3: 0x00000000
+poll without pointers 4: 0x00000000
+poll without pointers 5: 0x00000000
+poll without pointers 6: 0x00000000
+poll without pointers 7: 0x00000000
+poll without pointers 8: 0x00000000
+poll without pointers 9: 0x00000000
+wait without pointers 0: 0x00000000
+wait without pointers 1: 0x00000000
+wait without pointers 2: 0x00000000
+wait without pointers 3: 0x00000000
+wait without pointers 4: 0x00000000
+wait without pointers 5: 0x00000000
+wait without pointers 6: 0x00000000
+wait without pointers 7: 0x00000000
+wait without pointers 8: 0x00000000
+wait without pointers 9: 0x00000000
+DONE

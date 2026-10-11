@@ -1,0 +1,57 @@
+start an unknown UID: 0x80028021
+wait for the end of an unknown UID: 0x80028021
+wait with callbacks for the end of an unknown UID: 0x80028021
+the exit status of an unknown UID: 0x80028021
+info of an unknown UID: 0x80028021
+change the priority of an unknown UID: 0x80028021
+the stack free size of an unknown UID: 0x80028021
+the affinity of an unknown UID: 0x80028021
+change the affinity of an unknown UID: 0x80028021
+delete an unknown UID: 0x80028021
+start a deleted thread: 0x80028021
+wait for the end of a deleted thread: 0x80028021
+wait with callbacks for the end of a deleted thread: 0x80028021
+the exit status of a deleted thread: 0x80028021
+info of a deleted thread: 0x80028021
+change the priority of a deleted thread: 0x80028021
+the stack free size of a deleted thread: 0x80028021
+the affinity of a deleted thread: 0x80028021
+change the affinity of a deleted thread: 0x80028021
+delete a deleted thread: 0x80028021
+start a semaphore: 0x80028021
+wait for the end of a semaphore: 0x80028021
+wait with callbacks for the end of a semaphore: 0x80028021
+the exit status of a semaphore: 0x80028021
+info of a semaphore: 0x80028021
+change the priority of a semaphore: 0x80028021
+the stack free size of a semaphore: 0x80028021
+the affinity of a semaphore: 0x80028021
+change the affinity of a semaphore: 0x80028021
+delete a semaphore: 0x80028021
+the semaphore survives the thread calls: 0x00000000
+create with an empty name: 0x00000000
+create with attribute 0x80000000: 0x00000000
+create with a stack of 4 KiB: 0x00000000
+create with a stack of 4 KiB minus 1: 0x00000000
+create with a stack of 1 KiB: 0x00000000
+create with a 4 KiB plus 1 stack: 0x00000000
+create with every user core: 0x00000000
+create with a core games can't use: 0x80028025
+create with affinity bit 0: 0x80028025
+change the priority of a dormant thread: 0x00000000
+change it to priority 0: 0x00000000
+change its affinity: 0x00000000
+its affinity after it: 0x00020000
+its stack free size is positive: 0x00000001
+change the current thread attribute with nothing: 0x00000000
+set attribute 0x80000000: 0x00000000
+clear attribute 0x80000000: 0x00000000
+set the VFP attribute: 0x8002000E
+info with a size of 0: 0x00000000
+info with a size past the struct: 0x8002710B
+it leaves the bytes past the struct alone: 0x00000001
+info with a NULL pointer: 0x80020006
+start with an argument size but no argument: 0x00000000
+wait for its end: 0x00000000
+the exit status into a NULL pointer: 0x80020006
+DONE

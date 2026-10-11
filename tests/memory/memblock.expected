@@ -1,0 +1,139 @@
+USER_RW: allocate one unit: 0x00000000
+USER_RW: get the base: 0x00000000
+USER_RW: the base is aligned to the unit: 0x00000001
+USER_RW: the whole block holds writes: 0x00000001
+USER_RW: find by the base: 0x00000001
+USER_RW: find by the last byte: 0x00000000
+USER_RW: find by the whole range: 0x00000001
+USER_RW: info by address: 0x00000000
+USER_RW: its mapped base is the base: 0x00000001
+USER_RW: its mapped size: 0x00001000
+USER_RW: its memory type: 0x000000D0
+USER_RW: its access: 0x00000006
+USER_RW: its type: 0x0C20D060
+USER_RW: info by range: 0x00000000
+USER_RW: free: 0x00000000
+USER_RW: allocate half a unit: 0x80024B05
+USER_RW: allocate a unit and 4 KiB: 0x00000000
+USER_RW: allocate 0 bytes: 0x80020005
+USER_RW_UNCACHE: allocate one unit: 0x00000000
+USER_RW_UNCACHE: get the base: 0x00000000
+USER_RW_UNCACHE: the base is aligned to the unit: 0x00000001
+USER_RW_UNCACHE: the whole block holds writes: 0x00000001
+USER_RW_UNCACHE: find by the base: 0x00000001
+USER_RW_UNCACHE: find by the last byte: 0x00000000
+USER_RW_UNCACHE: find by the whole range: 0x00000001
+USER_RW_UNCACHE: info by address: 0x00000000
+USER_RW_UNCACHE: its mapped base is the base: 0x00000001
+USER_RW_UNCACHE: its mapped size: 0x00001000
+USER_RW_UNCACHE: its memory type: 0x00000080
+USER_RW_UNCACHE: its access: 0x00000006
+USER_RW_UNCACHE: its type: 0x0C208060
+USER_RW_UNCACHE: info by range: 0x00000000
+USER_RW_UNCACHE: free: 0x00000000
+USER_RW_UNCACHE: allocate half a unit: 0x80024B05
+USER_RW_UNCACHE: allocate a unit and 4 KiB: 0x00000000
+USER_RW_UNCACHE: allocate 0 bytes: 0x80020005
+USER_CDRAM_RW: allocate one unit: 0x00000000
+USER_CDRAM_RW: get the base: 0x00000000
+USER_CDRAM_RW: the base is aligned to the unit: 0x00000001
+USER_CDRAM_RW: the whole block holds writes: 0x00000001
+USER_CDRAM_RW: find by the base: 0x00000001
+USER_CDRAM_RW: find by the last byte: 0x00000000
+USER_CDRAM_RW: find by the whole range: 0x00000001
+USER_CDRAM_RW: info by address: 0x00000000
+USER_CDRAM_RW: its mapped base is the base: 0x00000001
+USER_CDRAM_RW: its mapped size: 0x00040000
+USER_CDRAM_RW: its memory type: 0x00000080
+USER_CDRAM_RW: its access: 0x00000006
+USER_CDRAM_RW: its type: 0x09408060
+USER_CDRAM_RW: info by range: 0x00000000
+USER_CDRAM_RW: free: 0x00000000
+USER_CDRAM_RW: allocate half a unit: 0x80024309
+USER_CDRAM_RW: allocate a unit and 4 KiB: 0x80024309
+USER_CDRAM_RW: allocate 0 bytes: 0x80020005
+USER_MAIN_PHYCONT_RW: allocate one unit: 0x00000000
+USER_MAIN_PHYCONT_RW: get the base: 0x00000000
+USER_MAIN_PHYCONT_RW: the base is aligned to the unit: 0x00000001
+USER_MAIN_PHYCONT_RW: the whole block holds writes: 0x00000001
+USER_MAIN_PHYCONT_RW: find by the base: 0x00000001
+USER_MAIN_PHYCONT_RW: find by the last byte: 0x00000000
+USER_MAIN_PHYCONT_RW: find by the whole range: 0x00000001
+USER_MAIN_PHYCONT_RW: info by address: 0x00000000
+USER_MAIN_PHYCONT_RW: its mapped base is the base: 0x00000001
+USER_MAIN_PHYCONT_RW: its mapped size: 0x00100000
+USER_MAIN_PHYCONT_RW: its memory type: 0x000000D0
+USER_MAIN_PHYCONT_RW: its access: 0x00000006
+USER_MAIN_PHYCONT_RW: its type: 0x0C80D060
+USER_MAIN_PHYCONT_RW: info by range: 0x00000000
+USER_MAIN_PHYCONT_RW: free: 0x00000000
+USER_MAIN_PHYCONT_RW: allocate half a unit: 0x80020005
+USER_MAIN_PHYCONT_RW: allocate a unit and 4 KiB: 0x80020005
+USER_MAIN_PHYCONT_RW: allocate 0 bytes: 0x80020005
+USER_MAIN_PHYCONT_NC_RW: allocate one unit: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: get the base: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: the base is aligned to the unit: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: the whole block holds writes: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: find by the base: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: find by the last byte: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: find by the whole range: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: info by address: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: its mapped base is the base: 0x00000001
+USER_MAIN_PHYCONT_NC_RW: its mapped size: 0x00100000
+USER_MAIN_PHYCONT_NC_RW: its memory type: 0x00000080
+USER_MAIN_PHYCONT_NC_RW: its access: 0x00000006
+USER_MAIN_PHYCONT_NC_RW: its type: 0x0D808060
+USER_MAIN_PHYCONT_NC_RW: info by range: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: free: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: allocate half a unit: 0x80020005
+USER_MAIN_PHYCONT_NC_RW: allocate a unit and 4 KiB: 0x80020005
+USER_MAIN_PHYCONT_NC_RW: allocate 0 bytes: 0x80020005
+allocate type 0: 0x80024702
+allocate type 0xFFFFFFFF: 0x80024702
+allocate the read only main type: 0x00000000
+allocate the device type: 0x00000000
+allocate the game type: 0x00000000
+allocate the common dialog type: 0x00000000
+allocate the tool type: 0x80024B01
+allocate with an empty name: 0x00000000
+allocate with a 31 character name: 0x00000000
+allocate with a 32 character name: 0x00000000
+allocate aligned to 1 MiB: 0x00000000
+the base is aligned to 1 MiB: 0x00000001
+allocate aligned to 0x0: 0x00000000
+allocate aligned to 0x800: 0x00000000
+allocate aligned to 0x1000: 0x00000000
+allocate aligned to 0x3000: 0x80020005
+allocate aligned to 0x1000000: 0x00000000
+allocate aligned to 0x2000000: 0x80020005
+allocate with an option size of 0: 0x80020009
+allocate with the vitasdk option size: 0x00000000
+allocate with option attribute 0: 0x00000000
+allocate with option attribute 0x80000000: 0x80020005
+allocate CDRAM aligned to 4 KiB: 0x80024309
+allocate physically contiguous memory with an alignment: 0x80020005
+free: 0x00000000
+free again: 0x80024501
+get the base of a freed block: 0x80024501
+find by the address of a freed block: 0x00000000
+free an unknown UID: 0x80024501
+free a semaphore: 0x80024508
+free UID 0: 0x80024501
+get the base of a semaphore: 0x80024508
+find the block of the stack: 0x80024501
+find the block of address 0: 0x80022007
+find the block of address 4: 0x80022007
+free memory size: 0x00000000
+a 1 MiB block takes 1 MiB of user memory: 0x00000001
+and no CDRAM: 0x00000001
+freeing it gives it back: 0x00000001
+free memory size with a size of 0: 0x80020005
+allocate for code: 0x00000000
+free it: 0x00000000
+allocate for code with 4 KiB: 0x80024B05
+allocate 1 GiB: 0x80024302
+get the base into a NULL pointer: 0x80020005
+info into a NULL pointer: 0x80022005
+free memory size into a NULL pointer: 0x80020005
+allocate with a NULL name: 0x80020006
+DONE

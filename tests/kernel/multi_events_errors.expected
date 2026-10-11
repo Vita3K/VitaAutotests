@@ -1,0 +1,26 @@
+wait OR with a set event and an unknown UID: 0x00000002
+with an unknown UID: the first result is the set event: 0x00000001
+with an unknown UID: the second result: 0x80028201
+wait OR with a set event and a deleted event: 0x00000002
+with a deleted event: the first result is the set event: 0x00000001
+with a deleted event: the second result: 0x80028201
+wait OR with a set event and a semaphore: 0x00000002
+with a semaphore: the first result is the set event: 0x00000001
+with a semaphore: the second result: 0x80028201
+wait OR with a set event and UID 0: 0x00000002
+with UID 0: the first result is the set event: 0x00000001
+with UID 0: the second result: 0x80028201
+wait with mode 0x0: 0x80028005
+wait with mode 0x3: 0x00000001
+wait with mode 0x4: 0x80020010
+wait with mode 0x100: 0x80020010
+wait on 0 events: 0x00000000
+wait for pattern 0: 0x80028005
+wait on the same event twice: 0x00000002
+wait AND with a timeout of 0: 0x80028005
+wait with callbacks: 0x00000001
+wait on 64 events: 0x00000040
+wait on 65 events: 0x8002000B
+wait without a result list: 0x00000000
+wait on a NULL list: 0x80020006
+DONE

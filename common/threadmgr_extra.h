@@ -120,6 +120,7 @@ typedef struct MsgPipeVector {
 } MsgPipeVector;
 
 SceInt32 sceKernelWaitMultipleEvents(WaitEvent *events, SceUInt32 count, SceUInt32 mode, ResultEvent *results, SceUInt32 *timeout);
+SceInt32 sceKernelWaitMultipleEventsCB(WaitEvent *events, SceUInt32 count, SceUInt32 mode, ResultEvent *results, SceUInt32 *timeout);
 SceInt32 sceKernelRegisterCallbackToEvent(SceUID event_id, SceUID callback_id);
 SceInt32 sceKernelSendMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);
 SceInt32 sceKernelReceiveMsgPipeVector(SceUID id, const MsgPipeVector *vectors, SceUInt32 count, SceUInt32 mode, SceSize *result, SceUInt32 *timeout);
@@ -132,3 +133,85 @@ SceInt32 sceKernelStopTimer(SceUID id);
 SceUInt64 sceKernelGetTimerTimeWide(SceUID id);
 SceUInt64 sceKernelSetTimerTimeWide(SceUID id, SceUInt64 time);
 SceInt32 sceKernelSetTimerEvent(SceUID id, SceInt32 type, SceUInt64 *interval, SceInt32 repeat);
+
+SceInt32 sceKernelLockLwMutexCB(SceKernelLwMutexWork *work, SceInt32 count, SceUInt32 *timeout);
+
+// What sceKernelGetLwMutexInfo and sceKernelGetLwMutexInfoById fill
+typedef struct LwMutexInfo {
+    SceSize size;
+    SceUID uid;
+    char name[32];
+    SceUInt32 attr;
+    SceKernelLwMutexWork *work;
+    SceInt32 initCount;
+    SceInt32 currentCount;
+    SceUID currentOwnerId;
+    SceUInt32 numWaitThreads;
+} LwMutexInfo;
+
+SceInt32 sceKernelGetLwMutexInfo(SceKernelLwMutexWork *work, LwMutexInfo *info);
+SceInt32 sceKernelGetLwMutexInfoById(SceUID id, LwMutexInfo *info);
+
+// What sceKernelGetLwCondInfo and sceKernelGetLwCondInfoById fill
+typedef struct LwCondInfo {
+    SceSize size;
+    SceUID uid;
+    char name[32];
+    SceUInt32 attr;
+    SceKernelLwCondWork *work;
+    SceKernelLwMutexWork *lwMutex;
+    SceUInt32 numWaitThreads;
+} LwCondInfo;
+
+SceInt32 sceKernelGetLwCondInfo(SceKernelLwCondWork *work, LwCondInfo *info);
+SceInt32 sceKernelGetLwCondInfoById(SceUID id, LwCondInfo *info);
+
+SceInt32 sceKernelCancelRWLock(SceUID id, SceUInt32 *num_read_waiters, SceUInt32 *num_write_waiters, SceInt32 flag);
+
+SceUID sceKernelOpenEventFlag(const char *name);
+SceInt32 sceKernelCloseEventFlag(SceUID id);
+SceUID sceKernelOpenMsgPipe(const char *name);
+SceInt32 sceKernelCloseMsgPipe(SceUID id);
+SceUID sceKernelOpenSimpleEvent(const char *name);
+SceInt32 sceKernelCloseSimpleEvent(SceUID id);
+SceUID sceKernelOpenTimer(const char *name);
+SceInt32 sceKernelCloseTimer(SceUID id);
+SceInt32 sceKernelDeleteTimer(SceUID id);
+
+// What sceKernelGetEventInfo fills, for simple events and timers
+typedef struct EventInfo {
+    SceSize size;
+    SceUID eventId;
+    char name[32];
+    SceUInt32 attr;
+    SceUInt32 eventPattern;
+    SceUInt64 userData;
+    SceUInt32 numWaitThreads;
+    SceInt32 reserved;
+} EventInfo;
+
+SceInt32 sceKernelGetEventInfo(SceUID id, EventInfo *info);
+SceInt32 sceKernelWaitEventCB(SceUID id, SceUInt32 pattern, SceUInt32 *result, SceUInt64 *user_data, SceUInt32 *timeout);
+SceInt32 sceKernelCancelEvent(SceUID id, SceUInt32 *num_wait_threads);
+
+// What sceKernelGetTimerInfo fills
+typedef struct TimerInfo {
+    SceSize size;
+    SceUID timerId;
+    char name[32];
+    SceUInt32 attr;
+    SceInt32 active;
+    SceKernelSysClock baseTime;
+    SceKernelSysClock currentTime;
+    SceKernelSysClock schedule;
+    SceKernelSysClock interval;
+    SceInt32 type;
+    SceInt32 repeat;
+    SceUInt32 numWaitThreads;
+    SceInt32 reserved;
+} TimerInfo;
+
+SceInt32 sceKernelGetTimerInfo(SceUID id, TimerInfo *info);
+SceInt32 sceKernelGetTimerTime(SceUID id, SceKernelSysClock *clock);
+SceInt32 sceKernelSetTimerTime(SceUID id, SceKernelSysClock *clock);
+SceInt32 sceKernelGetTimerBase(SceUID id, SceKernelSysClock *base);

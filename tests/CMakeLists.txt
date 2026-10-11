@@ -50,5 +50,45 @@ vita_test(timer_edges kernel/timer_edges.c)
 vita_test(multi_events kernel/multi_events.c)
 vita_test(event_bit_mask kernel/event_bit_mask.c)
 vita_test(core_affinity kernel/core_affinity.c)
+vita_test(sema_errors kernel/sema_errors.c)
+vita_test(mutex_errors kernel/mutex_errors.c)
+vita_test(lw_mutex_errors kernel/lw_mutex_errors.c)
+vita_test(event_flag_errors kernel/event_flag_errors.c)
+vita_test(cond_errors kernel/cond_errors.c)
+vita_test(lw_cond_errors kernel/lw_cond_errors.c)
+vita_test(rwlock_errors kernel/rwlock_errors.c)
+vita_test(msgpipe_errors kernel/msgpipe_errors.c)
+vita_test(simple_event_errors kernel/simple_event_errors.c)
+vita_test(simple_event_wait_null kernel/simple_event_wait_null.c)
+vita_test(simple_event_null_pointers kernel/simple_event_null_pointers.c)
+vita_test(timer_errors kernel/timer_errors.c)
+vita_test(timer_event_interval_zero kernel/timer_event_interval_zero.c)
+vita_test(callback_errors kernel/callback_errors.c)
+vita_test(thread_errors kernel/thread_errors.c)
+vita_test(msgpipe_vectors kernel/msgpipe_vectors.c)
+vita_test(multi_events_errors kernel/multi_events_errors.c)
+vita_test(thread_lifecycle kernel/thread_lifecycle.c)
+vita_test(clocks kernel/clocks.c)
+vita_test(tls kernel/tls.c)
+
+vita_test(memblock memory/memblock.c)
+
+vita_test(files io/files.c)
+vita_test(directories io/directories.c)
+
+vita_test(fibers fiber/fibers.c)
+vita_test(fiber_entry_returns fiber/fiber_entry_returns.c)
+
+vita_test(rtc rtc/rtc.c)
+
+vita_test(strings clib/strings.c)
+vita_test(format clib/format.c)
+vita_test(mspace clib/mspace.c)
+
+vita_test(sysmodule sysmodule/sysmodule.c)
+
+vita_test(audioout audio/audioout.c)
+
+vita_test(display display/display.c)
 
 vita_tests_vpk(VTST00000)

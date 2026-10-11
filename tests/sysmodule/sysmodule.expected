@@ -1,0 +1,92 @@
+fiber: loaded at the start: 0x805A1001
+fiber: load: 0x00000000
+fiber: loaded after it: 0x00000000
+fiber: load again: 0x00000000
+fiber: unload: 0x00000000
+fiber: loaded after unloading once: 0x00000000
+fiber: unload again: 0x00000000
+fiber: loaded after unloading twice: 0x805A1001
+fiber: unload once more: 0x805A1001
+ult: loaded at the start: 0x805A1001
+ult: load: 0x80010002
+ult: loaded after it: 0x805A1001
+ult: load again: 0x80010002
+ult: unload: 0x00000000
+ult: loaded after unloading once: 0x805A1001
+ult: unload again: 0x805A1001
+ult: loaded after unloading twice: 0x805A1001
+ult: unload once more: 0x805A1001
+pgf: loaded at the start: 0x805A1001
+pgf: load: 0x00000000
+pgf: loaded after it: 0x00000000
+pgf: load again: 0x00000000
+pgf: unload: 0x00000000
+pgf: loaded after unloading once: 0x00000000
+pgf: unload again: 0x00000000
+pgf: loaded after unloading twice: 0x805A1001
+pgf: unload once more: 0x805A1001
+app util: loaded at the start: 0x805A1001
+app util: load: 0x00000000
+app util: loaded after it: 0x00000000
+app util: load again: 0x00000000
+app util: unload: 0x00000000
+app util: loaded after unloading once: 0x00000000
+app util: unload again: 0x00000000
+app util: loaded after unloading twice: 0x805A1001
+app util: unload once more: 0x805A1001
+xml: loaded at the start: 0x805A1001
+xml: load: 0x00000000
+xml: loaded after it: 0x00000000
+xml: load again: 0x00000000
+xml: unload: 0x00000000
+xml: loaded after unloading once: 0x00000000
+xml: unload again: 0x00000000
+xml: loaded after unloading twice: 0x805A1001
+xml: unload once more: 0x805A1001
+sqlite: loaded at the start: 0x805A1001
+sqlite: load: 0x00000000
+sqlite: loaded after it: 0x00000000
+sqlite: load again: 0x00000000
+sqlite: unload: 0x00000000
+sqlite: loaded after unloading once: 0x00000000
+sqlite: unload again: 0x00000000
+sqlite: loaded after unloading twice: 0x805A1001
+sqlite: unload once more: 0x805A1001
+net: loaded at the start: 0x805A1001
+net: load: 0x00000000
+net: loaded after it: 0x00000000
+net: load again: 0x00000000
+net: unload: 0x00000000
+net: loaded after unloading once: 0x00000000
+net: unload again: 0x00000000
+net: loaded after unloading twice: 0x805A1001
+net: unload once more: 0x805A1001
+load http without net: 0x00000000
+http is loaded: 0x00000000
+load net: 0x00000000
+load http with net: 0x00000000
+unload net while http is loaded: 0x00000000
+net is loaded: 0x805A1001
+unload http: 0x00000000
+load module 0x0: 0x805A1000
+module 0x0 is loaded: 0x805A1000
+unload module 0x0: 0x805A1000
+load module 0x36: 0x805A1000
+module 0x36 is loaded: 0x805A1000
+unload module 0x36: 0x805A1000
+load module 0x100: 0x805A1000
+module 0x100 is loaded: 0x805A1000
+unload module 0x100: 0x805A1000
+load module 0x8000: 0x805A1000
+module 0x8000 is loaded: 0x805A1000
+unload module 0x8000: 0x805A1000
+load module 0xFFFF: 0x805A1000
+module 0xFFFF is loaded: 0x805A1000
+unload module 0xFFFF: 0x805A1000
+load module 0x10000: 0x805A1000
+module 0x10000 is loaded: 0x805A1000
+unload module 0x10000: 0x805A1000
+load module 0xFFFFFFFF: 0x805A1000
+module 0xFFFFFFFF is loaded: 0x805A1000
+unload module 0xFFFFFFFF: 0x805A1000
+DONE

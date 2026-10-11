@@ -2,6 +2,8 @@
 // file.
 #pragma once
 
+#include <stdarg.h>
+
 #include <psp2/io/fcntl.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/processmgr.h>
@@ -32,6 +34,18 @@ static inline void test_print(const char *name, int value) {
     const int len = sceClibSnprintf(line, sizeof(line), "%s: 0x%08X\n", name, (unsigned)value);
     test_output(line, len < (int)sizeof(line) ? len : (int)sizeof(line) - 1);
 }
+
+// Prints one observed value, under a label built from fmt like printf
+__attribute__((format(printf, 2, 3))) static inline void test_printf(int value, const char *fmt, ...) {
+    char label[128];
+    va_list args;
+    va_start(args, fmt);
+    sceClibVsnprintf(label, sizeof(label), fmt, args);
+    va_end(args);
+    test_print(label, value);
+}
+
+#define PRINTF(value, ...) test_printf((int)(value), __VA_ARGS__)
 
 // Returns 0 for the UID of a created object, or the error, so the output doesn't depend on UID values
 static inline int test_created(SceUID uid) {

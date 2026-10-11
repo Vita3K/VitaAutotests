@@ -1,0 +1,69 @@
+compare abc with abd: 0xFFFFFFFF
+compare abd with abc: 0x00000001
+compare abc with abc: 0x00000000
+compare ab with abc: 0xFFFFFF9D
+compare a high byte with a low one: 0x0000007F
+compare the first 2 of abc and abd: 0x00000000
+compare 0 characters: 0x00000000
+compare ABC with abd ignoring case: 0xFFFFFFFF
+compare ABC with abc ignoring case: 0x00000000
+compare bytes 1 2 3 with 1 2 4: 0xFFFFFFFF
+compare bytes 0xFF with 0x01: 0x000000FE
+compare 0 bytes: 0x00000000
+find the first l: 0x00000002
+find the last l: 0x00000010
+find a missing character: 0xFFFFFFFF
+find the terminator: 0x00000012
+find the last terminator: 0x00000012
+find a character past 0xFF: 0x00000006
+find hello: 0x00000000
+find world: 0x00000006
+find a missing string: 0xFFFFFFFF
+find an empty string: 0x00000000
+find a byte: 0x00000006
+find a byte past the length: 0xFFFFFFFF
+the length of hello up to 10: 0x00000005
+the length of hello up to 3: 0x00000003
+the length of an empty string: 0x00000000
+copy abc into 8 bytes returns the destination: 0x00000000
+it pads the rest with zeros: 0x00000001
+copy 3 of abcdef leaves no terminator: 0x00000001
+append cd returns the destination: 0x00000000
+it appends: 0x00000001
+append 2 of efgh: 0x00000001
+set returns the destination: 0x00000000
+it stores the low byte: 0x00000001
+move forward over itself returns the destination: 0x00000002
+it moves as if through a copy: 0x00000001
+move backward over itself: 0x00000001
+copy returns the destination: 0x00000000
+it copies: 0x00000001
+copy 0 bytes: 0x00000000
+lower case of 0x61: 0x00000061
+upper case of 0x61: 0x00000041
+character class of 0x61: 0x00000042
+lower case of 0x5A: 0x0000007A
+upper case of 0x5A: 0x0000005A
+character class of 0x5A: 0x00000001
+lower case of 0x35: 0x00000035
+upper case of 0x35: 0x00000035
+character class of 0x35: 0x00000004
+lower case of 0x20: 0x00000020
+upper case of 0x20: 0x00000020
+character class of 0x20: 0x00000018
+lower case of 0x0A: 0x0000000A
+upper case of 0x0A: 0x0000000A
+character class of 0x0A: 0x00000008
+lower case of 0x5F: 0x0000005F
+upper case of 0x5F: 0x0000005F
+character class of 0x5F: 0x00000010
+lower case of 0x7F: 0x0000007F
+upper case of 0x7F: 0x0000007F
+character class of 0x7F: 0x00000020
+lower case of 0xC0: 0xFFFFFFC0
+upper case of 0xC0: 0xFFFFFFC0
+character class of 0xC0: 0x00000000
+lower case of 0xE9: 0xFFFFFFE9
+upper case of 0xE9: 0xFFFFFFE9
+character class of 0xE9: 0x00000000
+DONE

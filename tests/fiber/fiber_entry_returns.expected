@@ -1,0 +1,6 @@
+load the fiber module: 0x00000000
+run a fiber whose entry returns: 0x80590006
+it leaves the return value alone: 0x00000000
+run it again: 0x80590006
+finalize it: 0x00000000
+DONE
