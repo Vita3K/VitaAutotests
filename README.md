@@ -39,6 +39,30 @@ Install the vpk and pick a test in one of two ways:
 
 When it closes, `ux0:data/vita-autotests/output/<name>.txt` holds the output, which is what the test's `.expected` file should hold.
 
+## Run from the PC
+
+`run_tests.py` runs the tests on a Vita on the same network as the PC, and compares their output with the `.expected` files, like pspautotests does with PSPLink. It needs only Python 3.8 or later. On the Vita, besides the vpk, it needs [vitacompanion](https://github.com/devnoname120/vitacompanion), which gives the PC an FTP server on port 1337 and a command port on 1338. Copy `vitacompanion.suprx` and `vitacompanion_kernel.skprx` to `ur0:tai/`, add them to `ur0:tai/config.txt`, and reboot:
+
+```
+*KERNEL
+ur0:tai/vitacompanion_kernel.skprx
+
+*main
+ur0:tai/vitacompanion.suprx
+```
+
+Then pass the Vita's IP address, shown in its network settings, or set `VITA_HOST`:
+
+```
+python run_tests.py --host 192.168.1.20                  # every test
+python run_tests.py -H 192.168.1.20 mutex kernel/cond    # tests by name or path
+python run_tests.py -H 192.168.1.20 tests/io             # the tests in a directory
+python run_tests.py -H 192.168.1.20 -v mutex             # with the diff of a failing test
+python run_tests.py -H 192.168.1.20 -g mutex             # saves the output as mutex.expected
+```
+
+For each test it closes the apps open on the Vita, writes the test name to `test.txt`, launches the app, and reads the output file over FTP until it ends with `DONE`. A test still running after `--timeout` seconds, 60 by default, is closed and fails. Don't use the Vita while the tests run.
+
 ## Run on an emulator
 
 Pass the test name as the first argument, and compare the debug output with the test's `.expected` file.
