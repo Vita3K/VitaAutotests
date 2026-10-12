@@ -1,0 +1,8 @@
+raise the second low priority waiter: 0x00000000
+the low priority waiter that waited first: 0x00000003
+the raised waiter: 0x00000002
+the waiter already at that priority: 0x00000001
+change the first waiter to its own priority: 0x00000000
+the first waiter: 0x00000002
+the second waiter: 0x00000001
+DONE
