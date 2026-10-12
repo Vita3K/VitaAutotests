@@ -169,6 +169,8 @@ vita_test(delete_with_waiters kernel/delete_with_waiters.c)
 vita_test(name_lookup kernel/name_lookup.c)
 vita_test(object_limits kernel/object_limits.c)
 vita_test(poll_calls kernel/poll_calls.c)
+vita_test(create_attributes kernel/create_attributes.c)
+vita_test(info_sizes kernel/info_sizes.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
@@ -187,6 +189,7 @@ vita_test(address_ranges memory/address_ranges.c)
 
 vita_test(files io/files.c)
 vita_test(directories io/directories.c)
+vita_test(stat_mode io/stat_mode.c)
 
 vita_test(fibers fiber/fibers.c)
 vita_test(fiber_entry_returns fiber/fiber_entry_returns.c)
@@ -205,5 +208,7 @@ vita_test(sysmodule sysmodule/sysmodule.c)
 vita_test(audioout audio/audioout.c)
 
 vita_test(display display/display.c)
+
+vita_test(savedata_slot_id apputil/savedata_slot_id.c)
 
 vita_tests_vpk(VTST00000)

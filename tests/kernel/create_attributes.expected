@@ -1,0 +1,367 @@
+mutex with attribute 0x8000: 0x8002000E
+mutex with attributes 0x8000 and priority: 0x8002000E
+mutex with attributes 0x8000, openable and recursive: 0x8002000E
+mutex with no attributes: 0x00000000
+mutex with attribute 0x1: 0x8002000E
+mutex with attribute 0x2: 0x00000000
+mutex with attribute 0x4: 0x80020005
+mutex with attribute 0x8: 0x8002000E
+mutex with attribute 0x10: 0x8002000E
+mutex with attribute 0x20: 0x8002000E
+mutex with attribute 0x40: 0x8002000E
+mutex with attribute 0x80: 0x00000000
+mutex with attribute 0x100: 0x8002000E
+mutex with attribute 0x200: 0x8002000E
+mutex with attribute 0x400: 0x8002000E
+mutex with attribute 0x800: 0x8002000E
+mutex with attribute 0x1000: 0x8002000E
+mutex with attribute 0x2000: 0x00000000
+mutex with attribute 0x4000: 0x8002000E
+mutex with attribute 0x8000: 0x8002000E
+mutex with attribute 0x10000: 0x8002000E
+mutex with attribute 0x20000: 0x8002000E
+mutex with attribute 0x40000: 0x8002000E
+mutex with attribute 0x80000: 0x8002000E
+mutex with attribute 0x100000: 0x8002000E
+mutex with attribute 0x200000: 0x8002000E
+mutex with attribute 0x400000: 0x8002000E
+mutex with attribute 0x800000: 0x8002000E
+mutex with attribute 0x1000000: 0x8002000E
+mutex with attribute 0x2000000: 0x8002000E
+mutex with attribute 0x4000000: 0x8002000E
+mutex with attribute 0x8000000: 0x8002000E
+mutex with attribute 0x10000000: 0x8002000E
+mutex with attribute 0x20000000: 0x8002000E
+mutex with attribute 0x40000000: 0x8002000E
+mutex with attribute 0x80000000: 0x8002000E
+lightweight mutex with no attributes: 0x00000000
+lightweight mutex with attribute 0x1: 0x8002000E
+lightweight mutex with attribute 0x2: 0x00000000
+lightweight mutex with attribute 0x4: 0x8002000E
+lightweight mutex with attribute 0x8: 0x8002000E
+lightweight mutex with attribute 0x10: 0x8002000E
+lightweight mutex with attribute 0x20: 0x8002000E
+lightweight mutex with attribute 0x40: 0x8002000E
+lightweight mutex with attribute 0x80: 0x8002000E
+lightweight mutex with attribute 0x100: 0x8002000E
+lightweight mutex with attribute 0x200: 0x8002000E
+lightweight mutex with attribute 0x400: 0x8002000E
+lightweight mutex with attribute 0x800: 0x8002000E
+lightweight mutex with attribute 0x1000: 0x8002000E
+lightweight mutex with attribute 0x2000: 0x00000000
+lightweight mutex with attribute 0x4000: 0x8002000E
+lightweight mutex with attribute 0x8000: 0x8002000E
+lightweight mutex with attribute 0x10000: 0x8002000E
+lightweight mutex with attribute 0x20000: 0x8002000E
+lightweight mutex with attribute 0x40000: 0x8002000E
+lightweight mutex with attribute 0x80000: 0x8002000E
+lightweight mutex with attribute 0x100000: 0x8002000E
+lightweight mutex with attribute 0x200000: 0x8002000E
+lightweight mutex with attribute 0x400000: 0x8002000E
+lightweight mutex with attribute 0x800000: 0x8002000E
+lightweight mutex with attribute 0x1000000: 0x8002000E
+lightweight mutex with attribute 0x2000000: 0x8002000E
+lightweight mutex with attribute 0x4000000: 0x8002000E
+lightweight mutex with attribute 0x8000000: 0x8002000E
+lightweight mutex with attribute 0x10000000: 0x8002000E
+lightweight mutex with attribute 0x20000000: 0x8002000E
+lightweight mutex with attribute 0x40000000: 0x8002000E
+lightweight mutex with attribute 0x80000000: 0x8002000E
+semaphore with no attributes: 0x00000000
+semaphore with attribute 0x1: 0x8002000E
+semaphore with attribute 0x2: 0x8002000E
+semaphore with attribute 0x4: 0x8002000E
+semaphore with attribute 0x8: 0x8002000E
+semaphore with attribute 0x10: 0x8002000E
+semaphore with attribute 0x20: 0x8002000E
+semaphore with attribute 0x40: 0x8002000E
+semaphore with attribute 0x80: 0x00000000
+semaphore with attribute 0x100: 0x8002000E
+semaphore with attribute 0x200: 0x8002000E
+semaphore with attribute 0x400: 0x8002000E
+semaphore with attribute 0x800: 0x8002000E
+semaphore with attribute 0x1000: 0x8002000E
+semaphore with attribute 0x2000: 0x00000000
+semaphore with attribute 0x4000: 0x8002000E
+semaphore with attribute 0x8000: 0x8002000E
+semaphore with attribute 0x10000: 0x8002000E
+semaphore with attribute 0x20000: 0x8002000E
+semaphore with attribute 0x40000: 0x8002000E
+semaphore with attribute 0x80000: 0x8002000E
+semaphore with attribute 0x100000: 0x8002000E
+semaphore with attribute 0x200000: 0x8002000E
+semaphore with attribute 0x400000: 0x8002000E
+semaphore with attribute 0x800000: 0x8002000E
+semaphore with attribute 0x1000000: 0x8002000E
+semaphore with attribute 0x2000000: 0x8002000E
+semaphore with attribute 0x4000000: 0x8002000E
+semaphore with attribute 0x8000000: 0x8002000E
+semaphore with attribute 0x10000000: 0x8002000E
+semaphore with attribute 0x20000000: 0x8002000E
+semaphore with attribute 0x40000000: 0x8002000E
+semaphore with attribute 0x80000000: 0x8002000E
+event flag with no attributes: 0x00000000
+event flag with attribute 0x1: 0x8002000E
+event flag with attribute 0x2: 0x8002000E
+event flag with attribute 0x4: 0x8002000E
+event flag with attribute 0x8: 0x8002000E
+event flag with attribute 0x10: 0x8002000E
+event flag with attribute 0x20: 0x8002000E
+event flag with attribute 0x40: 0x8002000E
+event flag with attribute 0x80: 0x00000000
+event flag with attribute 0x100: 0x8002000E
+event flag with attribute 0x200: 0x8002000E
+event flag with attribute 0x400: 0x8002000E
+event flag with attribute 0x800: 0x8002000E
+event flag with attribute 0x1000: 0x00000000
+event flag with attribute 0x2000: 0x00000000
+event flag with attribute 0x4000: 0x8002000E
+event flag with attribute 0x8000: 0x8002000E
+event flag with attribute 0x10000: 0x8002000E
+event flag with attribute 0x20000: 0x8002000E
+event flag with attribute 0x40000: 0x8002000E
+event flag with attribute 0x80000: 0x8002000E
+event flag with attribute 0x100000: 0x8002000E
+event flag with attribute 0x200000: 0x8002000E
+event flag with attribute 0x400000: 0x8002000E
+event flag with attribute 0x800000: 0x8002000E
+event flag with attribute 0x1000000: 0x8002000E
+event flag with attribute 0x2000000: 0x8002000E
+event flag with attribute 0x4000000: 0x8002000E
+event flag with attribute 0x8000000: 0x8002000E
+event flag with attribute 0x10000000: 0x8002000E
+event flag with attribute 0x20000000: 0x8002000E
+event flag with attribute 0x40000000: 0x8002000E
+event flag with attribute 0x80000000: 0x8002000E
+reader/writer lock with no attributes: 0x00000000
+reader/writer lock with attribute 0x1: 0x8002000E
+reader/writer lock with attribute 0x2: 0x00000000
+reader/writer lock with attribute 0x4: 0x00000000
+reader/writer lock with attribute 0x8: 0x8002000E
+reader/writer lock with attribute 0x10: 0x8002000E
+reader/writer lock with attribute 0x20: 0x8002000E
+reader/writer lock with attribute 0x40: 0x8002000E
+reader/writer lock with attribute 0x80: 0x00000000
+reader/writer lock with attribute 0x100: 0x8002000E
+reader/writer lock with attribute 0x200: 0x8002000E
+reader/writer lock with attribute 0x400: 0x8002000E
+reader/writer lock with attribute 0x800: 0x8002000E
+reader/writer lock with attribute 0x1000: 0x8002000E
+reader/writer lock with attribute 0x2000: 0x00000000
+reader/writer lock with attribute 0x4000: 0x8002000E
+reader/writer lock with attribute 0x8000: 0x8002000E
+reader/writer lock with attribute 0x10000: 0x8002000E
+reader/writer lock with attribute 0x20000: 0x8002000E
+reader/writer lock with attribute 0x40000: 0x8002000E
+reader/writer lock with attribute 0x80000: 0x8002000E
+reader/writer lock with attribute 0x100000: 0x8002000E
+reader/writer lock with attribute 0x200000: 0x8002000E
+reader/writer lock with attribute 0x400000: 0x8002000E
+reader/writer lock with attribute 0x800000: 0x8002000E
+reader/writer lock with attribute 0x1000000: 0x8002000E
+reader/writer lock with attribute 0x2000000: 0x8002000E
+reader/writer lock with attribute 0x4000000: 0x8002000E
+reader/writer lock with attribute 0x8000000: 0x8002000E
+reader/writer lock with attribute 0x10000000: 0x8002000E
+reader/writer lock with attribute 0x20000000: 0x8002000E
+reader/writer lock with attribute 0x40000000: 0x8002000E
+reader/writer lock with attribute 0x80000000: 0x8002000E
+simple event with no attributes: 0x00000000
+simple event with attribute 0x1: 0x8002000E
+simple event with attribute 0x2: 0x8002000E
+simple event with attribute 0x4: 0x8002000E
+simple event with attribute 0x8: 0x8002000E
+simple event with attribute 0x10: 0x8002000E
+simple event with attribute 0x20: 0x8002000E
+simple event with attribute 0x40: 0x8002000E
+simple event with attribute 0x80: 0x00000000
+simple event with attribute 0x100: 0x00000000
+simple event with attribute 0x200: 0x8002000E
+simple event with attribute 0x400: 0x8002000E
+simple event with attribute 0x800: 0x00000000
+simple event with attribute 0x1000: 0x8002000E
+simple event with attribute 0x2000: 0x00000000
+simple event with attribute 0x4000: 0x8002000E
+simple event with attribute 0x8000: 0x8002000E
+simple event with attribute 0x10000: 0x8002000E
+simple event with attribute 0x20000: 0x8002000E
+simple event with attribute 0x40000: 0x8002000E
+simple event with attribute 0x80000: 0x8002000E
+simple event with attribute 0x100000: 0x8002000E
+simple event with attribute 0x200000: 0x8002000E
+simple event with attribute 0x400000: 0x8002000E
+simple event with attribute 0x800000: 0x8002000E
+simple event with attribute 0x1000000: 0x8002000E
+simple event with attribute 0x2000000: 0x8002000E
+simple event with attribute 0x4000000: 0x8002000E
+simple event with attribute 0x8000000: 0x8002000E
+simple event with attribute 0x10000000: 0x8002000E
+simple event with attribute 0x20000000: 0x8002000E
+simple event with attribute 0x40000000: 0x8002000E
+simple event with attribute 0x80000000: 0x8002000E
+message pipe with no attributes: 0x00000000
+message pipe with attribute 0x1: 0x00000000
+message pipe with attribute 0x2: 0x00000000
+message pipe with attribute 0x4: 0x00000000
+message pipe with attribute 0x8: 0x00000000
+message pipe with attribute 0x10: 0x8002000E
+message pipe with attribute 0x20: 0x8002000E
+message pipe with attribute 0x40: 0x8002000E
+message pipe with attribute 0x80: 0x00000000
+message pipe with attribute 0x100: 0x00000000
+message pipe with attribute 0x200: 0x8002000E
+message pipe with attribute 0x400: 0x8002000E
+message pipe with attribute 0x800: 0x00000000
+message pipe with attribute 0x1000: 0x8002000E
+message pipe with attribute 0x2000: 0x8002000E
+message pipe with attribute 0x4000: 0x8002000E
+message pipe with attribute 0x8000: 0x8002000E
+message pipe with attribute 0x10000: 0x8002000E
+message pipe with attribute 0x20000: 0x8002000E
+message pipe with attribute 0x40000: 0x8002000E
+message pipe with attribute 0x80000: 0x8002000E
+message pipe with attribute 0x100000: 0x8002000E
+message pipe with attribute 0x200000: 0x8002000E
+message pipe with attribute 0x400000: 0x8002000E
+message pipe with attribute 0x800000: 0x8002000E
+message pipe with attribute 0x1000000: 0x8002000E
+message pipe with attribute 0x2000000: 0x8002000E
+message pipe with attribute 0x4000000: 0x8002000E
+message pipe with attribute 0x8000000: 0x8002000E
+message pipe with attribute 0x10000000: 0x8002000E
+message pipe with attribute 0x20000000: 0x8002000E
+message pipe with attribute 0x40000000: 0x8002000E
+message pipe with attribute 0x80000000: 0x8002000E
+condition variable with no attributes: 0x00000000
+condition variable with attribute 0x1: 0x8002000E
+condition variable with attribute 0x2: 0x8002000E
+condition variable with attribute 0x4: 0x8002000E
+condition variable with attribute 0x8: 0x8002000E
+condition variable with attribute 0x10: 0x8002000E
+condition variable with attribute 0x20: 0x8002000E
+condition variable with attribute 0x40: 0x8002000E
+condition variable with attribute 0x80: 0x8002000E
+condition variable with attribute 0x100: 0x8002000E
+condition variable with attribute 0x200: 0x8002000E
+condition variable with attribute 0x400: 0x8002000E
+condition variable with attribute 0x800: 0x8002000E
+condition variable with attribute 0x1000: 0x8002000E
+condition variable with attribute 0x2000: 0x00000000
+condition variable with attribute 0x4000: 0x8002000E
+condition variable with attribute 0x8000: 0x8002000E
+condition variable with attribute 0x10000: 0x8002000E
+condition variable with attribute 0x20000: 0x8002000E
+condition variable with attribute 0x40000: 0x8002000E
+condition variable with attribute 0x80000: 0x8002000E
+condition variable with attribute 0x100000: 0x8002000E
+condition variable with attribute 0x200000: 0x8002000E
+condition variable with attribute 0x400000: 0x8002000E
+condition variable with attribute 0x800000: 0x8002000E
+condition variable with attribute 0x1000000: 0x8002000E
+condition variable with attribute 0x2000000: 0x8002000E
+condition variable with attribute 0x4000000: 0x8002000E
+condition variable with attribute 0x8000000: 0x8002000E
+condition variable with attribute 0x10000000: 0x8002000E
+condition variable with attribute 0x20000000: 0x8002000E
+condition variable with attribute 0x40000000: 0x8002000E
+condition variable with attribute 0x80000000: 0x8002000E
+lightweight condition variable with no attributes: 0x00000000
+lightweight condition variable with attribute 0x1: 0x8002000E
+lightweight condition variable with attribute 0x2: 0x8002000E
+lightweight condition variable with attribute 0x4: 0x8002000E
+lightweight condition variable with attribute 0x8: 0x8002000E
+lightweight condition variable with attribute 0x10: 0x8002000E
+lightweight condition variable with attribute 0x20: 0x8002000E
+lightweight condition variable with attribute 0x40: 0x8002000E
+lightweight condition variable with attribute 0x80: 0x8002000E
+lightweight condition variable with attribute 0x100: 0x8002000E
+lightweight condition variable with attribute 0x200: 0x8002000E
+lightweight condition variable with attribute 0x400: 0x8002000E
+lightweight condition variable with attribute 0x800: 0x8002000E
+lightweight condition variable with attribute 0x1000: 0x8002000E
+lightweight condition variable with attribute 0x2000: 0x00000000
+lightweight condition variable with attribute 0x4000: 0x8002000E
+lightweight condition variable with attribute 0x8000: 0x8002000E
+lightweight condition variable with attribute 0x10000: 0x8002000E
+lightweight condition variable with attribute 0x20000: 0x8002000E
+lightweight condition variable with attribute 0x40000: 0x8002000E
+lightweight condition variable with attribute 0x80000: 0x8002000E
+lightweight condition variable with attribute 0x100000: 0x8002000E
+lightweight condition variable with attribute 0x200000: 0x8002000E
+lightweight condition variable with attribute 0x400000: 0x8002000E
+lightweight condition variable with attribute 0x800000: 0x8002000E
+lightweight condition variable with attribute 0x1000000: 0x8002000E
+lightweight condition variable with attribute 0x2000000: 0x8002000E
+lightweight condition variable with attribute 0x4000000: 0x8002000E
+lightweight condition variable with attribute 0x8000000: 0x8002000E
+lightweight condition variable with attribute 0x10000000: 0x8002000E
+lightweight condition variable with attribute 0x20000000: 0x8002000E
+lightweight condition variable with attribute 0x40000000: 0x8002000E
+lightweight condition variable with attribute 0x80000000: 0x8002000E
+timer with no attributes: 0x00000000
+timer with attribute 0x1: 0x8002000E
+timer with attribute 0x2: 0x8002000E
+timer with attribute 0x4: 0x8002000E
+timer with attribute 0x8: 0x8002000E
+timer with attribute 0x10: 0x8002000E
+timer with attribute 0x20: 0x8002000E
+timer with attribute 0x40: 0x8002000E
+timer with attribute 0x80: 0x00000000
+timer with attribute 0x100: 0x00000000
+timer with attribute 0x200: 0x8002000E
+timer with attribute 0x400: 0x8002000E
+timer with attribute 0x800: 0x00000000
+timer with attribute 0x1000: 0x8002000E
+timer with attribute 0x2000: 0x00000000
+timer with attribute 0x4000: 0x8002000E
+timer with attribute 0x8000: 0x8002000E
+timer with attribute 0x10000: 0x8002000E
+timer with attribute 0x20000: 0x8002000E
+timer with attribute 0x40000: 0x8002000E
+timer with attribute 0x80000: 0x8002000E
+timer with attribute 0x100000: 0x8002000E
+timer with attribute 0x200000: 0x8002000E
+timer with attribute 0x400000: 0x8002000E
+timer with attribute 0x800000: 0x8002000E
+timer with attribute 0x1000000: 0x8002000E
+timer with attribute 0x2000000: 0x8002000E
+timer with attribute 0x4000000: 0x8002000E
+timer with attribute 0x8000000: 0x8002000E
+timer with attribute 0x10000000: 0x8002000E
+timer with attribute 0x20000000: 0x8002000E
+timer with attribute 0x40000000: 0x8002000E
+timer with attribute 0x80000000: 0x8002000E
+callback with no attributes: 0x00000000
+callback with attribute 0x1: 0x8002000E
+callback with attribute 0x2: 0x8002000E
+callback with attribute 0x4: 0x8002000E
+callback with attribute 0x8: 0x8002000E
+callback with attribute 0x10: 0x8002000E
+callback with attribute 0x20: 0x8002000E
+callback with attribute 0x40: 0x8002000E
+callback with attribute 0x80: 0x8002000E
+callback with attribute 0x100: 0x8002000E
+callback with attribute 0x200: 0x8002000E
+callback with attribute 0x400: 0x8002000E
+callback with attribute 0x800: 0x8002000E
+callback with attribute 0x1000: 0x8002000E
+callback with attribute 0x2000: 0x8002000E
+callback with attribute 0x4000: 0x8002000E
+callback with attribute 0x8000: 0x8002000E
+callback with attribute 0x10000: 0x8002000E
+callback with attribute 0x20000: 0x8002000E
+callback with attribute 0x40000: 0x8002000E
+callback with attribute 0x80000: 0x8002000E
+callback with attribute 0x100000: 0x8002000E
+callback with attribute 0x200000: 0x8002000E
+callback with attribute 0x400000: 0x8002000E
+callback with attribute 0x800000: 0x8002000E
+callback with attribute 0x1000000: 0x8002000E
+callback with attribute 0x2000000: 0x8002000E
+callback with attribute 0x4000000: 0x8002000E
+callback with attribute 0x8000000: 0x8002000E
+callback with attribute 0x10000000: 0x8002000E
+callback with attribute 0x20000000: 0x8002000E
+callback with attribute 0x40000000: 0x8002000E
+callback with attribute 0x80000000: 0x8002000E
+DONE

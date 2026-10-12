@@ -1,0 +1,241 @@
+mutex with a size of 0x0: 0x00000000
+mutex bytes written with a size of 0x0: 0x00000000
+mutex size left with a size of 0x0: 0x00000000
+mutex with a size of 0x4: 0x00000000
+mutex bytes written with a size of 0x4: 0x00000000
+mutex size left with a size of 0x4: 0x00000040
+mutex with a size of 0x20: 0x00000000
+mutex bytes written with a size of 0x20: 0x00000020
+mutex size left with a size of 0x20: 0x00000040
+mutex with a size of 0x24: 0x00000000
+mutex bytes written with a size of 0x24: 0x00000024
+mutex size left with a size of 0x24: 0x00000040
+mutex with a size of 0x28: 0x00000000
+mutex bytes written with a size of 0x28: 0x00000028
+mutex size left with a size of 0x28: 0x00000040
+mutex with a size of 0x2C: 0x00000000
+mutex bytes written with a size of 0x2C: 0x0000002C
+mutex size left with a size of 0x2C: 0x00000040
+mutex with a size of 0x30: 0x00000000
+mutex bytes written with a size of 0x30: 0x00000030
+mutex size left with a size of 0x30: 0x00000040
+mutex with a size of 0x34: 0x00000000
+mutex bytes written with a size of 0x34: 0x00000034
+mutex size left with a size of 0x34: 0x00000040
+mutex with a size of 0x38: 0x00000000
+mutex bytes written with a size of 0x38: 0x00000038
+mutex size left with a size of 0x38: 0x00000040
+mutex with a size of 0x3C: 0x00000000
+mutex bytes written with a size of 0x3C: 0x0000003C
+mutex size left with a size of 0x3C: 0x00000040
+mutex with a size of 0x40: 0x00000000
+mutex bytes written with a size of 0x40: 0x00000040
+mutex size left with a size of 0x40: 0x00000040
+mutex with a size of 0x44: 0x8002710B
+mutex with a size of 0x48: 0x8002710B
+mutex with a size of 0x4C: 0x8002710B
+mutex with a size of 0x50: 0x8002710B
+mutex with a size of 0x54: 0x8002710B
+mutex with a size of 0x58: 0x8002710B
+mutex with a size of 0x5C: 0x8002710B
+mutex with a size of 0x60: 0x8002710B
+mutex with a size of 0x100: 0x8002710B
+callback with a size of 0x0: 0x00000000
+callback bytes written with a size of 0x0: 0x00000000
+callback size left with a size of 0x0: 0x00000000
+callback with a size of 0x4: 0x00000000
+callback bytes written with a size of 0x4: 0x00000000
+callback size left with a size of 0x4: 0x00000044
+callback with a size of 0x20: 0x00000000
+callback bytes written with a size of 0x20: 0x00000020
+callback size left with a size of 0x20: 0x00000044
+callback with a size of 0x24: 0x00000000
+callback bytes written with a size of 0x24: 0x00000024
+callback size left with a size of 0x24: 0x00000044
+callback with a size of 0x28: 0x00000000
+callback bytes written with a size of 0x28: 0x00000028
+callback size left with a size of 0x28: 0x00000044
+callback with a size of 0x2C: 0x00000000
+callback bytes written with a size of 0x2C: 0x0000002C
+callback size left with a size of 0x2C: 0x00000044
+callback with a size of 0x30: 0x00000000
+callback bytes written with a size of 0x30: 0x00000030
+callback size left with a size of 0x30: 0x00000044
+callback with a size of 0x34: 0x00000000
+callback bytes written with a size of 0x34: 0x00000034
+callback size left with a size of 0x34: 0x00000044
+callback with a size of 0x38: 0x00000000
+callback bytes written with a size of 0x38: 0x00000038
+callback size left with a size of 0x38: 0x00000044
+callback with a size of 0x3C: 0x00000000
+callback bytes written with a size of 0x3C: 0x0000003C
+callback size left with a size of 0x3C: 0x00000044
+callback with a size of 0x40: 0x00000000
+callback bytes written with a size of 0x40: 0x00000040
+callback size left with a size of 0x40: 0x00000044
+callback with a size of 0x44: 0x00000000
+callback bytes written with a size of 0x44: 0x00000044
+callback size left with a size of 0x44: 0x00000044
+callback with a size of 0x48: 0x8002710B
+callback with a size of 0x4C: 0x8002710B
+callback with a size of 0x50: 0x8002710B
+callback with a size of 0x54: 0x8002710B
+callback with a size of 0x58: 0x8002710B
+callback with a size of 0x5C: 0x8002710B
+callback with a size of 0x60: 0x8002710B
+callback with a size of 0x100: 0x8002710B
+semaphore with a size of 0x0: 0x00000000
+semaphore bytes written with a size of 0x0: 0x00000000
+semaphore size left with a size of 0x0: 0x00000000
+semaphore with a size of 0x4: 0x00000000
+semaphore bytes written with a size of 0x4: 0x00000000
+semaphore size left with a size of 0x4: 0x0000003C
+semaphore with a size of 0x20: 0x00000000
+semaphore bytes written with a size of 0x20: 0x00000020
+semaphore size left with a size of 0x20: 0x0000003C
+semaphore with a size of 0x24: 0x00000000
+semaphore bytes written with a size of 0x24: 0x00000024
+semaphore size left with a size of 0x24: 0x0000003C
+semaphore with a size of 0x28: 0x00000000
+semaphore bytes written with a size of 0x28: 0x00000028
+semaphore size left with a size of 0x28: 0x0000003C
+semaphore with a size of 0x2C: 0x00000000
+semaphore bytes written with a size of 0x2C: 0x0000002C
+semaphore size left with a size of 0x2C: 0x0000003C
+semaphore with a size of 0x30: 0x00000000
+semaphore bytes written with a size of 0x30: 0x00000030
+semaphore size left with a size of 0x30: 0x0000003C
+semaphore with a size of 0x34: 0x00000000
+semaphore bytes written with a size of 0x34: 0x00000034
+semaphore size left with a size of 0x34: 0x0000003C
+semaphore with a size of 0x38: 0x00000000
+semaphore bytes written with a size of 0x38: 0x00000038
+semaphore size left with a size of 0x38: 0x0000003C
+semaphore with a size of 0x3C: 0x00000000
+semaphore bytes written with a size of 0x3C: 0x0000003C
+semaphore size left with a size of 0x3C: 0x0000003C
+semaphore with a size of 0x40: 0x8002710B
+semaphore with a size of 0x44: 0x8002710B
+semaphore with a size of 0x48: 0x8002710B
+semaphore with a size of 0x4C: 0x8002710B
+semaphore with a size of 0x50: 0x8002710B
+semaphore with a size of 0x54: 0x8002710B
+semaphore with a size of 0x58: 0x8002710B
+semaphore with a size of 0x5C: 0x8002710B
+semaphore with a size of 0x60: 0x8002710B
+semaphore with a size of 0x100: 0x8002710B
+condition variable with a size of 0x0: 0x00000000
+condition variable bytes written with a size of 0x0: 0x00000000
+condition variable size left with a size of 0x0: 0x00000000
+condition variable with a size of 0x4: 0x00000000
+condition variable bytes written with a size of 0x4: 0x00000000
+condition variable size left with a size of 0x4: 0x00000034
+condition variable with a size of 0x20: 0x00000000
+condition variable bytes written with a size of 0x20: 0x00000020
+condition variable size left with a size of 0x20: 0x00000034
+condition variable with a size of 0x24: 0x00000000
+condition variable bytes written with a size of 0x24: 0x00000024
+condition variable size left with a size of 0x24: 0x00000034
+condition variable with a size of 0x28: 0x00000000
+condition variable bytes written with a size of 0x28: 0x00000028
+condition variable size left with a size of 0x28: 0x00000034
+condition variable with a size of 0x2C: 0x00000000
+condition variable bytes written with a size of 0x2C: 0x0000002C
+condition variable size left with a size of 0x2C: 0x00000034
+condition variable with a size of 0x30: 0x00000000
+condition variable bytes written with a size of 0x30: 0x00000030
+condition variable size left with a size of 0x30: 0x00000034
+condition variable with a size of 0x34: 0x00000000
+condition variable bytes written with a size of 0x34: 0x00000034
+condition variable size left with a size of 0x34: 0x00000034
+condition variable with a size of 0x38: 0x8002710B
+condition variable with a size of 0x3C: 0x8002710B
+condition variable with a size of 0x40: 0x8002710B
+condition variable with a size of 0x44: 0x8002710B
+condition variable with a size of 0x48: 0x8002710B
+condition variable with a size of 0x4C: 0x8002710B
+condition variable with a size of 0x50: 0x8002710B
+condition variable with a size of 0x54: 0x8002710B
+condition variable with a size of 0x58: 0x8002710B
+condition variable with a size of 0x5C: 0x8002710B
+condition variable with a size of 0x60: 0x8002710B
+condition variable with a size of 0x100: 0x8002710B
+event flag with a size of 0x0: 0x00000000
+event flag bytes written with a size of 0x0: 0x00000000
+event flag size left with a size of 0x0: 0x00000000
+event flag with a size of 0x4: 0x00000000
+event flag bytes written with a size of 0x4: 0x00000000
+event flag size left with a size of 0x4: 0x00000038
+event flag with a size of 0x20: 0x00000000
+event flag bytes written with a size of 0x20: 0x00000020
+event flag size left with a size of 0x20: 0x00000038
+event flag with a size of 0x24: 0x00000000
+event flag bytes written with a size of 0x24: 0x00000024
+event flag size left with a size of 0x24: 0x00000038
+event flag with a size of 0x28: 0x00000000
+event flag bytes written with a size of 0x28: 0x00000028
+event flag size left with a size of 0x28: 0x00000038
+event flag with a size of 0x2C: 0x00000000
+event flag bytes written with a size of 0x2C: 0x0000002C
+event flag size left with a size of 0x2C: 0x00000038
+event flag with a size of 0x30: 0x00000000
+event flag bytes written with a size of 0x30: 0x00000030
+event flag size left with a size of 0x30: 0x00000038
+event flag with a size of 0x34: 0x00000000
+event flag bytes written with a size of 0x34: 0x00000034
+event flag size left with a size of 0x34: 0x00000038
+event flag with a size of 0x38: 0x00000000
+event flag bytes written with a size of 0x38: 0x00000038
+event flag size left with a size of 0x38: 0x00000038
+event flag with a size of 0x3C: 0x8002710B
+event flag with a size of 0x40: 0x8002710B
+event flag with a size of 0x44: 0x8002710B
+event flag with a size of 0x48: 0x8002710B
+event flag with a size of 0x4C: 0x8002710B
+event flag with a size of 0x50: 0x8002710B
+event flag with a size of 0x54: 0x8002710B
+event flag with a size of 0x58: 0x8002710B
+event flag with a size of 0x5C: 0x8002710B
+event flag with a size of 0x60: 0x8002710B
+event flag with a size of 0x100: 0x8002710B
+reader/writer lock with a size of 0x0: 0x00000000
+reader/writer lock bytes written with a size of 0x0: 0x00000000
+reader/writer lock size left with a size of 0x0: 0x00000000
+reader/writer lock with a size of 0x4: 0x00000000
+reader/writer lock bytes written with a size of 0x4: 0x00000000
+reader/writer lock size left with a size of 0x4: 0x0000003C
+reader/writer lock with a size of 0x20: 0x00000000
+reader/writer lock bytes written with a size of 0x20: 0x00000020
+reader/writer lock size left with a size of 0x20: 0x0000003C
+reader/writer lock with a size of 0x24: 0x00000000
+reader/writer lock bytes written with a size of 0x24: 0x00000024
+reader/writer lock size left with a size of 0x24: 0x0000003C
+reader/writer lock with a size of 0x28: 0x00000000
+reader/writer lock bytes written with a size of 0x28: 0x00000028
+reader/writer lock size left with a size of 0x28: 0x0000003C
+reader/writer lock with a size of 0x2C: 0x00000000
+reader/writer lock bytes written with a size of 0x2C: 0x0000002C
+reader/writer lock size left with a size of 0x2C: 0x0000003C
+reader/writer lock with a size of 0x30: 0x00000000
+reader/writer lock bytes written with a size of 0x30: 0x00000030
+reader/writer lock size left with a size of 0x30: 0x0000003C
+reader/writer lock with a size of 0x34: 0x00000000
+reader/writer lock bytes written with a size of 0x34: 0x00000034
+reader/writer lock size left with a size of 0x34: 0x0000003C
+reader/writer lock with a size of 0x38: 0x00000000
+reader/writer lock bytes written with a size of 0x38: 0x00000038
+reader/writer lock size left with a size of 0x38: 0x0000003C
+reader/writer lock with a size of 0x3C: 0x00000000
+reader/writer lock bytes written with a size of 0x3C: 0x0000003C
+reader/writer lock size left with a size of 0x3C: 0x0000003C
+reader/writer lock with a size of 0x40: 0x8002710B
+reader/writer lock with a size of 0x44: 0x8002710B
+reader/writer lock with a size of 0x48: 0x8002710B
+reader/writer lock with a size of 0x4C: 0x8002710B
+reader/writer lock with a size of 0x50: 0x8002710B
+reader/writer lock with a size of 0x54: 0x8002710B
+reader/writer lock with a size of 0x58: 0x8002710B
+reader/writer lock with a size of 0x5C: 0x8002710B
+reader/writer lock with a size of 0x60: 0x8002710B
+reader/writer lock with a size of 0x100: 0x8002710B
+DONE

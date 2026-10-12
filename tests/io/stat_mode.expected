@@ -1,0 +1,37 @@
+stat the app's eboot.bin: 0x00000000
+the app's eboot.bin mode: 0x00002104
+the app's eboot.bin attributes: 0x00000000
+stat the app's sce_sys directory: 0x00000000
+the app's sce_sys directory mode: 0x00001104
+the app's sce_sys directory attributes: 0x00000000
+the app's sce_sys directory size: 0x00008000
+stat app0:: 0x00000000
+app0: mode: 0x00001104
+app0: attributes: 0x00000000
+app0: size: 0x00008000
+stat a file created with mode 0666: 0x00000000
+a file created with mode 0666 mode: 0x00002186
+a file created with mode 0666 attributes: 0x00000000
+a file created with mode 0666 size: 0x00000004
+stat a file created with mode 0: 0x80010002
+stat a file created with mode 0777: 0x00000000
+a file created with mode 0777 mode: 0x00002186
+a file created with mode 0777 attributes: 0x00000000
+a file created with mode 0777 size: 0x00000004
+stat a directory created with mode 0777: 0x00000000
+a directory created with mode 0777 mode: 0x00001186
+a directory created with mode 0777 attributes: 0x00000000
+a directory created with mode 0777 size: 0x00008000
+stat a directory created with mode 0: 0x80010002
+stat ux0:data: 0x00000000
+ux0:data mode: 0x00001186
+ux0:data attributes: 0x00000000
+ux0:data size: 0x00008000
+stat ux0:: 0x00000000
+ux0: mode: 0x00001106
+ux0: attributes: 0x00000000
+ux0: size: 0x00008000
+stat a file by descriptor: 0x00000000
+its mode by descriptor: 0x00002186
+its attributes by descriptor: 0x00000000
+DONE
