@@ -1,0 +1,7 @@
+read lock: 0x00000000
+try read lock again while a writer waits: 0x800281E6
+read lock again while a writer waits: 0x80028005
+the writer still waits: 0x00000001
+unlock the first read lock: 0x00000000
+the writer got the lock: 0x00000000
+DONE
