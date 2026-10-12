@@ -20,6 +20,6 @@ jobs:
       - name: Upload the vpk
         uses: actions/upload-artifact@v7
         with:
-          name: vita-autotests
           path: build/tests/vita-autotests.vpk
+          archive: false
           if-no-files-found: error
