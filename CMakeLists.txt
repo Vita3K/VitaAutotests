@@ -7,7 +7,7 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 	set(CMAKE_TOOLCHAIN_FILE "$ENV{VITASDK}/share/vita.toolchain.cmake" CACHE PATH "Toolchain file")
 endif()
 
-project(vita-autotests C)
+project(vita-autotests C ASM)
 
 include("$ENV{VITASDK}/share/vita.cmake" REQUIRED)
 
@@ -54,3 +54,4 @@ function(vita_tests_vpk title_id)
 endfunction()
 
 add_subdirectory(tests)
+add_subdirectory(usb)

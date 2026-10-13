@@ -8,14 +8,14 @@ A test prints one line per value it observes, like `lock with a count of 0: 0x80
 
 ## Build
 
-Needs vitasdk, with `VITASDK` set.
+Needs vitasdk, with `VITASDK` set, and its taihen package for the USB plugins.
 
 ```
 cmake -B build -G Ninja
 cmake --build build
 ```
 
-Every test goes into one vpk, `build/tests/vita-autotests.vpk`, with title ID `VTST00000`. Each launch runs one test in a fresh process: the one named by the first argument, by the `arg` of the launch URI, or by the first line of `ux0:data/vita-autotests/test.txt`. The name `list` prints every test.
+Every test goes into one vpk, `build/tests/vita-autotests.vpk`, with title ID `VTST00000`. The plugins to run the tests over USB go into `build/usb/`. Each launch runs one test in a fresh process: the one named by the first argument, by the `arg` of the launch URI, or by the first line of `ux0:data/vita-autotests/test.txt`. The name `list` prints every test.
 
 A test prints each line to the debug output and to `ux0:data/vita-autotests/output/<name>.txt`. A Vita's debug output can drop lines when a test prints a lot at once, but the file never does. Each line is synced as it is written, so the file keeps everything even when a test hangs and gets killed.
 
@@ -41,27 +41,48 @@ When it closes, `ux0:data/vita-autotests/output/<name>.txt` holds the output, wh
 
 ## Run from the PC
 
-`run_tests.py` runs the tests on a Vita on the same network as the PC, and compares their output with the `.expected` files, like pspautotests does with PSPLink. It needs only Python 3.8 or later. On the Vita, besides the vpk, it needs [vitacompanion](https://github.com/devnoname120/vitacompanion), which gives the PC an FTP server on port 1337 and a command port on 1338. Copy `vitacompanion.suprx` and `vitacompanion_kernel.skprx` to `ur0:tai/`, add them to `ur0:tai/config.txt`, and reboot:
+`run_tests.py` runs the tests on a Vita connected to the PC, and compares their output with the `.expected` files, like pspautotests does with PSPLink. It needs Python 3.8 or later and, for USB, pyserial (`python -m pip install pyserial`).
+
+### Over USB
+
+Besides the vpk, the Vita needs two plugins, which the build puts in `build/usb/` and CI uploads with the vpk:
+
+- `vita-autotests-usb.skprx`, a kernel plugin that frees the USB port for the USB serial port, and turns MTP off, so the Vita no longer shows up for Content Manager.
+- `vita-autotests-shell.suprx`, a SceShell plugin that opens the USB serial port, launches the test app for each test it's sent, and sends back its output file.
+
+Copy them to `ur0:tai/`, add them to `ur0:tai/config.txt`, and reboot:
 
 ```
 *KERNEL
-ur0:tai/vitacompanion_kernel.skprx
+ur0:tai/vita-autotests-usb.skprx
 
 *main
-ur0:tai/vitacompanion.suprx
+ur0:tai/vita-autotests-shell.suprx
 ```
 
-Then pass the Vita's IP address, shown in its network settings, or set `VITA_HOST`:
+Then connect the Vita by USB, on its home screen. It shows up on the PC as a serial port, which `run_tests.py` finds by itself, or pass it with `--port`:
 
 ```
-python run_tests.py --host 192.168.1.20                  # every test
-python run_tests.py -H 192.168.1.20 mutex kernel/cond    # tests by name or path
-python run_tests.py -H 192.168.1.20 tests/io             # the tests in a directory
-python run_tests.py -H 192.168.1.20 -v mutex             # with the diff of a failing test
-python run_tests.py -H 192.168.1.20 -g mutex             # saves the output as mutex.expected
+python run_tests.py                     # every test
+python run_tests.py mutex kernel/cond   # tests by name or path
+python run_tests.py tests/io            # the tests in a directory
+python run_tests.py -v mutex            # with the diff of a failing test
+python run_tests.py -g mutex            # saves the output as mutex.expected
 ```
 
-For each test it closes the apps open on the Vita, writes the test name to `test.txt`, launches the app, and reads the output file over FTP until it ends with `DONE`. A test still running after `--timeout` seconds, 60 by default, is closed and fails. Don't use the Vita while the tests run.
+Each test runs in a fresh process. A test still running after `--timeout` seconds, 60 by default, is closed and fails. Starting a test closes the app open on the Vita, if any, and the Vita shouldn't be used while the tests run. Both plugins write how the link came up since the last boot to `ur0:tai/vita-autotests-kernel.log` and `ur0:tai/vita-autotests-usb.log`.
+
+The plugins are built safe, without `UNSAFE`, since SceShell doesn't load a plugin built unsafe.
+
+### Over Wi-Fi
+
+`run_tests.py` can also run the tests over Wi-Fi with [vitacompanion](https://github.com/devnoname120/vitacompanion) on the Vita, instead of the plugins, given the Vita's IP address with `--host` or `VITA_HOST`:
+
+```
+python run_tests.py --host 192.168.1.20
+```
+
+For each test it writes the test name to `test.txt` over vitacompanion's FTP server, launches the app through its command port, and reads the output file until it ends with `DONE`.
 
 ## Run on an emulator
 

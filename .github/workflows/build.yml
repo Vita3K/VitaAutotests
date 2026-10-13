@@ -12,7 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Build the tests
+      - name: Install taiHEN for the USB plugins
+        run: |
+          if [ ! -f "$VITASDK/arm-vita-eabi/lib/libtaihenForKernel_stub.a" ]; then
+            vdpm install taihen || vdpm taihen
+          fi
+
+      - name: Build the tests and the USB plugins
         run: |
           cmake -B build
           cmake --build build -j"$(nproc)"
@@ -21,5 +27,19 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           path: build/tests/vita-autotests.vpk
+          archive: false
+          if-no-files-found: error
+
+      - name: Upload the kernel plugin for USB runs
+        uses: actions/upload-artifact@v7
+        with:
+          path: build/usb/vita-autotests-usb.skprx
+          archive: false
+          if-no-files-found: error
+
+      - name: Upload the shell plugin for USB runs
+        uses: actions/upload-artifact@v7
+        with:
+          path: build/usb/vita-autotests-shell.suprx
           archive: false
           if-no-files-found: error
