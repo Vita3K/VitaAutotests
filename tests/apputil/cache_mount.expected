@@ -1,0 +1,44 @@
+mount before init: 0x80100601
+unmount before init: 0x80100601
+init: 0x00000000
+unmount before mounting: 0x80100604
+create a file before mounting: 0x80010013
+before mounting: stat a file: 0x80010013
+before mounting: open a file to read: 0x80010013
+before mounting: list cache0:: 0x80010013
+before mounting: create a directory: 0x80010013
+mount: 0x80100605
+mount again: 0x80100605
+stat cache0:: 0x80010013
+cache0: is a directory: 0x00000000
+entries in the emptied cache0:: 0x80010013
+create a file: 0x80010013
+write 10 bytes: 0x80010009
+open it to read: 0x80010013
+read it: 0x80010009
+it holds what was written: 0x00000000
+stat it with a slash after the device: 0x80010013
+create a directory: 0x80010013
+create a file in it: 0x80010013
+entries in cache0:: 0x80010013
+stat the file on ux0:: 0x80010002
+list the directory on ux0:: 0x80010002
+rename the file: 0x80010013
+rename it back: 0x80010013
+unmount: 0x80100604
+unmount again: 0x80100604
+after unmounting: stat a file: 0x80010013
+after unmounting: open a file to read: 0x80010013
+after unmounting: list cache0:: 0x80010013
+after unmounting: create a directory: 0x80010013
+stat the file on ux0: after unmounting: 0x80010002
+mount after unmounting: 0x80100605
+the file is still there: 0x80010013
+the file in the directory is still there: 0x80010013
+remove the file: 0x80010013
+remove the file in the directory: 0x80010013
+remove the directory: 0x80010013
+entries left: 0x80010013
+unmount at the end: 0x80100604
+unmount after shutdown: 0x80100601
+DONE

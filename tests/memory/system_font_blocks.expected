@@ -1,0 +1,66 @@
+SceSysDefaultLtnFont: open with flags 0x0: 0x80020005
+SceSysDefaultLtnFont: open with flags 0x10: 0x00000000
+SceSysDefaultLtnFont: close the block opened with flags 0x10: 0x00000000
+SceSysDefaultLtnFont: open with flags 0x30: 0x80024B0C
+SceSysDefaultLtnFont: open: 0x00000000
+SceSysDefaultLtnFont: open it again: 0x00000000
+SceSysDefaultLtnFont: both opens give the same UID: 0x00000000
+SceSysDefaultLtnFont: get the base: 0x00000000
+SceSysDefaultLtnFont: the base isn't NULL: 0x00000001
+SceSysDefaultLtnFont: the base is aligned to 4 KiB: 0x00000001
+SceSysDefaultLtnFont: the second open has the same base: 0x00000000
+SceSysDefaultLtnFont: find by the base gives the opened UID: 0x00000001
+SceSysDefaultLtnFont: info by address: 0x00000000
+SceSysDefaultLtnFont: its mapped base is the base: 0x00000001
+SceSysDefaultLtnFont: its mapped size: 0x0000B000
+SceSysDefaultLtnFont: its memory type: 0x000000D0
+SceSysDefaultLtnFont: its access: 0x00000004
+SceSysDefaultLtnFont: its type: 0x0C20D040
+SceSysDefaultLtnFont: its first word: 0x4F54544F
+SceSysDefaultLtnFont: stat the font file: 0x00000000
+SceSysDefaultLtnFont: the mapped size is the file size rounded up to 4 KiB: 0x00000001
+SceSysDefaultLtnFont: the file fits in the block: 0x00000001
+SceSysDefaultLtnFont: open the font file: 0x00000000
+SceSysDefaultLtnFont: the block holds the file: 0x00000001
+SceSysDefaultLtnFont: close the second open: 0x00000000
+SceSysDefaultLtnFont: close: 0x00000000
+SceSysDefaultLtnFont: close it again: 0x80024501
+SceSysDefaultLtnFont: get the base after closing: 0x80024501
+SceSysDefaultLtnFont: free an opened block: 0x00000000
+SceSysDefaultLtnFont: open after that: 0x00000000
+SceSysDefaultJpnFont: open with flags 0x0: 0x80020005
+SceSysDefaultJpnFont: open with flags 0x10: 0x00000000
+SceSysDefaultJpnFont: close the block opened with flags 0x10: 0x00000000
+SceSysDefaultJpnFont: open with flags 0x30: 0x80024B0C
+SceSysDefaultJpnFont: open: 0x00000000
+SceSysDefaultJpnFont: open it again: 0x00000000
+SceSysDefaultJpnFont: both opens give the same UID: 0x00000000
+SceSysDefaultJpnFont: get the base: 0x00000000
+SceSysDefaultJpnFont: the base isn't NULL: 0x00000001
+SceSysDefaultJpnFont: the base is aligned to 4 KiB: 0x00000001
+SceSysDefaultJpnFont: the second open has the same base: 0x00000000
+SceSysDefaultJpnFont: find by the base gives the opened UID: 0x00000001
+SceSysDefaultJpnFont: info by address: 0x00000000
+SceSysDefaultJpnFont: its mapped base is the base: 0x00000001
+SceSysDefaultJpnFont: its mapped size: 0x0025E000
+SceSysDefaultJpnFont: its memory type: 0x000000D0
+SceSysDefaultJpnFont: its access: 0x00000004
+SceSysDefaultJpnFont: its type: 0x0C20D040
+SceSysDefaultJpnFont: its first word: 0x4F54544F
+SceSysDefaultJpnFont: stat the font file: 0x00000000
+SceSysDefaultJpnFont: the mapped size is the file size rounded up to 4 KiB: 0x00000001
+SceSysDefaultJpnFont: the file fits in the block: 0x00000001
+SceSysDefaultJpnFont: open the font file: 0x00000000
+SceSysDefaultJpnFont: the block holds the file: 0x00000001
+SceSysDefaultJpnFont: close the second open: 0x00000000
+SceSysDefaultJpnFont: close: 0x00000000
+SceSysDefaultJpnFont: close it again: 0x80024501
+SceSysDefaultJpnFont: get the base after closing: 0x80024501
+SceSysDefaultJpnFont: free an opened block: 0x00000000
+SceSysDefaultJpnFont: open after that: 0x00000000
+open SceSysDefaultLtnFon: 0x8002450A
+open scesysdefaultltnfont: 0x8002450A
+open an empty name: 0x8002450A
+open a block of the test by its name: 0x8002450A
+open a NULL name: 0x80020005
+DONE

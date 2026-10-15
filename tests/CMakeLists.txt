@@ -221,6 +221,7 @@ vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx
 
 vita_test(memblock memory/memblock.c)
 vita_test(address_ranges memory/address_ranges.c)
+vita_test(system_font_blocks memory/system_font_blocks.c)
 
 vita_test(files io/files.c)
 vita_test(directories io/directories.c)
@@ -245,5 +246,6 @@ vita_test(audioout audio/audioout.c)
 vita_test(display display/display.c)
 
 vita_test(savedata_slot_id apputil/savedata_slot_id.c)
+vita_test(cache_mount apputil/cache_mount.c)
 
 vita_tests_vpk(VTST00000)
