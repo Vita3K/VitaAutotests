@@ -2,7 +2,7 @@
 
 Small PS Vita homebrew tests, each checking one area of system behavior, with the output a real Vita gives. They can be useful to check an emulator against, or to understand how the system behaves.
 
-The tests so far cover the kernel thread manager and its sync primitives, memory blocks, file I/O, save data slots, fibers, system modules, audio output, the display, the RTC library, and the sceClib string, format and memory space calls. Other areas can be added in the same format.
+The tests so far cover the kernel thread manager and its sync primitives, memory blocks, file I/O, save data slots, fibers, system modules, audio output, the display, the RTC library, and the sceClib string, format and memory space calls. Render tests draw with libgxm and capture what they drew, to compare with the images a real Vita gives. Other areas can be added in the same format.
 
 A test prints one line per value it observes, like `lock with a count of 0: 0x8002000F`, and ends with `DONE`. A run passes when the test exits with 0 and its output matches the `.expected` file next to its source. Tests print errors, counts and comparisons, never UIDs, addresses or times, so the output is the same on every run.
 
@@ -88,9 +88,34 @@ For each test it writes the test name to `test.txt` over vitacompanion's FTP ser
 
 Pass the test name as the first argument, and compare the debug output with the test's `.expected` file.
 
+`run_tests.py` can do that too, given the command that runs a test, with `{test}` where its name goes, and the emulator's `ux0:` folder, where the test writes its output. For Vita3K, with the vpk installed:
+
+```
+python run_tests.py -E "path/to/Vita3K --frontend sdl -r VTST00000 -Z {test}" --ux0 path/to/Vita3K/ux0 tests/render
+```
+
+It runs the command for each test, and waits for it to end, for at most `--timeout` seconds. `-g` doesn't work with an emulator, since the `.expected` files and images hold what a Vita gives.
+
+## Render tests
+
+The tests in `tests/render/` draw with libgxm, through `common/render.h`, and save what the display shows with `test_capture_display()` from `common/capture.h`, as `ux0:data/vita-autotests/output/<test>/<capture>.png`. The test writes the PNG itself, from the framebuffer in memory, so it holds exactly what the GPU wrote, alpha included, at 960x544. An emulator runs the same code, so its capture is the frame as it rendered it, at the Vita's resolution, whatever it shows on the screen.
+
+Each capture prints a line like `capture modes: 0x00000000`, which tells `run_tests.py` to compare it with `tests/render/<test>.<capture>.png`, the image a Vita gave, saved with `-g` along with the `.expected` file. A capture matches when every pixel does, unless `tests/tolerances.txt` allows a difference: the largest difference in a channel that still counts as the same, and how many pixels may differ by more. A Vita gives the same image every time, so a tolerance is for an emulator, where interpolation, blending and filtering may round differently.
+
+Each run puts the captures in `build/captures/`, or the folder given with `--captures`, with an image of the pixels that differ next to each capture that doesn't match, as `<test>.<capture>.diff.png`.
+
+Two options help to work on an emulator's rendering:
+
+- `--golden <folder>` also compares the output and captures with an earlier run of the same emulator, saved there with `--update-golden`. A test that changed since fails, so a change that breaks something shows even in a test that didn't match the Vita before.
+- `--known-failures <file>` takes a file of the tests known not to match the Vita, one per line. They show as `KNOWN` and don't fail the run, unless they also changed from `--golden`. One that matches the Vita now shows as `FIXED`.
+
+The tests draw with the shaders of [vita2d](https://github.com/xerpi/libvita2d), in `common/shaders/`: a clear to a uniform color, vertex colors, and a texture. The rest is fixed function state, which is what the tests cover: coverage of primitives, blending, the depth and stencil tests, culling, texture formats and sampling.
+
+A render test draws each case in a cell of its own, so a capture shows at a glance which one differs, and flat colors where it can, so only the state under test can change a pixel.
+
 ## Add a test
 
-Write `tests/<area>/<name>.c` with `PRINT`, `PRINTF` and `test_exit()` from `common/test.h`, and add it to `tests/CMakeLists.txt`. Run it on a Vita and save its output as `tests/<area>/<name>.expected`.
+Write `tests/<area>/<name>.c` with `PRINT`, `PRINTF` and `test_exit()` from `common/test.h`, and add it to `tests/CMakeLists.txt`. Run it on a Vita and save its output as `tests/<area>/<name>.expected`, with `run_tests.py -g <name>`, which also saves the images of its captures.
 
 Cases that pass NULL pointers or huge sizes go at the end of a test, so an implementation that crashes on them loses nothing else. An info call given a size past its struct gets a buffer with room behind it, in case it writes that far.
 

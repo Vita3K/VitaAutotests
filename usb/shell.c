@@ -3,11 +3,13 @@
 // commands from it, and runs each test by launching the test app.
 //
 // The host sends one command per line:
-// - "hello", answered with "vita-autotests usb 1".
+// - "hello", answered with "vita-autotests usb 2".
 // - "run <name> <timeout in ms>", which runs the test <name> in a fresh process and answers with
-//   "output <length>", the bytes of its output file, then "end <status>". The status is "exited" when
+//   "output <length>" and the bytes of its output file, then "file <file name> <length>" and the
+//   bytes of each file in its capture directory, then "end <status>". The status is "exited" when
 //   the app ended by itself, "timeout" when it was closed after the timeout, or "not-started".
 #include <psp2/appmgr.h>
+#include <psp2/io/dirent.h>
 #include <psp2/io/fcntl.h>
 #include <psp2/io/stat.h>
 #include <psp2/kernel/clib.h>
@@ -146,8 +148,8 @@ static void close_app(void) {
     wait_ended(CLOSE_TIMEOUT_US);
 }
 
-// Sends "output <length>" and the bytes of the file at path, or a length of 0 if there is none
-static int send_file(const char *path) {
+// Sends "<what> <length>" and the bytes of the file at path, or a length of 0 if there is none
+static int send_file(const char *what, const char *path) {
     const SceUID fd = sceIoOpen(path, SCE_O_RDONLY, 0);
     int size = 0;
     if (fd >= 0) {
@@ -156,8 +158,8 @@ static int send_file(const char *path) {
         if (size < 0)
             size = 0;
     }
-    char header[32];
-    sceClibSnprintf(header, sizeof(header), "output %d\n", size);
+    char header[320];
+    sceClibSnprintf(header, sizeof(header), "%s %d\n", what, size);
     int ret = send_str(header);
     for (int left = size; ret >= 0 && left > 0;) {
         const int want = left < (int)sizeof(chunk) ? left : (int)sizeof(chunk);
@@ -172,6 +174,27 @@ static int send_file(const char *path) {
     }
     if (fd >= 0)
         sceIoClose(fd);
+    return ret;
+}
+
+// Sends each file in the capture directory of the test name
+static int send_captures(const char *name) {
+    char dir[128];
+    sceClibSnprintf(dir, sizeof(dir), OUTPUT_DIR "/%s", name);
+    const SceUID fd = sceIoDopen(dir);
+    if (fd < 0)
+        return 0;
+    int ret = 0;
+    static SceIoDirent entry;
+    while (ret >= 0 && sceIoDread(fd, &entry) > 0) {
+        if (!SCE_S_ISREG(entry.d_stat.st_mode))
+            continue;
+        static char path[384], what[300];
+        sceClibSnprintf(path, sizeof(path), "%s/%s", dir, entry.d_name);
+        sceClibSnprintf(what, sizeof(what), "file %s", entry.d_name);
+        ret = send_file(what, path);
+    }
+    sceIoDclose(fd);
     return ret;
 }
 
@@ -205,7 +228,9 @@ static int run_test(const char *name, int timeout_ms) {
         close_app();
     }
 
-    int ret = send_file(output_path);
+    int ret = send_file("output", output_path);
+    if (ret >= 0)
+        ret = send_captures(name);
     if (ret >= 0)
         ret = send_str("end ");
     if (ret >= 0)
@@ -227,7 +252,7 @@ static int parse_int(const char *str, int def) {
 
 static int handle(char *line) {
     if (sceClibStrcmp(line, "hello") == 0)
-        return send_str("vita-autotests usb 1\n");
+        return send_str("vita-autotests usb 2\n");
     if (sceClibStrncmp(line, "run ", 4) == 0) {
         char *name = line + 4;
         char *end = name;
