@@ -14,6 +14,8 @@
 // - how much main memory and CDRAM, as measured, and physically contiguous memory, as reported,
 //   loading the fiber system module takes, and whether unloading it gives it back
 // - the same for sceGxmInitialize and sceGxmTerminate
+// The main memory these two take is printed as a range, since it differs between runs and between
+// consoles.
 // Everything is measured first and printed after, so the output file the test writes doesn't
 // take memory in between.
 //
@@ -113,16 +115,13 @@ static int initialize_gxm(void) {
     return sceGxmInitialize(&init);
 }
 
-// Prints what loading or initializing took. The fiber module's main memory varies by a page
-// between runs, so for it only a range is printed.
-static void print_taken(const char *name, const Sizes *before, const Sizes *with, int main_exact) {
+// Prints what loading or initializing took. The main memory is printed as a range between above
+// and below KiB, since the fiber module's varies by a page between runs and libgxm's between
+// consoles.
+static void print_taken(const char *name, const Sizes *before, const Sizes *with, int above, int below) {
     const int main = before->main - with->main;
-    if (main_exact) {
-        PRINTF(main, "%s: the main memory it takes", name);
-    } else {
-        PRINTF(main > 64 * KIB, "%s: it takes more than 64 KiB of main memory", name);
-        PRINTF(main < 128 * KIB, "%s: it takes less than 128 KiB of main memory", name);
-    }
+    PRINTF(main > above * KIB, "%s: it takes more than %d KiB of main memory", name, above);
+    PRINTF(main < below * KIB, "%s: it takes less than %d KiB of main memory", name, below);
     PRINTF(before->cdram - with->cdram, "%s: the CDRAM it takes", name);
     PRINTF(before->phycont - with->phycont, "%s: the physically contiguous memory it takes", name);
 }
@@ -179,12 +178,12 @@ int main(void) {
         code && data && heap_size && stack && tls);
 
     PRINT("load the fiber module", loaded);
-    print_taken("the fiber module", &before_fiber, &with_fiber, 0);
+    print_taken("the fiber module", &before_fiber, &with_fiber, 64, 128);
     PRINT("unload it", unloaded);
     print_back("after the unload", &before_fiber, &after_fiber);
 
     PRINT("initialize libgxm", initialized);
-    print_taken("libgxm", &before_gxm, &with_gxm, 1);
+    print_taken("libgxm", &before_gxm, &with_gxm, 2048, 2304);
     PRINT("terminate it", terminated);
     print_back("after terminating it", &before_gxm, &after_gxm);
 

@@ -1,9 +1,10 @@
 // The wait UID thread info reports for a thread that delays, with and without callbacks, next to
-// the one for a thread that waits for a thread signal. Neither is a UID, so the test prints the
-// values, and whether a delay and a signal wait report the same one.
+// the one for a thread that waits for a thread signal. Neither is a UID. The test prints the delay's
+// value, and for the signal wait only whether it is -1, since that value differs between consoles.
+// Then whether a delay and a signal wait report the same one.
 //
 // On a PS Vita TV on firmware 3.65 a delay reports wait UID 0xFFFFFFFF, with callbacks too, and a
-// signal wait 0x00010221.
+// signal wait another value.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -47,7 +48,7 @@ int main(void) {
     PRINT("delay with callbacks: the wait type", delay_cb_type);
     PRINT("delay with callbacks: the wait UID", delay_cb);
     PRINT("signal wait: the wait type", signal_type);
-    PRINT("signal wait: the wait UID", signal);
+    PRINT("signal wait: the wait UID is -1", signal == -1);
     PRINT("a delay reports the wait UID of a signal wait", delay == signal);
     PRINT("a delay with callbacks reports the wait UID of a plain delay", delay_cb == delay);
     test_exit();

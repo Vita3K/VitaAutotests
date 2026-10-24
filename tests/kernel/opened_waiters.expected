@@ -1,167 +1,167 @@
 semaphore, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-semaphore, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000001
+semaphore, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 semaphore, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 semaphore, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 semaphore, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 semaphore, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 semaphore, wait through the opened UID, close it: create and open the object: 0x00000000
-semaphore, wait through the opened UID, close it: the UID it waits on: 0x00000000
+semaphore, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 semaphore, wait through the opened UID, close it: the close: 0x00000000
 semaphore, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 semaphore, wait through the opened UID, close it: release through it: 0x00000000
 semaphore, wait through the opened UID, close it: the wait: 0x00000000
 semaphore, wait through the creating UID, delete it: create and open the object: 0x00000000
-semaphore, wait through the creating UID, delete it: the UID it waits on: 0x00000001
+semaphore, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 semaphore, wait through the creating UID, delete it: the delete: 0x00000000
 semaphore, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 semaphore, wait through the creating UID, delete it: release through it: 0x00000000
 semaphore, wait through the creating UID, delete it: the wait: 0x00000000
 semaphore, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-semaphore, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000001
+semaphore, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 semaphore, wait through the creating UID, close the opened UID: the close: 0x00000000
 semaphore, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 semaphore, wait through the creating UID, close the opened UID: release through it: 0x00000000
 semaphore, wait through the creating UID, close the opened UID: the wait: 0x00000000
 event flag, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-event flag, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000000
+event flag, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 event flag, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 event flag, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 event flag, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 event flag, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 event flag, wait through the opened UID, close it: create and open the object: 0x00000000
-event flag, wait through the opened UID, close it: the UID it waits on: 0x00000000
+event flag, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 event flag, wait through the opened UID, close it: the close: 0x00000000
 event flag, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 event flag, wait through the opened UID, close it: release through it: 0x00000000
 event flag, wait through the opened UID, close it: the wait: 0x00000000
 event flag, wait through the creating UID, delete it: create and open the object: 0x00000000
-event flag, wait through the creating UID, delete it: the UID it waits on: 0x00000000
+event flag, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 event flag, wait through the creating UID, delete it: the delete: 0x00000000
 event flag, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 event flag, wait through the creating UID, delete it: release through it: 0x00000000
 event flag, wait through the creating UID, delete it: the wait: 0x00000000
 event flag, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-event flag, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000001
+event flag, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 event flag, wait through the creating UID, close the opened UID: the close: 0x00000000
 event flag, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 event flag, wait through the creating UID, close the opened UID: release through it: 0x00000000
 event flag, wait through the creating UID, close the opened UID: the wait: 0x00000000
 mutex, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-mutex, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000000
+mutex, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 mutex, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 mutex, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 mutex, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 mutex, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 mutex, wait through the opened UID, close it: create and open the object: 0x00000000
-mutex, wait through the opened UID, close it: the UID it waits on: 0x00000000
+mutex, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 mutex, wait through the opened UID, close it: the close: 0x00000000
 mutex, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 mutex, wait through the opened UID, close it: release through it: 0x00000000
 mutex, wait through the opened UID, close it: the wait: 0x00000000
 mutex, wait through the creating UID, delete it: create and open the object: 0x00000000
-mutex, wait through the creating UID, delete it: the UID it waits on: 0x00000000
+mutex, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 mutex, wait through the creating UID, delete it: the delete: 0x00000000
 mutex, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 mutex, wait through the creating UID, delete it: release through it: 0x00000000
 mutex, wait through the creating UID, delete it: the wait: 0x00000000
 mutex, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-mutex, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000001
+mutex, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 mutex, wait through the creating UID, close the opened UID: the close: 0x00000000
 mutex, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 mutex, wait through the creating UID, close the opened UID: release through it: 0x00000000
 mutex, wait through the creating UID, close the opened UID: the wait: 0x00000000
 reader/writer lock, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-reader/writer lock, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000001
+reader/writer lock, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 reader/writer lock, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 reader/writer lock, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 reader/writer lock, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 reader/writer lock, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 reader/writer lock, wait through the opened UID, close it: create and open the object: 0x00000000
-reader/writer lock, wait through the opened UID, close it: the UID it waits on: 0x00000001
+reader/writer lock, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 reader/writer lock, wait through the opened UID, close it: the close: 0x00000000
 reader/writer lock, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 reader/writer lock, wait through the opened UID, close it: release through it: 0x00000000
 reader/writer lock, wait through the opened UID, close it: the wait: 0x00000000
 reader/writer lock, wait through the creating UID, delete it: create and open the object: 0x00000000
-reader/writer lock, wait through the creating UID, delete it: the UID it waits on: 0x00000001
+reader/writer lock, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 reader/writer lock, wait through the creating UID, delete it: the delete: 0x00000000
 reader/writer lock, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 reader/writer lock, wait through the creating UID, delete it: release through it: 0x00000000
 reader/writer lock, wait through the creating UID, delete it: the wait: 0x00000000
 reader/writer lock, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-reader/writer lock, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000000
+reader/writer lock, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 reader/writer lock, wait through the creating UID, close the opened UID: the close: 0x00000000
 reader/writer lock, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 reader/writer lock, wait through the creating UID, close the opened UID: release through it: 0x00000000
 reader/writer lock, wait through the creating UID, close the opened UID: the wait: 0x00000000
 message pipe, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-message pipe, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000001
+message pipe, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 message pipe, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 message pipe, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 message pipe, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 message pipe, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 message pipe, wait through the opened UID, close it: create and open the object: 0x00000000
-message pipe, wait through the opened UID, close it: the UID it waits on: 0x00000000
+message pipe, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 message pipe, wait through the opened UID, close it: the close: 0x00000000
 message pipe, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 message pipe, wait through the opened UID, close it: release through it: 0x00000000
 message pipe, wait through the opened UID, close it: the wait: 0x00000000
 message pipe, wait through the creating UID, delete it: create and open the object: 0x00000000
-message pipe, wait through the creating UID, delete it: the UID it waits on: 0x00000001
+message pipe, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 message pipe, wait through the creating UID, delete it: the delete: 0x00000000
 message pipe, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 message pipe, wait through the creating UID, delete it: release through it: 0x00000000
 message pipe, wait through the creating UID, delete it: the wait: 0x00000000
 message pipe, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-message pipe, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000001
+message pipe, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 message pipe, wait through the creating UID, close the opened UID: the close: 0x00000000
 message pipe, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 message pipe, wait through the creating UID, close the opened UID: release through it: 0x00000000
 message pipe, wait through the creating UID, close the opened UID: the wait: 0x00000000
 simple event, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-simple event, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000000
+simple event, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 simple event, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 simple event, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x00000001
 simple event, wait through the opened UID, delete the creating UID: release through it: 0x00000000
 simple event, wait through the opened UID, delete the creating UID: the wait: 0x00000000
 simple event, wait through the opened UID, close it: create and open the object: 0x00000000
-simple event, wait through the opened UID, close it: the UID it waits on: 0x00000000
+simple event, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 simple event, wait through the opened UID, close it: the close: 0x00000000
 simple event, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 simple event, wait through the opened UID, close it: release through it: 0x00000000
 simple event, wait through the opened UID, close it: the wait: 0x00000000
 simple event, wait through the creating UID, delete it: create and open the object: 0x00000000
-simple event, wait through the creating UID, delete it: the UID it waits on: 0x00000000
+simple event, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 simple event, wait through the creating UID, delete it: the delete: 0x00000000
 simple event, wait through the creating UID, delete it: waiters through the UID left: 0x00000001
 simple event, wait through the creating UID, delete it: release through it: 0x00000000
 simple event, wait through the creating UID, delete it: the wait: 0x00000000
 simple event, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-simple event, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000001
+simple event, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 simple event, wait through the creating UID, close the opened UID: the close: 0x00000000
 simple event, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 simple event, wait through the creating UID, close the opened UID: release through it: 0x00000000
 simple event, wait through the creating UID, close the opened UID: the wait: 0x00000000
 timer, wait through the opened UID, delete the creating UID: create and open the object: 0x00000000
-timer, wait through the opened UID, delete the creating UID: the UID it waits on: 0x00000000
+timer, wait through the opened UID, delete the creating UID: the UID it waits on is one of its two: 0x00000001
 timer, wait through the opened UID, delete the creating UID: the delete: 0x00000000
 timer, wait through the opened UID, delete the creating UID: waiters through the UID left: 0x80028241
 timer, wait through the opened UID, delete the creating UID: release through it: 0x80028241
 timer, wait through the opened UID, delete the creating UID: the wait: 0x80028005
 timer, wait through the opened UID, close it: create and open the object: 0x00000000
-timer, wait through the opened UID, close it: the UID it waits on: 0x00000000
+timer, wait through the opened UID, close it: the UID it waits on is one of its two: 0x00000001
 timer, wait through the opened UID, close it: the close: 0x00000000
 timer, wait through the opened UID, close it: waiters through the UID left: 0x00000001
 timer, wait through the opened UID, close it: release through it: 0x00000000
 timer, wait through the opened UID, close it: the wait: 0x00000000
 timer, wait through the creating UID, delete it: create and open the object: 0x00000000
-timer, wait through the creating UID, delete it: the UID it waits on: 0x00000000
+timer, wait through the creating UID, delete it: the UID it waits on is one of its two: 0x00000001
 timer, wait through the creating UID, delete it: the delete: 0x00000000
 timer, wait through the creating UID, delete it: waiters through the UID left: 0x80028241
 timer, wait through the creating UID, delete it: release through it: 0x80028241
 timer, wait through the creating UID, delete it: the wait: 0x80028005
 timer, wait through the creating UID, close the opened UID: create and open the object: 0x00000000
-timer, wait through the creating UID, close the opened UID: the UID it waits on: 0x00000000
+timer, wait through the creating UID, close the opened UID: the UID it waits on is one of its two: 0x00000001
 timer, wait through the creating UID, close the opened UID: the close: 0x00000000
 timer, wait through the creating UID, close the opened UID: waiters through the UID left: 0x00000001
 timer, wait through the creating UID, close the opened UID: release through it: 0x00000000

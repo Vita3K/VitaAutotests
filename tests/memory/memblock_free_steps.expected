@@ -1,8 +1,10 @@
 the main free size is whole MiB: 0x00000001
 the CDRAM free size is whole MiB: 0x00000001
 the physically contiguous free size is whole MiB: 0x00000001
+line up the CDRAM free size: 0x00000000
+line up the main free size: 0x00000000
 USER_RW, 4 KiB: make it: 0x00000000
-USER_RW, 4 KiB: KiB taken from main: 0x00000000
+USER_RW, 4 KiB: KiB taken from main: 0x00000400
 USER_RW, 4 KiB: the free sizes are whole MiB with it: 0x00000001
 USER_RW, 512 KiB: make it: 0x00000000
 USER_RW, 512 KiB: KiB taken from main: 0x00000400
@@ -14,7 +16,7 @@ USER_RW, 1 MiB: make it: 0x00000000
 USER_RW, 1 MiB: KiB taken from main: 0x00000400
 USER_RW, 1 MiB: the free sizes are whole MiB with it: 0x00000001
 USER_RW, 1 MiB and 4 KiB: make it: 0x00000000
-USER_RW, 1 MiB and 4 KiB: KiB taken from main: 0x00000400
+USER_RW, 1 MiB and 4 KiB: KiB taken from main: 0x00000800
 USER_RW, 1 MiB and 4 KiB: the free sizes are whole MiB with it: 0x00000001
 USER_RW, 1 MiB and 512 KiB: make it: 0x00000000
 USER_RW, 1 MiB and 512 KiB: KiB taken from main: 0x00000800
@@ -47,7 +49,7 @@ USER_CDRAM_RW, 2 MiB: make it: 0x00000000
 USER_CDRAM_RW, 2 MiB: KiB taken from CDRAM: 0x00000800
 USER_CDRAM_RW, 2 MiB: the free sizes are whole MiB with it: 0x00000001
 256 USER_RW blocks of 4 KiB: make it: 0x00000000
-256 USER_RW blocks of 4 KiB: KiB taken from main: 0x00000400
+256 USER_RW blocks of 4 KiB: KiB taken from main: 0x00000800
 256 USER_RW blocks of 4 KiB: the free sizes are whole MiB with it: 0x00000001
 2 USER_RW blocks of 512 KiB: make it: 0x00000000
 2 USER_RW blocks of 512 KiB: KiB taken from main: 0x00000400

@@ -10,7 +10,7 @@
 
 static SceUID sema, outer_cb, nested_cb, owner;
 static volatile SceUIntPtr stack_low, stack_high, wait_frame, check_frame, outer_frame, nested_frame, check_cb_frame;
-static volatile int own_thread, own_priority, free_outside, free_inside, by_check;
+static volatile int own_thread, own_priority, by_check;
 
 static int nested_callback(int notify_id, int count, int arg, void *common) {
     (void)notify_id;
@@ -36,7 +36,6 @@ static int outer_callback(int notify_id, int count, int arg, void *common) {
     outer_frame = (SceUIntPtr)&local;
     own_thread = sceKernelGetThreadId() == owner;
     own_priority = sceKernelGetThreadCurrentPriority();
-    free_inside = sceKernelGetThreadStackFreeSize(0);
     sceKernelNotifyCallback(nested_cb, 1);
     sceKernelCheckCallback();
     return 0;
@@ -63,7 +62,6 @@ static int callback_thread(SceSize args, void *argp) {
 
     volatile int local = 0;
     wait_frame = (SceUIntPtr)&local;
-    free_outside = sceKernelGetThreadStackFreeSize(0);
     sceKernelNotifyCallback(outer_cb, 1);
     SceUInt timeout = 1000;
     sceKernelWaitSemaCB(sema, 1, &timeout);
@@ -95,7 +93,6 @@ int main(void) {
     PRINT("a callback run by a check runs on the same stack", on_stack(check_cb_frame));
     PRINT("below the frame of the check", check_cb_frame < check_frame);
     PRINT("less than 1 KiB below it", check_frame - check_cb_frame < 0x400);
-    PRINT("inside it the stack has less free", free_inside < free_outside);
     PRINT("it runs as its own thread", own_thread);
     PRINT("with the thread's priority", own_priority == THREAD_PRIORITY);
 

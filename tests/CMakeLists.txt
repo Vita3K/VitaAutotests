@@ -446,7 +446,7 @@ vita_test(display_framebuf_free display/display_framebuf_free.c)
 vita_test(savedata_slot_id apputil/savedata_slot_id.c)
 vita_test(cache_mount apputil/cache_mount.c)
 
-vita_test(appmgr_system_event appmgr/system_event.c)
-vita_test(appmgr_app_param_string appmgr/app_param_string.c)
+vita_test(appmgr_system_event appmgr/appmgr_system_event.c)
+vita_test(appmgr_app_param_string appmgr/appmgr_app_param_string.c)
 
 vita_tests_vpk(VTST00000)

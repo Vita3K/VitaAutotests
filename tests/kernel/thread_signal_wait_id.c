@@ -1,6 +1,7 @@
 // What a thread waiting for a thread signal reports as the UID it waits on: 0, itself, -1, the
-// process, the thread that sends the signal, or a fixed value that isn't a UID, and its class. Also
-// whether two waiting threads report the same one, and the same for a wait with callbacks.
+// process, the thread that sends the signal, or something else, and its class. Also whether two
+// waiting threads report the same one, and the same for a wait with callbacks. The value itself
+// isn't printed, since it differs between consoles.
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/threadmgr.h>
 #include <psp2/kernel/threadmgr/signal.h>
@@ -38,8 +39,6 @@ static void run(const char *name) {
     PRINTF(id == sceKernelGetProcessId(), "%s: the wait UID is the process", name);
     PRINTF(id == sceKernelGetThreadId(), "%s: the wait UID is the thread that will send the signal", name);
     PRINTF(get_uid_class(id), "%s: the class of the wait UID", name);
-    // Printed only when it isn't a UID, so the output doesn't depend on UID values
-    PRINTF(get_uid_class(id) < 0 ? id : 0, "%s: the wait UID if it isn't one", name);
     PRINTF(wait_id(b) == id, "%s: a second waiting thread reports the same UID", name);
     sceKernelSendSignal(a);
     sceKernelSendSignal(b);
