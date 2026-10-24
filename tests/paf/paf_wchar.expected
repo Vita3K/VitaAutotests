@@ -1,0 +1,62 @@
+the length of hello: 0x00000012
+the length of an empty string: 0x00000000
+the length of 2 wide characters: 0x00000002
+the length of hello up to 3: 0x00000003
+the length of hello up to 100: 0x00000012
+the length of hello up to 0: 0x00000001
+compare abc with abd: 0xFFFFFFFF
+compare abd with abc: 0x00000001
+compare abc with abc: 0x00000000
+compare ab with abc: 0xFFFFFF9D
+compare a wide character with a low one: 0x00002FE1
+compare the first 2 of abc and abd: 0x00000000
+compare the first 3 of abc and abd: 0xFFFFFFFF
+compare 0 characters: 0x00000000
+compare ABC with abc ignoring case: 0x00000000
+compare ABC with abd ignoring case: 0xFFFFFFFF
+compare ABD with abc ignoring case: 0x00000001
+compare the first 2 of ABC and abd ignoring case: 0x00000000
+compare the first 3 of ABC and abd ignoring case: 0xFFFFFFFF
+compare a full width A with a ignoring case: 0x0000FEC0
+compare bytes of wide characters: 0xFFFFFFFF
+compare 2 wide characters equal: 0x00000000
+compare 0 wide characters: 0x00000000
+find the first l: 0x00000002
+find the last l: 0x00000010
+find a missing character: 0xFFFFFFFF
+find the terminator: 0x00000012
+find the last terminator: 0x00000012
+find a wide character: 0x00000001
+find w with wmemchr: 0x00000006
+find w with wmemchr past the length: 0xFFFFFFFF
+find the first of o and w: 0x00000004
+find the first of z and q: 0xFFFFFFFF
+the span of hel: 0x00000004
+the span of nothing: 0x00000000
+the span without o: 0x00000004
+the span without z: 0x00000012
+the span without an empty set: 0x00000012
+copy abc returns the destination: 0x00000000
+it copies the terminator: 0x00000001
+copy abc into 8 returns the destination: 0x00000000
+it pads the rest with zeros: 0x00000001
+copy 3 of abcdef leaves no terminator: 0x00000001
+wmemset returns the destination: 0x00000000
+it stores the whole character: 0x00000001
+wmemcpy returns the destination: 0x00000000
+it copies: 0x00000001
+wmemmove up returns the destination: 0x00000002
+it keeps the source whole: 0x00000001
+wmemmove down keeps the source whole: 0x00000001
+append cd returns the destination: 0x00000000
+it appends: 0x00000001
+append 2 of efgh: 0x00000001
+append gh with a length of 8: 0x00000001
+lower A: 0x00000061
+lower a: 0x00000061
+lower a full width A: 0x0000FF21
+lower a Greek capital sigma: 0x000003A3
+lower a Latin capital with a grave: 0x000000C0
+lower [: 0x0000005B
+lower 0: 0x00000000
+DONE

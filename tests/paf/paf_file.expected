@@ -1,0 +1,45 @@
+a missing file exists: 0x00000000
+a directory exists: 0x00000001
+an empty path exists: 0x00000000
+a missing file opens: 0x00000000
+create the file: 0x00000001
+write 8 bytes: 0x00000008
+write 2 items of 4: 0x00000002
+put a character: 0x0000005A
+the position: 0x00000000
+close: 0x00000000
+the file exists: 0x00000001
+open the file: 0x00000001
+read 4 bytes: 0x00000004
+it reads them: 0x00000001
+the position: 0x00000004
+get a character: 0x00000034
+seek to 12 from the start: 0x00000000
+the position: 0x0000000C
+get a character there: 0x00000065
+seek back 3 from here: 0x00000000
+the position: 0x0000000A
+seek to 2 before the end: 0x00000000
+the position: 0x0000000F
+read 8 items of 1 at the end: 0x00000002
+get a character at the end: 0xFFFFFFFF
+seek past the end: 0x00000000
+the position: 0x00000064
+seek before the start: 0xFFFFFFFF
+seek with a bad origin: 0xFFFFFFFF
+read 3 items of 4: 0x00000003
+read 0 items: 0x00000000
+read items of size 0: 0x00000000
+write to a file opened for reading: 0x00000000
+close: 0x00000000
+append 2 bytes: 0x00000002
+the size after appending: 0x00000013
+open for reading and writing: 0x00000001
+write at the start: 0x00000002
+read it back: 0x00000041
+open in text mode: 0x00000001
+open with a bad mode: 0x00000000
+the file exists after removing it: 0x00000000
+open a NULL path: 0x00000000
+close NULL: 0xFFFFFFFF
+DONE

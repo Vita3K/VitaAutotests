@@ -1,0 +1,11 @@
+paf is loaded at the start: 0x805A1001
+load paf: 0x00000000
+paf is loaded after it: 0x00000000
+load paf again: 0x00000000
+a PAF call works: 0x00000003
+unload paf: 0x00000000
+paf is loaded after unloading once: 0x00000000
+unload paf again: 0x00000000
+paf is loaded after unloading twice: 0x805A1001
+unload paf once more: 0x805A1001
+DONE

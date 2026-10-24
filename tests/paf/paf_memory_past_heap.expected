@@ -1,0 +1,4 @@
+malloc past the heap: 0x00000000
+memalign past the heap: 0x00000000
+malloc 100 after them: 0x00000001
+DONE

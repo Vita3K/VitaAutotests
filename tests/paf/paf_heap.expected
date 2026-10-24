@@ -1,0 +1,37 @@
+the heap context size: 0x00000060
+the heap option size: 0x00000014
+allocate the memory block: 0x00000000
+the heap keeps the base: 0x00000001
+the heap keeps the size: 0x00010000
+the heap has a vtable: 0x00000001
+the heap has a heap: 0x00000001
+the heap keeps the name: 0x00000001
+it imported the memory: 0x00000001
+malloc 100 returns memory: 0x00000001
+it is inside the block: 0x00000001
+it is 8 byte aligned: 0x00000001
+a second one doesn't overlap: 0x00000001
+align 4 returns memory: 0x00000001
+it is 4 byte aligned: 0x00000001
+align 16 returns memory: 0x00000001
+it is 16 byte aligned: 0x00000001
+align 64 returns memory: 0x00000001
+it is 64 byte aligned: 0x00000001
+align 256 returns memory: 0x00000001
+it is 256 byte aligned: 0x00000001
+align 4096 returns memory: 0x00000001
+it is 4096 byte aligned: 0x00000001
+realloc to 400 returns memory: 0x00000001
+it keeps the contents: 0x00000001
+realloc down to 10 keeps the contents: 0x00000001
+realloc NULL returns memory: 0x00000001
+free NULL does nothing: 0x00000000
+malloc after a free of the same size returns the same memory: 0x00000001
+malloc half the heap: 0x00000001
+malloc the whole heap: 0x00000000
+malloc past the heap: 0x00000000
+memalign past the heap: 0x00000000
+malloc half the heap after freeing it: 0x00000001
+the memory block is still there after deleting: 0x00000000
+free the memory block: 0x00000000
+DONE

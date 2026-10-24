@@ -1,0 +1,91 @@
+the context size: 0x00000068
+empty: init: 0x00000000
+empty: update: 0x00000000
+empty: result: 0x00000000
+empty word 0: 0xDA39A3EE
+empty word 1: 0x5E6B4B0D
+empty word 2: 0x3255BFEF
+empty word 3: 0x95601890
+empty word 4: 0xAFD80709
+abc: init: 0x00000000
+abc: update: 0x00000000
+abc: result: 0x00000000
+abc word 0: 0xA9993E36
+abc word 1: 0x4706816A
+abc word 2: 0xBA3E2571
+abc word 3: 0x7850C26C
+abc word 4: 0x9CD0D89D
+the quick fox: init: 0x00000000
+the quick fox: update: 0x00000000
+the quick fox: result: 0x00000000
+the quick fox word 0: 0x2FD4E1C6
+the quick fox word 1: 0x7A2D28FC
+the quick fox word 2: 0xED849EE1
+the quick fox word 3: 0xBB76E739
+the quick fox word 4: 0x1B93EB12
+55 bytes: init: 0x00000000
+55 bytes: update: 0x00000000
+55 bytes: result: 0x00000000
+55 bytes word 0: 0xC1C8BBDC
+55 bytes word 1: 0x22796E28
+55 bytes word 2: 0xC0E15163
+55 bytes word 3: 0xD20899B6
+55 bytes word 4: 0x5621D65A
+56 bytes: init: 0x00000000
+56 bytes: update: 0x00000000
+56 bytes: result: 0x00000000
+56 bytes word 0: 0xC2DB330F
+56 bytes word 1: 0x6083854C
+56 bytes word 2: 0x99D4B5BF
+56 bytes word 3: 0xB6E8F29F
+56 bytes word 4: 0x201BE699
+64 bytes: init: 0x00000000
+64 bytes: update: 0x00000000
+64 bytes: result: 0x00000000
+64 bytes word 0: 0x0098BA82
+64 bytes word 1: 0x4B5C1642
+64 bytes word 2: 0x7BD7A112
+64 bytes word 3: 0x2A5A442A
+64 bytes word 4: 0x25EC644D
+abc in pieces word 0: 0xA9993E36
+abc in pieces word 1: 0x4706816A
+abc in pieces word 2: 0xBA3E2571
+abc in pieces word 3: 0x7850C26C
+abc in pieces word 4: 0x9CD0D89D
+1000 bytes: init: 0x00000000
+1000 bytes: update: 0x00000000
+1000 bytes: result: 0x00000000
+1000 bytes word 0: 0xAF0B191C
+1000 bytes word 1: 0x2DE46FE1
+1000 bytes word 2: 0x3FE0908F
+1000 bytes word 3: 0x5A6A4E90
+1000 bytes word 4: 0xE0CAFC46
+1000 bytes in pieces of 7 word 0: 0xAF0B191C
+1000 bytes in pieces of 7 word 1: 0x2DE46FE1
+1000 bytes in pieces of 7 word 2: 0x3FE0908F
+1000 bytes in pieces of 7 word 3: 0x5A6A4E90
+1000 bytes in pieces of 7 word 4: 0xE0CAFC46
+result again: 0x00000000
+result again word 0: 0xAF0B191C
+result again word 1: 0x2DE46FE1
+result again word 2: 0x3FE0908F
+result again word 3: 0x5A6A4E90
+result again word 4: 0xE0CAFC46
+update after the result: 0x00000003
+update after the result word 0: 0xAF0B191C
+update after the result word 1: 0x2DE46FE1
+update after the result word 2: 0x3FE0908F
+update after the result word 3: 0x5A6A4E90
+update after the result word 4: 0xE0CAFC46
+init after an update word 0: 0xDA39A3EE
+init after an update word 1: 0x5E6B4B0D
+init after an update word 2: 0x3255BFEF
+init after an update word 3: 0x95601890
+init after an update word 4: 0xAFD80709
+init NULL: 0x00000001
+update with NULL data and a length: 0x00000001
+update with NULL data and no length: 0x00000000
+update NULL: 0x00000001
+result into NULL: 0x00000001
+result NULL: 0x00000001
+DONE

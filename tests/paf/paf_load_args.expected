@@ -1,0 +1,13 @@
+load with the usual arguments: 0x00000000
+the result written for the usual arguments: 0x00000000
+paf is loaded after the usual arguments: 0x00000000
+paf is loaded after unloading it after the usual arguments: 0x805A1001
+load with a 64 KiB heap: 0x00000000
+the result written for a 64 KiB heap: 0x00000000
+paf is loaded after a 64 KiB heap: 0x00000000
+paf is loaded after unloading it after a 64 KiB heap: 0x805A1001
+load with a size past the struct: 0x00000000
+the result written for a size past the struct: 0x00000000
+paf is loaded after a size past the struct: 0x00000000
+paf is loaded after unloading it after a size past the struct: 0x805A1001
+DONE

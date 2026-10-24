@@ -1,0 +1,156 @@
+atoi 123: 0x0000007B
+atoi -45: 0xFFFFFFD3
+atoi with spaces and a sign: 0x00000007
+atoi of text: 0x00000000
+atoi of 2147483648: 0x80000000
+atol 123456: 0x0001E240
+atoll 4294967296 low: 0x00000000
+atoll 4294967296 high: 0x00000001
+abs of -5: 0x00000005
+abs of 5: 0x00000005
+abs of the lowest int: 0x80000000
+strtol "123abc" base 10: 0x0000007B
+it stops at: 0x00000003
+strtoul "123abc" base 10: 0x0000007B
+strtoll "123abc" base 10 low: 0x0000007B
+strtoll "123abc" base 10 high: 0x00000000
+strtoull "123abc" base 10 low: 0x0000007B
+strtol "  -42" base 10: 0xFFFFFFD6
+it stops at: 0x00000005
+strtoul "  -42" base 10: 0x00000000
+strtoll "  -42" base 10 low: 0xFFFFFFD6
+strtoll "  -42" base 10 high: 0xFFFFFFFF
+strtoull "  -42" base 10 low: 0x00000000
+strtol "0x1F" base 16: 0x0000001F
+it stops at: 0x00000004
+strtoul "0x1F" base 16: 0x0000001F
+strtoll "0x1F" base 16 low: 0x0000001F
+strtoll "0x1F" base 16 high: 0x00000000
+strtoull "0x1F" base 16 low: 0x0000001F
+strtol "0x1F" base 0: 0x0000001F
+it stops at: 0x00000004
+strtoul "0x1F" base 0: 0x0000001F
+strtoll "0x1F" base 0 low: 0x0000001F
+strtoll "0x1F" base 0 high: 0x00000000
+strtoull "0x1F" base 0 low: 0x0000001F
+strtol "017" base 0: 0x0000000F
+it stops at: 0x00000003
+strtoul "017" base 0: 0x0000000F
+strtoll "017" base 0 low: 0x0000000F
+strtoll "017" base 0 high: 0x00000000
+strtoull "017" base 0 low: 0x0000000F
+strtol "017" base 10: 0x00000011
+it stops at: 0x00000003
+strtoul "017" base 10: 0x00000011
+strtoll "017" base 10 low: 0x00000011
+strtoll "017" base 10 high: 0x00000000
+strtoull "017" base 10 low: 0x00000011
+strtol "zz" base 36: 0x0000050F
+it stops at: 0x00000002
+strtoul "zz" base 36: 0x0000050F
+strtoll "zz" base 36 low: 0x0000050F
+strtoll "zz" base 36 high: 0x00000000
+strtoull "zz" base 36 low: 0x0000050F
+strtol "12" base 2: 0x00000001
+it stops at: 0x00000001
+strtoul "12" base 2: 0x00000001
+strtoll "12" base 2 low: 0x00000001
+strtoll "12" base 2 high: 0x00000000
+strtoull "12" base 2 low: 0x00000001
+strtol "" base 10: 0x00000000
+it stops at: 0x00000000
+strtoul "" base 10: 0x00000000
+strtoll "" base 10 low: 0x00000000
+strtoll "" base 10 high: 0x00000000
+strtoull "" base 10 low: 0x00000000
+strtol "-" base 10: 0x00000000
+it stops at: 0x00000001
+strtoul "-" base 10: 0x00000000
+strtoll "-" base 10 low: 0x00000000
+strtoll "-" base 10 high: 0x00000000
+strtoull "-" base 10 low: 0x00000000
+strtol "99999999999" base 10: 0x4876E7FF
+it stops at: 0x0000000B
+strtoul "99999999999" base 10: 0x4876E7FF
+strtoll "99999999999" base 10 low: 0x4876E7FF
+strtoll "99999999999" base 10 high: 0x00000017
+strtoull "99999999999" base 10 low: 0x4876E7FF
+strtol "-99999999999" base 10: 0xB7891801
+it stops at: 0x0000000C
+strtoul "-99999999999" base 10: 0x00000000
+strtoll "-99999999999" base 10 low: 0xB7891801
+strtoll "-99999999999" base 10 high: 0xFFFFFFE8
+strtoull "-99999999999" base 10 low: 0x00000000
+strtol "10" base 1: 0x0000000A
+it stops at: 0x00000002
+strtoul "10" base 1: 0x0000000A
+strtoll "10" base 1 low: 0x0000000A
+strtoll "10" base 1 high: 0x00000000
+strtoull "10" base 1 low: 0x0000000A
+strtol "10" base 37: 0x0000000A
+it stops at: 0x00000002
+strtoul "10" base 37: 0x0000000A
+strtoll "10" base 37 low: 0x0000000A
+strtoll "10" base 37 high: 0x00000000
+strtoull "10" base 37 low: 0x0000000A
+atof 3.25: 0x00000CB2
+atof -0.5: 0xFFFFFE0C
+atof 1e3: 0x000F4240
+atof of text: 0x00000000
+strtod "2.5xyz": 0x000009C4
+it stops at: 0x00000003
+strtod "  -1.75": 0xFFFFF92A
+it stops at: 0x00000007
+strtod ".5": 0x000001F4
+it stops at: 0x00000002
+strtod "1e-2": 0x0000000A
+it stops at: 0x00000004
+strtod "0x10": 0x00000000
+it stops at: 0x00000001
+strtod "inf": 0x00000000
+it stops at: 0x00000000
+strtod "": 0x00000000
+it stops at: 0x00000000
+strtod "1e400": 0x7FFFFFFF
+it stops at: 0x00000005
+the same seed gives the same first number: 0x00000001
+and the same second number: 0x00000001
+another seed gives another first number: 0x00000001
+seed 1 number 0: 0x000041C6
+seed 1 number 1: 0x0000167E
+seed 1 number 2: 0x00002781
+seed 1 number 3: 0x0000446B
+seed 0 number 0: 0x00000000
+seed 0 number 1: 0x000053DC
+sorted value 0: 0xFFFFFFFE
+sorted value 1: 0x00000000
+sorted value 2: 0x00000001
+sorted value 3: 0x00000003
+sorted value 4: 0x00000003
+sorted value 5: 0x00000005
+sorted value 6: 0x00000007
+sorted value 7: 0x00000009
+find 7: 0x00000006
+find 4: 0x00000000
+find -2: 0x00000000
+find in 0 values: 0x00000000
+sort 1 value leaves them: 0x00000001
+sort 0 values leaves them: 0x00000001
+ctype table of 0xFFFFFFFF: 0x00000000
+ctype table of 0x0: 0x00000020
+ctype table of 0x9: 0x00000008
+ctype table of 0x20: 0x00000008
+ctype table of 0x30: 0x00000004
+ctype table of 0x39: 0x00000004
+ctype table of 0x41: 0x00000041
+ctype table of 0x5A: 0x00000001
+ctype table of 0x61: 0x00000042
+ctype table of 0x7A: 0x00000002
+ctype table of 0x5F: 0x00000010
+ctype table of 0x7E: 0x00000010
+ctype table of 0x7F: 0x00000020
+ctype table of 0x80: 0x00000000
+ctype table of 0xC0: 0x00000000
+ctype table of 0xFF: 0x00000000
+ctype table of 0x100: 0x00000000
+DONE

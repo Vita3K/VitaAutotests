@@ -426,4 +426,18 @@ vita_test(display_framebuf_free display/display_framebuf_free.c)
 vita_test(savedata_slot_id apputil/savedata_slot_id.c)
 vita_test(cache_mount apputil/cache_mount.c)
 
+vita_test(paf_load paf/paf_load.c)
+vita_test(paf_load_args paf/paf_load_args.c)
+vita_test(paf_string paf/paf_string.c)
+vita_test(paf_memory paf/paf_memory.c)
+vita_test(paf_wchar paf/paf_wchar.c)
+
+vita_test(paf_convert paf/paf_convert.c)
+vita_test(paf_format paf/paf_format.c)
+vita_test(paf_sha1 paf/paf_sha1.c)
+vita_test(paf_heap paf/paf_heap.c)
+vita_test(paf_file paf/paf_file.c)
+vita_test(paf_misc paf/paf_misc.c)
+vita_test(paf_memory_past_heap paf/paf_memory_past_heap.c)
+
 vita_tests_vpk(VTST00000)

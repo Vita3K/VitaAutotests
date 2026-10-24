@@ -1,0 +1,73 @@
+plain text: length: 0x00000005
+plain text: text [hello]: 0x00000000
+signed: length: 0x00000006
+signed: text [-42 17]: 0x00000000
+unsigned: length: 0x0000000A
+unsigned: text [4000000000]: 0x00000000
+hex: length: 0x0000000E
+hex: text [beef BEEF 0xff]: 0x00000000
+octal: length: 0x00000002
+octal: text [10]: 0x00000000
+character: length: 0x00000002
+character: text [ok]: 0x00000000
+string: length: 0x00000004
+string: text [text]: 0x00000000
+percent: length: 0x00000004
+percent: text [100%]: 0x00000000
+width: length: 0x00000017
+width: text [[   42] [42   ] [00042]]: 0x00000000
+sign flags: length: 0x00000009
+sign flags: text [[+5] [ 5]]: 0x00000000
+string width and precision: length: 0x00000016
+string width and precision: text [[   abc] [abc   ] [ab]]: 0x00000000
+star width: length: 0x0000000D
+star width: text [[   7] [7   ]]: 0x00000000
+long long: length: 0x00000016
+long long: text [-5000000000 123456789a]: 0x00000000
+short and char: length: 0x00000009
+short and char: text [70000 300]: 0x00000000
+size: length: 0x00000002
+size: text [12]: 0x00000000
+pointer: length: 0x00000008
+pointer: text [81000000]: 0x00000000
+a NULL string: length: 0x00000006
+a NULL string: text [(null)]: 0x00000000
+float: length: 0x00000004
+float: text [3.14]: 0x00000000
+float width: length: 0x00000015
+float width: text [[   2.500] [2.5     ]]: 0x00000000
+exponent: length: 0x0000000C
+exponent: text [12345.677734]: 0x00000000
+general: length: 0x00000017
+general: text [0.000099 1234567.000000]: 0x00000000
+negative zero: length: 0x00000003
+negative zero: text [0.0]: 0x00000000
+an unknown conversion: length: 0x00000001
+an unknown conversion: text [y]: 0x00000000
+a lone percent: length: 0x00000003
+a lone percent: text [abc]: 0x00000000
+exact fit: length: 0x00000005
+exact fit: text [hello]: 0x00000000
+one short: length: 0x00000005
+one short: text [hell]: 0x00000000
+far short: length: 0x00000005
+far short: text [h]: 0x00000000
+size 1: length: 0x00000005
+size 1: text []: 0x00000000
+size 0 returns the length: 0x00000005
+it writes nothing: 0x00000001
+a NULL buffer with size 0: 0x00000008
+sprintf returns the length: 0x00000005
+it writes the text: 0x00000001
+vsnprintf returns the length: 0x00000003
+it writes the text: 0x00000001
+vsnprintf truncates: 0x00000005
+it writes the start: 0x00000001
+vsprintf returns the length: 0x00000003
+it writes the text: 0x00000001
+swprintf returns the length: 0x00000005
+it writes the text: 0x00000001
+swprintf truncates and returns: 0x00000005
+it writes the start: 0x00000001
+swprintf with size 0: 0x00000005
+DONE

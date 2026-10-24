@@ -1,0 +1,13 @@
+get the local time fails: 0x00000000
+the year matches the RTC's local year: 0x00000001
+the month is valid: 0x00000001
+the day is valid: 0x00000001
+the time is valid: 0x00000001
+the microseconds are valid: 0x00000001
+the day matches the RTC's local day: 0x00000001
+the size of the date time: 0x00000018
+setjmp returns 0 at first: 0x00000000
+longjmp returns the value to setjmp: 0x00000005
+longjmp with 0 returns: 0x00000001
+setjmp ran this many times: 0x00000003
+DONE

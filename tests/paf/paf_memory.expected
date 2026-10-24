@@ -1,0 +1,54 @@
+compare bytes 1 2 3 with 1 2 4: 0xFFFFFFFF
+compare bytes 1 2 4 with 1 2 3: 0x00000001
+compare bytes 0xFF with 0x01: 0x00000001
+compare equal bytes: 0x00000000
+compare 0 bytes: 0x00000000
+bcmp of different bytes: 0x00000001
+bcmp of equal bytes: 0x00000000
+bcmp of 0 bytes: 0x00000000
+set returns the destination: 0x00000000
+it stores the low byte: 0x00000001
+set 0 bytes: 0x00000000
+it stores nothing: 0x00000001
+copy returns the destination: 0x00000000
+it copies: 0x00000001
+copy 0 bytes: 0x00000000
+it copies nothing: 0x00000001
+bcopy takes the source first: 0x00000001
+bzero clears 3 bytes: 0x00000001
+move up returns the destination: 0x00000002
+it keeps the source whole: 0x00000001
+move down keeps the source whole: 0x00000001
+move 0 bytes: 0x00000000
+bcopy overlapping: 0x00000000
+malloc 100 returns memory: 0x00000001
+it is 8 byte aligned: 0x00000001
+it can be written: 0x0000005A
+a second one returns other memory: 0x00000001
+the two don't overlap: 0x00000001
+free NULL does nothing: 0x00000000
+malloc 0 returns memory: 0x00000001
+memalign 4 returns memory: 0x00000001
+it is 4 byte aligned: 0x00000001
+memalign 8 returns memory: 0x00000001
+it is 8 byte aligned: 0x00000001
+memalign 16 returns memory: 0x00000001
+it is 16 byte aligned: 0x00000001
+memalign 32 returns memory: 0x00000001
+it is 32 byte aligned: 0x00000001
+memalign 64 returns memory: 0x00000001
+it is 64 byte aligned: 0x00000001
+memalign 256 returns memory: 0x00000001
+it is 256 byte aligned: 0x00000001
+memalign 4096 returns memory: 0x00000001
+it is 4096 byte aligned: 0x00000001
+memalign 65536 returns memory: 0x00000001
+it is 65536 byte aligned: 0x00000001
+memalign 24 returns memory: 0x00000001
+memalign 0 returns memory: 0x00000001
+memalign with a length of 0 returns memory: 0x00000001
+malloc after a free of the same size returns the same memory: 0x00000001
+malloc 8 MiB: 0x00000001
+malloc another 8 MiB: 0x00000000
+malloc 8 MiB after freeing them: 0x00000001
+DONE

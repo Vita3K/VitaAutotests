@@ -1,0 +1,78 @@
+the length of hello: 0x00000005
+the length of an empty string: 0x00000000
+compare abc with abd: 0xFFFFFFFF
+compare abd with abc: 0x00000001
+compare abc with abc: 0x00000000
+compare ab with abc: 0xFFFFFF9D
+compare abc with ab: 0x00000063
+compare a high byte with a low one: 0x0000007F
+compare the first 2 of abc and abd: 0x00000000
+compare the first 3 of abc and abd: 0xFFFFFFFF
+compare 0 characters: 0x00000000
+compare ABC with abc ignoring case: 0x00000000
+compare ABC with abd ignoring case: 0xFFFFFFFF
+compare abd with ABC ignoring case: 0x00000001
+compare [ with a ignoring case: 0xFFFFFFFA
+compare the first 2 of ABC and abd ignoring case: 0x00000000
+compare the first 3 of ABC and abd ignoring case: 0xFFFFFFFF
+compare 0 characters ignoring case: 0x00000000
+find the first l: 0x00000002
+find the last l: 0x00000010
+find a missing character: 0xFFFFFFFF
+find the terminator: 0x00000012
+find the last terminator: 0x00000012
+find a character past 0xFF: 0xFFFFFFFF
+find a byte: 0x00000006
+find a byte past the length: 0xFFFFFFFF
+find the first of o and w: 0x00000004
+find the first of z and q: 0xFFFFFFFF
+find the first of an empty set: 0xFFFFFFFF
+the span of hel in hello world: 0x00000004
+the span of nothing: 0x00000000
+the span of an empty set: 0x00000000
+the span of the whole string: 0x00000003
+the span without o: 0x00000004
+the span without z: 0x00000012
+the span without an empty set: 0x00000012
+the span without h: 0x00000000
+copy abc returns the destination: 0x00000000
+it copies the terminator: 0x00000001
+copy abc into 8 bytes returns the destination: 0x00000000
+it pads the rest with zeros: 0x00000001
+copy 3 of abcdef leaves no terminator: 0x00000001
+copy abc with a size of 8 returns its length: 0x00000003
+it pads nothing: 0x00000001
+copy abcdef with a size of 4 returns its length: 0x00000006
+it cuts it and ends it: 0x00000001
+copy abc with a size of 0 returns its length: 0x00000003
+it writes nothing: 0x00000001
+copy abc with a size of 1 returns its length: 0x00000003
+it only writes the terminator: 0x00000001
+append cd returns the destination: 0x00000000
+it appends: 0x00000001
+append 2 of efgh: 0x00000001
+append gh with a length of 8: 0x00000001
+it ends the string: 0x00000001
+append cd with a size of 8 returns the length it would have: 0x00000004
+it appends it: 0x00000001
+append efghij with a size of 8 returns the length it would have: 0x0000000A
+it cuts it: 0x00000001
+append x with a size of 3, short of the destination's length: 0x00000004
+it leaves the destination: 0x00000001
+token 0: 0x00000061
+token 1: 0x00000062
+token 2: 0x00000063
+token 3: 0xFFFFFFFF
+token 4: 0xFFFFFFFF
+lower A: 0x00000061
+lower a: 0x00000061
+lower 0: 0x00000030
+lower [: 0x0000005B
+upper z: 0x0000005A
+upper Z: 0x0000005A
+upper {: 0x0000007B
+lower a high byte: 0x000000C0
+upper a high byte: 0x000000E0
+lower -1: 0xFFFFFFFF
+upper 0x161: 0x00000161
+DONE
