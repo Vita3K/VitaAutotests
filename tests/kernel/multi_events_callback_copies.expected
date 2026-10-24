@@ -1,0 +1,11 @@
+the callback rewrites the event UID: the call: 0x80028005
+the callback rewrites the event UID: runs of the callback: 0x00000001
+the callback rewrites the event UID: it lasted at least 0.25 s: 0x00000001
+the callback writes the timeout, the event is set: the call: 0x00000001
+the callback writes the timeout, the event is set: runs of the callback: 0x00000001
+the callback writes the timeout, the event is set: the timeout after: 0x00000000
+the callback shortens the timeout: the call: 0x80028005
+the callback shortens the timeout: runs of the callback: 0x00000001
+the callback shortens the timeout: it lasted at least 0.25 s: 0x00000001
+the callback shortens the timeout: the timeout after is 0: 0x00000001
+DONE
