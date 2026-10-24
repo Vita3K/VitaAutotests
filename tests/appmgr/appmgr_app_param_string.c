@@ -1,6 +1,7 @@
 // sceAppMgrAppParamGetString: what it returns for each output size around the string's length and
 // around the minimum size of the parameter, whether it writes the NUL after the string, and what it
-// leaves of the rest of the buffer.
+// leaves of the rest of the buffer. The content ID is empty or 36 characters, which differs between
+// installs of the vpk, so for it the test only prints that it is one of the two.
 #include <psp2/appmgr.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/threadmgr.h>
@@ -45,7 +46,11 @@ static void probe(const char *name, int pid, int param, int size, const char *ex
             break;
         }
     }
-    PRINTF(nul, "%s, size 0x%X: index of the first NUL", name, size);
+    // The content ID is empty or 36 characters, which differs between installs of the vpk
+    if (param == PARAM_CONTENT_ID || param == PARAM_CONTENT_ID_OVERRIDE)
+        PRINTF(nul == 0 || nul == 0x24, "%s, size 0x%X: the first NUL is at index 0 or 0x24", name, size);
+    else
+        PRINTF(nul, "%s, size 0x%X: index of the first NUL", name, size);
     if (expected)
         PRINTF(nul >= 0 && sceClibStrncmp(buf.data, expected, nul) == 0 && expected[nul] == '\0', "%s, size 0x%X: holds the string", name, size);
 

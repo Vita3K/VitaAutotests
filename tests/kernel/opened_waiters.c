@@ -2,9 +2,9 @@
 // Each case makes the object, opens it once by its name, and starts a thread that waits through
 // one of the two UIDs. Then the main thread deletes the creating UID or closes the opened one,
 // reads right after how many waiters the info call through the UID that is left counts, and
-// releases the object through that UID. The test prints which UID the waiting thread's info
-// reports as the one it waits on, the delete or close, the waiters it counted, the release, and
-// what the wait returned. The cases:
+// releases the object through that UID. The test prints whether the UID the waiting thread's info
+// reports as the one it waits on is one of the object's two UIDs, the delete or close, the waiters
+// it counted, the release, and what the wait returned. The cases:
 // - the wait through the opened UID, and the creating UID deleted
 // - the wait through the opened UID, and that UID closed
 // - the wait through the creating UID, and that UID deleted
@@ -13,8 +13,8 @@
 // mutex, a read lock while it holds the write lock, a message pipe receive, a simple event wait and
 // a wait for a timer's event, each with a timeout of 2 seconds. The releases are a signal, a set,
 // an unlock, a write unlock, a send, a set, and for the timer an event 1 ms ahead with the timer
-// started. The UID the waiting thread reports prints 0 for the UID it waits through, 1 for the
-// object's other UID and 2 for anything else.
+// started. Which of the two UIDs the waiting thread reports isn't printed, since that differs
+// between consoles.
 //
 // On a PS Vita TV on firmware 3.65 the waiter outlives the loss of either UID, even the UID it
 // waits through, for every kind but the timer's delete. The delete or close works, the info call
@@ -224,7 +224,7 @@ static void run(int which) {
     if (kind == TIMER)
         sceKernelStopTimer(left);
 
-    PRINTF(waits_on == wait_uid ? 0 : waits_on == other ? 1 : 2, "%s, %s: the UID it waits on",
+    PRINTF(waits_on == wait_uid || waits_on == other, "%s, %s: the UID it waits on is one of its two",
         name, what);
     PRINTF(removed, "%s, %s: %s", name, what, deletes ? "the delete" : "the close");
     PRINTF(counted, "%s, %s: waiters through the UID left", name, what);

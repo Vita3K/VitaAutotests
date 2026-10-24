@@ -3,7 +3,7 @@ delay: the wait UID: 0xFFFFFFFF
 delay with callbacks: the wait type: 0x80000001
 delay with callbacks: the wait UID: 0xFFFFFFFF
 signal wait: the wait type: 0x00000004
-signal wait: the wait UID: 0x00010221
+signal wait: the wait UID is -1: 0x00000000
 a delay reports the wait UID of a signal wait: 0x00000000
 a delay with callbacks reports the wait UID of a plain delay: 0x00000001
 DONE

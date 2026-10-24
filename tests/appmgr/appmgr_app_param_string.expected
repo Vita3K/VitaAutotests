@@ -45,11 +45,11 @@ content id, size 0x24: 0x80801000
 content id, size 0x25: 0x80801000
 content id, size 0x2F: 0x80801000
 content id, size 0x30: 0x00000000
-content id, size 0x30: index of the first NUL: 0x00000024
+content id, size 0x30: the first NUL is at index 0 or 0x24: 0x00000001
 content id, size 0x30: the rest of the buffer is untouched: 0x00000001
 content id, size 0x30: guards intact: 0x00000001
 content id, size 0x100: 0x00000000
-content id, size 0x100: index of the first NUL: 0x00000024
+content id, size 0x100: the first NUL is at index 0 or 0x24: 0x00000001
 content id, size 0x100: the rest of the buffer is untouched: 0x00000001
 content id, size 0x100: guards intact: 0x00000001
 title, size 0x7F: 0x80801000
@@ -68,7 +68,7 @@ np communication id, size 0xD: index of the first NUL: 0x00000000
 np communication id, size 0xD: the rest of the buffer is untouched: 0x00000001
 np communication id, size 0xD: guards intact: 0x00000001
 content id override, size 0x30: 0x00000000
-content id override, size 0x30: index of the first NUL: 0x00000024
+content id override, size 0x30: the first NUL is at index 0 or 0x24: 0x00000001
 content id override, size 0x30: the rest of the buffer is untouched: 0x00000001
 content id override, size 0x30: guards intact: 0x00000001
 title override, size 0x80: 0x00000000

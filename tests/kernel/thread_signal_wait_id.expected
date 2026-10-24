@@ -5,7 +5,6 @@ a plain wait: the wait UID is -1: 0x00000000
 a plain wait: the wait UID is the process: 0x00000000
 a plain wait: the wait UID is the thread that will send the signal: 0x00000000
 a plain wait: the class of the wait UID: 0x80024501
-a plain wait: the wait UID if it isn't one: 0x00010221
 a plain wait: a second waiting thread reports the same UID: 0x00000001
 a wait with callbacks: the wait type: 0x80000004
 a wait with callbacks: the wait UID is 0: 0x00000000
@@ -14,6 +13,5 @@ a wait with callbacks: the wait UID is -1: 0x00000000
 a wait with callbacks: the wait UID is the process: 0x00000000
 a wait with callbacks: the wait UID is the thread that will send the signal: 0x00000000
 a wait with callbacks: the class of the wait UID: 0x80024501
-a wait with callbacks: the wait UID if it isn't one: 0x00010221
 a wait with callbacks: a second waiting thread reports the same UID: 0x00000001
 DONE

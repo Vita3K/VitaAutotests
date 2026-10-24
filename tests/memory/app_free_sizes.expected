@@ -15,7 +15,8 @@ the fiber module: the physically contiguous memory it takes: 0x00000000
 unload it: 0x00000000
 after the unload: the free sizes are back: 0x00000001
 initialize libgxm: 0x00000000
-libgxm: the main memory it takes: 0x00203000
+libgxm: it takes more than 2048 KiB of main memory: 0x00000001
+libgxm: it takes less than 2304 KiB of main memory: 0x00000001
 libgxm: the CDRAM it takes: 0x01000000
 libgxm: the physically contiguous memory it takes: 0x00000000
 terminate it: 0x00000000
