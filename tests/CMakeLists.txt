@@ -341,6 +341,7 @@ vita_test(tls_slot5 kernel/tls_slot5.c)
 vita_test(readonly_waits kernel/readonly_waits.c)
 vita_test(msgpipe_sync_events kernel/msgpipe_sync_events.c)
 vita_test(multi_events_pipe kernel/multi_events_pipe.c)
+vita_test(multi_events_callback_copies kernel/multi_events_callback_copies.c)
 
 # The module module_start_thread and module_start_vfp load. vita_create_self runs in a function, since it adds its flags
 # to the scope it runs in, where they would also apply to the test vpk's self.
