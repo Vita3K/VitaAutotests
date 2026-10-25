@@ -11,9 +11,9 @@
 // USER_RW_UNCACHE every one from 4 KiB to 16 MiB, and the base is aligned to it. Larger alignments,
 // and ones that aren't powers of two, fail with 0x80020005 (SCE_KERNEL_ERROR_INVALID_ARGUMENT).
 // USER_CDRAM_RW takes 256 KiB to 64 MiB and aligns the base to it up to 16 MiB, and from 4 KiB to
-// 128 KiB fails with 0x80024309 (SCE_KERNEL_ERROR_NO_FREE_PHYSICAL_PAGE_CDRAM). Under 4 KiB, on a
-// firmware 3.74 Vita, USER_RW_UNCACHE, USER_CDRAM_RW and USER_MAIN_PHYCONT_RW take every power of
-// two, so the 70 MiB block with 16 works. USER_MAIN_PHYCONT_RW takes none from 4 KiB up.
+// 128 KiB fails with 0x80024309 (SCE_KERNEL_ERROR_NO_FREE_PHYSICAL_PAGE_CDRAM). Under 4 KiB,
+// USER_RW_UNCACHE, USER_CDRAM_RW and USER_MAIN_PHYCONT_RW take every power of two, so the
+// 70 MiB block with 16 works. USER_MAIN_PHYCONT_RW takes none from 4 KiB up.
 // The alignment field is ignored without HAS_ALIGNMENT.
 #include <psp2/kernel/sysmem.h>
 
