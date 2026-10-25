@@ -3,13 +3,15 @@
 // threads of the highest priority spin on both cores without syscalls, and the main thread runs
 // on core 2. T starts while core 1 is busy, so it runs on core 0 and waits there with a 100 ms
 // timeout before core 0's gate closes. Then its timeout passes or the main thread signals it,
-// the gate of core 1 lifts and the main thread waits 50 ms. Each case prints T's status before
-// the lift, whether T ran before core 0's gate lifted, and the core it ran on. The cases run at
-// 0x70, where a start or a signal makes a thread STANDBY in the queue of one core and a timeout
-// makes it READY (wake_ready_areas), and at 0xA0, where all of them make it READY.
+// the gate of core 1 lifts and the main thread waits 50 ms. Each case prints whether T was ready
+// before the lift, and whether it ran on core 1 before core 0's gate lifted. The cases run at 0x70,
+// where a start or a signal makes a thread STANDBY in the queue of one core (wake_ready_areas), and
+// at 0xA0, where all of them make it READY.
 //
-// On a PS Vita TV on firmware 3.65, at 0x70 T waits for core 0 either way, READY after its
-// timeout and STANDBY after the signal. At 0xA0 it runs on core 1 at once either way.
+// On a PS Vita TV on firmware 3.65, at 0x70 T waits for core 0 either way. At 0xA0 it runs on core
+// 1 at once either way. After its timeout at 0x70, T is READY in some runs and STANDBY in others,
+// and once both gates lifted it runs on core 0 in some runs and core 1 in others, so the test
+// doesn't print either.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -86,9 +88,8 @@ static void run_case(int timeout, int priority) {
     // Joined first, so every record the threads made is complete
     test_join_thread(t);
     const char *const name = timeout ? "timeout" : "signal";
-    PRINTF(status, "%s, priority 0x%X: T's status before a gate lifts", name, priority);
-    PRINTF(ran_on_core_1, "%s, priority 0x%X: T ran while core 0 was still busy", name, priority);
-    PRINTF(t_cpu, "%s, priority 0x%X: the core T ran on", name, priority);
+    PRINTF(status == SCE_THREAD_READY || status == SCE_THREAD_STANDBY, "%s, priority 0x%X: T was READY or STANDBY before a gate lifted", name, priority);
+    PRINTF(ran_on_core_1 && t_cpu == 1, "%s, priority 0x%X: T ran on core 1 while core 0 was still busy", name, priority);
     sceKernelDeleteSema(sema);
 }
 

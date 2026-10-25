@@ -18,6 +18,10 @@
 // lets it run within 10 ms when it waits on L's core, but not when it waits STANDBY on core 2,
 // which the spinner at 0x40 holds. At 0xA0 R is READY in the queue the cores share, and either
 // change lets it take core 1 within 10 ms. L reports RUNNING right after each change.
+//
+// At 0x70 on cores 1 and 2, the start puts R in the queue of core 1 in some runs and of core 2 in
+// others, so those cases print what holds either way: R runs on the core it waited on, and raising
+// R lets it run within 10 ms exactly when it waited on L's core.
 #include <psp2/kernel/cpu.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -109,15 +113,26 @@ static void run_case(int l_priority, SceUInt32 r_mask, int lower_l) {
     sceClibSnprintf(name, sizeof(name), "L at 0x%X, R on %s, %s", l_priority,
                     r_mask == SCE_KERNEL_CPU_MASK_USER_1 ? "core 1" : "cores 1 and 2",
                     lower_l ? "L lowered below R" : "R raised above L");
+    // Which of its cores' queues R waits in at 0x70 on cores 1 and 2 varies between runs
+    const int either_queue = l_priority == 0x70 && r_mask != SCE_KERNEL_CPU_MASK_USER_1;
     PRINTF(ran_before, "%s: R ran before the change", name);
     PRINTF(before.status, "%s: R's status before the change", name);
-    PRINTF(before.currentCpuId, "%s: R's current CPU before the change", name);
+    if (either_queue)
+        PRINTF(before.currentCpuId == 1 || before.currentCpuId == 2, "%s: R's current CPU before the change is 1 or 2", name);
+    else
+        PRINTF(before.currentCpuId, "%s: R's current CPU before the change", name);
     PRINTF(result, "%s: the change", name);
     PRINTF(ran_in_call, "%s: R ran before the change returned", name);
-    PRINTF(ran_after, "%s: R ran within 10 ms of the change", name);
+    if (either_queue && !lower_l)
+        PRINTF(ran_after == (before.currentCpuId == 1), "%s: R ran within 10 ms of the change exactly when it waited on L's core", name);
+    else
+        PRINTF(ran_after, "%s: R ran within 10 ms of the change", name);
     PRINTF(l_status, "%s: L's status then", name);
     PRINTF(rescued, "%s: R only ran once given every core", name);
-    PRINTF(r_cpu, "%s: the core R ran on", name);
+    if (either_queue)
+        PRINTF(r_cpu == before.currentCpuId, "%s: R ran on the core it waited on", name);
+    else
+        PRINTF(r_cpu, "%s: the core R ran on", name);
 }
 
 int main(void) {
