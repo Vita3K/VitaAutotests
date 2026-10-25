@@ -22,6 +22,6 @@ set_source_files_properties(${stub_sources} PROPERTIES COMPILE_DEFINITIONS GEN_W
 add_library(vita-autotests-usb-stubs STATIC ${stub_sources})
 
 add_executable(vita-autotests-shell shell.c)
-target_link_libraries(vita-autotests-shell vita-autotests-usb-stubs SceUsbSerial_stub SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub)
+target_link_libraries(vita-autotests-shell vita-autotests-usb-stubs SceUsbSerial_stub SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceProcessmgr_stub)
 target_link_options(vita-autotests-shell PRIVATE -nostdlib)
 vita_create_self(vita-autotests-shell.suprx vita-autotests-shell CONFIG shell_exports.yml)

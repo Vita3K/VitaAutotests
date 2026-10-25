@@ -12,6 +12,7 @@
 #include <psp2/io/stat.h>
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/modulemgr.h>
+#include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/threadmgr.h>
 #include <psp2/usbserial.h>
 
@@ -23,6 +24,9 @@
 #define LOG_PATH "ur0:tai/vita-autotests-usb.log"
 
 #define POLL_US 10000
+// How often the Vita's idle timers are reset while a test runs, so a run longer than Auto Standby's
+// time doesn't put it to standby, after which it wakes on the lock screen
+#define POWER_TICK_US 1000000
 // How long the test app has to start after a launch before it's launched again, how many times,
 // and how long it has to close after it's destroyed
 #define LAUNCH_WAIT_US 3000000
@@ -131,11 +135,17 @@ static int wait_started(const char *output_path, long long timeout_us) {
     return 0;
 }
 
-// Waits until the test app isn't running, for at most timeout_us. Returns 0 if it still is.
+// Waits until the test app isn't running, for at most timeout_us, and resets the idle timers
+// meanwhile. Returns 0 if it still is.
 static int wait_ended(long long timeout_us) {
+    int polls_to_tick = 0;
     for (long long waited = 0; waited < timeout_us; waited += POLL_US) {
         if (!app_running())
             return 1;
+        if (polls_to_tick-- == 0) {
+            sceKernelPowerTick(SCE_KERNEL_POWER_TICK_DEFAULT);
+            polls_to_tick = POWER_TICK_US / POLL_US - 1;
+        }
         sceKernelDelayThread(POLL_US);
     }
     return 0;
@@ -185,6 +195,7 @@ static int run_test(const char *name, int timeout_ms) {
     if (app_running())
         close_app();
     sceIoRemove(output_path);
+    sceKernelPowerTick(SCE_KERNEL_POWER_TICK_DEFAULT);
 
     // A launch right after the app of the test before ended is ignored, so a launch that doesn't
     // start the app is tried again
