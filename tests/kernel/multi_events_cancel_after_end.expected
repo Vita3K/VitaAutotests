@@ -1,0 +1,11 @@
+a cancel after another event ended the wait: the cancel: 0x00000000
+a cancel after another event ended the wait: the waiters it reports: 0x00000000
+a cancel after another event ended the wait: T's call: 0x00000001
+a cancel after another event ended the wait: T's first entry: 0x00000001
+a cancel after another event ended the wait: its result: 0x00000000
+a cancel while the wait goes on: the cancel: 0x00000000
+a cancel while the wait goes on: the waiters it reports: 0x00000001
+a cancel while the wait goes on: T's call: 0x00000001
+a cancel while the wait goes on: T's first entry: 0x00000002
+a cancel while the wait goes on: its result: 0x80028007
+DONE

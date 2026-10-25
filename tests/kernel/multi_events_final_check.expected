@@ -1,0 +1,17 @@
+a call that sleeps: the call: 0x80028005
+a call that sleeps: runs of the callback when it returned: 0x00000002
+a call that sleeps: the time left: 0x00000000
+a call that sleeps: the event is set when it returned: 0x00000001
+a call that sleeps: runs of the callback after a check: 0x00000002
+a call that sleeps: it lasted at least 100 ms: 0x00000001
+a call with the event set: the call: 0x00000001
+a call with the event set: runs of the callback when it returned: 0x00000001
+a call with the event set: the time left: 0x00000001
+a call with the event set: the event is set when it returned: 0x00000001
+a call with the event set: runs of the callback after a check: 0x00000002
+a call with a timeout of 0: the call: 0x80028005
+a call with a timeout of 0: runs of the callback when it returned: 0x00000001
+a call with a timeout of 0: the time left: 0x00000000
+a call with a timeout of 0: the event is set when it returned: 0x00000000
+a call with a timeout of 0: runs of the callback after a check: 0x00000002
+DONE
