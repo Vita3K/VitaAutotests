@@ -18,22 +18,22 @@ L at 0x70, R on core 1, R raised above L: R only ran once given every core: 0x00
 L at 0x70, R on core 1, R raised above L: the core R ran on: 0x00000001
 L at 0x70, R on cores 1 and 2, L lowered below R: R ran before the change: 0x00000000
 L at 0x70, R on cores 1 and 2, L lowered below R: R's status before the change: 0x00000004
-L at 0x70, R on cores 1 and 2, L lowered below R: R's current CPU before the change: 0x00000002
+L at 0x70, R on cores 1 and 2, L lowered below R: R's current CPU before the change is 1 or 2: 0x00000001
 L at 0x70, R on cores 1 and 2, L lowered below R: the change: 0x00000000
 L at 0x70, R on cores 1 and 2, L lowered below R: R ran before the change returned: 0x00000000
 L at 0x70, R on cores 1 and 2, L lowered below R: R ran within 10 ms of the change: 0x00000000
 L at 0x70, R on cores 1 and 2, L lowered below R: L's status then: 0x00000001
 L at 0x70, R on cores 1 and 2, L lowered below R: R only ran once given every core: 0x00000000
-L at 0x70, R on cores 1 and 2, L lowered below R: the core R ran on: 0x00000002
+L at 0x70, R on cores 1 and 2, L lowered below R: R ran on the core it waited on: 0x00000001
 L at 0x70, R on cores 1 and 2, R raised above L: R ran before the change: 0x00000000
 L at 0x70, R on cores 1 and 2, R raised above L: R's status before the change: 0x00000004
-L at 0x70, R on cores 1 and 2, R raised above L: R's current CPU before the change: 0x00000002
+L at 0x70, R on cores 1 and 2, R raised above L: R's current CPU before the change is 1 or 2: 0x00000001
 L at 0x70, R on cores 1 and 2, R raised above L: the change: 0x00000000
 L at 0x70, R on cores 1 and 2, R raised above L: R ran before the change returned: 0x00000000
-L at 0x70, R on cores 1 and 2, R raised above L: R ran within 10 ms of the change: 0x00000000
+L at 0x70, R on cores 1 and 2, R raised above L: R ran within 10 ms of the change exactly when it waited on L's core: 0x00000001
 L at 0x70, R on cores 1 and 2, R raised above L: L's status then: 0x00000001
 L at 0x70, R on cores 1 and 2, R raised above L: R only ran once given every core: 0x00000000
-L at 0x70, R on cores 1 and 2, R raised above L: the core R ran on: 0x00000002
+L at 0x70, R on cores 1 and 2, R raised above L: R ran on the core it waited on: 0x00000001
 L at 0xA0, R on core 1, L lowered below R: R ran before the change: 0x00000000
 L at 0xA0, R on core 1, L lowered below R: R's status before the change: 0x00000002
 L at 0xA0, R on core 1, L lowered below R: R's current CPU before the change: 0x00007FFF

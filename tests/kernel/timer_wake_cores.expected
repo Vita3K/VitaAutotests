@@ -1,13 +1,9 @@
-timeout, priority 0x70: T's status before a gate lifts: 0x00000002
-timeout, priority 0x70: T ran while core 0 was still busy: 0x00000000
-timeout, priority 0x70: the core T ran on: 0x00000000
-signal, priority 0x70: T's status before a gate lifts: 0x00000004
-signal, priority 0x70: T ran while core 0 was still busy: 0x00000000
-signal, priority 0x70: the core T ran on: 0x00000000
-timeout, priority 0xA0: T's status before a gate lifts: 0x00000002
-timeout, priority 0xA0: T ran while core 0 was still busy: 0x00000001
-timeout, priority 0xA0: the core T ran on: 0x00000001
-signal, priority 0xA0: T's status before a gate lifts: 0x00000002
-signal, priority 0xA0: T ran while core 0 was still busy: 0x00000001
-signal, priority 0xA0: the core T ran on: 0x00000001
+timeout, priority 0x70: T was READY or STANDBY before a gate lifted: 0x00000001
+timeout, priority 0x70: T ran on core 1 while core 0 was still busy: 0x00000000
+signal, priority 0x70: T was READY or STANDBY before a gate lifted: 0x00000001
+signal, priority 0x70: T ran on core 1 while core 0 was still busy: 0x00000000
+timeout, priority 0xA0: T was READY or STANDBY before a gate lifted: 0x00000001
+timeout, priority 0xA0: T ran on core 1 while core 0 was still busy: 0x00000001
+signal, priority 0xA0: T was READY or STANDBY before a gate lifted: 0x00000001
+signal, priority 0xA0: T ran on core 1 while core 0 was still busy: 0x00000001
 DONE
