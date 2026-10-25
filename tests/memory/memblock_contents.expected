@@ -1,0 +1,38 @@
+USER_RW: the first block is made: 0x00000000
+USER_RW: the first block starts as zero: 0x00000001
+USER_RW: the first block holds its own byte: 0x00000001
+USER_RW: the second block is made: 0x00000000
+USER_RW: the second block starts as zero: 0x00000001
+USER_RW: the second block holds its own byte: 0x00000001
+USER_RW: the third block is made: 0x00000000
+USER_RW: the third block starts as zero: 0x00000001
+USER_RW_UNCACHE: the first block is made: 0x00000000
+USER_RW_UNCACHE: the first block starts as zero: 0x00000001
+USER_RW_UNCACHE: the first block holds its own byte: 0x00000001
+USER_RW_UNCACHE: the second block is made: 0x00000000
+USER_RW_UNCACHE: the second block starts as zero: 0x00000001
+USER_RW_UNCACHE: the second block holds its own byte: 0x00000001
+USER_RW_UNCACHE: the third block is made: 0x00000000
+USER_RW_UNCACHE: the third block starts as zero: 0x00000001
+USER_CDRAM_RW: the first block is made: 0x00000000
+USER_CDRAM_RW: the first block starts as zero: 0x00000001
+USER_CDRAM_RW: the first block holds its own byte: 0x00000001
+USER_CDRAM_RW: the second block is made: 0x00000000
+USER_CDRAM_RW: the second block starts as zero: 0x00000001
+USER_CDRAM_RW: the second block holds its own byte: 0x00000001
+USER_CDRAM_RW: the third block is made: 0x00000000
+USER_CDRAM_RW: the third block starts as zero: 0x00000001
+USER_MAIN_PHYCONT_RW: the first block is made: 0x00000000
+USER_MAIN_PHYCONT_RW: the first block starts as zero: 0x00000001
+USER_MAIN_PHYCONT_RW: the first block holds its own byte: 0x00000001
+USER_MAIN_PHYCONT_RW: the second block is made: 0x00000000
+USER_MAIN_PHYCONT_RW: the second block starts as zero: 0x00000001
+USER_MAIN_PHYCONT_RW: the second block holds its own byte: 0x00000001
+USER_MAIN_PHYCONT_RW: the third block is made: 0x00000000
+USER_MAIN_PHYCONT_RW: the third block starts as zero: 0x00000001
+USER_CDRAM_RW 70 MiB: the first block is made: 0x00000000
+USER_CDRAM_RW 70 MiB: the first block starts as zero: 0x00000001
+USER_CDRAM_RW 70 MiB: the first block holds its own byte: 0x00000001
+USER_CDRAM_RW 70 MiB: the third block is made: 0x00000000
+USER_CDRAM_RW 70 MiB: the third block starts as zero: 0x00000001
+DONE

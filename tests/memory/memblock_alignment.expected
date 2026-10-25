@@ -60,6 +60,30 @@ USER_RW aligned to 0x3000: 0x80020005
 USER_RW aligned to 0x5000: 0x80020005
 USER_RW aligned to 0x10001: 0x80020005
 USER_RW aligned to 0xFFFFFFFF: 0x80020005
+USER_RW_UNCACHE aligned to 0x1: 0x00000000
+USER_RW_UNCACHE aligned to 0x1: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x2: 0x00000000
+USER_RW_UNCACHE aligned to 0x2: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x4: 0x00000000
+USER_RW_UNCACHE aligned to 0x4: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x8: 0x00000000
+USER_RW_UNCACHE aligned to 0x8: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x10: 0x00000000
+USER_RW_UNCACHE aligned to 0x10: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x20: 0x00000000
+USER_RW_UNCACHE aligned to 0x20: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x40: 0x00000000
+USER_RW_UNCACHE aligned to 0x40: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x80: 0x00000000
+USER_RW_UNCACHE aligned to 0x80: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x100: 0x00000000
+USER_RW_UNCACHE aligned to 0x100: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x200: 0x00000000
+USER_RW_UNCACHE aligned to 0x200: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x400: 0x00000000
+USER_RW_UNCACHE aligned to 0x400: the base is aligned: 0x00000001
+USER_RW_UNCACHE aligned to 0x800: 0x00000000
+USER_RW_UNCACHE aligned to 0x800: the base is aligned: 0x00000001
 USER_RW_UNCACHE aligned to 0x1000: 0x00000000
 USER_RW_UNCACHE aligned to 0x1000: the base is aligned: 0x00000001
 USER_RW_UNCACHE aligned to 0x2000: 0x00000000
@@ -89,6 +113,30 @@ USER_RW_UNCACHE aligned to 0x1000000: the base is aligned: 0x00000001
 USER_RW_UNCACHE aligned to 0x2000000: 0x80020005
 USER_RW_UNCACHE aligned to 0x4000000: 0x80020005
 USER_RW_UNCACHE aligned to 0x3000: 0x80020005
+USER_CDRAM_RW aligned to 0x1: 0x00000000
+USER_CDRAM_RW aligned to 0x1: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x2: 0x00000000
+USER_CDRAM_RW aligned to 0x2: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x4: 0x00000000
+USER_CDRAM_RW aligned to 0x4: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x8: 0x00000000
+USER_CDRAM_RW aligned to 0x8: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x10: 0x00000000
+USER_CDRAM_RW aligned to 0x10: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x20: 0x00000000
+USER_CDRAM_RW aligned to 0x20: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x40: 0x00000000
+USER_CDRAM_RW aligned to 0x40: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x80: 0x00000000
+USER_CDRAM_RW aligned to 0x80: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x100: 0x00000000
+USER_CDRAM_RW aligned to 0x100: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x200: 0x00000000
+USER_CDRAM_RW aligned to 0x200: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x400: 0x00000000
+USER_CDRAM_RW aligned to 0x400: the base is aligned: 0x00000001
+USER_CDRAM_RW aligned to 0x800: 0x00000000
+USER_CDRAM_RW aligned to 0x800: the base is aligned: 0x00000001
 USER_CDRAM_RW aligned to 0x1000: 0x80024309
 USER_CDRAM_RW aligned to 0x2000: 0x80024309
 USER_CDRAM_RW aligned to 0x4000: 0x80024309
@@ -112,6 +160,32 @@ USER_CDRAM_RW aligned to 0x1000000: the base is aligned: 0x00000001
 USER_CDRAM_RW aligned to 0x2000000: 0x00000000
 USER_CDRAM_RW aligned to 0x4000000: 0x00000000
 USER_CDRAM_RW aligned to 0x60000: 0x80020005
+USER_CDRAM_RW 70 MiB aligned to 0x10: 0x00000000
+USER_CDRAM_RW 70 MiB aligned to 0x10: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x1: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x1: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x2: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x2: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x4: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x4: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x8: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x8: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x10: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x10: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x20: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x20: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x40: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x40: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x80: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x80: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x100: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x100: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x200: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x200: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x400: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x400: the base is aligned: 0x00000001
+USER_MAIN_PHYCONT_RW aligned to 0x800: 0x00000000
+USER_MAIN_PHYCONT_RW aligned to 0x800: the base is aligned: 0x00000001
 USER_MAIN_PHYCONT_RW aligned to 0x1000: 0x80020005
 USER_MAIN_PHYCONT_RW aligned to 0x2000: 0x80020005
 USER_MAIN_PHYCONT_RW aligned to 0x4000: 0x80020005

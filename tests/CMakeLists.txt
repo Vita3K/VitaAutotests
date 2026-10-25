@@ -359,6 +359,7 @@ probe_module_self()
 vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx)
 
 vita_test(memblock memory/memblock.c)
+vita_test(memblock_contents memory/memblock_contents.c)
 vita_test(memblock_opt_attrs memory/memblock_opt_attrs.c)
 vita_test(memblock_opt_effects memory/memblock_opt_effects.c)
 vita_test(memblock_base_block memory/memblock_base_block.c)
