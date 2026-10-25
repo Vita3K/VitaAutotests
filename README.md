@@ -43,6 +43,8 @@ When it closes, `ux0:data/vita-autotests/output/<name>.txt` holds the output, wh
 
 `run_tests.py` runs the tests on a Vita connected to the PC, and compares their output with the `.expected` files, like pspautotests does with PSPLink. It needs Python 3.8 or later and, for USB, pyserial (`python -m pip install pyserial`).
 
+Keep the Vita unlocked for the whole run. Behind the lock screen, which shows after a boot and after the Vita went to standby, some tests that run threads on several cores don't end, like `core_affinity`, `nonblocking_wait_preempt` and `callback_outer_wake_more`, and the run reports them as timed out. So unlock the Vita before a run, and set Auto Standby in the power save settings to its longest time. If the Vita still goes to standby during a long run, unlock it and run the tests that timed out again.
+
 ### Over USB
 
 Besides the vpk, the Vita needs two plugins, which the build puts in `build/usb/` and CI uploads with the vpk:
