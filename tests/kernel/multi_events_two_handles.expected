@@ -1,0 +1,9 @@
+open the event: 0x00000000
+the two UIDs differ: 0x00000001
+the opened UID first: the call: 0x00000002
+the opened UID first: the first entry's UID: 0x00000001
+the opened UID first: the second entry's UID: 0x00000001
+the creating UID first: the call: 0x00000002
+the creating UID first: the first entry's UID: 0x00000002
+the creating UID first: the second entry's UID: 0x00000002
+DONE
