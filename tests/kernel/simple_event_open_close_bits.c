@@ -124,7 +124,8 @@ static void run_wait(const char *name, SceUInt32 attr, SceUInt32 bit) {
     wait_pattern = 0xDEAD;
     wait_user_data = 0;
     const SceUID thread = test_start_thread_arg(waiter, bit);
-    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, event));
+    // With the event opened, the thread's info may report either of its UIDs as the one it waits on
+    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, event) || (opened >= 0 && test_in_wait(thread, WAIT_TYPE_EVENT, opened)));
     if (bit == OPEN_BIT) {
         opened = sceKernelOpenSimpleEvent(event_name);
         PRINTF(test_created(opened), "%s: open it", name);
