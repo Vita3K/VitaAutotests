@@ -67,7 +67,6 @@ int main(void) {
     PRINT("set up rendering", setup);
     if (setup < 0)
         test_exit();
-    SceGxmFragmentProgram *opaque = render_color_program(NULL);
     const SceGxmBlendInfo no_color = { SCE_GXM_COLOR_MASK_NONE,    SCE_GXM_BLEND_FUNC_NONE,   SCE_GXM_BLEND_FUNC_NONE,
                                        SCE_GXM_BLEND_FACTOR_ONE,   SCE_GXM_BLEND_FACTOR_ZERO, SCE_GXM_BLEND_FACTOR_ONE,
                                        SCE_GXM_BLEND_FACTOR_ZERO };
