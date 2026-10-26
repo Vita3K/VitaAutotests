@@ -44,13 +44,12 @@ static int t_entry(SceSize args, void *argp) {
     return 0;
 }
 
-// S spins on core 0 until it is let go. It signals T first when started with an argument.
+// S spins on core 0 until it is let go. It signals T first when its argument is nonzero.
 static int s_entry(SceSize args, void *argp) {
-    (void)argp;
     s_up = 1;
     for (volatile int n = 0; n < SPINS && !go; n++)
         ;
-    if (args)
+    if (args >= sizeof(int) && *(const int *)argp)
         sceKernelSignalSema(sema, 1);
     SceKernelThreadInfo info = { .size = sizeof(info) };
     sceKernelGetThreadInfo(target, &info);
