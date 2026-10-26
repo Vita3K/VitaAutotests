@@ -1,0 +1,118 @@
+receive FULL 4, send FULL 4: the waiter waits before the send: 0x00000001
+receive FULL 4, send FULL 4: the send: 0x00000000
+receive FULL 4, send FULL 4: the send's size: 0x00000004
+receive FULL 4, send FULL 4, right after the send: the pipe's free size: 0x00001000
+receive FULL 4, send FULL 4, right after the send: the waiting senders: 0x00000000
+receive FULL 4, send FULL 4, right after the send: the waiting receivers: 0x00000000
+receive FULL 4, send FULL 4, right after the send: the waiter still waits: 0x00000000
+receive FULL 4, send FULL 4, right after the send: the waiter's size: 0x00000004
+receive FULL 4, send FULL 4, right after the send: the waiter's buffer "abcd----": 0x00000008
+receive FULL 4, send FULL 4, right after the wake: the time left is written: 0x00000001
+receive FULL 4, send FULL 4, right after the wake: the time left is unchanged: 0x00000000
+receive FULL 4, send FULL 4, once the waiter ended: the time left is written: 0x00000001
+receive FULL 4, send FULL 4, once the waiter ended: the time left is unchanged: 0x00000000
+receive FULL 4, send FULL 4: after the waiter ran: its result: 0x00000000
+receive FULL 4, send FULL 4: after the waiter ran: its size: 0x00000004
+receive FULL 4, send FULL 4: after the waiter ran: its buffer "abcd----": 0x00000008
+send FULL 4 on a full pipe, receive 4: the fill of 4096: 0x00000000
+send FULL 4 on a full pipe, receive 4: the sender waits before the receive: 0x00000001
+send FULL 4 on a full pipe, receive 4: while the sender waits: the pipe's free size: 0x00000000
+send FULL 4 on a full pipe, receive 4: the receive: 0x00000000
+send FULL 4 on a full pipe, receive 4: the receive's size: 0x00000004
+send FULL 4 on a full pipe, receive 4, right after the receive: the pipe's free size: 0x00000000
+send FULL 4 on a full pipe, receive 4, right after the receive: the waiting senders: 0x00000000
+send FULL 4 on a full pipe, receive 4, right after the receive: the waiting receivers: 0x00000000
+send FULL 4 on a full pipe, receive 4, right after the receive: the waiter still waits: 0x00000000
+send FULL 4 on a full pipe, receive 4, right after the receive: the waiter's size: 0x00000004
+send FULL 4 on a full pipe, receive 4, right after the wake: the time left is written: 0x00000001
+send FULL 4 on a full pipe, receive 4, right after the wake: the time left is unchanged: 0x00000000
+send FULL 4 on a full pipe, receive 4, once the waiter ended: the time left is written: 0x00000001
+send FULL 4 on a full pipe, receive 4, once the waiter ended: the time left is unchanged: 0x00000000
+send FULL 4 on a full pipe, receive 4: after the waiter ran: its result: 0x00000000
+send FULL 4 on a full pipe, receive 4: after the waiter ran: its size: 0x00000004
+send FULL 4 on a full pipe, receive 4: the drain: 0x00000000
+send FULL 4 on a full pipe, receive 4: the drain's size: 0x00001000
+send FULL 4 on a full pipe, receive 4: the drain ends with "pqrs": 0x00000001
+receive FULL 8, send 4 then 4: the first send: 0x00000000
+receive FULL 8, send 4 then 4: the first send's size: 0x00000004
+receive FULL 8, send 4 then 4, after the first send: the pipe's free size: 0x00001000
+receive FULL 8, send 4 then 4, after the first send: the waiting senders: 0x00000000
+receive FULL 8, send 4 then 4, after the first send: the waiting receivers: 0x00000001
+receive FULL 8, send 4 then 4, after the first send: the waiter still waits: 0x00000001
+receive FULL 8, send 4 then 4, after the first send: the waiter's size: 0x00000004
+receive FULL 8, send 4 then 4, after the first send: the waiter's buffer "abcd----": 0x00000008
+receive FULL 8, send 4 then 4, after the first send: the time left is written: 0x00000000
+receive FULL 8, send 4 then 4, after the first send: the time left is unchanged: 0x00000001
+receive FULL 8, send 4 then 4, right after the wake: the time left is written: 0x00000000
+receive FULL 8, send 4 then 4, right after the wake: the time left is unchanged: 0x00000001
+receive FULL 8, send 4 then 4: the second send: 0x00000000
+receive FULL 8, send 4 then 4: the second send's size: 0x00000004
+receive FULL 8, send 4 then 4, after the second send: the pipe's free size: 0x00001000
+receive FULL 8, send 4 then 4, after the second send: the waiting senders: 0x00000000
+receive FULL 8, send 4 then 4, after the second send: the waiting receivers: 0x00000000
+receive FULL 8, send 4 then 4, after the second send: the waiter still waits: 0x00000000
+receive FULL 8, send 4 then 4, after the second send: the waiter's size: 0x00000008
+receive FULL 8, send 4 then 4, after the second send: the waiter's buffer "abcdefgh": 0x00000008
+receive FULL 8, send 4 then 4, right after the wake: the time left is written: 0x00000001
+receive FULL 8, send 4 then 4, right after the wake: the time left is unchanged: 0x00000000
+receive FULL 8, send 4 then 4, once the waiter ended: the time left is written: 0x00000001
+receive FULL 8, send 4 then 4, once the waiter ended: the time left is unchanged: 0x00000000
+receive FULL 8, send 4 then 4: after the waiter ran: its result: 0x00000000
+receive FULL 8, send 4 then 4: after the waiter ran: its size: 0x00000008
+receive FULL 8, send 4 then 4: after the waiter ran: its buffer "abcdefgh": 0x00000008
+three receivers, send 8, cancel: the send: 0x00000000
+three receivers, send 8, cancel: the send's size: 0x00000008
+three receivers, send 8, cancel, right after the send: the pipe's free size: 0x00001000
+three receivers, send 8, cancel, right after the send: the waiting senders: 0x00000000
+three receivers, send 8, cancel, right after the send: the waiting receivers: 0x00000001
+receiver 1, FULL 2, right after the send: the waiter still waits: 0x00000000
+receiver 1, FULL 2, right after the send: the waiter's size: 0x00000002
+receiver 1, FULL 2, right after the send: the waiter's buffer "ab------": 0x00000008
+receiver 1, FULL 2, right after the wake: the time left is written: 0x00000001
+receiver 1, FULL 2, right after the wake: the time left is unchanged: 0x00000000
+receiver 1, FULL 2, once the waiter ended: the time left is written: 0x00000001
+receiver 1, FULL 2, once the waiter ended: the time left is unchanged: 0x00000000
+receiver 2, ASAP 4, right after the send: the waiter still waits: 0x00000000
+receiver 2, ASAP 4, right after the send: the waiter's size: 0x00000004
+receiver 2, ASAP 4, right after the send: the waiter's buffer "cdef----": 0x00000008
+receiver 2, ASAP 4, right after the wake: the time left is written: 0x00000001
+receiver 2, ASAP 4, right after the wake: the time left is unchanged: 0x00000000
+receiver 2, ASAP 4, once the waiter ended: the time left is written: 0x00000001
+receiver 2, ASAP 4, once the waiter ended: the time left is unchanged: 0x00000000
+receiver 3, FULL 8, right after the send: the waiter still waits: 0x00000001
+receiver 3, FULL 8, right after the send: the waiter's size: 0x00000002
+receiver 3, FULL 8, right after the send: the waiter's buffer "gh------": 0x00000008
+receiver 3, FULL 8, right after the send: the time left is written: 0x00000000
+receiver 3, FULL 8, right after the send: the time left is unchanged: 0x00000001
+receiver 3, FULL 8, right after the wake: the time left is written: 0x00000000
+receiver 3, FULL 8, right after the wake: the time left is unchanged: 0x00000001
+receiver 1, FULL 2: after the waiter ran: its result: 0x00000000
+receiver 1, FULL 2: after the waiter ran: its size: 0x00000002
+receiver 1, FULL 2: after the waiter ran: its buffer "ab------": 0x00000008
+receiver 2, ASAP 4: after the waiter ran: its result: 0x00000000
+receiver 2, ASAP 4: after the waiter ran: its size: 0x00000004
+receiver 2, ASAP 4: after the waiter ran: its buffer "cdef----": 0x00000008
+three receivers, send 8, cancel: the cancel: 0x00000000
+three receivers, send 8, cancel: the cancel's senders: 0x00000000
+three receivers, send 8, cancel: the cancel's receivers: 0x00000001
+receiver 3, FULL 8, right after the wake: the time left is written: 0x00000001
+receiver 3, FULL 8, right after the wake: the time left is unchanged: 0x00000000
+receiver 3, FULL 8, once the cancel ended the wait: the time left is written: 0x00000001
+receiver 3, FULL 8, once the cancel ended the wait: the time left is unchanged: 0x00000000
+receiver 3, FULL 8: after the waiter ran: its result: 0x80028007
+receiver 3, FULL 8: after the waiter ran: its size: 0x00000002
+receiver 3, FULL 8: after the waiter ran: its buffer "gh------": 0x00000008
+receive FULL 8, send 4, timeout: the send: 0x00000000
+receive FULL 8, send 4, timeout: the send's size: 0x00000004
+receive FULL 8, send 4, timeout, after the send: the waiter still waits: 0x00000001
+receive FULL 8, send 4, timeout, after the send: the waiter's size: 0x00000004
+receive FULL 8, send 4, timeout, after the send: the waiter's buffer "abcd----": 0x00000008
+receive FULL 8, send 4, timeout, after the send: the time left is written: 0x00000000
+receive FULL 8, send 4, timeout, after the send: the time left is unchanged: 0x00000001
+receive FULL 8, send 4, timeout, right after the wake: the time left is written: 0x00000000
+receive FULL 8, send 4, timeout, right after the wake: the time left is unchanged: 0x00000001
+receive FULL 8, send 4, timeout: after the waiter ran: its result: 0x80028005
+receive FULL 8, send 4, timeout: after the waiter ran: its size: 0x00000004
+receive FULL 8, send 4, timeout: after the waiter ran: its buffer "abcd----": 0x00000008
+receive FULL 8, send 4, timeout: after the timeout, the time left is 0: 0x00000001
+DONE

@@ -1,0 +1,31 @@
+no change, L and M at 0xB0: L's status before T ends: 0x00000002
+no change, L and M at 0xB0: M's status before T ends: 0x00000002
+no change, L and M at 0xB0: the first to run, 1 for L and 2 for M: 0x00000001
+set to its own value, L and M at 0xB0: the changes: 0x00000000
+set to its own value, L and M at 0xB0: L's status before T ends: 0x00000002
+set to its own value, L and M at 0xB0: M's status before T ends: 0x00000002
+set to its own value, L and M at 0xB0: the first to run, 1 for L and 2 for M: 0x00000002
+lowered one step and back, L and M at 0xB0: the changes: 0x00000000
+lowered one step and back, L and M at 0xB0: L's status before T ends: 0x00000002
+lowered one step and back, L and M at 0xB0: M's status before T ends: 0x00000002
+lowered one step and back, L and M at 0xB0: the first to run, 1 for L and 2 for M: 0x00000002
+raised one step and back, L and M at 0xB0: the changes: 0x00000000
+raised one step and back, L and M at 0xB0: L's status before T ends: 0x00000002
+raised one step and back, L and M at 0xB0: M's status before T ends: 0x00000002
+raised one step and back, L and M at 0xB0: the first to run, 1 for L and 2 for M: 0x00000002
+no change, L and M at 0x78: L's status before T ends: 0x00000002
+no change, L and M at 0x78: M's status before T ends: 0x00000002
+no change, L and M at 0x78: the first to run, 1 for L and 2 for M: 0x00000001
+set to its own value, L and M at 0x78: the changes: 0x00000000
+set to its own value, L and M at 0x78: L's status before T ends: 0x00000002
+set to its own value, L and M at 0x78: M's status before T ends: 0x00000002
+set to its own value, L and M at 0x78: the first to run, 1 for L and 2 for M: 0x00000002
+lowered one step and back, L and M at 0x78: the changes: 0x00000000
+lowered one step and back, L and M at 0x78: L's status before T ends: 0x00000002
+lowered one step and back, L and M at 0x78: M's status before T ends: 0x00000002
+lowered one step and back, L and M at 0x78: the first to run, 1 for L and 2 for M: 0x00000002
+raised one step and back, L and M at 0x78: the changes: 0x00000000
+raised one step and back, L and M at 0x78: L's status before T ends: 0x00000002
+raised one step and back, L and M at 0x78: M's status before T ends: 0x00000002
+raised one step and back, L and M at 0x78: the first to run, 1 for L and 2 for M: 0x00000002
+DONE

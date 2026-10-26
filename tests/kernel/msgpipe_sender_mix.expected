@@ -1,0 +1,157 @@
+attr 0x0, receive 1: the result: 0x00000000
+attr 0x0, receive 1: the size: 0x00000005
+attr 0x0, receive 1: the bytes other than '.' are "": 0x00000000
+attr 0x0, after receive 1: the free size: 0x00000000
+attr 0x0, after receive 1: the waiting senders: 0x00000002
+attr 0x0, after receive 1: sender 1 is done: 0x00000001
+attr 0x0, after receive 1: sender 1's result: 0x00000000
+attr 0x0, after receive 1: sender 1's size: 0x00000005
+attr 0x0, after receive 1: sender 2 is done: 0x00000000
+attr 0x0, after receive 1: sender 2's result: 0x0000DEAD
+attr 0x0, after receive 1: sender 2's size: 0x00000000
+attr 0x0, after receive 1: sender 3 is done: 0x00000000
+attr 0x0, after receive 1: sender 3's result: 0x0000DEAD
+attr 0x0, after receive 1: sender 3's size: 0x00000000
+attr 0x0, receive 2: the result: 0x00000000
+attr 0x0, receive 2: the size: 0x00000003
+attr 0x0, receive 2: the bytes other than '.' are "": 0x00000000
+attr 0x0, after receive 2: the free size: 0x00000000
+attr 0x0, after receive 2: the waiting senders: 0x00000000
+attr 0x0, after receive 2: sender 1 is done: 0x00000001
+attr 0x0, after receive 2: sender 1's result: 0x00000000
+attr 0x0, after receive 2: sender 1's size: 0x00000005
+attr 0x0, after receive 2: sender 2 is done: 0x00000001
+attr 0x0, after receive 2: sender 2's result: 0x00000000
+attr 0x0, after receive 2: sender 2's size: 0x00000002
+attr 0x0, after receive 2: sender 3 is done: 0x00000001
+attr 0x0, after receive 2: sender 3's result: 0x00000000
+attr 0x0, after receive 2: sender 3's size: 0x00000001
+attr 0x0, drain: the result: 0x00000000
+attr 0x0, drain: the size: 0x00001000
+attr 0x0, drain: the bytes other than '.' are "ABCDEijK": 0x00000008
+attr 0x0, cancel: the result: 0x00000000
+attr 0x0, cancel: the senders it ended: 0x00000000
+attr 0x0, end: sender 1's result: 0x00000000
+attr 0x0, end: sender 1's size: 0x00000005
+attr 0x0, end: sender 2's result: 0x00000000
+attr 0x0, end: sender 2's size: 0x00000002
+attr 0x0, end: sender 3's result: 0x00000000
+attr 0x0, end: sender 3's size: 0x00000001
+attr 0x1, receive 1: the result: 0x00000000
+attr 0x1, receive 1: the size: 0x00000005
+attr 0x1, receive 1: the bytes other than '.' are "": 0x00000000
+attr 0x1, after receive 1: the free size: 0x00000000
+attr 0x1, after receive 1: the waiting senders: 0x00000001
+attr 0x1, after receive 1: sender 1 is done: 0x00000000
+attr 0x1, after receive 1: sender 1's result: 0x0000DEAD
+attr 0x1, after receive 1: sender 1's size: 0x00000000
+attr 0x1, after receive 1: sender 2 is done: 0x00000001
+attr 0x1, after receive 1: sender 2's result: 0x00000000
+attr 0x1, after receive 1: sender 2's size: 0x00000002
+attr 0x1, after receive 1: sender 3 is done: 0x00000001
+attr 0x1, after receive 1: sender 3's result: 0x00000000
+attr 0x1, after receive 1: sender 3's size: 0x00000003
+attr 0x1, receive 2: the result: 0x00000000
+attr 0x1, receive 2: the size: 0x00000004
+attr 0x1, receive 2: the bytes other than '.' are "": 0x00000000
+attr 0x1, after receive 2: the free size: 0x00000000
+attr 0x1, after receive 2: the waiting senders: 0x00000000
+attr 0x1, after receive 2: sender 1 is done: 0x00000001
+attr 0x1, after receive 2: sender 1's result: 0x00000000
+attr 0x1, after receive 2: sender 1's size: 0x00000004
+attr 0x1, after receive 2: sender 2 is done: 0x00000001
+attr 0x1, after receive 2: sender 2's result: 0x00000000
+attr 0x1, after receive 2: sender 2's size: 0x00000002
+attr 0x1, after receive 2: sender 3 is done: 0x00000001
+attr 0x1, after receive 2: sender 3's result: 0x00000000
+attr 0x1, after receive 2: sender 3's size: 0x00000003
+attr 0x1, drain: the result: 0x00000000
+attr 0x1, drain: the size: 0x00001000
+attr 0x1, drain: the bytes other than '.' are "ijKLMABCD": 0x00000009
+attr 0x1, cancel: the result: 0x00000000
+attr 0x1, cancel: the senders it ended: 0x00000000
+attr 0x1, end: sender 1's result: 0x00000000
+attr 0x1, end: sender 1's size: 0x00000004
+attr 0x1, end: sender 2's result: 0x00000000
+attr 0x1, end: sender 2's size: 0x00000002
+attr 0x1, end: sender 3's result: 0x00000000
+attr 0x1, end: sender 3's size: 0x00000003
+attr 0x2, receive 1: the result: 0x00000000
+attr 0x2, receive 1: the size: 0x00000005
+attr 0x2, receive 1: the bytes other than '.' are "": 0x00000000
+attr 0x2, after receive 1: the free size: 0x00000000
+attr 0x2, after receive 1: the waiting senders: 0x00000002
+attr 0x2, after receive 1: sender 1 is done: 0x00000001
+attr 0x2, after receive 1: sender 1's result: 0x00000000
+attr 0x2, after receive 1: sender 1's size: 0x00000005
+attr 0x2, after receive 1: sender 2 is done: 0x00000000
+attr 0x2, after receive 1: sender 2's result: 0x0000DEAD
+attr 0x2, after receive 1: sender 2's size: 0x00000000
+attr 0x2, after receive 1: sender 3 is done: 0x00000000
+attr 0x2, after receive 1: sender 3's result: 0x0000DEAD
+attr 0x2, after receive 1: sender 3's size: 0x00000000
+attr 0x2, receive 2: the result: 0x00000000
+attr 0x2, receive 2: the size: 0x00000004
+attr 0x2, receive 2: the bytes other than '.' are "": 0x00000000
+attr 0x2, after receive 2: the free size: 0x00000000
+attr 0x2, after receive 2: the waiting senders: 0x00000000
+attr 0x2, after receive 2: sender 1 is done: 0x00000001
+attr 0x2, after receive 2: sender 1's result: 0x00000000
+attr 0x2, after receive 2: sender 1's size: 0x00000005
+attr 0x2, after receive 2: sender 2 is done: 0x00000001
+attr 0x2, after receive 2: sender 2's result: 0x00000000
+attr 0x2, after receive 2: sender 2's size: 0x00000002
+attr 0x2, after receive 2: sender 3 is done: 0x00000001
+attr 0x2, after receive 2: sender 3's result: 0x00000000
+attr 0x2, after receive 2: sender 3's size: 0x00000002
+attr 0x2, drain: the result: 0x00000000
+attr 0x2, drain: the size: 0x00001000
+attr 0x2, drain: the bytes other than '.' are "ABCDEijKL": 0x00000009
+attr 0x2, cancel: the result: 0x00000000
+attr 0x2, cancel: the senders it ended: 0x00000000
+attr 0x2, end: sender 1's result: 0x00000000
+attr 0x2, end: sender 1's size: 0x00000005
+attr 0x2, end: sender 2's result: 0x00000000
+attr 0x2, end: sender 2's size: 0x00000002
+attr 0x2, end: sender 3's result: 0x00000000
+attr 0x2, end: sender 3's size: 0x00000002
+attr 0x3, receive 1: the result: 0x00000000
+attr 0x3, receive 1: the size: 0x00000005
+attr 0x3, receive 1: the bytes other than '.' are "": 0x00000000
+attr 0x3, after receive 1: the free size: 0x00000000
+attr 0x3, after receive 1: the waiting senders: 0x00000001
+attr 0x3, after receive 1: sender 1 is done: 0x00000000
+attr 0x3, after receive 1: sender 1's result: 0x0000DEAD
+attr 0x3, after receive 1: sender 1's size: 0x00000000
+attr 0x3, after receive 1: sender 2 is done: 0x00000001
+attr 0x3, after receive 1: sender 2's result: 0x00000000
+attr 0x3, after receive 1: sender 2's size: 0x00000002
+attr 0x3, after receive 1: sender 3 is done: 0x00000001
+attr 0x3, after receive 1: sender 3's result: 0x00000000
+attr 0x3, after receive 1: sender 3's size: 0x00000003
+attr 0x3, receive 2: the result: 0x00000000
+attr 0x3, receive 2: the size: 0x00000004
+attr 0x3, receive 2: the bytes other than '.' are "": 0x00000000
+attr 0x3, after receive 2: the free size: 0x00000000
+attr 0x3, after receive 2: the waiting senders: 0x00000000
+attr 0x3, after receive 2: sender 1 is done: 0x00000001
+attr 0x3, after receive 2: sender 1's result: 0x00000000
+attr 0x3, after receive 2: sender 1's size: 0x00000004
+attr 0x3, after receive 2: sender 2 is done: 0x00000001
+attr 0x3, after receive 2: sender 2's result: 0x00000000
+attr 0x3, after receive 2: sender 2's size: 0x00000002
+attr 0x3, after receive 2: sender 3 is done: 0x00000001
+attr 0x3, after receive 2: sender 3's result: 0x00000000
+attr 0x3, after receive 2: sender 3's size: 0x00000003
+attr 0x3, drain: the result: 0x00000000
+attr 0x3, drain: the size: 0x00001000
+attr 0x3, drain: the bytes other than '.' are "ijKLMABCD": 0x00000009
+attr 0x3, cancel: the result: 0x00000000
+attr 0x3, cancel: the senders it ended: 0x00000000
+attr 0x3, end: sender 1's result: 0x00000000
+attr 0x3, end: sender 1's size: 0x00000004
+attr 0x3, end: sender 2's result: 0x00000000
+attr 0x3, end: sender 2's size: 0x00000002
+attr 0x3, end: sender 3's result: 0x00000000
+attr 0x3, end: sender 3's size: 0x00000003
+DONE

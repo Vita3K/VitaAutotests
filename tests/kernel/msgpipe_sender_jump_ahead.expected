@@ -1,0 +1,185 @@
+attr 0x1, FULL 2 from 0x70, after the send: the free size: 0x00000006
+attr 0x1, FULL 2 from 0x70, after the send: the waiting senders: 0x00000001
+attr 0x1, FULL 2 from 0x70, after the send: the head is done: 0x00000000
+attr 0x1, FULL 2 from 0x70, after the send: the head waits: 0x00000001
+attr 0x1, FULL 2 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x1, FULL 2 from 0x70, after the send: the head's size: 0x00000000
+attr 0x1, FULL 2 from 0x70, after the send: the new sender is done: 0x00000001
+attr 0x1, FULL 2 from 0x70, after the send: the new sender waits: 0x00000000
+attr 0x1, FULL 2 from 0x70, after the send: the new sender's result: 0x00000000
+attr 0x1, FULL 2 from 0x70, after the send: the new sender's size: 0x00000002
+attr 0x1, FULL 2 from 0x70, cancel: the result: 0x00000000
+attr 0x1, FULL 2 from 0x70, cancel: the senders it ended: 0x00000001
+attr 0x1, FULL 2 from 0x70, end: sender 1's result: 0x80028007
+attr 0x1, FULL 2 from 0x70, end: sender 1's size: 0x00000000
+attr 0x1, FULL 2 from 0x70, end: sender 2's result: 0x00000000
+attr 0x1, FULL 2 from 0x70, end: sender 2's size: 0x00000002
+attr 0x1, FULL 2 from 0xB0, after the send: the free size: 0x00000008
+attr 0x1, FULL 2 from 0xB0, after the send: the waiting senders: 0x00000002
+attr 0x1, FULL 2 from 0xB0, after the send: the head is done: 0x00000000
+attr 0x1, FULL 2 from 0xB0, after the send: the head waits: 0x00000001
+attr 0x1, FULL 2 from 0xB0, after the send: the head's result: 0x0000DEAD
+attr 0x1, FULL 2 from 0xB0, after the send: the head's size: 0x00000000
+attr 0x1, FULL 2 from 0xB0, after the send: the new sender is done: 0x00000000
+attr 0x1, FULL 2 from 0xB0, after the send: the new sender waits: 0x00000001
+attr 0x1, FULL 2 from 0xB0, after the send: the new sender's result: 0x0000DEAD
+attr 0x1, FULL 2 from 0xB0, after the send: the new sender's size: 0x00000000
+attr 0x1, FULL 2 from 0xB0, cancel: the result: 0x00000000
+attr 0x1, FULL 2 from 0xB0, cancel: the senders it ended: 0x00000002
+attr 0x1, FULL 2 from 0xB0, end: sender 1's result: 0x80028007
+attr 0x1, FULL 2 from 0xB0, end: sender 1's size: 0x00000000
+attr 0x1, FULL 2 from 0xB0, end: sender 2's result: 0x80028007
+attr 0x1, FULL 2 from 0xB0, end: sender 2's size: 0x00000000
+attr 0x0, FULL 2 from 0x70, after the send: the free size: 0x00000008
+attr 0x0, FULL 2 from 0x70, after the send: the waiting senders: 0x00000002
+attr 0x0, FULL 2 from 0x70, after the send: the head is done: 0x00000000
+attr 0x0, FULL 2 from 0x70, after the send: the head waits: 0x00000001
+attr 0x0, FULL 2 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x0, FULL 2 from 0x70, after the send: the head's size: 0x00000000
+attr 0x0, FULL 2 from 0x70, after the send: the new sender is done: 0x00000000
+attr 0x0, FULL 2 from 0x70, after the send: the new sender waits: 0x00000001
+attr 0x0, FULL 2 from 0x70, after the send: the new sender's result: 0x0000DEAD
+attr 0x0, FULL 2 from 0x70, after the send: the new sender's size: 0x00000000
+attr 0x0, FULL 2 from 0x70, cancel: the result: 0x00000000
+attr 0x0, FULL 2 from 0x70, cancel: the senders it ended: 0x00000002
+attr 0x0, FULL 2 from 0x70, end: sender 1's result: 0x80028007
+attr 0x0, FULL 2 from 0x70, end: sender 1's size: 0x00000000
+attr 0x0, FULL 2 from 0x70, end: sender 2's result: 0x80028007
+attr 0x0, FULL 2 from 0x70, end: sender 2's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, after the send: the free size: 0x00000008
+attr 0x1, FULL 12 from 0x70, after the send: the waiting senders: 0x00000002
+attr 0x1, FULL 12 from 0x70, after the send: the head is done: 0x00000000
+attr 0x1, FULL 12 from 0x70, after the send: the head waits: 0x00000001
+attr 0x1, FULL 12 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x1, FULL 12 from 0x70, after the send: the head's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, after the send: the new sender is done: 0x00000000
+attr 0x1, FULL 12 from 0x70, after the send: the new sender waits: 0x00000001
+attr 0x1, FULL 12 from 0x70, after the send: the new sender's result: 0x0000DEAD
+attr 0x1, FULL 12 from 0x70, after the send: the new sender's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, receive 1: the receive's result: 0x00000000
+attr 0x1, FULL 12 from 0x70, receive 1: the receive's size: 0x00000002
+attr 0x1, FULL 12 from 0x70, after receive 1: the free size: 0x0000000A
+attr 0x1, FULL 12 from 0x70, after receive 1: the waiting senders: 0x00000002
+attr 0x1, FULL 12 from 0x70, after receive 1: the head is done: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 1: the head waits: 0x00000001
+attr 0x1, FULL 12 from 0x70, after receive 1: the head's result: 0x0000DEAD
+attr 0x1, FULL 12 from 0x70, after receive 1: the head's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 1: the new sender is done: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 1: the new sender waits: 0x00000001
+attr 0x1, FULL 12 from 0x70, after receive 1: the new sender's result: 0x0000DEAD
+attr 0x1, FULL 12 from 0x70, after receive 1: the new sender's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, receive 2: the receive's result: 0x00000000
+attr 0x1, FULL 12 from 0x70, receive 2: the receive's size: 0x00000002
+attr 0x1, FULL 12 from 0x70, after receive 2: the free size: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 2: the waiting senders: 0x00000001
+attr 0x1, FULL 12 from 0x70, after receive 2: the head is done: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 2: the head waits: 0x00000001
+attr 0x1, FULL 12 from 0x70, after receive 2: the head's result: 0x0000DEAD
+attr 0x1, FULL 12 from 0x70, after receive 2: the head's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 2: the new sender is done: 0x00000001
+attr 0x1, FULL 12 from 0x70, after receive 2: the new sender waits: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 2: the new sender's result: 0x00000000
+attr 0x1, FULL 12 from 0x70, after receive 2: the new sender's size: 0x0000000C
+attr 0x1, FULL 12 from 0x70, cancel: the result: 0x00000000
+attr 0x1, FULL 12 from 0x70, cancel: the senders it ended: 0x00000001
+attr 0x1, FULL 12 from 0x70, end: sender 1's result: 0x80028007
+attr 0x1, FULL 12 from 0x70, end: sender 1's size: 0x00000000
+attr 0x1, FULL 12 from 0x70, end: sender 2's result: 0x00000000
+attr 0x1, FULL 12 from 0x70, end: sender 2's size: 0x0000000C
+attr 0x0, FULL 12 from 0x70, after the send: the free size: 0x00000008
+attr 0x0, FULL 12 from 0x70, after the send: the waiting senders: 0x00000002
+attr 0x0, FULL 12 from 0x70, after the send: the head is done: 0x00000000
+attr 0x0, FULL 12 from 0x70, after the send: the head waits: 0x00000001
+attr 0x0, FULL 12 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x0, FULL 12 from 0x70, after the send: the head's size: 0x00000000
+attr 0x0, FULL 12 from 0x70, after the send: the new sender is done: 0x00000000
+attr 0x0, FULL 12 from 0x70, after the send: the new sender waits: 0x00000001
+attr 0x0, FULL 12 from 0x70, after the send: the new sender's result: 0x0000DEAD
+attr 0x0, FULL 12 from 0x70, after the send: the new sender's size: 0x00000000
+attr 0x0, FULL 12 from 0x70, receive 1: the receive's result: 0x00000000
+attr 0x0, FULL 12 from 0x70, receive 1: the receive's size: 0x00000002
+attr 0x0, FULL 12 from 0x70, after receive 1: the free size: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 1: the waiting senders: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 1: the head is done: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 1: the head waits: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 1: the head's result: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 1: the head's size: 0x0000000A
+attr 0x0, FULL 12 from 0x70, after receive 1: the new sender is done: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 1: the new sender waits: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 1: the new sender's result: 0x0000DEAD
+attr 0x0, FULL 12 from 0x70, after receive 1: the new sender's size: 0x00000000
+attr 0x0, FULL 12 from 0x70, receive 2: the receive's result: 0x00000000
+attr 0x0, FULL 12 from 0x70, receive 2: the receive's size: 0x00000002
+attr 0x0, FULL 12 from 0x70, after receive 2: the free size: 0x00000002
+attr 0x0, FULL 12 from 0x70, after receive 2: the waiting senders: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 2: the head is done: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 2: the head waits: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 2: the head's result: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 2: the head's size: 0x0000000A
+attr 0x0, FULL 12 from 0x70, after receive 2: the new sender is done: 0x00000000
+attr 0x0, FULL 12 from 0x70, after receive 2: the new sender waits: 0x00000001
+attr 0x0, FULL 12 from 0x70, after receive 2: the new sender's result: 0x0000DEAD
+attr 0x0, FULL 12 from 0x70, after receive 2: the new sender's size: 0x00000000
+attr 0x0, FULL 12 from 0x70, cancel: the result: 0x00000000
+attr 0x0, FULL 12 from 0x70, cancel: the senders it ended: 0x00000001
+attr 0x0, FULL 12 from 0x70, end: sender 1's result: 0x00000000
+attr 0x0, FULL 12 from 0x70, end: sender 1's size: 0x0000000A
+attr 0x0, FULL 12 from 0x70, end: sender 2's result: 0x80028007
+attr 0x0, FULL 12 from 0x70, end: sender 2's size: 0x00000000
+attr 0x1, main try FULL 2: the try send's result: 0x00000000
+attr 0x1, main try FULL 2: the try send's size: 0x00000002
+attr 0x1, main try FULL 2, after the try send: the free size: 0x00000006
+attr 0x1, main try FULL 2, after the try send: the waiting senders: 0x00000001
+attr 0x1, main try FULL 2, after the try send: the head is done: 0x00000000
+attr 0x1, main try FULL 2, after the try send: the head waits: 0x00000001
+attr 0x1, main try FULL 2, after the try send: the head's result: 0x0000DEAD
+attr 0x1, main try FULL 2, after the try send: the head's size: 0x00000000
+attr 0x1, main try FULL 2, cancel: the result: 0x00000000
+attr 0x1, main try FULL 2, cancel: the senders it ended: 0x00000001
+attr 0x1, main try FULL 2, end: sender 1's result: 0x80028007
+attr 0x1, main try FULL 2, end: sender 1's size: 0x00000000
+attr 0x0, main try FULL 2: the try send's result: 0x80028222
+attr 0x0, main try FULL 2: the try send's size: 0x0000DEAD
+attr 0x0, main try FULL 2, after the try send: the free size: 0x00000008
+attr 0x0, main try FULL 2, after the try send: the waiting senders: 0x00000001
+attr 0x0, main try FULL 2, after the try send: the head is done: 0x00000000
+attr 0x0, main try FULL 2, after the try send: the head waits: 0x00000001
+attr 0x0, main try FULL 2, after the try send: the head's result: 0x0000DEAD
+attr 0x0, main try FULL 2, after the try send: the head's size: 0x00000000
+attr 0x0, main try FULL 2, cancel: the result: 0x00000000
+attr 0x0, main try FULL 2, cancel: the senders it ended: 0x00000001
+attr 0x0, main try FULL 2, end: sender 1's result: 0x80028007
+attr 0x0, main try FULL 2, end: sender 1's size: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the free size: 0x00000006
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the waiting senders: 0x00000001
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the head is done: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the head waits: 0x00000001
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the head's size: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the new sender is done: 0x00000001
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the new sender waits: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the new sender's result: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, after the send: the new sender's size: 0x00000002
+attr 0x1, FULL 2 timeout 0 from 0x70, cancel: the result: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, cancel: the senders it ended: 0x00000001
+attr 0x1, FULL 2 timeout 0 from 0x70, end: sender 1's result: 0x80028007
+attr 0x1, FULL 2 timeout 0 from 0x70, end: sender 1's size: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, end: sender 2's result: 0x00000000
+attr 0x1, FULL 2 timeout 0 from 0x70, end: sender 2's size: 0x00000002
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the free size: 0x00000008
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the waiting senders: 0x00000001
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the head is done: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the head waits: 0x00000001
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the head's result: 0x0000DEAD
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the head's size: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the new sender is done: 0x00000001
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the new sender waits: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the new sender's result: 0x80028005
+attr 0x0, FULL 2 timeout 0 from 0x70, after the send: the new sender's size: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, cancel: the result: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, cancel: the senders it ended: 0x00000001
+attr 0x0, FULL 2 timeout 0 from 0x70, end: sender 1's result: 0x80028007
+attr 0x0, FULL 2 timeout 0 from 0x70, end: sender 1's size: 0x00000000
+attr 0x0, FULL 2 timeout 0 from 0x70, end: sender 2's result: 0x80028005
+attr 0x0, FULL 2 timeout 0 from 0x70, end: sender 2's size: 0x00000000
+DONE

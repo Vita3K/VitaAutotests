@@ -1,0 +1,90 @@
+auto reset simple event, A and B: A's status after its deadline: 0x00000002
+auto reset simple event, A and B: B's status after A's deadline: 0x00000008
+auto reset simple event, A and B: the waiters after A's deadline: 0x00000001
+auto reset simple event, A and B: the set: 0x00000000
+auto reset simple event, A and B: the pattern after the set: 0x00000000
+auto reset simple event, A and B: A's result: 0x80028005
+auto reset simple event, A and B: A's pattern: 0x00000000
+auto reset simple event, A and B: A's user data: 0x00000000
+auto reset simple event, A and B: B's result: 0x00000000
+auto reset simple event, A and B: B's pattern: 0x01000000
+auto reset simple event, A and B: B's user data: 0x00001234
+auto reset simple event, A alone: A's status after its deadline: 0x00000002
+auto reset simple event, A alone: the waiters after A's deadline: 0x00000000
+auto reset simple event, A alone: the set: 0x00000000
+auto reset simple event, A alone: the pattern after the set: 0x01000000
+auto reset simple event, A alone: the poll: 0x00000000
+auto reset simple event, A alone: the bits the poll got: 0x01000000
+auto reset simple event, A alone: the low word of the user data the poll got: 0x00001234
+auto reset simple event, A alone: the pattern after the poll: 0x00000000
+auto reset simple event, A alone: A's result: 0x80028005
+auto reset simple event, A alone: A's pattern: 0x00000000
+auto reset simple event, A alone: A's user data: 0x00000000
+manual reset simple event, A and B: A's status after its deadline: 0x00000002
+manual reset simple event, A and B: B's status after A's deadline: 0x00000008
+manual reset simple event, A and B: the waiters after A's deadline: 0x00000001
+manual reset simple event, A and B: the set: 0x00000000
+manual reset simple event, A and B: the pattern after the set: 0x01000000
+manual reset simple event, A and B: A's result: 0x80028005
+manual reset simple event, A and B: A's pattern: 0x00000000
+manual reset simple event, A and B: A's user data: 0x00000000
+manual reset simple event, A and B: B's result: 0x00000000
+manual reset simple event, A and B: B's pattern: 0x01000000
+manual reset simple event, A and B: B's user data: 0x00001234
+flag with the multiple waiter attribute: A's status after its deadline: 0x00000002
+flag with the multiple waiter attribute: B's status after A's deadline: 0x00000008
+flag with the multiple waiter attribute: the waiters after A's deadline: 0x00000001
+flag with the multiple waiter attribute: the set: 0x00000000
+flag with the multiple waiter attribute: A's result: 0x80028005
+flag with the multiple waiter attribute: A's out bits: 0x00000000
+flag with the multiple waiter attribute: B's result: 0x00000000
+flag with the multiple waiter attribute: B's out bits: 0x00000001
+flag with the multiple waiter attribute: the pattern after both: 0x00000000
+set before the deadline, simple event: the set: 0x00000000
+set before the deadline, simple event: the wait: 0x00000000
+set before the deadline, simple event: the bits: 0x01000000
+set before the deadline, simple event: the low word of the user data: 0x00001234
+set before the deadline, simple event: the time left is above 500 ms: 0x00000001
+set before the deadline, flag: the set: 0x00000000
+set before the deadline, flag: the wait: 0x00000000
+set before the deadline, flag: the bits: 0x00000001
+set before the deadline, flag: the time left is above 500 ms: 0x00000001
+set before the deadline, OR multiple wait: the set: 0x00000000
+set before the deadline, OR multiple wait: the wait: 0x00000001
+set before the deadline, OR multiple wait: the entry for E1's result: 0x00000000
+set before the deadline, OR multiple wait: the bits: 0x01000000
+set before the deadline, OR multiple wait: the low word of the user data: 0x00001234
+set before the deadline, OR multiple wait: the time left is above 500 ms: 0x00000001
+OR multiple wait, plain waiter for E1 behind it: the multiple wait's status after the spin: 0x00000002
+OR multiple wait, plain waiter for E1 behind it: the plain waiter's status after the spin: 0x00000008
+OR multiple wait, plain waiter for E1 behind it: E1's waiters after the spin: 0x00000002
+OR multiple wait, plain waiter for E1 behind it: E2's waiters after the spin: 0x00000001
+OR multiple wait, plain waiter for E1 behind it: the set of E1: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E1's waiters after the set: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E1's pattern after the set: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E2's waiters after the set: 0x00000001
+OR multiple wait, plain waiter for E1 behind it: the multiple wait: 0x80028005
+OR multiple wait, plain waiter for E1 behind it: the multiple wait's entry 0 result is left as it was: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: the multiple wait's entry 1 result is left as it was: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: the plain waiter's result: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: the plain waiter's bits: 0x01000000
+OR multiple wait, plain waiter for E1 behind it: the low word of the plain waiter's data: 0x00001234
+OR multiple wait, plain waiter for E1 behind it: E1's waiters at the end: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E1's pattern at the end: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E2's waiters at the end: 0x00000000
+OR multiple wait, plain waiter for E1 behind it: E2's pattern at the end: 0x00000000
+OR multiple wait, no waiter behind it: the multiple wait's status after the spin: 0x00000002
+OR multiple wait, no waiter behind it: E1's waiters after the spin: 0x00000001
+OR multiple wait, no waiter behind it: E2's waiters after the spin: 0x00000001
+OR multiple wait, no waiter behind it: the set of E1: 0x00000000
+OR multiple wait, no waiter behind it: E1's waiters after the set: 0x00000000
+OR multiple wait, no waiter behind it: E1's pattern after the set: 0x01000000
+OR multiple wait, no waiter behind it: E2's waiters after the set: 0x00000001
+OR multiple wait, no waiter behind it: the multiple wait: 0x80028005
+OR multiple wait, no waiter behind it: the multiple wait's entry 0 result is left as it was: 0x00000000
+OR multiple wait, no waiter behind it: the multiple wait's entry 1 result is left as it was: 0x00000000
+OR multiple wait, no waiter behind it: E1's waiters at the end: 0x00000000
+OR multiple wait, no waiter behind it: E1's pattern at the end: 0x01000000
+OR multiple wait, no waiter behind it: E2's waiters at the end: 0x00000000
+OR multiple wait, no waiter behind it: E2's pattern at the end: 0x00000000
+DONE

@@ -1,0 +1,10 @@
+20 rounds of two starts of one dormant thread: no round had both starts return 0: 0x00000001
+20 rounds of two starts of one dormant thread: every round had one start return 0 and the other NOT_DORMANT: 0x00000001
+20 rounds of two starts of one dormant thread: the thread ran once per round: 0x00000001
+200 restarts of a thread that returns at once: every restart got 0: 0x00000001
+200 restarts of a thread that returns at once: the thread ran once per restart: 0x00000001
+the first start of the thread that exit-deletes itself returned 0: 0x00000001
+starts of the exit-deleted thread: the unknown thread error was reached: 0x00000001
+starts of the exit-deleted thread: none returned 0 after the first: 0x00000001
+no start returned an error other than 0x80028028 or 0x80028021: 0x00000001
+DONE
