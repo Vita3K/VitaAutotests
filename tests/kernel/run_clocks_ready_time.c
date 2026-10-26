@@ -1,9 +1,9 @@
 // The run clocks of a thread that is queued behind a running thread, READY or STANDBY, and of the
 // thread that takes the core from it. L is a thread on core 0 at 0x70 that spins without syscalls
 // until the test stops it. The main thread, on core 2, starts M on core 0 behind L, at 0xA0 or at
-// 0x70, then starts T on core 0 at 0x60, which spins for half a second and so runs ahead of L.
-// While T runs, the main thread reads the run clocks of L and M. Once T has ended it reads the
-// clocks of T, L and M again, and M's status. Then it stops L, and M gets the core once L has
+// 0x70, reads M's run clocks while M is queued behind L, and 300 ms later starts T on core 0 at
+// 0x60, which spins for half a second and so runs ahead of L. While T runs, the main thread reads
+// L's run clocks. Once T has ended it reads the clocks of T, L and M again, and M's status. Then it stops L, and M gets the core once L has
 // ended. Each case prints whether L's clocks grew by less than 100 ms during T's run, whether T's
 // clocks grew by more than 250 ms, whether M's clocks did not grow, and M's status once T has
 // ended. The cases are M at 0xA0 and M at 0x70.
@@ -17,6 +17,8 @@
 #define SPIN_US 500000
 #define GROWTH_US 250000
 #define QUIET_US 100000
+// How long M stays queued behind L before T starts
+#define QUEUED_US 300000
 
 static SceUID l, m, t;
 static volatile int l_stop;
@@ -84,12 +86,14 @@ static void run_case(const char *name, int m_priority) {
     sceKernelStartThread(m, 0, NULL);
     t = sceKernelCreateThread("t", t_entry, 0x60, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     SceUInt64 t_before = 0, t_after = 0, l_before = 0, l_after = 0, m_before = 0, m_after = 0;
+    // M's baseline is read while it is queued behind L, and the queued time before T counts too
+    run_clocks(m, &m_before);
+    sceKernelDelayThread(QUEUED_US);
     run_clocks(t, &t_before);
     sceKernelStartThread(t, 0, NULL);
     // T takes the core from L, so L is queued and not running while T runs
     TEST_WAIT_FOR(status_of(t) == RUNNING && status_of(l) != RUNNING);
     run_clocks(l, &l_before);
-    run_clocks(m, &m_before);
     SceUInt32 timeout = TEST_WAIT_US;
     sceKernelWaitThreadEnd(t, NULL, &timeout);
     run_clocks(t, &t_after);
