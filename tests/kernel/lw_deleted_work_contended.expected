@@ -1,0 +1,23 @@
+the other thread's lock before the delete: 0x00000000
+delete while another thread holds it: 0x00000000
+try lock 1 after the delete: 0x80028185
+lock 1 with a 2 s timeout after the delete: 0x80028181
+lock 1 with a 2 s timeout returned in under 1 s: 0x00000001
+lock CB 1 after the delete: 0x80028181
+lock 0 with a timeout after the delete: 0x80028181
+try lock 0 after the delete: 0x8002000F
+unlock 1 by a thread that doesn't own it: 0x80028186
+unlock 0 after the delete: 0x80028181
+info by work area after the delete: 0x80028181
+the other thread's unlock after the delete: 0x00000000
+lock 1 after the other thread's unlock: 0x00000000
+unlock 1 after that lock: 0x00000000
+main thread locks the second mutex: 0x00000000
+the waiter's lock with a 200 ms timeout: 0x80028005
+delete the second mutex while the main thread holds it: 0x00000000
+unlock 1 after the delete: 0x80028181
+word 0 after that unlock is the main thread: 0x00000001
+word 1 after that unlock: 0x00000001
+word 2 after that unlock: 0x00000001
+try lock 1 by the main thread, non recursive: 0x80028182
+DONE

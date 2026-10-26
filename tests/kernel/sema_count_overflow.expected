@@ -1,0 +1,31 @@
+max 0x7FFFFFFF and count 0x7FFFFFFF: signal 1: 0x80028103
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x7FFFFFFF
+max 0x7FFFFFFF and count 0x7FFFFFFF: signal 0x7FFFFFFF: 0x80028103
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x7FFFFFFF
+max 0x7FFFFFFF and count 0x7FFFFFFF: poll 0x7FFFFFFF: 0x00000000
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x00000000
+max 0x7FFFFFFF and count 0x7FFFFFFF: poll 1: 0x80028102
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x00000000
+max 0x7FFFFFFF and count 0x7FFFFFFF: signal 0x7FFFFFFF to the maximum: 0x00000000
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x7FFFFFFF
+max 0x7FFFFFFF and count 0x7FFFFFFF: signal 1 past it: 0x80028103
+max 0x7FFFFFFF and count 0x7FFFFFFF: the count after it: 0x7FFFFFFF
+max 0x7FFFFFFF and count 1: signal 0x7FFFFFFF: 0x80028103
+max 0x7FFFFFFF and count 1: the count after it: 0x00000001
+max 0x7FFFFFFF and count 1: poll 1: 0x00000000
+max 0x7FFFFFFF and count 1: the count after it: 0x00000000
+max 0x7FFFFFFF and count 1: poll 1 again: 0x80028102
+max 0x7FFFFFFF and count 1: the count after it: 0x00000000
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: signal 0x7FFFFFFF: 0x80028103
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: the count after it: 0x00000001
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: the waiter still waits: 0x00000001
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: signal 0x7FFFFFFE: 0x00000000
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: the waiter's result: 0x00000000
+max 0x7FFFFFFF, count 1, a waiter for 0x7FFFFFFF: the count after the waiter: 0x00000000
+max 0x7FFFFFFF and count 5: cancel to 0x7FFFFFFF: 0x00000000
+max 0x7FFFFFFF and count 5: the count after it: 0x7FFFFFFF
+max 0x7FFFFFFF and count 5: the waiters it counted: 0x00000000
+max 0x7FFFFFFF and count 5: cancel to 0x80000000: 0x00000000
+max 0x7FFFFFFF and count 5: the count after it: 0x00000005
+max 0x7FFFFFFF and count 5: the waiters it counted: 0x00000000
+DONE

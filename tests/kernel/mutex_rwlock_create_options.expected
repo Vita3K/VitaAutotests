@@ -1,0 +1,18 @@
+mutex, option size 0: create: 0x00000000
+mutex, option size 4: create: 0x00000000
+mutex, option size 8: create: 0x00000000
+mutex, option size 9: create: 0x8002000B
+mutex, option size 12: create: 0x8002000B
+mutex, option size 12, attribute 0x80000000: create: 0x8002000E
+mutex, option size 12, initial count 2, plain: create: 0x8002000B
+mutex, option size 12, ceiling attribute 0x4, ceiling 0x100: create: 0x8002000B
+mutex, option size 8, initial count 2, plain: create: 0x8002000F
+mutex, option size 8, ceiling attribute 0x4, ceiling 0x100: create: 0x80028023
+rwlock, option size 0: create: 0x00000000
+rwlock, option size 4: create: 0x00000000
+rwlock, option size 5: create: 0x8002000B
+rwlock, option size 8: create: 0x8002000B
+rwlock, option size 8, attribute 0x80000000: create: 0x8002000E
+mutex, option size 0xFFFFFFFF: create: 0x8002000B
+rwlock, option size 0xFFFFFFFF: create: 0x8002000B
+DONE

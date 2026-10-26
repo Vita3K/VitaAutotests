@@ -1,0 +1,59 @@
+manual reset: set a one shot set event of 300 ms: 0x00000000
+manual reset, before the start: a poll for the timer bit: the poll: 0x80028202
+manual reset, before the start: a poll for the timer bit: the bits it got: 0x00000000
+manual reset, before the start: a poll for the timer bit and the create bit: the poll: 0x00000000
+manual reset, before the start: a poll for the timer bit and the create bit: the bits it got: 0x00000004
+manual reset: start the timer: 0x00000000
+manual reset, after the fire: waiter 1's result: 0x00000000
+manual reset, after the fire: the bits waiter 1 got: 0x00008000
+manual reset, after the fire: the user data waiter 1 got: 0x00000000
+manual reset, after the fire: waiter 2's result: 0x00000000
+manual reset, after the fire: the bits waiter 2 got: 0x00008000
+manual reset, after the fire: the user data waiter 2 got: 0x00000000
+manual reset, after the fire: the info call: 0x00000000
+manual reset, after the fire: the waiting threads: 0x00000001
+manual reset, after the fire: the pattern: 0x00008004
+manual reset: set the user bit with user data 0x55: 0x00000000
+manual reset, after the user bit: waiter 0's result: 0x00000000
+manual reset, after the user bit: the bits waiter 0 got: 0x01000000
+manual reset, after the user bit: the user data waiter 0 got: 0x00000055
+manual reset, after the user bit: the info call: 0x00000000
+manual reset, after the user bit: the waiting threads: 0x00000000
+manual reset, after the user bit: the pattern: 0x01008004
+manual reset: stop the timer: 0x00000001
+auto reset: set a one shot set event of 300 ms: 0x00000000
+auto reset: start the timer: 0x00000000
+auto reset, after the fire: waiter 1's result: 0x00000000
+auto reset, after the fire: the bits waiter 1 got: 0x00008000
+auto reset, after the fire: the user data waiter 1 got: 0x00000000
+auto reset, after the fire: the info call: 0x00000000
+auto reset, after the fire: the waiting threads: 0x00000002
+auto reset, after the fire: the pattern: 0x00000004
+auto reset: cancel the timer: 0x00000000
+auto reset: the waiters the cancel counted: 0x00000002
+auto reset, after the cancel: waiter 0's result: 0x80028007
+auto reset, after the cancel: the bits waiter 0 got: 0x00000010
+auto reset, after the cancel: the user data waiter 0 got: 0x00000000
+auto reset, after the cancel: waiter 2's result: 0x80028007
+auto reset, after the cancel: the bits waiter 2 got: 0x00000010
+auto reset, after the cancel: the user data waiter 2 got: 0x00000000
+auto reset: stop the timer: 0x00000001
+auto reset, no waiter: set a one shot set event of 100 ms: 0x00000000
+auto reset, no waiter: the first poll for the create bit: the poll: 0x00000000
+auto reset, no waiter: the first poll for the create bit: the bits it got: 0x00000004
+auto reset, no waiter: after the first poll: the info call: 0x00000000
+auto reset, no waiter: after the first poll: the waiting threads: 0x00000000
+auto reset, no waiter: after the first poll: the pattern: 0x00000000
+auto reset, no waiter: the second poll for the create bit: the poll: 0x80028202
+auto reset, no waiter: the second poll for the create bit: the bits it got: 0x00000000
+auto reset, no waiter: start the timer: 0x00000000
+auto reset, no waiter: the poll after the fire: the poll: 0x00000000
+auto reset, no waiter: the poll after the fire: the bits it got: 0x00008000
+auto reset, no waiter: stop the timer: 0x00000001
+manual reset, no waiter: the first poll for the create bit: the poll: 0x00000000
+manual reset, no waiter: the first poll for the create bit: the bits it got: 0x00000004
+manual reset, no waiter: the second poll for the create bit: the poll: 0x00000000
+manual reset, no waiter: the second poll for the create bit: the bits it got: 0x00000004
+manual reset, no waiter: the third poll for the create bit: the poll: 0x00000000
+manual reset, no waiter: the third poll for the create bit: the bits it got: 0x00000004
+DONE

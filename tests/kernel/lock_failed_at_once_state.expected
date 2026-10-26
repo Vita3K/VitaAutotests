@@ -1,0 +1,161 @@
+a, timeout 0, plain: the write lock that fails at once: 0x80028005
+a, timeout 0, plain: waiting readers before the unlock: 0x00000001
+a, timeout 0, plain: waiting writers before the unlock: 0x00000000
+a, timeout 0, plain: write owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+a, timeout 0, plain: the reader's lock: 0x00000000
+a, timeout 0, plain: lock count after the reader's unlock: 0x00000000
+b, timeout 0, plain: the write lock that fails at once: 0x80028005
+b, timeout 0, plain: waiting readers after it: 0x00000000
+b, timeout 0, plain: waiting writers after it: 0x00000000
+b, timeout 0, plain: write owner after it (0 none, 1 main, 2 other): 0x00000000
+b, timeout 0, plain: try read lock: 0x00000000
+b, timeout 0, plain: read lock with timeout 0: 0x00000000
+b, timeout 0, plain: lock count before the two read locks: 0x00000001
+b, timeout 0, plain: lock count after the two read locks: 0x00000003
+b, timeout 0, plain: waiting readers after the two read locks: 0x00000000
+b, timeout 0, plain: waiting writers after the two read locks: 0x00000000
+b, timeout 0, plain: read unlock 1: 0x00000000
+b, timeout 0, plain: read unlock 2: 0x00000000
+b, timeout 0, plain: read unlock 3: 0x00000000
+b, timeout 0, plain: lock count after the three read unlocks: 0x00000000
+c, timeout 0, plain: the read lock that fails at once: 0x80028005
+c, timeout 0, plain: waiting readers before the read unlock: 0x00000000
+c, timeout 0, plain: waiting writers before the read unlock: 0x00000001
+c, timeout 0, plain: lock count before the read unlock: 0x00000001
+c, timeout 0, plain: the read unlock: 0x00000000
+c, timeout 0, plain: write owner after the read unlock (0 none, 1 main, 2 other): 0x00000002
+c, timeout 0, plain: waiting writers after the read unlock: 0x00000000
+c, timeout 0, plain: the writer's lock: 0x00000000
+c, timeout 0, plain: lock count after the writer's unlock: 0x00000000
+c, timeout 0, plain: waiting readers after the writer's unlock: 0x00000000
+c, timeout 0, plain: waiting writers after the writer's unlock: 0x00000000
+d, timeout 0, plain: the mutex lock that fails at once: 0x80028005
+d, timeout 0, plain: lock count before the unlock: 0x00000001
+d, timeout 0, plain: owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+d, timeout 0, plain: waiting threads before the unlock: 0x00000000
+d, timeout 0, plain: the unlock: 0x00000000
+d, timeout 0, plain: lock count after the unlock: 0x00000000
+d, timeout 0, plain: owner after the unlock (0 none, 1 main, 2 other): 0x00000000
+d, timeout 0, plain: waiting threads after the unlock: 0x00000000
+d, timeout 0, plain: a third thread's try lock: 0x00000000
+a, timeout 0, with callbacks: the write lock that fails at once: 0x80028005
+a, timeout 0, with callbacks: waiting readers before the unlock: 0x00000001
+a, timeout 0, with callbacks: waiting writers before the unlock: 0x00000000
+a, timeout 0, with callbacks: write owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+a, timeout 0, with callbacks: the reader's lock: 0x00000000
+a, timeout 0, with callbacks: lock count after the reader's unlock: 0x00000000
+b, timeout 0, with callbacks: the write lock that fails at once: 0x80028005
+b, timeout 0, with callbacks: waiting readers after it: 0x00000000
+b, timeout 0, with callbacks: waiting writers after it: 0x00000000
+b, timeout 0, with callbacks: write owner after it (0 none, 1 main, 2 other): 0x00000000
+b, timeout 0, with callbacks: try read lock: 0x00000000
+b, timeout 0, with callbacks: read lock with timeout 0: 0x00000000
+b, timeout 0, with callbacks: lock count before the two read locks: 0x00000001
+b, timeout 0, with callbacks: lock count after the two read locks: 0x00000003
+b, timeout 0, with callbacks: waiting readers after the two read locks: 0x00000000
+b, timeout 0, with callbacks: waiting writers after the two read locks: 0x00000000
+b, timeout 0, with callbacks: read unlock 1: 0x00000000
+b, timeout 0, with callbacks: read unlock 2: 0x00000000
+b, timeout 0, with callbacks: read unlock 3: 0x00000000
+b, timeout 0, with callbacks: lock count after the three read unlocks: 0x00000000
+c, timeout 0, with callbacks: the read lock that fails at once: 0x80028005
+c, timeout 0, with callbacks: waiting readers before the read unlock: 0x00000000
+c, timeout 0, with callbacks: waiting writers before the read unlock: 0x00000001
+c, timeout 0, with callbacks: lock count before the read unlock: 0x00000001
+c, timeout 0, with callbacks: the read unlock: 0x00000000
+c, timeout 0, with callbacks: write owner after the read unlock (0 none, 1 main, 2 other): 0x00000002
+c, timeout 0, with callbacks: waiting writers after the read unlock: 0x00000000
+c, timeout 0, with callbacks: the writer's lock: 0x00000000
+c, timeout 0, with callbacks: lock count after the writer's unlock: 0x00000000
+c, timeout 0, with callbacks: waiting readers after the writer's unlock: 0x00000000
+c, timeout 0, with callbacks: waiting writers after the writer's unlock: 0x00000000
+d, timeout 0, with callbacks: the mutex lock that fails at once: 0x80028005
+d, timeout 0, with callbacks: lock count before the unlock: 0x00000001
+d, timeout 0, with callbacks: owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+d, timeout 0, with callbacks: waiting threads before the unlock: 0x00000000
+d, timeout 0, with callbacks: the unlock: 0x00000000
+d, timeout 0, with callbacks: lock count after the unlock: 0x00000000
+d, timeout 0, with callbacks: owner after the unlock (0 none, 1 main, 2 other): 0x00000000
+d, timeout 0, with callbacks: waiting threads after the unlock: 0x00000000
+d, timeout 0, with callbacks: a third thread's try lock: 0x00000000
+a, timeout 1, plain: the write lock that fails at once: 0x80028005
+a, timeout 1, plain: waiting readers before the unlock: 0x00000001
+a, timeout 1, plain: waiting writers before the unlock: 0x00000000
+a, timeout 1, plain: write owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+a, timeout 1, plain: the reader's lock: 0x00000000
+a, timeout 1, plain: lock count after the reader's unlock: 0x00000000
+b, timeout 1, plain: the write lock that fails at once: 0x80028005
+b, timeout 1, plain: waiting readers after it: 0x00000000
+b, timeout 1, plain: waiting writers after it: 0x00000000
+b, timeout 1, plain: write owner after it (0 none, 1 main, 2 other): 0x00000000
+b, timeout 1, plain: try read lock: 0x00000000
+b, timeout 1, plain: read lock with timeout 0: 0x00000000
+b, timeout 1, plain: lock count before the two read locks: 0x00000001
+b, timeout 1, plain: lock count after the two read locks: 0x00000003
+b, timeout 1, plain: waiting readers after the two read locks: 0x00000000
+b, timeout 1, plain: waiting writers after the two read locks: 0x00000000
+b, timeout 1, plain: read unlock 1: 0x00000000
+b, timeout 1, plain: read unlock 2: 0x00000000
+b, timeout 1, plain: read unlock 3: 0x00000000
+b, timeout 1, plain: lock count after the three read unlocks: 0x00000000
+c, timeout 1, plain: the read lock that fails at once: 0x80028005
+c, timeout 1, plain: waiting readers before the read unlock: 0x00000000
+c, timeout 1, plain: waiting writers before the read unlock: 0x00000001
+c, timeout 1, plain: lock count before the read unlock: 0x00000001
+c, timeout 1, plain: the read unlock: 0x00000000
+c, timeout 1, plain: write owner after the read unlock (0 none, 1 main, 2 other): 0x00000002
+c, timeout 1, plain: waiting writers after the read unlock: 0x00000000
+c, timeout 1, plain: the writer's lock: 0x00000000
+c, timeout 1, plain: lock count after the writer's unlock: 0x00000000
+c, timeout 1, plain: waiting readers after the writer's unlock: 0x00000000
+c, timeout 1, plain: waiting writers after the writer's unlock: 0x00000000
+d, timeout 1, plain: the mutex lock that fails at once: 0x80028005
+d, timeout 1, plain: lock count before the unlock: 0x00000001
+d, timeout 1, plain: owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+d, timeout 1, plain: waiting threads before the unlock: 0x00000000
+d, timeout 1, plain: the unlock: 0x00000000
+d, timeout 1, plain: lock count after the unlock: 0x00000000
+d, timeout 1, plain: owner after the unlock (0 none, 1 main, 2 other): 0x00000000
+d, timeout 1, plain: waiting threads after the unlock: 0x00000000
+d, timeout 1, plain: a third thread's try lock: 0x00000000
+a, timeout 1, with callbacks: the write lock that fails at once: 0x80028005
+a, timeout 1, with callbacks: waiting readers before the unlock: 0x00000001
+a, timeout 1, with callbacks: waiting writers before the unlock: 0x00000000
+a, timeout 1, with callbacks: write owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+a, timeout 1, with callbacks: the reader's lock: 0x00000000
+a, timeout 1, with callbacks: lock count after the reader's unlock: 0x00000000
+b, timeout 1, with callbacks: the write lock that fails at once: 0x80028005
+b, timeout 1, with callbacks: waiting readers after it: 0x00000000
+b, timeout 1, with callbacks: waiting writers after it: 0x00000000
+b, timeout 1, with callbacks: write owner after it (0 none, 1 main, 2 other): 0x00000000
+b, timeout 1, with callbacks: try read lock: 0x00000000
+b, timeout 1, with callbacks: read lock with timeout 0: 0x00000000
+b, timeout 1, with callbacks: lock count before the two read locks: 0x00000001
+b, timeout 1, with callbacks: lock count after the two read locks: 0x00000003
+b, timeout 1, with callbacks: waiting readers after the two read locks: 0x00000000
+b, timeout 1, with callbacks: waiting writers after the two read locks: 0x00000000
+b, timeout 1, with callbacks: read unlock 1: 0x00000000
+b, timeout 1, with callbacks: read unlock 2: 0x00000000
+b, timeout 1, with callbacks: read unlock 3: 0x00000000
+b, timeout 1, with callbacks: lock count after the three read unlocks: 0x00000000
+c, timeout 1, with callbacks: the read lock that fails at once: 0x80028005
+c, timeout 1, with callbacks: waiting readers before the read unlock: 0x00000000
+c, timeout 1, with callbacks: waiting writers before the read unlock: 0x00000001
+c, timeout 1, with callbacks: lock count before the read unlock: 0x00000001
+c, timeout 1, with callbacks: the read unlock: 0x00000000
+c, timeout 1, with callbacks: write owner after the read unlock (0 none, 1 main, 2 other): 0x00000002
+c, timeout 1, with callbacks: waiting writers after the read unlock: 0x00000000
+c, timeout 1, with callbacks: the writer's lock: 0x00000000
+c, timeout 1, with callbacks: lock count after the writer's unlock: 0x00000000
+c, timeout 1, with callbacks: waiting readers after the writer's unlock: 0x00000000
+c, timeout 1, with callbacks: waiting writers after the writer's unlock: 0x00000000
+d, timeout 1, with callbacks: the mutex lock that fails at once: 0x80028005
+d, timeout 1, with callbacks: lock count before the unlock: 0x00000001
+d, timeout 1, with callbacks: owner before the unlock (0 none, 1 main, 2 other): 0x00000001
+d, timeout 1, with callbacks: waiting threads before the unlock: 0x00000000
+d, timeout 1, with callbacks: the unlock: 0x00000000
+d, timeout 1, with callbacks: lock count after the unlock: 0x00000000
+d, timeout 1, with callbacks: owner after the unlock (0 none, 1 main, 2 other): 0x00000000
+d, timeout 1, with callbacks: waiting threads after the unlock: 0x00000000
+d, timeout 1, with callbacks: a third thread's try lock: 0x00000000
+DONE

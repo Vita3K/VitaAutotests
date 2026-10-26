@@ -1,0 +1,38 @@
+create the callback: 0x00000000
+create the timer: 0x00000000
+register the callback through the creating UID: 0x00000000
+open the timer by name: 0x00000000
+after the open: the callback's notifications: 0x00000001
+after the open: runs of the callback: 0x00000001
+after the open: the argument it got: 0x00000100
+after the open: its notify ID is the registered UID: 0x00000001
+set a one shot 50 ms event through the opened UID: 0x00000000
+start the timer through the opened UID: 0x00000000
+wait for the event through the opened UID: 0x00000000
+after the event: the callback's notifications: 0x00000001
+after the event: runs of the callback: 0x00000001
+after the event: the argument it got: 0x00000000
+after the event: its notify ID is the registered UID: 0x00000001
+close the opened UID: 0x00000000
+after the close: the callback's notifications: 0x00000001
+after the close: runs of the callback: 0x00000001
+after the close: the argument it got: 0x00000200
+after the close: its notify ID is the registered UID: 0x00000001
+stop the timer: 0x00000001
+after the stop: the callback's notifications: 0x00000000
+delete the creating UID: 0x00000000
+after the delete: the callback's notifications: 0x00000001
+after the delete: runs of the callback: 0x00000001
+after the delete: the argument it got: 0x00000008
+after the delete: its notify ID is the registered UID: 0x00000001
+register the callback to the second timer: 0x00000000
+set a repeating 1 s event: 0x00000000
+start the second timer: 0x00000000
+delete the started timer: 0x00000000
+after deleting the started timer: the callback's notifications: 0x00000001
+after deleting the started timer: runs of the callback: 0x00000001
+after deleting the started timer: the argument it got: 0x00000008
+after deleting the started timer: its notify ID is the registered UID: 0x00000001
+notifications 1.5 s after the delete: 0x00000000
+delete the callback: 0x00000000
+DONE

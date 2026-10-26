@@ -1,0 +1,82 @@
+plain rwlock, write owner: write lock with callbacks: the result: 0x800281E2
+plain rwlock, write owner: write lock with callbacks: runs of the pending callback: 0x00000000
+plain rwlock, write owner: write lock with callbacks: runs after a check of the callbacks: 0x00000001
+plain rwlock, write owner: read lock with callbacks: the result: 0x800281E6
+plain rwlock, write owner: read lock with callbacks: runs of the pending callback: 0x00000000
+plain rwlock, write owner: read lock with callbacks: runs after a check of the callbacks: 0x00000001
+plain rwlock, write owner: write unlock: the result: 0x00000000
+plain rwlock, write owner: write unlock: runs of the pending callback: 0x00000000
+plain rwlock, write owner: write unlock: runs after a check of the callbacks: 0x00000001
+recursive rwlock, write owner: write lock with callbacks: the result: 0x00000000
+recursive rwlock, write owner: write lock with callbacks: runs of the pending callback: 0x00000000
+recursive rwlock, write owner: write lock with callbacks: runs after a check of the callbacks: 0x00000001
+recursive rwlock, write owner: info after the call: 0x00000000
+recursive rwlock, write owner: lock count after the call: 0x00000002
+recursive rwlock: first write unlock: 0x00000000
+recursive rwlock: second write unlock: 0x00000000
+free rwlock: try write lock: the result: 0x00000000
+free rwlock: try write lock: runs of the pending callback: 0x00000000
+free rwlock: try write lock: runs after a check of the callbacks: 0x00000001
+free rwlock: write unlock: the result: 0x00000000
+free rwlock: write unlock: runs of the pending callback: 0x00000000
+free rwlock: write unlock: runs after a check of the callbacks: 0x00000001
+free rwlock: read lock: the result: 0x00000000
+free rwlock: read lock: runs of the pending callback: 0x00000000
+free rwlock: read lock: runs after a check of the callbacks: 0x00000001
+free rwlock: try read lock: the result: 0x00000000
+free rwlock: try read lock: runs of the pending callback: 0x00000000
+free rwlock: try read lock: runs after a check of the callbacks: 0x00000001
+free rwlock: read unlock: the result: 0x00000000
+free rwlock: read unlock: runs of the pending callback: 0x00000000
+free rwlock: read unlock: runs after a check of the callbacks: 0x00000001
+free rwlock: read unlock again: the result: 0x00000000
+free rwlock: read unlock again: runs of the pending callback: 0x00000000
+free rwlock: read unlock again: runs after a check of the callbacks: 0x00000001
+free rwlock: write lock: the result: 0x00000000
+free rwlock: write lock: runs of the pending callback: 0x00000000
+free rwlock: write lock: runs after a check of the callbacks: 0x00000001
+free rwlock: write unlock after the write lock: the result: 0x00000000
+free rwlock: write unlock after the write lock: runs of the pending callback: 0x00000000
+free rwlock: write unlock after the write lock: runs after a check of the callbacks: 0x00000001
+free rwlock: info: the result: 0x00000000
+free rwlock: info: runs of the pending callback: 0x00000000
+free rwlock: info: runs after a check of the callbacks: 0x00000001
+free rwlock: lock count after the info call: 0x00000000
+free rwlock: cancel with flag 0: the result: 0x00000000
+free rwlock: cancel with flag 0: runs of the pending callback: 0x00000000
+free rwlock: cancel with flag 0: runs after a check of the callbacks: 0x00000001
+free rwlock: readers the cancel writes: 0x00000000
+free rwlock: writers the cancel writes: 0x00000000
+rwlock held by another thread: write lock with a timeout of 1000 us: the result: 0x80028005
+rwlock held by another thread: write lock with a timeout of 1000 us: runs of the pending callback: 0x00000000
+rwlock held by another thread: write lock with a timeout of 1000 us: runs after a check of the callbacks: 0x00000001
+free mutex: lock: the result: 0x00000000
+free mutex: lock: runs of the pending callback: 0x00000000
+free mutex: lock: runs after a check of the callbacks: 0x00000001
+owned mutex: lock again: the result: 0x80028142
+owned mutex: lock again: runs of the pending callback: 0x00000000
+owned mutex: lock again: runs after a check of the callbacks: 0x00000001
+owned mutex: cancel to count 1: the result: 0x00000000
+owned mutex: cancel to count 1: runs of the pending callback: 0x00000000
+owned mutex: cancel to count 1: runs after a check of the callbacks: 0x00000001
+owned mutex: waiters the cancel writes: 0x00000000
+owned mutex: info: the result: 0x00000000
+owned mutex: info: runs of the pending callback: 0x00000000
+owned mutex: info: runs after a check of the callbacks: 0x00000001
+owned mutex: count after the info call: 0x00000001
+owned mutex: unlock: the result: 0x00000000
+owned mutex: unlock: runs of the pending callback: 0x00000000
+owned mutex: unlock: runs after a check of the callbacks: 0x00000001
+free mutex: try lock: the result: 0x00000000
+free mutex: try lock: runs of the pending callback: 0x00000000
+free mutex: try lock: runs after a check of the callbacks: 0x00000001
+owned mutex: unlock after the try lock: the result: 0x00000000
+owned mutex: unlock after the try lock: runs of the pending callback: 0x00000000
+owned mutex: unlock after the try lock: runs after a check of the callbacks: 0x00000001
+mutex held by another thread: lock with a timeout of 1000 us: the result: 0x80028005
+mutex held by another thread: lock with a timeout of 1000 us: runs of the pending callback: 0x00000000
+mutex held by another thread: lock with a timeout of 1000 us: runs after a check of the callbacks: 0x00000001
+mutex held by another thread: try lock: the result: 0x80028145
+mutex held by another thread: try lock: runs of the pending callback: 0x00000000
+mutex held by another thread: try lock: runs after a check of the callbacks: 0x00000001
+DONE

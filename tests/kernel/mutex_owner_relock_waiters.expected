@@ -1,0 +1,86 @@
+recursive: the first lock: 0x00000000
+recursive: W queued: the count: 0x00000001
+recursive: W queued: the owner: 0x00000001
+recursive: W queued: the waiting threads: 0x00000001
+recursive: W queued: W's wait type: 0x00000040
+recursive: lock to 2 with a timeout of 0: 0x00000000
+recursive: after the lock to 2: the count: 0x00000003
+recursive: after the lock to 2: the owner: 0x00000001
+recursive: after the lock to 2: the waiting threads: 0x00000001
+recursive: after the lock to 2: W's wait type: 0x00000040
+recursive: try lock to 1: 0x00000000
+recursive: after the try lock to 1: the count: 0x00000004
+recursive: after the try lock to 1: the owner: 0x00000001
+recursive: after the try lock to 1: the waiting threads: 0x00000001
+recursive: after the try lock to 1: W's wait type: 0x00000040
+recursive: try lock to 0x7FFFFFFF: 0x80028143
+recursive: after the try lock to 0x7FFFFFFF: the count: 0x00000004
+recursive: after the try lock to 0x7FFFFFFF: the owner: 0x00000001
+recursive: after the try lock to 0x7FFFFFFF: the waiting threads: 0x00000001
+recursive: after the try lock to 0x7FFFFFFF: W's wait type: 0x00000040
+recursive: unlock by 3: 0x00000000
+recursive: after the unlock by 3: the count: 0x00000001
+recursive: after the unlock by 3: the owner: 0x00000001
+recursive: after the unlock by 3: the waiting threads: 0x00000001
+recursive: after the unlock by 3: W's wait type: 0x00000040
+recursive: unlock by 1: 0x00000000
+recursive: after the unlock by 1: the count: 0x00000001
+recursive: after the unlock by 1: the owner: 0x00000002
+recursive: after the unlock by 1: the waiting threads: 0x00000000
+recursive: after the unlock by 1: W's wait type: 0x00000020
+recursive: the main thread's try lock: 0x80028145
+recursive: W's lock: 0x00000000
+recursive: W's unlock: 0x00000000
+plain: the first lock: 0x00000000
+plain: W queued: the count: 0x00000001
+plain: W queued: the owner: 0x00000001
+plain: W queued: the waiting threads: 0x00000001
+plain: W queued: W's wait type: 0x00000040
+plain: lock with a timeout of 0: 0x80028142
+plain: after the lock: the count: 0x00000001
+plain: after the lock: the owner: 0x00000001
+plain: after the lock: the waiting threads: 0x00000001
+plain: after the lock: W's wait type: 0x00000040
+plain: try lock: 0x80028142
+plain: after the try lock: the count: 0x00000001
+plain: after the try lock: the owner: 0x00000001
+plain: after the try lock: the waiting threads: 0x00000001
+plain: after the try lock: W's wait type: 0x00000040
+plain: a third thread's try lock: 0x80028145
+plain: a third thread's lock with a timeout of 0: 0x80028005
+plain: after the third thread: the count: 0x00000001
+plain: after the third thread: the owner: 0x00000001
+plain: after the third thread: the waiting threads: 0x00000001
+plain: after the third thread: W's wait type: 0x00000040
+plain: unlock: 0x00000000
+plain: after the unlock: the count: 0x00000001
+plain: after the unlock: the owner: 0x00000002
+plain: after the unlock: the waiting threads: 0x00000000
+plain: after the unlock: W's wait type: 0x00000020
+plain: W's lock: 0x00000000
+plain: W's unlock: 0x00000000
+timeout: the first lock: 0x00000000
+timeout: W queued: the count: 0x00000001
+timeout: W queued: the owner: 0x00000001
+timeout: W queued: the waiting threads: 0x00000001
+timeout: W queued: W's wait type: 0x00000040
+timeout: lock to 2 with a timeout of 500 ms: 0x00000000
+timeout: the timeout is unchanged: 0x00000001
+timeout: after the lock to 2: the count: 0x00000003
+timeout: after the lock to 2: the owner: 0x00000001
+timeout: after the lock to 2: the waiting threads: 0x00000001
+timeout: after the lock to 2: W's wait type: 0x00000040
+timeout: lock to 1 with a timeout of 500 ms: 0x00000000
+timeout: the timeout is unchanged after it: 0x00000001
+timeout: after the lock to 1: the count: 0x00000004
+timeout: after the lock to 1: the owner: 0x00000001
+timeout: after the lock to 1: the waiting threads: 0x00000001
+timeout: after the lock to 1: W's wait type: 0x00000040
+timeout: unlock by 4: 0x00000000
+timeout: after the unlock by 4: the count: 0x00000001
+timeout: after the unlock by 4: the owner: 0x00000002
+timeout: after the unlock by 4: the waiting threads: 0x00000000
+timeout: after the unlock by 4: W's wait type: 0x00000020
+timeout: W's lock: 0x00000000
+timeout: W's unlock: 0x00000000
+DONE

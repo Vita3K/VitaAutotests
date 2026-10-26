@@ -1,0 +1,21 @@
+mutexes A, B, C, the owner locks B, C, A: run order: 0x00000120
+mutexes A, B, C, the owner locks B, C, A: the lock result of the waiter on A: 0x00000000
+mutexes A, B, C, the owner locks B, C, A: the lock result of the waiter on B: 0x00000000
+mutexes A, B, C, the owner locks B, C, A: the lock result of the waiter on C: 0x00000000
+mutexes A, B, C, the owner locks C, B, A: run order: 0x00000210
+mutexes A, B, C, the owner locks C, B, A: the lock result of the waiter on A: 0x00000000
+mutexes A, B, C, the owner locks C, B, A: the lock result of the waiter on B: 0x00000000
+mutexes A, B, C, the owner locks C, B, A: the lock result of the waiter on C: 0x00000000
+recursive A and B, the owner locks A, B, A: run order: 0x00000001
+recursive A and B, the owner locks A, B, A: the lock result of the waiter on A: 0x00000000
+recursive A and B, the owner locks A, B, A: the lock result of the waiter on B: 0x00000000
+the owner creates N with count 1, then locks M: run order: 0x00000001
+the owner creates N with count 1, then locks M: the lock result of the waiter on N: 0x00000000
+the owner creates N with count 1, then locks M: the lock result of the waiter on M: 0x00000000
+rwlock R write locked, then mutex M locked: run order: 0x00000010
+rwlock R write locked, then mutex M locked: the lock result of the waiter on R: 0x00000000
+rwlock R write locked, then mutex M locked: the lock result of the waiter on M: 0x00000000
+rwlocks R1, R2, the owner write locks R2, R1: run order: 0x00000010
+rwlocks R1, R2, the owner write locks R2, R1: the lock result of the waiter on R1: 0x00000000
+rwlocks R1, R2, the owner write locks R2, R1: the lock result of the waiter on R2: 0x00000000
+DONE
