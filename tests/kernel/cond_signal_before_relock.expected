@@ -20,9 +20,9 @@ b, after the report: the condition's waiters: 0x00000000
 b, after the report: the mutex's waiters: 0x00000002
 b: W owns the mutex after the unlock: 0x00000001
 b: L owns the mutex after the unlock: 0x00000000
-b: the order the mutex went in: 0x00000001
+b: the order the mutex went in: 0x00000012
 b: W's wait result: 0x00000000
-b: L's lock result: 0x80028005
+b: L's lock result: 0x00000000
 c, after the signal: W is in a wait: 0x00000000
 c, after the signal: W is ready or on standby: 0x00000001
 c, after the signal: W's wait type: 0x00000000
@@ -36,9 +36,9 @@ c, after the report: the condition's waiters: 0x00000000
 c, after the report: the mutex's waiters: 0x00000002
 c: W owns the mutex after the unlock: 0x00000001
 c: L owns the mutex after the unlock: 0x00000000
-c: the order the mutex went in: 0x00000001
+c: the order the mutex went in: 0x00000012
 c: W's wait result: 0x00000000
-c: L's lock result: 0x80028005
+c: L's lock result: 0x00000000
 d, after the signal: W is in a wait: 0x00000000
 d, after the signal: W is ready or on standby: 0x00000001
 d, after the signal: W's wait type: 0x00000000

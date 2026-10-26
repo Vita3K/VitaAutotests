@@ -48,11 +48,12 @@ static int cond_waiter(SceSize args, void *argp) {
     return 0;
 }
 
-// Locks the mutex, records its turn and unlocks
+// Locks the mutex, records its turn and unlocks. Its timeout is past every hand-over of a case, so
+// it gets the mutex after W when W goes first.
 static int locker_thread(SceSize args, void *argp) {
     (void)args;
     (void)argp;
-    SceUInt timeout = TEST_WAIT_US;
+    SceUInt timeout = 3 * TEST_WAIT_US;
     l_result = sceKernelLockMutex(mutex, 1, &timeout);
     if (l_result == 0) {
         order = (order << 4) | DIGIT_L;
