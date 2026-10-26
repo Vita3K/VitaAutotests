@@ -4,7 +4,8 @@
 // isn't set, then sets 0x1 and joins A. The model event_flag_waits covers several waiters on one
 // flag. The cases:
 // - the poll for 0x2: its result and the bits it got.
-// - the poll for 0x1: its result and the bits it got, 0xDEAD if it didn't set them.
+// - the poll for 0x1: its result and the bits it got, 0xDEAD if it didn't set them. A failed poll
+//   writes the current bits of the flag.
 // - whether A ended before the set.
 // - A's result and the bits it got.
 #include <psp2/kernel/threadmgr.h>

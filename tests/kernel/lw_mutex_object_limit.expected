@@ -1,0 +1,19 @@
+create a lightweight mutex before the others: 0x00000000
+lightweight mutexes: created before an error or the end of the loop: 0x000007EC
+lightweight mutexes: the error: 0x8002450D
+lightweight mutexes: the area of the failed create is unchanged: 0x00000001
+lightweight mutexes: a semaphore while they are there: 0x8002450D
+lightweight mutexes: a mutex while they are there: 0x8002450D
+lightweight mutexes: another lightweight mutex while they are there: 0x8002450D
+lightweight mutexes: the area of that create is unchanged: 0x00000001
+delete one lightweight mutex: 0x00000000
+a semaphore after deleting one lightweight mutex: 0x00000000
+every other lightweight mutex deletes: 0x00000001
+create a lightweight mutex after deleting them: 0x00000000
+semaphores: created before an error or the end of the loop: 0x000007EC
+semaphores: the error: 0x8002450D
+a lightweight mutex while the semaphores are there: 0x8002450D
+a lightweight mutex while the semaphores are there: the area is unchanged: 0x00000001
+every semaphore deletes: 0x00000001
+the semaphore count equals the lightweight mutex count: 0x00000001
+DONE

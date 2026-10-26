@@ -1,0 +1,19 @@
+FIFO: the counter ends at 9000: 0x00000001
+FIFO: no lock failed: 0x00000001
+FIFO: no unlock failed: 0x00000001
+FIFO: never two inside the section: 0x00000001
+FIFO: word 0 is 0: 0x00000001
+FIFO: word 2 is 0: 0x00000001
+FIFO: no owner: 0x00000001
+FIFO: the count is 0: 0x00000001
+FIFO: no waiters: 0x00000001
+recursive, priority queue: the counter ends at 9000: 0x00000001
+recursive, priority queue: no lock failed: 0x00000001
+recursive, priority queue: no unlock failed: 0x00000001
+recursive, priority queue: never two inside the section: 0x00000001
+recursive, priority queue: word 0 is 0: 0x00000001
+recursive, priority queue: word 2 is 0: 0x00000001
+recursive, priority queue: no owner: 0x00000001
+recursive, priority queue: the count is 0: 0x00000001
+recursive, priority queue: no waiters: 0x00000001
+DONE

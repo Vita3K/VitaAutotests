@@ -1,0 +1,33 @@
+lock the copy while the original is free: 0x00000000
+the copy's word 0 is the caller: 0x00000001
+the copy's count after its lock: 0x00000001
+the original after the copy's lock: word 0 is 0: 0x00000001
+the original after the copy's lock: word 1 is 0: 0x00000001
+the original after the copy's lock: word 2 is 0: 0x00000001
+the other thread's lock of the original with a zero timeout: 0x00000000
+the original's word 0 is the other thread: 0x00000001
+the original's count after the other thread's lock: 0x00000001
+the copy's word 0 is still the caller: 0x00000001
+lock the copy again, non recursive, with a 2 s timeout: 0x80020006
+lock the copy again returned in under 1 s: 0x00000001
+the original's owner after that lock: 0x00000001
+unlock the copy with a count of 0: 0x80020006
+unlock the copy with a count of 1: 0x00000000
+the copy after its unlock: word 0 is 0: 0x00000001
+the copy after its unlock: word 1 is 0: 0x00000001
+the copy after its unlock: word 2 is 0: 0x00000001
+the original's owner after the copy's unlock: 0x00000001
+the original's count after the copy's unlock: 0x00000001
+info by work area of the copy: 0x00000000
+info's work area is the original's: 0x00000001
+info's count is the original's: 0x00000001
+info's owner is the original's: 0x00000001
+lock the copy made while the other thread holds the original: 0x80020006
+that lock returned in under 1 s: 0x00000001
+try lock of that copy: 0x80028185
+delete through the copy made while it is held: 0x80020006
+the other thread's unlock of the original: 0x00000000
+lock the original after the delete through the copy: 0x00000000
+unlock the original: 0x00000000
+delete the original: 0x00000000
+DONE

@@ -1,10 +1,10 @@
 // sceKernelCallWithChangeStack, which calls a function on a buffer the caller gives as its
 // stack, and gives the thread its own stack bounds back after the call. The function's sp is
 // inside the buffer, TLS slots 2 and 3 hold the buffer's top and bottom, and
-// sceKernelCheckThreadStack counts from the buffer's bottom. The thread's info stack, TPIDRURO,
-// thread ID and FPSCR stay as they were, and so do r4 to r11 and sp across the call. The test
-// prints nothing from the new stack. The function records what it sees, and the printing happens
-// after the call returns. Cases:
+// sceKernelCheckThreadStack counts from the buffer's bottom, which is compared with sp read just
+// before the call, within 64 bytes. The thread's info stack, TPIDRURO, thread ID and FPSCR stay as
+// they were, and so do r4 to r11 and sp across the call. The test prints nothing from the new
+// stack. The function records what it sees, and the printing happens after the call returns. Cases:
 // - a call with a 0x2000 buffer, aligned to 4 KiB, whose function returns its argument plus 1
 // - the same call, made by a naked block that holds markers in r4 to r11, checked after the return
 // - a nested call from inside the function, with a second buffer: the inner call gives back the
@@ -65,12 +65,6 @@ static unsigned int tls_slot(int key) {
     return *(volatile unsigned int *)sceKernelGetTLSAddr(key);
 }
 
-static unsigned int get_sp(void) {
-    unsigned int value;
-    __asm__ volatile("mov %0, sp" : "=r"(value));
-    return value;
-}
-
 static int change_stack_func(int arg);
 
 // Records what the function sees. pushed holds r0 to r3, r12 and lr, as the naked entry
@@ -85,9 +79,10 @@ void record_change_stack(const unsigned int *pushed) {
     s->r3 = pushed[3];
     // Six words were pushed, so sp was 24 bytes above them
     s->sp = (unsigned int)pushed + 24;
-    s->here = get_sp();
     s->slot2 = tls_slot(2);
     s->slot3 = tls_slot(3);
+    // sp is read right before the call, so it differs from the sp the kernel sees by the stub's frame
+    __asm__ volatile("mov %0, sp" : "=r"(s->here));
     s->check = sceKernelCheckThreadStack();
     SceKernelThreadInfo info = { .size = sizeof(info) };
     sceKernelGetThreadInfo(0, &info);
@@ -205,7 +200,9 @@ static void report(const char *name, const Seen *s, SceUIntPtr base, SceSize siz
     PRINTF(distance_bucket(top, s->sp), "%s: sp's distance below the top, bucket", name);
     PRINTF(s->slot2 == top, "%s: slot 2 is the top of the buffer", name);
     PRINTF(s->slot3 == base, "%s: slot 3 is the bottom of the buffer", name);
-    PRINTF(s->check == (int)(s->here - base), "%s: CheckThreadStack is sp minus the bottom", name);
+    const int check_diff = s->check - (int)(s->here - base);
+    PRINTF(check_diff >= -64 && check_diff <= 64,
+           "%s: CheckThreadStack is sp minus the bottom, within 64 bytes", name);
     PRINTF(s->info_stack == own.stack && s->info_stack_size == own.stack_size,
            "%s: the thread info stack and size are unchanged", name);
     PRINTF(s->tpidruro == own.tpidruro, "%s: TPIDRURO is unchanged", name);

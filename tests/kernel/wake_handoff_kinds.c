@@ -7,9 +7,9 @@
 // queue. Every thread is pinned to core 0 and the waiters run below the main
 // thread, so a waiter can't run between the release and the try. For the mutex
 // kind the main thread unlocks, then tries to lock right back. For the
-// condition kinds the waiter is signaled into the wait for its mutex, so the
-// release is the signal and the unlock of the mutex that follows it, and the
-// try takes that mutex back. The timer's release is its own event, at its time,
+// condition kinds the release is the signal and the unlock of the mutex that
+// follows it. The signal only makes the waiter ready, it relocks the mutex when
+// it runs, so the try takes the mutex back first. The timer's release is its own event, at its time,
 // so the main thread spins on a poll of the timer until the poll gets the event
 // or one second passes, which is after the event time of 300 ms. Each value is
 // read first and printed after the waiter ended, since printing lets the waiter

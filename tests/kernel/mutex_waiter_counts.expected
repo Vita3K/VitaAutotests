@@ -1,0 +1,98 @@
+a: the main thread's lock to a count of 1: 0x00000000
+a, the main thread unlocks 1: the unlock: 0x00000000
+a, the main thread unlocked 1: the owner: 0x00000002
+a, the main thread unlocked 1: the count: 0x00000003
+a, the main thread unlocked 1: the waiting threads: 0x00000001
+a, the main thread unlocked 1: W2's wait type: 0x00000040
+a, W1 unlocks 1: the unlock: 0x00000000
+a, W1 unlocked 1: the owner: 0x00000002
+a, W1 unlocked 1: the count: 0x00000002
+a, W1 unlocked 1: the waiting threads: 0x00000001
+a, W1 unlocked 1: W2's wait type: 0x00000040
+a, W1 unlocks 2: the unlock: 0x00000000
+a, W1 unlocked 2, W2 holds it: the owner: 0x00000003
+a, W1 unlocked 2, W2 holds it: the count: 0x00000002
+a, W1 unlocked 2, W2 holds it: the waiting threads: 0x00000000
+a, W2 unlocks 2: the unlock: 0x00000000
+a, W2 unlocked 2: the owner: 0x00000000
+a, W2 unlocked 2: the count: 0x00000000
+a, W2 unlocked 2: the waiting threads: 0x00000000
+a: W1's lock: 0x00000000
+a: W2's lock: 0x00000000
+b: the main thread's lock to a count of 1: 0x00000000
+b, the main thread unlocks 1: the unlock: 0x00000000
+b, the main thread unlocked 1: the owner: 0x00000003
+b, the main thread unlocked 1: the count: 0x00000002
+b, the main thread unlocked 1: the waiting threads: 0x00000001
+b, the main thread unlocked 1: W1's wait type: 0x00000040
+b, W2 unlocks 1: the unlock: 0x00000000
+b, W2 unlocked 1: the owner: 0x00000003
+b, W2 unlocked 1: the count: 0x00000001
+b, W2 unlocked 1: the waiting threads: 0x00000001
+b, W2 unlocked 1: W1's wait type: 0x00000040
+b, W2 unlocks 1 again: the unlock: 0x00000000
+b, W2 unlocked 1 again, W1 holds it: the owner: 0x00000002
+b, W2 unlocked 1 again, W1 holds it: the count: 0x00000003
+b, W2 unlocked 1 again, W1 holds it: the waiting threads: 0x00000000
+b, W1 unlocks 3: the unlock: 0x00000000
+b, W1 unlocked 3: the owner: 0x00000000
+b, W1 unlocked 3: the count: 0x00000000
+b, W1 unlocked 3: the waiting threads: 0x00000000
+b: W1's lock: 0x00000000
+b: W2's lock: 0x00000000
+c: the main thread's lock to a count of 5: 0x00000000
+c, the main thread unlocks 2: the unlock: 0x00000000
+c, the main thread unlocked 2: the owner: 0x00000001
+c, the main thread unlocked 2: the count: 0x00000003
+c, the main thread unlocked 2: the waiting threads: 0x00000001
+c, the main thread unlocked 2: W1's wait type: 0x00000040
+c, the main thread unlocks 2 again: the unlock: 0x00000000
+c, the main thread unlocked 2 again: the owner: 0x00000001
+c, the main thread unlocked 2 again: the count: 0x00000001
+c, the main thread unlocked 2 again: the waiting threads: 0x00000001
+c, the main thread unlocked 2 again: W1's wait type: 0x00000040
+c, the main thread unlocks 2 with 1 held: the unlock: 0x80028144
+c, the failed unlock: the owner: 0x00000001
+c, the failed unlock: the count: 0x00000001
+c, the failed unlock: the waiting threads: 0x00000001
+c, the failed unlock: W1's wait type: 0x00000040
+c, the main thread unlocks 1: the unlock: 0x00000000
+c, the mutex went to W1: the owner: 0x00000002
+c, the mutex went to W1: the count: 0x00000002
+c, the mutex went to W1: the waiting threads: 0x00000000
+c, W1 unlocks 2: the unlock: 0x00000000
+c, W1 unlocked 2: the owner: 0x00000000
+c, W1 unlocked 2: the count: 0x00000000
+c, W1 unlocked 2: the waiting threads: 0x00000000
+c: W1's lock: 0x00000000
+d: the helper's lock to a count of 4: 0x00000000
+d, the helper ended, W1 holds it: the owner: 0x00000002
+d, the helper ended, W1 holds it: the count: 0x00000002
+d, the helper ended, W1 holds it: the waiting threads: 0x00000001
+d, the helper ended, W1 holds it: W2's wait type: 0x00000040
+d, W1 unlocks 2: the unlock: 0x00000000
+d, W1 unlocked 2, W2 holds it: the owner: 0x00000003
+d, W1 unlocked 2, W2 holds it: the count: 0x00000003
+d, W1 unlocked 2, W2 holds it: the waiting threads: 0x00000000
+d, W2 unlocks 3: the unlock: 0x00000000
+d, W2 unlocked 3: the owner: 0x00000000
+d, W2 unlocked 3: the count: 0x00000000
+d, W2 unlocked 3: the waiting threads: 0x00000000
+d: W1's lock: 0x00000000
+d: W2's lock: 0x00000000
+e: the main thread's lock to a count of 1: 0x00000000
+e, the main thread unlocks 1: the unlock: 0x00000000
+e, W1 got 0x7FFFFFFF: the owner: 0x00000002
+e, W1 got 0x7FFFFFFF: the count: 0x7FFFFFFF
+e, W1 got 0x7FFFFFFF: the waiting threads: 0x00000000
+e, W1's lock of 1: the lock: 0x80028143
+e, the main thread's try lock of 1: the try lock: 0x80028145
+e, after the lock and the try lock: the owner: 0x00000002
+e, after the lock and the try lock: the count: 0x7FFFFFFF
+e, after the lock and the try lock: the waiting threads: 0x00000000
+e, W1 unlocks 0x7FFFFFFF: the unlock: 0x00000000
+e, W1 unlocked 0x7FFFFFFF: the owner: 0x00000000
+e, W1 unlocked 0x7FFFFFFF: the count: 0x00000000
+e, W1 unlocked 0x7FFFFFFF: the waiting threads: 0x00000000
+e: W1's lock: 0x00000000
+DONE

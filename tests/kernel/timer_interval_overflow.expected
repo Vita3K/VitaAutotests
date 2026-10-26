@@ -1,0 +1,37 @@
+interval 0x7FFFFFFFFFFFFFFF: set the event: 0x00000000
+interval 0x7FFFFFFFFFFFFFFF: the info call: 0x00000000
+interval 0x7FFFFFFFFFFFFFFF: the info interval is the interval: 0x00000001
+interval 0x7FFFFFFFFFFFFFFF: the info schedule is the interval: 0x00000001
+interval 0x7FFFFFFFFFFFFFFF: the remaining time: 0x00000000
+interval 0x7FFFFFFFFFFFFFFF: the remaining time is the interval: 0x00000001
+interval 0x7FFFFFFFFFFFFFFF: start the timer: 0x00000000
+interval 0x7FFFFFFFFFFFFFFF: wait 500 ms for the event: 0x80028005
+interval 0x7FFFFFFFFFFFFFFF: the info call while running: 0x00000000
+interval 0x7FFFFFFFFFFFFFFF: active after the wait: 0x00000001
+interval 0x7FFFFFFFFFFFFFFF: stop the timer: 0x00000001
+interval 0x7FFFFFFFFFFFFFFF: delete the timer: 0x00000000
+interval 0x8000000000000000: set the event: 0x00000000
+interval 0x8000000000000000: the info call: 0x00000000
+interval 0x8000000000000000: the info interval is the interval: 0x00000001
+interval 0x8000000000000000: the info schedule is the interval: 0x00000001
+interval 0x8000000000000000: the remaining time: 0x00000000
+interval 0x8000000000000000: the remaining time is the interval: 0x00000001
+interval 0x8000000000000000: start the timer: 0x00000000
+interval 0x8000000000000000: wait 500 ms for the event: 0x80028005
+interval 0x8000000000000000: the info call while running: 0x00000000
+interval 0x8000000000000000: active after the wait: 0x00000001
+interval 0x8000000000000000: stop the timer: 0x00000001
+interval 0x8000000000000000: delete the timer: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: set the event: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: the info call: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: the info interval is the interval: 0x00000001
+interval 0xFFFFFFFFFFFFFFFF: the info schedule is the interval: 0x00000001
+interval 0xFFFFFFFFFFFFFFFF: the remaining time: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: the remaining time is the interval: 0x00000001
+interval 0xFFFFFFFFFFFFFFFF: start the timer: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: wait 500 ms for the event: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: the info call while running: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: active after the wait: 0x00000001
+interval 0xFFFFFFFFFFFFFFFF: stop the timer: 0x00000001
+interval 0xFFFFFFFFFFFFFFFF: delete the timer: 0x00000000
+DONE

@@ -2,6 +2,7 @@ sleeps: the thread woke five times: 0x00000001
 sleeps: the release count grew by at least 3: 0x00000001
 spin with a holder: the holder woke five times: 0x00000001
 spin with a holder: the preempt count grew by at least 3: 0x00000000
+spin with a holder: the interrupt preempt count grew by at least 3: 0x00000001
 spin with a holder: the release count did not grow: 0x00000001
 spin alone for 300 ms: the interrupt count grew: 0x00000000
 suspend the spinning thread for ForVM: result: 0x00000001

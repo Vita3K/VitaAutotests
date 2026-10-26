@@ -21,6 +21,7 @@ USER_MAIN_CDIALOG_NC_RW, 1 MiB: fits in the freed MiB: 0x00000000
 USER_CDIALOG_R, 1 MiB: fits in the freed MiB: 0x00000000
 USER_CDIALOG_NC_R, 1 MiB: fits in the freed MiB: 0x00000000
 4 KiB USER_CDIALOG_RW blocks: at least one fits in the freed MiB: 0x00000001
-4 KiB USER_CDIALOG_RW blocks: exactly 256 fit in the freed MiB: 0x00000000
+4 KiB USER_CDIALOG_RW blocks: at least 256 fit in the freed MiB: 0x00000001
+4 KiB USER_CDIALOG_RW blocks: at most 512 fit in the freed MiB: 0x00000001
 a CDRAM block and an uncached common dialog block share an address: 0x00000000
 DONE

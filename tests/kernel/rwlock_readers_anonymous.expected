@@ -1,0 +1,52 @@
+a: main read locked twice: lock count: 0x00000002
+a: main read locked twice: write owner: 0x00000000
+a: main read locked twice: waiting readers: 0x00000000
+a: main read locked twice: waiting writers: 0x00000000
+a: the helper's read lock: 0x00000000
+a: after the helper read locked: lock count: 0x00000003
+a: after the helper read locked: write owner: 0x00000000
+a: after the helper read locked: waiting readers: 0x00000000
+a: after the helper read locked: waiting writers: 0x00000000
+a: with W waiting for the write lock: lock count: 0x00000003
+a: with W waiting for the write lock: write owner: 0x00000000
+a: with W waiting for the write lock: waiting readers: 0x00000000
+a: with W waiting for the write lock: waiting writers: 0x00000001
+a: X's read unlock 1: 0x00000000
+a: X's read unlock 2: 0x00000000
+a: X's read unlock 3, which gives W the lock: 0x00000000
+a: X's read unlock 4: 0x800281E7
+a: after X's unlocks: lock count: 0x00000001
+a: after X's unlocks: write owner: 0x00000002
+a: after X's unlocks: waiting readers: 0x00000000
+a: after X's unlocks: waiting writers: 0x00000000
+a: the main thread's read unlock: 0x800281E7
+a: after the main thread's read unlock: lock count: 0x00000001
+a: after the main thread's read unlock: write owner: 0x00000002
+a: after the main thread's read unlock: waiting readers: 0x00000000
+a: after the main thread's read unlock: waiting writers: 0x00000000
+a: W's write lock: 0x00000000
+a: W's write unlock: 0x00000000
+a: the main thread's read unlock after W's unlock: 0x800281E5
+a: at the end: lock count: 0x00000000
+a: at the end: write owner: 0x00000000
+a: at the end: waiting readers: 0x00000000
+a: at the end: waiting writers: 0x00000000
+b: T holds a read lock and waits for the write lock: lock count: 0x00000001
+b: T holds a read lock and waits for the write lock: write owner: 0x00000000
+b: T holds a read lock and waits for the write lock: waiting readers: 0x00000000
+b: T holds a read lock and waits for the write lock: waiting writers: 0x00000001
+b: the main thread's read unlock: 0x00000000
+b: after the main thread's read unlock: lock count: 0x00000001
+b: after the main thread's read unlock: write owner: 0x00000002
+b: after the main thread's read unlock: waiting readers: 0x00000000
+b: after the main thread's read unlock: waiting writers: 0x00000000
+b: T's read lock: 0x00000000
+b: T's write lock: 0x00000000
+b: T's read unlock while it owns the write lock: 0x800281E7
+b: T's write unlock: 0x00000000
+b: T's read unlock after its write unlock: 0x800281E5
+b: at the end: lock count: 0x00000000
+b: at the end: write owner: 0x00000000
+b: at the end: waiting readers: 0x00000000
+b: at the end: waiting writers: 0x00000000
+DONE

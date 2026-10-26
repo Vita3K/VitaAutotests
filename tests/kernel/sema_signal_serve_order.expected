@@ -1,0 +1,97 @@
+FIFO queue, signal 2: the call: 0x00000000
+FIFO queue, signal 2: the count: 0x00000001
+FIFO queue, signal 2: the waiters: 0x00000003
+FIFO queue, signal 2: A is done: 0x00000001
+FIFO queue, signal 2: A still waits: 0x00000000
+FIFO queue, signal 2: B is done: 0x00000000
+FIFO queue, signal 2: B still waits: 0x00000001
+FIFO queue, signal 2: C is done: 0x00000000
+FIFO queue, signal 2: C still waits: 0x00000001
+FIFO queue, signal 2: D is done: 0x00000000
+FIFO queue, signal 2: D still waits: 0x00000001
+FIFO queue, signal 1: the call: 0x00000000
+FIFO queue, signal 1: the count: 0x00000002
+FIFO queue, signal 1: the waiters: 0x00000003
+FIFO queue, signal 1: A is done: 0x00000001
+FIFO queue, signal 1: A still waits: 0x00000000
+FIFO queue, signal 1: B is done: 0x00000000
+FIFO queue, signal 1: B still waits: 0x00000001
+FIFO queue, signal 1: C is done: 0x00000000
+FIFO queue, signal 1: C still waits: 0x00000001
+FIFO queue, signal 1: D is done: 0x00000000
+FIFO queue, signal 1: D still waits: 0x00000001
+FIFO queue, signal 1: the call: 0x00000000
+FIFO queue, signal 1: the count: 0x00000000
+FIFO queue, signal 1: the waiters: 0x00000002
+FIFO queue, signal 1: A is done: 0x00000001
+FIFO queue, signal 1: A still waits: 0x00000000
+FIFO queue, signal 1: B is done: 0x00000001
+FIFO queue, signal 1: B still waits: 0x00000000
+FIFO queue, signal 1: C is done: 0x00000000
+FIFO queue, signal 1: C still waits: 0x00000001
+FIFO queue, signal 1: D is done: 0x00000000
+FIFO queue, signal 1: D still waits: 0x00000001
+FIFO queue, signal 5: the call: 0x00000000
+FIFO queue, signal 5: the count: 0x00000002
+FIFO queue, signal 5: the waiters: 0x00000000
+FIFO queue, signal 5: A is done: 0x00000001
+FIFO queue, signal 5: A still waits: 0x00000000
+FIFO queue, signal 5: B is done: 0x00000001
+FIFO queue, signal 5: B still waits: 0x00000000
+FIFO queue, signal 5: C is done: 0x00000001
+FIFO queue, signal 5: C still waits: 0x00000000
+FIFO queue, signal 5: D is done: 0x00000001
+FIFO queue, signal 5: D still waits: 0x00000000
+FIFO queue: A's result: 0x00000000
+FIFO queue: B's result: 0x00000000
+FIFO queue: C's result: 0x00000000
+FIFO queue: D's result: 0x00000000
+priority queue, signal 2: the call: 0x00000000
+priority queue, signal 2: the count: 0x00000002
+priority queue, signal 2: the waiters: 0x00000004
+priority queue, signal 2: A is done: 0x00000000
+priority queue, signal 2: A still waits: 0x00000001
+priority queue, signal 2: B is done: 0x00000000
+priority queue, signal 2: B still waits: 0x00000001
+priority queue, signal 2: C is done: 0x00000000
+priority queue, signal 2: C still waits: 0x00000001
+priority queue, signal 2: D is done: 0x00000000
+priority queue, signal 2: D still waits: 0x00000001
+priority queue, signal 1: the call: 0x00000000
+priority queue, signal 1: the count: 0x00000000
+priority queue, signal 1: the waiters: 0x00000003
+priority queue, signal 1: A is done: 0x00000000
+priority queue, signal 1: A still waits: 0x00000001
+priority queue, signal 1: B is done: 0x00000001
+priority queue, signal 1: B still waits: 0x00000000
+priority queue, signal 1: C is done: 0x00000000
+priority queue, signal 1: C still waits: 0x00000001
+priority queue, signal 1: D is done: 0x00000000
+priority queue, signal 1: D still waits: 0x00000001
+priority queue, signal 1: the call: 0x00000000
+priority queue, signal 1: the count: 0x00000000
+priority queue, signal 1: the waiters: 0x00000002
+priority queue, signal 1: A is done: 0x00000000
+priority queue, signal 1: A still waits: 0x00000001
+priority queue, signal 1: B is done: 0x00000001
+priority queue, signal 1: B still waits: 0x00000000
+priority queue, signal 1: C is done: 0x00000001
+priority queue, signal 1: C still waits: 0x00000000
+priority queue, signal 1: D is done: 0x00000000
+priority queue, signal 1: D still waits: 0x00000001
+priority queue, signal 4: the call: 0x00000000
+priority queue, signal 4: the count: 0x00000001
+priority queue, signal 4: the waiters: 0x00000000
+priority queue, signal 4: A is done: 0x00000001
+priority queue, signal 4: A still waits: 0x00000000
+priority queue, signal 4: B is done: 0x00000001
+priority queue, signal 4: B still waits: 0x00000000
+priority queue, signal 4: C is done: 0x00000001
+priority queue, signal 4: C still waits: 0x00000000
+priority queue, signal 4: D is done: 0x00000001
+priority queue, signal 4: D still waits: 0x00000000
+priority queue: A's result: 0x00000000
+priority queue: B's result: 0x00000000
+priority queue: C's result: 0x00000000
+priority queue: D's result: 0x00000000
+DONE

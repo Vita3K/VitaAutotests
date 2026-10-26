@@ -1,0 +1,285 @@
+control, plain, count 1, free, lock: the result: 0x00000000
+control, plain, count 1, free, lock: the count after: 0x00000001
+control, plain, count 1, free, lock: the owner after: 0x00000001
+control, plain, count 1, free, lock: the timeout is unchanged: 0x00000001
+control, plain, count 1, free, try lock: the result: 0x00000000
+control, plain, count 1, free, try lock: the count after: 0x00000001
+control, plain, count 1, free, try lock: the owner after: 0x00000001
+control, plain, count 1, free, unlock: the result: 0x80028146
+control, plain, count 1, free, unlock: the count after: 0x00000000
+control, plain, count 1, free, unlock: the owner after: 0x00000000
+control, plain, count 1, owned by the caller, lock: the result: 0x80028142
+control, plain, count 1, owned by the caller, lock: the count after: 0x00000001
+control, plain, count 1, owned by the caller, lock: the owner after: 0x00000001
+control, plain, count 1, owned by the caller, lock: the timeout is unchanged: 0x00000001
+control, plain, count 1, owned by the caller, try lock: the result: 0x80028142
+control, plain, count 1, owned by the caller, try lock: the count after: 0x00000001
+control, plain, count 1, owned by the caller, try lock: the owner after: 0x00000001
+control, plain, count 1, owned by the caller, unlock: the result: 0x00000000
+control, plain, count 1, owned by the caller, unlock: the count after: 0x00000000
+control, plain, count 1, owned by the caller, unlock: the owner after: 0x00000000
+control, plain, count 1, owned by another thread, lock: the result: 0x80028005
+control, plain, count 1, owned by another thread, lock: the count after: 0x00000001
+control, plain, count 1, owned by another thread, lock: the owner after: 0x00000002
+control, plain, count 1, owned by another thread, lock: the timeout is unchanged: 0x00000001
+control, plain, count 1, owned by another thread, try lock: the result: 0x80028145
+control, plain, count 1, owned by another thread, try lock: the count after: 0x00000001
+control, plain, count 1, owned by another thread, try lock: the owner after: 0x00000002
+control, plain, count 1, owned by another thread, unlock: the result: 0x80028146
+control, plain, count 1, owned by another thread, unlock: the count after: 0x00000001
+control, plain, count 1, owned by another thread, unlock: the owner after: 0x00000002
+plain, count 0, free, lock: the result: 0x8002000F
+plain, count 0, free, lock: the count after: 0x00000000
+plain, count 0, free, lock: the owner after: 0x00000000
+plain, count 0, free, lock: the timeout is unchanged: 0x00000001
+plain, count 0, free, try lock: the result: 0x8002000F
+plain, count 0, free, try lock: the count after: 0x00000000
+plain, count 0, free, try lock: the owner after: 0x00000000
+plain, count 0, free, unlock: the result: 0x8002000F
+plain, count 0, free, unlock: the count after: 0x00000000
+plain, count 0, free, unlock: the owner after: 0x00000000
+plain, count 0, owned by the caller, lock: the result: 0x8002000F
+plain, count 0, owned by the caller, lock: the count after: 0x00000001
+plain, count 0, owned by the caller, lock: the owner after: 0x00000001
+plain, count 0, owned by the caller, lock: the timeout is unchanged: 0x00000001
+plain, count 0, owned by the caller, try lock: the result: 0x8002000F
+plain, count 0, owned by the caller, try lock: the count after: 0x00000001
+plain, count 0, owned by the caller, try lock: the owner after: 0x00000001
+plain, count 0, owned by the caller, unlock: the result: 0x8002000F
+plain, count 0, owned by the caller, unlock: the count after: 0x00000001
+plain, count 0, owned by the caller, unlock: the owner after: 0x00000001
+plain, count 0, owned by another thread, lock: the result: 0x8002000F
+plain, count 0, owned by another thread, lock: the count after: 0x00000001
+plain, count 0, owned by another thread, lock: the owner after: 0x00000002
+plain, count 0, owned by another thread, lock: the timeout is unchanged: 0x00000001
+plain, count 0, owned by another thread, try lock: the result: 0x8002000F
+plain, count 0, owned by another thread, try lock: the count after: 0x00000001
+plain, count 0, owned by another thread, try lock: the owner after: 0x00000002
+plain, count 0, owned by another thread, unlock: the result: 0x8002000F
+plain, count 0, owned by another thread, unlock: the count after: 0x00000001
+plain, count 0, owned by another thread, unlock: the owner after: 0x00000002
+plain, count -1, free, lock: the result: 0x8002000F
+plain, count -1, free, lock: the count after: 0x00000000
+plain, count -1, free, lock: the owner after: 0x00000000
+plain, count -1, free, lock: the timeout is unchanged: 0x00000001
+plain, count -1, free, try lock: the result: 0x8002000F
+plain, count -1, free, try lock: the count after: 0x00000000
+plain, count -1, free, try lock: the owner after: 0x00000000
+plain, count -1, free, unlock: the result: 0x8002000F
+plain, count -1, free, unlock: the count after: 0x00000000
+plain, count -1, free, unlock: the owner after: 0x00000000
+plain, count -1, owned by the caller, lock: the result: 0x8002000F
+plain, count -1, owned by the caller, lock: the count after: 0x00000001
+plain, count -1, owned by the caller, lock: the owner after: 0x00000001
+plain, count -1, owned by the caller, lock: the timeout is unchanged: 0x00000001
+plain, count -1, owned by the caller, try lock: the result: 0x8002000F
+plain, count -1, owned by the caller, try lock: the count after: 0x00000001
+plain, count -1, owned by the caller, try lock: the owner after: 0x00000001
+plain, count -1, owned by the caller, unlock: the result: 0x8002000F
+plain, count -1, owned by the caller, unlock: the count after: 0x00000001
+plain, count -1, owned by the caller, unlock: the owner after: 0x00000001
+plain, count -1, owned by another thread, lock: the result: 0x8002000F
+plain, count -1, owned by another thread, lock: the count after: 0x00000001
+plain, count -1, owned by another thread, lock: the owner after: 0x00000002
+plain, count -1, owned by another thread, lock: the timeout is unchanged: 0x00000001
+plain, count -1, owned by another thread, try lock: the result: 0x8002000F
+plain, count -1, owned by another thread, try lock: the count after: 0x00000001
+plain, count -1, owned by another thread, try lock: the owner after: 0x00000002
+plain, count -1, owned by another thread, unlock: the result: 0x8002000F
+plain, count -1, owned by another thread, unlock: the count after: 0x00000001
+plain, count -1, owned by another thread, unlock: the owner after: 0x00000002
+plain, count 2, free, lock: the result: 0x8002000F
+plain, count 2, free, lock: the count after: 0x00000000
+plain, count 2, free, lock: the owner after: 0x00000000
+plain, count 2, free, lock: the timeout is unchanged: 0x00000001
+plain, count 2, free, try lock: the result: 0x8002000F
+plain, count 2, free, try lock: the count after: 0x00000000
+plain, count 2, free, try lock: the owner after: 0x00000000
+plain, count 2, free, unlock: the result: 0x8002000F
+plain, count 2, free, unlock: the count after: 0x00000000
+plain, count 2, free, unlock: the owner after: 0x00000000
+plain, count 2, owned by the caller, lock: the result: 0x8002000F
+plain, count 2, owned by the caller, lock: the count after: 0x00000001
+plain, count 2, owned by the caller, lock: the owner after: 0x00000001
+plain, count 2, owned by the caller, lock: the timeout is unchanged: 0x00000001
+plain, count 2, owned by the caller, try lock: the result: 0x8002000F
+plain, count 2, owned by the caller, try lock: the count after: 0x00000001
+plain, count 2, owned by the caller, try lock: the owner after: 0x00000001
+plain, count 2, owned by the caller, unlock: the result: 0x8002000F
+plain, count 2, owned by the caller, unlock: the count after: 0x00000001
+plain, count 2, owned by the caller, unlock: the owner after: 0x00000001
+plain, count 2, owned by another thread, lock: the result: 0x8002000F
+plain, count 2, owned by another thread, lock: the count after: 0x00000001
+plain, count 2, owned by another thread, lock: the owner after: 0x00000002
+plain, count 2, owned by another thread, lock: the timeout is unchanged: 0x00000001
+plain, count 2, owned by another thread, try lock: the result: 0x8002000F
+plain, count 2, owned by another thread, try lock: the count after: 0x00000001
+plain, count 2, owned by another thread, try lock: the owner after: 0x00000002
+plain, count 2, owned by another thread, unlock: the result: 0x8002000F
+plain, count 2, owned by another thread, unlock: the count after: 0x00000001
+plain, count 2, owned by another thread, unlock: the owner after: 0x00000002
+plain, count 0x7FFFFFFF, free, lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, free, lock: the count after: 0x00000000
+plain, count 0x7FFFFFFF, free, lock: the owner after: 0x00000000
+plain, count 0x7FFFFFFF, free, lock: the timeout is unchanged: 0x00000001
+plain, count 0x7FFFFFFF, free, try lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, free, try lock: the count after: 0x00000000
+plain, count 0x7FFFFFFF, free, try lock: the owner after: 0x00000000
+plain, count 0x7FFFFFFF, free, unlock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, free, unlock: the count after: 0x00000000
+plain, count 0x7FFFFFFF, free, unlock: the owner after: 0x00000000
+plain, count 0x7FFFFFFF, owned by the caller, lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by the caller, lock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, lock: the owner after: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, lock: the timeout is unchanged: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, try lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by the caller, try lock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, try lock: the owner after: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, unlock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by the caller, unlock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by the caller, unlock: the owner after: 0x00000001
+plain, count 0x7FFFFFFF, owned by another thread, lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by another thread, lock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by another thread, lock: the owner after: 0x00000002
+plain, count 0x7FFFFFFF, owned by another thread, lock: the timeout is unchanged: 0x00000001
+plain, count 0x7FFFFFFF, owned by another thread, try lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by another thread, try lock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by another thread, try lock: the owner after: 0x00000002
+plain, count 0x7FFFFFFF, owned by another thread, unlock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, owned by another thread, unlock: the count after: 0x00000001
+plain, count 0x7FFFFFFF, owned by another thread, unlock: the owner after: 0x00000002
+plain, count 0x80000000, free, lock: the result: 0x8002000F
+plain, count 0x80000000, free, lock: the count after: 0x00000000
+plain, count 0x80000000, free, lock: the owner after: 0x00000000
+plain, count 0x80000000, free, lock: the timeout is unchanged: 0x00000001
+plain, count 0x80000000, free, try lock: the result: 0x8002000F
+plain, count 0x80000000, free, try lock: the count after: 0x00000000
+plain, count 0x80000000, free, try lock: the owner after: 0x00000000
+plain, count 0x80000000, free, unlock: the result: 0x8002000F
+plain, count 0x80000000, free, unlock: the count after: 0x00000000
+plain, count 0x80000000, free, unlock: the owner after: 0x00000000
+plain, count 0x80000000, owned by the caller, lock: the result: 0x8002000F
+plain, count 0x80000000, owned by the caller, lock: the count after: 0x00000001
+plain, count 0x80000000, owned by the caller, lock: the owner after: 0x00000001
+plain, count 0x80000000, owned by the caller, lock: the timeout is unchanged: 0x00000001
+plain, count 0x80000000, owned by the caller, try lock: the result: 0x8002000F
+plain, count 0x80000000, owned by the caller, try lock: the count after: 0x00000001
+plain, count 0x80000000, owned by the caller, try lock: the owner after: 0x00000001
+plain, count 0x80000000, owned by the caller, unlock: the result: 0x8002000F
+plain, count 0x80000000, owned by the caller, unlock: the count after: 0x00000001
+plain, count 0x80000000, owned by the caller, unlock: the owner after: 0x00000001
+plain, count 0x80000000, owned by another thread, lock: the result: 0x8002000F
+plain, count 0x80000000, owned by another thread, lock: the count after: 0x00000001
+plain, count 0x80000000, owned by another thread, lock: the owner after: 0x00000002
+plain, count 0x80000000, owned by another thread, lock: the timeout is unchanged: 0x00000001
+plain, count 0x80000000, owned by another thread, try lock: the result: 0x8002000F
+plain, count 0x80000000, owned by another thread, try lock: the count after: 0x00000001
+plain, count 0x80000000, owned by another thread, try lock: the owner after: 0x00000002
+plain, count 0x80000000, owned by another thread, unlock: the result: 0x8002000F
+plain, count 0x80000000, owned by another thread, unlock: the count after: 0x00000001
+plain, count 0x80000000, owned by another thread, unlock: the owner after: 0x00000002
+recursive, count 0, free, lock: the result: 0x8002000F
+recursive, count 0, free, lock: the count after: 0x00000000
+recursive, count 0, free, lock: the owner after: 0x00000000
+recursive, count 0, free, lock: the timeout is unchanged: 0x00000001
+recursive, count 0, free, try lock: the result: 0x8002000F
+recursive, count 0, free, try lock: the count after: 0x00000000
+recursive, count 0, free, try lock: the owner after: 0x00000000
+recursive, count 0, free, unlock: the result: 0x8002000F
+recursive, count 0, free, unlock: the count after: 0x00000000
+recursive, count 0, free, unlock: the owner after: 0x00000000
+recursive, count 0, owned by the caller, lock: the result: 0x8002000F
+recursive, count 0, owned by the caller, lock: the count after: 0x00000001
+recursive, count 0, owned by the caller, lock: the owner after: 0x00000001
+recursive, count 0, owned by the caller, lock: the timeout is unchanged: 0x00000001
+recursive, count 0, owned by the caller, try lock: the result: 0x8002000F
+recursive, count 0, owned by the caller, try lock: the count after: 0x00000001
+recursive, count 0, owned by the caller, try lock: the owner after: 0x00000001
+recursive, count 0, owned by the caller, unlock: the result: 0x8002000F
+recursive, count 0, owned by the caller, unlock: the count after: 0x00000001
+recursive, count 0, owned by the caller, unlock: the owner after: 0x00000001
+recursive, count 0, owned by another thread, lock: the result: 0x8002000F
+recursive, count 0, owned by another thread, lock: the count after: 0x00000001
+recursive, count 0, owned by another thread, lock: the owner after: 0x00000002
+recursive, count 0, owned by another thread, lock: the timeout is unchanged: 0x00000001
+recursive, count 0, owned by another thread, try lock: the result: 0x8002000F
+recursive, count 0, owned by another thread, try lock: the count after: 0x00000001
+recursive, count 0, owned by another thread, try lock: the owner after: 0x00000002
+recursive, count 0, owned by another thread, unlock: the result: 0x8002000F
+recursive, count 0, owned by another thread, unlock: the count after: 0x00000001
+recursive, count 0, owned by another thread, unlock: the owner after: 0x00000002
+recursive, count -1, free, lock: the result: 0x8002000F
+recursive, count -1, free, lock: the count after: 0x00000000
+recursive, count -1, free, lock: the owner after: 0x00000000
+recursive, count -1, free, lock: the timeout is unchanged: 0x00000001
+recursive, count -1, free, try lock: the result: 0x8002000F
+recursive, count -1, free, try lock: the count after: 0x00000000
+recursive, count -1, free, try lock: the owner after: 0x00000000
+recursive, count -1, free, unlock: the result: 0x8002000F
+recursive, count -1, free, unlock: the count after: 0x00000000
+recursive, count -1, free, unlock: the owner after: 0x00000000
+recursive, count -1, owned by the caller, lock: the result: 0x8002000F
+recursive, count -1, owned by the caller, lock: the count after: 0x00000001
+recursive, count -1, owned by the caller, lock: the owner after: 0x00000001
+recursive, count -1, owned by the caller, lock: the timeout is unchanged: 0x00000001
+recursive, count -1, owned by the caller, try lock: the result: 0x8002000F
+recursive, count -1, owned by the caller, try lock: the count after: 0x00000001
+recursive, count -1, owned by the caller, try lock: the owner after: 0x00000001
+recursive, count -1, owned by the caller, unlock: the result: 0x8002000F
+recursive, count -1, owned by the caller, unlock: the count after: 0x00000001
+recursive, count -1, owned by the caller, unlock: the owner after: 0x00000001
+recursive, count -1, owned by another thread, lock: the result: 0x8002000F
+recursive, count -1, owned by another thread, lock: the count after: 0x00000001
+recursive, count -1, owned by another thread, lock: the owner after: 0x00000002
+recursive, count -1, owned by another thread, lock: the timeout is unchanged: 0x00000001
+recursive, count -1, owned by another thread, try lock: the result: 0x8002000F
+recursive, count -1, owned by another thread, try lock: the count after: 0x00000001
+recursive, count -1, owned by another thread, try lock: the owner after: 0x00000002
+recursive, count -1, owned by another thread, unlock: the result: 0x8002000F
+recursive, count -1, owned by another thread, unlock: the count after: 0x00000001
+recursive, count -1, owned by another thread, unlock: the owner after: 0x00000002
+recursive, count 0x80000000, free, lock: the result: 0x8002000F
+recursive, count 0x80000000, free, lock: the count after: 0x00000000
+recursive, count 0x80000000, free, lock: the owner after: 0x00000000
+recursive, count 0x80000000, free, lock: the timeout is unchanged: 0x00000001
+recursive, count 0x80000000, free, try lock: the result: 0x8002000F
+recursive, count 0x80000000, free, try lock: the count after: 0x00000000
+recursive, count 0x80000000, free, try lock: the owner after: 0x00000000
+recursive, count 0x80000000, free, unlock: the result: 0x8002000F
+recursive, count 0x80000000, free, unlock: the count after: 0x00000000
+recursive, count 0x80000000, free, unlock: the owner after: 0x00000000
+recursive, count 0x80000000, owned by the caller, lock: the result: 0x8002000F
+recursive, count 0x80000000, owned by the caller, lock: the count after: 0x00000001
+recursive, count 0x80000000, owned by the caller, lock: the owner after: 0x00000001
+recursive, count 0x80000000, owned by the caller, lock: the timeout is unchanged: 0x00000001
+recursive, count 0x80000000, owned by the caller, try lock: the result: 0x8002000F
+recursive, count 0x80000000, owned by the caller, try lock: the count after: 0x00000001
+recursive, count 0x80000000, owned by the caller, try lock: the owner after: 0x00000001
+recursive, count 0x80000000, owned by the caller, unlock: the result: 0x8002000F
+recursive, count 0x80000000, owned by the caller, unlock: the count after: 0x00000001
+recursive, count 0x80000000, owned by the caller, unlock: the owner after: 0x00000001
+recursive, count 0x80000000, owned by another thread, lock: the result: 0x8002000F
+recursive, count 0x80000000, owned by another thread, lock: the count after: 0x00000001
+recursive, count 0x80000000, owned by another thread, lock: the owner after: 0x00000002
+recursive, count 0x80000000, owned by another thread, lock: the timeout is unchanged: 0x00000001
+recursive, count 0x80000000, owned by another thread, try lock: the result: 0x8002000F
+recursive, count 0x80000000, owned by another thread, try lock: the count after: 0x00000001
+recursive, count 0x80000000, owned by another thread, try lock: the owner after: 0x00000002
+recursive, count 0x80000000, owned by another thread, unlock: the result: 0x8002000F
+recursive, count 0x80000000, owned by another thread, unlock: the count after: 0x00000001
+recursive, count 0x80000000, owned by another thread, unlock: the owner after: 0x00000002
+plain, count 2, owned by another thread, timeout 500 ms, lock: the result: 0x8002000F
+plain, count 2, owned by another thread, timeout 500 ms, lock: the count after: 0x00000001
+plain, count 2, owned by another thread, timeout 500 ms, lock: the owner after: 0x00000002
+plain, count 2, owned by another thread, timeout 500 ms, lock: the timeout is unchanged: 0x00000001
+recursive, count 0, owned by the caller, timeout 500 ms, lock: the result: 0x8002000F
+recursive, count 0, owned by the caller, timeout 500 ms, lock: the count after: 0x00000001
+recursive, count 0, owned by the caller, timeout 500 ms, lock: the owner after: 0x00000001
+recursive, count 0, owned by the caller, timeout 500 ms, lock: the timeout is unchanged: 0x00000001
+plain, count 0x7FFFFFFF, free, timeout 500 ms, lock: the result: 0x8002000F
+plain, count 0x7FFFFFFF, free, timeout 500 ms, lock: the count after: 0x00000000
+plain, count 0x7FFFFFFF, free, timeout 500 ms, lock: the owner after: 0x00000000
+plain, count 0x7FFFFFFF, free, timeout 500 ms, lock: the timeout is unchanged: 0x00000001
+recursive, owned by another thread: the unlock of 5 by a thread that doesn't own it: 0x80028146
+recursive, owned by another thread: the owner's unlock of 5 with 1 held: 0x80028144
+DONE

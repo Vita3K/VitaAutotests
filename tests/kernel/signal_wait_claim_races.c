@@ -7,7 +7,8 @@
 // The cases:
 // - a signal wait with a 300 ms timeout that ends by the timeout, then two sends
 // - a signal wait with a 1.5 s timeout, a send at once, and a second send after 2 s
-// - a signal wait with a 3 s timeout and three sends
+// - a signal wait with a 3 s timeout and three sends, of which the first ends the wait and leaves
+//   nothing pending, the second stays pending and the third is refused
 // - a signal wait with callbacks for 3 s, a notify, then a send, with the callback held until the
 //   send is done
 // The signal cases then take a signal with a zero timeout, once or twice. The controls are a delay

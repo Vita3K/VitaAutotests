@@ -1,0 +1,47 @@
+manual reset, pulse a, then set b: the pulse of a: 0x00000000
+manual reset, pulse a, then set b: still waiting after the pulse: 0x00000001
+manual reset, pulse a, then set b: a's user bits after the pulse: 0x00000000
+manual reset, pulse a, then set b: the set of b: 0x00000000
+manual reset, pulse a, then set b: the wait: 0x00000002
+manual reset, pulse a, then set b: entry 0 is for event 1 or 2: 0x00000001
+manual reset, pulse a, then set b: entry 0 result: 0x00000000
+manual reset, pulse a, then set b: entry 0 bits: 0x01000000
+manual reset, pulse a, then set b: entry 0 user data: 0x00000011
+manual reset, pulse a, then set b: entry 1 is for event 1 or 2: 0x00000002
+manual reset, pulse a, then set b: entry 1 result: 0x00000000
+manual reset, pulse a, then set b: entry 1 bits: 0x02000000
+manual reset, pulse a, then set b: entry 1 user data: 0x00000022
+manual reset, pulse a, then set b: a's user bits at the end: 0x00000000
+manual reset, pulse a, then set b: b's user bits at the end: 0x02000000
+manual reset, set a, clear a, then set b: the set of a: 0x00000000
+manual reset, set a, clear a, then set b: still waiting after the set of a: 0x00000001
+manual reset, set a, clear a, then set b: the clear of a: 0x00000000
+manual reset, set a, clear a, then set b: a's user bits after the clear: 0x00000000
+manual reset, set a, clear a, then set b: still waiting after the clear: 0x00000001
+manual reset, set a, clear a, then set b: the set of b: 0x00000000
+manual reset, set a, clear a, then set b: the wait: 0x00000002
+manual reset, set a, clear a, then set b: entry 0 is for event 1 or 2: 0x00000001
+manual reset, set a, clear a, then set b: entry 0 result: 0x00000000
+manual reset, set a, clear a, then set b: entry 0 bits: 0x01000000
+manual reset, set a, clear a, then set b: entry 0 user data: 0x00000011
+manual reset, set a, clear a, then set b: entry 1 is for event 1 or 2: 0x00000002
+manual reset, set a, clear a, then set b: entry 1 result: 0x00000000
+manual reset, set a, clear a, then set b: entry 1 bits: 0x02000000
+manual reset, set a, clear a, then set b: entry 1 user data: 0x00000022
+manual reset, set a, clear a, then set b: a's user bits at the end: 0x00000000
+manual reset, set a, clear a, then set b: b's user bits at the end: 0x02000000
+auto reset, a set, b never set, the wait times out: the set of a: 0x00000000
+auto reset, a set, b never set, the wait times out: still waiting after the set of a: 0x00000001
+auto reset, a set, b never set, the wait times out: a's user bits after the set: 0x00000000
+auto reset, a set, b never set, the wait times out: the wait: 0x80028005
+auto reset, a set, b never set, the wait times out: entry 0 is for event 1 or 2: 0x00000001
+auto reset, a set, b never set, the wait times out: entry 0 result: 0x00000000
+auto reset, a set, b never set, the wait times out: entry 0 bits: 0x01000000
+auto reset, a set, b never set, the wait times out: entry 0 user data: 0x00000011
+auto reset, a set, b never set, the wait times out: a's user bits after the timeout: 0x00000000
+auto reset, a set, b never set, the wait times out: a later set of a: 0x00000000
+auto reset, a set, b never set, the wait times out: a later poll of a: 0x00000000
+auto reset, a set, b never set, the wait times out: the poll's bits: 0x01000000
+auto reset, a set, b never set, the wait times out: the poll's user data: 0x00000033
+auto reset, a set, b never set, the wait times out: a's user bits after the poll: 0x00000000
+DONE

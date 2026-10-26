@@ -1,0 +1,71 @@
+an unknown UID: wait for 0: 0x80028101
+an unknown UID: wait for -1: 0x80028101
+an unknown UID: wait with callbacks for 0: 0x80028101
+an unknown UID: wait with callbacks for -1: 0x80028101
+an unknown UID: poll for 0: 0x80028101
+an unknown UID: poll for -1: 0x80028101
+an unknown UID: signal -1: 0x80028101
+an unknown UID: signal 0: 0x80028101
+an unknown UID: cancel to 1000000: 0x80028101
+a deleted semaphore: wait for 0: 0x80028101
+a deleted semaphore: wait for -1: 0x80028101
+a deleted semaphore: wait with callbacks for 0: 0x80028101
+a deleted semaphore: wait with callbacks for -1: 0x80028101
+a deleted semaphore: poll for 0: 0x80028101
+a deleted semaphore: poll for -1: 0x80028101
+a deleted semaphore: signal -1: 0x80028101
+a deleted semaphore: signal 0: 0x80028101
+a deleted semaphore: cancel to 1000000: 0x80028101
+UID 0: wait for 0: 0x80028101
+UID 0: wait for -1: 0x80028101
+UID 0: wait with callbacks for 0: 0x80028101
+UID 0: wait with callbacks for -1: 0x80028101
+UID 0: poll for 0: 0x80028101
+UID 0: poll for -1: 0x80028101
+UID 0: signal -1: 0x80028101
+UID 0: signal 0: 0x80028101
+UID 0: cancel to 1000000: 0x80028101
+UID -1: wait for 0: 0x80028101
+UID -1: wait for -1: 0x80028101
+UID -1: wait with callbacks for 0: 0x80028101
+UID -1: wait with callbacks for -1: 0x80028101
+UID -1: poll for 0: 0x80028101
+UID -1: poll for -1: 0x80028101
+UID -1: signal -1: 0x80028101
+UID -1: signal 0: 0x80028101
+UID -1: cancel to 1000000: 0x80028101
+a mutex: wait for 0: 0x8002000F
+a mutex: wait for -1: 0x8002000F
+a mutex: wait with callbacks for 0: 0x8002000F
+a mutex: wait with callbacks for -1: 0x8002000F
+a mutex: poll for 0: 0x8002000F
+a mutex: poll for -1: 0x8002000F
+a mutex: signal -1: 0x8002000F
+a mutex: signal 0: 0x80028101
+a mutex: cancel to 1000000: 0x80028101
+an event flag: wait for 0: 0x8002000F
+an event flag: wait for -1: 0x8002000F
+an event flag: wait with callbacks for 0: 0x8002000F
+an event flag: wait with callbacks for -1: 0x8002000F
+an event flag: poll for 0: 0x8002000F
+an event flag: poll for -1: 0x8002000F
+an event flag: signal -1: 0x8002000F
+an event flag: signal 0: 0x80028101
+an event flag: cancel to 1000000: 0x80028101
+semaphore at 1 of 2, count -1: wait: 0x8002000F
+semaphore at 1 of 2, count -1: wait with callbacks: 0x8002000F
+semaphore at 1 of 2, count -1: poll: 0x8002000F
+semaphore at 1 of 2, count 0x80000000: wait: 0x8002000F
+semaphore at 1 of 2, count 0x80000000: wait with callbacks: 0x8002000F
+semaphore at 1 of 2, count 0x80000000: poll: 0x8002000F
+semaphore at 1 of 2, its count after the bad counts: 0x00000001
+create with attribute 0x4 and count 2 of 1: 0x8002000E
+create with attribute 0x4 and option size 8: 0x8002000E
+create with count 2 of 1 and option size 8: 0x8002000F
+create with option size 0: 0x00000000
+create with option size 4: 0x00000000
+create with option size 5: 0x8002000B
+create with option size 8: 0x8002000B
+create with a NULL name and attribute 0x4: 0x80020006
+create with a NULL name and count 2 of 1: 0x80020006
+DONE

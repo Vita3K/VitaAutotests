@@ -1,0 +1,34 @@
+create the count mutex: 0x00000000
+info by work area after the count edit: 0x00000000
+info count after the count edit is 5: 0x00000001
+unlock of 5 after the count edit: 0x00000000
+words 0 and 2 are 0 after that unlock: 0x00000001
+delete the count mutex: 0x00000000
+create the owner mutex: 0x00000000
+unlock by the caller with another thread in the owner word: 0x80028186
+info by work area after the owner edit: 0x00000000
+info owner is the other thread: 0x00000001
+unlock by the caller after the owner word is put back: 0x00000000
+delete the owner mutex: 0x00000000
+create the raw owner mutex: 0x00000000
+info by work area after the raw owner edit: 0x80024501
+info owner is the raw word 0x12345: 0x00000000
+unlock by the caller after the raw owner word is put back: 0x00000000
+delete the raw owner mutex: 0x00000000
+create the cleared mutex: 0x00000000
+lock of 1 after the attribute word is cleared: 0x00000000
+words 0 to 2 are unchanged by that lock: 0x00000000
+info by work area after the attribute edit: 0x00000000
+info attribute is still recursive: 0x00000001
+info count is still 1: 0x00000000
+unlock of 1 after the attribute edit: 0x00000000
+delete the cleared mutex: 0x00000000
+create the plain mutex: 0x00000000
+lock of 1 after the attribute word is set to recursive: 0x00000000
+info by work area after the attribute edit to recursive: 0x00000000
+info count is 2: 0x00000001
+info attribute is still plain: 0x00000001
+first unlock of 1: 0x00000000
+second unlock of 1: 0x00000000
+delete the plain mutex: 0x00000000
+DONE

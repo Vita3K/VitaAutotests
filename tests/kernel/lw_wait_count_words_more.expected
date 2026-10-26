@@ -1,0 +1,122 @@
+the main thread's lock: 0x00000000
+the main thread holds it: word 0 is the expected owner: 0x00000001
+the main thread holds it: word 1: 0x00000000
+the main thread holds it: word 2: 0x00000001
+the main thread holds it: the waiters: 0x00000000
+W1 queued: word 0 is the expected owner: 0x00000001
+W1 queued: word 1: 0x00000001
+W1 queued: word 2: 0x00000001
+W1 queued: the waiters: 0x00000001
+W2 queued: word 0 is the expected owner: 0x00000001
+W2 queued: word 1: 0x00000002
+W2 queued: word 2: 0x00000001
+W2 queued: the waiters: 0x00000002
+W3 queued: word 0 is the expected owner: 0x00000001
+W3 queued: word 1: 0x00000003
+W3 queued: word 2: 0x00000001
+W3 queued: the waiters: 0x00000003
+the main thread locks again: 0x00000000
+the main thread locks again: word 0 is the expected owner: 0x00000001
+the main thread locks again: word 1: 0x00000003
+the main thread locks again: word 2: 0x00000002
+the main thread locks again: the waiters: 0x00000003
+a third thread's try lock: 0x80028185
+after the third thread's try lock: word 0 is the expected owner: 0x00000001
+after the third thread's try lock: word 1: 0x00000003
+after the third thread's try lock: word 2: 0x00000002
+after the third thread's try lock: the waiters: 0x00000003
+the main thread's unlock of 1: 0x00000000
+after the unlock of 1: word 0 is the expected owner: 0x00000001
+after the unlock of 1: word 1: 0x00000003
+after the unlock of 1: word 2: 0x00000001
+after the unlock of 1: the waiters: 0x00000003
+the main thread's unlock of 1 again: 0x00000000
+W1 holds it: word 0 is the expected owner: 0x00000001
+W1 holds it: word 1: 0x00000002
+W1 holds it: word 2: 0x00000001
+W1 holds it: the waiters: 0x00000002
+W1's lock: 0x00000000
+W1's unlock: 0x00000000
+W2 holds it: word 0 is the expected owner: 0x00000001
+W2 holds it: word 1: 0x00000001
+W2 holds it: word 2: 0x00000002
+W2 holds it: the waiters: 0x00000001
+W2's lock: 0x00000000
+W2's unlock: 0x00000000
+W3 holds it: word 0 is the expected owner: 0x00000001
+W3 holds it: word 1: 0x00000000
+W3 holds it: word 2: 0x00000001
+W3 holds it: the waiters: 0x00000000
+W3's lock: 0x00000000
+W3's unlock: 0x00000000
+after W3 unlocks: word 0 is the expected owner: 0x00000001
+after W3 unlocks: word 1: 0x00000000
+after W3 unlocks: word 2: 0x00000000
+after W3 unlocks: the waiters: 0x00000000
+the main thread's lock, round two: 0x00000000
+the main thread holds it, round two: word 0 is the expected owner: 0x00000001
+the main thread holds it, round two: word 1: 0x00000000
+the main thread holds it, round two: word 2: 0x00000001
+the main thread holds it, round two: the waiters: 0x00000000
+a lock with a timeout of 0: 0x80028005
+after the lock with a timeout of 0: word 0 is the expected owner: 0x00000001
+after the lock with a timeout of 0: word 1: 0x00000001
+after the lock with a timeout of 0: word 2: 0x00000001
+after the lock with a timeout of 0: the waiters: 0x00000000
+a second lock with a timeout of 0: 0x80028005
+after the second lock with a timeout of 0: word 0 is the expected owner: 0x00000001
+after the second lock with a timeout of 0: word 1: 0x00000002
+after the second lock with a timeout of 0: word 2: 0x00000001
+after the second lock with a timeout of 0: the waiters: 0x00000000
+a try lock: 0x80028185
+after the try lock: word 0 is the expected owner: 0x00000001
+after the try lock: word 1: 0x00000002
+after the try lock: word 2: 0x00000001
+after the try lock: the waiters: 0x00000000
+W4 queued: word 0 is the expected owner: 0x00000001
+W4 queued: word 1: 0x00000003
+W4 queued: word 2: 0x00000001
+W4 queued: the waiters: 0x00000001
+the main thread's unlock, round two: 0x00000000
+W4 holds it: word 0 is the expected owner: 0x00000001
+W4 holds it: word 1: 0x00000000
+W4 holds it: word 2: 0x00000001
+W4 holds it: the waiters: 0x00000000
+W4's lock: 0x00000000
+W4's unlock: 0x00000000
+after W4 unlocks: word 0 is the expected owner: 0x00000001
+after W4 unlocks: word 1: 0x00000000
+after W4 unlocks: word 2: 0x00000000
+after W4 unlocks: the waiters: 0x00000000
+the main thread's lock, round three: 0x00000000
+a lock with a timeout of 0, round three: 0x80028005
+after that lock with a timeout of 0: word 0 is the expected owner: 0x00000001
+after that lock with a timeout of 0: word 1: 0x00000001
+after that lock with a timeout of 0: word 2: 0x00000001
+after that lock with a timeout of 0: the waiters: 0x00000000
+the main thread's unlock, round three: 0x00000000
+after the unlock with no waiters: word 0 is the expected owner: 0x00000001
+after the unlock with no waiters: word 1: 0x00000001
+after the unlock with no waiters: word 2: 0x00000000
+after the unlock with no waiters: the waiters: 0x00000000
+the main thread's lock, round three again: 0x00000000
+the main thread holds it, round three: word 0 is the expected owner: 0x00000001
+the main thread holds it, round three: word 1: 0x00000001
+the main thread holds it, round three: word 2: 0x00000001
+the main thread holds it, round three: the waiters: 0x00000000
+the main thread's unlock, round three again: 0x00000000
+after the second unlock with no waiters: word 0 is the expected owner: 0x00000001
+after the second unlock with no waiters: word 1: 0x00000001
+after the second unlock with no waiters: word 2: 0x00000000
+after the second unlock with no waiters: the waiters: 0x00000000
+a try lock by another thread holds it: word 0 is the expected owner: 0x00000001
+a try lock by another thread holds it: word 1: 0x00000001
+a try lock by another thread holds it: word 2: 0x00000001
+a try lock by another thread holds it: the waiters: 0x00000000
+the other thread's try lock: 0x00000000
+the other thread's unlock: 0x00000000
+after the other thread's unlock: word 0 is the expected owner: 0x00000001
+after the other thread's unlock: word 1: 0x00000001
+after the other thread's unlock: word 2: 0x00000000
+after the other thread's unlock: the waiters: 0x00000000
+DONE

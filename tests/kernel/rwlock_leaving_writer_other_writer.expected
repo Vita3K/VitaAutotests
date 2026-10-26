@@ -1,0 +1,26 @@
+a: after FIRST_W left, waiting writers: 0x00000001
+a: after FIRST_W left, waiting readers: 0x00000001
+a: after FIRST_W left, lock count: 0x00000001
+a: after FIRST_W left, READER got its read lock: 0x00000000
+a: after FIRST_W left, READER's wait type: 0x00000080
+a: after SECOND_W left, READER got its read lock within 500 ms: 0x00000001
+a: after SECOND_W left, lock count: 0x00000002
+a: FIRST_W's result: 0x80028005
+a: SECOND_W's result: 0x80028005
+a: READER's result: 0x00000000
+b: notify FIRST_W's callback: 0x00000000
+b: during the callback, the callback ran: 0x00000001
+b: during the callback, waiting writers: 0x00000001
+b: during the callback, waiting readers: 0x00000001
+b: during the callback, lock count: 0x00000001
+b: during the callback, READER's wait type: 0x00000080
+b: during the callback, READER got its read lock: 0x00000000
+b: after the callback, FIRST_W waits again, waiting writers: 0x00000002
+b: the main thread's read unlock: 0x00000000
+b: taker 1 after the read unlock (1 FIRST_W, 2 SECOND_W, 3 READER): 0x00000002
+b: taker 2 after the read unlock (1 FIRST_W, 2 SECOND_W, 3 READER): 0x00000001
+b: taker 3 after the read unlock (1 FIRST_W, 2 SECOND_W, 3 READER): 0x00000003
+b: FIRST_W's result: 0x00000000
+b: SECOND_W's result: 0x00000000
+b: READER's result: 0x00000000
+DONE

@@ -1,0 +1,6 @@
+create in the block: 0x00000000
+info by its work area, before the block is freed: 0x00000000
+info by UID after the block is freed: 0x80028187
+info by UID after the block is freed: the count: 0x00001234
+info by UID after the block is freed: the owner is -1: 0x00000000
+DONE

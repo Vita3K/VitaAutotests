@@ -1,0 +1,30 @@
+allocate the original: 0x00000000
+open it read only: 0x00000000
+work area misaligned by 1: create: 0x80020007
+work area misaligned by 1: area unchanged: 0x00000001
+work area misaligned by 2: create: 0x80020007
+work area misaligned by 2: area unchanged: 0x00000001
+work area misaligned by 4: create: 0x80020007
+work area misaligned by 4: area unchanged: 0x00000001
+work area misaligned by 4, bad attribute: create: 0x80020007
+bad attribute and a bad count: 0x8002000E
+bad attribute and an option struct of size 8: 0x8002000E
+an option struct of size 8 and a count of -1: 0x8002000B
+an option struct of size 0: 0x00000000
+an option struct of size 4: 0x00000000
+an option struct of size 5: 0x8002000B
+read only work area: create: 0x80022005
+read only work area: the area is unchanged: 0x00000001
+read only work area: a create in a good area afterwards: 0x00000000
+live mutex in writable memory: create: 0x00000000
+live mutex in writable memory: info by its work area: 0x00000000
+delete it through the read only view: 0x80020006
+info by UID after that delete: 0x00000000
+delete it again through the writable view: 0x00000000
+NULL work area with a bad attribute and count: 0x80020006
+NULL work area: 0x80020006
+NULL name with a bad count: 0x8002000F
+NULL name: 0x80020006
+misaligned by 4, NULL name: 0x80020007
+delete NULL: 0x80020006
+DONE

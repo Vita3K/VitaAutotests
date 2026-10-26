@@ -27,8 +27,9 @@
 // it and returns 1. The delay returns 0 at once, since its first pass ends without a sleep when C
 // is pending again, so C is run once and pending again. The condition and lightweight condition
 // waits return 0 with C run twice, because the wait loops once more before it sleeps, and the check
-// returns 0 since nothing is pending. The multiple events wait returns 0 with C run once, and the
-// check returns 0 and leaves the count as it is, since C isn't notified again.
+// returns 0 since nothing is pending. The multiple events wait returns 1, the count of result
+// entries it wrote, with C run once, and the check returns 0 and leaves the count as it is, since C
+// isn't notified again.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"

@@ -1,0 +1,271 @@
+create the live mutex: 0x00000000
+info of the live mutex: 0x00000000
+create the deleted mutex: 0x00000000
+info of the deleted mutex: 0x00000000
+delete the deleted mutex: 0x00000000
+create the semaphore: 0x00000000
+free, UID 0: try lock of 1: 0x80028181
+free, UID 0: try lock of 1 changes words 0 to 2: 0x00000000
+free, UID 0: lock of 1 timeout 0: 0x80028181
+free, UID 0: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+free, UID 0: lock of 0 timeout 0: 0x80028181
+free, UID 0: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID 0: unlock of 1: 0x80028181
+free, UID 0: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID 0: unlock 2 of 1: 0x8002000F
+free, UID 0: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID 0: delete: 0x80028181
+free, UID 0: delete changes words 0 to 2: 0x00000000
+free, UID 0: info by work area: 0x80028181
+free, UID 0: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID 0: try lock of 1: 0x80028181
+held by caller, UID 0: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID 0: lock of 1 timeout 0: 0x80028181
+held by caller, UID 0: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID 0: lock of 0 timeout 0: 0x80028181
+held by caller, UID 0: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID 0: unlock of 1: 0x80028181
+held by caller, UID 0: unlock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID 0: unlock 2 of 1: 0x8002000F
+held by caller, UID 0: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by caller, UID 0: delete: 0x80028181
+held by caller, UID 0: delete changes words 0 to 2: 0x00000000
+held by caller, UID 0: info by work area: 0x80028181
+held by caller, UID 0: info by work area changes words 0 to 2: 0x00000000
+held by other, UID 0: try lock of 1: 0x80028181
+held by other, UID 0: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID 0: lock of 1 timeout 0: 0x80028181
+held by other, UID 0: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID 0: lock of 0 timeout 0: 0x80028181
+held by other, UID 0: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID 0: unlock of 1: 0x80028181
+held by other, UID 0: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID 0: unlock 2 of 1: 0x8002000F
+held by other, UID 0: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID 0: delete: 0x80028181
+held by other, UID 0: delete changes words 0 to 2: 0x00000000
+held by other, UID 0: info by work area: 0x80028181
+held by other, UID 0: info by work area changes words 0 to 2: 0x00000000
+free, UID -1: try lock of 1: 0x80028181
+free, UID -1: try lock of 1 changes words 0 to 2: 0x00000000
+free, UID -1: lock of 1 timeout 0: 0x80028181
+free, UID -1: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+free, UID -1: lock of 0 timeout 0: 0x80028181
+free, UID -1: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID -1: unlock of 1: 0x80028181
+free, UID -1: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID -1: unlock 2 of 1: 0x80028181
+free, UID -1: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID -1: delete: 0x80028181
+free, UID -1: delete changes words 0 to 2: 0x00000000
+free, UID -1: info by work area: 0x80028181
+free, UID -1: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID -1: try lock of 1: 0x80028181
+held by caller, UID -1: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID -1: lock of 1 timeout 0: 0x80028181
+held by caller, UID -1: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID -1: lock of 0 timeout 0: 0x80028181
+held by caller, UID -1: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID -1: unlock of 1: 0x80028181
+held by caller, UID -1: unlock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID -1: unlock 2 of 1: 0x80028181
+held by caller, UID -1: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by caller, UID -1: delete: 0x80028181
+held by caller, UID -1: delete changes words 0 to 2: 0x00000000
+held by caller, UID -1: info by work area: 0x80028181
+held by caller, UID -1: info by work area changes words 0 to 2: 0x00000000
+held by other, UID -1: try lock of 1: 0x80028181
+held by other, UID -1: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID -1: lock of 1 timeout 0: 0x80028181
+held by other, UID -1: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID -1: lock of 0 timeout 0: 0x80028181
+held by other, UID -1: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID -1: unlock of 1: 0x80028181
+held by other, UID -1: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID -1: unlock 2 of 1: 0x80028181
+held by other, UID -1: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID -1: delete: 0x80028181
+held by other, UID -1: delete changes words 0 to 2: 0x00000000
+held by other, UID -1: info by work area: 0x80028181
+held by other, UID -1: info by work area changes words 0 to 2: 0x00000000
+free, UID of no object: try lock of 1: 0x00000000
+free, UID of no object: try lock of 1 changes words 0 to 2: 0x00000001
+free, UID of no object: lock of 1 timeout 0: 0x00000000
+free, UID of no object: lock of 1 timeout 0 changes words 0 to 2: 0x00000001
+free, UID of no object: lock of 0 timeout 0: 0x80028181
+free, UID of no object: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID of no object: unlock of 1: 0x80028186
+free, UID of no object: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID of no object: unlock 2 of 1: 0x80028186
+free, UID of no object: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID of no object: delete: 0x80028181
+free, UID of no object: delete changes words 0 to 2: 0x00000000
+free, UID of no object: info by work area: 0x80028181
+free, UID of no object: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID of no object: try lock of 1: 0x80028182
+held by caller, UID of no object: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID of no object: lock of 1 timeout 0: 0x80028181
+held by caller, UID of no object: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of no object: lock of 0 timeout 0: 0x80028181
+held by caller, UID of no object: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of no object: unlock of 1: 0x00000000
+held by caller, UID of no object: unlock of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of no object: unlock 2 of 1: 0x00000000
+held by caller, UID of no object: unlock 2 of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of no object: delete: 0x80028181
+held by caller, UID of no object: delete changes words 0 to 2: 0x00000000
+held by caller, UID of no object: info by work area: 0x80028181
+held by caller, UID of no object: info by work area changes words 0 to 2: 0x00000000
+held by other, UID of no object: try lock of 1: 0x80028185
+held by other, UID of no object: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of no object: lock of 1 timeout 0: 0x80028181
+held by other, UID of no object: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of no object: lock of 0 timeout 0: 0x80028181
+held by other, UID of no object: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of no object: unlock of 1: 0x80028186
+held by other, UID of no object: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of no object: unlock 2 of 1: 0x80028186
+held by other, UID of no object: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID of no object: delete: 0x80028181
+held by other, UID of no object: delete changes words 0 to 2: 0x00000000
+held by other, UID of no object: info by work area: 0x80028181
+held by other, UID of no object: info by work area changes words 0 to 2: 0x00000000
+free, UID of a live mutex: try lock of 1: 0x00000000
+free, UID of a live mutex: try lock of 1 changes words 0 to 2: 0x00000001
+free, UID of a live mutex: lock of 1 timeout 0: 0x00000000
+free, UID of a live mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000001
+free, UID of a live mutex: lock of 0 timeout 0: 0x80020006
+free, UID of a live mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID of a live mutex: unlock of 1: 0x80028186
+free, UID of a live mutex: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID of a live mutex: unlock 2 of 1: 0x80028186
+free, UID of a live mutex: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID of a live mutex: delete: 0x80020006
+free, UID of a live mutex: delete changes words 0 to 2: 0x00000000
+free, UID of a live mutex: info by work area: 0x00000000
+free, UID of a live mutex: info by work area changes words 0 to 2: 0x00000000
+free, UID of a live mutex: info by work area: the info uid is the UID word: 0x00000001
+free, UID of a live mutex: info by work area: the info work area is the live mutex's: 0x00000001
+free, UID of a live mutex: info by work area: the info count is 0: 0x00000001
+free, UID of a live mutex: info by work area: the info owner is 0: 0x00000001
+held by caller, UID of a live mutex: try lock of 1: 0x80028182
+held by caller, UID of a live mutex: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID of a live mutex: lock of 1 timeout 0: 0x80020006
+held by caller, UID of a live mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a live mutex: lock of 0 timeout 0: 0x80020006
+held by caller, UID of a live mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a live mutex: unlock of 1: 0x00000000
+held by caller, UID of a live mutex: unlock of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a live mutex: unlock 2 of 1: 0x00000000
+held by caller, UID of a live mutex: unlock 2 of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a live mutex: delete: 0x80020006
+held by caller, UID of a live mutex: delete changes words 0 to 2: 0x00000000
+held by caller, UID of a live mutex: info by work area: 0x00000000
+held by caller, UID of a live mutex: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID of a live mutex: info by work area: the info uid is the UID word: 0x00000001
+held by caller, UID of a live mutex: info by work area: the info work area is the live mutex's: 0x00000001
+held by caller, UID of a live mutex: info by work area: the info count is 0: 0x00000001
+held by caller, UID of a live mutex: info by work area: the info owner is 0: 0x00000001
+held by other, UID of a live mutex: try lock of 1: 0x80028185
+held by other, UID of a live mutex: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: lock of 1 timeout 0: 0x80020006
+held by other, UID of a live mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: lock of 0 timeout 0: 0x80020006
+held by other, UID of a live mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: unlock of 1: 0x80028186
+held by other, UID of a live mutex: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: unlock 2 of 1: 0x80028186
+held by other, UID of a live mutex: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: delete: 0x80020006
+held by other, UID of a live mutex: delete changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: info by work area: 0x00000000
+held by other, UID of a live mutex: info by work area changes words 0 to 2: 0x00000000
+held by other, UID of a live mutex: info by work area: the info uid is the UID word: 0x00000001
+held by other, UID of a live mutex: info by work area: the info work area is the live mutex's: 0x00000001
+held by other, UID of a live mutex: info by work area: the info count is 0: 0x00000001
+held by other, UID of a live mutex: info by work area: the info owner is 0: 0x00000001
+free, UID of a deleted mutex: try lock of 1: 0x00000000
+free, UID of a deleted mutex: try lock of 1 changes words 0 to 2: 0x00000001
+free, UID of a deleted mutex: lock of 1 timeout 0: 0x00000000
+free, UID of a deleted mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000001
+free, UID of a deleted mutex: lock of 0 timeout 0: 0x80028181
+free, UID of a deleted mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID of a deleted mutex: unlock of 1: 0x80028186
+free, UID of a deleted mutex: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID of a deleted mutex: unlock 2 of 1: 0x80028186
+free, UID of a deleted mutex: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID of a deleted mutex: delete: 0x80028181
+free, UID of a deleted mutex: delete changes words 0 to 2: 0x00000000
+free, UID of a deleted mutex: info by work area: 0x80028181
+free, UID of a deleted mutex: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID of a deleted mutex: try lock of 1: 0x80028182
+held by caller, UID of a deleted mutex: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID of a deleted mutex: lock of 1 timeout 0: 0x80028181
+held by caller, UID of a deleted mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a deleted mutex: lock of 0 timeout 0: 0x80028181
+held by caller, UID of a deleted mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a deleted mutex: unlock of 1: 0x00000000
+held by caller, UID of a deleted mutex: unlock of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a deleted mutex: unlock 2 of 1: 0x00000000
+held by caller, UID of a deleted mutex: unlock 2 of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a deleted mutex: delete: 0x80028181
+held by caller, UID of a deleted mutex: delete changes words 0 to 2: 0x00000000
+held by caller, UID of a deleted mutex: info by work area: 0x80028181
+held by caller, UID of a deleted mutex: info by work area changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: try lock of 1: 0x80028185
+held by other, UID of a deleted mutex: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: lock of 1 timeout 0: 0x80028181
+held by other, UID of a deleted mutex: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: lock of 0 timeout 0: 0x80028181
+held by other, UID of a deleted mutex: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: unlock of 1: 0x80028186
+held by other, UID of a deleted mutex: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: unlock 2 of 1: 0x80028186
+held by other, UID of a deleted mutex: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: delete: 0x80028181
+held by other, UID of a deleted mutex: delete changes words 0 to 2: 0x00000000
+held by other, UID of a deleted mutex: info by work area: 0x80028181
+held by other, UID of a deleted mutex: info by work area changes words 0 to 2: 0x00000000
+free, UID of a live semaphore: try lock of 1: 0x00000000
+free, UID of a live semaphore: try lock of 1 changes words 0 to 2: 0x00000001
+free, UID of a live semaphore: lock of 1 timeout 0: 0x00000000
+free, UID of a live semaphore: lock of 1 timeout 0 changes words 0 to 2: 0x00000001
+free, UID of a live semaphore: lock of 0 timeout 0: 0x80028181
+free, UID of a live semaphore: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+free, UID of a live semaphore: unlock of 1: 0x80028186
+free, UID of a live semaphore: unlock of 1 changes words 0 to 2: 0x00000000
+free, UID of a live semaphore: unlock 2 of 1: 0x80028186
+free, UID of a live semaphore: unlock 2 of 1 changes words 0 to 2: 0x00000000
+free, UID of a live semaphore: delete: 0x80028181
+free, UID of a live semaphore: delete changes words 0 to 2: 0x00000000
+free, UID of a live semaphore: info by work area: 0x80028181
+free, UID of a live semaphore: info by work area changes words 0 to 2: 0x00000000
+held by caller, UID of a live semaphore: try lock of 1: 0x80028182
+held by caller, UID of a live semaphore: try lock of 1 changes words 0 to 2: 0x00000000
+held by caller, UID of a live semaphore: lock of 1 timeout 0: 0x80028181
+held by caller, UID of a live semaphore: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a live semaphore: lock of 0 timeout 0: 0x80028181
+held by caller, UID of a live semaphore: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by caller, UID of a live semaphore: unlock of 1: 0x00000000
+held by caller, UID of a live semaphore: unlock of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a live semaphore: unlock 2 of 1: 0x00000000
+held by caller, UID of a live semaphore: unlock 2 of 1 changes words 0 to 2: 0x00000001
+held by caller, UID of a live semaphore: delete: 0x80028181
+held by caller, UID of a live semaphore: delete changes words 0 to 2: 0x00000000
+held by caller, UID of a live semaphore: info by work area: 0x80028181
+held by caller, UID of a live semaphore: info by work area changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: try lock of 1: 0x80028185
+held by other, UID of a live semaphore: try lock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: lock of 1 timeout 0: 0x80028181
+held by other, UID of a live semaphore: lock of 1 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: lock of 0 timeout 0: 0x80028181
+held by other, UID of a live semaphore: lock of 0 timeout 0 changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: unlock of 1: 0x80028186
+held by other, UID of a live semaphore: unlock of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: unlock 2 of 1: 0x80028186
+held by other, UID of a live semaphore: unlock 2 of 1 changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: delete: 0x80028181
+held by other, UID of a live semaphore: delete changes words 0 to 2: 0x00000000
+held by other, UID of a live semaphore: info by work area: 0x80028181
+held by other, UID of a live semaphore: info by work area changes words 0 to 2: 0x00000000
+DONE

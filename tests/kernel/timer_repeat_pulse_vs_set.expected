@@ -1,0 +1,25 @@
+set event: set a repeating event: 0x00000000
+set event: start the timer: 0x00000000
+set event: the first poll at 8.4 s: 0x00000000
+set event: the first poll at 8.4 s: the bits it got: 0x00008000
+set event: the second poll at once: 0x00000000
+set event: the second poll at once: the bits it got: 0x00008000
+set event: clear the timer bit: 0x00000000
+set event: the poll after the clear: 0x80028202
+set event: the poll after the clear: the bits it got: 0x00000000
+set event: the poll ten intervals after the clear: 0x00000000
+set event: the poll ten intervals after the clear: the bits it got: 0x00008000
+pulse event: set a repeating event: 0x00000000
+pulse event: start the timer: 0x00000000
+pulse event: the poll at 1.1 s: 0x80028202
+pulse event: the poll at 1.1 s: the bits it got: 0x00000000
+pulse event: the first wait: 0x00000000
+pulse event: the first wait's bits: 0x00008000
+pulse event: the first wait returned after over 250 ms: 0x00000001
+pulse event: the poll right after the first wait: 0x80028202
+pulse event: the poll right after the first wait: the bits it got: 0x00000000
+pulse event: the second wait: 0x00000000
+pulse event: the second wait's bits: 0x00008000
+pulse event: the second wait returned after over 550 ms: 0x00000001
+pulse event: the second wait returned under 1.05 s: 0x00000001
+DONE

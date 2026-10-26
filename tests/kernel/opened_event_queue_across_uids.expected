@@ -1,0 +1,35 @@
+multiple waiter flag: create and open: 0x00000000
+multiple waiter flag: the waiting threads through the creating UID: 0x00000002
+multiple waiter flag: the waiting threads through the opened UID: 0x00000002
+multiple waiter flag: the set through the opened UID: 0x00000000
+multiple waiter flag: the waiting threads after the set, creating UID: 0x00000001
+multiple waiter flag: the waiting threads after the set, opened UID: 0x00000001
+multiple waiter flag: the pattern after the set: 0x00000000
+multiple waiter flag: W0's result: 0x00000000
+multiple waiter flag: the bits W0 got: 0x00000001
+multiple waiter flag: W1's result: 0x80028005
+single waiter flag: create and open: 0x00000000
+single waiter flag: a 1 ms wait through the opened UID: 0x800280E2
+single waiter flag: a poll through the opened UID: 0x800280E2
+single waiter flag: the waiting threads through the opened UID: 0x00000001
+single waiter flag: the set through the opened UID: 0x00000000
+single waiter flag: the waiting threads after the set: 0x00000000
+single waiter flag: a poll through the opened UID after the set: 0x00000000
+single waiter flag: W0's result: 0x00000000
+single waiter flag: the bits W0 got: 0x00000001
+auto reset event: create and open: 0x00000000
+auto reset event: the waiting threads through the creating UID: 0x00000002
+auto reset event: the waiting threads through the opened UID: 0x00000002
+auto reset event: the set through the opened UID: 0x00000000
+auto reset event: the waiting threads after the set, creating UID: 0x00000001
+auto reset event: the waiting threads after the set, opened UID: 0x00000001
+auto reset event: the bit A after the set: 0x00000000
+auto reset event: the second set through the creating UID: 0x00000000
+auto reset event: the waiting threads after the second set: 0x00000000
+auto reset event: W0's result: 0x00000000
+auto reset event: the bits W0 got: 0x01000000
+auto reset event: the low word of the user data W0 got: 0x00000011
+auto reset event: W1's result: 0x00000000
+auto reset event: the bits W1 got: 0x01000000
+auto reset event: the low word of the user data W1 got: 0x00000022
+DONE

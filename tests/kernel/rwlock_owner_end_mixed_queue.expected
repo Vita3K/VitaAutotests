@@ -1,0 +1,39 @@
+a: FIFO R1, W, R2: lock count after the owner ends: 0x00000001
+a: FIFO R1, W, R2: write owner after the owner ends (0 none, k + 1 for waiter k): 0x00000003
+a: FIFO R1, W, R2: waiting readers after the owner ends: 0x00000002
+a: FIFO R1, W, R2: waiting writers after the owner ends: 0x00000000
+a: FIFO R1, W, R2: R1 still queued for the lock after the owner ends: 0x00000001
+a: FIFO R1, W, R2: W still queued for the lock after the owner ends: 0x00000000
+a: FIFO R1, W, R2: R2 still queued for the lock after the owner ends: 0x00000001
+a: FIFO R1, W, R2: R1's lock result: 0x00000000
+a: FIFO R1, W, R2: W's lock result: 0x00000000
+a: FIFO R1, W, R2: R2's lock result: 0x00000000
+a: FIFO R1, W, R2: lock count after the first release's unlock: 0x00000002
+b: FIFO R1, R2: lock count after the owner ends: 0x00000002
+b: FIFO R1, R2: write owner after the owner ends (0 none, k + 1 for waiter k): 0x00000000
+b: FIFO R1, R2: waiting readers after the owner ends: 0x00000000
+b: FIFO R1, R2: waiting writers after the owner ends: 0x00000000
+b: FIFO R1, R2: R1 still queued for the lock after the owner ends: 0x00000000
+b: FIFO R1, R2: R2 still queued for the lock after the owner ends: 0x00000000
+b: FIFO R1, R2: R1's lock result: 0x00000000
+b: FIFO R1, R2: R2's lock result: 0x00000000
+b: FIFO R1, R2: lock count after the first release's unlock: 0x00000001
+c: priority W, R (R higher): lock count after the owner ends: 0x00000001
+c: priority W, R (R higher): write owner after the owner ends (0 none, k + 1 for waiter k): 0x00000002
+c: priority W, R (R higher): waiting readers after the owner ends: 0x00000001
+c: priority W, R (R higher): waiting writers after the owner ends: 0x00000000
+c: priority W, R (R higher): W still queued for the lock after the owner ends: 0x00000000
+c: priority W, R (R higher): R still queued for the lock after the owner ends: 0x00000001
+c: priority W, R (R higher): W's lock result: 0x00000000
+c: priority W, R (R higher): R's lock result: 0x00000000
+c: priority W, R (R higher): lock count after the first release's unlock: 0x00000001
+d: recursive owner, FIFO R, W: lock count after the owner ends: 0x00000001
+d: recursive owner, FIFO R, W: write owner after the owner ends (0 none, k + 1 for waiter k): 0x00000003
+d: recursive owner, FIFO R, W: waiting readers after the owner ends: 0x00000001
+d: recursive owner, FIFO R, W: waiting writers after the owner ends: 0x00000000
+d: recursive owner, FIFO R, W: R still queued for the lock after the owner ends: 0x00000001
+d: recursive owner, FIFO R, W: W still queued for the lock after the owner ends: 0x00000000
+d: recursive owner, FIFO R, W: R's lock result: 0x00000000
+d: recursive owner, FIFO R, W: W's lock result: 0x00000000
+d: recursive owner, FIFO R, W: lock count after the first release's unlock: 0x00000001
+DONE

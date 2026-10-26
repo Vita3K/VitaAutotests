@@ -1,0 +1,53 @@
+set e1 with a plain and a multiple wait: the set: 0x00000000
+set e1 with a plain and a multiple wait: the waiters on e1 after the set: 0x00000000
+set e1 with a plain and a multiple wait: the pattern of e1 after the set: 0x01000004
+set e1 with a plain and a multiple wait: the plain wait: 0x00000000
+set e1 with a plain and a multiple wait: the plain wait's bits: 0x01000000
+set e1 with a plain and a multiple wait: the plain wait's user data: 0x00000011
+set e1 with a plain and a multiple wait: the multiple wait: 0x00000001
+set e1 with a plain and a multiple wait: entry 0 is for event 1 or 2: 0x00000001
+set e1 with a plain and a multiple wait: entry 0 result: 0x00000000
+set e1 with a plain and a multiple wait: entry 0 bits: 0x01000000
+set e1 with a plain and a multiple wait: entry 0 user data: 0x00000011
+set e1 with a plain and a multiple wait: the pulse of A: 0x00000000
+set e1 with a plain and a multiple wait: the pattern of e1 after the pulse: 0x00000004
+e1 listed with A or C, A set: the set: 0x00000000
+e1 listed with A or C, A set: the multiple wait: 0x00000001
+e1 listed with A or C, A set: entry 0 is for event 1 or 2: 0x00000001
+e1 listed with A or C, A set: entry 0 result: 0x00000000
+e1 listed with A or C, A set: entry 0 bits: 0x01000000
+e1 listed with A or C, A set: entry 0 user data: 0x00000055
+e1 listed with A or C, A set: the pattern of e1 after the wait: 0x01000004
+e1 listed with A or C, A and D set: the set: 0x00000000
+e1 listed with A or C, A and D set: the multiple wait: 0x00000001
+e1 listed with A or C, A and D set: entry 0 is for event 1 or 2: 0x00000001
+e1 listed with A or C, A and D set: entry 0 result: 0x00000000
+e1 listed with A or C, A and D set: entry 0 bits: 0x01000000
+e1 listed with A or C, A and D set: entry 0 user data: 0x00000055
+e1 listed with A or C, A and D set: the pattern of e1 after the wait: 0x09000004
+auto reset, e1 claims the multiple wait, then e2 is set: the set of e1: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the waiters on e1 after the set of e1: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the waiters on e2 after the set of e1: 0x00000001
+auto reset, e1 claims the multiple wait, then e2 is set: the set of e2: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the waiters on e1 after the set of e2: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the waiters on e2 after the set of e2: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the pattern of e2 after the set of e2: 0x02000004
+auto reset, e1 claims the multiple wait, then e2 is set: the poll of B on e2: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: the poll's bits: 0x02000000
+auto reset, e1 claims the multiple wait, then e2 is set: the poll's user data: 0x00000022
+auto reset, e1 claims the multiple wait, then e2 is set: the pattern of e2 after the poll: 0x00000004
+auto reset, e1 claims the multiple wait, then e2 is set: the multiple wait: 0x00000001
+auto reset, e1 claims the multiple wait, then e2 is set: entry 0 is for event 1 or 2: 0x00000001
+auto reset, e1 claims the multiple wait, then e2 is set: entry 0 result: 0x00000000
+auto reset, e1 claims the multiple wait, then e2 is set: entry 0 bits: 0x01000000
+auto reset, e1 claims the multiple wait, then e2 is set: entry 0 user data: 0x00000011
+auto reset, e1 claims the multiple wait, then e2 is set: the pattern of e1 at the end: 0x00000004
+delete e1, a multiple wait lists 0x8 and A on it: the delete: 0x00000000
+delete e1, a multiple wait lists 0x8 and A on it: the multiple wait: 0x00000001
+delete e1, a multiple wait lists 0x8 and A on it: entry 0 is for e1: 0x00000001
+delete e1, a multiple wait lists 0x8 and A on it: entry 0 result: 0x00000000
+delete e1, a multiple wait lists 0x8 and A on it: entry 0 bits: 0x00000008
+delete e1, a multiple wait lists 0x8 and A on it: entry 0 user data high word is the deleting thread: 0x00000001
+delete e1, a multiple wait lists 0x8 and A on it: the plain wait: 0x80028006
+delete e1, a multiple wait lists 0x8 and A on it: the plain wait's bits: 0x00000010
+DONE

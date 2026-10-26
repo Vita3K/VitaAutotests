@@ -1,0 +1,55 @@
+pieces 3 0 2 3, send "ABC": the send: 0x00000000
+pieces 3 0 2 3, after "ABC": the receive waits: 0x00000001
+pieces 3 0 2 3, after "ABC": its size: 0x00000003
+pieces 3 0 2 3, after "ABC": piece 1 is "ABC": 0x00000003
+pieces 3 0 2 3, after "ABC": piece 2 is "": 0x00000000
+pieces 3 0 2 3, after "ABC": piece 3 is "": 0x00000000
+pieces 3 0 2 3, after "ABC": piece 4 is "": 0x00000000
+pieces 3 0 2 3, send "DE": the send: 0x00000000
+pieces 3 0 2 3, after "DE": the receive waits: 0x00000001
+pieces 3 0 2 3, after "DE": its size: 0x00000005
+pieces 3 0 2 3, after "DE": piece 1 is "ABC": 0x00000003
+pieces 3 0 2 3, after "DE": piece 2 is "": 0x00000000
+pieces 3 0 2 3, after "DE": piece 3 is "DE": 0x00000002
+pieces 3 0 2 3, after "DE": piece 4 is "": 0x00000000
+pieces 3 0 2 3, send "FG": the send: 0x00000000
+pieces 3 0 2 3, after "FG": the receive waits: 0x00000001
+pieces 3 0 2 3, after "FG": its size: 0x00000007
+pieces 3 0 2 3, after "FG": piece 1 is "ABC": 0x00000003
+pieces 3 0 2 3, after "FG": piece 2 is "": 0x00000000
+pieces 3 0 2 3, after "FG": piece 3 is "DE": 0x00000002
+pieces 3 0 2 3, after "FG": piece 4 is "FG": 0x00000002
+pieces 3 0 2 3, send "H": the send: 0x00000000
+pieces 3 0 2 3, after "H": the receive waits: 0x00000000
+pieces 3 0 2 3, after "H": its size: 0x00000008
+pieces 3 0 2 3, after "H": piece 1 is "ABC": 0x00000003
+pieces 3 0 2 3, after "H": piece 2 is "": 0x00000000
+pieces 3 0 2 3, after "H": piece 3 is "DE": 0x00000002
+pieces 3 0 2 3, after "H": piece 4 is "FGH": 0x00000003
+pieces 3 0 2 3: the receive's result: 0x00000000
+pieces 2 0 5: the try send of 4094 bytes: 0x00000000
+pieces 2 0 5: the sender waits: 0x00000001
+pieces 2 0 5: the free size before the receive: 0x00000002
+pieces 2 0 5: the FULL vector receive of 4094 and 2: 0x00000000
+pieces 2 0 5: its size: 0x00001000
+pieces 2 0 5: the first piece is all dots: 0x00000001
+pieces 2 0 5: the second piece is "ab": 0x00000002
+pieces 2 0 5: the sender's result: 0x00000000
+pieces 2 0 5: the sender's size: 0x00000007
+pieces 2 0 5: the pipe holds "cdefg": 0x00000005
+overwrite: the try send that fills the pipe: 0x00000000
+overwrite: the sender waits on the full pipe: 0x00000001
+overwrite: the FULL receive of 4 that makes room: 0x00000000
+overwrite: the sender's result: 0x00000000
+overwrite: the sender's size: 0x00000004
+overwrite: the pipe gives back "WXYZ": 0x00000004
+list change: the try send of "ABCD": 0x00000000
+list change: the receive still waits after 4: 0x00000001
+list change: its size after 4: 0x00000004
+list change: the first piece is "ABCD": 0x00000004
+list change: the try send of "EFGH": 0x00000000
+list change: the receive's result: 0x00000000
+list change: its size: 0x00000008
+list change: the old second buffer got EFGH: 0x00000000
+list change: the new second buffer got EFGH: 0x00000001
+DONE

@@ -33,9 +33,11 @@
 //
 // On a PS Vita TV on firmware 3.65 the waits that run callbacks again before they return are the
 // lock, timer and message pipe send waits. Those return 0x80028005 with the time left 0, C runs
-// twice, and the object holds what C's second run gave. The condition, thread signal and thread end
-// waits only run callbacks at the top of their loop, so they return 0x80028005 with the time left 0
-// while C runs once, and nothing was given.
+// twice, and the object holds what C's second run gave. The condition and lightweight condition
+// waits return 0x80028005 with the time left 0 and C runs twice too, since after the timeout the
+// relock of the mutex runs the pending callback again, and the release was made. The thread signal
+// and thread end waits only run callbacks at the top of their loop, so they return 0x80028005 with
+// the time left 0 while C runs once, and nothing was given.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"

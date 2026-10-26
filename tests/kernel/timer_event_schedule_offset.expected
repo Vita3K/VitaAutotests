@@ -1,0 +1,25 @@
+stopped at 2 s: set a one shot event of 3 s: 0x00000000
+stopped at 2 s: the info call: 0x00000000
+stopped at 2 s: the schedule is exactly 5 s: 0x00000001
+stopped at 2 s: the interval is 3 s: 0x00000001
+stopped at 2 s: the remaining time call: 0x00000000
+stopped at 2 s: the remaining time is exactly 3 s: 0x00000001
+start the timer: 0x00000000
+wait for the event with a timeout of 4.5 s: 0x00000000
+the wait ended over 2 s after the start: 0x00000001
+the wait ended under 4 s after the start: 0x00000001
+stop the timer after the wait: 0x00000001
+running at 2 s: start the timer: 0x00000000
+running at 2 s: set a one shot event of 30 s: 0x00000000
+running at 2 s: the info call: 0x00000000
+running at 2 s: the schedule is 30 s past the time at the set: 0x00000001
+running at 2 s: the remaining time call: 0x00000000
+running at 2 s: the remaining time plus the timer's time is the schedule, 50 ms: 0x00000001
+600 ms later: set the same event again: 0x00000000
+600 ms later: the info call: 0x00000000
+600 ms later: the schedule is 350 to 850 ms past the old one: 0x00000001
+stop the timer: 0x00000001
+stopped: set a one shot event of 4 s: 0x00000000
+stopped: the info call: 0x00000000
+stopped: the schedule is the current time plus the interval: 0x00000001
+DONE

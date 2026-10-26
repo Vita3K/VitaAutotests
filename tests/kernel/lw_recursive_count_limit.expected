@@ -1,0 +1,48 @@
+created with 0x7FFFFFFF: create: 0x00000000
+created with 0x7FFFFFFF: the info count: 0x7FFFFFFF
+created with 0x7FFFFFFF: the init count: 0x7FFFFFFF
+created with 0x7FFFFFFF: the info owner is this thread: 0x00000001
+created with 0x7FFFFFFF: word 0 is the owner's UID: 0x00000001
+created with 0x7FFFFFFF: word 2, the count: 0x7FFFFFFF
+unlock of 0x7FFFFFFF: 0x00000000
+unlocked: the info count: 0x00000000
+unlocked: word 2, the count: 0x00000000
+unlocked: another thread's try lock: 0x00000000
+delete: 0x00000000
+try lock past the top: create: 0x00000000
+try lock past the top: lock of 0x7FFFFFFF: 0x00000000
+try lock past the top: word 2, the count: 0x7FFFFFFF
+try lock past the top: try lock of 1: 0x00000000
+try lock past the top: word 2 after it, the count: 0x80000000
+try lock past the top: the info count is negative: 0x00000001
+try lock past the top: the info owner is this thread: 0x00000001
+try lock past the top: unlock of 1: 0x80028184
+try lock past the top: unlock of 0x7FFFFFFF: 0x80028184
+try lock past the top: word 2 after the unlocks, the count: 0x80000000
+try lock past the top: the info count is negative after the unlocks: 0x00000001
+try lock past the top: delete: 0x00000000
+lock past the top: create: 0x00000000
+lock past the top: lock of 0x7FFFFFFF: 0x00000000
+lock past the top: word 2, the count: 0x7FFFFFFF
+lock past the top: lock of 1: 0x00000000
+lock past the top: word 2 after it, the count: 0x80000000
+lock past the top: the info count is negative: 0x00000001
+lock past the top: the info owner is this thread: 0x00000001
+lock past the top: unlock of 1: 0x80028184
+lock past the top: unlock of 0x7FFFFFFF: 0x80028184
+lock past the top: word 2 after the unlocks, the count: 0x80000000
+lock past the top: the info count is negative after the unlocks: 0x00000001
+lock past the top: delete: 0x00000000
+handover: create: 0x00000000
+handover: lock of 0x7FFFFFFF by the owner: 0x00000000
+handover: the owner's info count: 0x7FFFFFFF
+handover: unlock of 0x7FFFFFFF by the owner: 0x00000000
+handover: the waiter's lock: 0x00000000
+handover: the waiter's info count: 0x7FFFFFFF
+handover: the waiter's info owner is this thread: 0x00000001
+handover: word 0 is the waiter's UID: 0x00000001
+handover: word 1, the wait count: 0x00000000
+handover: word 2, the count: 0x7FFFFFFF
+handover: the waiter's unlock of 0x7FFFFFFF: 0x00000000
+handover: delete: 0x00000000
+DONE

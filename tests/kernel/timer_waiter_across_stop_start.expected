@@ -1,0 +1,20 @@
+set a one shot set event of 3 s: 0x00000000
+before the start: the info call: 0x00000000
+before the start: the waiters the timer counts: 0x00000002
+start the timer at 1 s: 0x00000000
+stop the timer at 2 s: 0x00000001
+after the stop at 2 s: the info call: 0x00000000
+after the stop at 2 s: the waiters the timer counts: 0x00000002
+the remaining time at 2 s: 0x00000000
+the remaining time is within 1.75 to 2.25 s: 0x00000001
+U's wait with a 2.25 s timeout: 0x80028005
+U's wait took at least its timeout: 0x00000001
+U's wait ended under 2.75 s: 0x00000001
+at 3.5 s T is still in its event wait: 0x00000001
+at 3.5 s: the info call: 0x00000000
+at 3.5 s: the waiters the timer counts: 0x00000001
+start the timer again at 3.5 s: 0x00000000
+T's wait: 0x00000000
+T returned over 1.5 s after the restart: 0x00000001
+T returned under 2.5 s after the restart: 0x00000001
+DONE

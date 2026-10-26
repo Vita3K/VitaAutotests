@@ -25,8 +25,9 @@
 // the timeout that the callback saw is the one passed and whether it is above 1 s, and whether the
 // timeout after the call is below the one passed and above 1 s.
 //
-// On a PS Vita TV on firmware 3.65 every wait returns 0, and the timeout after the call is below
-// the one passed and above 1 s. The callback of the object waits sees the one passed, since those
+// On a PS Vita TV on firmware 3.65 every wait returns 0 except the multiple events wait, which
+// returns 1, the count of result entries it wrote. The timeout after the call is below the one
+// passed and above 1 s. The callback of the object waits sees the one passed, since those
 // calls wait on a copy of the timeout and copy it back when they return. The message pipe send
 // takes the caller's variable itself, and the notify writes the time left to it, so its callback
 // sees a value below the one passed and above 1 s. The multiple events wait copies its timeout the

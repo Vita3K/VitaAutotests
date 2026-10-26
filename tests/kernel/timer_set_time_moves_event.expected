@@ -1,0 +1,39 @@
+a: the set of the event, 4 s away: 0x00000000
+a: start: 0x00000000
+a: the set of the time to 3 s: 0x00000000
+a: the wait with a 3 s timeout: 0x00000000
+a: it returned over 500 ms after the set: 0x00000001
+a: it returned under 1.5 s after the set: 0x00000001
+b: the set of the event, 2 s away: 0x00000000
+b: start: 0x00000000
+b: the set of the time to 0: 0x00000000
+b: the wait with a 4 s timeout: 0x00000000
+b: it returned over 1.5 s after the set: 0x00000001
+b: it returned under 2.5 s after the set: 0x00000001
+c: the set of the event, 2 s away: 0x00000000
+c: start: 0x00000000
+c: the set of the time to 5 s: 0x00000000
+c: the wait with a 4 s timeout: 0x00000000
+c: it returned over 1.5 s after the set: 0x00000001
+c: it returned under 2.5 s after the set: 0x00000001
+d: the set of the event, 4 s away: 0x00000000
+d: the set of the time to 1.5 s: 0x00000000
+d: the remaining time: 0x00000000
+d: the remaining time is 2.5 s: 0x00000001
+d: the info call: 0x00000000
+d: the info schedule is 4 s: 0x00000001
+d: the info current time is 1.5 s: 0x00000001
+d: the info base time is 1.5 s: 0x00000001
+d: the set of the time to 5 s: 0x00000000
+d: the remaining time after that: 0x00000000
+d: the remaining time is above 0x8000000000000000: 0x00000001
+d: 0 minus the remaining time is exactly 1 s: 0x00000001
+e: the set of the event, 30 s away: 0x00000000
+e: start: 0x00000000
+e: the set of the time to 10 s: 0x00000000
+e: the remaining time: 0x00000000
+e: the remaining time plus the timer's time is the schedule, within 50 ms: 0x00000001
+e: the set of the time to 40 s: 0x00000000
+e: the remaining time after that: 0x00000000
+e: 0 minus the remaining time is within 9.75 to 10.25 s: 0x00000001
+DONE

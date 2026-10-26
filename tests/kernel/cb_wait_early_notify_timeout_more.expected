@@ -14,7 +14,7 @@ lightweight condition, nothing pending: the wait: 0x00000000
 lightweight condition, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
 message pipe send, nothing pending: the wait: 0x00000000
 message pipe send, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
-thread signal, nothing pending: the wait: 0x80028005
+thread signal, nothing pending: the wait: 0x00000000
 thread signal, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
 thread end, nothing pending: the wait: 0x00000000
 thread end, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001

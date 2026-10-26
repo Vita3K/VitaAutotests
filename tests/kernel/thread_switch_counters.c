@@ -7,6 +7,8 @@
 // while the other threads of the test are blocked. The main thread reads them while T waits. Then
 // T is moved to core 2 and back to core 0, ended, and started again, and the counters after the
 // restart are compared with the ones before it.
+// The spin with a holder also prints whether the interrupt count grew by at least 3, since the
+// holder's wakes may be counted there instead of in the preempt count.
 // The cases print comparisons only, since the interrupt count depends on the timer ticks.
 #include <psp2/kernel/cpu.h>
 #include <psp2/kernel/threadmgr.h>
@@ -151,6 +153,7 @@ int main(void) {
     TEST_WAIT_FOR(test_in_wait(t, WAIT_TYPE_SEMA, cmd_sema));
     PRINT("spin with a holder: the holder woke five times", woke == CYCLES);
     PRINT("spin with a holder: the preempt count grew by at least 3", (int)(run_end.preempt - run_start.preempt) >= 3);
+    PRINT("spin with a holder: the interrupt preempt count grew by at least 3", (int)(run_end.intr - run_start.intr) >= 3);
     PRINT("spin with a holder: the release count did not grow", run_end.release == run_start.release);
 
     // A spin of 300 ms with nothing else ready on core 0

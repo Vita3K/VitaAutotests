@@ -1,0 +1,17 @@
+1 MiB USER_RW blocks: the error when full: 0x80024302
+1 MiB USER_RW blocks: at least 4 fit: 0x00000001
+256 KiB USER_RW blocks: the error when full: 0x80024302
+64 KiB USER_RW blocks: the error when full: 0x80024302
+16 KiB USER_RW blocks: the error when full: 0x80024302
+4 KiB USER_RW blocks: the error when full: 0x80024302
+a 0x4000 stack with main full: create: 0x80024302
+free one 1 MiB block: the result: 0x00000000
+a 0x4000 stack after freeing one 1 MiB block: create: 0x00000000
+16 threads with 0x4000 stacks at once after that: all made: 0x00000001
+a stack of 0x10000000: create: 0x80028024
+a stack of 0x10000000: main free size unchanged: 0x00000001
+a stack of 0x10000000: 16 threads still fit at once: 0x00000001
+a stack of 0x40000000: create: 0x80028024
+a stack of 0x40000000: main free size unchanged: 0x00000001
+a stack of 0x40000000: 16 threads still fit at once: 0x00000001
+DONE

@@ -1,0 +1,34 @@
+auto reset: the cancel result: 0x00000000
+auto reset: the waiting count: 0x00000001
+auto reset: the first waiter's result: 0x80028007
+auto reset: the first waiter's result pattern: 0x00000010
+auto reset: the first waiter's user data, low word: 0x00000000
+auto reset: the first waiter's user data, high word: 0x00000000
+auto reset: the pattern after the cancel: 0x00000004
+auto reset: the timer is active after the cancel: 0x00000001
+auto reset: the second waiter's result: 0x00000000
+auto reset: the second waiter's result pattern: 0x00008000
+manual reset: the cancel result: 0x00000000
+manual reset: the waiting count: 0x00000001
+manual reset: the waiter's result: 0x80028007
+manual reset: the waiter's result pattern: 0x00000010
+manual reset: the waiter's user data, low word: 0x00000000
+manual reset: the waiter's user data, high word: 0x00000000
+manual reset: the pattern after the cancel: 0x01000000
+manual reset: the user data after the cancel: 0x00000077
+manual reset: the timer is active after the cancel: 0x00000001
+manual reset: a poll for 0x8000 before the fire: 0x80028202
+manual reset: the pattern after the fire: 0x01008000
+manual reset: the user data after the fire: 0x00000000
+zero set pattern: the pattern before the cancel: 0x00000004
+zero set pattern: the cancel result: 0x00000000
+zero set pattern: the waiting count: 0x00000000
+zero set pattern: the pattern after the cancel: 0x00000000
+fired: the pattern after the fire: 0x00008004
+fired: the set result: 0x00000000
+fired: the pattern after the set: 0x01008004
+fired: the first clear result: 0x8002000D
+fired: the pattern after the first clear: 0x01008004
+fired: the second clear result: 0x8002000D
+fired: the pattern after the second clear: 0x01008004
+DONE

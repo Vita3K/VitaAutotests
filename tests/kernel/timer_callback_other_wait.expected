@@ -1,0 +1,52 @@
+semaphore: the callback's register: 0x00000000
+semaphore: the timer start: 0x00000000
+semaphore: runs of the callback once T waits again: 0x00000001
+semaphore: the callback ran on T: 0x00000001
+semaphore: the notify ID is the timer: 0x00000001
+semaphore: the notify count: 0x00000001
+semaphore: the notify argument: 0x00000000
+semaphore: the waiting threads after T waits again: 0x00000001
+semaphore: T's wait type after T waits again: 0x80000020
+semaphore: the call that ends T's wait: 0x00000000
+semaphore: T's wait result: 0x00000000
+semaphore: T's time left is over 4 s: 0x00000001
+semaphore: T's time left is under the timeout: 0x00000001
+event flag: the callback's register: 0x00000000
+event flag: the timer start: 0x00000000
+event flag: runs of the callback once T waits again: 0x00000001
+event flag: the callback ran on T: 0x00000001
+event flag: the notify ID is the timer: 0x00000001
+event flag: the notify count: 0x00000001
+event flag: the notify argument: 0x00000000
+event flag: the waiting threads after T waits again: 0x00000001
+event flag: T's wait type after T waits again: 0x80000010
+event flag: the call that ends T's wait: 0x00000000
+event flag: T's wait result: 0x00000000
+event flag: T's time left is over 4 s: 0x00000001
+event flag: T's time left is under the timeout: 0x00000001
+simple event: the callback's register: 0x00000000
+simple event: the timer start: 0x00000000
+simple event: runs of the callback once T waits again: 0x00000001
+simple event: the callback ran on T: 0x00000001
+simple event: the notify ID is the timer: 0x00000001
+simple event: the notify count: 0x00000001
+simple event: the notify argument: 0x00000000
+simple event: the waiting threads after T waits again: 0x00000001
+simple event: T's wait type after T waits again: 0x80010000
+simple event: the call that ends T's wait: 0x00000000
+simple event: T's wait result: 0x00000000
+simple event: T's time left is over 4 s: 0x00000001
+simple event: T's time left is under the timeout: 0x00000001
+semaphore without callbacks: the callback's register: 0x00000000
+semaphore without callbacks: the timer start: 0x00000000
+semaphore without callbacks: the waiting threads before the signal: 0x00000001
+semaphore without callbacks: the notifies pending before the signal: 0x00000001
+semaphore without callbacks: the signal: 0x00000000
+semaphore without callbacks: runs of the callback before T's check: 0x00000000
+semaphore without callbacks: runs of the callback after T's check: 0x00000001
+semaphore without callbacks: T's wait result: 0x00000000
+timer itself: the callback's register: 0x00000000
+timer itself: the timer start: 0x00000000
+timer itself: T's wait result: 0x00000000
+timer itself: runs of the callback when T's wait returned: 0x00000001
+DONE

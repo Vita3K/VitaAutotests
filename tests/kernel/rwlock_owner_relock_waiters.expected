@@ -1,0 +1,105 @@
+recursive: the first write lock: 0x00000000
+recursive: both queued: the lock count: 0x00000001
+recursive: both queued: the write owner: 0x00000001
+recursive: both queued: the waiting readers: 0x00000001
+recursive: both queued: the waiting writers: 0x00000001
+recursive: both queued: R's wait type: 0x00000080
+recursive: both queued: W's wait type: 0x00000080
+recursive: write lock with a timeout of 0: 0x00000000
+recursive: after the write lock: the lock count: 0x00000002
+recursive: after the write lock: the write owner: 0x00000001
+recursive: after the write lock: the waiting readers: 0x00000001
+recursive: after the write lock: the waiting writers: 0x00000001
+recursive: after the write lock: R's wait type: 0x00000080
+recursive: after the write lock: W's wait type: 0x00000080
+recursive: try write lock: 0x00000000
+recursive: after the try write lock: the lock count: 0x00000003
+recursive: after the try write lock: the write owner: 0x00000001
+recursive: after the try write lock: the waiting readers: 0x00000001
+recursive: after the try write lock: the waiting writers: 0x00000001
+recursive: after the try write lock: R's wait type: 0x00000080
+recursive: after the try write lock: W's wait type: 0x00000080
+recursive: read lock with a timeout of 0: 0x800281E6
+recursive: try read lock: 0x800281E6
+recursive: after the read locks: the lock count: 0x00000003
+recursive: after the read locks: the write owner: 0x00000001
+recursive: after the read locks: the waiting readers: 0x00000001
+recursive: after the read locks: the waiting writers: 0x00000001
+recursive: after the read locks: R's wait type: 0x00000080
+recursive: after the read locks: W's wait type: 0x00000080
+recursive: first write unlock: 0x00000000
+recursive: after the first write unlock: the lock count: 0x00000002
+recursive: after the first write unlock: the write owner: 0x00000001
+recursive: after the first write unlock: the waiting readers: 0x00000001
+recursive: after the first write unlock: the waiting writers: 0x00000001
+recursive: after the first write unlock: R's wait type: 0x00000080
+recursive: after the first write unlock: W's wait type: 0x00000080
+recursive: second write unlock: 0x00000000
+recursive: after the second write unlock: the lock count: 0x00000001
+recursive: after the second write unlock: the write owner: 0x00000001
+recursive: after the second write unlock: the waiting readers: 0x00000001
+recursive: after the second write unlock: the waiting writers: 0x00000001
+recursive: after the second write unlock: R's wait type: 0x00000080
+recursive: after the second write unlock: W's wait type: 0x00000080
+recursive: third write unlock: 0x00000000
+recursive: after the third write unlock: the lock count: 0x00000001
+recursive: after the third write unlock: the write owner: 0x00000002
+recursive: after the third write unlock: the waiting readers: 0x00000001
+recursive: after the third write unlock: the waiting writers: 0x00000000
+recursive: after the third write unlock: R's wait type: 0x00000080
+recursive: after the third write unlock: W's wait type: 0x00000020
+recursive: W's lock: 0x00000000
+recursive: W's unlock: 0x00000000
+recursive: after W's unlock: the lock count: 0x00000001
+recursive: after W's unlock: the write owner: 0x00000000
+recursive: after W's unlock: the waiting readers: 0x00000000
+recursive: after W's unlock: the waiting writers: 0x00000000
+recursive: after W's unlock: R's wait type: 0x00000020
+recursive: after W's unlock: W's wait type: 0x00000000
+recursive: R's lock: 0x00000000
+recursive: R's unlock: 0x00000000
+plain: the first write lock: 0x00000000
+plain: both queued: the lock count: 0x00000001
+plain: both queued: the write owner: 0x00000001
+plain: both queued: the waiting readers: 0x00000001
+plain: both queued: the waiting writers: 0x00000001
+plain: both queued: R's wait type: 0x00000080
+plain: both queued: W's wait type: 0x00000080
+plain: write lock with a timeout of 0: 0x800281E2
+plain: try write lock: 0x800281E2
+plain: read lock with a timeout of 0: 0x800281E6
+plain: read unlock: 0x800281E7
+plain: after the owner's calls: the lock count: 0x00000001
+plain: after the owner's calls: the write owner: 0x00000001
+plain: after the owner's calls: the waiting readers: 0x00000001
+plain: after the owner's calls: the waiting writers: 0x00000001
+plain: after the owner's calls: R's wait type: 0x00000080
+plain: after the owner's calls: W's wait type: 0x00000080
+plain: write lock with a timeout of 500 ms: 0x800281E2
+plain: the timeout after the write lock is unchanged: 0x00000001
+plain: read lock with a timeout of 500 ms: 0x800281E6
+plain: the timeout after the read lock is unchanged: 0x00000001
+plain: after the timeouts: the lock count: 0x00000001
+plain: after the timeouts: the write owner: 0x00000001
+plain: after the timeouts: the waiting readers: 0x00000001
+plain: after the timeouts: the waiting writers: 0x00000001
+plain: after the timeouts: R's wait type: 0x00000080
+plain: after the timeouts: W's wait type: 0x00000080
+plain: write unlock: 0x00000000
+plain: after the write unlock: the lock count: 0x00000001
+plain: after the write unlock: the write owner: 0x00000002
+plain: after the write unlock: the waiting readers: 0x00000001
+plain: after the write unlock: the waiting writers: 0x00000000
+plain: after the write unlock: R's wait type: 0x00000080
+plain: after the write unlock: W's wait type: 0x00000020
+plain: W's lock: 0x00000000
+plain: W's unlock: 0x00000000
+plain: after W's unlock: the lock count: 0x00000001
+plain: after W's unlock: the write owner: 0x00000000
+plain: after W's unlock: the waiting readers: 0x00000000
+plain: after W's unlock: the waiting writers: 0x00000000
+plain: after W's unlock: R's wait type: 0x00000020
+plain: after W's unlock: W's wait type: 0x00000000
+plain: R's lock: 0x00000000
+plain: R's unlock: 0x00000000
+DONE

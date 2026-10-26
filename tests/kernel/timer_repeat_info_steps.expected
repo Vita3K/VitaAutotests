@@ -1,0 +1,40 @@
+set a repeating set event of 2 s: 0x00000000
+before the start: the info call: 0x00000000
+before the start: active: 0x00000000
+before the start: the repeat setting: 0x00000001
+before the start: the schedule is the interval: 0x00000001
+before the start: the base time equals the current time: 0x00000001
+start the timer: 0x00000000
+the first wait: 0x00000000
+the first wait returned over 1.5 s and under 2.5 s: 0x00000001
+after the first fire: the info call: 0x00000000
+after the first fire: active: 0x00000001
+after the first fire: the schedule is within 3.75 to 4.25 s: 0x00000001
+after the first fire: the remaining time call: 0x00000000
+after the first fire: the remaining time plus the current time is the schedule: 0x00000001
+after the first fire: the remaining time is over 0 and at most the interval: 0x00000001
+stop the timer 0.5 s after the fire: 0x00000001
+after the stop: the info call: 0x00000000
+after the stop: active: 0x00000000
+after the stop: the schedule is unchanged: 0x00000001
+after the stop: the base time equals the current time: 0x00000001
+after the stop: the remaining time call: 0x00000000
+after the stop: the remaining time plus the current time is the schedule exactly: 0x00000001
+after the stop: the remaining time is within 1.25 to 1.75 s: 0x00000001
+a poll 2 s after the stop: 0x80028202
+start the timer again: 0x00000000
+the second wait: 0x00000000
+the second wait returned over 1 s and under 1.75 s: 0x00000001
+the third wait: 0x00000000
+the third wait returned over 1.5 s and under 2.5 s: 0x00000001
+after the third fire: the info call: 0x00000000
+after the third fire: the schedule is within 7.75 to 8.25 s: 0x00000001
+cancel the timer: 0x00000000
+after the cancel: the info call: 0x00000000
+after the cancel: active: 0x00000001
+after the cancel: the repeat setting: 0x00000000
+after the cancel: the interval is the one set: 0x00000001
+after the cancel: the schedule is 0: 0x00000001
+after the cancel: the schedule is within 7.75 to 8.25 s: 0x00000000
+the wait 2.5 s after the cancel: 0x80028005
+DONE

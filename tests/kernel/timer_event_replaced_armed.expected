@@ -1,0 +1,34 @@
+later: the set of the first event, a one shot of 1.5 s: 0x00000000
+later: start: 0x00000000
+later: the set of the replacement, a one shot of 3 s, at 0.5 s: 0x00000000
+later: the wait with a 5 s timeout: 0x00000000
+later: it returned over 2 s after the set: 0x00000001
+later: it returned under 4 s after the set: 0x00000001
+repeat: the set of a repeating event of 1 s: 0x00000000
+repeat: start: 0x00000000
+repeat: the first wait with a 3 s timeout: 0x00000000
+repeat: the set of a one shot event of 1.5 s, after the first wait: 0x00000000
+repeat: the info call: 0x00000000
+repeat: the info repeat setting: 0x00000000
+repeat: the info interval is 1.5 s: 0x00000001
+repeat: the second wait with a 3 s timeout: 0x00000000
+repeat: it returned over 1.25 s after the set: 0x00000001
+repeat: it returned under 2 s after the set: 0x00000001
+repeat: the third wait with a 2.5 s timeout: 0x80028005
+set to pulse: the set of a one shot set event of 1 s: 0x00000000
+set to pulse: start: 0x00000000
+set to pulse: the set of a one shot pulse of 1 s, at 0.5 s: 0x00000000
+set to pulse: the info call: 0x00000000
+set to pulse: the info type: 0x00000001
+set to pulse: the wait with a 3 s timeout: 0x00000000
+set to pulse: the bit the wait got: 0x00008000
+set to pulse: a poll right after the wait: 0x80028202
+pulse to set: the set of a one shot pulse of 1 s: 0x00000000
+pulse to set: start: 0x00000000
+pulse to set: the set of a one shot set event of 1 s, at 0.5 s: 0x00000000
+pulse to set: the info call: 0x00000000
+pulse to set: the info type: 0x00000000
+pulse to set: the wait with a 3 s timeout: 0x00000000
+pulse to set: the bit the wait got: 0x00008000
+pulse to set: a poll right after the wait: 0x00000000
+DONE
