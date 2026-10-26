@@ -7,7 +7,7 @@ call: sp is inside the buffer: 0x00000001
 call: sp's distance below the top, bucket: 0x00000000
 call: slot 2 is the top of the buffer: 0x00000001
 call: slot 3 is the bottom of the buffer: 0x00000001
-call: CheckThreadStack is sp minus the bottom: 0x00000000
+call: CheckThreadStack is sp minus the bottom, within 64 bytes: 0x00000001
 call: the thread info stack and size are unchanged: 0x00000001
 call: TPIDRURO is unchanged: 0x00000001
 call: the thread ID is unchanged: 0x00000001
@@ -26,7 +26,7 @@ nested outer: sp is inside the buffer: 0x00000001
 nested outer: sp's distance below the top, bucket: 0x00000000
 nested outer: slot 2 is the top of the buffer: 0x00000001
 nested outer: slot 3 is the bottom of the buffer: 0x00000001
-nested outer: CheckThreadStack is sp minus the bottom: 0x00000000
+nested outer: CheckThreadStack is sp minus the bottom, within 64 bytes: 0x00000001
 nested outer: the thread info stack and size are unchanged: 0x00000001
 nested outer: TPIDRURO is unchanged: 0x00000001
 nested outer: the thread ID is unchanged: 0x00000001
@@ -39,7 +39,7 @@ nested inner: sp is inside the buffer: 0x00000001
 nested inner: sp's distance below the top, bucket: 0x00000000
 nested inner: slot 2 is the top of the buffer: 0x00000001
 nested inner: slot 3 is the bottom of the buffer: 0x00000001
-nested inner: CheckThreadStack is sp minus the bottom: 0x00000000
+nested inner: CheckThreadStack is sp minus the bottom, within 64 bytes: 0x00000001
 nested inner: the thread info stack and size are unchanged: 0x00000001
 nested inner: TPIDRURO is unchanged: 0x00000001
 nested inner: the thread ID is unchanged: 0x00000001

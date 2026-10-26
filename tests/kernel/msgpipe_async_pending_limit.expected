@@ -6,7 +6,7 @@ the pending receives: wait for the event: 0x00000000
 the pending receives: the event's bits: 0x00000002
 the pending receives: the low half of its user data: 0x00000000
 the pending receives: the high half of its user data: 0x00000004
-pending receives that got 4 bytes: 0x00000000
+pending receives whose buffer got 4 bytes, as many as returned 0: 0x00000001
 one more DONT_WAIT FULL receive of 4: 0x00000000
 the send that ends it: 0x00000000
 DONE

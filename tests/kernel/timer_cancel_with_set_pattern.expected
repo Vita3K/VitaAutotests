@@ -8,4 +8,14 @@ the pattern after is the set pattern: 0x00000000
 the user data after is the given one: 0x00000000
 the timer's active flag: 0x00000001
 a poll for 0x8000: 0x80028202
+cancel and set, user bit only: 0x00000000
+the waiting count, user bit only: 0x00000001
+the waiter's result, user bit only: 0x80028007
+the waiter's result pattern, user bit only: 0x00000010
+the waiter's user data, low word, user bit only: 0x00000000
+the waiter's user data, high word, user bit only: 0x00000000
+the pattern after is the set pattern, user bit only: 0x00000001
+the user data after is the given one, user bit only: 0x00000001
+the timer's active flag, user bit only: 0x00000001
+a poll for 0x8000, user bit only: 0x80028202
 DONE

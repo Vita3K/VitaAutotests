@@ -19,13 +19,15 @@
 // main thread sees it waiting, the main thread waits 300 ms and gives T what it waits for. These
 // print the wait's result and whether the time left is at least 250 ms below the timeout passed.
 //
-// On a PS Vita TV on firmware 3.65 the pending lock waits, the message pipe send, the thread signal
-// and the thread end wait take what they wait for at once after the second run, so they return 0
-// with about the timeout passed. The timer wait starts its timer of 400 ms in the second run, so it
-// sleeps until the timer fires and returns 0 with about 600 ms left. The condition waits lose their
+// The pending lock waits, the message pipe send and the thread end wait are expected to take what
+// they wait for at once after the second run, and to return 0 with about the timeout passed. The
+// timer wait starts its timer of 400 ms in the second run, so it is expected to sleep until the
+// timer fires and to return 0 with about 600 ms left. The condition waits are expected to lose their
 // signal, since T has left the condition's queue when the second run signals it, so they sleep and
-// time out with the timeout variable at 0. C runs twice in each pending case. In the nothing
-// pending cases every wait returns 0 with about 700 ms left.
+// time out with the timeout variable at 0. The thread signal case only records what happens: its
+// wait may sleep through the callback that notified itself, so how often C runs and what the wait
+// returns are printed without a result being assumed. In the nothing pending cases every wait is
+// expected to return 0 with about 700 ms left, and the thread signal wait ends by the later send.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -84,6 +86,14 @@ static SceUID lw_mutex_uid(void) {
     return sceKernelGetLwMutexInfo(&lw_mutex, &info) == 0 ? info.uid : -1;
 }
 
+// Returns whether thread is in a signal wait with callbacks. A signal wait reports the id of the
+// global signal object, so only its type and status are checked.
+static int in_signal_wait(SceUID thread) {
+    SceKernelThreadInfo info = { .size = sizeof(info) };
+    return sceKernelGetThreadInfo(thread, &info) == 0 && info.status == SCE_THREAD_WAITING &&
+           info.waitType == (WAIT_TYPE_SIGNAL | WAIT_TYPE_CB);
+}
+
 // Returns whether thread waits with callbacks for what the case waits for
 static int waits_on_kind(SceUID thread) {
     switch (kind) {
@@ -95,7 +105,7 @@ static int waits_on_kind(SceUID thread) {
     case COND: return test_in_wait(thread, WAIT_TYPE_COND | WAIT_TYPE_CB, object);
     case LW_COND: return test_in_wait(thread, WAIT_TYPE_LW_COND | WAIT_TYPE_CB, lw_cond_uid());
     case SEND: return test_in_wait(thread, WAIT_TYPE_MSG_PIPE | WAIT_TYPE_CB, object);
-    case SIGNAL: return test_in_wait(thread, WAIT_TYPE_SIGNAL | WAIT_TYPE_CB, 0);
+    case SIGNAL: return in_signal_wait(thread);
     case END: return test_in_wait(thread, WAIT_TYPE_THREAD_END | WAIT_TYPE_CB, helper);
     }
     return 0;

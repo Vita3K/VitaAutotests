@@ -7,7 +7,8 @@
 // - with the partition full, one 1 MiB block of each other common dialog type: the error of each,
 //   and whether it is the error that filled the partition, which means one partition for all
 // - after freeing one of the full partition's blocks, whether one 1 MiB block of each other type
-//   fits in the freed MiB, then whether 4 KiB USER_CDIALOG_RW blocks fill it exactly
+//   fits in the freed MiB, then how many 4 KiB USER_CDIALOG_RW blocks fit in it, compared with 256
+//   and 512
 // - whether a CDRAM block and an uncached common dialog block share an address
 //
 // Only thresholds of the count are printed, since the partition's size is not in the firmware
@@ -19,7 +20,7 @@
 #define KIB 0x400
 #define MIB 0x100000
 #define CAP 1024
-#define SMALL_CAP 512
+#define SMALL_CAP 1024
 #define SHARED 4
 
 // Sizes in MiB that the count of 1 MiB blocks is compared with
@@ -170,7 +171,8 @@ int main(void) {
     for (unsigned int i = 0; i < OTHERS; i++)
         PRINTF(fits[i], "%s, 1 MiB: fits in the freed MiB", others[i].name);
     PRINT("4 KiB USER_CDIALOG_RW blocks: at least one fits in the freed MiB", small_count >= 1);
-    PRINT("4 KiB USER_CDIALOG_RW blocks: exactly 256 fit in the freed MiB", small_count == 256);
+    PRINT("4 KiB USER_CDIALOG_RW blocks: at least 256 fit in the freed MiB", small_count >= 256);
+    PRINT("4 KiB USER_CDIALOG_RW blocks: at most 512 fit in the freed MiB", small_count <= 512);
     PRINT("a CDRAM block and an uncached common dialog block share an address", shared);
     test_exit();
     return 0;

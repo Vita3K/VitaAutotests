@@ -9,9 +9,11 @@
 // - opening "dup" with 0x10, and whether it maps the first block by the word in it
 // The main, CDRAM and physically contiguous free sizes are measured right before and after each
 // refused block, the way app_free_sizes does for main memory and CDRAM, and physically contiguous
-// memory as reported. Every block that is made is freed at the end. memblock_open_names covers
-// two ENABLE_OPEN USER_RW blocks with one name, this test adds a CDRAM block and the names that
-// differ only after their 31st character.
+// memory as reported. Each refused block prints whether the main, the CDRAM and the physically
+// contiguous size is unchanged, one line each. Every block that is made is freed at the end, and a
+// last check measures the three sizes again and compares them with the ones at the start.
+// memblock_open_names covers two ENABLE_OPEN USER_RW blocks with one name, this test adds a CDRAM
+// block and the names that differ only after their 31st character.
 #include <psp2/kernel/sysmem.h>
 
 #include "test.h"
@@ -102,7 +104,7 @@ static SceUID make(const char *name, SceUInt32 word) {
 }
 
 // Tries a block with ENABLE_OPEN of the type and size, which the name refuses,
-// and prints its result and whether the free sizes are unchanged around the try
+// and prints its result and whether each of the free sizes is unchanged around the try
 static void refused(const char *label, const char *name, SceUInt32 type, SceSize size) {
     AllocOpt opt = { .size = sizeof(opt), .attr = ENABLE_OPEN };
     const Sizes before = measure_all();
@@ -110,7 +112,10 @@ static void refused(const char *label, const char *name, SceUInt32 type, SceSize
         sceKernelAllocMemBlock(name, type, size, (SceKernelAllocMemBlockOpt *)&opt);
     const Sizes after = measure_all();
     PRINTF(test_created(block), "%s: make it", label);
-    PRINTF(same_sizes(&before, &after), "%s: the free sizes are unchanged", label);
+    PRINTF(before.main == after.main, "%s: the main free size is unchanged", label);
+    PRINTF(before.cdram == after.cdram, "%s: the CDRAM free size is unchanged", label);
+    PRINTF(before.phycont == after.phycont, "%s: the physically contiguous free size is unchanged",
+           label);
     if (block >= 0)
         sceKernelFreeMemBlock(block);
 }
@@ -130,6 +135,7 @@ static void open_first(void) {
 int main(void) {
     // The first measures only warm up
     measure_all();
+    const Sizes start = measure_all();
 
     const SceUID first = make(NAME, FIRST_WORD);
     PRINT("a 64 KiB USER_RW block named dup: make it", test_created(first));
@@ -150,6 +156,8 @@ int main(void) {
         PRINT("free the 31 character block", sceKernelFreeMemBlock(named_31));
     if (first >= 0)
         PRINT("free the dup block", sceKernelFreeMemBlock(first));
+    const Sizes end = measure_all();
+    PRINT("all three free sizes are back to their start values", same_sizes(&start, &end));
     test_exit();
     return 0;
 }
