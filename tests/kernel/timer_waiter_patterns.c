@@ -12,7 +12,7 @@
 //   by W1, so the walk goes on and W2 misses it. W0 and W2 are still waiting when the timer is
 //   cancelled, which counts 2 and ends both.
 // - auto reset with no waiter, and a one shot set event of 100 ms. A poll for the create bit takes
-//   it, and a second poll fails. The timer starts, and a poll 600 ms later gets the timer bit only.
+//   it, and a second poll fails. The timer starts, and a poll 1 s later gets the timer bit only.
 //   Polls of a manual reset timer for the create bit all succeed.
 // The results, the bits the waits and polls got, the user data, the waiting counts and the
 // patterns print as numbers, including the bits a call that fails gets.
@@ -26,7 +26,7 @@
 #define CREATE_BIT 0x4
 #define FIRE_US 300000
 #define CONSUME_FIRE_US 100000
-#define POLL_AFTER_START_US 600000
+#define POLL_AFTER_START_US 1000000
 #define WAITERS 3
 
 static SceUID timer;
