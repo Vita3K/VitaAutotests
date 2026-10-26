@@ -1,0 +1,9 @@
+A: set its time to 1.5 s while stopped: 0x00000000
+A: start: 0x00000000
+A: the wait for its event with a 3.25 s timeout: 0x00000000
+A: it returned within 3 s: 0x00000001
+B: set its time to 5 s while stopped: 0x00000000
+B: start: 0x00000000
+B: the wait for its event with a 1 s timeout: 0x00000000
+B: it returned within 500 ms: 0x00000001
+DONE

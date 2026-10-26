@@ -1,0 +1,35 @@
+Thumb, nothing between: the strex result: 0x00000000
+Thumb, nothing between: the word after: 0x22222222
+Thumb, a clrex between: the strex result: 0x00000001
+Thumb, a clrex between: the word after: 0x11111111
+Thumb, a PollSema call between: the PollSema result: 0x00000000
+Thumb, a PollSema call between: the strex result: 0x00000001
+Thumb, a PollSema call between: the word after: 0x11111111
+Thumb, a 1 ms delay between, with another thread on the core: the other thread's strex result: 0x00000000
+Thumb, a 1 ms delay between, with another thread on the core: the strex result: 0x00000001
+Thumb, a 1 ms delay between, with another thread on the core: the word after: 0x33333333
+Thumb, a callback run by CheckCallback between: the callback runs: 0x00000001
+Thumb, a callback run by CheckCallback between: the callback's strex result: 0x00000000
+Thumb, a callback run by CheckCallback between: the strex result: 0x00000001
+Thumb, a callback run by CheckCallback between: the word after: 0x11111111
+Thumb, a preemption between, by a higher priority thread: H ran during L's spin: 0x00000001
+Thumb, a preemption between, by a higher priority thread: the strex result: 0x00000001
+Thumb, a preemption between, by a higher priority thread: the word after: 0x11111111
+ARM, nothing between: the strex result: 0x00000000
+ARM, nothing between: the word after: 0x22222222
+ARM, a clrex between: the strex result: 0x00000001
+ARM, a clrex between: the word after: 0x11111111
+ARM, a PollSema call between: the PollSema result: 0x00000000
+ARM, a PollSema call between: the strex result: 0x00000001
+ARM, a PollSema call between: the word after: 0x11111111
+ARM, a 1 ms delay between, with another thread on the core: the other thread's strex result: 0x00000000
+ARM, a 1 ms delay between, with another thread on the core: the strex result: 0x00000001
+ARM, a 1 ms delay between, with another thread on the core: the word after: 0x33333333
+ARM, a callback run by CheckCallback between: the callback runs: 0x00000001
+ARM, a callback run by CheckCallback between: the callback's strex result: 0x00000000
+ARM, a callback run by CheckCallback between: the strex result: 0x00000001
+ARM, a callback run by CheckCallback between: the word after: 0x11111111
+ARM, a preemption between, by a higher priority thread: H ran during L's spin: 0x00000001
+ARM, a preemption between, by a higher priority thread: the strex result: 0x00000001
+ARM, a preemption between, by a higher priority thread: the word after: 0x11111111
+DONE

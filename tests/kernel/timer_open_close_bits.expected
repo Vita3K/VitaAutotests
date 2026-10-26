@@ -1,0 +1,25 @@
+create the timer: 0x00000000
+the pattern after the create: 0x00000004
+open the timer by name: 0x00000000
+the wait for the open bit: 0x00000000
+the wait for the open bit, the bits it got: 0x00000100
+the wait for the open bit: the high word of the user data is the main thread's UID: 0x00000001
+the wait for the open bit: the low word of the user data is the process ID: 0x00000001
+the pattern after the open: 0x00000104
+close the opened UID: 0x00000000
+the wait for the close bit: 0x00000000
+the wait for the close bit, the bits it got: 0x00000200
+the wait for the close bit: the high word of the user data is the main thread's UID: 0x00000001
+the wait for the close bit: the low word of the user data is the process ID: 0x00000001
+the pattern after the close: 0x00000304
+the poll for the close bit: poll for 0x200: 0x00000000
+the poll for the close bit: poll for 0x200, the bits it got: 0x00000200
+the poll for the close bit: the high word of the user data is the main thread's UID: 0x00000001
+the poll for the close bit: the low word of the user data is the process ID: 0x00000001
+the poll for the close bit: the pattern after the poll for 0x200: 0x00000304
+the poll for the open bit: poll for 0x100: 0x00000000
+the poll for the open bit: poll for 0x100, the bits it got: 0x00000100
+the poll for the open bit: the high word of the user data is the main thread's UID: 0x00000001
+the poll for the open bit: the low word of the user data is the process ID: 0x00000001
+the poll for the open bit: the pattern after the poll for 0x100: 0x00000304
+DONE

@@ -1,0 +1,5 @@
+T at 0x70, spinner on core 0, core 1 idle: T ran within 300 ms of the signal: 0x00000001
+T at 0x70, spinner on core 0, core 1 idle: the core T ran on: 0x00000001
+T at 0xA0, spinner on core 0, core 1 idle: T ran within 300 ms of the signal: 0x00000001
+T at 0xA0, spinner on core 0, core 1 idle: the core T ran on: 0x00000001
+DONE

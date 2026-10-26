@@ -1,0 +1,38 @@
+a: the cancel to 0: 0x00000000
+a: the waiting threads the cancel wrote: 0x00000000
+a: W's wait type after the cancel: 0x00000100
+a: the condition's waiters after the cancel: 0x00000001
+a: the mutex has an owner after the cancel: 0x00000000
+a: W's wait result: 0x00000000
+a: W's unlock: 0x00000000
+b: the cancel to 1: 0x00000000
+b: the waiting threads the cancel wrote: 0x00000000
+b: W's wait type after the cancel: 0x00000100
+b: the condition's waiters after the cancel: 0x00000001
+b: main owns the mutex after the cancel: 0x00000001
+b: the count after the cancel: 0x00000001
+b: W's wait type after the signal: 0x00000200
+b: W's wait result: 0x00000000
+b: W's unlock: 0x00000000
+c: W owns the recursive mutex during its wait: 0x00000001
+c: the count during the wait: 0x00000001
+c: the cancel to 0: 0x00000000
+c: the waiting threads the cancel wrote: 0x00000000
+c: the mutex has no owner after the cancel: 0x00000001
+c: the count after the cancel: 0x00000000
+c: W's wait result: 0x00000000
+c: the count W has after its relock: 0x00000001
+c: W's first unlock: 0x00000000
+c: W's second unlock: 0x80028146
+d: W owns the recursive mutex during its wait: 0x00000001
+d: the count during the wait: 0x00000001
+d: the cancel to 1: 0x00000000
+d: the waiting threads the cancel wrote: 0x00000000
+d: main owns the mutex after the cancel: 0x00000001
+d: the count after the cancel: 0x00000001
+d: W's wait type after the signal: 0x00000200
+d: W's wait result: 0x00000000
+d: the count W has after its relock: 0x00000001
+d: W's first unlock: 0x00000000
+d: W's second unlock: 0x80028146
+DONE

@@ -1,0 +1,13 @@
+both at 0x70: the signal: 0x00000000
+both at 0x70: the waiter's result: 0x00000000
+both at 0x70: steps recorded: 0x00000003
+both at 0x70: step 0: 0x00000000
+both at 0x70: step 1: 0x00000002
+both at 0x70: step 2: 0x00000001
+both at 0xA0: the signal: 0x00000000
+both at 0xA0: the waiter's result: 0x00000000
+both at 0xA0: steps recorded: 0x00000003
+both at 0xA0: step 0: 0x00000000
+both at 0xA0: step 1: 0x00000002
+both at 0xA0: step 2: 0x00000001
+DONE

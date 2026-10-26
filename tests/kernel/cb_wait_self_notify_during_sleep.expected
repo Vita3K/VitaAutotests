@@ -1,0 +1,37 @@
+delay with callbacks: runs of the callback when T waits again: 0x00000002
+delay with callbacks: T waits with callbacks again: 0x00000001
+delay with callbacks: the result: 0x00000000
+delay with callbacks: it returned before 1 s: 0x00000000
+delay with callbacks: the result of sceKernelCheckCallback: 0x00000000
+delay with callbacks: runs of the callback after the check: 0x00000002
+delay with callbacks, 200 variant: runs of the callback when T waits again: 0x00000002
+delay with callbacks, 200 variant: T waits with callbacks again: 0x00000001
+delay with callbacks, 200 variant: the result: 0x00000000
+delay with callbacks, 200 variant: it returned before 1 s: 0x00000000
+delay with callbacks, 200 variant: the result of sceKernelCheckCallback: 0x00000000
+delay with callbacks, 200 variant: runs of the callback after the check: 0x00000002
+signal wait with callbacks: runs of the callback when T waits again: 0x00000001
+signal wait with callbacks: T waits with callbacks again: 0x00000001
+signal wait with callbacks: the result: 0x00000000
+signal wait with callbacks: it returned before 1 s: 0x00000001
+signal wait with callbacks: the result of sceKernelCheckCallback: 0x00000001
+signal wait with callbacks: runs of the callback after the check: 0x00000002
+thread end wait with callbacks: runs of the callback when T waits again: 0x00000002
+thread end wait with callbacks: T waits with callbacks again: 0x00000001
+thread end wait with callbacks: the result: 0x00000000
+thread end wait with callbacks: it returned before 1 s: 0x00000001
+thread end wait with callbacks: the result of sceKernelCheckCallback: 0x00000000
+thread end wait with callbacks: runs of the callback after the check: 0x00000002
+signal wait with callbacks and no timeout: runs of the callback when T waits again: 0x00000001
+signal wait with callbacks and no timeout: T waits with callbacks again: 0x00000001
+signal wait with callbacks and no timeout: the result: 0x00000000
+signal wait with callbacks and no timeout: it returned before 1 s: 0x00000001
+signal wait with callbacks and no timeout: the result of sceKernelCheckCallback: 0x00000001
+signal wait with callbacks and no timeout: runs of the callback after the check: 0x00000002
+thread end wait with callbacks and no timeout: runs of the callback when T waits again: 0x00000002
+thread end wait with callbacks and no timeout: T waits with callbacks again: 0x00000001
+thread end wait with callbacks and no timeout: the result: 0x00000000
+thread end wait with callbacks and no timeout: it returned before 1 s: 0x00000001
+thread end wait with callbacks and no timeout: the result of sceKernelCheckCallback: 0x00000000
+thread end wait with callbacks and no timeout: runs of the callback after the check: 0x00000002
+DONE

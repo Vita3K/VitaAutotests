@@ -1,0 +1,25 @@
+signal to A: the call: 0x00000000
+signal to A: the waiting threads: 0x00000002
+signal to A: waiter A's wait type: 0x00000200
+signal to A: waiter B's wait type: 0x00000100
+signal to A: waiter C's wait type: 0x00000100
+plain signal: the call: 0x00000000
+plain signal: the waiting threads: 0x00000001
+plain signal: waiter A's wait type: 0x00000200
+plain signal: waiter B's wait type: 0x00000200
+plain signal: waiter C's wait type: 0x00000100
+signal to all: the call: 0x00000000
+signal to all: the waiting threads: 0x00000000
+signal to all: waiter A's wait type: 0x00000200
+signal to all: waiter B's wait type: 0x00000200
+signal to all: waiter C's wait type: 0x00000200
+signal to A again: the call: 0x80028022
+signal to A again: the waiting threads: 0x00000000
+signal to A again: waiter A's wait type: 0x00000200
+signal to A again: waiter B's wait type: 0x00000200
+signal to A again: waiter C's wait type: 0x00000200
+the order the waiters get the mutex in: 0x00000123
+waiter A's wait result: 0x00000000
+waiter B's wait result: 0x00000000
+waiter C's wait result: 0x00000000
+DONE

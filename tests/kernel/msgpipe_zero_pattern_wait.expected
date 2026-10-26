@@ -1,0 +1,22 @@
+timeout: the wait: 0x80028005
+timeout: the result pattern: 0x00000000
+timeout: the user data, low word: 0x00000000
+timeout: the user data, high word: 0x00000000
+timeout: it took at least 300 ms: 0x00000001
+cancel: the cancel: 0x00000000
+cancel: the senders the cancel counted: 0x00000000
+cancel: the receivers the cancel counted: 0x00000000
+cancel: the waiter waits on the pipe: 0x00000001
+cancel: the wait: 0x80028005
+cancel: the result pattern: 0x00000000
+cancel: the user data, low word: 0x00000000
+cancel: the user data, high word: 0x00000000
+cancel: the waiter returned within 500 ms of the cancel: 0x00000000
+delete: the delete: 0x00000000
+delete: the waiter waits on the pipe: 0x00000001
+delete: the wait: 0x80028006
+delete: the result pattern: 0x00000010
+delete: the user data, low word: 0x00000000
+delete: the user data, high word: 0x00000000
+delete: the waiter returned within 2.5 s of the delete: 0x00000001
+DONE

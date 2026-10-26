@@ -1,0 +1,23 @@
+heavy: the signal: 0x00000000
+heavy: the notify: 0x00000000
+heavy: T's status right after the notify: 0x00000002
+heavy: T's wait type right after the notify: 0x00000000
+heavy: the mutex's waiters right after the notify: 0x00000000
+heavy: the condition's waiters right after the notify: 0x00000000
+heavy: SignalCondTo(T) right after the notify: 0x80028022
+heavy: the main thread's unlock: 0x00000000
+heavy: T's wait: 0x00000000
+heavy: runs of the callback when the wait returned: 0x00000001
+heavy: T owns the mutex after the wait: 0x00000001
+lightweight: the signal: 0x00000000
+lightweight: the notify: 0x00000000
+lightweight: T's status right after the notify: 0x00000002
+lightweight: T's wait type right after the notify: 0x00000000
+lightweight: the mutex's waiters right after the notify: 0x00000000
+lightweight: the condition's waiters right after the notify: 0x00000000
+lightweight: SignalCondTo(T) right after the notify: 0x80028022
+lightweight: the main thread's unlock: 0x00000000
+lightweight: T's wait: 0x00000000
+lightweight: runs of the callback when the wait returned: 0x00000001
+lightweight: T owns the mutex after the wait: 0x00000001
+DONE

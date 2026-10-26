@@ -1,0 +1,58 @@
+multiple events OR, listed simple event deleted: delete with 2 waiters: 0x00000000
+multiple events OR, listed simple event deleted: the plain waiter: 0x00000001
+multiple events OR, listed simple event deleted: the time left of the plain waiter: 0x00000001
+multiple events OR, listed simple event deleted: entry 0 of the plain waiter is for: 0x00000001
+multiple events OR, listed simple event deleted: entry 0 of the plain waiter: 0x80028006
+multiple events OR, listed simple event deleted: the waiter with callbacks: 0x00000001
+multiple events OR, listed simple event deleted: the time left of the waiter with callbacks: 0x00000001
+multiple events OR, listed simple event deleted: entry 0 of the waiter with callbacks is for: 0x00000001
+multiple events OR, listed simple event deleted: entry 0 of the waiter with callbacks: 0x80028006
+multiple events AND, listed simple event deleted: delete with 2 waiters: 0x00000000
+multiple events AND, listed simple event deleted: the plain waiter still waits after it: 0x00000001
+multiple events AND, listed simple event deleted: the waiter with callbacks still waits after it: 0x00000001
+multiple events AND, listed simple event deleted: delete the second event: 0x00000000
+multiple events AND, listed simple event deleted: the plain waiter: 0x00000002
+multiple events AND, listed simple event deleted: the time left of the plain waiter: 0x00000001
+multiple events AND, listed simple event deleted: entry 0 of the plain waiter is for: 0x00000001
+multiple events AND, listed simple event deleted: entry 0 of the plain waiter: 0x80028006
+multiple events AND, listed simple event deleted: entry 1 of the plain waiter is for: 0x00000002
+multiple events AND, listed simple event deleted: entry 1 of the plain waiter: 0x80028006
+multiple events AND, listed simple event deleted: the waiter with callbacks: 0x00000002
+multiple events AND, listed simple event deleted: the time left of the waiter with callbacks: 0x00000001
+multiple events AND, listed simple event deleted: entry 0 of the waiter with callbacks is for: 0x00000001
+multiple events AND, listed simple event deleted: entry 0 of the waiter with callbacks: 0x80028006
+multiple events AND, listed simple event deleted: entry 1 of the waiter with callbacks is for: 0x00000002
+multiple events AND, listed simple event deleted: entry 1 of the waiter with callbacks: 0x80028006
+multiple events OR, listed timer deleted: delete with 2 waiters: 0x00000000
+multiple events OR, listed timer deleted: the plain waiter: 0x00000001
+multiple events OR, listed timer deleted: the time left of the plain waiter: 0x00000001
+multiple events OR, listed timer deleted: entry 0 of the plain waiter is for: 0x00000001
+multiple events OR, listed timer deleted: entry 0 of the plain waiter: 0x80028006
+multiple events OR, listed timer deleted: the waiter with callbacks: 0x00000001
+multiple events OR, listed timer deleted: the time left of the waiter with callbacks: 0x00000001
+multiple events OR, listed timer deleted: entry 0 of the waiter with callbacks is for: 0x00000001
+multiple events OR, listed timer deleted: entry 0 of the waiter with callbacks: 0x80028006
+multiple events AND, listed timer deleted: delete with 2 waiters: 0x00000000
+multiple events AND, listed timer deleted: the plain waiter still waits after it: 0x00000001
+multiple events AND, listed timer deleted: the waiter with callbacks still waits after it: 0x00000001
+multiple events AND, listed timer deleted: delete the second event: 0x00000000
+multiple events AND, listed timer deleted: the plain waiter: 0x00000002
+multiple events AND, listed timer deleted: the time left of the plain waiter: 0x00000001
+multiple events AND, listed timer deleted: entry 0 of the plain waiter is for: 0x00000001
+multiple events AND, listed timer deleted: entry 0 of the plain waiter: 0x80028006
+multiple events AND, listed timer deleted: entry 1 of the plain waiter is for: 0x00000002
+multiple events AND, listed timer deleted: entry 1 of the plain waiter: 0x80028006
+multiple events AND, listed timer deleted: the waiter with callbacks: 0x00000002
+multiple events AND, listed timer deleted: the time left of the waiter with callbacks: 0x00000001
+multiple events AND, listed timer deleted: entry 0 of the waiter with callbacks is for: 0x00000001
+multiple events AND, listed timer deleted: entry 0 of the waiter with callbacks: 0x80028006
+multiple events AND, listed timer deleted: entry 1 of the waiter with callbacks is for: 0x00000002
+multiple events AND, listed timer deleted: entry 1 of the waiter with callbacks: 0x80028006
+thread end, thread deleted after it ends: delete with 2 waiters: 0x00000000
+thread end, thread deleted after it ends: the plain waiter: 0x00000000
+thread end, thread deleted after it ends: the time left of the plain waiter: 0x00000001
+thread end, thread deleted after it ends: the exit status the plain waiter got: 0x0000003C
+thread end, thread deleted after it ends: the waiter with callbacks: 0x00000000
+thread end, thread deleted after it ends: the time left of the waiter with callbacks: 0x00000001
+thread end, thread deleted after it ends: the exit status the waiter with callbacks got: 0x0000003C
+DONE

@@ -1,0 +1,58 @@
+a, after the signal: W is in a wait: 0x00000000
+a, after the signal: W is ready or on standby: 0x00000001
+a, after the signal: W's wait type: 0x00000000
+a, after the signal: the condition's waiters: 0x00000000
+a, after the signal: the mutex's waiters: 0x00000001
+a: W owns the mutex after the unlock: 0x00000000
+a: L owns the mutex after the unlock: 0x00000001
+a: the order the mutex went in: 0x00000021
+a: W's wait result: 0x00000000
+a: L's lock result: 0x00000000
+b, after the signal: W is in a wait: 0x00000000
+b, after the signal: W is ready or on standby: 0x00000001
+b, after the signal: W's wait type: 0x00000000
+b, after the signal: the condition's waiters: 0x00000000
+b, after the signal: the mutex's waiters: 0x00000001
+b, after the report: W is in a wait: 0x00000001
+b, after the report: W is ready or on standby: 0x00000000
+b, after the report: W's wait type: 0x00000200
+b, after the report: the condition's waiters: 0x00000000
+b, after the report: the mutex's waiters: 0x00000002
+b: W owns the mutex after the unlock: 0x00000001
+b: L owns the mutex after the unlock: 0x00000000
+b: the order the mutex went in: 0x00000001
+b: W's wait result: 0x00000000
+b: L's lock result: 0x80028005
+c, after the signal: W is in a wait: 0x00000000
+c, after the signal: W is ready or on standby: 0x00000001
+c, after the signal: W's wait type: 0x00000000
+c, after the signal: the condition's waiters: 0x00000000
+c, after the signal: the mutex's waiters: 0x00000001
+c: the raise of W: 0x00000000
+c, after the report: W is in a wait: 0x00000001
+c, after the report: W is ready or on standby: 0x00000000
+c, after the report: W's wait type: 0x00000200
+c, after the report: the condition's waiters: 0x00000000
+c, after the report: the mutex's waiters: 0x00000002
+c: W owns the mutex after the unlock: 0x00000001
+c: L owns the mutex after the unlock: 0x00000000
+c: the order the mutex went in: 0x00000001
+c: W's wait result: 0x00000000
+c: L's lock result: 0x80028005
+d, after the signal: W is in a wait: 0x00000000
+d, after the signal: W is ready or on standby: 0x00000001
+d, after the signal: W's wait type: 0x00000000
+d, after the signal: the condition's waiters: 0x00000000
+d, after the signal: the mutex's waiters: 0x00000001
+d: the lower of W: 0x00000000
+d, after the report: W is in a wait: 0x00000001
+d, after the report: W is ready or on standby: 0x00000000
+d, after the report: W's wait type: 0x00000200
+d, after the report: the condition's waiters: 0x00000000
+d, after the report: the mutex's waiters: 0x00000002
+d: W owns the mutex after the unlock: 0x00000000
+d: L owns the mutex after the unlock: 0x00000001
+d: the order the mutex went in: 0x00000021
+d: W's wait result: 0x00000000
+d: L's lock result: 0x00000000
+DONE

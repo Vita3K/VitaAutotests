@@ -1,0 +1,51 @@
+heavy, delete the condition: W's status once its timeout passed: 0x00000002
+heavy, delete the condition: W's wait type once its timeout passed: 0x00000000
+heavy, delete the condition: the condition's waiters: 0x00000000
+heavy, delete the condition: the mutex's waiters: 0x00000000
+heavy, delete the condition: W owns the mutex once its timeout passed: 0x00000000
+heavy, delete the condition: the delete: 0x00000000
+heavy, delete the condition: W's result: 0x80028005
+heavy, delete the condition: W owns the mutex after it: 0x00000000
+heavy, delete the condition: W's unlock after it: 0x80028146
+heavy, delete the condition: W's time left is 0: 0x00000001
+lightweight, delete the condition: W's status once its timeout passed: 0x00000002
+lightweight, delete the condition: W's wait type once its timeout passed: 0x00000000
+lightweight, delete the condition: the condition's waiters: 0x00000000
+lightweight, delete the condition: the mutex's waiters: 0x00000000
+lightweight, delete the condition: W owns the mutex once its timeout passed: 0x00000000
+lightweight, delete the condition: the delete: 0x00000000
+lightweight, delete the condition: W's result: 0x80028005
+lightweight, delete the condition: W owns the mutex after it: 0x00000000
+lightweight, delete the condition: W's unlock after it: 0x80028186
+lightweight, delete the condition: W's time left is 0: 0x00000001
+heavy, delete the mutex: W's status once its timeout passed: 0x00000002
+heavy, delete the mutex: W's wait type once its timeout passed: 0x00000000
+heavy, delete the mutex: the condition's waiters: 0x00000000
+heavy, delete the mutex: the mutex's waiters: 0x00000000
+heavy, delete the mutex: W owns the mutex once its timeout passed: 0x00000000
+heavy, delete the mutex: the delete: 0x00000000
+heavy, delete the mutex: W's result: 0x80028141
+heavy, delete the mutex: W's unlock after it: 0x80028141
+heavy, signal, signal all, then signal W: W's status once its timeout passed: 0x00000002
+heavy, signal, signal all, then signal W: W's wait type once its timeout passed: 0x00000000
+heavy, signal, signal all, then signal W: the condition's waiters: 0x00000000
+heavy, signal, signal all, then signal W: the mutex's waiters: 0x00000000
+heavy, signal, signal all, then signal W: W owns the mutex once its timeout passed: 0x00000000
+heavy, signal, signal all, then signal W: the signal: 0x00000000
+heavy, signal, signal all, then signal W: the signal to all: 0x00000000
+heavy, signal, signal all, then signal W: the signal to W: 0x80028022
+heavy, signal, signal all, then signal W: W's result: 0x80028005
+heavy, signal, signal all, then signal W: W owns the mutex after it: 0x00000001
+heavy, signal, signal all, then signal W: W's unlock after it: 0x00000000
+lightweight, signal, signal all, then signal W: W's status once its timeout passed: 0x00000002
+lightweight, signal, signal all, then signal W: W's wait type once its timeout passed: 0x00000000
+lightweight, signal, signal all, then signal W: the condition's waiters: 0x00000000
+lightweight, signal, signal all, then signal W: the mutex's waiters: 0x00000000
+lightweight, signal, signal all, then signal W: W owns the mutex once its timeout passed: 0x00000000
+lightweight, signal, signal all, then signal W: the signal: 0x00000000
+lightweight, signal, signal all, then signal W: the signal to all: 0x00000000
+lightweight, signal, signal all, then signal W: the signal to W: 0x80028022
+lightweight, signal, signal all, then signal W: W's result: 0x80028005
+lightweight, signal, signal all, then signal W: W owns the mutex after it: 0x00000001
+lightweight, signal, signal all, then signal W: W's unlock after it: 0x00000000
+DONE

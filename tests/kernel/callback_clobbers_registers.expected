@@ -1,0 +1,49 @@
+direct call: the call's result: 0x00000000
+direct call: the callback's notifications left: 0x00000000
+direct call: mask of r4 to r11 that kept their markers: 0x00000000
+direct call: mask of r4 to r11 that hold the callback's value: 0x000000FF
+direct call: mask of d8 to d15 that kept their markers: 0x00000000
+direct call: mask of d8 to d15 that hold the callback's value: 0x000000FF
+direct call: sp is the same: 0x00000001
+direct call: the FPSCR control bits: 0x03400000
+control: the call's result: 0x00000000
+control: the callback's notifications left: 0x00000000
+control: mask of r4 to r11 that kept their markers: 0x000000FF
+control: mask of r4 to r11 that hold the callback's value: 0x00000000
+control: mask of d8 to d15 that kept their markers: 0x000000FF
+control: mask of d8 to d15 that hold the callback's value: 0x00000000
+control: sp is the same: 0x00000001
+control: the FPSCR control bits: 0x03400000
+check: the call's result: 0x00000001
+check: the callback's notifications left: 0x00000000
+check: mask of r4 to r11 that kept their markers: 0x000000FF
+check: mask of r4 to r11 that hold the callback's value: 0x00000000
+check: mask of d8 to d15 that kept their markers: 0x000000FF
+check: mask of d8 to d15 that hold the callback's value: 0x00000000
+check: sp is the same: 0x00000001
+check: the FPSCR control bits: 0x03400000
+CB wait: the call's result: 0x80028005
+CB wait: the callback's notifications left: 0x00000000
+CB wait: mask of r4 to r11 that kept their markers: 0x000000FF
+CB wait: mask of r4 to r11 that hold the callback's value: 0x00000000
+CB wait: mask of d8 to d15 that kept their markers: 0x000000FF
+CB wait: mask of d8 to d15 that hold the callback's value: 0x00000000
+CB wait: sp is the same: 0x00000001
+CB wait: the FPSCR control bits: 0x03400000
+CB delay: the call's result: 0x00000000
+CB delay: the callback's notifications left: 0x00000000
+CB delay: mask of r4 to r11 that kept their markers: 0x000000FF
+CB delay: mask of r4 to r11 that hold the callback's value: 0x00000000
+CB delay: mask of d8 to d15 that kept their markers: 0x000000FF
+CB delay: mask of d8 to d15 that hold the callback's value: 0x00000000
+CB delay: sp is the same: 0x00000001
+CB delay: the FPSCR control bits: 0x03400000
+nested: the call's result: 0x80028005
+nested: the callback's notifications left: 0x00000000
+nested: mask of r4 to r11 that kept their markers: 0x000000FF
+nested: mask of r4 to r11 that hold the callback's value: 0x00000000
+nested: mask of d8 to d15 that kept their markers: 0x000000FF
+nested: mask of d8 to d15 that hold the callback's value: 0x00000000
+nested: sp is the same: 0x00000001
+nested: the FPSCR control bits: 0x03400000
+DONE

@@ -1,0 +1,11 @@
+after A waits: E1 waiting threads: 0x00000001
+after A waits: E2 waiting threads: 0x00000001
+after B waits: E1 waiting threads: 0x00000003
+after B waits: E2 waiting threads: 0x00000001
+set E2: 0x00000000
+A's wait: 0x00000001
+set E1: 0x00000000
+B's wait: 0x00000001
+after both waits end: E1 waiting threads: 0x00000000
+after both waits end: E2 waiting threads: 0x00000000
+DONE

@@ -1,0 +1,61 @@
+signal wait with timeout 0x7FFFFFFF: its wait type at 300 ms: 0x00000004
+signal wait with timeout 0x7FFFFFFF: the waiter ended: 0x00000001
+signal wait with timeout 0x7FFFFFFF: its result: 0x00000000
+signal wait with timeout 0x7FFFFFFF: its time left is below the timeout: 0x00000001
+signal wait with timeout 0x7FFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+signal wait with timeout 0x80000000: its wait type at 300 ms: 0x00000004
+signal wait with timeout 0x80000000: the waiter ended: 0x00000001
+signal wait with timeout 0x80000000: its result: 0x00000000
+signal wait with timeout 0x80000000: its time left is below the timeout: 0x00000001
+signal wait with timeout 0x80000000: its time left is above the timeout less 5 s: 0x00000001
+signal wait with timeout 0xFFFFFFFE: its wait type at 300 ms: 0x00000004
+signal wait with timeout 0xFFFFFFFE: the waiter ended: 0x00000001
+signal wait with timeout 0xFFFFFFFE: its result: 0x00000000
+signal wait with timeout 0xFFFFFFFE: its time left is below the timeout: 0x00000001
+signal wait with timeout 0xFFFFFFFE: its time left is above the timeout less 5 s: 0x00000001
+signal wait with timeout 0xFFFFFFFF: its wait type at 300 ms: 0x00000004
+signal wait with timeout 0xFFFFFFFF: the waiter ended: 0x00000001
+signal wait with timeout 0xFFFFFFFF: its result: 0x00000000
+signal wait with timeout 0xFFFFFFFF: its time left is below the timeout: 0x00000001
+signal wait with timeout 0xFFFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+thread end wait with timeout 0x7FFFFFFF: its wait type at 300 ms: 0x00000002
+thread end wait with timeout 0x7FFFFFFF: the waiter ended: 0x00000001
+thread end wait with timeout 0x7FFFFFFF: its result: 0x00000000
+thread end wait with timeout 0x7FFFFFFF: its time left is below the timeout: 0x00000001
+thread end wait with timeout 0x7FFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+thread end wait with timeout 0x80000000: its wait type at 300 ms: 0x00000002
+thread end wait with timeout 0x80000000: the waiter ended: 0x00000001
+thread end wait with timeout 0x80000000: its result: 0x00000000
+thread end wait with timeout 0x80000000: its time left is below the timeout: 0x00000001
+thread end wait with timeout 0x80000000: its time left is above the timeout less 5 s: 0x00000001
+thread end wait with timeout 0xFFFFFFFE: its wait type at 300 ms: 0x00000002
+thread end wait with timeout 0xFFFFFFFE: the waiter ended: 0x00000001
+thread end wait with timeout 0xFFFFFFFE: its result: 0x00000000
+thread end wait with timeout 0xFFFFFFFE: its time left is below the timeout: 0x00000001
+thread end wait with timeout 0xFFFFFFFE: its time left is above the timeout less 5 s: 0x00000001
+thread end wait with timeout 0xFFFFFFFF: its wait type at 300 ms: 0x00000002
+thread end wait with timeout 0xFFFFFFFF: the waiter ended: 0x00000001
+thread end wait with timeout 0xFFFFFFFF: its result: 0x00000000
+thread end wait with timeout 0xFFFFFFFF: its time left is below the timeout: 0x00000001
+thread end wait with timeout 0xFFFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+semaphore wait with timeout 0x7FFFFFFF: its wait type at 300 ms: 0x00000020
+semaphore wait with timeout 0x7FFFFFFF: the waiter ended: 0x00000001
+semaphore wait with timeout 0x7FFFFFFF: its result: 0x00000000
+semaphore wait with timeout 0x7FFFFFFF: its time left is below the timeout: 0x00000001
+semaphore wait with timeout 0x7FFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+semaphore wait with timeout 0x80000000: its wait type at 300 ms: 0x00000020
+semaphore wait with timeout 0x80000000: the waiter ended: 0x00000001
+semaphore wait with timeout 0x80000000: its result: 0x00000000
+semaphore wait with timeout 0x80000000: its time left is below the timeout: 0x00000001
+semaphore wait with timeout 0x80000000: its time left is above the timeout less 5 s: 0x00000001
+semaphore wait with timeout 0xFFFFFFFE: its wait type at 300 ms: 0x00000020
+semaphore wait with timeout 0xFFFFFFFE: the waiter ended: 0x00000001
+semaphore wait with timeout 0xFFFFFFFE: its result: 0x00000000
+semaphore wait with timeout 0xFFFFFFFE: its time left is below the timeout: 0x00000001
+semaphore wait with timeout 0xFFFFFFFE: its time left is above the timeout less 5 s: 0x00000001
+semaphore wait with timeout 0xFFFFFFFF: its wait type at 300 ms: 0x00000020
+semaphore wait with timeout 0xFFFFFFFF: the waiter ended: 0x00000001
+semaphore wait with timeout 0xFFFFFFFF: its result: 0x00000000
+semaphore wait with timeout 0xFFFFFFFF: its time left is below the timeout: 0x00000001
+semaphore wait with timeout 0xFFFFFFFF: its time left is above the timeout less 5 s: 0x00000001
+DONE

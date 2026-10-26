@@ -1,0 +1,25 @@
+waiter at 0x60, above T: register the END handler: 0x00000000
+waiter at 0x60, above T: unregister the handler: 0x00000000
+waiter at 0x60, above T: the signal in the handler: 0x00000000
+waiter at 0x60, above T: T's status in the handler: 0x00000001
+waiter at 0x60, above T: the waiter's result: 0x00000000
+waiter at 0x60, above T: steps recorded: 0x00000003
+waiter at 0x60, above T: runs of the handler: 0x00000001
+waiter at 0x60, above T: run 0: the type: 0x00000008
+waiter at 0x60, above T: run 0: it runs on T: 0x00000001
+waiter at 0x60, above T: step 0: 0x00000001
+waiter at 0x60, above T: step 1: 0x00000002
+waiter at 0x60, above T: step 2: 0x00000003
+waiter at 0x80, below T: register the END handler: 0x00000000
+waiter at 0x80, below T: unregister the handler: 0x00000000
+waiter at 0x80, below T: the signal in the handler: 0x00000000
+waiter at 0x80, below T: T's status in the handler: 0x00000001
+waiter at 0x80, below T: the waiter's result: 0x00000000
+waiter at 0x80, below T: steps recorded: 0x00000003
+waiter at 0x80, below T: runs of the handler: 0x00000001
+waiter at 0x80, below T: run 0: the type: 0x00000008
+waiter at 0x80, below T: run 0: it runs on T: 0x00000001
+waiter at 0x80, below T: step 0: 0x00000001
+waiter at 0x80, below T: step 1: 0x00000003
+waiter at 0x80, below T: step 2: 0x00000002
+DONE

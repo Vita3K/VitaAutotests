@@ -1,0 +1,66 @@
+semaphore: create with a 31 character name: 0x00000000
+semaphore: open by it: 0x00000000
+semaphore: open by it and one more character: 0x80024002
+semaphore: create with a 32 character name: 0x80024002
+semaphore: delete: 0x00000000
+event flag: create with a 31 character name: 0x00000000
+event flag: create with a 31 character name matches the semaphore's: 0x00000001
+event flag: open by it: 0x00000000
+event flag: open by it matches the semaphore's: 0x00000001
+event flag: open by it and one more character: 0x80024002
+event flag: open by it and one more character matches the semaphore's: 0x00000001
+event flag: create with a 32 character name: 0x80024002
+event flag: create with a 32 character name matches the semaphore's: 0x00000001
+event flag: delete: 0x00000000
+event flag: delete matches the semaphore's: 0x00000001
+mutex: create with a 31 character name: 0x00000000
+mutex: create with a 31 character name matches the semaphore's: 0x00000001
+mutex: open by it: 0x00000000
+mutex: open by it matches the semaphore's: 0x00000001
+mutex: open by it and one more character: 0x80024002
+mutex: open by it and one more character matches the semaphore's: 0x00000001
+mutex: create with a 32 character name: 0x80024002
+mutex: create with a 32 character name matches the semaphore's: 0x00000001
+mutex: delete: 0x00000000
+mutex: delete matches the semaphore's: 0x00000001
+reader/writer lock: create with a 31 character name: 0x00000000
+reader/writer lock: create with a 31 character name matches the semaphore's: 0x00000001
+reader/writer lock: open by it: 0x00000000
+reader/writer lock: open by it matches the semaphore's: 0x00000001
+reader/writer lock: open by it and one more character: 0x80024002
+reader/writer lock: open by it and one more character matches the semaphore's: 0x00000001
+reader/writer lock: create with a 32 character name: 0x80024002
+reader/writer lock: create with a 32 character name matches the semaphore's: 0x00000001
+reader/writer lock: delete: 0x00000000
+reader/writer lock: delete matches the semaphore's: 0x00000001
+message pipe: create with a 31 character name: 0x00000000
+message pipe: create with a 31 character name matches the semaphore's: 0x00000001
+message pipe: open by it: 0x00000000
+message pipe: open by it matches the semaphore's: 0x00000001
+message pipe: open by it and one more character: 0x80024002
+message pipe: open by it and one more character matches the semaphore's: 0x00000001
+message pipe: create with a 32 character name: 0x80024002
+message pipe: create with a 32 character name matches the semaphore's: 0x00000001
+message pipe: delete: 0x00000000
+message pipe: delete matches the semaphore's: 0x00000001
+simple event: create with a 31 character name: 0x00000000
+simple event: create with a 31 character name matches the semaphore's: 0x00000001
+simple event: open by it: 0x00000000
+simple event: open by it matches the semaphore's: 0x00000001
+simple event: open by it and one more character: 0x80024002
+simple event: open by it and one more character matches the semaphore's: 0x00000001
+simple event: create with a 32 character name: 0x80024002
+simple event: create with a 32 character name matches the semaphore's: 0x00000001
+simple event: delete: 0x00000000
+simple event: delete matches the semaphore's: 0x00000001
+timer: create with a 31 character name: 0x00000000
+timer: create with a 31 character name matches the semaphore's: 0x00000001
+timer: open by it: 0x00000000
+timer: open by it matches the semaphore's: 0x00000001
+timer: open by it and one more character: 0x80024002
+timer: open by it and one more character matches the semaphore's: 0x00000001
+timer: create with a 32 character name: 0x80024002
+timer: create with a 32 character name matches the semaphore's: 0x00000001
+timer: delete: 0x00000000
+timer: delete matches the semaphore's: 0x00000001
+DONE

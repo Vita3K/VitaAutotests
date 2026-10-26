@@ -1,0 +1,102 @@
+fresh: the info call: 0x00000000
+fresh: the notify ID is -1: 0x00000000
+fresh: the notify ID is 0: 0x00000001
+fresh: the notify ID is the event: 0x00000000
+fresh: the count: 0x00000000
+fresh: the argument: 0x00000000
+fresh: the attributes: 0x00000000
+one notify: the info call: 0x00000000
+one notify: the notify ID is -1: 0x00000001
+one notify: the notify ID is 0: 0x00000000
+one notify: the notify ID is the event: 0x00000000
+one notify: the count: 0x00000001
+one notify: the argument: 0x00000011
+one notify: the attributes: 0x00000000
+two notifies: the info call: 0x00000000
+two notifies: the notify ID is -1: 0x00000001
+two notifies: the notify ID is 0: 0x00000000
+two notifies: the notify ID is the event: 0x00000000
+two notifies: the count: 0x00000002
+two notifies: the argument: 0x00000012
+two notifies: the attributes: 0x00000000
+run: the info call inside: 0x00000000
+run: the notify ID inside is -1: 0x00000000
+run: the notify ID inside is 0: 0x00000001
+run: the notify ID inside is the event: 0x00000000
+run: the count inside: 0x00000000
+run: the argument inside: 0x00000000
+run: the attributes inside: 0x00000000
+after the run: the info call: 0x00000000
+after the run: the notify ID is -1: 0x00000000
+after the run: the notify ID is 0: 0x00000001
+after the run: the notify ID is the event: 0x00000000
+after the run: the count: 0x00000000
+after the run: the argument: 0x00000000
+after the run: the attributes: 0x00000000
+after the run: the function: 0x00000001
+after the run: the common pointer: 0x00000001
+after the run: the owner thread: 0x00000001
+one notify before a cancel: the info call: 0x00000000
+one notify before a cancel: the notify ID is -1: 0x00000001
+one notify before a cancel: the notify ID is 0: 0x00000000
+one notify before a cancel: the notify ID is the event: 0x00000000
+one notify before a cancel: the count: 0x00000001
+one notify before a cancel: the argument: 0x00000021
+one notify before a cancel: the attributes: 0x00000000
+cancel: 0x00000000
+after a cancel: the info call: 0x00000000
+after a cancel: the notify ID is -1: 0x00000000
+after a cancel: the notify ID is 0: 0x00000001
+after a cancel: the notify ID is the event: 0x00000000
+after a cancel: the count: 0x00000000
+after a cancel: the argument: 0x00000000
+after a cancel: the attributes: 0x00000000
+register to the event: 0x00000000
+set the event with notification: 0x00000000
+after a set with notification: the info call: 0x00000000
+after a set with notification: the notify ID is -1: 0x00000001
+after a set with notification: the notify ID is 0: 0x00000000
+after a set with notification: the notify ID is the event: 0x00000000
+after a set with notification: the count: 0x00000001
+after a set with notification: the argument: 0x00000031
+after a set with notification: the attributes: 0x00000000
+after a direct notify: the info call: 0x00000000
+after a direct notify: the notify ID is -1: 0x00000001
+after a direct notify: the notify ID is 0: 0x00000000
+after a direct notify: the notify ID is the event: 0x00000000
+after a direct notify: the count: 0x00000002
+after a direct notify: the argument: 0x00000032
+after a direct notify: the attributes: 0x00000000
+check after the event and the direct notify: 0x00000001
+set the event with notification after a direct notify: 0x00000000
+after a direct notify, then a set with notification: the info call: 0x00000000
+after a direct notify, then a set with notification: the notify ID is -1: 0x00000001
+after a direct notify, then a set with notification: the notify ID is 0: 0x00000000
+after a direct notify, then a set with notification: the notify ID is the event: 0x00000000
+after a direct notify, then a set with notification: the count: 0x00000002
+after a direct notify, then a set with notification: the argument: 0x00000042
+after a direct notify, then a set with notification: the attributes: 0x00000000
+check after the direct notify and the event: 0x00000001
+unregister from the event: 0x00000000
+argument 0: the info call: 0x00000000
+argument 0: the notify ID is -1: 0x00000001
+argument 0: the notify ID is 0: 0x00000000
+argument 0: the notify ID is the event: 0x00000000
+argument 0: the count: 0x00000001
+argument 0: the argument: 0x00000000
+argument 0: the attributes: 0x00000000
+argument -1: the info call: 0x00000000
+argument -1: the notify ID is -1: 0x00000001
+argument -1: the notify ID is 0: 0x00000000
+argument -1: the notify ID is the event: 0x00000000
+argument -1: the count: 0x00000001
+argument -1: the argument: 0xFFFFFFFF
+argument -1: the attributes: 0x00000000
+argument 0x80000000: the info call: 0x00000000
+argument 0x80000000: the notify ID is -1: 0x00000001
+argument 0x80000000: the notify ID is 0: 0x00000000
+argument 0x80000000: the notify ID is the event: 0x00000000
+argument 0x80000000: the count: 0x00000001
+argument 0x80000000: the argument: 0x80000000
+argument 0x80000000: the attributes: 0x00000000
+DONE

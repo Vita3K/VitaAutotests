@@ -1,0 +1,12 @@
+register: 0x00000000
+set with argument 1: 0x00000000
+set with argument 2: 0x00000000
+the callback's notifications before the cancel: 0x00000002
+cancel: 0x00000000
+the callback's notifications after the cancel: 0x00000000
+set with argument 3: 0x00000000
+the callback's notifications after the new set: 0x00000001
+runs of the callback: 0x00000001
+the count the callback got: 0x00000001
+the argument the callback got: 0x00000003
+DONE

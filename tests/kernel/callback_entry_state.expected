@@ -1,0 +1,249 @@
+a Thumb callback run by a check: the call returns: 0x00000001
+a Thumb callback run by a check: the callback ran: 0x00000001
+a Thumb callback run by a check: the caller's sp & 7: 0x00000000
+a Thumb callback run by a check: the callback's sp & 7: 0x00000000
+a Thumb callback run by a check: the callback's sp & 15: 0x00000008
+a Thumb callback run by a check: the callback's sp is the caller's sp: 0x00000001
+a Thumb callback run by a check: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a check: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a check: lr is Thumb: 0x00000001
+a Thumb callback run by a check: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a check: FPSCR at entry: 0x03000000
+a Thumb callback run by a check, sp 4 bytes off: the call returns: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: the callback ran: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: the caller's sp & 7: 0x00000004
+a Thumb callback run by a check, sp 4 bytes off: the callback's sp & 7: 0x00000004
+a Thumb callback run by a check, sp 4 bytes off: the callback's sp & 15: 0x00000004
+a Thumb callback run by a check, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a check, sp 4 bytes off: lr is Thumb: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a check, sp 4 bytes off: FPSCR at entry: 0x03000000
+a Thumb callback run by a CB wait: the call returns: 0x80028005
+a Thumb callback run by a CB wait: the callback ran: 0x00000001
+a Thumb callback run by a CB wait: the caller's sp & 7: 0x00000000
+a Thumb callback run by a CB wait: the callback's sp & 7: 0x00000000
+a Thumb callback run by a CB wait: the callback's sp & 15: 0x00000000
+a Thumb callback run by a CB wait: the callback's sp is the caller's sp: 0x00000000
+a Thumb callback run by a CB wait: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a CB wait: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait: lr is Thumb: 0x00000001
+a Thumb callback run by a CB wait: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a CB wait: FPSCR at entry: 0x03000000
+a Thumb callback run by a CB wait, sp 4 bytes off: the call returns: 0x80028005
+a Thumb callback run by a CB wait, sp 4 bytes off: the callback ran: 0x00000001
+a Thumb callback run by a CB wait, sp 4 bytes off: the caller's sp & 7: 0x00000004
+a Thumb callback run by a CB wait, sp 4 bytes off: the callback's sp & 7: 0x00000004
+a Thumb callback run by a CB wait, sp 4 bytes off: the callback's sp & 15: 0x0000000C
+a Thumb callback run by a CB wait, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a CB wait, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB wait, sp 4 bytes off: lr is Thumb: 0x00000001
+a Thumb callback run by a CB wait, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a CB wait, sp 4 bytes off: FPSCR at entry: 0x03000000
+a Thumb callback run by a CB delay: the call returns: 0x00000000
+a Thumb callback run by a CB delay: the callback ran: 0x00000001
+a Thumb callback run by a CB delay: the caller's sp & 7: 0x00000000
+a Thumb callback run by a CB delay: the callback's sp & 7: 0x00000000
+a Thumb callback run by a CB delay: the callback's sp & 15: 0x00000008
+a Thumb callback run by a CB delay: the callback's sp is the caller's sp: 0x00000001
+a Thumb callback run by a CB delay: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a CB delay: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay: lr is Thumb: 0x00000001
+a Thumb callback run by a CB delay: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a CB delay: FPSCR at entry: 0x03000000
+a Thumb callback run by a CB delay, sp 4 bytes off: the call returns: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: the callback ran: 0x00000001
+a Thumb callback run by a CB delay, sp 4 bytes off: the caller's sp & 7: 0x00000004
+a Thumb callback run by a CB delay, sp 4 bytes off: the callback's sp & 7: 0x00000004
+a Thumb callback run by a CB delay, sp 4 bytes off: the callback's sp & 15: 0x00000004
+a Thumb callback run by a CB delay, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000001
+a Thumb callback run by a CB delay, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a Thumb callback run by a CB delay, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+a Thumb callback run by a CB delay, sp 4 bytes off: lr is Thumb: 0x00000001
+a Thumb callback run by a CB delay, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+a Thumb callback run by a CB delay, sp 4 bytes off: FPSCR at entry: 0x03000000
+a nested Thumb callback: the call returns: 0x00000001
+a nested Thumb callback: the callback ran: 0x00000001
+a nested Thumb callback: the caller's sp & 7: 0x00000000
+a nested Thumb callback: the callback's sp & 7: 0x00000000
+a nested Thumb callback: the callback's sp & 15: 0x00000008
+a nested Thumb callback: the callback's sp is the caller's sp: 0x00000001
+a nested Thumb callback: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+a nested Thumb callback: r4 holds the thread's marker: 0x00000000
+a nested Thumb callback: r5 holds the thread's marker: 0x00000000
+a nested Thumb callback: r6 holds the thread's marker: 0x00000000
+a nested Thumb callback: r7 holds the thread's marker: 0x00000000
+a nested Thumb callback: r8 holds the thread's marker: 0x00000000
+a nested Thumb callback: r9 holds the thread's marker: 0x00000000
+a nested Thumb callback: r10 holds the thread's marker: 0x00000000
+a nested Thumb callback: r11 holds the thread's marker: 0x00000000
+a nested Thumb callback: lr is Thumb: 0x00000001
+a nested Thumb callback: lr is the same as in the first case: 0x00000001
+a nested Thumb callback: FPSCR at entry: 0x03000000
+a nested Thumb callback: the nested callback ran: 0x00000001
+a nested Thumb callback: the nested callback's sp & 7: 0x00000000
+a nested Thumb callback: the nested callback's sp & 15: 0x00000000
+a nested Thumb callback: the outer callback's body is less than 1 KiB below its entry: 0x00000001
+a nested Thumb callback: the nested callback's sp is the outer callback's entry sp: 0x00000000
+a nested Thumb callback: the nested callback's sp is above the outer callback's body: 0x00000000
+a nested Thumb callback: the nested callback's lr is Thumb: 0x00000001
+a nested Thumb callback: the check inside the outer callback returns: 0x00000001
+an ARM callback run by a check: the call returns: 0x00000001
+an ARM callback run by a check: the callback ran: 0x00000001
+an ARM callback run by a check: the caller's sp & 7: 0x00000000
+an ARM callback run by a check: the callback's sp & 7: 0x00000000
+an ARM callback run by a check: the callback's sp & 15: 0x00000008
+an ARM callback run by a check: the callback's sp is the caller's sp: 0x00000001
+an ARM callback run by a check: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a check: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a check: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a check: lr is Thumb: 0x00000001
+an ARM callback run by a check: lr is the same as in the first case: 0x00000001
+an ARM callback run by a check: FPSCR at entry: 0x03000000
+an ARM callback run by a check: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: the call returns: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: the callback ran: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: the caller's sp & 7: 0x00000004
+an ARM callback run by a check, sp 4 bytes off: the callback's sp & 7: 0x00000004
+an ARM callback run by a check, sp 4 bytes off: the callback's sp & 15: 0x00000004
+an ARM callback run by a check, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a check, sp 4 bytes off: lr is Thumb: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+an ARM callback run by a check, sp 4 bytes off: FPSCR at entry: 0x03000000
+an ARM callback run by a check, sp 4 bytes off: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+an ARM callback run by a CB wait: the call returns: 0x80028005
+an ARM callback run by a CB wait: the callback ran: 0x00000001
+an ARM callback run by a CB wait: the caller's sp & 7: 0x00000000
+an ARM callback run by a CB wait: the callback's sp & 7: 0x00000000
+an ARM callback run by a CB wait: the callback's sp & 15: 0x00000000
+an ARM callback run by a CB wait: the callback's sp is the caller's sp: 0x00000000
+an ARM callback run by a CB wait: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a CB wait: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait: lr is Thumb: 0x00000001
+an ARM callback run by a CB wait: lr is the same as in the first case: 0x00000001
+an ARM callback run by a CB wait: FPSCR at entry: 0x03000000
+an ARM callback run by a CB wait: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+an ARM callback run by a CB wait, sp 4 bytes off: the call returns: 0x80028005
+an ARM callback run by a CB wait, sp 4 bytes off: the callback ran: 0x00000001
+an ARM callback run by a CB wait, sp 4 bytes off: the caller's sp & 7: 0x00000004
+an ARM callback run by a CB wait, sp 4 bytes off: the callback's sp & 7: 0x00000004
+an ARM callback run by a CB wait, sp 4 bytes off: the callback's sp & 15: 0x0000000C
+an ARM callback run by a CB wait, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a CB wait, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a CB wait, sp 4 bytes off: lr is Thumb: 0x00000001
+an ARM callback run by a CB wait, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+an ARM callback run by a CB wait, sp 4 bytes off: FPSCR at entry: 0x03000000
+an ARM callback run by a CB wait, sp 4 bytes off: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+an ARM callback run by a CB delay: the call returns: 0x00000000
+an ARM callback run by a CB delay: the callback ran: 0x00000001
+an ARM callback run by a CB delay: the caller's sp & 7: 0x00000000
+an ARM callback run by a CB delay: the callback's sp & 7: 0x00000000
+an ARM callback run by a CB delay: the callback's sp & 15: 0x00000008
+an ARM callback run by a CB delay: the callback's sp is the caller's sp: 0x00000001
+an ARM callback run by a CB delay: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a CB delay: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay: lr is Thumb: 0x00000001
+an ARM callback run by a CB delay: lr is the same as in the first case: 0x00000001
+an ARM callback run by a CB delay: FPSCR at entry: 0x03000000
+an ARM callback run by a CB delay: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: the call returns: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: the callback ran: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: the caller's sp & 7: 0x00000004
+an ARM callback run by a CB delay, sp 4 bytes off: the callback's sp & 7: 0x00000004
+an ARM callback run by a CB delay, sp 4 bytes off: the callback's sp & 15: 0x00000004
+an ARM callback run by a CB delay, sp 4 bytes off: the callback's sp is the caller's sp: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: the callback's sp is less than 1 KiB below the caller's: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: r4 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r5 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r6 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r7 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r8 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r9 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r10 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: r11 holds the thread's marker: 0x00000000
+an ARM callback run by a CB delay, sp 4 bytes off: lr is Thumb: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: lr is the same as in the first case: 0x00000001
+an ARM callback run by a CB delay, sp 4 bytes off: FPSCR at entry: 0x03000000
+an ARM callback run by a CB delay, sp 4 bytes off: r0 to r3 are the notify ID, count, argument and common pointer: 0x00000001
+DONE

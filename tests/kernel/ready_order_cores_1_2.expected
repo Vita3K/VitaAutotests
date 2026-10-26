@@ -1,0 +1,11 @@
+core 1: steps recorded: 0x00000004
+core 1: step 0: 0x00000002
+core 1: step 1: 0x00000000
+core 1: step 2: 0x00000001
+core 1: step 3: 0x00000003
+core 2: steps recorded: 0x00000004
+core 2: step 0: 0x00000002
+core 2: step 1: 0x00000000
+core 2: step 2: 0x00000001
+core 2: step 3: 0x00000003
+DONE

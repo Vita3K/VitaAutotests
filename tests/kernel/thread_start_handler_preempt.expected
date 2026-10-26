@@ -1,0 +1,21 @@
+T at 0x60, above the starter: register the START handler: 0x00000000
+T at 0x60, above the starter: unregister the handler: 0x00000000
+T at 0x60, above the starter: the start: 0x00000000
+T at 0x60, above the starter: steps recorded: 0x00000003
+T at 0x60, above the starter: runs of the handler: 0x00000001
+T at 0x60, above the starter: run 0: the type: 0x00000004
+T at 0x60, above the starter: run 0: it runs on T: 0x00000001
+T at 0x60, above the starter: step 0: 0x00000001
+T at 0x60, above the starter: step 1: 0x00000002
+T at 0x60, above the starter: step 2: 0x00000003
+T at 0x80, below the starter: register the START handler: 0x00000000
+T at 0x80, below the starter: unregister the handler: 0x00000000
+T at 0x80, below the starter: the start: 0x00000000
+T at 0x80, below the starter: steps recorded: 0x00000003
+T at 0x80, below the starter: runs of the handler: 0x00000001
+T at 0x80, below the starter: run 0: the type: 0x00000004
+T at 0x80, below the starter: run 0: it runs on T: 0x00000001
+T at 0x80, below the starter: step 0: 0x00000003
+T at 0x80, below the starter: step 1: 0x00000001
+T at 0x80, below the starter: step 2: 0x00000002
+DONE

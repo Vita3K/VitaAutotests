@@ -1,0 +1,15 @@
+USER_RW, 0x800 bytes: allocate: 0x80024B05
+USER_RW, 0x800 bytes: the free sizes are unchanged: 0x00000001
+USER_CDRAM_RW, 0x20000 bytes: allocate: 0x80024309
+USER_CDRAM_RW, 0x20000 bytes: the free sizes are unchanged: 0x00000001
+USER_MAIN_PHYCONT_RW, 0x80000 bytes: allocate: 0x80020005
+USER_MAIN_PHYCONT_RW, 0x80000 bytes: the free sizes are unchanged: 0x00000001
+USER_RW, alignment 0x3000: allocate: 0x80020005
+USER_RW, alignment 0x3000: the free sizes are unchanged: 0x00000001
+USER_RW, option size 0x10: allocate: 0x80020009
+USER_RW, option size 0x10: the free sizes are unchanged: 0x00000001
+RX type 0x0C20D050, 4 KiB: allocate: 0x80024702
+RX type 0x0C20D050, 4 KiB: the free sizes are unchanged: 0x00000001
+USER_RW, 1 GiB: allocate: 0x80024302
+USER_RW, 1 GiB: the free sizes are unchanged: 0x00000001
+DONE

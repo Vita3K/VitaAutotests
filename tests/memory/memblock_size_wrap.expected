@@ -1,0 +1,9 @@
+USER_RW, 0x80000000 bytes: allocate: 0x80024804
+USER_RW, 0x80000000 bytes: the free sizes are the same as before: 0x00000001
+USER_RW, 0xFFFFF000 bytes: allocate: 0x80024302
+USER_RW, 0xFFFFF000 bytes: the free sizes are the same as before: 0x00000001
+USER_RW, 0xFFFFF001 bytes: allocate: 0x80024B05
+USER_RW, 0xFFFFF001 bytes: the free sizes are the same as before: 0x00000001
+USER_RW, 0xFFFFFFFF bytes: allocate: 0x80024B05
+USER_RW, 0xFFFFFFFF bytes: the free sizes are the same as before: 0x00000001
+DONE

@@ -1,0 +1,11 @@
+info before the delete: the result: 0x00000000
+info before the delete: the mutex is the mutex: 0x00000001
+info before the delete: the waiting threads: 0x00000001
+the mutex's delete during the wait: 0x00000000
+info after the delete: the result: 0x00000000
+info after the delete: the mutex is the mutex: 0x00000000
+info after the delete: the mutex is -1: 0x00000001
+info after the delete: the waiting threads: 0x00000000
+info after the delete: the attribute is unchanged: 0x00000001
+W's wait result: 0x800281A2
+DONE

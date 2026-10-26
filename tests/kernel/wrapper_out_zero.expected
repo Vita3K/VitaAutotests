@@ -1,0 +1,12 @@
+wait with mode 0x8 on a flag: 0x80020010
+wait with mode 0x8 on a flag: the out bits: 0x00000000
+wait on an unknown UID: 0x800280E1
+wait on an unknown UID: the out bits: 0x00000000
+cancel of an event on an unknown UID: 0x80028201
+cancel of an event on an unknown UID: the count: 0x00000000
+cancel of a timer on an unknown UID: 0x80028241
+cancel of a timer on an unknown UID: the count: 0x00000000
+timer user data after create is the thread and process: 0x00000001
+the first event fired: 0x00000000
+timer user data after its first event is 0: 0x00000001
+DONE

@@ -1,0 +1,11 @@
+the receiver waits on the pipe: 0x00000001
+DONT_WAIT FULL send of 4: 0x00000000
+its size: 0x0000DEAD
+the receiver's result: 0x00000000
+the receiver's size: 0x00000004
+the receiver got "wxyz": 0x00000004
+the send: wait for the event: 0x00000000
+the send: the event's bits: 0x00000001
+the send: the low half of its user data: 0x00000000
+the send: the high half of its user data: 0x00000004
+DONE

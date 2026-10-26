@@ -1,0 +1,10 @@
+the delete: 0x00000000
+the wait for pattern 0: 0x80028006
+the wait for pattern 0: the bits it got: 0x00000010
+the wait for pattern 0: the high word of its user data is the deleting thread's UID: 0x00000000
+the wait for pattern 0: the low word of its user data is the process ID: 0x00000000
+the wait for pattern 0 with callbacks: 0x80028006
+the wait for pattern 0 with callbacks: the bits it got: 0x00000010
+the wait for pattern 0 with callbacks: the high word of its user data is the deleting thread's UID: 0x00000000
+the wait for pattern 0 with callbacks: the low word of its user data is the process ID: 0x00000000
+DONE

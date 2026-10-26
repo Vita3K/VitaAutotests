@@ -1,0 +1,13 @@
+three waiters: waiter 0, the wait for its end: 0x00000000
+three waiters: waiter 0, its status: 0x00000077
+three waiters: waiter 1, the wait for its end: 0x00000000
+three waiters: waiter 1, its status: 0x00000077
+three waiters: waiter 2, the wait for its end: 0x00000000
+three waiters: waiter 2, its status: 0x00000077
+ended thread: the wait for its end: 0x00000000
+ended thread: it returned at once: 0x00000001
+ended thread: the status: 0x00000077
+timeout: the wait for its end: 0x80028005
+timeout: the status it left alone: 0x00000001
+timeout: the time left: 0x00000000
+DONE

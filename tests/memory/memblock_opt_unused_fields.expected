@@ -1,0 +1,13 @@
+the named block: make it: 0x00000000
+attr 0 with the base block name: 0x00000000
+attr 0 with the base block name: a plain block: 0x00000001
+attr 0 with the reserved field: 0x00000000
+attr 0 with the reserved field: a plain block: 0x00000001
+HAS_ALIGNMENT with the base block name: 0x00000000
+HAS_ALIGNMENT with the base block name: a plain block: 0x00000001
+HAS_ALIGNMENT with the reserved field: 0x00000000
+HAS_ALIGNMENT with the reserved field: a plain block: 0x00000001
+the named block still holds its word: 0x00000001
+open the named block with 0x10: 0x00000000
+the opened block holds the word: 0x00000001
+DONE

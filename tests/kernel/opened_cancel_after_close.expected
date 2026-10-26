@@ -1,0 +1,47 @@
+semaphore: create and open the object: 0x00000000
+semaphore: close the opened UID: 0x00000000
+semaphore, through the closed UID: the cancel: 0x80028101
+semaphore, through the closed UID: the waiting count: 0x00000000
+semaphore, through the creating UID, no waiter: the cancel: 0x00000000
+semaphore, through the creating UID, no waiter: the waiting count: 0x00000000
+mutex: create and open the object: 0x00000000
+mutex: close the opened UID: 0x00000000
+mutex, through the closed UID: the cancel: 0x80028141
+mutex, through the closed UID: the waiting count: 0x00000000
+mutex, through the creating UID, no waiter: the cancel: 0x00000000
+mutex, through the creating UID, no waiter: the waiting count: 0x00000000
+reader/writer lock: create and open the object: 0x00000000
+reader/writer lock: close the opened UID: 0x00000000
+reader/writer lock, through the closed UID: the cancel: 0x800281E1
+reader/writer lock, through the closed UID: the waiting readers: 0x00000000
+reader/writer lock, through the closed UID: the waiting writers: 0x00000000
+reader/writer lock, through the creating UID, no waiter: the cancel: 0x00000000
+reader/writer lock, through the creating UID, no waiter: the waiting readers: 0x00000000
+reader/writer lock, through the creating UID, no waiter: the waiting writers: 0x00000000
+event flag: create and open the object: 0x00000000
+event flag: close the opened UID: 0x00000000
+event flag, through the closed UID: the cancel: 0x800280E1
+event flag, through the closed UID: the waiting count: 0x00000000
+event flag, through the creating UID, no waiter: the cancel: 0x00000000
+event flag, through the creating UID, no waiter: the waiting count: 0x00000000
+message pipe: create and open the object: 0x00000000
+message pipe: close the opened UID: 0x00000000
+message pipe, through the closed UID: the cancel: 0x80028221
+message pipe, through the closed UID: the waiting senders: 0x00000000
+message pipe, through the closed UID: the waiting receivers: 0x00000000
+message pipe, through the creating UID, no waiter: the cancel: 0x00000000
+message pipe, through the creating UID, no waiter: the waiting senders: 0x00000000
+message pipe, through the creating UID, no waiter: the waiting receivers: 0x00000000
+timer: create and open the object: 0x00000000
+timer: close the opened UID: 0x00000000
+timer, through the closed UID: the cancel: 0x80028241
+timer, through the closed UID: the waiting count: 0x00000000
+timer, through the creating UID, no waiter: the cancel: 0x00000000
+timer, through the creating UID, no waiter: the waiting count: 0x00000000
+simple event: create and open the object: 0x00000000
+simple event: close the opened UID: 0x00000000
+simple event, through the closed UID: the cancel: 0x80028201
+simple event, through the closed UID: the waiting count: 0x00000000
+simple event, through the creating UID, no waiter: the cancel: 0x00000000
+simple event, through the creating UID, no waiter: the waiting count: 0x00000000
+DONE

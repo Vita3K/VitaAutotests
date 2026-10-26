@@ -1,0 +1,9 @@
+L at 0x70, R at 0x78, L lowered to R's priority: the change: 0x00000000
+L at 0x70, R at 0x78, L lowered to R's priority: R ran within 300 ms of the change: 0x00000000
+L at 0x70, R at 0x78, L lowered to R's priority: L's status then: 0x00000001
+L at 0x70, R at 0x78, L lowered to R's priority: the step order after L is stopped: 0x00000132
+L at 0xA0, R at 0xA8, L lowered to R's priority: the change: 0x00000000
+L at 0xA0, R at 0xA8, L lowered to R's priority: R ran within 300 ms of the change: 0x00000000
+L at 0xA0, R at 0xA8, L lowered to R's priority: L's status then: 0x00000001
+L at 0xA0, R at 0xA8, L lowered to R's priority: the step order after L is stopped: 0x00000132
+DONE

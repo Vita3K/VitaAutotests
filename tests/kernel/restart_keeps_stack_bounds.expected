@@ -1,0 +1,10 @@
+delete it: 0x00000000
+the stack is the same in both runs: 0x00000001
+the stack size is the same in both runs: 0x00000001
+run 1: slot 3 is the low end of the stack: 0x00000001
+run 1: slot 2 minus slot 3 is the stack size: 0x00000001
+run 2: slot 3 is the low end of the stack: 0x00000001
+run 2: slot 2 minus slot 3 is the stack size: 0x00000001
+slot 2 holds the same value in both runs: 0x00000001
+slot 3 holds the same value in both runs: 0x00000001
+DONE

@@ -1,0 +1,74 @@
+self delete in a check: the check: 0x00000001
+self delete in a check: the delete inside: 0x00000000
+self delete in a check: inside: the notifications: 0x00000000
+self delete in a check: inside: the info: 0x00000000
+self delete in a check: inside: the info is for the callback: 0x00000001
+self delete in a check: inside: the notify: 0x00000000
+self delete in a check: inside: the cancel: 0x00000000
+self delete in a check: the second delete inside: 0x800280A1
+self delete in a check: runs: 0x00000001
+self delete in a check: after: the notifications: 0x800280A1
+self delete in a check: after: the info: 0x800280A1
+self delete in a check: after: the info is for the callback: 0x00000000
+self delete in a check: after: the notify: 0x800280A1
+self delete in a check: after: the cancel: 0x800280A1
+self delete in a check: the delete after: 0x800280A1
+self delete in a check: the next check: 0x00000000
+self delete in a check: runs after the next check: 0x00000001
+self delete in a wait: the wait: 0x80028005
+self delete in a wait: the delete inside: 0x00000000
+self delete in a wait: runs: 0x00000001
+self delete in a wait: after: the notifications: 0x800280A1
+self delete in a wait: after: the info: 0x800280A1
+self delete in a wait: after: the info is for the callback: 0x00000000
+self delete in a wait: after: the notify: 0x800280A1
+self delete in a wait: after: the cancel: 0x800280A1
+self delete in a wait: the delete after: 0x800280A1
+nested self delete: the check: 0x00000001
+nested self delete: the nested check: 0x00000001
+nested self delete: the delete in the nested run: 0x00000000
+nested self delete: in the outer run: the notifications: 0x00000000
+nested self delete: in the outer run: the info: 0x00000000
+nested self delete: in the outer run: the info is for the callback: 0x00000001
+nested self delete: in the outer run: the notify: 0x00000000
+nested self delete: in the outer run: the cancel: 0x00000000
+nested self delete: runs: 0x00000002
+nested self delete: after both runs: the notifications: 0x800280A1
+nested self delete: after both runs: the info: 0x800280A1
+nested self delete: after both runs: the info is for the callback: 0x00000000
+nested self delete: after both runs: the notify: 0x800280A1
+nested self delete: after both runs: the cancel: 0x800280A1
+nested self delete: the delete after both runs: 0x800280A1
+nested self delete: the next check: 0x00000000
+nested self delete: runs after the next check: 0x00000002
+nested chain: the check: 0x00000001
+nested chain: the nested check: 0x00000001
+nested chain: the delete of A by B: 0x00000000
+nested chain: runs of A: 0x00000001
+nested chain: runs of B: 0x00000001
+nested chain: A in its run: the notifications: 0x00000000
+nested chain: A in its run: the info: 0x00000000
+nested chain: A in its run: the info is for the callback: 0x00000001
+nested chain: A in its run: the notify: 0x00000000
+nested chain: A in its run: the cancel: 0x00000000
+nested chain: A after both runs: the notifications: 0x800280A1
+nested chain: A after both runs: the info: 0x800280A1
+nested chain: A after both runs: the info is for the callback: 0x00000000
+nested chain: A after both runs: the notify: 0x800280A1
+nested chain: A after both runs: the cancel: 0x800280A1
+nested chain: the delete of A after both runs: 0x800280A1
+delete on another core: the delete during the run: 0x00000000
+delete on another core: during the run: the notifications: 0x00000000
+delete on another core: during the run: the info: 0x00000000
+delete on another core: during the run: the info is for the callback: 0x00000001
+delete on another core: during the run: the notify: 0x00000000
+delete on another core: during the run: the cancel: 0x00000000
+delete on another core: the owner's wait: 0x80028005
+delete on another core: runs: 0x00000001
+delete on another core: after: the notifications: 0x800280A1
+delete on another core: after: the info: 0x800280A1
+delete on another core: after: the info is for the callback: 0x00000000
+delete on another core: after: the notify: 0x800280A1
+delete on another core: after: the cancel: 0x800280A1
+delete on another core: the delete after: 0x800280A1
+DONE

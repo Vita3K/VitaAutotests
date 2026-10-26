@@ -1,0 +1,17 @@
+return: notify the callback while it waits: 0x00000000
+exit: notify the callback while it waits: 0x00000000
+exit and delete: notify the callback while it waits: 0x00000000
+return: the end wait: 0x00000000
+return: the exit status call: 0x00000000
+return: the exit status: 0x00000011
+return: the callback's runs: 0x00000000
+return: notify the callback after the end: 0x800280A1
+exit: the end wait: 0x00000000
+exit: the exit status call: 0x00000000
+exit: the exit status: 0x00000022
+exit: the callback's runs: 0x00000000
+exit: notify the callback after the end: 0x800280A1
+exit and delete: the thread is gone: 0x00000001
+exit and delete: the callback's runs: 0x00000000
+exit and delete: notify the callback after the end: 0x800280A1
+DONE

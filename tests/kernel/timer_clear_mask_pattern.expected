@@ -1,0 +1,21 @@
+the wait for the fired event: 0x00000000
+the pattern after the event fired: the timer bit is set: 0x00000001
+the pattern after the event fired: the create bit is set: 0x00000001
+the pattern after the event fired: the user bits: 0x00000000
+the pattern after the event fired: another system bit is set: 0x00000000
+clear with ~0x8000: 0x8002000D
+the pattern after clearing with ~0x8000: the timer bit is set: 0x00000001
+the pattern after clearing with ~0x8000: the create bit is set: 0x00000001
+the pattern after clearing with ~0x8000: the user bits: 0x00000000
+the pattern after clearing with ~0x8000: another system bit is set: 0x00000000
+clear with 0x10000: 0x8002000D
+the pattern after clearing with 0x10000: the timer bit is set: 0x00000001
+the pattern after clearing with 0x10000: the create bit is set: 0x00000001
+the pattern after clearing with 0x10000: the user bits: 0x00000000
+the pattern after clearing with 0x10000: another system bit is set: 0x00000000
+clear with 0: 0x00000000
+the pattern after clearing with 0: the timer bit is set: 0x00000000
+the pattern after clearing with 0: the create bit is set: 0x00000000
+the pattern after clearing with 0: the user bits: 0x00000000
+the pattern after clearing with 0: another system bit is set: 0x00000000
+DONE

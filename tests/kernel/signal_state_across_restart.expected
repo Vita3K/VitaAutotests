@@ -1,0 +1,17 @@
+a: the first send to a thread that never started: 0x00000000
+a: the second send before it starts: 0x80028121
+a: start it: 0x00000000
+a: its first WaitSignal: 0x80028005
+a: its second WaitSignal: 0x80028005
+b: start it to wait on the semaphore: 0x00000000
+b: a signal sent while it waits on the semaphore: 0x00000000
+b: its semaphore wait: 0x00000000
+b: a signal sent to it once it ended: 0x80028121
+b: start it again to call WaitSignal once: 0x00000000
+b: its WaitSignal in the new run: 0x80028005
+c: start it to end at once: 0x00000000
+c: a signal sent to the dormant thread: 0x00000000
+c: start it again to call WaitSignal twice: 0x00000000
+c: its first WaitSignal: 0x80028005
+c: its second WaitSignal: 0x80028005
+DONE

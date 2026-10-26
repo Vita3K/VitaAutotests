@@ -1,0 +1,71 @@
+semaphore: still waiting after a signal: 0x00000001
+semaphore: threads waiting on it: 0x00000001
+semaphore: the wait's result: 0x00000000
+semaphore: its time left is above 1 s: 0x00000001
+semaphore: the wait for the signal after it: 0x00000000
+semaphore: that wait returned at once: 0x00000001
+event flag: still waiting after a signal: 0x00000001
+event flag: threads waiting on it: 0x00000001
+event flag: the wait's result: 0x00000000
+event flag: its time left is above 1 s: 0x00000001
+event flag: the wait for the signal after it: 0x00000000
+event flag: that wait returned at once: 0x00000001
+mutex: still waiting after a signal: 0x00000001
+mutex: threads waiting on it: 0x00000001
+mutex: the wait's result: 0x00000000
+mutex: its time left is above 1 s: 0x00000001
+mutex: the wait for the signal after it: 0x00000000
+mutex: that wait returned at once: 0x00000001
+lightweight mutex: still waiting after a signal: 0x00000001
+lightweight mutex: threads waiting on it: 0x00000001
+lightweight mutex: the wait's result: 0x00000000
+lightweight mutex: its time left is above 1 s: 0x00000001
+lightweight mutex: the wait for the signal after it: 0x00000000
+lightweight mutex: that wait returned at once: 0x00000001
+write lock: still waiting after a signal: 0x00000001
+write lock: threads waiting on it: 0x00000001
+write lock: the wait's result: 0x00000000
+write lock: its time left is above 1 s: 0x00000001
+write lock: the wait for the signal after it: 0x00000000
+write lock: that wait returned at once: 0x00000001
+simple event: still waiting after a signal: 0x00000001
+simple event: threads waiting on it: 0x00000001
+simple event: the wait's result: 0x00000000
+simple event: its time left is above 1 s: 0x00000001
+simple event: the wait for the signal after it: 0x00000000
+simple event: that wait returned at once: 0x00000001
+timer: still waiting after a signal: 0x00000001
+timer: threads waiting on it: 0x00000001
+timer: the wait's result: 0x00000000
+timer: its time left is above 1 s: 0x00000001
+timer: the wait for the signal after it: 0x00000000
+timer: that wait returned at once: 0x00000001
+message pipe receive: still waiting after a signal: 0x00000001
+message pipe receive: threads waiting on it: 0x00000001
+message pipe receive: the wait's result: 0x00000000
+message pipe receive: its time left is above 1 s: 0x00000001
+message pipe receive: the wait for the signal after it: 0x00000000
+message pipe receive: that wait returned at once: 0x00000001
+condition: still waiting after a signal: 0x00000001
+condition: threads waiting on it: 0x00000001
+condition: the wait's result: 0x00000000
+condition: its time left is above 1 s: 0x00000001
+condition: the wait for the signal after it: 0x00000000
+condition: that wait returned at once: 0x00000001
+lightweight condition: still waiting after a signal: 0x00000001
+lightweight condition: threads waiting on it: 0x00000001
+lightweight condition: the wait's result: 0x00000000
+lightweight condition: its time left is above 1 s: 0x00000001
+lightweight condition: the wait for the signal after it: 0x00000000
+lightweight condition: that wait returned at once: 0x00000001
+delay: still waiting after a signal: 0x00000001
+delay: the wait's result: 0x00000000
+delay: the delay lasted at least 500 ms: 0x00000001
+delay: the wait for the signal after it: 0x00000000
+delay: that wait returned at once: 0x00000001
+thread end: still waiting after a signal: 0x00000001
+thread end: the wait's result: 0x00000000
+thread end: its time left is above 1 s: 0x00000001
+thread end: the wait for the signal after it: 0x00000000
+thread end: that wait returned at once: 0x00000001
+DONE

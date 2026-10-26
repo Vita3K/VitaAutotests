@@ -1,0 +1,12 @@
+control: register: 0x00000000
+control: the wait for the end: 0x00000000
+control: START runs: 0x00000001
+control: END runs: 0x00000001
+control: unregister from the main thread: 0x00000000
+unregister in the entry: register: 0x00000000
+unregister in the entry: the wait for the end: 0x00000000
+unregister in the entry: the entry's unregister: 0x00000000
+unregister in the entry: START runs: 0x00000001
+unregister in the entry: END runs: 0x00000000
+unregister in the entry: unregister from the main thread: 0x80028061
+DONE

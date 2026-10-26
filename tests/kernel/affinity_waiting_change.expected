@@ -1,0 +1,18 @@
+waiting, core 1 idle: the change to cores 0 and 1: 0x00010000
+waiting, core 1 idle: the change to core 1 alone: 0x00030000
+waiting, core 1 idle: T's status before it runs: 0x00000008
+waiting, core 1 idle: T ran: 0x00000001
+waiting, core 1 idle: the core T ran on: 0x00000001
+waiting, core 1 idle: T's status once it ran: 0x00000001
+waiting, core 1 busy at 0xB0: the change to cores 0 and 1: 0x00010000
+waiting, core 1 busy at 0xB0: the change to core 1 alone: 0x00030000
+waiting, core 1 busy at 0xB0: T's status before it runs: 0x00000008
+waiting, core 1 busy at 0xB0: T ran: 0x00000001
+waiting, core 1 busy at 0xB0: the core T ran on: 0x00000001
+waiting, core 1 busy at 0xB0: T's status once it ran: 0x00000001
+in a delay, narrowed during it: the change to core 1 alone: 0x00010000
+in a delay, narrowed during it: T's status before it runs: 0x00000008
+in a delay, narrowed during it: T ran: 0x00000001
+in a delay, narrowed during it: the core T ran on: 0x00000001
+in a delay, narrowed during it: T's status once it ran: 0x00000001
+DONE

@@ -1,0 +1,28 @@
+live: USER_RW: make it: 0x00000000
+live: USER_RW: in its type's region: 0x00000001
+live: USER_CDRAM_RW: make it: 0x00000000
+live: USER_CDRAM_RW: in its type's region: 0x00000001
+live: USER_RW_UNCACHE: make it: 0x00000000
+live: USER_RW_UNCACHE: in its type's region: 0x00000001
+live: USER_MAIN_CDIALOG_RW: make it: 0x00000000
+live: USER_MAIN_CDIALOG_RW: in its type's region: 0x00000001
+the live blocks don't overlap: 0x00000001
+round 1: free the USER_RW block: 0x00000000
+round 1: free the USER_RW_UNCACHE block: 0x00000000
+round 1: USER_RW: make it: 0x00000000
+round 1: USER_RW: in its type's region: 0x00000001
+round 1: USER_RW_UNCACHE: make it: 0x00000000
+round 1: USER_RW_UNCACHE: in its type's region: 0x00000001
+round 1: no live block overlaps another: 0x00000001
+round 2: free the USER_RW block: 0x00000000
+round 2: free the USER_RW_UNCACHE block: 0x00000000
+round 2: USER_RW: make it: 0x00000000
+round 2: USER_RW: in its type's region: 0x00000001
+round 2: USER_RW_UNCACHE: make it: 0x00000000
+round 2: USER_RW_UNCACHE: in its type's region: 0x00000001
+round 2: no live block overlaps another: 0x00000001
+free the USER_RW block at the end: 0x00000000
+free the USER_CDRAM_RW block at the end: 0x00000000
+free the USER_RW_UNCACHE block at the end: 0x00000000
+free the USER_MAIN_CDIALOG_RW block at the end: 0x00000000
+DONE

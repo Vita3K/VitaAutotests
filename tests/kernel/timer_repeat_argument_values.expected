@@ -1,0 +1,13 @@
+repeat 0: the set: 0x00000000
+repeat 0: the info call: 0x00000000
+repeat 0: the repeat field: 0x00000000
+repeat 1: the set: 0x00000000
+repeat 1: the info call: 0x00000000
+repeat 1: the repeat field: 0x00000001
+repeat 2: the set: 0x00000000
+repeat 2: the info call: 0x00000000
+repeat 2: the repeat field: 0x00000001
+repeat -1: the set: 0x00000000
+repeat -1: the info call: 0x00000000
+repeat -1: the repeat field: 0x00000001
+DONE

@@ -1,0 +1,18 @@
+receiver 1 waits on the pipe: 0x00000001
+receiver 2 waits on the pipe: 0x00000001
+receiver 3 waits on the pipe: 0x00000001
+the waiting receivers before the send: 0x00000003
+send "pqrs": 0x00000000
+send "pqrs", its size: 0x00000004
+receiver 1's result: 0x00000000
+receiver 1 got "pqrs", its size: 0x00000004
+receiver 2's result: 0x00000000
+receiver 2 got "pqrs", its size: 0x00000004
+receiver 3's result: 0x00000000
+receiver 3 got "pqrs", its size: 0x00000004
+the waiting receivers after the receivers ended: 0x00000000
+the free size after the receivers ended: 0x00001000
+try receive of 4 after them: 0x80028223
+try receive of 4 after them, it got "", its size: 0x0000DEAD
+the free size after the try receive: 0x00001000
+DONE

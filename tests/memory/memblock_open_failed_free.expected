@@ -1,0 +1,20 @@
+make the USER_RW original: 0x00000000
+make the CDRAM original: 0x00000000
+the CDRAM name with 0x10: open it: 0x80024804
+the CDRAM name with 0x10: the free sizes are unchanged: 0x00000001
+the CDRAM name with 0x30: open it: 0x80024804
+the CDRAM name with 0x30: the free sizes are unchanged: 0x00000001
+the USER_RW name with flags 0: open it: 0x80020005
+the USER_RW name with flags 0: the free sizes are unchanged: 0x00000001
+a name no block holds, with 0x10: open it: 0x8002450A
+a name no block holds, with 0x10: the free sizes are unchanged: 0x00000001
+make the USER_RW_UNCACHE original: 0x00000000
+the USER_RW_UNCACHE name with 0x10: open it: 0x80024B01
+the USER_RW_UNCACHE name with 0x10: the free sizes are unchanged: 0x00000001
+free the USER_RW_UNCACHE original: 0x00000000
+open the USER_RW name with 0x30 after them: 0x00000000
+the opened block maps the word: 0x00000001
+close it: 0x00000000
+free the CDRAM original: 0x00000000
+free the USER_RW original: 0x00000000
+DONE

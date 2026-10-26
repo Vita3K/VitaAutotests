@@ -1,0 +1,22 @@
+semaphore, cancel through the opened UID, waiter through the creating UID: create and open the object: 0x00000000
+semaphore, cancel through the opened UID, waiter through the creating UID: the cancel: 0x00000000
+semaphore, cancel through the opened UID, waiter through the creating UID: the waiters the cancel counted: 0x00000001
+semaphore, cancel through the opened UID, waiter through the creating UID: the waiters the info counted before: 0x00000001
+semaphore, cancel through the opened UID, waiter through the creating UID: the cancel's count equals the info's: 0x00000001
+semaphore, cancel through the opened UID, waiter through the creating UID: the waiter's result: 0x80028007
+semaphore, cancel through the opened UID, waiter through the creating UID: the release through the other UID: 0x00000000
+semaphore, cancel through the creating UID, waiter through the opened UID: create and open the object: 0x00000000
+semaphore, cancel through the creating UID, waiter through the opened UID: the cancel: 0x00000000
+semaphore, cancel through the creating UID, waiter through the opened UID: the waiters the cancel counted: 0x00000001
+semaphore, cancel through the creating UID, waiter through the opened UID: the waiters the info counted before: 0x00000001
+semaphore, cancel through the creating UID, waiter through the opened UID: the cancel's count equals the info's: 0x00000001
+semaphore, cancel through the creating UID, waiter through the opened UID: the waiter's result: 0x80028007
+semaphore, cancel through the creating UID, waiter through the opened UID: the release through the other UID: 0x00000000
+event flag, cancel through the opened UID, waiter through the creating UID: create and open the object: 0x00000000
+event flag, cancel through the opened UID, waiter through the creating UID: the cancel: 0x00000000
+event flag, cancel through the opened UID, waiter through the creating UID: the waiters the cancel counted: 0x00000001
+event flag, cancel through the opened UID, waiter through the creating UID: the waiters the info counted before: 0x00000001
+event flag, cancel through the opened UID, waiter through the creating UID: the cancel's count equals the info's: 0x00000001
+event flag, cancel through the opened UID, waiter through the creating UID: the waiter's result: 0x80028007
+event flag, cancel through the opened UID, waiter through the creating UID: the release through the other UID: 0x00000000
+DONE

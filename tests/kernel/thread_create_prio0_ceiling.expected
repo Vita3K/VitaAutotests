@@ -1,0 +1,20 @@
+the main thread at 0xA0: create with priority 0: 0x00000000
+the main thread at 0xA0: its initial priority: 0x000000A0
+the main thread at 0xA0: its current priority: 0x000000A0
+the main thread at 0xA0: the priority it runs at: 0x000000A0
+lock the mutex with the ceiling 0x70: 0x00000000
+the main thread holding the ceiling: create with priority 0: 0x00000000
+the main thread holding the ceiling: its initial priority: 0x00000070
+the main thread holding the ceiling: its current priority: 0x00000070
+the main thread holding the ceiling: the priority it runs at: 0x00000070
+change the base priority to 0x90: 0x00000000
+the main thread holding the ceiling, base 0x90: create with priority 0: 0x00000000
+the main thread holding the ceiling, base 0x90: its initial priority: 0x00000070
+the main thread holding the ceiling, base 0x90: its current priority: 0x00000070
+the main thread holding the ceiling, base 0x90: the priority it runs at: 0x00000070
+unlock the mutex: 0x00000000
+the main thread after the unlock, base 0x90: create with priority 0: 0x00000000
+the main thread after the unlock, base 0x90: its initial priority: 0x00000090
+the main thread after the unlock, base 0x90: its current priority: 0x00000090
+the main thread after the unlock, base 0x90: the priority it runs at: 0x00000090
+DONE

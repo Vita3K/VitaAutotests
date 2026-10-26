@@ -1,0 +1,53 @@
+the call returns the function's value: 0x0000002A
+call: the function ran: 0x00000001
+call: r0 is the argument: 0x00000001
+call: sp & 7 on entry: 0x00000000
+call: sp & 15 on entry: 0x00000000
+call: sp is inside the buffer: 0x00000001
+call: sp's distance below the top, bucket: 0x00000000
+call: slot 2 is the top of the buffer: 0x00000001
+call: slot 3 is the bottom of the buffer: 0x00000001
+call: CheckThreadStack is sp minus the bottom: 0x00000000
+call: the thread info stack and size are unchanged: 0x00000001
+call: TPIDRURO is unchanged: 0x00000001
+call: the thread ID is unchanged: 0x00000001
+call: FPSCR is unchanged: 0x00000001
+call: slot 2 is the thread's own again: 0x00000001
+call: slot 3 is the thread's own again: 0x00000001
+call: sp is the same after the call: 0x00000001
+call: r4 to r11 kept, bit 0 is r4: 0x000000FF
+nested: the outer call returns the function's value: 0x00000041
+nested: the inner call returns the function's value: 0x00000071
+nested outer: the function ran: 0x00000001
+nested outer: r0 is the argument: 0x00000001
+nested outer: sp & 7 on entry: 0x00000000
+nested outer: sp & 15 on entry: 0x00000000
+nested outer: sp is inside the buffer: 0x00000001
+nested outer: sp's distance below the top, bucket: 0x00000000
+nested outer: slot 2 is the top of the buffer: 0x00000001
+nested outer: slot 3 is the bottom of the buffer: 0x00000001
+nested outer: CheckThreadStack is sp minus the bottom: 0x00000000
+nested outer: the thread info stack and size are unchanged: 0x00000001
+nested outer: TPIDRURO is unchanged: 0x00000001
+nested outer: the thread ID is unchanged: 0x00000001
+nested outer: FPSCR is unchanged: 0x00000001
+nested inner: the function ran: 0x00000001
+nested inner: r0 is the argument: 0x00000001
+nested inner: sp & 7 on entry: 0x00000000
+nested inner: sp & 15 on entry: 0x00000000
+nested inner: sp is inside the buffer: 0x00000001
+nested inner: sp's distance below the top, bucket: 0x00000000
+nested inner: slot 2 is the top of the buffer: 0x00000001
+nested inner: slot 3 is the bottom of the buffer: 0x00000001
+nested inner: CheckThreadStack is sp minus the bottom: 0x00000000
+nested inner: the thread info stack and size are unchanged: 0x00000001
+nested inner: TPIDRURO is unchanged: 0x00000001
+nested inner: the thread ID is unchanged: 0x00000001
+nested inner: FPSCR is unchanged: 0x00000001
+nested: after the inner call, slot 2 is the outer buffer's top: 0x00000001
+nested: after the inner call, slot 3 is the outer buffer's bottom: 0x00000001
+nested: after the outer call, slot 2 is the thread's own: 0x00000001
+nested: after the outer call, slot 3 is the thread's own: 0x00000001
+nested: sp is the same after the call: 0x00000001
+nested: r4 to r11 kept, bit 0 is r4: 0x000000FF
+DONE

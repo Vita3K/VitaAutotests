@@ -1,0 +1,15 @@
+make the block named Case: 0x00000000
+make the block named case: 0x00000000
+open CASE: the result: 0x8002450A
+open CASE: the block it maps: 0x00000000
+open case: the result: 0x00000000
+open case: the block it maps: 0x00000002
+open Case: the result: 0x00000000
+open Case: the block it maps: 0x00000001
+make the block with the 31 character upper case name: 0x00000000
+make the block with the 31 character lower case name: 0x00000000
+open the upper case name: the result: 0x00000000
+open the upper case name: the block it maps: 0x00000001
+open the lower case name: the result: 0x00000000
+open the lower case name: the block it maps: 0x00000002
+DONE

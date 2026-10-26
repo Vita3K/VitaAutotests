@@ -1,0 +1,5 @@
+20 rounds of two deletes: how many had both return 0: 0x00000000
+20 rounds of two deletes: how many had one return 0 and the other the unknown thread error or NOT_DORMANT: 0x00000014
+20 rounds of two deletes: how many had any other pair of results: 0x00000000
+20 rounds of two deletes: how many end waits timed out: 0x00000000
+DONE

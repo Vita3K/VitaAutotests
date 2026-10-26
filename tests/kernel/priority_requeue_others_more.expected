@@ -1,0 +1,25 @@
+semaphore: create the object: 0x00000000
+semaphore: the low priority waiter that waited first: 0x00000003
+semaphore: the raised waiter: 0x00000002
+semaphore: the waiter already at that priority: 0x00000001
+read lock waiters: create the object: 0x00000000
+read lock waiters: the low priority waiter that waited first: 0x00000003
+read lock waiters: the raised waiter: 0x00000002
+read lock waiters: the waiter already at that priority: 0x00000001
+timer: create the object: 0x00000000
+timer: the low priority waiter that waited first: 0x00000003
+timer: the raised waiter: 0x00000002
+timer: the waiter already at that priority: 0x00000001
+lightweight condition: create the object: 0x00000000
+lightweight condition: the low priority waiter that waited first: 0x00000003
+lightweight condition: the raised waiter: 0x00000002
+lightweight condition: the waiter already at that priority: 0x00000001
+thread end waiters: create the object: 0x00000000
+thread end waiters: the low priority waiter that waited first: 0x00000003
+thread end waiters: the raised waiter: 0x00000001
+thread end waiters: the waiter already at that priority: 0x00000002
+message pipe senders: create the object: 0x00000000
+message pipe senders: the low priority waiter that waited first: 0x00000003
+message pipe senders: the raised waiter: 0x00000002
+message pipe senders: the waiter already at that priority: 0x00000001
+DONE

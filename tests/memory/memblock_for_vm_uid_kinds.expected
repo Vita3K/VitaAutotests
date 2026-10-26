@@ -1,0 +1,17 @@
+allocate the block for code: 0x00000000
+allocate the 4 KiB plain block: 0x00000000
+allocate the 64 KiB ENABLE_OPEN block: 0x00000000
+the call for code on the 4 KiB plain block: 0x80020005
+the call for code on the 64 KiB ENABLE_OPEN block: 0x80020005
+the call for code on a semaphore: 0x80020005
+the call for code on a mutex: 0x80020005
+the call for code on an unknown UID: 0x80020005
+the call for code on UID 0: 0x80020005
+the call for code on UID -1: 0x80020005
+the plain block's base still finds its UID: 0x00000000
+the semaphore still works after them: 0x00000000
+the mutex still works after them: 0x00000000
+the 4 KiB plain block, freed with the usual free: 0x00000000
+the 64 KiB ENABLE_OPEN block, freed with the usual free: 0x00000000
+the block for code, freed with the call for code: 0x00000000
+DONE

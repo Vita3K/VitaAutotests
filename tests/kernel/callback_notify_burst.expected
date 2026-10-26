@@ -1,0 +1,9 @@
+register: 0x00000000
+set calls with notification that returned 0: 0x0000001E
+notify calls that returned 0: 0x00000014
+the callback's notifications before the check: 0x00000032
+runs after the first check: 0x00000001
+the count the callback saw: 0x00000032
+the last argument the callback saw: 0x00000013
+runs after the second check: 0x00000001
+DONE

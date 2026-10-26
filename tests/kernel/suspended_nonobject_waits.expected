@@ -1,0 +1,42 @@
+a signal wait: suspend it: 0x00000001
+a signal wait suspended past its timeout: its status: 0x00000100
+a signal wait suspended past its timeout: its wait type: 0x00000000
+a signal wait suspended past its timeout: send it a signal: 0x00000000
+a signal wait suspended past its timeout: resume it: 0x00000000
+a signal wait suspended past its timeout: its wait: 0x80028005
+a signal wait suspended past its timeout: its WaitSignal with a timeout of 0: 0x00000000
+a thread end wait: suspend it: 0x00000001
+a thread end wait suspended past its timeout: its status: 0x00000100
+a thread end wait suspended past its timeout: its wait type: 0x00000000
+a thread end wait suspended past its timeout: resume it: 0x00000000
+a thread end wait suspended past its timeout: its wait: 0x80028005
+a thread end wait suspended past its timeout: the status variable is untouched: 0x00000001
+a thread end wait suspended past its timeout: its WaitSignal with a timeout of 0: 0x80028005
+a callback in a signal wait: suspend it: 0x00000001
+a callback in a signal wait: runs of the callback while suspended: 0x00000000
+a callback in a signal wait: its status while suspended: 0x00000100
+a callback in a signal wait: its wait type while suspended: 0x00000000
+a callback in a signal wait: resume it: 0x00000000
+a callback in a signal wait: runs of the callback after the resume: 0x00000001
+a callback in a signal wait: its wait type once the callback returned: 0x80000004
+a callback in a signal wait: its wait: 0x80028005
+a callback in a signal wait: it returned at its deadline: 0x00000001
+a callback in a thread end wait: suspend it: 0x00000001
+a callback in a thread end wait: runs of the callback while suspended: 0x00000000
+a callback in a thread end wait: its status while suspended: 0x00000100
+a callback in a thread end wait: its wait type while suspended: 0x00000000
+a callback in a thread end wait: resume it: 0x00000000
+a callback in a thread end wait: runs of the callback after the resume: 0x00000001
+a callback in a thread end wait: its wait type once the callback returned: 0x80000002
+a callback in a thread end wait: its wait: 0x80028005
+a callback in a thread end wait: it returned at its deadline: 0x00000001
+a callback in a delay: suspend it: 0x00000001
+a callback in a delay: runs of the callback while suspended: 0x00000000
+a callback in a delay: its status while suspended: 0x00000100
+a callback in a delay: its wait type while suspended: 0x00000000
+a callback in a delay: resume it: 0x00000000
+a callback in a delay: runs of the callback after the resume: 0x00000001
+a callback in a delay: its wait type once the callback returned: 0x80000001
+a callback in a delay: its wait: 0x00000000
+a callback in a delay: it returned at its deadline: 0x00000001
+DONE

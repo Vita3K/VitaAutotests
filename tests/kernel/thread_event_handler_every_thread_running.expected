@@ -1,0 +1,15 @@
+a: registered while waiting: the wait for the end: 0x00000000
+a: registered while waiting: register: 0x00000001
+a: registered while waiting: START runs for the target: 0x00000000
+a: registered while waiting: END runs for the target: 0x00000001
+a: registered while waiting: the thread ID argument of the last run is the target: 0x00000001
+a: registered while waiting: runs on the target: 0x00000001
+a: registered while waiting: unregister: 0x00000000
+b: registered before the start: the wait for the end: 0x00000000
+b: registered before the start: register: 0x00000001
+b: registered before the start: START runs for the target: 0x00000001
+b: registered before the start: END runs for the target: 0x00000001
+b: registered before the start: the thread ID argument of the last run is the target: 0x00000001
+b: registered before the start: runs on the target: 0x00000002
+b: registered before the start: unregister: 0x00000000
+DONE

@@ -1,0 +1,18 @@
+create the lightweight mutex for the condition variables: 0x00000000
+lightweight condition variable with attribute 0x80: create: 0x8002000E
+lightweight condition variable with attribute 0x80: the work area changed: 0x00000000
+lightweight condition variable with attribute 0x80|0x2000: create: 0x8002000E
+lightweight condition variable with attribute 0x80|0x2000: the work area changed: 0x00000000
+lightweight condition variable with attribute 0x2000 (control): create: 0x00000000
+control condition variable: signal with nobody waiting: 0x00000000
+control condition variable: lock its mutex: 0x00000000
+control condition variable: wait with a timeout of 0: 0x80028005
+control condition variable: unlock its mutex after the wait: 0x00000000
+control condition variable works: 0x00000001
+lightweight mutex with attribute 0x80: create: 0x8002000E
+lightweight mutex with attribute 0x80: the work area changed: 0x00000000
+lightweight mutex control: create: 0x00000000
+lightweight mutex control: lock: 0x00000000
+lightweight mutex control: unlock: 0x00000000
+lightweight mutex control works: 0x00000001
+DONE

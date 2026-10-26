@@ -1,0 +1,43 @@
+heavy, delete the condition: T's callback waits on the gate: 0x00000001
+heavy, delete the condition: the delete: 0x00000000
+heavy, delete the condition: T's wait: 0x800281A4
+heavy, delete the condition: T's wait returned within 1 s of the gate: 0x00000001
+heavy, delete the condition: T's unlock: 0x80028146
+heavy, delete the condition: runs of the callback: 0x00000001
+lightweight, delete the condition: T's callback waits on the gate: 0x00000001
+lightweight, delete the condition: the delete: 0x00000000
+lightweight, delete the condition: T's wait: 0x800281C3
+lightweight, delete the condition: T's wait returned within 1 s of the gate: 0x00000001
+lightweight, delete the condition: T's unlock: 0x80028186
+lightweight, delete the condition: runs of the callback: 0x00000001
+heavy, delete the mutex: T's callback waits on the gate: 0x00000001
+heavy, delete the mutex: the delete: 0x00000000
+heavy, delete the mutex: T's wait returned within 1 s of the gate: 0x00000000
+heavy, delete the mutex: the signal: 0x00000000
+heavy, delete the mutex: T's wait: 0x80028141
+heavy, delete the mutex: T's unlock: 0x80028141
+heavy, delete the mutex: runs of the callback: 0x00000001
+heavy, delete the mutex, then the timeout: T's callback waits on the gate: 0x00000001
+heavy, delete the mutex, then the timeout: the delete: 0x00000000
+heavy, delete the mutex, then the timeout: T's wait: 0x80028141
+heavy, delete the mutex, then the timeout: T's wait lasted at least 1.75 s: 0x00000001
+heavy, delete the mutex, then the timeout: T's unlock: 0x80028141
+heavy, delete the mutex, then the timeout: runs of the callback: 0x00000001
+heavy, the callback deletes the condition: the callback's delete: 0x00000000
+heavy, the callback deletes the condition: T's wait: 0x800281A4
+heavy, the callback deletes the condition: T's wait returned within 1 s of the notify: 0x00000001
+heavy, the callback deletes the condition: T's unlock: 0x80028146
+heavy, the callback deletes the condition: runs of the callback: 0x00000001
+lightweight, the callback deletes the condition: the callback's delete: 0x00000000
+lightweight, the callback deletes the condition: T's wait: 0x800281C3
+lightweight, the callback deletes the condition: T's wait returned within 1 s of the notify: 0x00000001
+lightweight, the callback deletes the condition: T's unlock: 0x80028186
+lightweight, the callback deletes the condition: runs of the callback: 0x00000001
+heavy, delete the mutex in the relock: the signal: 0x00000000
+heavy, delete the mutex in the relock: T's callback waits on the gate: 0x00000001
+heavy, delete the mutex in the relock: the delete: 0x00000000
+heavy, delete the mutex in the relock: T's wait: 0x800281A2
+heavy, delete the mutex in the relock: T's wait returned within 1 s of the gate: 0x00000001
+heavy, delete the mutex in the relock: T's unlock: 0x80028141
+heavy, delete the mutex in the relock: runs of the callback: 0x00000001
+DONE

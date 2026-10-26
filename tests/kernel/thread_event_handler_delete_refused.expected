@@ -1,0 +1,7 @@
+register the handler: 0x00000000
+the wait for the end of the target: 0x00000000
+the handler's delete of the dormant thread: 0x80027101
+the dormant thread still exists: 0x00000001
+the handler runs: 0x00000002
+main's delete of the dormant thread: 0x00000000
+DONE

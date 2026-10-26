@@ -1,0 +1,35 @@
+waiting: suspend it: 0x00000001
+waiting: read it: 0x00000000
+waiting: r4 to r11 that hold their markers, one bit each: 0x00000FF0
+waiting: sp is the one before the wait: 0x00000000
+waiting: pc & 1: 0x00000000
+waiting: pc inside the asm: 0x00000000
+waiting: the cpsr flags: 0x80000000
+waiting: the Thumb bit: 0x00000000
+waiting: resume it: 0x00000000
+waiting: signal it: 0x00000000
+waiting: the wait's result: 0x00000000
+waiting: r4 to r11 after the wait, one bit each: 0x00000FF0
+a Thumb loop: suspend it: 0x00000001
+a Thumb loop: read it: 0x00000000
+a Thumb loop: r0 to r11 that hold their markers, one bit each: 0x00000FFF
+a Thumb loop: lr holds its marker: 0x00000001
+a Thumb loop: pc inside the loop: 0x00000001
+a Thumb loop: sp is the one before the loop: 0x00000001
+a Thumb loop: the cpsr flags: 0x880F0000
+a Thumb loop: the Thumb bit: 0x00000001
+a Thumb loop: resume it: 0x00000000
+a Thumb loop: r0 to r11 after the loop, one bit each: 0x00000FFF
+a Thumb loop: lr after the loop holds its marker: 0x00000001
+an ARM loop: suspend it: 0x00000001
+an ARM loop: read it: 0x00000000
+an ARM loop: r0 to r11 that hold their markers, one bit each: 0x00000FFF
+an ARM loop: lr holds its marker: 0x00000001
+an ARM loop: pc inside the loop: 0x00000001
+an ARM loop: sp is the one before the loop: 0x00000001
+an ARM loop: the cpsr flags: 0x880F0000
+an ARM loop: the Thumb bit: 0x00000000
+an ARM loop: resume it: 0x00000000
+an ARM loop: r0 to r11 after the loop, one bit each: 0x00000FFF
+an ARM loop: lr after the loop holds its marker: 0x00000001
+DONE

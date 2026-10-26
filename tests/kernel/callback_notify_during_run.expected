@@ -1,0 +1,61 @@
+returns 0: A's count before the notifies: 0x00000000
+returns 0: A's argument before the notifies: 0x00000000
+returns 0: A's notify ID before the notifies: 0x00000000
+returns 0: notify A with 7: 0x00000000
+returns 0: notify A with 8: 0x00000000
+returns 0: notify B once: 0x00000000
+returns 0: A's count after the notifies: 0x00000002
+returns 0: A's argument after the notifies: 0x00000008
+returns 0: A's notify ID after the notifies is -1: 0x00000001
+returns 0: A's count after the notifies, from the count call: 0x00000002
+returns 0: B's count after its notify: 0x00000001
+returns 0: B's runs during A's run: 0x00000000
+returns 0: A's runs during A's run: 0x00000001
+returns 0: the owner's notify flag during the run: 0x00000001
+returns 0: the owner's wait type during the run: 0x00000020
+returns 0: the owner's wait is on the gate during the run: 0x00000001
+returns 0: open the gate: 0x00000000
+returns 0: A's gate wait: 0x00000000
+returns 0: A's count in its info after the gate: 0x00000002
+returns 0: A's argument in its info after the gate: 0x00000008
+returns 0: A's notify ID in its info after the gate is -1: 0x00000001
+returns 0: the count A's first run got: 0x00000001
+returns 0: the argument A's first run got: 0x00000001
+returns 0: the first check's result: 0x00000002
+returns 0: B's runs after the first check: 0x00000001
+returns 0: the second check's result: 0x00000001
+returns 0: the count A's second run got: 0x00000002
+returns 0: the argument A's second run got: 0x00000008
+returns 0: A's runs in total: 0x00000002
+returns 0: B's runs in total: 0x00000001
+returns 1: A's count before the notifies: 0x00000000
+returns 1: A's argument before the notifies: 0x00000000
+returns 1: A's notify ID before the notifies: 0x00000000
+returns 1: notify A with 7: 0x00000000
+returns 1: notify A with 8: 0x00000000
+returns 1: notify B once: 0x00000000
+returns 1: A's count after the notifies: 0x00000002
+returns 1: A's argument after the notifies: 0x00000008
+returns 1: A's notify ID after the notifies is -1: 0x00000001
+returns 1: A's count after the notifies, from the count call: 0x00000002
+returns 1: B's count after its notify: 0x00000001
+returns 1: B's runs during A's run: 0x00000000
+returns 1: A's runs during A's run: 0x00000001
+returns 1: the owner's notify flag during the run: 0x00000001
+returns 1: the owner's wait type during the run: 0x00000020
+returns 1: the owner's wait is on the gate during the run: 0x00000001
+returns 1: open the gate: 0x00000000
+returns 1: A's gate wait: 0x00000000
+returns 1: A's count in its info after the gate: 0x00000002
+returns 1: A's argument in its info after the gate: 0x00000008
+returns 1: A's notify ID in its info after the gate is -1: 0x00000001
+returns 1: the count A's first run got: 0x00000001
+returns 1: the argument A's first run got: 0x00000001
+returns 1: the first check's result: 0x00000002
+returns 1: B's runs after the first check: 0x00000001
+returns 1: the second check's result: 0x00000000
+returns 1: the count A's second run got: 0x00000002
+returns 1: the argument A's second run got: 0x00000008
+returns 1: A's runs in total: 0x00000001
+returns 1: B's runs in total: 0x00000001
+DONE

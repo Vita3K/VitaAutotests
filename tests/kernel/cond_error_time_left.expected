@@ -1,0 +1,57 @@
+heavy, not the owner: the wait: 0x80028146
+heavy, not the owner: the time left is unchanged: 0x00000001
+heavy, not the owner: the time left is 0: 0x00000000
+heavy, not the owner: the time left is between 0 and the preset: 0x00000000
+lightweight, not the owner: the wait: 0x80028186
+lightweight, not the owner: the time left is unchanged: 0x00000001
+lightweight, not the owner: the time left is 0: 0x00000000
+lightweight, not the owner: the time left is between 0 and the preset: 0x00000000
+heavy, unknown condition variable: the wait: 0x800281A1
+heavy, unknown condition variable: the time left is unchanged: 0x00000001
+heavy, unknown condition variable: the time left is 0: 0x00000000
+heavy, unknown condition variable: the time left is between 0 and the preset: 0x00000000
+lightweight, unknown condition variable: the wait: 0x800281C1
+lightweight, unknown condition variable: the time left is unchanged: 0x00000001
+lightweight, unknown condition variable: the time left is 0: 0x00000000
+lightweight, unknown condition variable: the time left is between 0 and the preset: 0x00000000
+heavy, deleted condition variable: the wait: 0x800281A1
+heavy, deleted condition variable: the time left is unchanged: 0x00000001
+heavy, deleted condition variable: the time left is 0: 0x00000000
+heavy, deleted condition variable: the time left is between 0 and the preset: 0x00000000
+lightweight, deleted condition variable: the wait: 0x800281C1
+lightweight, deleted condition variable: the time left is unchanged: 0x00000001
+lightweight, deleted condition variable: the time left is 0: 0x00000000
+lightweight, deleted condition variable: the time left is between 0 and the preset: 0x00000000
+heavy, condition variable whose mutex is deleted: the wait: 0x80028141
+heavy, condition variable whose mutex is deleted: the time left is unchanged: 0x00000001
+heavy, condition variable whose mutex is deleted: the time left is 0: 0x00000000
+heavy, condition variable whose mutex is deleted: the time left is between 0 and the preset: 0x00000000
+heavy, timeout 0 and not the owner: the wait: 0x80028146
+heavy, timeout 0 and not the owner: the time left is unchanged: 0x00000001
+heavy, timeout 0 and not the owner: the time left is 0: 0x00000001
+heavy, timeout 0 and not the owner: the time left is between 0 and the preset: 0x00000000
+lightweight, timeout 0 and not the owner: the wait: 0x80028186
+lightweight, timeout 0 and not the owner: the time left is unchanged: 0x00000001
+lightweight, timeout 0 and not the owner: the time left is 0: 0x00000001
+lightweight, timeout 0 and not the owner: the time left is between 0 and the preset: 0x00000000
+heavy, callback pending and not the owner: the wait: 0x80028146
+heavy, callback pending and not the owner: the time left is unchanged: 0x00000001
+heavy, callback pending and not the owner: the time left is 0: 0x00000000
+heavy, callback pending and not the owner: the time left is between 0 and the preset: 0x00000000
+heavy, callback pending and not the owner: the callback ran: 0x00000000
+lightweight, callback pending and not the owner: the wait: 0x80028186
+lightweight, callback pending and not the owner: the time left is unchanged: 0x00000001
+lightweight, callback pending and not the owner: the time left is 0: 0x00000000
+lightweight, callback pending and not the owner: the time left is between 0 and the preset: 0x00000000
+lightweight, callback pending and not the owner: the callback ran: 0x00000000
+heavy, mutex deleted while the waiter waits on the condition: the delete: 0x00000000
+heavy, mutex deleted while the waiter waits on the condition: the wait: 0x800281A2
+heavy, mutex deleted while the waiter waits on the condition: the time left is unchanged: 0x00000000
+heavy, mutex deleted while the waiter waits on the condition: the time left is 0: 0x00000000
+heavy, mutex deleted while the waiter waits on the condition: the time left is between 0 and the preset: 0x00000001
+heavy, mutex deleted while the waiter relocks: the delete: 0x00000000
+heavy, mutex deleted while the waiter relocks: the wait: 0x800281A2
+heavy, mutex deleted while the waiter relocks: the time left is unchanged: 0x00000000
+heavy, mutex deleted while the waiter relocks: the time left is 0: 0x00000000
+heavy, mutex deleted while the waiter relocks: the time left is between 0 and the preset: 0x00000001
+DONE

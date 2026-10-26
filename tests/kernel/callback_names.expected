@@ -1,0 +1,34 @@
+a name of 0 characters: create: 0x00000000
+a name of 0 characters: the info name is the first 31 characters: 0x00000001
+a name of 0 characters: byte 31 of the info name is 0: 0x00000001
+a name of 1 characters: create: 0x00000000
+a name of 1 characters: the info name is the first 31 characters: 0x00000001
+a name of 1 characters: byte 31 of the info name is 0: 0x00000001
+a name of 31 characters: create: 0x00000000
+a name of 31 characters: the info name is the first 31 characters: 0x00000001
+a name of 31 characters: byte 31 of the info name is 0: 0x00000001
+a name of 32 characters: create: 0x00000000
+a name of 32 characters: the info name is the first 31 characters: 0x00000001
+a name of 32 characters: byte 31 of the info name is 0: 0x00000001
+a name of 33 characters: create: 0x00000000
+a name of 33 characters: the info name is the first 31 characters: 0x00000001
+a name of 33 characters: byte 31 of the info name is 0: 0x00000001
+a name of 255 characters: create: 0x00000000
+a name of 255 characters: the info name is the first 31 characters: 0x00000001
+a name of 255 characters: byte 31 of the info name is 0: 0x00000001
+the same name twice: the first create: 0x00000000
+the same name twice: the second create: 0x00000000
+the same name twice: the UIDs differ: 0x00000001
+the NULL common in info: 0x00000001
+the odd common in info: 0x00000001
+the NULL common check: 0x00000001
+the NULL common runs: 0x00000001
+the NULL common as the fourth argument: 0x00000001
+the odd common check: 0x00000001
+the odd common runs: 0x00000001
+the odd common as the fourth argument: 0x00000001
+create with a function with bit 0 clear: 0x00000000
+the info function with bit 0 clear is the function: 0x00000001
+create with a function at 0x1000: 0x80020006
+the info function at 0x1000 is the function: 0x00000000
+DONE

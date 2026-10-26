@@ -1,0 +1,25 @@
+mask moved while suspended at 0x70: the suspend: 0x00000001
+mask moved while suspended at 0x70: the mask change: 0x00010000
+mask moved while suspended at 0x70: the resume: 0x00000000
+mask moved while suspended at 0x70: its status once the mask moved: 0x00000100
+mask moved while suspended at 0x70: it ran within 250 ms, with the gate on core 0: 0x00000001
+mask moved while suspended at 0x70: the core it ran on: 0x00000001
+mask moved while suspended at 0xA0: the suspend: 0x00000001
+mask moved while suspended at 0xA0: the mask change: 0x00010000
+mask moved while suspended at 0xA0: the resume: 0x00000000
+mask moved while suspended at 0xA0: its status once the mask moved: 0x00000100
+mask moved while suspended at 0xA0: it ran within 250 ms, with the gate on core 0: 0x00000001
+mask moved while suspended at 0xA0: the core it ran on: 0x00000001
+control, mask moved after the resume at 0x70: the suspend: 0x00000001
+control, mask moved after the resume at 0x70: the mask change: 0x00010000
+control, mask moved after the resume at 0x70: the resume: 0x00000000
+control, mask moved after the resume at 0x70: it was suspended once the mask moved: 0x00000000
+control, mask moved after the resume at 0x70: it ran within 250 ms, with the gate on core 0: 0x00000001
+control, mask moved after the resume at 0x70: the core it ran on: 0x00000001
+control, mask moved after the resume at 0xA0: the suspend: 0x00000001
+control, mask moved after the resume at 0xA0: the mask change: 0x00010000
+control, mask moved after the resume at 0xA0: the resume: 0x00000000
+control, mask moved after the resume at 0xA0: it was suspended once the mask moved: 0x00000000
+control, mask moved after the resume at 0xA0: it ran within 250 ms, with the gate on core 0: 0x00000001
+control, mask moved after the resume at 0xA0: the core it ran on: 0x00000001
+DONE

@@ -1,0 +1,71 @@
+heavy, FIFO condition: T waits on the condition again after the callback: 0x00000001
+heavy, FIFO condition: T's priority at the end of the callback: 0x000000B0
+heavy, FIFO condition: the order the waiters get the mutex in: 0x00000231
+heavy, FIFO condition: T's result: 0x00000000
+heavy, FIFO condition: W2's result: 0x00000000
+heavy, FIFO condition: W3's result: 0x00000000
+lightweight, FIFO condition: T waits on the condition again after the callback: 0x00000001
+lightweight, FIFO condition: T's priority at the end of the callback: 0x000000B0
+lightweight, FIFO condition: the order the waiters get the mutex in: 0x00000231
+lightweight, FIFO condition: T's result: 0x00000000
+lightweight, FIFO condition: W2's result: 0x00000000
+lightweight, FIFO condition: W3's result: 0x00000000
+heavy, priority condition, T raised to 0x80 during its callback: the priority change: 0x00000000
+heavy, priority condition, T raised to 0x80 during its callback: T waits on the condition again after the callback: 0x00000001
+heavy, priority condition, T raised to 0x80 during its callback: T's priority at the end of the callback: 0x00000080
+heavy, priority condition, T raised to 0x80 during its callback: the order the waiters get the mutex in: 0x00000123
+heavy, priority condition, T raised to 0x80 during its callback: T's result: 0x00000000
+heavy, priority condition, T raised to 0x80 during its callback: W2's result: 0x00000000
+heavy, priority condition, T raised to 0x80 during its callback: W3's result: 0x00000000
+lightweight, priority condition, T raised to 0x80 during its callback: the priority change: 0x00000000
+lightweight, priority condition, T raised to 0x80 during its callback: T waits on the condition again after the callback: 0x00000001
+lightweight, priority condition, T raised to 0x80 during its callback: T's priority at the end of the callback: 0x00000080
+lightweight, priority condition, T raised to 0x80 during its callback: the order the waiters get the mutex in: 0x00000123
+lightweight, priority condition, T raised to 0x80 during its callback: T's result: 0x00000000
+lightweight, priority condition, T raised to 0x80 during its callback: W2's result: 0x00000000
+lightweight, priority condition, T raised to 0x80 during its callback: W3's result: 0x00000000
+heavy, priority condition, T lowered to 0xB8 during its callback: the priority change: 0x00000000
+heavy, priority condition, T lowered to 0xB8 during its callback: T waits on the condition again after the callback: 0x00000001
+heavy, priority condition, T lowered to 0xB8 during its callback: T's priority at the end of the callback: 0x000000B8
+heavy, priority condition, T lowered to 0xB8 during its callback: the order the waiters get the mutex in: 0x00000231
+heavy, priority condition, T lowered to 0xB8 during its callback: T's result: 0x00000000
+heavy, priority condition, T lowered to 0xB8 during its callback: W2's result: 0x00000000
+heavy, priority condition, T lowered to 0xB8 during its callback: W3's result: 0x00000000
+lightweight, priority condition, T lowered to 0xB8 during its callback: the priority change: 0x00000000
+lightweight, priority condition, T lowered to 0xB8 during its callback: T waits on the condition again after the callback: 0x00000001
+lightweight, priority condition, T lowered to 0xB8 during its callback: T's priority at the end of the callback: 0x000000B8
+lightweight, priority condition, T lowered to 0xB8 during its callback: the order the waiters get the mutex in: 0x00000231
+lightweight, priority condition, T lowered to 0xB8 during its callback: T's result: 0x00000000
+lightweight, priority condition, T lowered to 0xB8 during its callback: W2's result: 0x00000000
+lightweight, priority condition, T lowered to 0xB8 during its callback: W3's result: 0x00000000
+heavy, timeout passes during the callback: T ended within 250 ms of the gate: 0x00000001
+heavy, timeout passes during the callback: T's result: 0x80028005
+heavy, timeout passes during the callback: T owns the mutex: 0x00000001
+heavy, timeout passes during the callback: T's time left is 0: 0x00000001
+heavy, timeout passes during the callback: runs of the callback when the wait returned: 0x00000001
+lightweight, timeout passes during the callback: T ended within 250 ms of the gate: 0x00000001
+lightweight, timeout passes during the callback: T's result: 0x80028005
+lightweight, timeout passes during the callback: T owns the mutex: 0x00000001
+lightweight, timeout passes during the callback: T's time left is 0: 0x00000001
+lightweight, timeout passes during the callback: runs of the callback when the wait returned: 0x00000001
+heavy, signal to all while the callback waits: the signal to all: 0x00000000
+heavy, signal to all while the callback waits: T still waits on the condition after the gate: 0x00000001
+heavy, signal to all while the callback waits: T's result: 0x00000000
+heavy, signal to all while the callback waits: T owns the mutex after its wait: 0x00000001
+lightweight, signal to all while the callback waits: the signal to all: 0x00000000
+lightweight, signal to all while the callback waits: T still waits on the condition after the gate: 0x00000001
+lightweight, signal to all while the callback waits: T's result: 0x00000000
+lightweight, signal to all while the callback waits: T owns the mutex after its wait: 0x00000001
+heavy, timeout passes during the callback, mutex held through the gate: T's wait type 250 ms after the gate: 0x80000200
+heavy, timeout passes during the callback, mutex held through the gate: T returned before the unlock: 0x00000000
+heavy, timeout passes during the callback, mutex held through the gate: T's result: 0x80028005
+heavy, timeout passes during the callback, mutex held through the gate: T owns the mutex: 0x00000001
+heavy, timeout passes during the callback, mutex held through the gate: T's time left is 0: 0x00000001
+heavy, timeout passes during the callback, mutex held through the gate: runs of the callback when the wait returned: 0x00000001
+lightweight, timeout passes during the callback, held through the gate: T's wait type 250 ms after the gate: 0x80400000
+lightweight, timeout passes during the callback, held through the gate: T returned before the unlock: 0x00000000
+lightweight, timeout passes during the callback, held through the gate: T's result: 0x80028005
+lightweight, timeout passes during the callback, held through the gate: T owns the mutex: 0x00000001
+lightweight, timeout passes during the callback, held through the gate: T's time left is 0: 0x00000001
+lightweight, timeout passes during the callback, held through the gate: runs of the callback when the wait returned: 0x00000001
+DONE

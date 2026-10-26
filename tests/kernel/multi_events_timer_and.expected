@@ -1,0 +1,50 @@
+a: start the timer: 0x00000000
+a: set the event: 0x00000000
+a: the wait: 0x00000002
+a: result 0 is for the timer (1) or the event (2): 0x00000001
+a: result 0: 0x00000000
+a: result 0 bits: 0x00008000
+a: result 0 user data high half: 0x00000000
+a: result 0 user data low half: 0x00000000
+a: result 1 is for the timer (1) or the event (2): 0x00000002
+a: result 1: 0x00000000
+a: result 1 bits: 0x01000000
+a: result 1 user data high half: 0x11223344
+a: result 1 user data low half: 0x55667788
+a: the time left is over 1 s: 0x00000001
+b: start the timer: 0x00000000
+b: set the event: 0x00000000
+b: the wait: 0x00000002
+b: result 0 is for the timer (1) or the event (2): 0x00000001
+b: result 0: 0x00000000
+b: result 0 bits: 0x00008000
+b: result 0 user data high half: 0x00000000
+b: result 0 user data low half: 0x00000000
+b: result 1 is for the timer (1) or the event (2): 0x00000002
+b: result 1: 0x00000000
+b: result 1 bits: 0x01000000
+b: result 1 user data high half: 0x11223344
+b: result 1 user data low half: 0x55667788
+b: the time left is over 1 s: 0x00000001
+c: start the timer: 0x00000000
+c: stop the timer: 0x00000001
+c: set the event: 0x00000000
+c: the wait: 0x80028005
+c: the time left is 0: 0x00000001
+d: start the timer: 0x00000000
+d: cancel the timer: 0x00000000
+d: threads the cancel found waiting: 0x00000001
+d: set the event: 0x00000000
+d: the wait: 0x00000002
+d: result 0 is for the timer (1) or the event (2): 0x00000001
+d: result 0: 0x80028007
+d: result 0 bits: 0x00000010
+d: result 0 user data high half: 0x00000000
+d: result 0 user data low half: 0x00000000
+d: result 1 is for the timer (1) or the event (2): 0x00000002
+d: result 1: 0x00000000
+d: result 1 bits: 0x01000000
+d: result 1 user data high half: 0x11223344
+d: result 1 user data low half: 0x55667788
+d: the time left is over 1 s: 0x00000001
+DONE

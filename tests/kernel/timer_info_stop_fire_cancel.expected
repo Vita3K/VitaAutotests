@@ -1,0 +1,27 @@
+set a one shot set event of 300 ms: 0x00000000
+start the timer: 0x00000000
+after the event fired: the info call: 0x00000000
+after the event fired: active: 0x00000001
+after the event fired: the type: 0x00000000
+after the event fired: the repeat setting: 0x00000000
+after the event fired: the schedule is the interval: 0x00000001
+after the event fired: the schedule is 0: 0x00000000
+after the event fired: the interval is the one set: 0x00000001
+cancel with no count pointer: 0x00000000
+after the cancel: the info call: 0x00000000
+after the cancel: active: 0x00000001
+after the cancel: the type: 0x00000000
+after the cancel: the repeat setting: 0x00000000
+after the cancel: the schedule is the interval: 0x00000000
+after the cancel: the schedule is 0: 0x00000001
+after the cancel: the interval is the one set: 0x00000001
+stop the timer: 0x00000001
+after the stop: the info call: 0x00000000
+after the stop: active: 0x00000000
+after the stop: the type: 0x00000000
+after the stop: the repeat setting: 0x00000000
+after the stop: the schedule is the interval: 0x00000000
+after the stop: the schedule is 0: 0x00000001
+after the stop: the interval is the one set: 0x00000001
+after the stop, the base time equals the current time: 0x00000001
+DONE

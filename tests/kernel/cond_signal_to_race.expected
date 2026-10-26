@@ -1,0 +1,9 @@
+heavy, timeout against the signal: rounds: 0x00000064
+heavy, timeout against the signal: violations: 0x00000000
+heavy, callback notify against the signal: rounds: 0x00000064
+heavy, callback notify against the signal: violations: 0x00000000
+lightweight, timeout against the signal: rounds: 0x00000064
+lightweight, timeout against the signal: violations: 0x00000000
+lightweight, callback notify against the signal: rounds: 0x00000064
+lightweight, callback notify against the signal: violations: 0x00000000
+DONE

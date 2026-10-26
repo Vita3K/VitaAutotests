@@ -1,0 +1,42 @@
+one: the flag before any notify: 0x00000000
+one: the notify of the first callback: 0x00000000
+one: the flag after the notify: 0x00000001
+one: the cancel of the first callback: 0x00000000
+one: the count of the first callback after cancel: 0x00000000
+one: the flag after the cancel: 0x00000001
+one: the delete of the first callback: 0x00000000
+one: the flag after the delete: 0x00000001
+one: the notify of the second callback: 0x00000000
+one: the flag after the second notify: 0x00000001
+one: the delete of the second callback while pending: 0x00000000
+one: the flag after deleting the pending callback: 0x00000001
+one: the signal that releases the thread: 0x00000000
+one: the plain wait's result: 0x00000000
+check: the flag before any notify: 0x00000000
+check: the notify of the first callback: 0x00000000
+check: the notify of the second callback: 0x00000000
+check: the flag after two notifies: 0x00000001
+check: the cancel of the first callback: 0x00000000
+check: the count of the first callback after cancel: 0x00000000
+check: the count of the second callback: 0x00000001
+check: the flag after the cancel: 0x00000001
+check: the signal that releases the thread: 0x00000000
+check: the check's result: 0x00000001
+check: runs of the cancelled callback: 0x00000000
+check: runs of the notified callback: 0x00000001
+check: the count the notified callback ran with: 0x00000001
+check: the argument the notified callback ran with: 0x00000022
+check: the flag after the check: 0x00000000
+stale: the notify of the third callback: 0x00000000
+stale: the cancel of the third callback: 0x00000000
+stale: the count of the third callback after cancel: 0x00000000
+stale: the flag after the cancel: 0x00000001
+stale: the signal that moves the thread to the next wait: 0x00000000
+check: the plain wait's result: 0x00000000
+check: the plain wait's result after the check: 0x00000000
+stale: the wait with callbacks ends by its timeout: 0x80028005
+stale: its time left: 0x00000000
+stale: it lasted its whole timeout: 0x00000001
+stale: the flag the thread reads after the wait: 0x00000000
+stale: runs of the third callback: 0x00000000
+DONE

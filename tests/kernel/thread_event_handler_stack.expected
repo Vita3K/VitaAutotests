@@ -1,0 +1,141 @@
+no handler: start: 0x00000000
+no handler: the entry ran: 0x00000001
+no handler: r0: 0x00000028
+no handler: the copy holds the bytes sent: 0x00000001
+no handler: sp below the stack top by: 0x00000030
+a START handler in C: register: 0x00000000
+a START handler in C: start: 0x00000000
+a START handler in C: the entry ran: 0x00000001
+a START handler in C: r0: 0x00000028
+a START handler in C: the copy holds the bytes sent: 0x00000001
+a START handler in C: mask of r2 to r12 equal to the run with no handler: 0x000007FF
+a START handler in C: sp at the same distance below the top as with no handler: 0x00000001
+a START handler in C: runs: 0x00000001
+a START handler in C: the type: 0x00000004
+a START handler in C: the thread is the target: 0x00000001
+a START handler in C: the argument: 0x00000000
+a START handler in C: the common pointer is the one given: 0x00000001
+a START handler in C: it runs on the target: 0x00000001
+a START handler in C: sp is on the target's stack: 0x00000001
+a START handler in C: sp is less than 4 KiB below the stack top: 0x00000001
+a START handler in C: sp & 7: 0x00000000
+a START handler in C: sp & 15: 0x00000008
+a START handler in C: sp is at or below the argument copy: 0x00000001
+a START handler in C: the 512 byte buffer is on the stack, below the copy: 0x00000001
+a START handler in C: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+a START and an END handler in C: START: register: 0x00000000
+a START and an END handler in C: END: register: 0x00000000
+a START and an END handler in C: start: 0x00000000
+a START and an END handler in C: the entry ran: 0x00000001
+a START and an END handler in C: r0: 0x00000028
+a START and an END handler in C: the copy holds the bytes sent: 0x00000001
+a START and an END handler in C: mask of r2 to r12 equal to the run with no handler: 0x000007FF
+a START and an END handler in C: sp at the same distance below the top as with no handler: 0x00000001
+a START and an END handler in C: START: runs: 0x00000001
+a START and an END handler in C: START: the type: 0x00000004
+a START and an END handler in C: START: the thread is the target: 0x00000001
+a START and an END handler in C: START: the argument: 0x00000000
+a START and an END handler in C: START: the common pointer is the one given: 0x00000001
+a START and an END handler in C: START: it runs on the target: 0x00000001
+a START and an END handler in C: START: sp is on the target's stack: 0x00000001
+a START and an END handler in C: START: sp is less than 4 KiB below the stack top: 0x00000001
+a START and an END handler in C: START: sp & 7: 0x00000000
+a START and an END handler in C: START: sp & 15: 0x00000008
+a START and an END handler in C: START: sp is at or below the argument copy: 0x00000001
+a START and an END handler in C: START: the 512 byte buffer is on the stack, below the copy: 0x00000001
+a START and an END handler in C: START: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+a START and an END handler in C: END: runs: 0x00000001
+a START and an END handler in C: END: the type: 0x00000008
+a START and an END handler in C: END: the thread is the target: 0x00000001
+a START and an END handler in C: END: the argument: 0x00000000
+a START and an END handler in C: END: the common pointer is the one given: 0x00000001
+a START and an END handler in C: END: it runs on the target: 0x00000001
+a START and an END handler in C: END: sp is on the target's stack: 0x00000001
+a START and an END handler in C: END: sp is less than 4 KiB below the stack top: 0x00000001
+a START and an END handler in C: END: sp & 7: 0x00000000
+a START and an END handler in C: END: sp & 15: 0x00000000
+a START and an END handler in C: END: sp is at or below the entry's frame: 0x00000001
+a START and an END handler in C: END: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+started again: start: 0x00000000
+started again: the entry ran: 0x00000001
+started again: r0: 0x00000028
+started again: the copy holds the bytes sent: 0x00000001
+started again: mask of r2 to r12 equal to the run with no handler: 0x000007FF
+started again: sp at the same distance below the top as with no handler: 0x00000001
+started again: START: runs: 0x00000001
+started again: START: the type: 0x00000004
+started again: START: the thread is the target: 0x00000001
+started again: START: the argument: 0x00000000
+started again: START: the common pointer is the one given: 0x00000001
+started again: START: it runs on the target: 0x00000001
+started again: START: sp is on the target's stack: 0x00000001
+started again: START: sp is less than 4 KiB below the stack top: 0x00000001
+started again: START: sp & 7: 0x00000000
+started again: START: sp & 15: 0x00000008
+started again: START: sp is at or below the argument copy: 0x00000001
+started again: START: the 512 byte buffer is on the stack, below the copy: 0x00000001
+started again: START: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+started again: END: runs: 0x00000001
+started again: END: the type: 0x00000008
+started again: END: the thread is the target: 0x00000001
+started again: END: the argument: 0x00000000
+started again: END: the common pointer is the one given: 0x00000001
+started again: END: it runs on the target: 0x00000001
+started again: END: sp is on the target's stack: 0x00000001
+started again: END: sp is less than 4 KiB below the stack top: 0x00000001
+started again: END: sp & 7: 0x00000000
+started again: END: sp & 15: 0x00000000
+started again: END: sp is at or below the entry's frame: 0x00000001
+started again: END: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+an ARM START handler: register: 0x00000000
+an ARM START handler: start: 0x00000000
+an ARM START handler: the entry ran: 0x00000001
+an ARM START handler: r0: 0x00000028
+an ARM START handler: the copy holds the bytes sent: 0x00000001
+an ARM START handler: mask of r2 to r12 equal to the run with no handler: 0x000007FF
+an ARM START handler: sp at the same distance below the top as with no handler: 0x00000001
+an ARM START handler: runs: 0x00000001
+an ARM START handler: the type: 0x00000004
+an ARM START handler: the thread is the target: 0x00000001
+an ARM START handler: the argument: 0x00000000
+an ARM START handler: the common pointer is the one given: 0x00000001
+an ARM START handler: it runs on the target: 0x00000001
+an ARM START handler: sp is on the target's stack: 0x00000001
+an ARM START handler: sp is less than 4 KiB below the stack top: 0x00000001
+an ARM START handler: sp & 7: 0x00000000
+an ARM START handler: sp & 15: 0x00000008
+an ARM START handler: sp is at or below the argument copy: 0x00000001
+an ARM START handler: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+naked START and END handlers: START: register: 0x00000000
+naked START and END handlers: END: register: 0x00000000
+naked START and END handlers: start: 0x00000000
+naked START and END handlers: the entry ran: 0x00000001
+naked START and END handlers: r0: 0x00000028
+naked START and END handlers: the copy holds the bytes sent: 0x00000001
+naked START and END handlers: mask of r2 to r12 equal to the run with no handler: 0x000007FF
+naked START and END handlers: sp at the same distance below the top as with no handler: 0x00000001
+naked START and END handlers: START: runs: 0x00000001
+naked START and END handlers: START: the type: 0x00000004
+naked START and END handlers: START: the thread is the target: 0x00000001
+naked START and END handlers: START: the argument: 0x00000000
+naked START and END handlers: START: the common pointer is the one given: 0x00000001
+naked START and END handlers: START: it runs on the target: 0x00000001
+naked START and END handlers: START: sp is on the target's stack: 0x00000001
+naked START and END handlers: START: sp is less than 4 KiB below the stack top: 0x00000001
+naked START and END handlers: START: sp & 7: 0x00000000
+naked START and END handlers: START: sp & 15: 0x00000000
+naked START and END handlers: START: sp is at or below the argument copy: 0x00000001
+naked START and END handlers: START: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+naked START and END handlers: END: runs: 0x00000001
+naked START and END handlers: END: the type: 0x00000008
+naked START and END handlers: END: the thread is the target: 0x00000001
+naked START and END handlers: END: the argument: 0x00000000
+naked START and END handlers: END: the common pointer is the one given: 0x00000001
+naked START and END handlers: END: it runs on the target: 0x00000001
+naked START and END handlers: END: sp is on the target's stack: 0x00000001
+naked START and END handlers: END: sp is less than 4 KiB below the stack top: 0x00000001
+naked START and END handlers: END: sp & 7: 0x00000000
+naked START and END handlers: END: sp & 15: 0x00000008
+naked START and END handlers: END: sp is at or below the entry's frame: 0x00000001
+naked START and END handlers: END: TPIDRURO is the TLS address for key 0 plus 0x800: 0x00000001
+DONE

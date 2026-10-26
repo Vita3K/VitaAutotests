@@ -1,0 +1,24 @@
+mutex: the waiter still reports its wait after the unlock: 0x00000000
+mutex: the unlocker's try lock right after it: 0x80028145
+mutex: the owner after the try is the waiter: 0x00000001
+mutex: the count after the try: 0x00000001
+mutex: the waiters after the try: 0x00000000
+mutex: the waiter's result: 0x00000000
+timer: the waiter still reports its wait after the event time: 0x00000000
+timer: the releasing thread's poll after the event time: 0x80028202
+timer: the bits that poll got: 0x00000000
+timer: the waiter's result: 0x00000000
+timer: the bits the waiter got: 0x00008000
+condition: the waiter still reports its wait after the signal and unlock: 0x00000000
+condition: the unlocker's try lock right after it: 0x00000000
+condition: the owner of the mutex after the try is the waiter: 0x00000000
+condition: the count after the try: 0x00000001
+condition: the waiters for the mutex after the try: 0x00000000
+condition: the waiter's result: 0x00000000
+lightweight condition: the waiter still reports its wait after the signal and unlock: 0x00000000
+lightweight condition: the unlocker's try lock right after it: 0x00000000
+lightweight condition: the owner of the mutex after the try is the waiter: 0x00000000
+lightweight condition: the count after the try: 0x00000001
+lightweight condition: the waiters for the mutex after the try: 0x00000000
+lightweight condition: the waiter's result: 0x00000000
+DONE

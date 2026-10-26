@@ -1,0 +1,50 @@
+semaphore signal of 3: the call: 0x00000000
+semaphore signal of 3: A's result: 0x00000000
+semaphore signal of 3: B's result: 0x00000000
+semaphore signal of 3: C's result: 0x00000000
+semaphore signal of 3: run order: 0x00001032
+semaphore signal of 3: the first to run saw both others ready: 0x00000001
+semaphore signal of 3: the first to run was B: 0x00000001
+semaphore cancel: the call: 0x00000000
+semaphore cancel: A's result: 0x80028007
+semaphore cancel: B's result: 0x80028007
+semaphore cancel: C's result: 0x80028007
+semaphore cancel: run order: 0x00001032
+semaphore cancel: the first to run saw both others ready: 0x00000001
+semaphore cancel: the first to run was B: 0x00000001
+semaphore delete: the call: 0x00000000
+semaphore delete: A's result: 0x80028006
+semaphore delete: B's result: 0x80028006
+semaphore delete: C's result: 0x80028006
+semaphore delete: run order: 0x00001032
+semaphore delete: the first to run saw both others ready: 0x00000001
+semaphore delete: the first to run was B: 0x00000001
+event flag set, multi attribute: the call: 0x00000000
+event flag set, multi attribute: A's result: 0x00000000
+event flag set, multi attribute: B's result: 0x00000000
+event flag set, multi attribute: C's result: 0x00000000
+event flag set, multi attribute: run order: 0x00001032
+event flag set, multi attribute: the first to run saw both others ready: 0x00000001
+event flag set, multi attribute: the first to run was B: 0x00000001
+manual reset simple event set: the call: 0x00000000
+manual reset simple event set: A's result: 0x00000000
+manual reset simple event set: B's result: 0x00000000
+manual reset simple event set: C's result: 0x00000000
+manual reset simple event set: run order: 0x00001032
+manual reset simple event set: the first to run saw both others ready: 0x00000001
+manual reset simple event set: the first to run was B: 0x00000001
+rwlock write unlock to three readers: the call: 0x00000000
+rwlock write unlock to three readers: A's result: 0x00000000
+rwlock write unlock to three readers: B's result: 0x00000000
+rwlock write unlock to three readers: C's result: 0x00000000
+rwlock write unlock to three readers: run order: 0x00001032
+rwlock write unlock to three readers: the first to run saw both others ready: 0x00000001
+rwlock write unlock to three readers: the first to run was B: 0x00000001
+mutex delete: the call: 0x00000000
+mutex delete: A's result: 0x80028006
+mutex delete: B's result: 0x80028006
+mutex delete: C's result: 0x80028006
+mutex delete: run order: 0x00001032
+mutex delete: the first to run saw both others ready: 0x00000001
+mutex delete: the first to run was B: 0x00000001
+DONE

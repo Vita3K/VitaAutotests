@@ -1,0 +1,16 @@
+USER_RW, 0x800 bytes: allocate: 0x80024B05
+USER_RW, 0x1001 bytes: allocate: 0x80024B05
+USER_RW, 0x1800 bytes: allocate: 0x80024B05
+USER_RW, 0x2000 bytes: allocate: 0x00000000
+USER_RW, 0x2000 bytes: mapped size class: 0x00000000
+USER_CDRAM_RW, 0x20000 bytes: allocate: 0x80024309
+USER_CDRAM_RW, 0x41000 bytes: allocate: 0x80024309
+USER_CDRAM_RW, 0x44000 bytes: allocate: 0x80024309
+USER_CDRAM_RW, 0x80000 bytes: allocate: 0x00000000
+USER_CDRAM_RW, 0x80000 bytes: mapped size class: 0x00000000
+USER_MAIN_PHYCONT_RW, 0x80000 bytes: allocate: 0x80020005
+USER_MAIN_PHYCONT_RW, 0x101000 bytes: allocate: 0x80020005
+USER_MAIN_PHYCONT_RW, 0x180000 bytes: allocate: 0x80020005
+USER_MAIN_PHYCONT_RW, 0x200000 bytes: allocate: 0x00000000
+USER_MAIN_PHYCONT_RW, 0x200000 bytes: mapped size class: 0x00000000
+DONE

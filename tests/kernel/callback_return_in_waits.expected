@@ -1,0 +1,22 @@
+semaphore, notified during the wait, returns -1: the wait: 0x00000000
+semaphore, notified during the wait, returns -1: runs of the callback: 0x00000001
+semaphore, notified during the wait, returns -1: notify after: 0x800280A1
+semaphore, pending at the start, returns 1: the wait: 0x00000000
+semaphore, pending at the start, returns 1: runs of the callback: 0x00000001
+semaphore, pending at the start, returns 1: notify after: 0x800280A1
+semaphore, pending at the start, returns 1: poll after: 0x80028102
+semaphore, timeout 0, self notify then -1: the wait: 0x80028005
+semaphore, timeout 0, self notify then -1: runs of the callback: 0x00000002
+semaphore, timeout 0, self notify then -1: notify after: 0x800280A1
+mutex, timeout 0, self notify then -1: the lock: 0x80028005
+mutex, timeout 0, self notify then -1: runs of the callback: 0x00000002
+mutex, timeout 0, self notify then -1: notify after: 0x800280A1
+delay with callbacks, notified during the sleep, returns -1: the delay: 0x00000000
+delay with callbacks, notified during the sleep, returns -1: it ran to its deadline: 0x00000001
+delay with callbacks, notified during the sleep, returns -1: runs of the callback: 0x00000001
+delay with callbacks, notified during the sleep, returns -1: notify after: 0x800280A1
+signal wait with callbacks, notified during the wait, returns -1: the wait: 0x80028005
+signal wait with callbacks, notified during the wait, returns -1: it ran to its deadline: 0x00000001
+signal wait with callbacks, notified during the wait, returns -1: runs of the callback: 0x00000001
+signal wait with callbacks, notified during the wait, returns -1: notify after: 0x800280A1
+DONE

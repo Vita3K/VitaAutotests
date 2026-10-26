@@ -1,0 +1,6 @@
+set a new one shot event of 400 ms: 0x00000000
+the waiter's result: 0x00000000
+it returned within 1 s: 0x00000001
+clear the timer bit: 0x00000000
+the poll for the timer bit after the clear: 0x80028202
+DONE

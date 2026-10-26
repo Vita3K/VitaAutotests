@@ -1,0 +1,20 @@
+M1 cancel to 0: O's priority before it: 0x00000080
+M1 cancel to 0: the cancel: 0x00000000
+M1 cancel to 0: the number of waiters it writes: 0x00000000
+M1 cancel to 0: O's priority after it: 0x000000B0
+M1 cancel to 0: the count after: 0x00000000
+M1 cancel to 0: O still owns it: 0x00000000
+M1 cancel to 0: O's lock: 0x00000000
+M1 cancel to 0: O's wait: 0x00000000
+M2 cancel to 1: O's priority before it: 0x00000080
+M2 cancel to 1: the cancel: 0x00000000
+M2 cancel to 1: the number of waiters it writes: 0x00000000
+M2 cancel to 1: O's priority after it: 0x000000B0
+M2 cancel to 1: the count after: 0x00000001
+M2 cancel to 1: the main thread owns it: 0x00000001
+M2 cancel to 1: the main thread's priority after the cancel: 0x00000080
+M2 cancel to 1: the main thread's unlock of 1: 0x00000000
+M2 cancel to 1: the main thread's priority after the unlock: 0x000000A0
+M2 cancel to 1: O's lock: 0x00000000
+M2 cancel to 1: O's wait: 0x00000000
+DONE

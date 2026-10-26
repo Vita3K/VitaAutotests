@@ -1,0 +1,9 @@
+O's priority while it waits on the condition: 0x000000B0
+the main thread's lock of the mutex: 0x00000000
+the signal: 0x00000000
+O's priority while it waits for the mutex: 0x000000B0
+O's wait type while it waits for the mutex: 0x00000200
+the main thread's unlock: 0x00000000
+O's priority once it has the mutex back: 0x00000080
+O's wait result: 0x00000000
+DONE

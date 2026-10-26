@@ -1,0 +1,9 @@
+wait for the thread to end: 0x00000000
+the thread's allocation: 0x00000000
+delete the thread: 0x00000000
+find the block by its base: 0x00000000
+allocate 16 MiB while the 1 MiB block lives: 0x80024B0B
+free the 1 MiB block: 0x00000000
+allocate 16 MiB after that: 0x00000000
+free that 16 MiB block again: 0x00000000
+DONE

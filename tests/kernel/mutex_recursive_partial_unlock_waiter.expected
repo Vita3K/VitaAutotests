@@ -1,0 +1,18 @@
+lock to a count of 3: 0x00000000
+partial unlock 1: the unlock: 0x00000000
+partial unlock 1: W's wait type: 0x00000040
+partial unlock 1: the waiting threads: 0x00000001
+partial unlock 1: the count: 0x00000002
+partial unlock 1: the main thread still owns it: 0x00000001
+partial unlock 2: the unlock: 0x00000000
+partial unlock 2: W's wait type: 0x00000040
+partial unlock 2: the waiting threads: 0x00000001
+partial unlock 2: the count: 0x00000001
+partial unlock 2: the main thread still owns it: 0x00000001
+last unlock: the unlock: 0x00000000
+last unlock: W owns the mutex: 0x00000001
+last unlock: the count: 0x00000001
+last unlock: the main thread's try lock: 0x80028145
+W's result: 0x00000000
+W's unlock: 0x00000000
+DONE

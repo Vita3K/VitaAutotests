@@ -1,0 +1,16 @@
+set the user bit with a waiter: 0x00000000
+the waiter's result: 0x00000000
+the bits the waiter got are the user bit: 0x00000001
+after the set of the user bit: the pattern call: 0x00000000
+after the set of the user bit: the pattern: 0x01000004
+pulse the user bit 0x02000000 with no waiter: 0x00000000
+after the pulse: the pattern call: 0x00000000
+after the pulse: the pattern: 0x01000004
+set the timer bit 0x8000: 0x8002000D
+the pattern after the set has 0x8000: 0x00000000
+after the set of 0x8000: the pattern call: 0x00000000
+after the set of 0x8000: the pattern: 0x01000004
+clear the user bit with a mask that keeps the others: 0x8002000D
+after the clear of the user bit: the pattern call: 0x00000000
+after the clear of the user bit: the pattern: 0x01000004
+DONE

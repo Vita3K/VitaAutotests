@@ -1,0 +1,33 @@
+a block made after a free has the freed UID: 0x00000000
+a semaphore made after a free has the freed UID: 0x00000000
+allocate an ENABLE_OPEN block for aliases: 0x00000000
+open an alias: 0x00000000
+an alias opened after a closed alias has its UID: 0x00000000
+an alias opened after a free has the freed block's UID: 0x00000000
+plain block: allocate: 0x00000000
+plain block: the UID is odd: 0x00000001
+plain block: bit 31 of the UID is clear: 0x00000001
+plain block: bit 30 of the UID is set: 0x00000001
+ENABLE_OPEN block: allocate: 0x00000000
+ENABLE_OPEN block: the UID is odd: 0x00000001
+ENABLE_OPEN block: bit 31 of the UID is clear: 0x00000001
+ENABLE_OPEN block: bit 30 of the UID is set: 0x00000001
+alias opened with 0x30: allocate: 0x00000000
+alias opened with 0x30: the UID is odd: 0x00000001
+alias opened with 0x30: bit 31 of the UID is clear: 0x00000001
+alias opened with 0x30: bit 30 of the UID is set: 0x00000001
+USER_CDRAM_RW block: allocate: 0x00000000
+USER_CDRAM_RW block: the UID is odd: 0x00000001
+USER_CDRAM_RW block: bit 31 of the UID is clear: 0x00000001
+USER_CDRAM_RW block: bit 30 of the UID is set: 0x00000001
+USER_MAIN_PHYCONT_RW block: allocate: 0x00000000
+USER_MAIN_PHYCONT_RW block: the UID is odd: 0x00000001
+USER_MAIN_PHYCONT_RW block: bit 31 of the UID is clear: 0x00000001
+USER_MAIN_PHYCONT_RW block: bit 30 of the UID is set: 0x00000001
+block for code: allocate: 0x00000000
+block for code: the UID is odd: 0x00000001
+block for code: bit 31 of the UID is clear: 0x00000001
+block for code: bit 30 of the UID is set: 0x00000001
+16 live blocks are all made: 0x00000001
+16 live blocks have distinct UIDs: 0x00000001
+DONE

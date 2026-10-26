@@ -1,0 +1,37 @@
+USER_RW, 4 KiB: make it: 0x00000000
+USER_RW, 4 KiB: free it: 0x00000000
+USER_RW, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_RW, 4 KiB, aligned: make it: 0x00000000
+USER_RW, 4 KiB, aligned: main memory takes what the unaligned one does: 0x00000001
+USER_RW, 4 KiB, aligned: main memory takes the size asked: 0x00000001
+USER_RW, 4 KiB, aligned: CDRAM takes what the unaligned one does: 0x00000001
+USER_RW, 4 KiB, aligned: CDRAM takes the size asked: 0x00000000
+USER_RW, 4 KiB, aligned: physically contiguous memory takes what the unaligned one does: 0x00000001
+USER_RW, 4 KiB, aligned: physically contiguous memory takes the size asked: 0x00000000
+USER_RW, 4 KiB, aligned: free it: 0x00000000
+USER_RW, 4 KiB, aligned: the free sizes are back once it ends: 0x00000001
+USER_RW_UNCACHE, 4 KiB: make it: 0x00000000
+USER_RW_UNCACHE, 4 KiB: free it: 0x00000000
+USER_RW_UNCACHE, 4 KiB: the free sizes are back once it ends: 0x00000001
+USER_RW_UNCACHE, 4 KiB, aligned: make it: 0x00000000
+USER_RW_UNCACHE, 4 KiB, aligned: main memory takes what the unaligned one does: 0x00000001
+USER_RW_UNCACHE, 4 KiB, aligned: main memory takes the size asked: 0x00000001
+USER_RW_UNCACHE, 4 KiB, aligned: CDRAM takes what the unaligned one does: 0x00000001
+USER_RW_UNCACHE, 4 KiB, aligned: CDRAM takes the size asked: 0x00000000
+USER_RW_UNCACHE, 4 KiB, aligned: physically contiguous memory takes what the unaligned one does: 0x00000001
+USER_RW_UNCACHE, 4 KiB, aligned: physically contiguous memory takes the size asked: 0x00000000
+USER_RW_UNCACHE, 4 KiB, aligned: free it: 0x00000000
+USER_RW_UNCACHE, 4 KiB, aligned: the free sizes are back once it ends: 0x00000001
+USER_CDRAM_RW, 256 KiB: make it: 0x00000000
+USER_CDRAM_RW, 256 KiB: free it: 0x00000000
+USER_CDRAM_RW, 256 KiB: the free sizes are back once it ends: 0x00000001
+USER_CDRAM_RW, 256 KiB, aligned: make it: 0x00000000
+USER_CDRAM_RW, 256 KiB, aligned: main memory takes what the unaligned one does: 0x00000001
+USER_CDRAM_RW, 256 KiB, aligned: main memory takes the size asked: 0x00000000
+USER_CDRAM_RW, 256 KiB, aligned: CDRAM takes what the unaligned one does: 0x00000001
+USER_CDRAM_RW, 256 KiB, aligned: CDRAM takes the size asked: 0x00000001
+USER_CDRAM_RW, 256 KiB, aligned: physically contiguous memory takes what the unaligned one does: 0x00000001
+USER_CDRAM_RW, 256 KiB, aligned: physically contiguous memory takes the size asked: 0x00000000
+USER_CDRAM_RW, 256 KiB, aligned: free it: 0x00000000
+USER_CDRAM_RW, 256 KiB, aligned: the free sizes are back once it ends: 0x00000001
+DONE

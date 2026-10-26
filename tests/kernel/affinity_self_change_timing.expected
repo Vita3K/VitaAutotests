@@ -1,0 +1,11 @@
+T at 0x70: the change to core 1: 0x00010000
+T at 0x70: its core right after the change: 0x00000001
+T at 0x70: its core after sceKernelGetThreadId(): 0x00000001
+T at 0x70: its core after a delay of 1 us: 0x00000001
+T at 0x70: its core after a delay of 1 ms: 0x00000001
+T at 0xA0: the change to core 1: 0x00010000
+T at 0xA0: its core right after the change: 0x00000001
+T at 0xA0: its core after sceKernelGetThreadId(): 0x00000001
+T at 0xA0: its core after a delay of 1 us: 0x00000001
+T at 0xA0: its core after a delay of 1 ms: 0x00000001
+DONE

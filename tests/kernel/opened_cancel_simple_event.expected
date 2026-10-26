@@ -1,0 +1,14 @@
+create and open the event: 0x00000000
+cancel through the opened UID with 2 waiters: 0x00000000
+the waiters the cancel counted: 0x00000002
+waiter 0's result after the cancel: 0x80028007
+waiter 0's user data is 0 after the cancel: 0x00000001
+waiter 1's result after the cancel: 0x80028007
+waiter 1's user data is 0 after the cancel: 0x00000001
+cancel and set EVENT_BIT_A with user data 0x77 through the opened UID: 0x00000000
+the waiters the second cancel counted: 0x00000000
+the pattern after, through the creating UID: 0x01000000
+the user data after, through the creating UID: 0x00000077
+the pattern after is EVENT_BIT_A: 0x00000001
+the user data after is 0x77: 0x00000001
+DONE

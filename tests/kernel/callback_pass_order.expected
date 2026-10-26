@@ -1,0 +1,62 @@
+creation order: delete the second: 0x00000000
+creation order: notify the callback labelled 6: 0x00000000
+creation order: notify the callback labelled 5: 0x00000000
+creation order: notify the callback labelled 4: 0x00000000
+creation order: notify the callback labelled 3: 0x00000000
+creation order: notify the callback labelled 1: 0x00000000
+creation order: the check: 0x00000005
+creation order: callbacks that ran: 0x00000005
+creation order: run 1 is the callback labelled: 0x00000001
+creation order: run 2 is the callback labelled: 0x00000003
+creation order: run 3 is the callback labelled: 0x00000004
+creation order: run 4 is the callback labelled: 0x00000005
+creation order: run 5 is the callback labelled: 0x00000006
+creation order: UID of label 3 is above the UID of label 1: 0x00000001
+creation order: UID of label 4 is above the UID of label 3: 0x00000000
+creation order: UID of label 5 is above the UID of label 4: 0x00000001
+creation order: UID of label 6 is above the UID of label 5: 0x00000001
+creation order: runs of the callback labelled 1: 0x00000001
+creation order: runs of the callback labelled 3: 0x00000001
+creation order: runs of the callback labelled 4: 0x00000001
+creation order: runs of the callback labelled 5: 0x00000001
+creation order: runs of the callback labelled 6: 0x00000001
+later notified by earlier: notify the first: 0x00000000
+later notified by earlier: the check: 0x00000002
+later notified by earlier: callbacks that ran: 0x00000002
+later notified by earlier: run 1 is the callback labelled: 0x00000001
+later notified by earlier: run 2 is the callback labelled: 0x00000002
+later notified by earlier: the first's notify of the second: 0x00000000
+later notified by earlier: runs of the first: 0x00000001
+later notified by earlier: runs of the second: 0x00000001
+later notified by earlier: the second's notifications after: 0x00000000
+earlier notified by later: notify the later: 0x00000000
+earlier notified by later: the first check: 0x00000001
+earlier notified by later: runs of the earlier after the first check: 0x00000000
+earlier notified by later: the earlier's notifications after the first check: 0x00000001
+earlier notified by later: the second check: 0x00000001
+earlier notified by later: runs of the earlier after the second check: 0x00000001
+earlier notified by later: the earlier's notifications after the second check: 0x00000000
+earlier notified by later: callbacks that ran: 0x00000002
+earlier notified by later: run 1 is the callback labelled: 0x00000002
+earlier notified by later: run 2 is the callback labelled: 0x00000001
+earlier notified by later: the later's notify of the earlier: 0x00000000
+created inside a run: notify the creator: 0x00000000
+created inside a run: the check: 0x00000002
+created inside a run: callbacks that ran: 0x00000002
+created inside a run: run 1 is the callback labelled: 0x00000001
+created inside a run: run 2 is the callback labelled: 0x00000009
+created inside a run: the creator's notify of the new callback: 0x00000000
+created inside a run: runs of the new callback: 0x00000001
+created inside a run: the next check: 0x00000000
+created inside a run: runs of the new callback after the next check: 0x00000001
+cancelled by earlier: notify the victim: 0x00000000
+cancelled by earlier: notify the canceller: 0x00000000
+cancelled by earlier: the check: 0x00000001
+cancelled by earlier: callbacks that ran: 0x00000001
+cancelled by earlier: run 1 is the callback labelled: 0x00000001
+cancelled by earlier: the canceller's cancel of the victim: 0x00000000
+cancelled by earlier: runs of the victim: 0x00000000
+cancelled by earlier: the victim's notifications after: 0x00000000
+cancelled by earlier: the next check: 0x00000000
+cancelled by earlier: runs of the victim after the next check: 0x00000000
+DONE

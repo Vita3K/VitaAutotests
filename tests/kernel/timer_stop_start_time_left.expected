@@ -1,0 +1,8 @@
+set a one shot set event of 4 s: 0x00000000
+start the timer: 0x00000000
+stop the timer after 1.5 s: 0x00000001
+start the timer again after 1 s: 0x00000000
+the wait for the event with a 3.25 s timeout: 0x00000000
+it returned within 3 s: 0x00000001
+it returned after 2 s: 0x00000001
+DONE

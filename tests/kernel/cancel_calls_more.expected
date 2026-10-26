@@ -1,0 +1,37 @@
+simple event: cancel with 1 waiter: 0x00000000
+simple event: the waiting count: 0x00000001
+simple event: waiter 0: 0x80028007
+simple event: the waiting threads after: 0x00000000
+simple event: the pattern after: 0x00000004
+simple event: cancel with 2 waiters: 0x00000000
+simple event: the waiting count: 0x00000002
+simple event: waiter 0: 0x80028007
+simple event: waiter 1: 0x80028007
+simple event: the waiting threads after: 0x00000000
+simple event: the pattern after: 0x00000004
+simple event: cancel with a multiple event wait: 0x00000000
+simple event: the waiting count: 0x00000001
+simple event: the multiple event wait: 0x00000001
+simple event: entry 0 is for: 0x00000001
+simple event: entry 0: 0x80028007
+simple event: the waiting threads after: 0x00000000
+simple event: the pattern after: 0x00000004
+timer: cancel with 1 waiter: 0x00000000
+timer: the waiting count: 0x00000001
+timer: waiter 0: 0x80028007
+timer: the waiting threads after: 0x00000000
+timer: it is active after: 0x00000001
+timer: cancel with 2 waiters: 0x00000000
+timer: the waiting count: 0x00000002
+timer: waiter 0: 0x80028007
+timer: waiter 1: 0x80028007
+timer: the waiting threads after: 0x00000000
+timer: it is active after: 0x00000001
+timer: cancel with a multiple event wait: 0x00000000
+timer: the waiting count: 0x00000001
+timer: the multiple event wait: 0x00000001
+timer: entry 0 is for: 0x00000001
+timer: entry 0: 0x80028007
+timer: the waiting threads after: 0x00000000
+timer: it is active after: 0x00000001
+DONE

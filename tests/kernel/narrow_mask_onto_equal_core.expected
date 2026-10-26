@@ -1,0 +1,11 @@
+L and the spinner at 0x70, L narrowed to core 1: the change: 0x00000001
+L and the spinner at 0x70, L narrowed to core 1: L's status 300 ms later: 0x00000004
+L and the spinner at 0x70, L narrowed to core 1: L's count moved in 300 ms: 0x00000000
+L and the spinner at 0x70, spinner stopped: L counts again in 300 ms: 0x00000001
+L and the spinner at 0x70, spinner stopped: the core L notes 300 ms later: 0x00000001
+L and the spinner at 0xA0, L narrowed to core 1: the change: 0x00000001
+L and the spinner at 0xA0, L narrowed to core 1: L's status 300 ms later: 0x00000002
+L and the spinner at 0xA0, L narrowed to core 1: L's count moved in 300 ms: 0x00000000
+L and the spinner at 0xA0, spinner stopped: L counts again in 300 ms: 0x00000001
+L and the spinner at 0xA0, spinner stopped: the core L notes 300 ms later: 0x00000001
+DONE

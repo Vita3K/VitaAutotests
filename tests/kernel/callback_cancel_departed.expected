@@ -1,0 +1,165 @@
+semaphore, cancel: notify of the target: 0x00000000
+semaphore, cancel: cancel of the target: 0x00000000
+semaphore, cancel: runs of the target: 0x00000000
+semaphore, cancel: runs of the other: 0x00000000
+semaphore, cancel: the target's notifications left: 0x00000000
+semaphore, cancel: the other's notifications left: 0x00000000
+semaphore, cancel: T waits again with the callback wait type: 0x00000001
+semaphore, cancel: the call that ends T's wait: 0x00000000
+semaphore, cancel: T's wait result: 0x00000000
+semaphore, delete: notify of the target: 0x00000000
+semaphore, delete: delete of the target: 0x00000000
+semaphore, delete: runs of the target: 0x00000000
+semaphore, delete: runs of the other: 0x00000000
+semaphore, delete: the target's notifications left: 0x800280A1
+semaphore, delete: the other's notifications left: 0x00000000
+semaphore, delete: notify of the target after the delete: 0x800280A1
+semaphore, delete: T waits again with the callback wait type: 0x00000001
+semaphore, delete: the call that ends T's wait: 0x00000000
+semaphore, delete: T's wait result: 0x00000000
+semaphore, notify twice, cancel, notify once: notify of the target with 1: 0x00000000
+semaphore, notify twice, cancel, notify once: notify of the target with 2: 0x00000000
+semaphore, notify twice, cancel, notify once: cancel of the target: 0x00000000
+semaphore, notify twice, cancel, notify once: notify of the target with 3: 0x00000000
+semaphore, notify twice, cancel, notify once: runs of the target: 0x00000001
+semaphore, notify twice, cancel, notify once: runs of the other: 0x00000000
+semaphore, notify twice, cancel, notify once: the target's notifications left: 0x00000000
+semaphore, notify twice, cancel, notify once: the other's notifications left: 0x00000000
+semaphore, notify twice, cancel, notify once: the count the target's run got: 0x00000001
+semaphore, notify twice, cancel, notify once: the argument the target's run got: 0x00000003
+semaphore, notify twice, cancel, notify once: T waits again with the callback wait type: 0x00000001
+semaphore, notify twice, cancel, notify once: the call that ends T's wait: 0x00000000
+semaphore, notify twice, cancel, notify once: T's wait result: 0x00000000
+semaphore, two callbacks, cancel the target: notify of the target: 0x00000000
+semaphore, two callbacks, cancel the target: notify of the other: 0x00000000
+semaphore, two callbacks, cancel the target: cancel of the target: 0x00000000
+semaphore, two callbacks, cancel the target: runs of the target: 0x00000000
+semaphore, two callbacks, cancel the target: runs of the other: 0x00000001
+semaphore, two callbacks, cancel the target: the target's notifications left: 0x00000000
+semaphore, two callbacks, cancel the target: the other's notifications left: 0x00000000
+semaphore, two callbacks, cancel the target: T waits again with the callback wait type: 0x00000001
+semaphore, two callbacks, cancel the target: the call that ends T's wait: 0x00000000
+semaphore, two callbacks, cancel the target: T's wait result: 0x00000000
+delay, cancel: notify of the target: 0x00000000
+delay, cancel: cancel of the target: 0x00000000
+delay, cancel: runs of the target: 0x00000000
+delay, cancel: runs of the other: 0x00000000
+delay, cancel: the target's notifications left: 0x00000000
+delay, cancel: the other's notifications left: 0x00000000
+delay, cancel: T waits again with the callback wait type: 0x00000001
+delay, cancel: T's wait result: 0x00000000
+delay, delete: notify of the target: 0x00000000
+delay, delete: delete of the target: 0x00000000
+delay, delete: runs of the target: 0x00000000
+delay, delete: runs of the other: 0x00000000
+delay, delete: the target's notifications left: 0x800280A1
+delay, delete: the other's notifications left: 0x00000000
+delay, delete: notify of the target after the delete: 0x800280A1
+delay, delete: T waits again with the callback wait type: 0x00000001
+delay, delete: T's wait result: 0x00000000
+delay, notify twice, cancel, notify once: notify of the target with 1: 0x00000000
+delay, notify twice, cancel, notify once: notify of the target with 2: 0x00000000
+delay, notify twice, cancel, notify once: cancel of the target: 0x00000000
+delay, notify twice, cancel, notify once: notify of the target with 3: 0x00000000
+delay, notify twice, cancel, notify once: runs of the target: 0x00000001
+delay, notify twice, cancel, notify once: runs of the other: 0x00000000
+delay, notify twice, cancel, notify once: the target's notifications left: 0x00000000
+delay, notify twice, cancel, notify once: the other's notifications left: 0x00000000
+delay, notify twice, cancel, notify once: the count the target's run got: 0x00000001
+delay, notify twice, cancel, notify once: the argument the target's run got: 0x00000003
+delay, notify twice, cancel, notify once: T waits again with the callback wait type: 0x00000001
+delay, notify twice, cancel, notify once: T's wait result: 0x00000000
+delay, two callbacks, cancel the target: notify of the target: 0x00000000
+delay, two callbacks, cancel the target: notify of the other: 0x00000000
+delay, two callbacks, cancel the target: cancel of the target: 0x00000000
+delay, two callbacks, cancel the target: runs of the target: 0x00000000
+delay, two callbacks, cancel the target: runs of the other: 0x00000001
+delay, two callbacks, cancel the target: the target's notifications left: 0x00000000
+delay, two callbacks, cancel the target: the other's notifications left: 0x00000000
+delay, two callbacks, cancel the target: T waits again with the callback wait type: 0x00000001
+delay, two callbacks, cancel the target: T's wait result: 0x00000000
+signal, cancel: notify of the target: 0x00000000
+signal, cancel: cancel of the target: 0x00000000
+signal, cancel: runs of the target: 0x00000000
+signal, cancel: runs of the other: 0x00000000
+signal, cancel: the target's notifications left: 0x00000000
+signal, cancel: the other's notifications left: 0x00000000
+signal, cancel: T waits again with the callback wait type: 0x00000001
+signal, cancel: the call that ends T's wait: 0x00000000
+signal, cancel: T's wait result: 0x00000000
+signal, delete: notify of the target: 0x00000000
+signal, delete: delete of the target: 0x00000000
+signal, delete: runs of the target: 0x00000000
+signal, delete: runs of the other: 0x00000000
+signal, delete: the target's notifications left: 0x800280A1
+signal, delete: the other's notifications left: 0x00000000
+signal, delete: notify of the target after the delete: 0x800280A1
+signal, delete: T waits again with the callback wait type: 0x00000001
+signal, delete: the call that ends T's wait: 0x00000000
+signal, delete: T's wait result: 0x00000000
+signal, notify twice, cancel, notify once: notify of the target with 1: 0x00000000
+signal, notify twice, cancel, notify once: notify of the target with 2: 0x00000000
+signal, notify twice, cancel, notify once: cancel of the target: 0x00000000
+signal, notify twice, cancel, notify once: notify of the target with 3: 0x00000000
+signal, notify twice, cancel, notify once: runs of the target: 0x00000001
+signal, notify twice, cancel, notify once: runs of the other: 0x00000000
+signal, notify twice, cancel, notify once: the target's notifications left: 0x00000000
+signal, notify twice, cancel, notify once: the other's notifications left: 0x00000000
+signal, notify twice, cancel, notify once: the count the target's run got: 0x00000001
+signal, notify twice, cancel, notify once: the argument the target's run got: 0x00000003
+signal, notify twice, cancel, notify once: T waits again with the callback wait type: 0x00000001
+signal, notify twice, cancel, notify once: the call that ends T's wait: 0x00000000
+signal, notify twice, cancel, notify once: T's wait result: 0x00000000
+signal, two callbacks, cancel the target: notify of the target: 0x00000000
+signal, two callbacks, cancel the target: notify of the other: 0x00000000
+signal, two callbacks, cancel the target: cancel of the target: 0x00000000
+signal, two callbacks, cancel the target: runs of the target: 0x00000000
+signal, two callbacks, cancel the target: runs of the other: 0x00000001
+signal, two callbacks, cancel the target: the target's notifications left: 0x00000000
+signal, two callbacks, cancel the target: the other's notifications left: 0x00000000
+signal, two callbacks, cancel the target: T waits again with the callback wait type: 0x00000001
+signal, two callbacks, cancel the target: the call that ends T's wait: 0x00000000
+signal, two callbacks, cancel the target: T's wait result: 0x00000000
+thread end, cancel: notify of the target: 0x00000000
+thread end, cancel: cancel of the target: 0x00000000
+thread end, cancel: runs of the target: 0x00000000
+thread end, cancel: runs of the other: 0x00000000
+thread end, cancel: the target's notifications left: 0x00000000
+thread end, cancel: the other's notifications left: 0x00000000
+thread end, cancel: T waits again with the callback wait type: 0x00000001
+thread end, cancel: the call that ends T's wait: 0x00000000
+thread end, cancel: T's wait result: 0x00000000
+thread end, delete: notify of the target: 0x00000000
+thread end, delete: delete of the target: 0x00000000
+thread end, delete: runs of the target: 0x00000000
+thread end, delete: runs of the other: 0x00000000
+thread end, delete: the target's notifications left: 0x800280A1
+thread end, delete: the other's notifications left: 0x00000000
+thread end, delete: notify of the target after the delete: 0x800280A1
+thread end, delete: T waits again with the callback wait type: 0x00000001
+thread end, delete: the call that ends T's wait: 0x00000000
+thread end, delete: T's wait result: 0x00000000
+thread end, notify twice, cancel, notify once: notify of the target with 1: 0x00000000
+thread end, notify twice, cancel, notify once: notify of the target with 2: 0x00000000
+thread end, notify twice, cancel, notify once: cancel of the target: 0x00000000
+thread end, notify twice, cancel, notify once: notify of the target with 3: 0x00000000
+thread end, notify twice, cancel, notify once: runs of the target: 0x00000001
+thread end, notify twice, cancel, notify once: runs of the other: 0x00000000
+thread end, notify twice, cancel, notify once: the target's notifications left: 0x00000000
+thread end, notify twice, cancel, notify once: the other's notifications left: 0x00000000
+thread end, notify twice, cancel, notify once: the count the target's run got: 0x00000001
+thread end, notify twice, cancel, notify once: the argument the target's run got: 0x00000003
+thread end, notify twice, cancel, notify once: T waits again with the callback wait type: 0x00000001
+thread end, notify twice, cancel, notify once: the call that ends T's wait: 0x00000000
+thread end, notify twice, cancel, notify once: T's wait result: 0x00000000
+thread end, two callbacks, cancel the target: notify of the target: 0x00000000
+thread end, two callbacks, cancel the target: notify of the other: 0x00000000
+thread end, two callbacks, cancel the target: cancel of the target: 0x00000000
+thread end, two callbacks, cancel the target: runs of the target: 0x00000000
+thread end, two callbacks, cancel the target: runs of the other: 0x00000001
+thread end, two callbacks, cancel the target: the target's notifications left: 0x00000000
+thread end, two callbacks, cancel the target: the other's notifications left: 0x00000000
+thread end, two callbacks, cancel the target: T waits again with the callback wait type: 0x00000001
+thread end, two callbacks, cancel the target: the call that ends T's wait: 0x00000000
+thread end, two callbacks, cancel the target: T's wait result: 0x00000000
+DONE
