@@ -2,9 +2,10 @@
 // for a set event and for a pulse event. Each case uses a fresh manual reset timer with an event
 // that repeats every 800 ms, which fires at 0.8 s, 1.6 s, 2.4 s and so on from its start. The main
 // thread sleeps to times between the fires, at least 300 ms from each. The cases:
-// - a set event: a poll at 1.2 s gets the bit, and a second poll at once gets it again, since a
-//   manual reset set event keeps its bit. A clear removes the bit, so the next poll fails, and a
-//   poll at 2 s gets the bit again, since the fire at 1.6 s set it.
+// - a set event: a poll at 8.4 s, ten intervals after the start, gets the bit, and a second poll at
+//   once gets it again, since a manual reset set event keeps its bit. A clear removes the bit, so
+//   the next poll fails, and a poll ten intervals after the clear gets the bit again, since a later
+//   fire set it. The polls and the clear between two fires print only after the last of them.
 // - a pulse event: a poll at 1.1 s fails, since a pulse leaves no bit. A wait gets the fire at
 //   1.6 s, and a poll right after the wait fails. A second wait gets the fire at 2.4 s.
 // Each prints the results and the bits, and the elapsed times of the waits as comparisons. The
@@ -33,13 +34,29 @@ static SceUID create_timer(const char *name, int type) {
     return timer;
 }
 
+// A poll's result and the bits it got
+typedef struct Poll {
+    int result;
+    SceUInt32 bits;
+} Poll;
+
+// Polls the timer for its bit
+static Poll poll_timer(SceUID timer) {
+    Poll poll = { .bits = NOT_DONE };
+    SceUInt64 user_data = 0;
+    poll.result = sceKernelPollEvent(timer, EVENT_TIMER, &poll.bits, &user_data);
+    return poll;
+}
+
+// Prints a poll's result and the bits it got
+static void print_result(const char *name, Poll poll) {
+    PRINT(name, poll.result);
+    PRINTF(poll.bits, "%s: the bits it got", name);
+}
+
 // Polls the timer for its bit, and prints the result and the bits the poll got
 static void print_poll(const char *name, SceUID timer) {
-    SceUInt32 bits = NOT_DONE;
-    SceUInt64 user_data = 0;
-    const int polled = sceKernelPollEvent(timer, EVENT_TIMER, &bits, &user_data);
-    PRINT(name, polled);
-    PRINTF(bits, "%s: the bits it got", name);
+    print_result(name, poll_timer(timer));
 }
 
 // Waits for the timer's bit with a timeout of 2 s. Returns the result, and sets the bits the wait
@@ -58,13 +75,18 @@ static void set_case(void) {
     const SceUID timer = create_timer("set event", TIMER_TYPE_SET_EVENT);
     const SceUInt64 origin = sceKernelGetProcessTimeWide();
     PRINT("set event: start the timer", sceKernelStartTimer(timer));
-    sleep_until(origin + 1200000);
-    print_poll("set event: the first poll at 1.2 s", timer);
-    print_poll("set event: the second poll at once", timer);
-    PRINT("set event: clear the timer bit", sceKernelClearEvent(timer, 0));
-    print_poll("set event: the poll after the clear", timer);
-    sleep_until(origin + 2000000);
-    print_poll("set event: the poll at 2 s", timer);
+    sleep_until(origin + 10 * INTERVAL_US + INTERVAL_US / 2);
+    const Poll first = poll_timer(timer);
+    const Poll second = poll_timer(timer);
+    const int cleared = sceKernelClearEvent(timer, 0);
+    const Poll after_clear = poll_timer(timer);
+    const SceUInt64 clear_time = sceKernelGetProcessTimeWide();
+    print_result("set event: the first poll at 8.4 s", first);
+    print_result("set event: the second poll at once", second);
+    PRINT("set event: clear the timer bit", cleared);
+    print_result("set event: the poll after the clear", after_clear);
+    sleep_until(clear_time + 10 * INTERVAL_US);
+    print_poll("set event: the poll ten intervals after the clear", timer);
 
     sceKernelStopTimer(timer);
     sceKernelDeleteTimer(timer);

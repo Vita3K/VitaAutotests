@@ -1,14 +1,14 @@
 set event: set a repeating event: 0x00000000
 set event: start the timer: 0x00000000
-set event: the first poll at 1.2 s: 0x00000000
-set event: the first poll at 1.2 s: the bits it got: 0x00008000
+set event: the first poll at 8.4 s: 0x00000000
+set event: the first poll at 8.4 s: the bits it got: 0x00008000
 set event: the second poll at once: 0x00000000
 set event: the second poll at once: the bits it got: 0x00008000
 set event: clear the timer bit: 0x00000000
 set event: the poll after the clear: 0x80028202
 set event: the poll after the clear: the bits it got: 0x00000000
-set event: the poll at 2 s: 0x00000000
-set event: the poll at 2 s: the bits it got: 0x00008000
+set event: the poll ten intervals after the clear: 0x00000000
+set event: the poll ten intervals after the clear: the bits it got: 0x00008000
 pulse event: set a repeating event: 0x00000000
 pulse event: start the timer: 0x00000000
 pulse event: the poll at 1.1 s: 0x80028202
