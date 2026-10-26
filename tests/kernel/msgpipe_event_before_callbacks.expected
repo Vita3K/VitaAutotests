@@ -1,0 +1,13 @@
+send: the call: 0x00000000
+send: runs of the callback: 0x00000002
+send: the bits the second run saw: 0x00010001
+send: the low half of the user data it saw: 0x00000000
+send: the high half of the user data it saw: 0x00000004
+send: the bits after the call: 0x00010001
+receive: the call: 0x00000000
+receive: runs of the callback: 0x00000002
+receive: the bits the second run saw: 0x00000002
+receive: the low half of the user data it saw: 0x00000000
+receive: the high half of the user data it saw: 0x00000004
+receive: the bits after the call: 0x00000002
+DONE

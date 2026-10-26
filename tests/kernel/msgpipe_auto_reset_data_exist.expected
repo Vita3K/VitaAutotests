@@ -1,0 +1,23 @@
+polls: the bits after the send: 0x00010001
+polls: the first poll for 0x10000: the poll: 0x00000000
+polls: the first poll for 0x10000: the bits it got: 0x00010000
+polls: the first poll for 0x10000: the bits after: 0x00010001
+polls: the second poll for 0x10000: the poll: 0x00000000
+polls: the second poll for 0x10000: the bits it got: 0x00010000
+polls: the second poll for 0x10000: the bits after: 0x00010001
+polls: the first poll for 0x1: the poll: 0x00000000
+polls: the first poll for 0x1: the bits it got: 0x00000001
+polls: the first poll for 0x1: the bits after: 0x00010000
+polls: the second poll for 0x1: the poll: 0x80028202
+polls: the second poll for 0x1: the bits it got: 0x00000000
+polls: the second poll for 0x1: the bits after: 0x00010000
+event wait: the wait: 0x00000000
+event wait: the bits it got: 0x00010000
+event wait: the bits after: 0x00010001
+multiple event wait: the wait: 0x00000001
+multiple event wait: the bits it got: 0x00010000
+multiple event wait: the bits after: 0x00010001
+multiple event wait after the send: the wait: 0x00000001
+multiple event wait after the send: the bits it got: 0x00010000
+multiple event wait after the send: the bits after: 0x00010001
+DONE

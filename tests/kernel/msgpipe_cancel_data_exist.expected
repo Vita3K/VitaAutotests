@@ -1,0 +1,16 @@
+before the cancel: the bits: 0x00010001
+before the cancel: the low half of the user data: 0x00000000
+before the cancel: the high half of the user data: 0x00000004
+before the cancel: a poll for 0x10000: 0x00000000
+the cancel: 0x00000000
+after the cancel: the bits: 0x00000001
+after the cancel: the low half of the user data: 0x00000000
+after the cancel: the high half of the user data: 0x00000004
+after the cancel: a poll for 0x10000: 0x80028202
+a waiting receive: the cancel: 0x00000000
+a waiting receive: its result: 0x80028007
+a waiting receive: after it returned: the bits: 0x00000010
+a waiting receive: after it returned: the low half of the user data: 0x80028007
+a waiting receive: after it returned: the high half of the user data: 0xFFFFFFFF
+a waiting receive: after it returned: a poll for 0x10000: 0x80028202
+DONE
