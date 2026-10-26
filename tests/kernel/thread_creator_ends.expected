@@ -1,0 +1,37 @@
+returned creator, child started later: the creator's end wait: 0x00000000
+returned creator, child started later: the child's initial priority: 0x00000070
+returned creator, child started later: the child is in this process: 0x00000001
+returned creator, child started later: start the child: 0x00000000
+returned creator, child started later: the child's end wait: 0x00000000
+returned creator, child started later: the priority the child runs at: 0x00000070
+returned creator, child started later: runs of the child: 0x00000001
+returned creator, child started later: delete the child: 0x00000000
+exit-deleted creator, child started later: the creator is gone: 0x00000001
+exit-deleted creator, child started later: the child's initial priority: 0x00000070
+exit-deleted creator, child started later: the child is in this process: 0x00000001
+exit-deleted creator, child started later: start the child: 0x00000000
+exit-deleted creator, child started later: the child's end wait: 0x00000000
+exit-deleted creator, child started later: the priority the child runs at: 0x00000070
+exit-deleted creator, child started later: runs of the child: 0x00000001
+exit-deleted creator, child started later: delete the child: 0x00000000
+returned creator, child waiting: the creator's end wait: 0x00000000
+returned creator, child waiting: the child waits on the semaphore: 0x00000001
+returned creator, child waiting: the child's initial priority: 0x00000070
+returned creator, child waiting: the child is in this process: 0x00000001
+returned creator, child waiting: the priority the child runs at: 0x00000070
+returned creator, child waiting: signal the child: 0x00000000
+returned creator, child waiting: the child's end wait: 0x00000000
+returned creator, child waiting: the child's wait result: 0x00000000
+returned creator, child waiting: runs of the child: 0x00000001
+returned creator, child waiting: delete the child: 0x00000000
+exit-deleted creator, child waiting: the creator is gone: 0x00000001
+exit-deleted creator, child waiting: the child waits on the semaphore: 0x00000001
+exit-deleted creator, child waiting: the child's initial priority: 0x00000070
+exit-deleted creator, child waiting: the child is in this process: 0x00000001
+exit-deleted creator, child waiting: the priority the child runs at: 0x00000070
+exit-deleted creator, child waiting: signal the child: 0x00000000
+exit-deleted creator, child waiting: the child's end wait: 0x00000000
+exit-deleted creator, child waiting: the child's wait result: 0x00000000
+exit-deleted creator, child waiting: runs of the child: 0x00000001
+exit-deleted creator, child waiting: delete the child: 0x00000000
+DONE

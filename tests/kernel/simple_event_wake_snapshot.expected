@@ -1,0 +1,56 @@
+manual reset: the set of A: 0x00000000
+manual reset: the threads waiting after the set of A: 0x00000000
+manual reset: W0 still waits after the set of A: 0x00000000
+manual reset: the set of B: 0x00000000
+manual reset: the clear: 0x00000000
+manual reset: the pulse of C: 0x00000000
+manual reset: waiter 0's result: 0x00000000
+manual reset: the bits waiter 0 got: 0x01000000
+manual reset: the user data waiter 0 got: 0x00000011
+manual reset: the bits left: 0x00000000
+manual reset: the final poll: 0x80028202
+manual reset: the bits the final poll got: 0x00000000
+manual reset: the user data the final poll got: 0x00000000
+auto reset, two sets of A: the first set: 0x00000000
+auto reset, two sets of A: the threads waiting after the first set: 0x00000001
+auto reset, two sets of A: W0 still waits after the first set: 0x00000000
+auto reset, two sets of A: the second set: 0x00000000
+auto reset, two sets of A: waiter 0's result: 0x00000000
+auto reset, two sets of A: the bits waiter 0 got: 0x01000000
+auto reset, two sets of A: the user data waiter 0 got: 0x00000011
+auto reset, two sets of A: waiter 1's result: 0x00000000
+auto reset, two sets of A: the bits waiter 1 got: 0x01000000
+auto reset, two sets of A: the user data waiter 1 got: 0x00000022
+auto reset, two sets of A: the bits left: 0x00000000
+auto reset, two sets of A: the final poll: 0x80028202
+auto reset, two sets of A: the bits the final poll got: 0x00000000
+auto reset, two sets of A: the user data the final poll got: 0x00000000
+auto reset, a pulse then a set of A: the pulse: 0x00000000
+auto reset, a pulse then a set of A: the threads waiting after the pulse: 0x00000001
+auto reset, a pulse then a set of A: W0 still waits after the pulse: 0x00000000
+auto reset, a pulse then a set of A: the set: 0x00000000
+auto reset, a pulse then a set of A: waiter 0's result: 0x00000000
+auto reset, a pulse then a set of A: the bits waiter 0 got: 0x01000000
+auto reset, a pulse then a set of A: the user data waiter 0 got: 0x00000011
+auto reset, a pulse then a set of A: waiter 1's result: 0x00000000
+auto reset, a pulse then a set of A: the bits waiter 1 got: 0x01000000
+auto reset, a pulse then a set of A: the user data waiter 1 got: 0x00000022
+auto reset, a pulse then a set of A: the bits left: 0x00000000
+auto reset, a pulse then a set of A: the final poll: 0x80028202
+auto reset, a pulse then a set of A: the bits the final poll got: 0x00000000
+auto reset, a pulse then a set of A: the user data the final poll got: 0x00000000
+manual reset, A for W0 and B for W1: the set of A: 0x00000000
+manual reset, A for W0 and B for W1: the threads waiting after the set of A: 0x00000001
+manual reset, A for W0 and B for W1: W0 still waits after the set of A: 0x00000000
+manual reset, A for W0 and B for W1: the set of B: 0x00000000
+manual reset, A for W0 and B for W1: waiter 0's result: 0x00000000
+manual reset, A for W0 and B for W1: the bits waiter 0 got: 0x01000000
+manual reset, A for W0 and B for W1: the user data waiter 0 got: 0x00000011
+manual reset, A for W0 and B for W1: waiter 1's result: 0x00000000
+manual reset, A for W0 and B for W1: the bits waiter 1 got: 0x02000000
+manual reset, A for W0 and B for W1: the user data waiter 1 got: 0x00000022
+manual reset, A for W0 and B for W1: the bits left: 0x03000000
+manual reset, A for W0 and B for W1: the final poll: 0x00000000
+manual reset, A for W0 and B for W1: the bits the final poll got: 0x03000000
+manual reset, A for W0 and B for W1: the user data the final poll got: 0x00000022
+DONE

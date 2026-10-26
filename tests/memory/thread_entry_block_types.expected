@@ -1,0 +1,33 @@
+app code: a thread with it as its entry: 0x00000000
+app code: a callback with it as its function: 0x00000000
+app data: a thread with it as its entry: 0x80020006
+app data: a callback with it as its function: 0x80020006
+USER_RW: allocate: 0x00000000
+USER_RW: a thread with it as its entry: 0x80020006
+USER_RW: a callback with it as its function: 0x80020006
+USER_RW_UNCACHE: allocate: 0x00000000
+USER_RW_UNCACHE: a thread with it as its entry: 0x80020006
+USER_RW_UNCACHE: a callback with it as its function: 0x80020006
+USER_CDRAM_RW: allocate: 0x00000000
+USER_CDRAM_RW: a thread with it as its entry: 0x80020006
+USER_CDRAM_RW: a callback with it as its function: 0x80020006
+USER_MAIN_R: allocate: 0x00000000
+USER_MAIN_R: a thread with it as its entry: 0x80020006
+USER_MAIN_R: a callback with it as its function: 0x80020006
+openable USER_RW: allocate: 0x00000000
+0x10 alias: open: 0x00000000
+0x10 alias: a thread with it as its entry: 0x80020006
+0x10 alias: a callback with it as its function: 0x80020006
+code block: allocate: 0x00000000
+code block, domain closed: a thread with it as its entry: 0x00000000
+code block, domain closed: a callback with it as its function: 0x00000000
+code block: open the domain: 0x00000000
+code block, domain open: a thread with it as its entry: 0x00000000
+code block, domain open: a callback with it as its function: 0x00000000
+code block: close the domain: 0x00000000
+dormant thread: create: 0x00000000
+dormant thread's stack: a thread with it as its entry: 0x80020006
+dormant thread's stack: a callback with it as its function: 0x80020006
+dormant thread's TLS slot 0: a thread with it as its entry: 0x80020006
+dormant thread's TLS slot 0: a callback with it as its function: 0x80020006
+DONE

@@ -1,0 +1,20 @@
+sleeps: the thread woke five times: 0x00000001
+sleeps: the release count grew by at least 3: 0x00000001
+spin with a holder: the holder woke five times: 0x00000001
+spin with a holder: the preempt count grew by at least 3: 0x00000000
+spin with a holder: the release count did not grow: 0x00000001
+spin alone for 300 ms: the interrupt count grew: 0x00000000
+suspend the spinning thread for ForVM: result: 0x00000001
+suspended while spinning: the interrupt count grew: 0x00000000
+resume it: result: 0x00000000
+move it to core 2: result: 0x00010000
+move it back to core 0: result: 0x00040000
+after the moves: the CPU change count is 0: 0x00000001
+after the moves: the affinity is core 0: 0x00000001
+end it: result: 0x00000000
+restart it: result: 0x00000000
+restarted run: end result: 0x00000000
+restart: the interrupt count was not reset: 0x00000001
+restart: the preempt count was not reset: 0x00000001
+restart: the release count was not reset: 0x00000001
+DONE

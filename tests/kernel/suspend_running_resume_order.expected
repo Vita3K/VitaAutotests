@@ -1,0 +1,37 @@
+control, priority 0xA0: the suspend: 0x00000001
+control, priority 0xA0: T's status while suspended: 0x00000100
+control, priority 0xA0: the resume: 0x00000000
+control, priority 0xA0: T's status once it runs again: 0x00000001
+main thread resumes T, priority 0xA0: the suspend: 0x00000001
+main thread resumes T, priority 0xA0: the resume: 0x00000000
+main thread resumes T, priority 0xA0: T's status before the gate lifts: 0x00000002
+main thread resumes T, priority 0xA0: U's status before the gate lifts: 0x00000002
+main thread resumes T, priority 0xA0: the first to run, 1 for T, 2 for U and 3 for V: 0x00000002
+main thread resumes T, priority 0xA0: the second to run: 0x00000001
+main thread resumes T, priority 0xA0: the third to run: 0x00000003
+gate resumes T, priority 0xA0: the suspend: 0x00000001
+gate resumes T, priority 0xA0: the resume: 0x00000000
+gate resumes T, priority 0xA0: T's status before the gate lifts: 0x00000002
+gate resumes T, priority 0xA0: U's status before the gate lifts: 0x00000002
+gate resumes T, priority 0xA0: the first to run, 1 for T, 2 for U and 3 for V: 0x00000002
+gate resumes T, priority 0xA0: the second to run: 0x00000001
+gate resumes T, priority 0xA0: the third to run: 0x00000003
+control, priority 0x70: the suspend: 0x00000001
+control, priority 0x70: T's status while suspended: 0x00000100
+control, priority 0x70: the resume: 0x00000000
+control, priority 0x70: T's status once it runs again: 0x00000001
+main thread resumes T, priority 0x70: the suspend: 0x00000001
+main thread resumes T, priority 0x70: the resume: 0x00000000
+main thread resumes T, priority 0x70: T's status before the gate lifts: 0x00000004
+main thread resumes T, priority 0x70: U's status before the gate lifts: 0x00000004
+main thread resumes T, priority 0x70: the first to run, 1 for T, 2 for U and 3 for V: 0x00000002
+main thread resumes T, priority 0x70: the second to run: 0x00000001
+main thread resumes T, priority 0x70: the third to run: 0x00000003
+gate resumes T, priority 0x70: the suspend: 0x00000001
+gate resumes T, priority 0x70: the resume: 0x00000000
+gate resumes T, priority 0x70: T's status before the gate lifts: 0x00000002
+gate resumes T, priority 0x70: U's status before the gate lifts: 0x00000004
+gate resumes T, priority 0x70: the first to run, 1 for T, 2 for U and 3 for V: 0x00000001
+gate resumes T, priority 0x70: the second to run: 0x00000002
+gate resumes T, priority 0x70: the third to run: 0x00000003
+DONE

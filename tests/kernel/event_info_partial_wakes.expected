@@ -1,0 +1,37 @@
+event flag: the waiting threads with three waiters: 0x00000003
+event flag: the pattern with three waiters: 0x00000000
+event flag: the waiting threads after a set of 0x1: 0x00000002
+event flag: the pattern after a set of 0x1: 0x00000000
+event flag: the waiting threads after a set of 0x6: 0x00000001
+event flag: the pattern after a set of 0x6: 0x00000006
+event flag: the waiting threads with the short waiter queued: 0x00000002
+event flag: the pattern with the short waiter queued: 0x00000006
+event flag: the waiting threads after the short waiter's deadline: 0x00000001
+event flag: the pattern after the short waiter's deadline: 0x00000006
+event flag: the waiting threads after a set of 0x1 for W1: 0x00000000
+event flag: the pattern after a set of 0x1 for W1: 0x00000007
+event flag: W0's result: 0x00000000
+event flag: the bits W0 got: 0x00000001
+event flag: W1's result: 0x00000000
+event flag: the bits W1 got: 0x00000007
+event flag: W2's result: 0x00000000
+event flag: the bits W2 got: 0x00000006
+event flag: W3's result: 0x80028005
+simple event: the waiting threads with three waiters: 0x00000003
+simple event: the pattern with three waiters: 0x00000000
+simple event: the waiting threads after a set of A: 0x00000001
+simple event: the pattern after a set of A: 0x01000000
+simple event: the low word of the user data after a set of A: 0x00000011
+simple event: the waiting threads after a set of B: 0x00000000
+simple event: the pattern after a set of B: 0x03000000
+simple event: the low word of the user data after a set of B: 0x00000022
+simple event: W0's result: 0x00000000
+simple event: the bits W0 got: 0x01000000
+simple event: the low word of W0's user data: 0x00000011
+simple event: W1's result: 0x00000000
+simple event: the bits W1 got: 0x01000000
+simple event: the low word of W1's user data: 0x00000011
+simple event: W2's result: 0x00000000
+simple event: the bits W2 got: 0x02000000
+simple event: the low word of W2's user data: 0x00000022
+DONE

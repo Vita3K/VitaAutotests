@@ -1,0 +1,59 @@
+USER_RW_UNCACHE: allocate: 0x00000000
+USER_RW_UNCACHE: free it: 0x00000000
+USER_RW_UNCACHE, its range: find: 0x80022007
+CDRAM: allocate: 0x00000000
+CDRAM: free it: 0x00000000
+CDRAM, its range: find: 0x80022007
+PHYCONT: allocate: 0x00000000
+PHYCONT: free it: 0x00000000
+PHYCONT, its range: find: 0x80022007
+cached common dialog: allocate: 0x00000000
+cached common dialog: free it: 0x00000000
+cached common dialog, its range: find: 0x80022007
+uncached common dialog: allocate: 0x00000000
+uncached common dialog: free it: 0x00000000
+uncached common dialog, its range: find: 0x80022007
+alias closed: allocate the original: 0x00000000
+alias closed: open the alias: 0x00000000
+alias closed: end the alias: 0x00000000
+alias closed, the alias: find: 0x80022007
+alias closed, the original: find: 0x00000000
+alias closed: free the original: 0x00000000
+alias closed, the original after its free: find: 0x80022007
+alias freed: allocate the original: 0x00000000
+alias freed: open the alias: 0x00000000
+alias freed: end the alias: 0x00000000
+alias freed, the alias: find: 0x80022007
+alias freed, the original: find: 0x00000000
+alias freed: free the original: 0x00000000
+alias freed, the original after its free: find: 0x80022007
+original closed: allocate the original: 0x00000000
+original closed: open the alias: 0x00000000
+original closed: end the original: 0x00000000
+original closed, the original: find: 0x80022007
+original closed, the alias: find: 0x80022007
+original closed: the alias's base by its UID: 0x00000000
+original closed: close the alias: 0x00000000
+original closed, the alias after its close: find: 0x80022007
+original freed: allocate the original: 0x00000000
+original freed: open the alias: 0x00000000
+original freed: end the original: 0x00000000
+original freed, the original: find: 0x80022007
+original freed, the alias: find: 0x80022007
+original freed: the alias's base by its UID: 0x00000000
+original freed: close the alias: 0x00000000
+original freed, the alias after its close: find: 0x80022007
+code freed for code: allocate 1 MiB for code: 0x00000000
+code freed for code: free it with the call for code: 0x00000000
+code freed for code, its range: find: 0x80022007
+code freed the usual way: allocate 1 MiB for code: 0x00000000
+code freed the usual way: free it with the usual free: 0x00000000
+code freed the usual way, its range: find: 0x80022007
+code freed the usual way: the call for code after that: 0x80024501
+dormant thread: create: 0x00000000
+dormant thread stack before the delete: find: 0x80024501
+the TLS slot 0 before the delete: find: 0x80024501
+delete the thread: 0x00000000
+dormant thread stack after the delete: find: 0x80022007
+the TLS slot 0 after the delete: find: 0x80022007
+DONE

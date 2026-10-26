@@ -1,0 +1,81 @@
+attr 0x0, H times out: H's result: 0x80028005
+attr 0x0, H times out: H's size: 0x00000000
+attr 0x0, H times out: the free size after H left: 0x00000002
+attr 0x0, H times out: the waiting senders after H left: 0x00000000
+attr 0x0, H times out: S2 is done after H left: 0x00000001
+attr 0x0, H times out: S2's result: 0x00000000
+attr 0x0, H times out: S2's size: 0x00000002
+attr 0x0, H times out: S2's time left is above 4.5 s: 0x00000001
+attr 0x0, H times out: S3 is done after H left: 0x00000001
+attr 0x0, H times out: S3's result: 0x00000000
+attr 0x0, H times out: S3's size: 0x00000004
+attr 0x0, H times out: S3's time left is above 4.5 s: 0x00000001
+attr 0x0, H times out: the try receive of the pipe: 0x00000000
+attr 0x0, H times out: the pipe held "ijklmn" past the '.' bytes: 0x00000006
+attr 0x0, H times out: cancel the pipe: 0x00000000
+attr 0x1, H times out: H's result: 0x80028005
+attr 0x1, H times out: H's size: 0x00000000
+attr 0x1, H times out: the free size after H left: 0x00000002
+attr 0x1, H times out: the waiting senders after H left: 0x00000000
+attr 0x1, H times out: S2 is done after H left: 0x00000001
+attr 0x1, H times out: S2's result: 0x00000000
+attr 0x1, H times out: S2's size: 0x00000002
+attr 0x1, H times out: S2's time left is above 4.5 s: 0x00000001
+attr 0x1, H times out: S3 is done after H left: 0x00000001
+attr 0x1, H times out: S3's result: 0x00000000
+attr 0x1, H times out: S3's size: 0x00000004
+attr 0x1, H times out: S3's time left is above 4.5 s: 0x00000001
+attr 0x1, H times out: the try receive of the pipe: 0x00000000
+attr 0x1, H times out: the pipe held "ijklmn" past the '.' bytes: 0x00000006
+attr 0x1, H times out: cancel the pipe: 0x00000000
+attr 0x0, S2 times out: S2's result: 0x80028005
+attr 0x0, S2 times out: S2's size: 0x00000000
+attr 0x0, S2 times out: the free size right after S2 left: 0x00000008
+attr 0x0, S2 times out: the waiting senders right after S2 left: 0x00000002
+attr 0x0, S2 times out: S3 waits right after S2 left: 0x00000001
+attr 0x0, S2 times out: H still waits 250 ms later: 0x00000001
+attr 0x0, S2 times out: S3 still waits 250 ms later: 0x00000001
+attr 0x0, S2 times out: the free size 250 ms later: 0x00000008
+attr 0x0, S2 times out: the waiting senders 250 ms later: 0x00000002
+attr 0x0, S2 times out: cancel the pipe: 0x00000000
+attr 0x0, S2 times out: the senders the cancel ended: 0x00000002
+attr 0x0, S2 times out: H's result: 0x80028007
+attr 0x0, S2 times out: H's size: 0x00000000
+attr 0x0, S2 times out: S3's result: 0x80028007
+attr 0x0, S2 times out: S3's size: 0x00000000
+attr 0x1, S2 times out: S2's result: 0x80028005
+attr 0x1, S2 times out: S2's size: 0x00000000
+attr 0x1, S2 times out: the free size right after S2 left: 0x00000008
+attr 0x1, S2 times out: the waiting senders right after S2 left: 0x00000002
+attr 0x1, S2 times out: S3 waits right after S2 left: 0x00000001
+attr 0x1, S2 times out: H still waits 250 ms later: 0x00000001
+attr 0x1, S2 times out: S3 still waits 250 ms later: 0x00000001
+attr 0x1, S2 times out: the free size 250 ms later: 0x00000008
+attr 0x1, S2 times out: the waiting senders 250 ms later: 0x00000002
+attr 0x1, S2 times out: cancel the pipe: 0x00000000
+attr 0x1, S2 times out: the senders the cancel ended: 0x00000002
+attr 0x1, S2 times out: H's result: 0x80028007
+attr 0x1, S2 times out: H's size: 0x00000000
+attr 0x1, S2 times out: S3's result: 0x80028007
+attr 0x1, S2 times out: S3's size: 0x00000000
+attr 0x0, H leaves to a callback: H waits with callbacks before the notify: 0x00000001
+attr 0x0, H leaves to a callback: the notify: 0x00000000
+attr 0x0, H leaves to a callback: H's callback waits on the gate: 0x00000001
+attr 0x0, H leaves to a callback: S2 and S3 are done while H's callback waits: 0x00000001
+attr 0x0, H leaves to a callback: the free size while H's callback waits: 0x00000002
+attr 0x0, H leaves to a callback: the waiting senders while H's callback waits: 0x00000000
+attr 0x0, H leaves to a callback: H waits again after the gate opened: 0x00000001
+attr 0x0, H leaves to a callback: the free size with H waiting again: 0x00000002
+attr 0x0, H leaves to a callback: the waiting senders with H waiting again: 0x00000001
+attr 0x0, H leaves to a callback: cancel the pipe: 0x00000000
+attr 0x0, H leaves to a callback: the senders the cancel ended: 0x00000001
+attr 0x0, H leaves to a callback: H's result: 0x80028007
+attr 0x0, H leaves to a callback: H's size: 0x00000000
+attr 0x0, H leaves to a callback: runs of H's callback: 0x00000001
+attr 0x0, H leaves to a callback: S2's result: 0x00000000
+attr 0x0, H leaves to a callback: S2's size: 0x00000002
+attr 0x0, H leaves to a callback: S2's time left is above 4.5 s: 0x00000001
+attr 0x0, H leaves to a callback: S3's result: 0x00000000
+attr 0x0, H leaves to a callback: S3's size: 0x00000004
+attr 0x0, H leaves to a callback: S3's time left is above 4.5 s: 0x00000001
+DONE

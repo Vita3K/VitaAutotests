@@ -1,0 +1,230 @@
+vector send, count 0, an unknown UID: 0x80028221
+vector send, count 0, a semaphore: 0x8002000F
+vector send, count 0, a deleted message pipe: 0x80028221
+vector send, count 0, a live message pipe: 0x8002000F
+vector send with callbacks, count 0, an unknown UID: 0x80028221
+vector send with callbacks, count 0, a semaphore: 0x8002000F
+vector send with callbacks, count 0, a deleted message pipe: 0x80028221
+vector send with callbacks, count 0, a live message pipe: 0x8002000F
+try vector send, count 0, an unknown UID: 0x80028221
+try vector send, count 0, a semaphore: 0x80028221
+try vector send, count 0, a deleted message pipe: 0x80028221
+try vector send, count 0, a live message pipe: 0x8002000F
+vector receive, count 0, an unknown UID: 0x80028221
+vector receive, count 0, a semaphore: 0x8002000F
+vector receive, count 0, a deleted message pipe: 0x80028221
+vector receive, count 0, a live message pipe: 0x8002000F
+vector receive with callbacks, count 0, an unknown UID: 0x80028221
+vector receive with callbacks, count 0, a semaphore: 0x8002000F
+vector receive with callbacks, count 0, a deleted message pipe: 0x80028221
+vector receive with callbacks, count 0, a live message pipe: 0x8002000F
+try vector receive, count 0, an unknown UID: 0x80028221
+try vector receive, count 0, a semaphore: 0x80028221
+try vector receive, count 0, a deleted message pipe: 0x80028221
+try vector receive, count 0, a live message pipe: 0x8002000F
+send, mode 0x200, an unknown UID: 0x80028221
+send, mode 0x200, a semaphore: 0x80020010
+send, mode 0x200, a deleted message pipe: 0x80028221
+send, mode 0x200, a live message pipe: 0x80020010
+send with callbacks, mode 0x200, an unknown UID: 0x80028221
+send with callbacks, mode 0x200, a semaphore: 0x80020010
+send with callbacks, mode 0x200, a deleted message pipe: 0x80028221
+send with callbacks, mode 0x200, a live message pipe: 0x80020010
+try send, mode 0x200, an unknown UID: 0x80028221
+try send, mode 0x200, a semaphore: 0x80028221
+try send, mode 0x200, a deleted message pipe: 0x80028221
+try send, mode 0x200, a live message pipe: 0x80020010
+receive, mode 0x200, an unknown UID: 0x80028221
+receive, mode 0x200, a semaphore: 0x80020010
+receive, mode 0x200, a deleted message pipe: 0x80028221
+receive, mode 0x200, a live message pipe: 0x80020010
+receive with callbacks, mode 0x200, an unknown UID: 0x80028221
+receive with callbacks, mode 0x200, a semaphore: 0x80020010
+receive with callbacks, mode 0x200, a deleted message pipe: 0x80028221
+receive with callbacks, mode 0x200, a live message pipe: 0x80020010
+try receive, mode 0x200, an unknown UID: 0x80028221
+try receive, mode 0x200, a semaphore: 0x80028221
+try receive, mode 0x200, a deleted message pipe: 0x80028221
+try receive, mode 0x200, a live message pipe: 0x80020010
+vector send, mode 0x200, an unknown UID: 0x80028221
+vector send, mode 0x200, a semaphore: 0x80020010
+vector send, mode 0x200, a deleted message pipe: 0x80028221
+vector send, mode 0x200, a live message pipe: 0x80020010
+vector send with callbacks, mode 0x200, an unknown UID: 0x80028221
+vector send with callbacks, mode 0x200, a semaphore: 0x80020010
+vector send with callbacks, mode 0x200, a deleted message pipe: 0x80028221
+vector send with callbacks, mode 0x200, a live message pipe: 0x80020010
+try vector send, mode 0x200, an unknown UID: 0x80028221
+try vector send, mode 0x200, a semaphore: 0x80028221
+try vector send, mode 0x200, a deleted message pipe: 0x80028221
+try vector send, mode 0x200, a live message pipe: 0x80020010
+vector receive, mode 0x200, an unknown UID: 0x80028221
+vector receive, mode 0x200, a semaphore: 0x80020010
+vector receive, mode 0x200, a deleted message pipe: 0x80028221
+vector receive, mode 0x200, a live message pipe: 0x80020010
+vector receive with callbacks, mode 0x200, an unknown UID: 0x80028221
+vector receive with callbacks, mode 0x200, a semaphore: 0x80020010
+vector receive with callbacks, mode 0x200, a deleted message pipe: 0x80028221
+vector receive with callbacks, mode 0x200, a live message pipe: 0x80020010
+try vector receive, mode 0x200, an unknown UID: 0x80028221
+try vector receive, mode 0x200, a semaphore: 0x80028221
+try vector receive, mode 0x200, a deleted message pipe: 0x80028221
+try vector receive, mode 0x200, a live message pipe: 0x80020010
+send, size 4097, an unknown UID: 0x80028221
+send, size 4097, a semaphore: 0x80028221
+send, size 4097, a deleted message pipe: 0x80028221
+send, size 4097, a live message pipe: 0x8002000B
+send with callbacks, size 4097, an unknown UID: 0x80028221
+send with callbacks, size 4097, a semaphore: 0x80028221
+send with callbacks, size 4097, a deleted message pipe: 0x80028221
+send with callbacks, size 4097, a live message pipe: 0x8002000B
+try send, size 4097, an unknown UID: 0x80028221
+try send, size 4097, a semaphore: 0x80028221
+try send, size 4097, a deleted message pipe: 0x80028221
+try send, size 4097, a live message pipe: 0x8002000B
+receive, size 4097, an unknown UID: 0x80028221
+receive, size 4097, a semaphore: 0x80028221
+receive, size 4097, a deleted message pipe: 0x80028221
+receive, size 4097, a live message pipe: 0x8002000B
+receive with callbacks, size 4097, an unknown UID: 0x80028221
+receive with callbacks, size 4097, a semaphore: 0x80028221
+receive with callbacks, size 4097, a deleted message pipe: 0x80028221
+receive with callbacks, size 4097, a live message pipe: 0x8002000B
+try receive, size 4097, an unknown UID: 0x80028221
+try receive, size 4097, a semaphore: 0x80028221
+try receive, size 4097, a deleted message pipe: 0x80028221
+try receive, size 4097, a live message pipe: 0x8002000B
+vector send, size 4097, an unknown UID: 0x80028221
+vector send, size 4097, a semaphore: 0x80028221
+vector send, size 4097, a deleted message pipe: 0x80028221
+vector send, size 4097, a live message pipe: 0x8002000B
+vector send with callbacks, size 4097, an unknown UID: 0x80028221
+vector send with callbacks, size 4097, a semaphore: 0x80028221
+vector send with callbacks, size 4097, a deleted message pipe: 0x80028221
+vector send with callbacks, size 4097, a live message pipe: 0x8002000B
+try vector send, size 4097, an unknown UID: 0x80028221
+try vector send, size 4097, a semaphore: 0x80028221
+try vector send, size 4097, a deleted message pipe: 0x80028221
+try vector send, size 4097, a live message pipe: 0x8002000B
+vector receive, size 4097, an unknown UID: 0x80028221
+vector receive, size 4097, a semaphore: 0x80028221
+vector receive, size 4097, a deleted message pipe: 0x80028221
+vector receive, size 4097, a live message pipe: 0x8002000B
+vector receive with callbacks, size 4097, an unknown UID: 0x80028221
+vector receive with callbacks, size 4097, a semaphore: 0x80028221
+vector receive with callbacks, size 4097, a deleted message pipe: 0x80028221
+vector receive with callbacks, size 4097, a live message pipe: 0x8002000B
+try vector receive, size 4097, an unknown UID: 0x80028221
+try vector receive, size 4097, a semaphore: 0x80028221
+try vector receive, size 4097, a deleted message pipe: 0x80028221
+try vector receive, size 4097, a live message pipe: 0x8002000B
+send, mode 0x100, an unknown UID: 0x80028221
+send, mode 0x100, a semaphore: 0x80020010
+send, mode 0x100, a deleted message pipe: 0x80028221
+send, mode 0x100, a live message pipe: 0x80020010
+send with callbacks, mode 0x100, an unknown UID: 0x80028221
+send with callbacks, mode 0x100, a semaphore: 0x80020010
+send with callbacks, mode 0x100, a deleted message pipe: 0x80028221
+send with callbacks, mode 0x100, a live message pipe: 0x80020010
+vector send, mode 0x100, an unknown UID: 0x80028221
+vector send, mode 0x100, a semaphore: 0x80020010
+vector send, mode 0x100, a deleted message pipe: 0x80028221
+vector send, mode 0x100, a live message pipe: 0x80020010
+vector send with callbacks, mode 0x100, an unknown UID: 0x80028221
+vector send with callbacks, mode 0x100, a semaphore: 0x80020010
+vector send with callbacks, mode 0x100, a deleted message pipe: 0x80028221
+vector send with callbacks, mode 0x100, a live message pipe: 0x80020010
+receive, mode 0x2, an unknown UID: 0x80028221
+receive, mode 0x2, a semaphore: 0x80020010
+receive, mode 0x2, a deleted message pipe: 0x80028221
+receive, mode 0x2, a live message pipe: 0x80020010
+receive with callbacks, mode 0x2, an unknown UID: 0x80028221
+receive with callbacks, mode 0x2, a semaphore: 0x80020010
+receive with callbacks, mode 0x2, a deleted message pipe: 0x80028221
+receive with callbacks, mode 0x2, a live message pipe: 0x80020010
+vector receive, mode 0x2, an unknown UID: 0x80028221
+vector receive, mode 0x2, a semaphore: 0x80020010
+vector receive, mode 0x2, a deleted message pipe: 0x80028221
+vector receive, mode 0x2, a live message pipe: 0x80020010
+vector receive with callbacks, mode 0x2, an unknown UID: 0x80028221
+vector receive with callbacks, mode 0x2, a semaphore: 0x80020010
+vector receive with callbacks, mode 0x2, a deleted message pipe: 0x80028221
+vector receive with callbacks, mode 0x2, a live message pipe: 0x80020010
+receive, mode 0x1000, an unknown UID: 0x80028221
+receive, mode 0x1000, a semaphore: 0x80020010
+receive, mode 0x1000, a deleted message pipe: 0x80028221
+receive, mode 0x1000, a live message pipe: 0x80020010
+receive with callbacks, mode 0x1000, an unknown UID: 0x80028221
+receive with callbacks, mode 0x1000, a semaphore: 0x80020010
+receive with callbacks, mode 0x1000, a deleted message pipe: 0x80028221
+receive with callbacks, mode 0x1000, a live message pipe: 0x80020010
+vector receive, mode 0x1000, an unknown UID: 0x80028221
+vector receive, mode 0x1000, a semaphore: 0x80020010
+vector receive, mode 0x1000, a deleted message pipe: 0x80028221
+vector receive, mode 0x1000, a live message pipe: 0x80020010
+vector receive with callbacks, mode 0x1000, an unknown UID: 0x80028221
+vector receive with callbacks, mode 0x1000, a semaphore: 0x80020010
+vector receive with callbacks, mode 0x1000, a deleted message pipe: 0x80028221
+vector receive with callbacks, mode 0x1000, a live message pipe: 0x80020010
+send, mode 0x200 and size 4097, an unknown UID: 0x80028221
+send, mode 0x200 and size 4097, a semaphore: 0x80020010
+send, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+send, mode 0x200 and size 4097, a live message pipe: 0x80020010
+send with callbacks, mode 0x200 and size 4097, an unknown UID: 0x80028221
+send with callbacks, mode 0x200 and size 4097, a semaphore: 0x80020010
+send with callbacks, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+send with callbacks, mode 0x200 and size 4097, a live message pipe: 0x80020010
+try send, mode 0x200 and size 4097, an unknown UID: 0x80028221
+try send, mode 0x200 and size 4097, a semaphore: 0x80028221
+try send, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+try send, mode 0x200 and size 4097, a live message pipe: 0x80020010
+receive, mode 0x200 and size 4097, an unknown UID: 0x80028221
+receive, mode 0x200 and size 4097, a semaphore: 0x80020010
+receive, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+receive, mode 0x200 and size 4097, a live message pipe: 0x80020010
+receive with callbacks, mode 0x200 and size 4097, an unknown UID: 0x80028221
+receive with callbacks, mode 0x200 and size 4097, a semaphore: 0x80020010
+receive with callbacks, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+receive with callbacks, mode 0x200 and size 4097, a live message pipe: 0x80020010
+try receive, mode 0x200 and size 4097, an unknown UID: 0x80028221
+try receive, mode 0x200 and size 4097, a semaphore: 0x80028221
+try receive, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+try receive, mode 0x200 and size 4097, a live message pipe: 0x80020010
+vector send, mode 0x200 and size 4097, an unknown UID: 0x80028221
+vector send, mode 0x200 and size 4097, a semaphore: 0x80020010
+vector send, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+vector send, mode 0x200 and size 4097, a live message pipe: 0x80020010
+vector send with callbacks, mode 0x200 and size 4097, an unknown UID: 0x80028221
+vector send with callbacks, mode 0x200 and size 4097, a semaphore: 0x80020010
+vector send with callbacks, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+vector send with callbacks, mode 0x200 and size 4097, a live message pipe: 0x80020010
+try vector send, mode 0x200 and size 4097, an unknown UID: 0x80028221
+try vector send, mode 0x200 and size 4097, a semaphore: 0x80028221
+try vector send, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+try vector send, mode 0x200 and size 4097, a live message pipe: 0x80020010
+vector receive, mode 0x200 and size 4097, an unknown UID: 0x80028221
+vector receive, mode 0x200 and size 4097, a semaphore: 0x80020010
+vector receive, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+vector receive, mode 0x200 and size 4097, a live message pipe: 0x80020010
+vector receive with callbacks, mode 0x200 and size 4097, an unknown UID: 0x80028221
+vector receive with callbacks, mode 0x200 and size 4097, a semaphore: 0x80020010
+vector receive with callbacks, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+vector receive with callbacks, mode 0x200 and size 4097, a live message pipe: 0x80020010
+try vector receive, mode 0x200 and size 4097, an unknown UID: 0x80028221
+try vector receive, mode 0x200 and size 4097, a semaphore: 0x80028221
+try vector receive, mode 0x200 and size 4097, a deleted message pipe: 0x80028221
+try vector receive, mode 0x200 and size 4097, a live message pipe: 0x80020010
+send: without NULL pointers, no call wrote its size: 0x00000001
+send with callbacks: without NULL pointers, no call wrote its size: 0x00000001
+try send: without NULL pointers, no call wrote its size: 0x00000001
+receive: without NULL pointers, no call wrote its size: 0x00000001
+receive with callbacks: without NULL pointers, no call wrote its size: 0x00000001
+try receive: without NULL pointers, no call wrote its size: 0x00000001
+vector send: without NULL pointers, no call wrote its size: 0x00000001
+vector send with callbacks: without NULL pointers, no call wrote its size: 0x00000001
+try vector send: without NULL pointers, no call wrote its size: 0x00000001
+vector receive: without NULL pointers, no call wrote its size: 0x00000001
+vector receive with callbacks: without NULL pointers, no call wrote its size: 0x00000001
+try vector receive: without NULL pointers, no call wrote its size: 0x00000001
+the semaphore survives the calls without NULL pointers: 0x00000000
+DONE

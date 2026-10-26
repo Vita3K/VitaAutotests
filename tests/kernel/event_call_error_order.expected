@@ -1,0 +1,71 @@
+flag, bad mode 0x8 and pattern 0: wait: 0x80020010
+flag, bad mode 0x8 and pattern 0: wait's out bits: 0x00000000
+flag, bad mode 0x8 and pattern 0: wait with callbacks: 0x80020010
+flag, bad mode 0x8 and pattern 0: wait with callbacks' out bits: 0x00000000
+flag, bad mode 0x8 and pattern 0: poll: 0x80020005
+flag, bad mode 0x8 and pattern 0: poll's out bits: 0x00000000
+flag, both clear modes and pattern 0: wait: 0x80020010
+flag, both clear modes and pattern 0: wait's out bits: 0x00000000
+flag, both clear modes and pattern 0: wait with callbacks: 0x80020010
+flag, both clear modes and pattern 0: wait with callbacks' out bits: 0x00000000
+flag, both clear modes and pattern 0: poll: 0x80020005
+flag, both clear modes and pattern 0: poll's out bits: 0x00000000
+flag, bad mode 0x8 and an unknown UID: wait: 0x800280E1
+flag, bad mode 0x8 and an unknown UID: wait's out bits: 0x00000000
+flag, bad mode 0x8 and an unknown UID: wait with callbacks: 0x800280E1
+flag, bad mode 0x8 and an unknown UID: wait with callbacks' out bits: 0x00000000
+flag, bad mode 0x8 and an unknown UID: poll: 0x800280E1
+flag, bad mode 0x8 and an unknown UID: poll's out bits: 0x00000000
+flag, pattern 0 and an unknown UID: wait: 0x800280E1
+flag, pattern 0 and an unknown UID: wait's out bits: 0x00000000
+flag, pattern 0 and an unknown UID: wait with callbacks: 0x800280E1
+flag, pattern 0 and an unknown UID: wait with callbacks' out bits: 0x00000000
+flag, pattern 0 and an unknown UID: poll: 0x800280E1
+flag, pattern 0 and an unknown UID: poll's out bits: 0x00000000
+held by another thread, bad mode 0x8 and pattern 0x1: wait: 0x80020010
+held by another thread, bad mode 0x8 and pattern 0x1: wait's out bits: 0x00000000
+held by another thread, bad mode 0x8 and pattern 0x1: wait with callbacks: 0x80020010
+held by another thread, bad mode 0x8 and pattern 0x1: wait with callbacks' out bits: 0x00000000
+held by another thread, bad mode 0x8 and pattern 0x1: poll: 0x80020010
+held by another thread, bad mode 0x8 and pattern 0x1: poll's out bits: 0x00000000
+held by another thread, pattern 0: wait: 0x80020005
+held by another thread, pattern 0: wait's out bits: 0x00000000
+held by another thread, pattern 0: wait with callbacks: 0x80020005
+held by another thread, pattern 0: wait with callbacks' out bits: 0x00000000
+held by another thread, pattern 0: poll: 0x80020005
+held by another thread, pattern 0: poll's out bits: 0x00000000
+the release of the hold, a set of 0x8: 0x00000000
+the holder's result: 0x00000000
+simple event, pattern 0 and an unknown UID: poll: 0x80028201
+simple event, pattern 0 and an unknown UID: poll's out bits: 0x00000000
+simple event, pattern 0 and an unknown UID: poll's out user data: 0x00000000
+simple event, pattern 0 and an unknown UID: wait: 0x80028201
+simple event, pattern 0 and an unknown UID: wait's out bits: 0x00000000
+simple event, pattern 0 and an unknown UID: wait's out user data: 0x00000000
+simple event, an unknown UID and bit 0x1: set: 0x80028201
+simple event, an unknown UID and bit 0x1: pulse: 0x80028201
+simple event, an unknown UID and bit 0x1: clear: 0x80028201
+simple event, an unknown UID and bit 0x1: cancel with a set pattern: 0x80028201
+simple event, an unknown UID and bit 0x1: the waiters the cancel counted: 0x00000000
+simple event, an unknown UID and bit 0x1: the pattern left, its result: 0x80028201
+simple event, an unknown UID and bit 0x1: the pattern left: 0x00000000
+simple event, the event and bit 0x1: set: 0x8002000D
+simple event, the event and bit 0x1: pulse: 0x8002000D
+simple event, the event and bit 0x1: clear: 0x8002000D
+simple event, the event and bit 0x1: cancel with a set pattern: 0x8002000D
+simple event, the event and bit 0x1: the waiters the cancel counted: 0x00000000
+simple event, the event and bit 0x1: the pattern left, its result: 0x00000000
+simple event, the event and bit 0x1: the pattern left: 0x00000004
+simple event, the event and bits 0x1 and A: set: 0x8002000D
+simple event, the event and bits 0x1 and A: pulse: 0x8002000D
+simple event, the event and bits 0x1 and A: clear: 0x8002000D
+simple event, the event and bits 0x1 and A: cancel with a set pattern: 0x8002000D
+simple event, the event and bits 0x1 and A: the waiters the cancel counted: 0x00000000
+simple event, the event and bits 0x1 and A: the pattern left, its result: 0x00000000
+simple event, the event and bits 0x1 and A: the pattern left: 0x00000004
+event flag, a bad attribute and an option of size 8: 0x8002000E
+event flag, an option of size 8 and init pattern 0xFFFFFFFF: 0x8002000B
+simple event, a bad attribute and an option of size 8: 0x8002000E
+simple event, an option of size 8 and init pattern 0xFF: 0x8002000B
+event flag, a NULL name and a bad attribute: 0x80020006
+DONE

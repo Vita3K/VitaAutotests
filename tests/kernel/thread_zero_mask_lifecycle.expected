@@ -1,0 +1,77 @@
+mask 0, dormant, outside: info: 0x00000000
+mask 0, dormant, outside: the initial mask: 0x00000000
+mask 0, dormant, outside: the current mask: 0x00000000
+mask 0, dormant, outside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, dormant, outside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0, first run, inside: the initial mask: 0x00000000
+mask 0, first run, inside: the current mask: 0x00000000
+mask 0, first run, inside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, first run, inside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0, first run, inside: it ran on a user core: 0x00000001
+mask 0, waiting, outside: info: 0x00000000
+mask 0, waiting, outside: the initial mask: 0x00000000
+mask 0, waiting, outside: the current mask: 0x00000000
+mask 0, waiting, outside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, waiting, outside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0, change to core 1: result: 0x00000000
+mask 0, on core 1, outside: info: 0x00000000
+mask 0, on core 1, outside: the initial mask: 0x00000000
+mask 0, on core 1, outside: the current mask: 0x00020000
+mask 0, on core 1, outside: GetThreadCpuAffinityMask: 0x00020000
+mask 0, on core 1, outside: GetThreadCpuAffinityMask2: 0x00020000
+mask 0, change to 0: result: 0x00020000
+mask 0, changed to 0, outside: info: 0x00000000
+mask 0, changed to 0, outside: the initial mask: 0x00000000
+mask 0, changed to 0, outside: the current mask: 0x00000000
+mask 0, changed to 0, outside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, changed to 0, outside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0, restart: result: 0x00000000
+mask 0, restarted run, inside: the initial mask: 0x00000000
+mask 0, restarted run, inside: the current mask: 0x00000000
+mask 0, restarted run, inside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, restarted run, inside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0, restarted run, inside: it ran on a user core: 0x00000001
+mask 0, ended after the restart, outside: info: 0x00000000
+mask 0, ended after the restart, outside: the initial mask: 0x00000000
+mask 0, ended after the restart, outside: the current mask: 0x00000000
+mask 0, ended after the restart, outside: GetThreadCpuAffinityMask: 0x00000000
+mask 0, ended after the restart, outside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0x70000, dormant, outside: info: 0x00000000
+mask 0x70000, dormant, outside: the initial mask: 0x00070000
+mask 0x70000, dormant, outside: the current mask: 0x00070000
+mask 0x70000, dormant, outside: GetThreadCpuAffinityMask: 0x00070000
+mask 0x70000, dormant, outside: GetThreadCpuAffinityMask2: 0x00070000
+mask 0x70000, first run, inside: the initial mask: 0x00070000
+mask 0x70000, first run, inside: the current mask: 0x00070000
+mask 0x70000, first run, inside: GetThreadCpuAffinityMask: 0x00070000
+mask 0x70000, first run, inside: GetThreadCpuAffinityMask2: 0x00070000
+mask 0x70000, first run, inside: it ran on a user core: 0x00000001
+mask 0x70000, waiting, outside: info: 0x00000000
+mask 0x70000, waiting, outside: the initial mask: 0x00070000
+mask 0x70000, waiting, outside: the current mask: 0x00070000
+mask 0x70000, waiting, outside: GetThreadCpuAffinityMask: 0x00070000
+mask 0x70000, waiting, outside: GetThreadCpuAffinityMask2: 0x00070000
+mask 0x70000, change to core 1: result: 0x00070000
+mask 0x70000, on core 1, outside: info: 0x00000000
+mask 0x70000, on core 1, outside: the initial mask: 0x00070000
+mask 0x70000, on core 1, outside: the current mask: 0x00020000
+mask 0x70000, on core 1, outside: GetThreadCpuAffinityMask: 0x00020000
+mask 0x70000, on core 1, outside: GetThreadCpuAffinityMask2: 0x00020000
+mask 0x70000, change to 0: result: 0x00020000
+mask 0x70000, changed to 0, outside: info: 0x00000000
+mask 0x70000, changed to 0, outside: the initial mask: 0x00070000
+mask 0x70000, changed to 0, outside: the current mask: 0x00000000
+mask 0x70000, changed to 0, outside: GetThreadCpuAffinityMask: 0x00000000
+mask 0x70000, changed to 0, outside: GetThreadCpuAffinityMask2: 0x00000000
+mask 0x70000, restart: result: 0x00000000
+mask 0x70000, restarted run, inside: the initial mask: 0x00070000
+mask 0x70000, restarted run, inside: the current mask: 0x00070000
+mask 0x70000, restarted run, inside: GetThreadCpuAffinityMask: 0x00070000
+mask 0x70000, restarted run, inside: GetThreadCpuAffinityMask2: 0x00070000
+mask 0x70000, restarted run, inside: it ran on a user core: 0x00000001
+mask 0x70000, ended after the restart, outside: info: 0x00000000
+mask 0x70000, ended after the restart, outside: the initial mask: 0x00070000
+mask 0x70000, ended after the restart, outside: the current mask: 0x00070000
+mask 0x70000, ended after the restart, outside: GetThreadCpuAffinityMask: 0x00070000
+mask 0x70000, ended after the restart, outside: GetThreadCpuAffinityMask2: 0x00070000
+DONE

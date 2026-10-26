@@ -1,0 +1,56 @@
+a manual reset simple event cancel: the notify: 0x00000000
+a manual reset simple event cancel: runs of the callback before the cancel: 0x00000001
+a manual reset simple event cancel: the cancel: 0x00000000
+a manual reset simple event cancel: the waiters the cancel woke: 0x00000000
+a manual reset simple event cancel: T's status during the callback: 0x00000008
+a manual reset simple event cancel: T's wait result: 0x800280A2
+a manual reset simple event cancel: the bits T's wait got: 0x01000000
+a manual reset simple event cancel: the user data low word T's wait got: 0x00000077
+a manual reset simple event cancel: the pattern after: 0x99000000
+an auto reset simple event cancel: the notify: 0x00000000
+an auto reset simple event cancel: runs of the callback before the cancel: 0x00000001
+an auto reset simple event cancel: the cancel: 0x00000000
+an auto reset simple event cancel: the waiters the cancel woke: 0x00000000
+an auto reset simple event cancel: T's status during the callback: 0x00000008
+an auto reset simple event cancel: T's wait result: 0x800280A2
+an auto reset simple event cancel: the bits T's wait got: 0x01000000
+an auto reset simple event cancel: the user data low word T's wait got: 0x00000077
+an auto reset simple event cancel: the pattern after: 0x98000000
+an event flag cancel: the notify: 0x00000000
+an event flag cancel: runs of the callback before the cancel: 0x00000001
+an event flag cancel: the cancel: 0x00000000
+an event flag cancel: the waiters the cancel woke: 0x00000000
+an event flag cancel: T's status during the callback: 0x00000008
+an event flag cancel: T's wait result: 0x00000000
+an event flag cancel: the bits T's wait got: 0x00000001
+an event flag cancel: the pattern after: 0x00000001
+an event flag cancel with a clear: the notify: 0x00000000
+an event flag cancel with a clear: runs of the callback before the cancel: 0x00000001
+an event flag cancel with a clear: the cancel: 0x00000000
+an event flag cancel with a clear: the waiters the cancel woke: 0x00000000
+an event flag cancel with a clear: T's status during the callback: 0x00000008
+an event flag cancel with a clear: T's wait result: 0x00000000
+an event flag cancel with a clear: the bits T's wait got: 0x00000001
+an event flag cancel with a clear: the pattern after: 0x00000000
+an event flag cancel with a queued waiter: the notify: 0x00000000
+an event flag cancel with a queued waiter: runs of the callback before the cancel: 0x00000001
+an event flag cancel with a queued waiter: the cancel: 0x00000000
+an event flag cancel with a queued waiter: the waiters the cancel woke: 0x00000001
+an event flag cancel with a queued waiter: T's status during the callback: 0x00000008
+an event flag cancel with a queued waiter: the queued waiter's result: 0x80028007
+an event flag cancel with a queued waiter: T's wait result: 0x00000000
+an event flag cancel with a queued waiter: the bits T's wait got: 0x00000001
+an event flag cancel with a queued waiter: the pattern after: 0x00000001
+a simple event set then cleared: the notify: 0x00000000
+a simple event set then cleared: runs of the callback before the set: 0x00000001
+a simple event set then cleared: the set: 0x00000000
+a simple event set then cleared: the clear: 0x00000000
+a simple event set then cleared: the pattern after the clear: 0x00000000
+a simple event set then cleared: T's status during the callback: 0x00000008
+a simple event set then cleared: T waits again after its callback: 0x00000001
+a simple event set then cleared: the release: 0x00000000
+a simple event set then cleared: T's wait result: 0x00000000
+a simple event set then cleared: the bits T's wait got: 0x01000000
+a simple event set then cleared: the user data low word T's wait got: 0x00000066
+a simple event set then cleared: the pattern after: 0x01000000
+DONE

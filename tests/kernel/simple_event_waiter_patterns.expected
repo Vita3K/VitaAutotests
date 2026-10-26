@@ -1,0 +1,45 @@
+manual reset, FIFO: the set of A: 0x00000000
+manual reset, FIFO: the bits left after the set of A: 0x01000000
+manual reset, FIFO: the set of B: 0x00000000
+manual reset, FIFO: the bits left after the set of B: 0x03000000
+manual reset, FIFO: the pulse of A, B and C: 0x00000000
+manual reset, FIFO: the bits left after the pulse: 0x00000000
+manual reset, FIFO: the waiters the cancel counted: 0x00000000
+manual reset, FIFO: waiter 0's result: 0x00000000
+manual reset, FIFO: the bits waiter 0 got: 0x01000000
+manual reset, FIFO: waiter 1's result: 0x00000000
+manual reset, FIFO: the bits waiter 1 got: 0x01000000
+manual reset, FIFO: waiter 2's result: 0x00000000
+manual reset, FIFO: the bits waiter 2 got: 0x02000000
+manual reset, FIFO: waiter 3's result: 0x00000000
+manual reset, FIFO: the bits waiter 3 got: 0x04000000
+manual reset, pulse of A and B: the pulse: 0x00000000
+manual reset, pulse of A and B: the bits left: 0x00000000
+manual reset, pulse of A and B: the waiters the cancel counted: 0x00000000
+manual reset, pulse of A and B: waiter 0's result: 0x00000000
+manual reset, pulse of A and B: the bits waiter 0 got: 0x01000000
+manual reset, pulse of A and B: waiter 1's result: 0x00000000
+manual reset, pulse of A and B: the bits waiter 1 got: 0x02000000
+auto reset, FIFO: the set of A and B: 0x00000000
+auto reset, FIFO: the bits left: 0x00000000
+auto reset, FIFO: the waiters the cancel counted: 0x00000002
+auto reset, FIFO: waiter 0's result: 0x00000000
+auto reset, FIFO: the bits waiter 0 got: 0x03000000
+auto reset, FIFO: waiter 1's result: 0x80028007
+auto reset, FIFO: waiter 2's result: 0x80028007
+auto reset, priority queue: the set of A and B: 0x00000000
+auto reset, priority queue: the bits left: 0x00000000
+auto reset, priority queue: the waiters the cancel counted: 0x00000001
+auto reset, priority queue: waiter 0's result: 0x80028007
+auto reset, priority queue: waiter 1's result: 0x00000000
+auto reset, priority queue: the bits waiter 1 got: 0x02000000
+auto reset, priority queue: waiter 2's result: 0x00000000
+auto reset, priority queue: the bits waiter 2 got: 0x01000000
+auto reset, priority queue, waiter 0 raised to 0x60: the set of A and B: 0x00000000
+auto reset, priority queue, waiter 0 raised to 0x60: the bits left: 0x00000000
+auto reset, priority queue, waiter 0 raised to 0x60: the waiters the cancel counted: 0x00000002
+auto reset, priority queue, waiter 0 raised to 0x60: waiter 0's result: 0x00000000
+auto reset, priority queue, waiter 0 raised to 0x60: the bits waiter 0 got: 0x03000000
+auto reset, priority queue, waiter 0 raised to 0x60: waiter 1's result: 0x80028007
+auto reset, priority queue, waiter 0 raised to 0x60: waiter 2's result: 0x80028007
+DONE

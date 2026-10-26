@@ -1,0 +1,77 @@
+open then close: create the pipe: 0x00000000
+open then close: send 4 bytes: 0x00000000
+open then close: the send's size: 0x00000004
+open then close: poll for 0x1 after the send: 0x00000000
+open then close: poll for 0x1 after the send, the bits it got: 0x00000001
+open then close: the high word of the send's user data: 0x00000004
+open then close: the low word of the send's user data: 0x00000000
+open then close: open it: 0x00000000
+open then close: the pattern after the open: 0x00010105
+open then close: poll for 0x200: 0x80028202
+open then close: poll for 0x100: 0x00000000
+open then close: poll for 0x100, the bits it got: 0x00000100
+open then close: the high word of the user data is the main thread's UID: 0x00000001
+open then close: the low word of the user data is the process ID: 0x00000001
+open then close: the pattern after the polls: 0x00010105
+open then close: close the opened UID: 0x00000000
+open then close: the pattern after the close: 0x00010305
+open then close: poll for 0x200: 0x00000000
+open then close: poll for 0x200, the bits it got: 0x00000200
+open then close: the high word of the user data is the main thread's UID: 0x00000001
+open then close: the low word of the user data is the process ID: 0x00000001
+open then close: the pattern after the poll: 0x00010305
+wait for the open: create the pipe: 0x00000000
+wait for the open: open it: 0x00000000
+wait for the open: the wait: 0x00000000
+wait for the open: the wait's result bits: 0x00000100
+wait for the open: the high word of the user data is the main thread's UID: 0x00000001
+wait for the open: the low word of the user data is the process ID: 0x00000001
+wait for the open: the pattern after: 0x00000104
+wait for the close: create the pipe: 0x00000000
+wait for the close: open it first: 0x00000000
+wait for the close: close the opened UID: 0x00000000
+wait for the close: the wait: 0x00000000
+wait for the close: the wait's result bits: 0x00000200
+wait for the close: the high word of the user data is the main thread's UID: 0x00000001
+wait for the close: the low word of the user data is the process ID: 0x00000001
+wait for the close: the pattern after: 0x00000304
+open and close twice: create the pipe: 0x00000000
+open and close twice: open number 1: 0x00000000
+open and close twice: the pattern after open number 1: 0x00000104
+open and close twice: open number 2: 0x00000000
+open and close twice: the pattern after open number 2: 0x00000104
+open and close twice: close number 1: 0x00000000
+open and close twice: the pattern after close number 1: 0x00000304
+open and close twice: close number 2: 0x00000000
+open and close twice: the pattern after close number 2: 0x00000304
+delete the creating UID: create the pipe: 0x00000000
+delete the creating UID: open it: 0x00000000
+delete the creating UID: delete the creating UID: 0x00000000
+delete the creating UID: the wait for the delete bit: 0x00000000
+delete the creating UID: the wait's result bits: 0x00000008
+delete the creating UID: the high word of the user data is the main thread's UID: 0x00000001
+delete the creating UID: the low word of the user data is the process ID: 0x00000001
+delete the creating UID: the pattern after the delete: 0x0000010C
+delete the creating UID: send through the opened UID: 0x00000000
+delete the creating UID: the send's size: 0x00000004
+delete the creating UID: receive through the opened UID: 0x00000000
+delete the creating UID: the receive's size: 0x00000004
+delete the creating UID: the bytes are wxyz: 0x00000001
+delete the creating UID: close the opened UID: 0x00000000
+auto reset open and close: create the pipe: 0x00000000
+auto reset open and close: open it: 0x00000000
+auto reset open and close: the pattern after the open: 0x00000104
+auto reset open and close: poll for 0x100: 0x00000000
+auto reset open and close: poll for 0x100, the bits it got: 0x00000100
+auto reset open and close: the high word of the user data is the main thread's UID: 0x00000001
+auto reset open and close: the low word of the user data is the process ID: 0x00000001
+auto reset open and close: the pattern after the poll for the open bit: 0x00000004
+auto reset open and close: poll for 0x100: 0x80028202
+auto reset open and close: close the opened UID: 0x00000000
+auto reset open and close: the pattern after the close: 0x00000204
+auto reset open and close: poll for 0x200: 0x00000000
+auto reset open and close: poll for 0x200, the bits it got: 0x00000200
+auto reset open and close: the high word of the user data is the main thread's UID: 0x00000001
+auto reset open and close: the low word of the user data is the process ID: 0x00000001
+auto reset open and close: the pattern after the poll for the close bit: 0x00000004
+DONE
