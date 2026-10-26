@@ -1,0 +1,31 @@
+T at 0x70, spinner at 0xB0: the change to core 1: 0x00010000
+T at 0x70, spinner at 0xB0: T's status 300 ms after the change: 0x00000010
+T at 0x70, spinner at 0xB0: T ran within 300 ms, G still holding core 0: 0x00000001
+T at 0x70, spinner at 0xB0: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0x70, spinner at 0xB0: the core T ran on: 0x00000001
+T at 0x70, spinner at 0x70: the change to core 1: 0x00010000
+T at 0x70, spinner at 0x70: T's status 300 ms after the change: 0x00000004
+T at 0x70, spinner at 0x70: T ran within 300 ms, G still holding core 0: 0x00000000
+T at 0x70, spinner at 0x70: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0x70, spinner at 0x70: the core T ran on: 0x00000001
+T at 0x70, spinner at 0x50: the change to core 1: 0x00010000
+T at 0x70, spinner at 0x50: T's status 300 ms after the change: 0x00000004
+T at 0x70, spinner at 0x50: T ran within 300 ms, G still holding core 0: 0x00000000
+T at 0x70, spinner at 0x50: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0x70, spinner at 0x50: the core T ran on: 0x00000001
+T at 0xA0, spinner at 0xB0: the change to core 1: 0x00010000
+T at 0xA0, spinner at 0xB0: T's status 300 ms after the change: 0x00000010
+T at 0xA0, spinner at 0xB0: T ran within 300 ms, G still holding core 0: 0x00000001
+T at 0xA0, spinner at 0xB0: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0xA0, spinner at 0xB0: the core T ran on: 0x00000001
+T at 0xA0, spinner at 0xA0: the change to core 1: 0x00010000
+T at 0xA0, spinner at 0xA0: T's status 300 ms after the change: 0x00000002
+T at 0xA0, spinner at 0xA0: T ran within 300 ms, G still holding core 0: 0x00000000
+T at 0xA0, spinner at 0xA0: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0xA0, spinner at 0xA0: the core T ran on: 0x00000001
+T at 0xA0, spinner at 0x50: the change to core 1: 0x00010000
+T at 0xA0, spinner at 0x50: T's status 300 ms after the change: 0x00000002
+T at 0xA0, spinner at 0x50: T ran within 300 ms, G still holding core 0: 0x00000000
+T at 0xA0, spinner at 0x50: T ran within 300 ms after the spinner stopped: 0x00000001
+T at 0xA0, spinner at 0x50: the core T ran on: 0x00000001
+DONE

@@ -1,0 +1,25 @@
+ran on core 2, then core 1, T at 0x70: the core of the first run: 0x00000002
+ran on core 2, then core 1, T at 0x70: the core of the second run: 0x00000001
+ran on core 2, then core 1, T at 0x70: the last CPU after it ends: 0x00000001
+ran on core 2, then core 1, T at 0x70: the affinity of the restarted run: 0x00060000
+ran on core 2, then core 1, T at 0x70: the core of the restarted run: 0x00000001
+ran on core 2, then core 1, T at 0x70: the restarted run is on the last CPU: 0x00000001
+ran on core 1, then core 2, T at 0x70: the core of the first run: 0x00000001
+ran on core 1, then core 2, T at 0x70: the core of the second run: 0x00000002
+ran on core 1, then core 2, T at 0x70: the last CPU after it ends: 0x00000002
+ran on core 1, then core 2, T at 0x70: the affinity of the restarted run: 0x00060000
+ran on core 1, then core 2, T at 0x70: the core of the restarted run: 0x00000002
+ran on core 1, then core 2, T at 0x70: the restarted run is on the last CPU: 0x00000001
+ran on core 2, then core 1, T at 0xA0: the core of the first run: 0x00000002
+ran on core 2, then core 1, T at 0xA0: the core of the second run: 0x00000001
+ran on core 2, then core 1, T at 0xA0: the last CPU after it ends: 0x00000001
+ran on core 2, then core 1, T at 0xA0: the affinity of the restarted run: 0x00060000
+ran on core 2, then core 1, T at 0xA0: the core of the restarted run: 0x00000001
+ran on core 2, then core 1, T at 0xA0: the restarted run is on the last CPU: 0x00000001
+ran on core 1, then core 2, T at 0xA0: the core of the first run: 0x00000001
+ran on core 1, then core 2, T at 0xA0: the core of the second run: 0x00000002
+ran on core 1, then core 2, T at 0xA0: the last CPU after it ends: 0x00000002
+ran on core 1, then core 2, T at 0xA0: the affinity of the restarted run: 0x00060000
+ran on core 1, then core 2, T at 0xA0: the core of the restarted run: 0x00000002
+ran on core 1, then core 2, T at 0xA0: the restarted run is on the last CPU: 0x00000001
+DONE
