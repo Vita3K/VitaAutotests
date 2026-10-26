@@ -6,8 +6,12 @@
 //
 // Thread T waits with callbacks for 3 s. The notify ends T's wait for the callback, but T can't run
 // it until the main thread blocks, so the two moments are 500 ms apart. Before T runs, the main
-// thread releases what T waits for. After its callback, T takes it at once and its wait returns 0
-// without blocking again, so the time left it writes back to its timeout is the one fixed earlier.
+// thread releases what T waits for. After its callback, T takes it at once in most kinds and its
+// wait returns 0 without blocking again, so the time left it writes back to its timeout is the one
+// fixed earlier. For the timer, condition, lightweight condition and thread end kinds the retry
+// can't take at once in the notify first cases, since the release comes only after the busy time
+// and T waits again, so there its time left is the one when it wakes. The simple event wait
+// returns the notify error instead of taking again.
 // Every thread is pinned to core 0, and T runs at 0xB0, below the main thread at 0x60. The main
 // thread keeps the core busy for 500 ms by calling sceKernelGetProcessTimeWide in a loop, which
 // doesn't block, so T stays ready the whole time. The cases, each with a fresh object and a fresh

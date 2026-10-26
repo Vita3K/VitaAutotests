@@ -21,13 +21,16 @@
 // Each case prints the wait's result, the runs of the callback when the wait returned, the check's
 // result and the runs after the check.
 //
-// On a PS Vita TV on firmware 3.65 the semaphore, mutex, lightweight mutex, message pipe, condition
-// and thread end arguments end the wait with an error before the callback runs, so the callback has
-// not run when the wait returns, and the check that follows runs it and returns 1. The simple event
-// pattern 0x1 ends it with ILLEGAL_PATTERN the same way. The thread signal wait takes 1 as its
-// first argument without complaint, so the first argument 2 is most likely ignored too: the wait
-// then sleeps its whole timeout, with the callback run once before the sleep, and ends with
-// WAIT_TIMEOUT.
+// On a PS Vita TV on firmware 3.65 the semaphore, mutex, lightweight mutex, message pipe mode,
+// condition and thread end arguments end the wait with an error before the callback runs, so the
+// callback has not run when the wait returns, and the check that follows runs it and returns 1. The
+// message pipe calls with a size above the buffer run the callback once before they return
+// 0x8002000B, since message pipe waits run the callbacks again on every exit, and the check returns
+// 0. The simple event with pattern 0x1 doesn't check the pattern before the
+// callback runs either: the wait runs the callback once and then waits and times out with
+// WAIT_TIMEOUT, and the check returns 0. The thread signal wait takes 1 as its first argument
+// without complaint, so the first argument 2 is most likely ignored too: the wait then sleeps its
+// whole timeout, with the callback run once before the sleep, and ends with WAIT_TIMEOUT.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
