@@ -1,0 +1,18 @@
+register to the first event: 0x00000000
+register to the second event: 0x00000000
+set the first with argument 1: 0x00000000
+set the second with argument 2: 0x00000000
+both registered: the callback's notifications: 0x00000002
+both registered: runs of the callback: 0x00000001
+both registered: the notify ID is the second event: 0x00000001
+both registered: the count: 0x00000002
+both registered: the argument: 0x00000002
+unregister from the first event: 0x00000000
+set the first with argument 3: 0x00000000
+set the second with argument 4: 0x00000000
+first unregistered: the callback's notifications: 0x00000001
+first unregistered: runs of the callback: 0x00000001
+first unregistered: the notify ID is the second event: 0x00000001
+first unregistered: the count: 0x00000001
+first unregistered: the argument: 0x00000004
+DONE

@@ -1,0 +1,99 @@
+heavy, signal while the main thread holds the mutex: suspend W: 0x00000001
+heavy, signal while the main thread holds the mutex: W's status after the signal: 0x00000100
+heavy, signal while the main thread holds the mutex: W's wait type after the signal: 0x00000000
+heavy, signal while the main thread holds the mutex: the mutex's waiters after the signal: 0x00000000
+heavy, signal while the main thread holds the mutex: W owns the mutex after the unlock: 0x00000000
+heavy, signal while the main thread holds the mutex: try to lock the mutex after the unlock: 0x00000000
+heavy, signal while the main thread holds the mutex: W's status after the unlock: 0x00000100
+heavy, signal while the main thread holds the mutex: resume W: 0x00000000
+heavy, signal while the main thread holds the mutex: W's result: 0x00000000
+heavy, signal while the main thread holds the mutex: W's unlock: 0x00000000
+heavy, W queued for the mutex, then suspended before the unlock: suspend W: 0x00000001
+heavy, W queued for the mutex, then suspended before the unlock: W's status after the suspend: 0x00000008
+heavy, W queued for the mutex, then suspended before the unlock: W's wait type after the suspend: 0x00000200
+heavy, W queued for the mutex, then suspended before the unlock: the mutex's waiters after the suspend: 0x00000001
+heavy, W queued for the mutex, then suspended before the unlock: W owns the mutex after the unlock: 0x00000001
+heavy, W queued for the mutex, then suspended before the unlock: try to lock the mutex after the unlock: 0x80028145
+heavy, W queued for the mutex, then suspended before the unlock: W's status after the unlock: 0x00000100
+heavy, W queued for the mutex, then suspended before the unlock: resume W: 0x00000000
+heavy, W queued for the mutex, then suspended before the unlock: W's result: 0x00000000
+heavy, W queued for the mutex, then suspended before the unlock: W's unlock: 0x00000000
+heavy, timeout while suspended, the mutex is free: suspend W: 0x00000001
+heavy, timeout while suspended, the mutex is free: W's status after the timeout: 0x00000100
+heavy, timeout while suspended, the mutex is free: W's wait type after the timeout: 0x00000000
+heavy, timeout while suspended, the mutex is free: W owns the mutex after the timeout: 0x00000001
+heavy, timeout while suspended, the mutex is free: try to lock the mutex after the timeout: 0x80028145
+heavy, timeout while suspended, the mutex is free: resume W: 0x00000000
+heavy, timeout while suspended, the mutex is free: W's result: 0x80028005
+heavy, timeout while suspended, the mutex is free: W's time left is 0: 0x00000001
+heavy, timeout while suspended, the mutex is free: W's unlock: 0x00000000
+heavy, timeout while suspended, the main thread holds the mutex: suspend W: 0x00000001
+heavy, timeout while suspended, the main thread holds the mutex: W's status after the timeout: 0x00000100
+heavy, timeout while suspended, the main thread holds the mutex: W's wait type after the timeout: 0x00000000
+heavy, timeout while suspended, the main thread holds the mutex: W owns the mutex after the timeout: 0x00000000
+heavy, timeout while suspended, the main thread holds the mutex: try to lock the mutex after the timeout: 0x80028142
+heavy, timeout while suspended, the main thread holds the mutex: resume W: 0x00000000
+heavy, timeout while suspended, the main thread holds the mutex: W's result: 0x00000000
+heavy, timeout while suspended, the main thread holds the mutex: W's time left is 0: 0x00000001
+heavy, timeout while suspended, the main thread holds the mutex: W's unlock: 0x00000000
+heavy, delete the condition while W is suspended in its wait: suspend W: 0x00000001
+heavy, delete the condition while W is suspended in its wait: delete the condition: 0x00000000
+heavy, delete the condition while W is suspended in its wait: W's status after the delete: 0x00000100
+heavy, delete the condition while W is suspended in its wait: W's wait type after the delete: 0x00000000
+heavy, delete the condition while W is suspended in its wait: resume W: 0x00000000
+heavy, delete the condition while W is suspended in its wait: W's result: 0x800281A4
+heavy, delete the condition while W is suspended in its wait: W's unlock: 0x80028146
+lightweight, signal while the main thread holds the mutex: suspend W: 0x00000001
+lightweight, signal while the main thread holds the mutex: W's status after the signal: 0x00000100
+lightweight, signal while the main thread holds the mutex: W's wait type after the signal: 0x00000000
+lightweight, signal while the main thread holds the mutex: the mutex's waiters after the signal: 0x00000000
+lightweight, signal while the main thread holds the mutex: W owns the mutex after the unlock: 0x00000000
+lightweight, signal while the main thread holds the mutex: try to lock the mutex after the unlock: 0x00000000
+lightweight, signal while the main thread holds the mutex: W's status after the unlock: 0x00000100
+lightweight, signal while the main thread holds the mutex: resume W: 0x00000000
+lightweight, signal while the main thread holds the mutex: W's result: 0x00000000
+lightweight, signal while the main thread holds the mutex: W's unlock: 0x00000000
+lightweight, W queued for the mutex, then suspended before the unlock: suspend W: 0x00000001
+lightweight, W queued for the mutex, then suspended before the unlock: W's status after the suspend: 0x00000008
+lightweight, W queued for the mutex, then suspended before the unlock: W's wait type after the suspend: 0x00400000
+lightweight, W queued for the mutex, then suspended before the unlock: the mutex's waiters after the suspend: 0x00000001
+lightweight, W queued for the mutex, then suspended before the unlock: W owns the mutex after the unlock: 0x00000001
+lightweight, W queued for the mutex, then suspended before the unlock: try to lock the mutex after the unlock: 0x80028185
+lightweight, W queued for the mutex, then suspended before the unlock: W's status after the unlock: 0x00000100
+lightweight, W queued for the mutex, then suspended before the unlock: resume W: 0x00000000
+lightweight, W queued for the mutex, then suspended before the unlock: W's result: 0x00000000
+lightweight, W queued for the mutex, then suspended before the unlock: W's unlock: 0x00000000
+lightweight, timeout while suspended, the mutex is free: suspend W: 0x00000001
+lightweight, timeout while suspended, the mutex is free: W's status after the timeout: 0x00000100
+lightweight, timeout while suspended, the mutex is free: W's wait type after the timeout: 0x00000000
+lightweight, timeout while suspended, the mutex is free: W owns the mutex after the timeout: 0x00000001
+lightweight, timeout while suspended, the mutex is free: try to lock the mutex after the timeout: 0x80028185
+lightweight, timeout while suspended, the mutex is free: resume W: 0x00000000
+lightweight, timeout while suspended, the mutex is free: W's result: 0x80028005
+lightweight, timeout while suspended, the mutex is free: W's time left is 0: 0x00000001
+lightweight, timeout while suspended, the mutex is free: W's unlock: 0x00000000
+lightweight, timeout while suspended, the main thread holds the mutex: suspend W: 0x00000001
+lightweight, timeout while suspended, the main thread holds the mutex: W's status after the timeout: 0x00000100
+lightweight, timeout while suspended, the main thread holds the mutex: W's wait type after the timeout: 0x00000000
+lightweight, timeout while suspended, the main thread holds the mutex: W owns the mutex after the timeout: 0x00000000
+lightweight, timeout while suspended, the main thread holds the mutex: try to lock the mutex after the timeout: 0x80028182
+lightweight, timeout while suspended, the main thread holds the mutex: resume W: 0x00000000
+lightweight, timeout while suspended, the main thread holds the mutex: W's result: 0x00000000
+lightweight, timeout while suspended, the main thread holds the mutex: W's time left is 0: 0x00000001
+lightweight, timeout while suspended, the main thread holds the mutex: W's unlock: 0x00000000
+lightweight, delete the condition while W is suspended in its wait: suspend W: 0x00000001
+lightweight, delete the condition while W is suspended in its wait: delete the condition: 0x00000000
+lightweight, delete the condition while W is suspended in its wait: W's status after the delete: 0x00000100
+lightweight, delete the condition while W is suspended in its wait: W's wait type after the delete: 0x00000000
+lightweight, delete the condition while W is suspended in its wait: resume W: 0x00000000
+lightweight, delete the condition while W is suspended in its wait: W's result: 0x800281C3
+lightweight, delete the condition while W is suspended in its wait: W's unlock: 0x80028186
+heavy, delete the mutex while W is suspended in its wait: suspend W: 0x00000001
+heavy, delete the mutex while W is suspended in its wait: delete the mutex: 0x00000000
+heavy, delete the mutex while W is suspended in its wait: W's status after the delete: 0x00000100
+heavy, delete the mutex while W is suspended in its wait: W's wait type after the delete: 0x00000000
+heavy, delete the mutex while W is suspended in its wait: resume W: 0x00000000
+heavy, delete the mutex while W is suspended in its wait: signal the condition after the resume: 0x00000000
+heavy, delete the mutex while W is suspended in its wait: W's result: 0x800281A2
+heavy, delete the mutex while W is suspended in its wait: W's unlock: 0x80028141
+DONE

@@ -1,0 +1,13 @@
+a: registered before the start: the wait for the end: 0x00000000
+a: registered before the start: register: 0x00000001
+a: registered before the start: START ran: 0x00000001
+a: registered before the start: END ran: 0x00000001
+a: registered before the start: START ran before the entry's first step: 0x00000001
+a: registered before the start: unregister: 0x00000000
+b: registered after the start: the wait for the end: 0x00000000
+b: registered after the start: register: 0x00000001
+b: registered after the start: START ran: 0x00000001
+b: registered after the start: END ran: 0x00000001
+b: registered after the start: START ran before the entry's first step: 0x00000001
+b: registered after the start: unregister: 0x00000000
+DONE

@@ -1,0 +1,10 @@
+register the handler: 0x00000000
+the wait for the end of the target: 0x00000000
+handler runs: 0x00000002
+start: the call: 0x00000000
+start: entries holding the target: 0x00000001
+start: the entry's process is the caller's: 0x00000001
+end: the call: 0x00000000
+end: entries holding the target: 0x00000001
+end: the entry's process is the caller's: 0x00000001
+DONE

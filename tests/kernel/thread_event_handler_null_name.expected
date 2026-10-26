@@ -1,0 +1,7 @@
+named, dormant thread: register: 0x00000001
+named, dormant thread: unregister: 0x00000000
+named, every thread: register: 0x00000001
+named, every thread: unregister: 0x00000000
+NULL name, dormant thread: register: 0x80020006
+NULL name, every thread: register: 0x80020006
+DONE

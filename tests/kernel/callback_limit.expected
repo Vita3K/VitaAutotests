@@ -1,0 +1,18 @@
+create a callback before the others: 0x00000000
+callbacks the main thread created before an error or the limit: 0x000007EB
+the error: 0x8002450D
+create a semaphore while they are there: 0x8002450D
+create a callback from another thread while they are there: 0x8002450D
+every one deletes: 0x00000001
+callbacks the main thread created after deleting them: 0x000007EB
+the error after deleting them: 0x8002450D
+every one deletes the second time: 0x00000001
+callbacks a thread created before an error or the limit: 0x000007EB
+the error of the thread: 0x8002450D
+callbacks the main thread created after the thread ended: 0x000007EB
+the error after the thread ended: 0x8002450D
+delete one: 0x00000000
+create one after it: 0x00000000
+the new UID is the deleted one's: 0x00000000
+every other one deletes: 0x00000001
+DONE

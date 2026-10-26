@@ -1,0 +1,16 @@
+delay with callbacks: the result: 0x00000000
+delay with callbacks: it returned before 1 s: 0x00000001
+delay with callbacks: runs of the callback when it returned: 0x00000001
+delay with callbacks: the result of sceKernelCheckCallback: 0x00000001
+delay with callbacks: runs of the callback after the check: 0x00000002
+signal wait with callbacks: the result: 0x80028005
+signal wait with callbacks: it returned before 1 s: 0x00000000
+signal wait with callbacks: runs of the callback when it returned: 0x00000001
+signal wait with callbacks: the result of sceKernelCheckCallback: 0x00000001
+signal wait with callbacks: runs of the callback after the check: 0x00000002
+thread end wait with callbacks: the result: 0x80028005
+thread end wait with callbacks: it returned before 1 s: 0x00000000
+thread end wait with callbacks: runs of the callback when it returned: 0x00000002
+thread end wait with callbacks: the result of sceKernelCheckCallback: 0x00000000
+thread end wait with callbacks: runs of the callback after the check: 0x00000002
+DONE

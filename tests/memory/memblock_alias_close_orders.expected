@@ -1,0 +1,225 @@
+E A B C: allocate the original: 0x00000000
+E A B C: open A with 0x30: 0x00000000
+E A B C: open B with 0x10: 0x00000000
+E A B C: open C with 0x30: 0x00000000
+E A B C: step 1, close E: 0x00000000
+E A B C: step 1, find E: 0x80022007
+E A B C: step 1, find A: 0x80022007
+E A B C: step 1, find B: 0x80022007
+E A B C: step 1, find C: 0x80022007
+E A B C: step 1, base of A by UID: 0x00000000
+E A B C: step 1, base of B by UID: 0x00000000
+E A B C: step 1, base of C by UID: 0x00000000
+E A B C: step 1, A reads the original's word: 0x00000000
+E A B C: step 1, B reads the original's word: 0x00000000
+E A B C: step 1, C reads the original's word: 0x00000000
+E A B C: step 1, KiB of main memory taken: 0x00000000
+E A B C: step 2, free A: 0x00000000
+E A B C: step 2, find E: 0x80022007
+E A B C: step 2, find A: 0x80022007
+E A B C: step 2, find B: 0x80022007
+E A B C: step 2, find C: 0x80022007
+E A B C: step 2, base of B by UID: 0x00000000
+E A B C: step 2, base of C by UID: 0x00000000
+E A B C: step 2, B reads the original's word: 0x00000000
+E A B C: step 2, C reads the original's word: 0x00000000
+E A B C: step 2, KiB of main memory taken: 0x00000000
+E A B C: step 3, close B: 0x00000000
+E A B C: step 3, find E: 0x80022007
+E A B C: step 3, find A: 0x80022007
+E A B C: step 3, find B: 0x80022007
+E A B C: step 3, find C: 0x80022007
+E A B C: step 3, base of C by UID: 0x00000000
+E A B C: step 3, C reads the original's word: 0x00000000
+E A B C: step 3, KiB of main memory taken: 0x00000000
+E A B C: step 4, free C: 0x00000000
+E A B C: step 4, find E: 0x80022007
+E A B C: step 4, find A: 0x80022007
+E A B C: step 4, find B: 0x80022007
+E A B C: step 4, find C: 0x80022007
+E A B C: step 4, KiB of main memory taken: 0x00000000
+A B C E: allocate the original: 0x00000000
+A B C E: open A with 0x30: 0x00000000
+A B C E: open B with 0x10: 0x00000000
+A B C E: open C with 0x30: 0x00000000
+A B C E: step 1, close A: 0x00000000
+A B C E: step 1, find E: 0x00000000
+A B C E: step 1, find A: 0x80022007
+A B C E: step 1, find B: 0x00000000
+A B C E: step 1, find C: 0x00000000
+A B C E: step 1, base of B by UID: 0x00000000
+A B C E: step 1, base of C by UID: 0x00000000
+A B C E: step 1, B reads the original's word: 0x00000001
+A B C E: step 1, C reads the original's word: 0x00000001
+A B C E: step 1, KiB of main memory taken: 0x00000400
+A B C E: step 2, free B: 0x00000000
+A B C E: step 2, find E: 0x00000000
+A B C E: step 2, find A: 0x80022007
+A B C E: step 2, find B: 0x80022007
+A B C E: step 2, find C: 0x00000000
+A B C E: step 2, base of C by UID: 0x00000000
+A B C E: step 2, C reads the original's word: 0x00000001
+A B C E: step 2, KiB of main memory taken: 0x00000400
+A B C E: step 3, close C: 0x00000000
+A B C E: step 3, find E: 0x00000000
+A B C E: step 3, find A: 0x80022007
+A B C E: step 3, find B: 0x80022007
+A B C E: step 3, find C: 0x80022007
+A B C E: step 3, KiB of main memory taken: 0x00000400
+A B C E: step 4, free E: 0x00000000
+A B C E: step 4, find E: 0x80022007
+A B C E: step 4, find A: 0x80022007
+A B C E: step 4, find B: 0x80022007
+A B C E: step 4, find C: 0x80022007
+A B C E: step 4, KiB of main memory taken: 0x00000000
+C E B A: allocate the original: 0x00000000
+C E B A: open A with 0x30: 0x00000000
+C E B A: open B with 0x10: 0x00000000
+C E B A: open C with 0x30: 0x00000000
+C E B A: step 1, close C: 0x00000000
+C E B A: step 1, find E: 0x00000000
+C E B A: step 1, find A: 0x00000000
+C E B A: step 1, find B: 0x00000000
+C E B A: step 1, find C: 0x80022007
+C E B A: step 1, base of A by UID: 0x00000000
+C E B A: step 1, base of B by UID: 0x00000000
+C E B A: step 1, A reads the original's word: 0x00000001
+C E B A: step 1, B reads the original's word: 0x00000001
+C E B A: step 1, KiB of main memory taken: 0x00000400
+C E B A: step 2, free E: 0x00000000
+C E B A: step 2, find E: 0x80022007
+C E B A: step 2, find A: 0x80022007
+C E B A: step 2, find B: 0x80022007
+C E B A: step 2, find C: 0x80022007
+C E B A: step 2, base of A by UID: 0x00000000
+C E B A: step 2, base of B by UID: 0x00000000
+C E B A: step 2, A reads the original's word: 0x00000000
+C E B A: step 2, B reads the original's word: 0x00000000
+C E B A: step 2, KiB of main memory taken: 0x00000000
+C E B A: step 3, close B: 0x00000000
+C E B A: step 3, find E: 0x80022007
+C E B A: step 3, find A: 0x80022007
+C E B A: step 3, find B: 0x80022007
+C E B A: step 3, find C: 0x80022007
+C E B A: step 3, base of A by UID: 0x00000000
+C E B A: step 3, A reads the original's word: 0x00000000
+C E B A: step 3, KiB of main memory taken: 0x00000000
+C E B A: step 4, free A: 0x00000000
+C E B A: step 4, find E: 0x80022007
+C E B A: step 4, find A: 0x80022007
+C E B A: step 4, find B: 0x80022007
+C E B A: step 4, find C: 0x80022007
+C E B A: step 4, KiB of main memory taken: 0x00000000
+B C A E: allocate the original: 0x00000000
+B C A E: open A with 0x30: 0x00000000
+B C A E: open B with 0x10: 0x00000000
+B C A E: open C with 0x30: 0x00000000
+B C A E: step 1, close B: 0x00000000
+B C A E: step 1, find E: 0x00000000
+B C A E: step 1, find A: 0x00000000
+B C A E: step 1, find B: 0x80022007
+B C A E: step 1, find C: 0x00000000
+B C A E: step 1, base of A by UID: 0x00000000
+B C A E: step 1, base of C by UID: 0x00000000
+B C A E: step 1, A reads the original's word: 0x00000001
+B C A E: step 1, C reads the original's word: 0x00000001
+B C A E: step 1, KiB of main memory taken: 0x00000400
+B C A E: step 2, free C: 0x00000000
+B C A E: step 2, find E: 0x00000000
+B C A E: step 2, find A: 0x00000000
+B C A E: step 2, find B: 0x80022007
+B C A E: step 2, find C: 0x80022007
+B C A E: step 2, base of A by UID: 0x00000000
+B C A E: step 2, A reads the original's word: 0x00000001
+B C A E: step 2, KiB of main memory taken: 0x00000400
+B C A E: step 3, close A: 0x00000000
+B C A E: step 3, find E: 0x00000000
+B C A E: step 3, find A: 0x80022007
+B C A E: step 3, find B: 0x80022007
+B C A E: step 3, find C: 0x80022007
+B C A E: step 3, KiB of main memory taken: 0x00000400
+B C A E: step 4, free E: 0x00000000
+B C A E: step 4, find E: 0x80022007
+B C A E: step 4, find A: 0x80022007
+B C A E: step 4, find B: 0x80022007
+B C A E: step 4, find C: 0x80022007
+B C A E: step 4, KiB of main memory taken: 0x00000000
+A E C B: allocate the original: 0x00000000
+A E C B: open A with 0x30: 0x00000000
+A E C B: open B with 0x10: 0x00000000
+A E C B: open C with 0x30: 0x00000000
+A E C B: step 1, close A: 0x00000000
+A E C B: step 1, find E: 0x00000000
+A E C B: step 1, find A: 0x80022007
+A E C B: step 1, find B: 0x00000000
+A E C B: step 1, find C: 0x00000000
+A E C B: step 1, base of B by UID: 0x00000000
+A E C B: step 1, base of C by UID: 0x00000000
+A E C B: step 1, B reads the original's word: 0x00000001
+A E C B: step 1, C reads the original's word: 0x00000001
+A E C B: step 1, KiB of main memory taken: 0x00000400
+A E C B: step 2, free E: 0x00000000
+A E C B: step 2, find E: 0x80022007
+A E C B: step 2, find A: 0x80022007
+A E C B: step 2, find B: 0x80022007
+A E C B: step 2, find C: 0x00000000
+A E C B: step 2, base of B by UID: 0x00000000
+A E C B: step 2, base of C by UID: 0x00000000
+A E C B: step 2, B reads the original's word: 0x00000000
+A E C B: step 2, C reads the original's word: 0x00000001
+A E C B: step 2, KiB of main memory taken: 0x00000000
+A E C B: step 3, close C: 0x00000000
+A E C B: step 3, find E: 0x80022007
+A E C B: step 3, find A: 0x80022007
+A E C B: step 3, find B: 0x80022007
+A E C B: step 3, find C: 0x80022007
+A E C B: step 3, base of B by UID: 0x00000000
+A E C B: step 3, B reads the original's word: 0x00000000
+A E C B: step 3, KiB of main memory taken: 0x00000000
+A E C B: step 4, free B: 0x00000000
+A E C B: step 4, find E: 0x80022007
+A E C B: step 4, find A: 0x80022007
+A E C B: step 4, find B: 0x80022007
+A E C B: step 4, find C: 0x80022007
+A E C B: step 4, KiB of main memory taken: 0x00000000
+E C B A: allocate the original: 0x00000000
+E C B A: open A with 0x30: 0x00000000
+E C B A: open B with 0x10: 0x00000000
+E C B A: open C with 0x30: 0x00000000
+E C B A: step 1, close E: 0x00000000
+E C B A: step 1, find E: 0x80022007
+E C B A: step 1, find A: 0x80022007
+E C B A: step 1, find B: 0x80022007
+E C B A: step 1, find C: 0x80022007
+E C B A: step 1, base of A by UID: 0x00000000
+E C B A: step 1, base of B by UID: 0x00000000
+E C B A: step 1, base of C by UID: 0x00000000
+E C B A: step 1, A reads the original's word: 0x00000000
+E C B A: step 1, B reads the original's word: 0x00000000
+E C B A: step 1, C reads the original's word: 0x00000000
+E C B A: step 1, KiB of main memory taken: 0x00000000
+E C B A: step 2, free C: 0x00000000
+E C B A: step 2, find E: 0x80022007
+E C B A: step 2, find A: 0x80022007
+E C B A: step 2, find B: 0x80022007
+E C B A: step 2, find C: 0x80022007
+E C B A: step 2, base of A by UID: 0x00000000
+E C B A: step 2, base of B by UID: 0x00000000
+E C B A: step 2, A reads the original's word: 0x00000000
+E C B A: step 2, B reads the original's word: 0x00000000
+E C B A: step 2, KiB of main memory taken: 0x00000000
+E C B A: step 3, close B: 0x00000000
+E C B A: step 3, find E: 0x80022007
+E C B A: step 3, find A: 0x80022007
+E C B A: step 3, find B: 0x80022007
+E C B A: step 3, find C: 0x80022007
+E C B A: step 3, base of A by UID: 0x00000000
+E C B A: step 3, A reads the original's word: 0x00000000
+E C B A: step 3, KiB of main memory taken: 0x00000000
+E C B A: step 4, free A: 0x00000000
+E C B A: step 4, find E: 0x80022007
+E C B A: step 4, find A: 0x80022007
+E C B A: step 4, find B: 0x80022007
+E C B A: step 4, find C: 0x80022007
+E C B A: step 4, KiB of main memory taken: 0x00000000
+DONE

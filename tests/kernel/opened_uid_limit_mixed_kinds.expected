@@ -1,0 +1,15 @@
+create the openable semaphore: 0x00000000
+create the openable event flag: 0x00000000
+create the openable mutex: 0x00000000
+the opens reached the end of the loop: 0x00000000
+the first open that failed: 0x8002450C
+open the event flag past the limit: 0x00000000
+open the mutex past the limit: 0x00000000
+close one opened semaphore UID: 0x00000000
+open the event flag after the close: 0x00000000
+the freed slot is taken by the event flag: 0x00000001
+every other opened UID closes: 0x00000001
+delete the openable semaphore: 0x00000000
+delete the openable event flag: 0x00000000
+delete the openable mutex: 0x00000000
+DONE

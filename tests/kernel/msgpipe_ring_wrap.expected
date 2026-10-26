@@ -1,0 +1,58 @@
+offset 4090, send 12: the send: 0x00000000
+offset 4090, send 12: its size: 0x0000000C
+offset 4090, send 12: the free size: 0x00000FF4
+offset 4090, FULL receive of 12: the receive: 0x00000000
+offset 4090, FULL receive of 12: its size: 0x0000000C
+offset 4090, FULL receive of 12: it got "ABCDEFGHIJKL": 0x0000000C
+offset 4090, FULL receive of 12: the bytes are in order: 0x00000001
+offset 4090, FULL receive of 12: the free size: 0x00001000
+offset 4090, the waiting FULL receive of 12: it waits: 0x00000001
+offset 4090, send 12 serving the receive: the send: 0x00000000
+offset 4090, send 12 serving the receive: its size: 0x0000000C
+offset 4090, the waiting FULL receive of 12: its result: 0x00000000
+offset 4090, the waiting FULL receive of 12: its size: 0x0000000C
+offset 4090, the waiting FULL receive of 12: it got "ABCDEFGHIJKL": 0x0000000C
+offset 4090, free size after the hand-over: 0x00001000
+offset 4090 plus 12, send 6: the send: 0x00000000
+offset 4090 plus 12, FULL receive of 6: the receive: 0x00000000
+offset 4090 plus 12, FULL receive of 6: it got "mnopqr": 0x00000006
+offset 4090 plus 12, FULL receive of 6: the free size: 0x00001000
+offset 4092, FULL receive of 2: it waits: 0x00000001
+offset 4092, send 14: the send: 0x00000000
+offset 4092, send 14: its size: 0x0000000E
+offset 4092, FULL receive of 2: its result: 0x00000000
+offset 4092, FULL receive of 2: it got "AB": 0x00000002
+offset 4092, the free size after the send: 0x00000FF4
+offset 4092, FULL receive of 12: the receive: 0x00000000
+offset 4092, FULL receive of 12: its size: 0x0000000C
+offset 4092, FULL receive of 12: it got "CDEFGHIJKLMN": 0x0000000C
+offset 4092, FULL receive of 12: the bytes are in order: 0x00000001
+offset 4092, FULL receive of 12: the free size: 0x00001000
+offset 4090, send 12 that wraps: the send: 0x00000000
+offset 4090, send 12 that wraps: its size: 0x0000000C
+offset 4090, ASAP DONT_REMOVE vector receive: the receive: 0x00000000
+offset 4090, ASAP DONT_REMOVE vector receive: its size: 0x0000000C
+offset 4090, ASAP DONT_REMOVE vector receive: piece 1 is "ABCDE": 0x00000005
+offset 4090, ASAP DONT_REMOVE vector receive: piece 2 is "": 0x00000000
+offset 4090, ASAP DONT_REMOVE vector receive: piece 3 is "FGHIJKL": 0x00000007
+offset 4090, after the peek: the pieces are in order: 0x00000001
+offset 4090, after the peek: the free size: 0x00000FF4
+offset 4090, after the peek, FULL receive of 12: the receive: 0x00000000
+offset 4090, after the peek, FULL receive of 12: its size: 0x0000000C
+offset 4090, after the peek, FULL receive of 12: it got "ABCDEFGHIJKL": 0x0000000C
+offset 4090, after the peek, FULL receive of 12: the bytes are in order: 0x00000001
+offset 4090, after the peek, FULL receive of 12: the free size: 0x00001000
+offset 100, try send of 4096 pattern bytes: the send: 0x00000000
+offset 100, try send of 4096 pattern bytes: its size: 0x00001000
+offset 100, the free size with the ring full: 0x00000000
+offset 100, the FULL sender of 8 waits: 0x00000001
+offset 100, FULL receive of 4096: the receive: 0x00000000
+offset 100, FULL receive of 4096: its size: 0x00001000
+offset 100, FULL receive of 4096: the bytes are the pattern in order: 0x00000001
+offset 100, the sender's result: 0x00000000
+offset 100, the sender's size: 0x00000008
+offset 100, the free size after the receive: 0x00000FF8
+offset 100, FULL receive of 8: the receive: 0x00000000
+offset 100, FULL receive of 8: it got "01234567": 0x00000008
+offset 100, FULL receive of 8: the free size: 0x00001000
+DONE

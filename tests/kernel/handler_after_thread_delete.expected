@@ -1,0 +1,7 @@
+register: 0x00000000
+the exit status: 0x00000007
+handler runs before the delete: 0x00000002
+delete the ended thread: 0x00000000
+the delete changed the handler runs: 0x00000000
+unregister the handler: 0x00000000
+DONE

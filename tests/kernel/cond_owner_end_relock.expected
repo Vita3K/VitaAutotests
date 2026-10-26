@@ -1,0 +1,37 @@
+the owner returns, W signaled: the owner ended: 0x00000001
+the owner returns, W signaled: W reports the wait for the mutex: 0x00000001
+the owner returns, W signaled: W got to its gate after the owner's end: 0x00000001
+the owner returns, W signaled: W owns the mutex: 0x00000001
+the owner returns, W signaled: the mutex's count: 0x00000001
+the owner returns, W signaled: the mutex's waiters: 0x00000000
+the owner returns, W signaled: W's result: 0x00000000
+the owner returns, W signaled: W's unlock: 0x00000000
+the owner returns, W signaled: try to lock the mutex after the unlock: 0x00000000
+recursive mutex held 3 times, the owner returns: the owner ended: 0x00000001
+recursive mutex held 3 times, the owner returns: W reports the wait for the mutex: 0x00000001
+recursive mutex held 3 times, the owner returns: W got to its gate after the owner's end: 0x00000001
+recursive mutex held 3 times, the owner returns: W owns the mutex: 0x00000001
+recursive mutex held 3 times, the owner returns: the mutex's count: 0x00000001
+recursive mutex held 3 times, the owner returns: the mutex's waiters: 0x00000000
+recursive mutex held 3 times, the owner returns: W's result: 0x00000000
+recursive mutex held 3 times, the owner returns: W's unlock: 0x00000000
+recursive mutex held 3 times, the owner returns: try to lock the mutex after the unlock: 0x00000000
+the owner calls sceKernelExitThread: the owner ended: 0x00000001
+the owner calls sceKernelExitThread: W reports the wait for the mutex: 0x00000001
+the owner calls sceKernelExitThread: W got to its gate after the owner's end: 0x00000001
+the owner calls sceKernelExitThread: W owns the mutex: 0x00000001
+the owner calls sceKernelExitThread: the mutex's count: 0x00000001
+the owner calls sceKernelExitThread: the mutex's waiters: 0x00000000
+the owner calls sceKernelExitThread: W's result: 0x00000000
+the owner calls sceKernelExitThread: W's unlock: 0x00000000
+the owner calls sceKernelExitThread: try to lock the mutex after the unlock: 0x00000000
+W's timeout passes first, the owner returns: the owner ended: 0x00000001
+W's timeout passes first, the owner returns: W reports the wait for the mutex: 0x00000001
+W's timeout passes first, the owner returns: W got to its gate after the owner's end: 0x00000001
+W's timeout passes first, the owner returns: W owns the mutex: 0x00000001
+W's timeout passes first, the owner returns: the mutex's count: 0x00000001
+W's timeout passes first, the owner returns: the mutex's waiters: 0x00000000
+W's timeout passes first, the owner returns: W's result: 0x80028005
+W's timeout passes first, the owner returns: W's unlock: 0x00000000
+W's timeout passes first, the owner returns: try to lock the mutex after the unlock: 0x00000000
+DONE

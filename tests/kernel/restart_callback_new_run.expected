@@ -1,0 +1,9 @@
+the second run's callback has the first run's UID: 0x00000000
+notify the first run's callback: 0x800280A1
+notify the second run's callback: 0x00000000
+the second run's callback info: 0x00000000
+the second run's callback names the thread: 0x00000001
+the second run's check: 0x00000001
+the second run's callback runs: 0x00000001
+the first run's callback runs: 0x00000000
+DONE

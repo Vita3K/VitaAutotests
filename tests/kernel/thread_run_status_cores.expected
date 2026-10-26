@@ -1,0 +1,44 @@
+S0 and S1 running: the call: 0x00000000
+S0 and S1 running: core 0: the entry is the expected thread: 0x00000001
+S0 and S1 running: core 0: its process is this one: 0x00000001
+S0 and S1 running: core 0: its priority is the thread's own: 0x00000001
+S0 and S1 running: core 1: the entry is the expected thread: 0x00000001
+S0 and S1 running: core 1: its process is this one: 0x00000001
+S0 and S1 running: core 1: its priority is the thread's own: 0x00000001
+S0 and S1 running: core 2: the entry is the expected thread: 0x00000001
+S0 and S1 running: core 2: its process is this one: 0x00000001
+S0 and S1 running: core 2: its priority is the thread's own: 0x00000001
+S0 and S1 running: core 3: the entry holds none of the test's threads: 0x00000001
+raise S0 to 0x68: the change: 0x00000000
+S0 raised to 0x68: the call: 0x00000000
+S0 raised to 0x68: core 0: the entry is the expected thread: 0x00000001
+S0 raised to 0x68: core 0: its process is this one: 0x00000001
+S0 raised to 0x68: core 0: its priority is the thread's own: 0x00000001
+S0 raised to 0x68: core 1: the entry is the expected thread: 0x00000001
+S0 raised to 0x68: core 1: its process is this one: 0x00000001
+S0 raised to 0x68: core 1: its priority is the thread's own: 0x00000001
+S0 raised to 0x68: core 2: the entry is the expected thread: 0x00000001
+S0 raised to 0x68: core 2: its process is this one: 0x00000001
+S0 raised to 0x68: core 2: its priority is the thread's own: 0x00000001
+S0 raised to 0x68: core 3: the entry holds none of the test's threads: 0x00000001
+P preempts core 0: the call: 0x00000000
+P preempts core 0: core 0: the entry is the expected thread: 0x00000001
+P preempts core 0: core 0: its process is this one: 0x00000001
+P preempts core 0: core 0: its priority is the thread's own: 0x00000001
+P preempts core 0: core 1: the entry is the expected thread: 0x00000001
+P preempts core 0: core 1: its process is this one: 0x00000001
+P preempts core 0: core 1: its priority is the thread's own: 0x00000001
+P preempts core 0: core 2: the entry is the expected thread: 0x00000001
+P preempts core 0: core 2: its process is this one: 0x00000001
+P preempts core 0: core 2: its priority is the thread's own: 0x00000001
+P preempts core 0: core 3: the entry holds none of the test's threads: 0x00000001
+S1 ended: the call: 0x00000000
+S1 ended: core 0: the entry is the expected thread: 0x00000001
+S1 ended: core 0: its process is this one: 0x00000001
+S1 ended: core 0: its priority is the thread's own: 0x00000001
+S1 ended: core 1: the entry holds none of the test's threads: 0x00000001
+S1 ended: core 2: the entry is the expected thread: 0x00000001
+S1 ended: core 2: its process is this one: 0x00000001
+S1 ended: core 2: its priority is the thread's own: 0x00000001
+S1 ended: core 3: the entry holds none of the test's threads: 0x00000001
+DONE

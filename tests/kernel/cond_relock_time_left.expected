@@ -1,0 +1,13 @@
+heavy, signal then relock: the wait: 0x00000000
+heavy, signal then relock: the time left is above 1.5 s, the one of the signal: 0x00000001
+heavy, timeout with the mutex held: the wait: 0x80028005
+heavy, timeout with the mutex held: the time left: 0x00000000
+heavy, timeout with the mutex held: the waiter was done before the mutex was free: 0x00000000
+heavy, timeout with the mutex held: the wait returned after the mutex was free: 0x00000001
+light, signal then relock: the wait: 0x00000000
+light, signal then relock: the time left is above 1.5 s, the one of the signal: 0x00000001
+light, timeout with the mutex held: the wait: 0x80028005
+light, timeout with the mutex held: the time left: 0x00000000
+light, timeout with the mutex held: the waiter was done before the mutex was free: 0x00000000
+light, timeout with the mutex held: the wait returned after the mutex was free: 0x00000001
+DONE

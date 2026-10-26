@@ -1,0 +1,15 @@
+allocate 0x0 bytes: 0x80020005
+allocate 0x0 bytes: the main free size is unchanged: 0x00000001
+allocate 0x101000 bytes: 0x80024B05
+allocate 0x101000 bytes: the main free size is unchanged: 0x00000001
+allocate 0x1100000 bytes: 0x80024B0B
+allocate 0x1100000 bytes: the main free size is unchanged: 0x00000001
+allocate 16 MiB: 0x00000000
+free it at once: 0x00000000
+allocate 1 MiB after that: 0x00000000
+free it: 0x00000000
+allocate 0x80000000 bytes: 0x80024B0B
+allocate 0x80000000 bytes: the main free size is unchanged: 0x00000001
+allocate 0xFFF00000 bytes: 0x80024B0B
+allocate 0xFFF00000 bytes: the main free size is unchanged: 0x00000001
+DONE

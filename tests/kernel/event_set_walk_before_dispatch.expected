@@ -1,0 +1,54 @@
+event flag, FIFO: the call: 0x00000000
+event flag, FIFO: step 0: 0x00000000
+event flag, FIFO: step 1: 0x00000001
+event flag, FIFO: step 2: 0x00000002
+event flag, FIFO: the waiting threads when the first waiter runs: 0x00000000
+event flag, FIFO: the bits when the first waiter runs: 0x00000000
+event flag, FIFO: the other waiter's status when the first waiter runs: 0x00000002
+event flag, FIFO: the first waiter's result: 0x00000000
+event flag, FIFO: the first waiter's bits: 0x00000001
+event flag, FIFO: the other waiter's result: 0x00000000
+event flag, FIFO: the other waiter's bits: 0x00000001
+event flag, FIFO: the waiting threads after the joins: 0x00000000
+event flag, FIFO: the bits after the joins: 0x00000000
+event flag, priority queue, late waiter raised: the call: 0x00000000
+event flag, priority queue, late waiter raised: step 0: 0x00000000
+event flag, priority queue, late waiter raised: step 1: 0x00000001
+event flag, priority queue, late waiter raised: step 2: 0x00000002
+event flag, priority queue, late waiter raised: the waiting threads when the first waiter runs: 0x00000001
+event flag, priority queue, late waiter raised: the bits when the first waiter runs: 0x00000000
+event flag, priority queue, late waiter raised: the other waiter's status when the first waiter runs: 0x00000008
+event flag, priority queue, late waiter raised: the first waiter's result: 0x00000000
+event flag, priority queue, late waiter raised: the first waiter's bits: 0x00000001
+event flag, priority queue, late waiter raised: the second set: 0x00000000
+event flag, priority queue, late waiter raised: the other waiter's result: 0x00000000
+event flag, priority queue, late waiter raised: the other waiter's bits: 0x00000001
+event flag, priority queue, late waiter raised: the waiting threads after the joins: 0x00000000
+event flag, priority queue, late waiter raised: the bits after the joins: 0x00000001
+auto reset simple event, set: the call: 0x00000000
+auto reset simple event, set: step 0: 0x00000000
+auto reset simple event, set: step 1: 0x00000001
+auto reset simple event, set: step 2: 0x00000002
+auto reset simple event, set: the waiting threads when the first waiter runs: 0x00000000
+auto reset simple event, set: the bits when the first waiter runs: 0x00000004
+auto reset simple event, set: the other waiter's status when the first waiter runs: 0x00000002
+auto reset simple event, set: the first waiter's result: 0x00000000
+auto reset simple event, set: the first waiter's bits: 0x01000000
+auto reset simple event, set: the other waiter's result: 0x00000000
+auto reset simple event, set: the other waiter's bits: 0x02000000
+auto reset simple event, set: the waiting threads after the joins: 0x00000000
+auto reset simple event, set: the bits after the joins: 0x00000004
+manual reset simple event, pulse: the call: 0x00000000
+manual reset simple event, pulse: step 0: 0x00000000
+manual reset simple event, pulse: step 1: 0x00000001
+manual reset simple event, pulse: step 2: 0x00000002
+manual reset simple event, pulse: the waiting threads when the first waiter runs: 0x00000000
+manual reset simple event, pulse: the bits when the first waiter runs: 0x00000004
+manual reset simple event, pulse: the other waiter's status when the first waiter runs: 0x00000002
+manual reset simple event, pulse: the first waiter's result: 0x00000000
+manual reset simple event, pulse: the first waiter's bits: 0x01000000
+manual reset simple event, pulse: the other waiter's result: 0x00000000
+manual reset simple event, pulse: the other waiter's bits: 0x02000000
+manual reset simple event, pulse: the waiting threads after the joins: 0x00000000
+manual reset simple event, pulse: the bits after the joins: 0x00000004
+DONE

@@ -1,0 +1,43 @@
+semaphore signal: suspend W: 0x00000001
+semaphore signal: the wake: 0x00000000
+semaphore signal: W's status after it: 0x00000100
+semaphore signal: W's wait type after it: 0x00000000
+semaphore signal: the count: 0x00000000
+semaphore signal: the waiters: 0x00000000
+semaphore signal: poll the semaphore: 0x80028102
+semaphore signal: resume W: 0x00000000
+semaphore signal: W's result: 0x00000000
+timer event: suspend W: 0x00000001
+timer event: the wake: 0x00000000
+timer event: W's status after it: 0x00000100
+timer event: W's wait type after it: 0x00000000
+timer event: the timer bit after the fire: 0x00000000
+timer event: the waiters: 0x00000000
+timer event: resume W: 0x00000000
+timer event: W's result: 0x00000000
+multiple events set: suspend W: 0x00000001
+multiple events set: the wake: 0x00000000
+multiple events set: W's status after it: 0x00000100
+multiple events set: W's wait type after it: 0x00000000
+multiple events set: the bit after the set: 0x00000000
+multiple events set: the waiters: 0x00000000
+multiple events set: resume W: 0x00000000
+multiple events set: W's result: 0x00000001
+multiple events set: W's first entry is for event a or b: 0x00000001
+multiple events set: W's first entry: 0x00000000
+multiple events set: W's first entry's user data: 0x00000011
+thread end: suspend W: 0x00000001
+thread end: the wake: 0x00000000
+thread end: W's status after it: 0x00000100
+thread end: W's wait type after it: 0x00000000
+thread end: the target is dormant: 0x00000001
+thread end: resume W: 0x00000000
+thread end: W's result: 0x00000000
+thread end: the exit status W got: 0x0000003C
+delay end: suspend W: 0x00000001
+delay end: the wake: 0x00000000
+delay end: W's status after it: 0x00000100
+delay end: W's wait type after it: 0x00000000
+delay end: resume W: 0x00000000
+delay end: W's result: 0x00000000
+DONE

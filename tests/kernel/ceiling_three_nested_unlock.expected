@@ -1,0 +1,13 @@
+three nested ceilings, step 1, lock 0x90: the result: 0x00000000
+three nested ceilings, step 1, lock 0x90: the priority after it: 0x00000090
+three nested ceilings, step 2, lock 0x70: the result: 0x00000000
+three nested ceilings, step 2, lock 0x70: the priority after it: 0x00000070
+three nested ceilings, step 3, lock 0x80: the result: 0x00000000
+three nested ceilings, step 3, lock 0x80: the priority after it: 0x00000070
+three nested ceilings, step 4, unlock 0x80: the result: 0x00000000
+three nested ceilings, step 4, unlock 0x80: the priority after it: 0x00000070
+three nested ceilings, step 5, unlock 0x70: the result: 0x00000000
+three nested ceilings, step 5, unlock 0x70: the priority after it: 0x00000090
+three nested ceilings, step 6, unlock 0x90: the result: 0x00000000
+three nested ceilings, step 6, unlock 0x90: the priority after it: 0x000000B0
+DONE

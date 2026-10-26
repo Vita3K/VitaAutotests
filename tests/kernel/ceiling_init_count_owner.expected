@@ -1,0 +1,13 @@
+init count 1: the create: 0x00000000
+init count 1: the main thread's priority after the create: 0x00000080
+init count 1: the count in its info: 0x00000001
+init count 1: the main thread owns it: 0x00000001
+init count 1: the unlock: 0x00000000
+init count 1: the main thread's priority after the unlock: 0x000000A0
+init count 0 (control): the create: 0x00000000
+init count 0 (control): the main thread's priority after the create: 0x000000A0
+init count 0 (control): the count in its info: 0x00000000
+init count 0 (control): the main thread owns it: 0x00000000
+init count 0 (control): the unlock: 0x80028146
+init count 0 (control): the main thread's priority after the unlock: 0x000000A0
+DONE

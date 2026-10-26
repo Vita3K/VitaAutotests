@@ -1,0 +1,18 @@
+message pipe, cancel through the creating UID: create and open the pipe: 0x00000000
+message pipe, cancel through the creating UID: send 4 bytes through the creating UID: 0x00000000
+message pipe, cancel through the creating UID: the cancel: 0x00000000
+message pipe, cancel through the creating UID: the senders it counted: 0x00000000
+message pipe, cancel through the creating UID: the receivers it counted: 0x00000001
+message pipe, cancel through the creating UID: the receivers the info counted before: 0x00000001
+message pipe, cancel through the creating UID: the receiver's result: 0x80028007
+message pipe, cancel through the creating UID: the bytes left after, through the opened UID: 0x00000000
+timer, cancel through the opened UID: create and open the timer: 0x00000000
+timer, cancel through the opened UID: a one shot event 1 second ahead: 0x00000000
+timer, cancel through the opened UID: start it: 0x00000000
+timer, cancel through the opened UID: the cancel: 0x00000000
+timer, cancel through the opened UID: the waiters it counted: 0x00000001
+timer, cancel through the opened UID: the waiters the info counted before: 0x00000001
+timer, cancel through the opened UID: the waiter's wait: 0x80028007
+timer, cancel through the opened UID: poll for its event through the creating UID: 0x80028202
+timer, cancel through the opened UID: the bits the poll read: 0x00000000
+DONE

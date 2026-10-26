@@ -1,0 +1,33 @@
+main: suspend UID 0: 0x80028021
+main: resume UID 0: 0x80028021
+main: suspend an unknown UID: 0x80028021
+main: resume an unknown UID: 0x80028021
+main: suspend another unknown UID: 0x80028021
+main: resume another unknown UID: 0x80028021
+main: suspend a deleted thread with the VM attribute: 0x80028021
+main: resume a deleted thread with the VM attribute: 0x80028021
+main: suspend a deleted thread without it: 0x80028021
+main: resume a deleted thread without it: 0x80028021
+main: suspend a semaphore: 0x80028021
+main: resume a semaphore: 0x80028021
+main: suspend a live thread without the VM attribute: 0x80020008
+main: resume a live thread without the VM attribute: 0x80020008
+main: suspend the VM thread: 0x00000001
+main: resume the VM thread: 0x00000000
+the VM thread: suspend UID 0: 0x80028021
+the VM thread: resume UID 0: 0x80028021
+the VM thread: suspend an unknown UID: 0x80028021
+the VM thread: resume an unknown UID: 0x80028021
+the VM thread: suspend another unknown UID: 0x80028021
+the VM thread: resume another unknown UID: 0x80028021
+the VM thread: suspend a deleted thread with the VM attribute: 0x80028021
+the VM thread: resume a deleted thread with the VM attribute: 0x80028021
+the VM thread: suspend a deleted thread without it: 0x80028021
+the VM thread: resume a deleted thread without it: 0x80028021
+the VM thread: suspend a semaphore: 0x80028021
+the VM thread: resume a semaphore: 0x80028021
+the VM thread: suspend a live thread without the VM attribute: 0x80020008
+the VM thread: resume a live thread without the VM attribute: 0x80020008
+the VM thread: suspend the VM thread: 0x80028022
+the VM thread: resume the VM thread: 0x80028022
+DONE

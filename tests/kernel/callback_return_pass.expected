@@ -1,0 +1,83 @@
+the middle callback returns 0x1: the check: 0x00000003
+the middle callback returns 0x1: runs of A: 0x00000001
+the middle callback returns 0x1: runs of B: 0x00000001
+the middle callback returns 0x1: runs of C: 0x00000001
+the middle callback returns 0x1: notify A after: 0x00000000
+the middle callback returns 0x1: notify B after: 0x800280A1
+the middle callback returns 0x1: notify C after: 0x00000000
+the middle callback returns 0xFFFFFFFF: the check: 0x00000003
+the middle callback returns 0xFFFFFFFF: runs of A: 0x00000001
+the middle callback returns 0xFFFFFFFF: runs of B: 0x00000001
+the middle callback returns 0xFFFFFFFF: runs of C: 0x00000001
+the middle callback returns 0xFFFFFFFF: notify A after: 0x00000000
+the middle callback returns 0xFFFFFFFF: notify B after: 0x800280A1
+the middle callback returns 0xFFFFFFFF: notify C after: 0x00000000
+the middle callback returns 0x7FFFFFFF: the check: 0x00000003
+the middle callback returns 0x7FFFFFFF: runs of A: 0x00000001
+the middle callback returns 0x7FFFFFFF: runs of B: 0x00000001
+the middle callback returns 0x7FFFFFFF: runs of C: 0x00000001
+the middle callback returns 0x7FFFFFFF: notify A after: 0x00000000
+the middle callback returns 0x7FFFFFFF: notify B after: 0x800280A1
+the middle callback returns 0x7FFFFFFF: notify C after: 0x00000000
+the middle callback returns 0x80000000: the check: 0x00000003
+the middle callback returns 0x80000000: runs of A: 0x00000001
+the middle callback returns 0x80000000: runs of B: 0x00000001
+the middle callback returns 0x80000000: runs of C: 0x00000001
+the middle callback returns 0x80000000: notify A after: 0x00000000
+the middle callback returns 0x80000000: notify B after: 0x800280A1
+the middle callback returns 0x80000000: notify C after: 0x00000000
+the middle callback returns 0x100: the check: 0x00000003
+the middle callback returns 0x100: runs of A: 0x00000001
+the middle callback returns 0x100: runs of B: 0x00000001
+the middle callback returns 0x100: runs of C: 0x00000001
+the middle callback returns 0x100: notify A after: 0x00000000
+the middle callback returns 0x100: notify B after: 0x800280A1
+the middle callback returns 0x100: notify C after: 0x00000000
+the first callback returns 0x1: the check: 0x00000003
+the first callback returns 0x1: runs of A: 0x00000001
+the first callback returns 0x1: runs of B: 0x00000001
+the first callback returns 0x1: runs of C: 0x00000001
+the first callback returns 0x1: notify A after: 0x800280A1
+the first callback returns 0x1: notify B after: 0x00000000
+the first callback returns 0x1: notify C after: 0x00000000
+the first callback returns 0xFFFFFFFF: the check: 0x00000003
+the first callback returns 0xFFFFFFFF: runs of A: 0x00000001
+the first callback returns 0xFFFFFFFF: runs of B: 0x00000001
+the first callback returns 0xFFFFFFFF: runs of C: 0x00000001
+the first callback returns 0xFFFFFFFF: notify A after: 0x800280A1
+the first callback returns 0xFFFFFFFF: notify B after: 0x00000000
+the first callback returns 0xFFFFFFFF: notify C after: 0x00000000
+the first callback returns 0x7FFFFFFF: the check: 0x00000003
+the first callback returns 0x7FFFFFFF: runs of A: 0x00000001
+the first callback returns 0x7FFFFFFF: runs of B: 0x00000001
+the first callback returns 0x7FFFFFFF: runs of C: 0x00000001
+the first callback returns 0x7FFFFFFF: notify A after: 0x800280A1
+the first callback returns 0x7FFFFFFF: notify B after: 0x00000000
+the first callback returns 0x7FFFFFFF: notify C after: 0x00000000
+the first callback returns 0x80000000: the check: 0x00000003
+the first callback returns 0x80000000: runs of A: 0x00000001
+the first callback returns 0x80000000: runs of B: 0x00000001
+the first callback returns 0x80000000: runs of C: 0x00000001
+the first callback returns 0x80000000: notify A after: 0x800280A1
+the first callback returns 0x80000000: notify B after: 0x00000000
+the first callback returns 0x80000000: notify C after: 0x00000000
+the first callback returns 0x100: the check: 0x00000003
+the first callback returns 0x100: runs of A: 0x00000001
+the first callback returns 0x100: runs of B: 0x00000001
+the first callback returns 0x100: runs of C: 0x00000001
+the first callback returns 0x100: notify A after: 0x800280A1
+the first callback returns 0x100: notify B after: 0x00000000
+the first callback returns 0x100: notify C after: 0x00000000
+registered returns 0x1: register: 0x00000000
+registered returns 0x1: the check: 0x00000001
+registered returns 0x1: runs before the set: 0x00000001
+registered returns 0x1: the set: 0x00000000
+registered returns 0x1: the check after the set: 0x00000000
+registered returns 0x1: runs after the set: 0x00000001
+registered returns 0xFFFFFFFF: register: 0x00000000
+registered returns 0xFFFFFFFF: the check: 0x00000001
+registered returns 0xFFFFFFFF: runs before the set: 0x00000001
+registered returns 0xFFFFFFFF: the set: 0x00000000
+registered returns 0xFFFFFFFF: the check after the set: 0x00000000
+registered returns 0xFFFFFFFF: runs after the set: 0x00000001
+DONE

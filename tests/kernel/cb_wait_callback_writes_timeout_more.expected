@@ -1,0 +1,71 @@
+mutex, the callback gives: the wait: 0x00000000
+mutex, the callback gives: runs of the callback: 0x00000001
+mutex, the callback gives: the timeout holds about the value passed: 0x00000001
+mutex, the callback gives: the timeout holds the callback's value: 0x00000000
+lightweight mutex, the callback gives: the wait: 0x00000000
+lightweight mutex, the callback gives: runs of the callback: 0x00000001
+lightweight mutex, the callback gives: the timeout holds about the value passed: 0x00000001
+lightweight mutex, the callback gives: the timeout holds the callback's value: 0x00000000
+read lock, the callback gives: the wait: 0x00000000
+read lock, the callback gives: runs of the callback: 0x00000001
+read lock, the callback gives: the timeout holds about the value passed: 0x00000001
+read lock, the callback gives: the timeout holds the callback's value: 0x00000000
+write lock, the callback gives: the wait: 0x00000000
+write lock, the callback gives: runs of the callback: 0x00000001
+write lock, the callback gives: the timeout holds about the value passed: 0x00000001
+write lock, the callback gives: the timeout holds the callback's value: 0x00000000
+timer, the callback gives: the wait: 0x00000000
+timer, the callback gives: runs of the callback: 0x00000001
+timer, the callback gives: the timeout holds about the value passed: 0x00000000
+timer, the callback gives: the timeout holds the callback's value: 0x00000000
+condition, the callback gives: the wait: 0x80028005
+condition, the callback gives: runs of the callback: 0x00000001
+condition, the callback gives: the timeout holds about the value passed: 0x00000000
+condition, the callback gives: the timeout holds the callback's value: 0x00000000
+lightweight condition, the callback gives: the wait: 0x80028005
+lightweight condition, the callback gives: runs of the callback: 0x00000001
+lightweight condition, the callback gives: the timeout holds about the value passed: 0x00000000
+lightweight condition, the callback gives: the timeout holds the callback's value: 0x00000000
+message pipe send, the callback gives: the wait: 0x00000000
+message pipe send, the callback gives: runs of the callback: 0x00000001
+message pipe send, the callback gives: the timeout holds about the value passed: 0x00000000
+message pipe send, the callback gives: the timeout holds the callback's value: 0x00000001
+thread signal, the callback gives: the wait: 0x00000000
+thread signal, the callback gives: runs of the callback: 0x00000001
+thread signal, the callback gives: the timeout holds about the value passed: 0x00000001
+thread signal, the callback gives: the timeout holds the callback's value: 0x00000000
+thread end, the callback gives: the wait: 0x00000000
+thread end, the callback gives: runs of the callback: 0x00000001
+thread end, the callback gives: the timeout holds about the value passed: 0x00000001
+thread end, the callback gives: the timeout holds the callback's value: 0x00000000
+mutex, the callback gives nothing: the wait: 0x80028005
+mutex, the callback gives nothing: runs of the callback: 0x00000001
+mutex, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+lightweight mutex, the callback gives nothing: the wait: 0x80028005
+lightweight mutex, the callback gives nothing: runs of the callback: 0x00000001
+lightweight mutex, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+read lock, the callback gives nothing: the wait: 0x80028005
+read lock, the callback gives nothing: runs of the callback: 0x00000001
+read lock, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+write lock, the callback gives nothing: the wait: 0x80028005
+write lock, the callback gives nothing: runs of the callback: 0x00000001
+write lock, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+timer, the callback gives nothing: the wait: 0x80028005
+timer, the callback gives nothing: runs of the callback: 0x00000001
+timer, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+condition, the callback gives nothing: the wait: 0x80028005
+condition, the callback gives nothing: runs of the callback: 0x00000001
+condition, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+lightweight condition, the callback gives nothing: the wait: 0x80028005
+lightweight condition, the callback gives nothing: runs of the callback: 0x00000001
+lightweight condition, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+message pipe send, the callback gives nothing: the wait: 0x80028005
+message pipe send, the callback gives nothing: runs of the callback: 0x00000001
+message pipe send, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+thread signal, the callback gives nothing: the wait: 0x80028005
+thread signal, the callback gives nothing: runs of the callback: 0x00000001
+thread signal, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+thread end, the callback gives nothing: the wait: 0x80028005
+thread end, the callback gives nothing: runs of the callback: 0x00000001
+thread end, the callback gives nothing: it lasted at least 0.25 s: 0x00000001
+DONE

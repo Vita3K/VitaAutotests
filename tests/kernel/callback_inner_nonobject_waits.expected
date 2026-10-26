@@ -1,0 +1,21 @@
+signal in signal: the first send: 0x00000000
+signal in signal: the inner wait: 0x00000000
+signal in signal: the second send: 0x00000000
+signal in signal: the outer wait: 0x00000000
+signal in signal: runs of the callback: 0x00000001
+signal in delay: the send during the delay: 0x00000000
+signal in delay: the delay's result: 0x00000000
+signal in delay: the delay lasted at least 250 ms: 0x00000001
+signal in delay: the outer wait: 0x00000000
+signal in delay: runs of the callback: 0x00000001
+delay in signal: the send: 0x00000000
+delay in signal: the signal wait's result: 0x00000000
+delay in signal: waits again with the callback wait type: 0x00000001
+delay in signal: the outer delay's result: 0x00000000
+delay in signal: runs of the callback: 0x00000001
+end in end: the inner wait: 0x00000000
+end in end: the inner wait's status: 0x00000042
+end in end: the outer wait: 0x00000000
+end in end: the outer wait's status: 0x00000042
+end in end: runs of the callback: 0x00000001
+DONE

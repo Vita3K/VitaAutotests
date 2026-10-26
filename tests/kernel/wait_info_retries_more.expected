@@ -1,0 +1,85 @@
+read lock, a reader behind a writer: its status: 0x00000008
+read lock, a reader behind a writer: its wait type: 0x00000080
+read lock, a reader behind a writer: it reports the object as what it waits on: 0x00000001
+read lock, a reader after the writer got the lock: its status: 0x00000008
+read lock, a reader after the writer got the lock: its wait type: 0x00000080
+read lock, a reader after the writer got the lock: it reports the object as what it waits on: 0x00000001
+read lock, after the read unlock: the waiting readers: 0x00000001
+read lock, the reader after the writer's unlock: it isn't waiting any more: 0x00000001
+read lock, the reader after the writer's unlock: its wait type: 0x00000000
+read lock, the reader after the writer's unlock: it reports the object as what it waits on: 0x00000000
+read lock: the writer's lock: 0x00000000
+read lock: the reader's lock: 0x00000000
+write lock, a writer while two read locks are held: its status: 0x00000008
+write lock, a writer while two read locks are held: its wait type: 0x00000080
+write lock, a writer while two read locks are held: it reports the object as what it waits on: 0x00000001
+write lock, a writer after one of two read locks is unlocked: its status: 0x00000008
+write lock, a writer after one of two read locks is unlocked: its wait type: 0x00000080
+write lock, a writer after one of two read locks is unlocked: it reports the object as what it waits on: 0x00000001
+write lock, after one read unlock: the waiting writers: 0x00000001
+write lock, a writer after the second read unlock: it isn't waiting any more: 0x00000001
+write lock, a writer after the second read unlock: its wait type: 0x00000000
+write lock, a writer after the second read unlock: it reports the object as what it waits on: 0x00000000
+write lock: the writer's lock: 0x00000000
+simple event, waiting for 0x01000000: its status: 0x00000008
+simple event, waiting for 0x01000000: its wait type: 0x00010000
+simple event, waiting for 0x01000000: it reports the object as what it waits on: 0x00000001
+simple event, after a set of 0x02000000: its status: 0x00000008
+simple event, after a set of 0x02000000: its wait type: 0x00010000
+simple event, after a set of 0x02000000: it reports the object as what it waits on: 0x00000001
+simple event, after a set of 0x02000000: the waiting threads: 0x00000001
+simple event, after a set of 0x01000000: it isn't waiting any more: 0x00000001
+simple event, after a set of 0x01000000: its wait type: 0x00000000
+simple event, after a set of 0x01000000: it reports the object as what it waits on: 0x00000000
+simple event: the wait's result: 0x00000000
+simple event: the bit it waits for is in the bits it got: 0x00000001
+timer, a waiter for 0x01000000 after its set event fired for 0x8000: its status: 0x00000008
+timer, a waiter for 0x01000000 after its set event fired for 0x8000: its wait type: 0x00010000
+timer, a waiter for 0x01000000 after its set event fired for 0x8000: it reports the object as what it waits on: 0x00000001
+timer, a waiter for 0x01000000: the waiting threads: 0x00000001
+timer: the wait's result: 0x80028005
+lightweight mutex, the first waiter: its status: 0x00000008
+lightweight mutex, the first waiter: its wait type: 0x00100000
+lightweight mutex, the first waiter: it reports the object as what it waits on: 0x00000001
+lightweight mutex, the first waiter after the unlock: it isn't waiting any more: 0x00000001
+lightweight mutex, the first waiter after the unlock: its wait type: 0x00000000
+lightweight mutex, the first waiter after the unlock: it reports the object as what it waits on: 0x00000000
+lightweight mutex, the second waiter behind it: its status: 0x00000008
+lightweight mutex, the second waiter behind it: its wait type: 0x00100000
+lightweight mutex, the second waiter behind it: it reports the object as what it waits on: 0x00000001
+lightweight mutex, after the unlock: the waiting threads: 0x00000001
+lightweight mutex: the first waiter's lock: 0x00000000
+lightweight mutex: the second waiter's lock: 0x00000000
+condition variable: the signal to the second waiter: 0x00000000
+condition variable, the first waiter: its status: 0x00000008
+condition variable, the first waiter: its wait type: 0x00000100
+condition variable, the first waiter: it reports the object as what it waits on: 0x00000001
+condition variable, the first waiter after a signal to the second: its status: 0x00000008
+condition variable, the first waiter after a signal to the second: its wait type: 0x00000100
+condition variable, the first waiter after a signal to the second: it reports the object as what it waits on: 0x00000001
+condition variable, the second waiter after the mutex is unlocked: it isn't waiting any more: 0x00000001
+condition variable, the second waiter after the mutex is unlocked: its wait type: 0x00000000
+condition variable, the second waiter after the mutex is unlocked: it reports the object as what it waits on: 0x00000000
+condition variable: the first waiter's wait: 0x00000000
+condition variable: the second waiter's wait: 0x00000000
+thread end, a waiter for the target: its status: 0x00000008
+thread end, a waiter for the target: its wait type: 0x00000002
+thread end, a waiter for the target: it reports the object as what it waits on: 0x00000001
+thread end: the target's priority change: 0x00000000
+thread end, after the target changed its priority: its status: 0x00000008
+thread end, after the target changed its priority: its wait type: 0x00000002
+thread end, after the target changed its priority: it reports the object as what it waits on: 0x00000001
+thread end, after the target ended: it isn't waiting any more: 0x00000001
+thread end, after the target ended: its wait type: 0x00000000
+thread end, after the target ended: it reports the object as what it waits on: 0x00000000
+thread end: the wait's result: 0x00000000
+thread signal, a waiter: its status: 0x00000008
+thread signal, a waiter: its wait type: 0x00000004
+thread signal: the signal to the other thread: 0x00000000
+thread signal, after a signal to the other thread: its status: 0x00000008
+thread signal, after a signal to the other thread: its wait type: 0x00000004
+thread signal: the signal to the waiter: 0x00000000
+thread signal, after the signal to the waiter: it isn't waiting any more: 0x00000001
+thread signal, after the signal to the waiter: its wait type: 0x00000000
+thread signal: the wait's result: 0x00000000
+DONE

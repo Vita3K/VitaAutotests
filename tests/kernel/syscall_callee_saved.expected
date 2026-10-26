@@ -1,0 +1,36 @@
+PollSema with a count: the call's result: 0x00000000
+PollSema with a count: mask of r4 to r11 that kept their markers: 0x000000FF
+PollSema with a count: mask of d8 to d15 that kept their markers: 0x000000FF
+PollSema with a count: sp is the same: 0x00000001
+PollSema with a count: the rounding mode after: 0x00000001
+DelayThread(1000) with a changer: the call's result: 0x00000000
+DelayThread(1000) with a changer: mask of r4 to r11 that kept their markers: 0x000000FF
+DelayThread(1000) with a changer: mask of d8 to d15 that kept their markers: 0x000000FF
+DelayThread(1000) with a changer: sp is the same: 0x00000001
+DelayThread(1000) with a changer: the rounding mode after: 0x00000001
+WaitSema woken by a signal: the call's result: 0x00000000
+WaitSema woken by a signal: mask of r4 to r11 that kept their markers: 0x000000FF
+WaitSema woken by a signal: mask of d8 to d15 that kept their markers: 0x000000FF
+WaitSema woken by a signal: sp is the same: 0x00000001
+WaitSema woken by a signal: the rounding mode after: 0x00000001
+WaitSema timed out after 1 ms: the call's result: 0x80028005
+WaitSema timed out after 1 ms: mask of r4 to r11 that kept their markers: 0x000000FF
+WaitSema timed out after 1 ms: mask of d8 to d15 that kept their markers: 0x000000FF
+WaitSema timed out after 1 ms: sp is the same: 0x00000001
+WaitSema timed out after 1 ms: the rounding mode after: 0x00000001
+WaitSema ended by a cancel: the call's result: 0x80028007
+WaitSema ended by a cancel: mask of r4 to r11 that kept their markers: 0x000000FF
+WaitSema ended by a cancel: mask of d8 to d15 that kept their markers: 0x000000FF
+WaitSema ended by a cancel: sp is the same: 0x00000001
+WaitSema ended by a cancel: the rounding mode after: 0x00000001
+WaitSema ended by a delete: the call's result: 0x80028006
+WaitSema ended by a delete: mask of r4 to r11 that kept their markers: 0x000000FF
+WaitSema ended by a delete: mask of d8 to d15 that kept their markers: 0x000000FF
+WaitSema ended by a delete: sp is the same: 0x00000001
+WaitSema ended by a delete: the rounding mode after: 0x00000001
+PollSema with an unknown UID: the call's result: 0x80028101
+PollSema with an unknown UID: mask of r4 to r11 that kept their markers: 0x000000FF
+PollSema with an unknown UID: mask of d8 to d15 that kept their markers: 0x000000FF
+PollSema with an unknown UID: sp is the same: 0x00000001
+PollSema with an unknown UID: the rounding mode after: 0x00000001
+DONE

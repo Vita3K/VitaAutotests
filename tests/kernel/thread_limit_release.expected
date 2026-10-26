@@ -1,0 +1,35 @@
+the error at the cap, 0 if the loop ended first: 0x8002450D
+at least 64 threads created: 0x00000001
+fewer than 128 threads created: 0x00000001
+three more creates refused: 0x00000001
+delete one thread: 0x00000000
+create after deleting one: 0x00000000
+the create after that: 0x8002450D
+start the last 4 threads: 0x00000001
+every started thread ends: 0x00000001
+create while the ended threads are held: 0x8002450D
+delete the ended threads: 0x00000001
+exactly 4 creates work after the deletes: 0x00000001
+the create after those fails with the cap error: 0x00000001
+start the runners: 0x00000001
+every runner waits on the semaphore: 0x00000001
+release them: 0x00000000
+runner 0 after its exit: 0x80028021
+runner 1 after its exit: 0x80028021
+runner 2 after its exit: 0x80028021
+runner 3 after its exit: 0x80028021
+every runner got the semaphore: 0x00000001
+first create after the exits: 0x00000000
+exactly 4 creates work after the exits: 0x00000001
+the create after those fails with the cap error: 0x00000001
+delete every thread: 0x00000001
+the error of the second fill, 0 if the loop ended first: 0x8002450D
+the second fill creates as many threads as the first: 0x00000001
+semaphore at the cap: 0x00000000
+mutex at the cap: 0x00000000
+callback at the cap: 0x00000000
+timer at the cap: 0x00000000
+message pipe at the cap: 0x00000000
+thread at the cap: 0x8002450D
+delete the threads at the cap: 0x00000001
+DONE

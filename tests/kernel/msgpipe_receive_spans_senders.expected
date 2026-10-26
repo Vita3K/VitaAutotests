@@ -1,0 +1,112 @@
+room 6, FULL 8 and FULL 8, receive FULL 4096: the free size before the receives: 0x00000006
+room 6, FULL 8 and FULL 8, receive FULL 4096: the waiting senders before the receives: 0x00000002
+room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1, result: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1, size: 0x00001000
+room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1 gets "ABCDEF": 0x00000006
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, the free size: 0x00000FF6
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, the waiting senders: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 1 is done: 0x00000001
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 1's size sent so far: 0x00000008
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 2 is done: 0x00000001
+room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 2's size sent so far: 0x00000008
+room 6, FULL 8 and FULL 8, receive FULL 4096: drain, result: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: drain, size: 0x0000000A
+room 6, FULL 8 and FULL 8, receive FULL 4096: drain gets "GHIJKLMNOP": 0x0000000A
+room 6, FULL 8 and FULL 8, receive FULL 4096: drain, the free size: 0x00001000
+room 6, FULL 8 and FULL 8, receive FULL 4096: cancel the pipe: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: the senders the cancel ended: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: sender 1's result: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: sender 1's size sent: 0x00000008
+room 6, FULL 8 and FULL 8, receive FULL 4096: sender 2's result: 0x00000000
+room 6, FULL 8 and FULL 8, receive FULL 4096: sender 2's size sent: 0x00000008
+room 6, FULL 8 and FULL 8, receive FULL 4096: the free size after the cancel: 0x00001000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: the free size before the receives: 0x00000006
+room 6, FULL 8 and FULL 8, receive ASAP 4096: the waiting senders before the receives: 0x00000002
+room 6, FULL 8 and FULL 8, receive ASAP 4096: receive 1, result: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: receive 1, size: 0x00001000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: receive 1 gets "ABCDEF": 0x00000006
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, the free size: 0x00000FF6
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, the waiting senders: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, sender 1 is done: 0x00000001
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, sender 1's size sent so far: 0x00000008
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, sender 2 is done: 0x00000001
+room 6, FULL 8 and FULL 8, receive ASAP 4096: after receive 1, sender 2's size sent so far: 0x00000008
+room 6, FULL 8 and FULL 8, receive ASAP 4096: drain, result: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: drain, size: 0x0000000A
+room 6, FULL 8 and FULL 8, receive ASAP 4096: drain gets "GHIJKLMNOP": 0x0000000A
+room 6, FULL 8 and FULL 8, receive ASAP 4096: drain, the free size: 0x00001000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: cancel the pipe: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: the senders the cancel ended: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: sender 1's result: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: sender 1's size sent: 0x00000008
+room 6, FULL 8 and FULL 8, receive ASAP 4096: sender 2's result: 0x00000000
+room 6, FULL 8 and FULL 8, receive ASAP 4096: sender 2's size sent: 0x00000008
+room 6, FULL 8 and FULL 8, receive ASAP 4096: the free size after the cancel: 0x00001000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: the free size before the receives: 0x00000006
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: the waiting senders before the receives: 0x00000002
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1, result: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1, size: 0x00001000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: receive 1 gets "IJKLMN": 0x00000006
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, the free size: 0x00000FF6
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, the waiting senders: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 1 is done: 0x00000001
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 1's size sent so far: 0x00000008
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 2 is done: 0x00000001
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: after receive 1, sender 2's size sent so far: 0x00000008
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: drain, result: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: drain, size: 0x0000000A
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: drain gets "OPABCDEFGH": 0x0000000A
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: drain, the free size: 0x00001000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: cancel the pipe: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: the senders the cancel ended: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: sender 1's result: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: sender 1's size sent: 0x00000008
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: sender 2's result: 0x00000000
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: sender 2's size sent: 0x00000008
+attr 0x1, room 6, FULL 8 and FULL 8, receive FULL 4096: the free size after the cancel: 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: the free size before the receives: 0x00000060
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: the waiting senders before the receives: 0x00000002
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 1, result: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 1, size: 0x00000FD2
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 1 gets "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 0x00000032
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, the free size: 0x00000FCE
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, the waiting senders: 0x00000001
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, sender 1 is done: 0x00000001
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, sender 1's size sent so far: 0x00000064
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, sender 2 is done: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 1, sender 2's size sent so far: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 2, result: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 2, size: 0x00000032
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: receive 2 gets "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": 0x00000032
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, the free size: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, the waiting senders: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, sender 1 is done: 0x00000001
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, sender 1's size sent so far: 0x00000064
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, sender 2 is done: 0x00000001
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: after receive 2, sender 2's size sent so far: 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: drain, result: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: drain, size: 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: drain gets "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb": 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: drain, the free size: 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: cancel the pipe: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: the senders the cancel ended: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: sender 1's result: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: sender 1's size sent: 0x00000064
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: sender 2's result: 0x00000000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: sender 2's size sent: 0x00001000
+room 96, FULL 100 and FULL 4096, receives 4050 and 50: the free size after the cancel: 0x00001000
+room 6, FULL 8, receive FULL 4097: the free size before the receives: 0x00000006
+room 6, FULL 8, receive FULL 4097: the waiting senders before the receives: 0x00000001
+room 6, FULL 8, receive FULL 4097: receive 1, result: 0x8002000B
+room 6, FULL 8, receive FULL 4097: receive 1, size: 0x0000DEAD
+room 6, FULL 8, receive FULL 4097: receive 1 gets "": 0x00000000
+room 6, FULL 8, receive FULL 4097: after receive 1, the free size: 0x00000006
+room 6, FULL 8, receive FULL 4097: after receive 1, the waiting senders: 0x00000001
+room 6, FULL 8, receive FULL 4097: after receive 1, sender 1 is done: 0x00000000
+room 6, FULL 8, receive FULL 4097: after receive 1, sender 1's size sent so far: 0x00000000
+room 6, FULL 8, receive FULL 4097: cancel the pipe: 0x00000000
+room 6, FULL 8, receive FULL 4097: the senders the cancel ended: 0x00000001
+room 6, FULL 8, receive FULL 4097: sender 1's result: 0x80028007
+room 6, FULL 8, receive FULL 4097: sender 1's size sent: 0x00000000
+room 6, FULL 8, receive FULL 4097: the free size after the cancel: 0x00001000
+DONE

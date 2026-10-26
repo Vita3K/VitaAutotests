@@ -1,0 +1,5 @@
+the main thread's wait for 0x2: 0x800280E2
+it returned within 1 s: 0x00000001
+runs of the callback: 0x00000001
+T's wait: 0x00000000
+DONE

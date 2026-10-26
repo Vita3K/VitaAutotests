@@ -1,0 +1,127 @@
+semaphore: create an openable object: 0x00000000
+semaphore: open it by its name: 0x00000000
+semaphore with a size of 0x0 through the creating UID: 0x00000000
+semaphore with a size of 0x0 through the opened UID: 0x00000000
+semaphore bytes written with a size of 0x0: 0x00000000
+semaphore with a size of 0x0: the two UIDs agree: 0x00000001
+semaphore with a size of 0x4 through the creating UID: 0x00000000
+semaphore with a size of 0x4 through the opened UID: 0x00000000
+semaphore bytes written with a size of 0x4: 0x00000000
+semaphore with a size of 0x4: the two UIDs agree: 0x00000001
+semaphore with a size of 0x3C through the creating UID: 0x00000000
+semaphore with a size of 0x3C through the opened UID: 0x00000000
+semaphore bytes written with a size of 0x3C: 0x0000003C
+semaphore with a size of 0x3C: the two UIDs agree: 0x00000000
+semaphore with a size of 0x40 through the creating UID: 0x8002710B
+semaphore with a size of 0x40 through the opened UID: 0x8002710B
+semaphore bytes written with a size of 0x40: 0x00000000
+semaphore with a size of 0x40: the two UIDs agree: 0x00000001
+event flag: create an openable object: 0x00000000
+event flag: open it by its name: 0x00000000
+event flag with a size of 0x0 through the creating UID: 0x00000000
+event flag with a size of 0x0 through the opened UID: 0x00000000
+event flag bytes written with a size of 0x0: 0x00000000
+event flag with a size of 0x0: the two UIDs agree: 0x00000001
+event flag with a size of 0x4 through the creating UID: 0x00000000
+event flag with a size of 0x4 through the opened UID: 0x00000000
+event flag bytes written with a size of 0x4: 0x00000000
+event flag with a size of 0x4: the two UIDs agree: 0x00000001
+event flag with a size of 0x38 through the creating UID: 0x00000000
+event flag with a size of 0x38 through the opened UID: 0x00000000
+event flag bytes written with a size of 0x38: 0x00000038
+event flag with a size of 0x38: the two UIDs agree: 0x00000000
+event flag with a size of 0x3C through the creating UID: 0x8002710B
+event flag with a size of 0x3C through the opened UID: 0x8002710B
+event flag bytes written with a size of 0x3C: 0x00000000
+event flag with a size of 0x3C: the two UIDs agree: 0x00000001
+mutex: create an openable object: 0x00000000
+mutex: open it by its name: 0x00000000
+mutex with a size of 0x0 through the creating UID: 0x00000000
+mutex with a size of 0x0 through the opened UID: 0x00000000
+mutex bytes written with a size of 0x0: 0x00000000
+mutex with a size of 0x0: the two UIDs agree: 0x00000001
+mutex with a size of 0x4 through the creating UID: 0x00000000
+mutex with a size of 0x4 through the opened UID: 0x00000000
+mutex bytes written with a size of 0x4: 0x00000000
+mutex with a size of 0x4: the two UIDs agree: 0x00000001
+mutex with a size of 0x40 through the creating UID: 0x00000000
+mutex with a size of 0x40 through the opened UID: 0x00000000
+mutex bytes written with a size of 0x40: 0x00000040
+mutex with a size of 0x40: the two UIDs agree: 0x00000000
+mutex with a size of 0x44 through the creating UID: 0x8002710B
+mutex with a size of 0x44 through the opened UID: 0x8002710B
+mutex bytes written with a size of 0x44: 0x00000000
+mutex with a size of 0x44: the two UIDs agree: 0x00000001
+reader/writer lock: create an openable object: 0x00000000
+reader/writer lock: open it by its name: 0x00000000
+reader/writer lock with a size of 0x0 through the creating UID: 0x00000000
+reader/writer lock with a size of 0x0 through the opened UID: 0x00000000
+reader/writer lock bytes written with a size of 0x0: 0x00000000
+reader/writer lock with a size of 0x0: the two UIDs agree: 0x00000001
+reader/writer lock with a size of 0x4 through the creating UID: 0x00000000
+reader/writer lock with a size of 0x4 through the opened UID: 0x00000000
+reader/writer lock bytes written with a size of 0x4: 0x00000000
+reader/writer lock with a size of 0x4: the two UIDs agree: 0x00000001
+reader/writer lock with a size of 0x3C through the creating UID: 0x00000000
+reader/writer lock with a size of 0x3C through the opened UID: 0x00000000
+reader/writer lock bytes written with a size of 0x3C: 0x0000003C
+reader/writer lock with a size of 0x3C: the two UIDs agree: 0x00000000
+reader/writer lock with a size of 0x40 through the creating UID: 0x8002710B
+reader/writer lock with a size of 0x40 through the opened UID: 0x8002710B
+reader/writer lock bytes written with a size of 0x40: 0x00000000
+reader/writer lock with a size of 0x40: the two UIDs agree: 0x00000001
+message pipe: create an openable object: 0x00000000
+message pipe: open it by its name: 0x00000000
+message pipe with a size of 0x0 through the creating UID: 0x00000000
+message pipe with a size of 0x0 through the opened UID: 0x00000000
+message pipe bytes written with a size of 0x0: 0x00000000
+message pipe with a size of 0x0: the two UIDs agree: 0x00000001
+message pipe with a size of 0x4 through the creating UID: 0x00000000
+message pipe with a size of 0x4 through the opened UID: 0x00000000
+message pipe bytes written with a size of 0x4: 0x00000000
+message pipe with a size of 0x4: the two UIDs agree: 0x00000001
+message pipe with a size of 0x3C through the creating UID: 0x00000000
+message pipe with a size of 0x3C through the opened UID: 0x00000000
+message pipe bytes written with a size of 0x3C: 0x0000003C
+message pipe with a size of 0x3C: the two UIDs agree: 0x00000000
+message pipe with a size of 0x40 through the creating UID: 0x8002710B
+message pipe with a size of 0x40 through the opened UID: 0x8002710B
+message pipe bytes written with a size of 0x40: 0x00000000
+message pipe with a size of 0x40: the two UIDs agree: 0x00000001
+simple event: create an openable object: 0x00000000
+simple event: open it by its name: 0x00000000
+simple event with a size of 0x0 through the creating UID: 0x00000000
+simple event with a size of 0x0 through the opened UID: 0x00000000
+simple event bytes written with a size of 0x0: 0x00000000
+simple event with a size of 0x0: the two UIDs agree: 0x00000001
+simple event with a size of 0x4 through the creating UID: 0x00000000
+simple event with a size of 0x4 through the opened UID: 0x00000000
+simple event bytes written with a size of 0x4: 0x00000000
+simple event with a size of 0x4: the two UIDs agree: 0x00000001
+simple event with a size of 0x40 through the creating UID: 0x00000000
+simple event with a size of 0x40 through the opened UID: 0x00000000
+simple event bytes written with a size of 0x40: 0x00000040
+simple event with a size of 0x40: the two UIDs agree: 0x00000000
+simple event with a size of 0x44 through the creating UID: 0x8002710B
+simple event with a size of 0x44 through the opened UID: 0x8002710B
+simple event bytes written with a size of 0x44: 0x00000000
+simple event with a size of 0x44: the two UIDs agree: 0x00000001
+timer: create an openable object: 0x00000000
+timer: open it by its name: 0x00000000
+timer with a size of 0x0 through the creating UID: 0x00000000
+timer with a size of 0x0 through the opened UID: 0x00000000
+timer bytes written with a size of 0x0: 0x00000000
+timer with a size of 0x0: the two UIDs agree: 0x00000001
+timer with a size of 0x4 through the creating UID: 0x00000000
+timer with a size of 0x4 through the opened UID: 0x00000000
+timer bytes written with a size of 0x4: 0x00000000
+timer with a size of 0x4: the two UIDs agree: 0x00000001
+timer with a size of 0x60 through the creating UID: 0x00000000
+timer with a size of 0x60 through the opened UID: 0x00000000
+timer bytes written with a size of 0x60: 0x00000060
+timer with a size of 0x60: the two UIDs agree: 0x00000000
+timer with a size of 0x64 through the creating UID: 0x8002710B
+timer with a size of 0x64 through the opened UID: 0x8002710B
+timer bytes written with a size of 0x64: 0x00000000
+timer with a size of 0x64: the two UIDs agree: 0x00000001
+DONE

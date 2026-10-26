@@ -1,0 +1,21 @@
+a delay of 1 with callbacks, priority 0x70: the delay's result: 0x00000000
+a delay of 1 with callbacks, priority 0x70: steps recorded: 0x00000003
+a delay of 1 with callbacks, priority 0x70: step 0: 0x00000000
+a delay of 1 with callbacks, priority 0x70: step 1: 0x00000001
+a delay of 1 with callbacks, priority 0x70: step 2: 0x00000002
+a delay of 1 with callbacks, priority 0xA0: the delay's result: 0x00000000
+a delay of 1 with callbacks, priority 0xA0: steps recorded: 0x00000003
+a delay of 1 with callbacks, priority 0xA0: step 0: 0x00000000
+a delay of 1 with callbacks, priority 0xA0: step 1: 0x00000001
+a delay of 1 with callbacks, priority 0xA0: step 2: 0x00000002
+a plain delay of 1, priority 0x70: the delay's result: 0x00000000
+a plain delay of 1, priority 0x70: steps recorded: 0x00000003
+a plain delay of 1, priority 0x70: step 0: 0x00000000
+a plain delay of 1, priority 0x70: step 1: 0x00000001
+a plain delay of 1, priority 0x70: step 2: 0x00000002
+a plain delay of 1, priority 0xA0: the delay's result: 0x00000000
+a plain delay of 1, priority 0xA0: steps recorded: 0x00000003
+a plain delay of 1, priority 0xA0: step 0: 0x00000000
+a plain delay of 1, priority 0xA0: step 1: 0x00000001
+a plain delay of 1, priority 0xA0: step 2: 0x00000002
+DONE

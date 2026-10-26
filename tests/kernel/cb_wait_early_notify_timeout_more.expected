@@ -1,0 +1,51 @@
+mutex, nothing pending: the wait: 0x00000000
+mutex, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+lightweight mutex, nothing pending: the wait: 0x00000000
+lightweight mutex, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+read lock, nothing pending: the wait: 0x00000000
+read lock, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+write lock, nothing pending: the wait: 0x00000000
+write lock, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+timer, nothing pending: the wait: 0x00000000
+timer, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+condition, nothing pending: the wait: 0x00000000
+condition, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+lightweight condition, nothing pending: the wait: 0x00000000
+lightweight condition, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+message pipe send, nothing pending: the wait: 0x00000000
+message pipe send, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+thread signal, nothing pending: the wait: 0x80028005
+thread signal, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+thread end, nothing pending: the wait: 0x00000000
+thread end, nothing pending: the time left is at least 250 ms below the timeout passed: 0x00000001
+mutex, callback pending: the wait: 0x00000000
+mutex, callback pending: runs of the callback: 0x00000002
+mutex, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+lightweight mutex, callback pending: the wait: 0x00000000
+lightweight mutex, callback pending: runs of the callback: 0x00000002
+lightweight mutex, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+read lock, callback pending: the wait: 0x00000000
+read lock, callback pending: runs of the callback: 0x00000002
+read lock, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+write lock, callback pending: the wait: 0x00000000
+write lock, callback pending: runs of the callback: 0x00000002
+write lock, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+timer, callback pending: the wait: 0x00000000
+timer, callback pending: runs of the callback: 0x00000002
+timer, callback pending: the time left is within 250 ms of the timeout passed: 0x00000000
+condition, callback pending: the wait: 0x80028005
+condition, callback pending: runs of the callback: 0x00000002
+condition, callback pending: the time left is within 250 ms of the timeout passed: 0x00000000
+lightweight condition, callback pending: the wait: 0x80028005
+lightweight condition, callback pending: runs of the callback: 0x00000002
+lightweight condition, callback pending: the time left is within 250 ms of the timeout passed: 0x00000000
+message pipe send, callback pending: the wait: 0x00000000
+message pipe send, callback pending: runs of the callback: 0x00000002
+message pipe send, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+thread signal, callback pending: the wait: 0x80028005
+thread signal, callback pending: runs of the callback: 0x00000001
+thread signal, callback pending: the time left is within 250 ms of the timeout passed: 0x00000000
+thread end, callback pending: the wait: 0x00000000
+thread end, callback pending: runs of the callback: 0x00000002
+thread end, callback pending: the time left is within 250 ms of the timeout passed: 0x00000001
+DONE

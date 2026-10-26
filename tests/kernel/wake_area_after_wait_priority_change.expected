@@ -1,0 +1,57 @@
+signal, T 0x70 to 0xA0: the priority change: 0x00000000
+signal, T 0x70 to 0xA0: T's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0xA0: T's current CPU before the gate lifts: 0x00007FFF
+signal, T 0x70 to 0xA0: U's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0xA0 to 0x70: the priority change: 0x00000000
+signal, T 0xA0 to 0x70: T's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x70: T's current CPU before the gate lifts: 0x00000000
+signal, T 0xA0 to 0x70: U's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0xA0 to 0x7F: the priority change: 0x00000000
+signal, T 0xA0 to 0x7F: T's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x7F: T's current CPU before the gate lifts: 0x00000000
+signal, T 0xA0 to 0x7F: U's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x7F: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0x70 to 0x80: the priority change: 0x00000000
+signal, T 0x70 to 0x80: T's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0x80: T's current CPU before the gate lifts: 0x00007FFF
+signal, T 0x70 to 0x80: U's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0x80: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0xA0 to 0x40: the priority change: 0x00000000
+signal, T 0xA0 to 0x40: T's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x40: T's current CPU before the gate lifts: 0x00000000
+signal, T 0xA0 to 0x40: U's status before the gate lifts: 0x00000004
+signal, T 0xA0 to 0x40: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0x70 to 0xBF: the priority change: 0x00000000
+signal, T 0x70 to 0xBF: T's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0xBF: T's current CPU before the gate lifts: 0x00007FFF
+signal, T 0x70 to 0xBF: U's status before the gate lifts: 0x00000002
+signal, T 0x70 to 0xBF: the first to run, 1 for T and 2 for U: 0x00000002
+timeout, T 0xA0 to 0x70: the priority change: 0x00000000
+timeout, T 0xA0 to 0x70: T's status before the gate lifts: 0x00000002
+timeout, T 0xA0 to 0x70: T's current CPU before the gate lifts: 0x00000000
+timeout, T 0xA0 to 0x70: U's status before the gate lifts: 0x00000004
+timeout, T 0xA0 to 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+delay end, T 0xA0 to 0x70: the priority change: 0x00000000
+delay end, T 0xA0 to 0x70: T's status before the gate lifts: 0x00000002
+delay end, T 0xA0 to 0x70: T's current CPU before the gate lifts: 0x00000000
+delay end, T 0xA0 to 0x70: U's status before the gate lifts: 0x00000004
+delay end, T 0xA0 to 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+signal, T 0x70 to 0x70: T's status before the gate lifts: 0x00000004
+signal, T 0x70 to 0x70: T's current CPU before the gate lifts: 0x00000000
+signal, T 0x70 to 0x70: U's status before the gate lifts: 0x00000004
+signal, T 0x70 to 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+signal, T 0xA0 to 0xA0: T's status before the gate lifts: 0x00000002
+signal, T 0xA0 to 0xA0: T's current CPU before the gate lifts: 0x00007FFF
+signal, T 0xA0 to 0xA0: U's status before the gate lifts: 0x00000002
+signal, T 0xA0 to 0xA0: the first to run, 1 for T and 2 for U: 0x00000002
+timeout, T 0x70 to 0x70: T's status before the gate lifts: 0x00000002
+timeout, T 0x70 to 0x70: T's current CPU before the gate lifts: 0x00000000
+timeout, T 0x70 to 0x70: U's status before the gate lifts: 0x00000004
+timeout, T 0x70 to 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+delay end, T 0x70 to 0x70: T's status before the gate lifts: 0x00000002
+delay end, T 0x70 to 0x70: T's current CPU before the gate lifts: 0x00000000
+delay end, T 0x70 to 0x70: U's status before the gate lifts: 0x00000004
+delay end, T 0x70 to 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+DONE

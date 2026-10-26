@@ -1,0 +1,31 @@
+wait on UID 0, status and timeout valid: the result: 0x80028022
+wait on UID 0, status and timeout valid: the status: 0x0000DEAD
+wait on UID 0, no status, timeout valid: the result: 0x80028022
+wait on an unknown UID, status and timeout valid: the result: 0x80028021
+wait on an unknown UID, status and timeout valid: the status: 0x0000DEAD
+wait on an unknown UID, no status, timeout valid: the result: 0x80028021
+CB wait on UID 0, status and timeout valid: the result: 0x80028022
+CB wait on UID 0, status and timeout valid: the status: 0x0000DEAD
+CB wait on UID 0, no status, timeout valid: the result: 0x80028022
+CB wait on an unknown UID, status and timeout valid: the result: 0x80028021
+CB wait on an unknown UID, status and timeout valid: the status: 0x0000DEAD
+CB wait on an unknown UID, no status, timeout valid: the result: 0x80028021
+wait on its own UID, status and timeout valid: the result: 0x80028022
+wait on its own UID, status and timeout valid: the status: 0x0000DEAD
+wait on its own UID, no status, timeout valid: the result: 0x80028022
+CB wait on its own UID, status and timeout valid: the result: 0x80028022
+CB wait on its own UID, status and timeout valid: the status: 0x0000DEAD
+CB wait on its own UID, no status, timeout valid: the result: 0x80028022
+wait on UID 0, status valid, no timeout: the result: 0x80028022
+wait on UID 0, status valid, no timeout: the status: 0x0000DEAD
+wait on UID 0, no status or timeout: the result: 0x80028022
+wait on an unknown UID, status valid, no timeout: the result: 0x80028021
+wait on an unknown UID, status valid, no timeout: the status: 0x0000DEAD
+wait on an unknown UID, no status or timeout: the result: 0x80028021
+CB wait on UID 0, status valid, no timeout: the result: 0x80028022
+CB wait on UID 0, status valid, no timeout: the status: 0x0000DEAD
+CB wait on UID 0, no status or timeout: the result: 0x80028022
+CB wait on an unknown UID, status valid, no timeout: the result: 0x80028021
+CB wait on an unknown UID, status valid, no timeout: the status: 0x0000DEAD
+CB wait on an unknown UID, no status or timeout: the result: 0x80028021
+DONE

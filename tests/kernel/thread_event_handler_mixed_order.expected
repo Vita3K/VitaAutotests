@@ -1,0 +1,43 @@
+run 1, registered 1 2 3 4: register handler 1: 0x00000001
+run 1, registered 1 2 3 4: register handler 2: 0x00000001
+run 1, registered 1 2 3 4: register handler 3: 0x00000001
+run 1, registered 1 2 3 4: register handler 4: 0x00000001
+run 1, registered 1 2 3 4: the wait for the end: 0x00000000
+run 1, registered 1 2 3 4: START order equals the registration order: 0x00000001
+run 1, registered 1 2 3 4: START order: 0x00001234
+run 1, registered 1 2 3 4: END order equals the registration order: 0x00000001
+run 1, registered 1 2 3 4: END order: 0x00001234
+run 1, registered 1 2 3 4: handler 1: START runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 1: END runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 2: START runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 2: END runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 3: START runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 3: END runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 4: START runs for the target: 0x00000001
+run 1, registered 1 2 3 4: handler 4: END runs for the target: 0x00000001
+run 1, registered 1 2 3 4: unregister handler 1: 0x00000000
+run 1, registered 1 2 3 4: unregister handler 2: 0x00000000
+run 1, registered 1 2 3 4: unregister handler 3: 0x00000000
+run 1, registered 1 2 3 4: unregister handler 4: 0x00000000
+run 2, registered 4 3 2 1: register handler 4: 0x00000001
+run 2, registered 4 3 2 1: register handler 3: 0x00000001
+run 2, registered 4 3 2 1: register handler 2: 0x00000001
+run 2, registered 4 3 2 1: register handler 1: 0x00000001
+run 2, registered 4 3 2 1: the wait for the end: 0x00000000
+run 2, registered 4 3 2 1: START order equals the registration order: 0x00000001
+run 2, registered 4 3 2 1: START order: 0x00004321
+run 2, registered 4 3 2 1: END order equals the registration order: 0x00000001
+run 2, registered 4 3 2 1: END order: 0x00004321
+run 2, registered 4 3 2 1: handler 1: START runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 1: END runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 2: START runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 2: END runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 3: START runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 3: END runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 4: START runs for the target: 0x00000001
+run 2, registered 4 3 2 1: handler 4: END runs for the target: 0x00000001
+run 2, registered 4 3 2 1: unregister handler 4: 0x00000000
+run 2, registered 4 3 2 1: unregister handler 3: 0x00000000
+run 2, registered 4 3 2 1: unregister handler 2: 0x00000000
+run 2, registered 4 3 2 1: unregister handler 1: 0x00000000
+DONE

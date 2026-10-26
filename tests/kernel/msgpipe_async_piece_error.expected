@@ -1,0 +1,13 @@
+DONT_WAIT FULL send of 0x2000 bytes to a 4 KiB pipe: 0x00000000
+its size: 0x0000DEAD
+the oversized send: wait for the error event: 0x00000000
+the oversized send: the event's bits: 0x00000010
+the oversized send: the low half of its user data: 0x8002000B
+the oversized send: the high half of its user data: 0xFFFFFFFF
+DONT_WAIT FULL vector send of 4 bytes and an empty piece: 0x00000000
+its size: 0x0000DEAD
+the vector send: wait for the error event: 0x00000000
+the vector send: the event's bits: 0x00000010
+the vector send: the low half of its user data: 0x80020006
+the vector send: the high half of its user data: 0xFFFFFFFF
+DONE

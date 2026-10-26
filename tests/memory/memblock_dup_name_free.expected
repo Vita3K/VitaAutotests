@@ -1,0 +1,14 @@
+a 64 KiB USER_RW block named dup: make it: 0x00000000
+a second 64 KiB USER_RW block named dup: make it: 0x80024E02
+a second 64 KiB USER_RW block named dup: the free sizes are unchanged: 0x00000000
+a 256 KiB USER_CDRAM_RW block named dup: make it: 0x80024E02
+a 256 KiB USER_CDRAM_RW block named dup: the free sizes are unchanged: 0x00000000
+a 64 KiB USER_RW block named by 31 characters: make it: 0x00000000
+a 64 KiB USER_RW block named by 32 characters: make it: 0x80024E02
+a 64 KiB USER_RW block named by 32 characters: the free sizes are unchanged: 0x00000000
+open dup with 0x10: 0x00000000
+open dup maps the first block: 0x00000001
+close it: 0x00000000
+free the 31 character block: 0x00000000
+free the dup block: 0x00000000
+DONE

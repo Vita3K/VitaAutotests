@@ -1,0 +1,47 @@
+timer: T waits before the notify: 0x00000001
+timer: the timer's waiting threads before the notify: 0x00000001
+timer: the notify: 0x00000000
+timer: T's wait type when it runs its callback: 0x00000000
+timer: T's wait has the callback bit when it runs its callback: 0x00000000
+timer: the timer's waiting threads when T runs its callback: 0x00000000
+timer: runs of the callback once T waits again: 0x00000001
+timer: T is waiting after T waits again: 0x00000001
+timer: T's wait type after T waits again: 0x00010000
+timer: T's wait has the callback bit after T waits again: 0x00000001
+timer: T's wait UID is the timer after T waits again: 0x00000001
+timer: the timer's waiting threads after T waits again: 0x00000001
+timer: the call that ends T's wait: 0x00000000
+timer: T's wait result: 0x00000000
+timer: T's time left is above 1 s when its wait returned: 0x00000001
+delay with callbacks: T waits before the notify: 0x00000001
+delay with callbacks: the notify: 0x00000000
+delay with callbacks: T's wait type when it runs its callback: 0x00000000
+delay with callbacks: T's wait has the callback bit when it runs its callback: 0x00000000
+delay with callbacks: runs of the callback once T waits again: 0x00000001
+delay with callbacks: T is waiting after T waits again: 0x00000001
+delay with callbacks: T's wait type after T waits again: 0x00000001
+delay with callbacks: T's wait has the callback bit after T waits again: 0x00000001
+delay with callbacks: T's wait result: 0x00000000
+thread signal wait: T waits before the notify: 0x00000001
+thread signal wait: the notify: 0x00000000
+thread signal wait: T's wait type when it runs its callback: 0x00000000
+thread signal wait: T's wait has the callback bit when it runs its callback: 0x00000000
+thread signal wait: runs of the callback once T waits again: 0x00000001
+thread signal wait: T is waiting after T waits again: 0x00000001
+thread signal wait: T's wait type after T waits again: 0x00000004
+thread signal wait: T's wait has the callback bit after T waits again: 0x00000001
+thread signal wait: the call that ends T's wait: 0x00000000
+thread signal wait: T's wait result: 0x00000000
+thread signal wait: T's time left is above 1 s when its wait returned: 0x00000001
+thread end wait: T waits before the notify: 0x00000001
+thread end wait: the notify: 0x00000000
+thread end wait: T's wait type when it runs its callback: 0x00000000
+thread end wait: T's wait has the callback bit when it runs its callback: 0x00000000
+thread end wait: runs of the callback once T waits again: 0x00000001
+thread end wait: T is waiting after T waits again: 0x00000001
+thread end wait: T's wait type after T waits again: 0x00000002
+thread end wait: T's wait has the callback bit after T waits again: 0x00000001
+thread end wait: the call that ends T's wait: 0x00000000
+thread end wait: T's wait result: 0x00000000
+thread end wait: T's time left is above 1 s when its wait returned: 0x00000001
+DONE

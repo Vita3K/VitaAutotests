@@ -1,0 +1,125 @@
+ready behind the gate: info before the calls: 0x00000000
+ready behind the gate: the status before the calls: 0x00000002
+ready behind the gate: the exit status before the calls: 0x80028028
+ready behind the gate: start it: 0x80028028
+ready behind the gate: the exit status call: 0x80028028
+ready behind the gate: the status the exit status call wrote: 0x0000DEAD
+ready behind the gate: wait for its end: 0x80028005
+ready behind the gate: the status the wait wrote: 0x0000DEAD
+ready behind the gate: change its priority: 0x00000000
+ready behind the gate: info: 0x00000000
+ready behind the gate: its status: 0x00000002
+ready behind the gate: its exit status: 0x80028028
+ready behind the gate: delete it: 0x80028028
+ready behind the gate: it ran before the gate lifted: 0x00000000
+ready behind the gate: wait for its end after the calls: 0x00000000
+ready behind the gate: its exit status after the end: 0x00000101
+ready behind the gate: delete it after the end: 0x00000000
+running on core 0: info before the calls: 0x00000000
+running on core 0: the status before the calls: 0x00000001
+running on core 0: the exit status before the calls: 0x80028028
+running on core 0: start it: 0x80028028
+running on core 0: the exit status call: 0x80028028
+running on core 0: the status the exit status call wrote: 0x0000DEAD
+running on core 0: wait for its end: 0x80028005
+running on core 0: the status the wait wrote: 0x0000DEAD
+running on core 0: change its priority: 0x00000000
+running on core 0: info: 0x00000000
+running on core 0: its status: 0x00000001
+running on core 0: its exit status: 0x80028028
+running on core 0: delete it: 0x80028028
+running on core 0: wait for its end after the calls: 0x00000000
+running on core 0: its exit status after the end: 0x00000102
+running on core 0: delete it after the end: 0x00000000
+delaying for 3 s: info before the calls: 0x00000000
+delaying for 3 s: the status before the calls: 0x00000008
+delaying for 3 s: the exit status before the calls: 0x80028028
+delaying for 3 s: start it: 0x80028028
+delaying for 3 s: the exit status call: 0x80028028
+delaying for 3 s: the status the exit status call wrote: 0x0000DEAD
+delaying for 3 s: wait for its end: 0x80028005
+delaying for 3 s: the status the wait wrote: 0x0000DEAD
+delaying for 3 s: change its priority: 0x00000000
+delaying for 3 s: info: 0x00000000
+delaying for 3 s: its status: 0x00000008
+delaying for 3 s: its exit status: 0x80028028
+delaying for 3 s: delete it: 0x80028028
+delaying for 3 s: wait for its end after the calls: 0x00000000
+delaying for 3 s: its exit status after the end: 0x00000103
+delaying for 3 s: delete it after the end: 0x00000000
+suspended for a VM while running: suspend it: 0x00000001
+suspended for a VM while running: info before the calls: 0x00000000
+suspended for a VM while running: the status before the calls: 0x00000100
+suspended for a VM while running: the exit status before the calls: 0x80028028
+suspended for a VM while running: start it: 0x80028028
+suspended for a VM while running: the exit status call: 0x80028028
+suspended for a VM while running: the status the exit status call wrote: 0x0000DEAD
+suspended for a VM while running: wait for its end: 0x80028005
+suspended for a VM while running: the status the wait wrote: 0x0000DEAD
+suspended for a VM while running: change its priority: 0x00000000
+suspended for a VM while running: info: 0x00000000
+suspended for a VM while running: its status: 0x00000100
+suspended for a VM while running: its exit status: 0x80028028
+suspended for a VM while running: delete it: 0x80028028
+suspended for a VM while running: resume it: 0x00000000
+suspended for a VM while running: wait for its end after the calls: 0x00000000
+suspended for a VM while running: its exit status after the end: 0x00000104
+suspended for a VM while running: delete it after the end: 0x00000000
+in its START handler: register the handler: 0x00000000
+in its START handler: its entry ran: 0x00000000
+in its START handler: info before the calls: 0x00000000
+in its START handler: the status before the calls: 0x00000001
+in its START handler: the exit status before the calls: 0x80028028
+in its START handler: start it: 0x80027101
+in its START handler: the exit status call: 0x80028028
+in its START handler: the status the exit status call wrote: 0x0000DEAD
+in its START handler: wait for its end: 0x80028005
+in its START handler: the status the wait wrote: 0x0000DEAD
+in its START handler: change its priority: 0x00000000
+in its START handler: info: 0x00000000
+in its START handler: its status: 0x00000001
+in its START handler: its exit status: 0x80028028
+in its START handler: delete it: 0x80028028
+in its START handler: wait for its end after the calls: 0x00000000
+in its START handler: its exit status after the end: 0x00000105
+in its START handler: unregister the handler: 0x00000000
+in its START handler: delete it after the end: 0x00000000
+in its END handler: register the handler: 0x00000000
+in its END handler: info before the calls: 0x00000000
+in its END handler: the status before the calls: 0x00000001
+in its END handler: the exit status before the calls: 0x80028028
+in its END handler: start it: 0x80027101
+in its END handler: the exit status call: 0x80028028
+in its END handler: the status the exit status call wrote: 0x0000DEAD
+in its END handler: wait for its end: 0x80028005
+in its END handler: the status the wait wrote: 0x0000DEAD
+in its END handler: change its priority: 0x00000000
+in its END handler: info: 0x00000000
+in its END handler: its status: 0x00000001
+in its END handler: its exit status: 0x80028028
+in its END handler: delete it: 0x80028028
+in its END handler: wait for its end after the calls: 0x00000000
+in its END handler: its exit status after the end: 0x00000106
+in its END handler: unregister the handler: 0x00000000
+in its END handler: delete it after the end: 0x00000000
+started again behind the gate: the wait for the first run's end: 0x00000000
+started again behind the gate: the first run's exit status: 0x00000111
+started again behind the gate: info before the calls: 0x00000000
+started again behind the gate: the status before the calls: 0x00000002
+started again behind the gate: the exit status before the calls: 0x80028028
+started again behind the gate: the exit status before the calls equals 0x111: 0x00000000
+started again behind the gate: start it: 0x80028028
+started again behind the gate: the exit status call: 0x80028028
+started again behind the gate: the status the exit status call wrote: 0x0000DEAD
+started again behind the gate: wait for its end: 0x80028005
+started again behind the gate: the status the wait wrote: 0x0000DEAD
+started again behind the gate: change its priority: 0x00000000
+started again behind the gate: info: 0x00000000
+started again behind the gate: its status: 0x00000002
+started again behind the gate: its exit status: 0x80028028
+started again behind the gate: delete it: 0x80028028
+started again behind the gate: it ran before the gate lifted: 0x00000000
+started again behind the gate: wait for its end after the calls: 0x00000000
+started again behind the gate: its exit status after the end: 0x00000222
+started again behind the gate: delete it after the end: 0x00000000
+DONE

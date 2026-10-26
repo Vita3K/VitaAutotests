@@ -1,0 +1,185 @@
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: the first call: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: the second call: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: steps recorded: 0x00000003
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: step 0: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: step 1: 0x00000002
+sceKernelLockMutex and sceKernelUnlockMutex at 0x70: step 2: 0x00000001
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: the first call: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: the second call: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: steps recorded: 0x00000003
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: step 0: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: step 1: 0x00000002
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0x70: step 2: 0x00000001
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: the first call: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: the second call: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: steps recorded: 0x00000003
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: step 0: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: step 1: 0x00000002
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0x70: step 2: 0x00000001
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: the first call: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: the second call: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: steps recorded: 0x00000003
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: step 0: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: step 1: 0x00000002
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0x70: step 2: 0x00000001
+sceKernelSignalSema with no waiter at 0x70: the call: 0x00000000
+sceKernelSignalSema with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelSignalSema with no waiter at 0x70: step 0: 0x00000000
+sceKernelSignalSema with no waiter at 0x70: step 1: 0x00000002
+sceKernelSignalSema with no waiter at 0x70: step 2: 0x00000001
+sceKernelSetEventFlag with no waiter at 0x70: the call: 0x00000000
+sceKernelSetEventFlag with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelSetEventFlag with no waiter at 0x70: step 0: 0x00000000
+sceKernelSetEventFlag with no waiter at 0x70: step 1: 0x00000002
+sceKernelSetEventFlag with no waiter at 0x70: step 2: 0x00000001
+sceKernelSetEvent with no waiter at 0x70: the call: 0x00000000
+sceKernelSetEvent with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelSetEvent with no waiter at 0x70: step 0: 0x00000000
+sceKernelSetEvent with no waiter at 0x70: step 1: 0x00000002
+sceKernelSetEvent with no waiter at 0x70: step 2: 0x00000001
+sceKernelSignalCond with no waiter at 0x70: the call: 0x00000000
+sceKernelSignalCond with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelSignalCond with no waiter at 0x70: step 0: 0x00000000
+sceKernelSignalCond with no waiter at 0x70: step 1: 0x00000002
+sceKernelSignalCond with no waiter at 0x70: step 2: 0x00000001
+sceKernelSignalLwCond with no waiter at 0x70: the call: 0x00000000
+sceKernelSignalLwCond with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelSignalLwCond with no waiter at 0x70: step 0: 0x00000000
+sceKernelSignalLwCond with no waiter at 0x70: step 1: 0x00000002
+sceKernelSignalLwCond with no waiter at 0x70: step 2: 0x00000001
+sceKernelStartTimer and sceKernelStopTimer at 0x70: the first call: 0x00000000
+sceKernelStartTimer and sceKernelStopTimer at 0x70: the second call: 0x00000001
+sceKernelStartTimer and sceKernelStopTimer at 0x70: steps recorded: 0x00000003
+sceKernelStartTimer and sceKernelStopTimer at 0x70: step 0: 0x00000000
+sceKernelStartTimer and sceKernelStopTimer at 0x70: step 1: 0x00000002
+sceKernelStartTimer and sceKernelStopTimer at 0x70: step 2: 0x00000001
+sceKernelCancelSema with no waiter at 0x70: the call: 0x00000000
+sceKernelCancelSema with no waiter at 0x70: steps recorded: 0x00000003
+sceKernelCancelSema with no waiter at 0x70: step 0: 0x00000000
+sceKernelCancelSema with no waiter at 0x70: step 1: 0x00000002
+sceKernelCancelSema with no waiter at 0x70: step 2: 0x00000001
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: the first call: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: the second call: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: steps recorded: 0x00000003
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: step 0: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: step 1: 0x00000002
+sceKernelCreateSema and sceKernelDeleteSema at 0x70: step 2: 0x00000001
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: the first call: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: the second call: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: steps recorded: 0x00000003
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: step 0: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: step 1: 0x00000002
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0x70: step 2: 0x00000001
+sceKernelStartThread of a dormant lower priority thread at 0x70: the call: 0x00000000
+sceKernelStartThread of a dormant lower priority thread at 0x70: steps recorded: 0x00000003
+sceKernelStartThread of a dormant lower priority thread at 0x70: step 0: 0x00000000
+sceKernelStartThread of a dormant lower priority thread at 0x70: step 1: 0x00000002
+sceKernelStartThread of a dormant lower priority thread at 0x70: step 2: 0x00000001
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0x70: the call: 0x00000000
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0x70: steps recorded: 0x00000003
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0x70: step 0: 0x00000000
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0x70: step 1: 0x00000002
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0x70: step 2: 0x00000001
+sceKernelGetThreadInfo of the caller at 0x70: the call: 0x00000000
+sceKernelGetThreadInfo of the caller at 0x70: steps recorded: 0x00000003
+sceKernelGetThreadInfo of the caller at 0x70: step 0: 0x00000000
+sceKernelGetThreadInfo of the caller at 0x70: step 1: 0x00000002
+sceKernelGetThreadInfo of the caller at 0x70: step 2: 0x00000001
+sceKernelCheckCallback with nothing pending at 0x70: the call: 0x00000000
+sceKernelCheckCallback with nothing pending at 0x70: steps recorded: 0x00000003
+sceKernelCheckCallback with nothing pending at 0x70: step 0: 0x00000000
+sceKernelCheckCallback with nothing pending at 0x70: step 1: 0x00000002
+sceKernelCheckCallback with nothing pending at 0x70: step 2: 0x00000001
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: the first call: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: the second call: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: steps recorded: 0x00000003
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: step 0: 0x00000000
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: step 1: 0x00000002
+sceKernelLockMutex and sceKernelUnlockMutex at 0xA0: step 2: 0x00000001
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: the first call: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: the second call: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: steps recorded: 0x00000003
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: step 0: 0x00000000
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: step 1: 0x00000002
+sceKernelLockLwMutex and sceKernelUnlockLwMutex at 0xA0: step 2: 0x00000001
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: the first call: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: the second call: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: steps recorded: 0x00000003
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: step 0: 0x00000000
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: step 1: 0x00000002
+sceKernelLockReadRWLock and sceKernelUnlockReadRWLock at 0xA0: step 2: 0x00000001
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: the first call: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: the second call: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: steps recorded: 0x00000003
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: step 0: 0x00000000
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: step 1: 0x00000002
+sceKernelLockWriteRWLock and sceKernelUnlockWriteRWLock at 0xA0: step 2: 0x00000001
+sceKernelSignalSema with no waiter at 0xA0: the call: 0x00000000
+sceKernelSignalSema with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelSignalSema with no waiter at 0xA0: step 0: 0x00000000
+sceKernelSignalSema with no waiter at 0xA0: step 1: 0x00000002
+sceKernelSignalSema with no waiter at 0xA0: step 2: 0x00000001
+sceKernelSetEventFlag with no waiter at 0xA0: the call: 0x00000000
+sceKernelSetEventFlag with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelSetEventFlag with no waiter at 0xA0: step 0: 0x00000000
+sceKernelSetEventFlag with no waiter at 0xA0: step 1: 0x00000002
+sceKernelSetEventFlag with no waiter at 0xA0: step 2: 0x00000001
+sceKernelSetEvent with no waiter at 0xA0: the call: 0x00000000
+sceKernelSetEvent with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelSetEvent with no waiter at 0xA0: step 0: 0x00000000
+sceKernelSetEvent with no waiter at 0xA0: step 1: 0x00000002
+sceKernelSetEvent with no waiter at 0xA0: step 2: 0x00000001
+sceKernelSignalCond with no waiter at 0xA0: the call: 0x00000000
+sceKernelSignalCond with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelSignalCond with no waiter at 0xA0: step 0: 0x00000000
+sceKernelSignalCond with no waiter at 0xA0: step 1: 0x00000002
+sceKernelSignalCond with no waiter at 0xA0: step 2: 0x00000001
+sceKernelSignalLwCond with no waiter at 0xA0: the call: 0x00000000
+sceKernelSignalLwCond with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelSignalLwCond with no waiter at 0xA0: step 0: 0x00000000
+sceKernelSignalLwCond with no waiter at 0xA0: step 1: 0x00000002
+sceKernelSignalLwCond with no waiter at 0xA0: step 2: 0x00000001
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: the first call: 0x00000000
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: the second call: 0x00000001
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: steps recorded: 0x00000003
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: step 0: 0x00000000
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: step 1: 0x00000002
+sceKernelStartTimer and sceKernelStopTimer at 0xA0: step 2: 0x00000001
+sceKernelCancelSema with no waiter at 0xA0: the call: 0x00000000
+sceKernelCancelSema with no waiter at 0xA0: steps recorded: 0x00000003
+sceKernelCancelSema with no waiter at 0xA0: step 0: 0x00000000
+sceKernelCancelSema with no waiter at 0xA0: step 1: 0x00000002
+sceKernelCancelSema with no waiter at 0xA0: step 2: 0x00000001
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: the first call: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: the second call: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: steps recorded: 0x00000003
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: step 0: 0x00000000
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: step 1: 0x00000002
+sceKernelCreateSema and sceKernelDeleteSema at 0xA0: step 2: 0x00000001
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: the first call: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: the second call: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: steps recorded: 0x00000003
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: step 0: 0x00000000
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: step 1: 0x00000002
+sceKernelCreateThread and sceKernelDeleteThread of a dormant thread at 0xA0: step 2: 0x00000001
+sceKernelStartThread of a dormant lower priority thread at 0xA0: the call: 0x00000000
+sceKernelStartThread of a dormant lower priority thread at 0xA0: steps recorded: 0x00000003
+sceKernelStartThread of a dormant lower priority thread at 0xA0: step 0: 0x00000000
+sceKernelStartThread of a dormant lower priority thread at 0xA0: step 1: 0x00000002
+sceKernelStartThread of a dormant lower priority thread at 0xA0: step 2: 0x00000001
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0xA0: the call: 0x00000000
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0xA0: steps recorded: 0x00000003
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0xA0: step 0: 0x00000000
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0xA0: step 1: 0x00000002
+sceKernelChangeThreadPriority of a dormant lower priority thread at 0xA0: step 2: 0x00000001
+sceKernelGetThreadInfo of the caller at 0xA0: the call: 0x00000000
+sceKernelGetThreadInfo of the caller at 0xA0: steps recorded: 0x00000003
+sceKernelGetThreadInfo of the caller at 0xA0: step 0: 0x00000000
+sceKernelGetThreadInfo of the caller at 0xA0: step 1: 0x00000002
+sceKernelGetThreadInfo of the caller at 0xA0: step 2: 0x00000001
+sceKernelCheckCallback with nothing pending at 0xA0: the call: 0x00000000
+sceKernelCheckCallback with nothing pending at 0xA0: steps recorded: 0x00000003
+sceKernelCheckCallback with nothing pending at 0xA0: step 0: 0x00000000
+sceKernelCheckCallback with nothing pending at 0xA0: step 1: 0x00000002
+sceKernelCheckCallback with nothing pending at 0xA0: step 2: 0x00000001
+DONE

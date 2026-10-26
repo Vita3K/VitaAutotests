@@ -1,0 +1,21 @@
+allocate the PHYCONT block: 0x00000000
+the original: KiB taken from main: 0x00000400
+the original: KiB taken from CDRAM: 0x00000000
+the original: KiB taken from physically contiguous memory: 0x00000000
+open with 0x10: the result: 0x00000000
+open with 0x10: the free sizes are unchanged: 0x00000001
+open with 0x10: its type is the original's: 0x00000000
+open with 0x10: its memory type is the original's: 0x00000001
+open with 0x10: its access is the original's: 0x00000000
+open with 0x10: its mapped size is the original's: 0x00000001
+open with 0x10: it reads the original's word: 0x00000001
+open with 0x30: the result: 0x00000000
+open with 0x30: the free sizes are unchanged: 0x00000001
+open with 0x30: its type is the original's: 0x00000001
+open with 0x30: its memory type is the original's: 0x00000001
+open with 0x30: its access is the original's: 0x00000001
+open with 0x30: its mapped size is the original's: 0x00000001
+open with 0x30: it reads the original's word: 0x00000001
+open with 0x30: it reads a write through the original: 0x00000001
+the free sizes are back after the free: 0x00000001
+DONE

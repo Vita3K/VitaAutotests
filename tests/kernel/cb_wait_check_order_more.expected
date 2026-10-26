@@ -1,0 +1,61 @@
+semaphore, count 0: the wait: 0x8002000F
+semaphore, count 0: runs of the callback when the wait returned: 0x00000000
+semaphore, count 0: the check's result: 0x00000001
+semaphore, count 0: runs of the callback after the check: 0x00000001
+semaphore, count above the maximum: the wait: 0x8002000F
+semaphore, count above the maximum: runs of the callback when the wait returned: 0x00000000
+semaphore, count above the maximum: the check's result: 0x00000001
+semaphore, count above the maximum: runs of the callback after the check: 0x00000001
+mutex, lock count 0: the wait: 0x8002000F
+mutex, lock count 0: runs of the callback when the wait returned: 0x00000000
+mutex, lock count 0: the check's result: 0x00000001
+mutex, lock count 0: runs of the callback after the check: 0x00000001
+mutex, lock count 2: the wait: 0x8002000F
+mutex, lock count 2: runs of the callback when the wait returned: 0x00000000
+mutex, lock count 2: the check's result: 0x00000001
+mutex, lock count 2: runs of the callback after the check: 0x00000001
+lightweight mutex, lock count 0: the wait: 0x8002000F
+lightweight mutex, lock count 0: runs of the callback when the wait returned: 0x00000000
+lightweight mutex, lock count 0: the check's result: 0x00000001
+lightweight mutex, lock count 0: runs of the callback after the check: 0x00000001
+lightweight mutex, lock count 2: the wait: 0x8002000F
+lightweight mutex, lock count 2: runs of the callback when the wait returned: 0x00000000
+lightweight mutex, lock count 2: the check's result: 0x00000001
+lightweight mutex, lock count 2: runs of the callback after the check: 0x00000001
+simple event, pattern 0x1: the wait: 0x80028005
+simple event, pattern 0x1: runs of the callback when the wait returned: 0x00000001
+simple event, pattern 0x1: the check's result: 0x00000000
+simple event, pattern 0x1: runs of the callback after the check: 0x00000001
+message pipe receive, mode 0x8: the wait: 0x80020010
+message pipe receive, mode 0x8: runs of the callback when the wait returned: 0x00000000
+message pipe receive, mode 0x8: the check's result: 0x00000001
+message pipe receive, mode 0x8: runs of the callback after the check: 0x00000001
+message pipe receive, size above the buffer: the wait: 0x8002000B
+message pipe receive, size above the buffer: runs of the callback when the wait returned: 0x00000001
+message pipe receive, size above the buffer: the check's result: 0x00000000
+message pipe receive, size above the buffer: runs of the callback after the check: 0x00000001
+message pipe send, mode 0x8: the wait: 0x80020010
+message pipe send, mode 0x8: runs of the callback when the wait returned: 0x00000000
+message pipe send, mode 0x8: the check's result: 0x00000001
+message pipe send, mode 0x8: runs of the callback after the check: 0x00000001
+message pipe send, size above the buffer: the wait: 0x8002000B
+message pipe send, size above the buffer: runs of the callback when the wait returned: 0x00000001
+message pipe send, size above the buffer: the check's result: 0x00000000
+message pipe send, size above the buffer: runs of the callback after the check: 0x00000001
+condition, mutex not held: the wait: 0x80028146
+condition, mutex not held: runs of the callback when the wait returned: 0x00000000
+condition, mutex not held: the check's result: 0x00000001
+condition, mutex not held: runs of the callback after the check: 0x00000001
+thread signal, first argument 2: the wait: 0x80028005
+thread signal, first argument 2: runs of the callback when the wait returned: 0x00000001
+thread signal, first argument 2: the check's result: 0x00000000
+thread signal, first argument 2: runs of the callback after the check: 0x00000001
+thread end, UID 0: the wait: 0x80028022
+thread end, UID 0: runs of the callback when the wait returned: 0x00000000
+thread end, UID 0: the check's result: 0x00000001
+thread end, UID 0: runs of the callback after the check: 0x00000001
+thread end, own UID: the wait: 0x80028022
+thread end, own UID: runs of the callback when the wait returned: 0x00000000
+thread end, own UID: the check's result: 0x00000001
+thread end, own UID: runs of the callback after the check: 0x00000001
+DONE

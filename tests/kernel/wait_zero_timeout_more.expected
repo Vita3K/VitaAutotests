@@ -1,0 +1,15 @@
+timer, event not due: the wait: 0x80028005
+timer, event not due: the time it wrote back: 0x00000000
+timer with callbacks, event not due: the wait: 0x80028005
+timer with callbacks, event not due: the time it wrote back: 0x00000000
+lightweight condition variable: the wait: 0x80028005
+lightweight condition variable: the time it wrote back: 0x00000000
+lightweight condition variable with callbacks: the wait: 0x80028005
+lightweight condition variable with callbacks: the time it wrote back: 0x00000000
+thread signal, none pending: the wait: 0x80028005
+thread signal, none pending: the time it wrote back: 0x00000000
+thread signal with callbacks, none pending: the wait: 0x80028005
+thread signal with callbacks, none pending: the time it wrote back: 0x00000000
+delay of 0 microseconds: the wait: 0x80020005
+delay of 0 microseconds with callbacks: the wait: 0x80020005
+DONE

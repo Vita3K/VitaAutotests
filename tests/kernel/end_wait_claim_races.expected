@@ -1,0 +1,14 @@
+timeout then end: W's status once the timeout passed: 0x00000002
+timeout then end: W's wait type once the timeout passed: 0x00000000
+timeout then end: whether W's wait UID is -1 once the timeout passed: 0x00000001
+timeout then end: W's result: 0x80028005
+timeout then end: whether W's status is still 0xDEAD: 0x00000001
+timeout then end: whether W's time left is 0: 0x00000001
+end then delay: W's result: 0x00000000
+end then delay: the status W got: 0x0000005A
+end then delay: whether W's time left is above 1 s: 0x00000001
+callback then restart: whether W waits again for T: 0x00000001
+callback then restart: W's result: 0x00000000
+callback then restart: the status W got: 0x00000222
+callback then restart: whether W's time left is above 1 s: 0x00000001
+DONE

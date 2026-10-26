@@ -1,0 +1,82 @@
+heavy recursive mutex, the callback locks it once: T waits on the condition again after the callback: 0x00000001
+heavy recursive mutex, the callback locks it once: the callback's lock: 0x00000000
+heavy recursive mutex, the callback locks it once: the signal: 0x00000000
+heavy recursive mutex, the callback locks it once: T's wait: 0x00000000
+heavy recursive mutex, the callback locks it once: runs of the callback when the wait returned: 0x00000001
+heavy recursive mutex, the callback locks it once: T owns the mutex after the wait: 0x00000001
+heavy recursive mutex, the callback locks it once: the count after the wait: 0x00000002
+heavy recursive mutex, the callback locks it once: T's unlock 1: 0x00000000
+heavy recursive mutex, the callback locks it once: T's unlock 2: 0x00000000
+heavy recursive mutex, the callback locks it once: T's unlock 3: 0x80028146
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: T waits on the condition again after the callback: 0x00000001
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: the callback's lock: 0x00000000
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: the signal: 0x00000000
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: T's wait: 0x80028143
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: runs of the callback when the wait returned: 0x00000001
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: T owns the mutex after the wait: 0x00000001
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: the count after the wait: 0x7FFFFFFF
+heavy recursive mutex, the callback locks 0x7FFFFFFF times: T's unlock of the whole count: 0x00000000
+lightweight recursive mutex, the callback locks it once: T waits on the condition again after the callback: 0x00000001
+lightweight recursive mutex, the callback locks it once: the callback's lock: 0x00000000
+lightweight recursive mutex, the callback locks it once: the signal: 0x00000000
+lightweight recursive mutex, the callback locks it once: T's wait: 0x00000000
+lightweight recursive mutex, the callback locks it once: runs of the callback when the wait returned: 0x00000001
+lightweight recursive mutex, the callback locks it once: T owns the mutex after the wait: 0x00000001
+lightweight recursive mutex, the callback locks it once: the count after the wait: 0x00000002
+lightweight recursive mutex, the callback locks it once: T's unlock 1: 0x00000000
+lightweight recursive mutex, the callback locks it once: T's unlock 2: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: the callback finds the mutex without an owner: 0x00000001
+heavy, callback pending at the wait, the callback gives the lock back: the condition's waiters in the callback: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: T's wait type in the callback: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: the callback's try lock: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: the signal: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: T's wait: 0x00000000
+heavy, callback pending at the wait, the callback gives the lock back: T owns the mutex after the wait: 0x00000001
+heavy, callback pending at the wait, the callback gives the lock back: T's unlock: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: the callback finds the mutex without an owner: 0x00000001
+lightweight, callback pending at the wait, gives the lock back: the condition's waiters in the callback: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: T's wait type in the callback: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: the callback's try lock: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: the signal: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: T's wait: 0x00000000
+lightweight, callback pending at the wait, gives the lock back: T owns the mutex after the wait: 0x00000001
+lightweight, callback pending at the wait, gives the lock back: T's unlock: 0x00000000
+heavy, the signaler's callback is pending: the signal: 0x00000000
+heavy, the signaler's callback is pending: the signal to all: 0x00000000
+heavy, the signaler's callback is pending: the signal to the main thread: 0x80028022
+heavy, the signaler's callback is pending: the unlock: 0x00000000
+heavy, the signaler's callback is pending: runs of the callback before the check: 0x00000000
+heavy, the signaler's callback is pending: the check: 0x00000001
+heavy, the signaler's callback is pending: runs of the callback after the check: 0x00000001
+lightweight, the signaler's callback is pending: the signal: 0x00000000
+lightweight, the signaler's callback is pending: the signal to all: 0x00000000
+lightweight, the signaler's callback is pending: the signal to the main thread: 0x80028022
+lightweight, the signaler's callback is pending: the unlock: 0x00000000
+lightweight, the signaler's callback is pending: runs of the callback before the check: 0x00000000
+lightweight, the signaler's callback is pending: the check: 0x00000001
+lightweight, the signaler's callback is pending: runs of the callback after the check: 0x00000001
+lightweight mutex, the callback locks it: T waits on the condition again after the callback: 0x00000001
+lightweight mutex, the callback locks it: the callback's lock: 0x00000000
+lightweight mutex, the callback locks it: the signal: 0x00000000
+lightweight mutex, the callback locks it: T's wait: 0x80028182
+lightweight mutex, the callback locks it: runs of the callback when the wait returned: 0x00000001
+lightweight mutex, the callback locks it: T owns the mutex after the wait: 0x00000001
+lightweight mutex, the callback locks it: the count after the wait: 0x00000001
+lightweight mutex, the callback locks it: T's unlock 1: 0x00000000
+heavy, callback pending at the wait, the callback keeps the lock: the callback finds the mutex without an owner: 0x00000001
+heavy, callback pending at the wait, the callback keeps the lock: the condition's waiters in the callback: 0x00000000
+heavy, callback pending at the wait, the callback keeps the lock: T's wait type in the callback: 0x00000000
+heavy, callback pending at the wait, the callback keeps the lock: the callback's try lock: 0x00000000
+heavy, callback pending at the wait, the callback keeps the lock: the signal: 0x00000000
+heavy, callback pending at the wait, the callback keeps the lock: T's wait: 0x80028142
+heavy, callback pending at the wait, the callback keeps the lock: T owns the mutex after the wait: 0x00000001
+heavy, callback pending at the wait, the callback keeps the lock: T's unlock: 0x00000000
+lightweight, callback pending at the wait, keeps the lock: the callback finds the mutex without an owner: 0x00000001
+lightweight, callback pending at the wait, keeps the lock: the condition's waiters in the callback: 0x00000000
+lightweight, callback pending at the wait, keeps the lock: T's wait type in the callback: 0x00000000
+lightweight, callback pending at the wait, keeps the lock: the callback's try lock: 0x00000000
+lightweight, callback pending at the wait, keeps the lock: the signal: 0x00000000
+lightweight, callback pending at the wait, keeps the lock: T's wait: 0x80028182
+lightweight, callback pending at the wait, keeps the lock: T owns the mutex after the wait: 0x00000001
+lightweight, callback pending at the wait, keeps the lock: T's unlock: 0x00000000
+DONE

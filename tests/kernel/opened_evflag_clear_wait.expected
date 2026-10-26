@@ -1,0 +1,13 @@
+create and open the flag: 0x00000000
+set 0x3 through the creating UID: 0x00000000
+OR wait for 0x1 with WAITCLEAR through the opened UID: 0x00000000
+its out bits: 0x00000003
+poll for 0x3 OR through the creating UID after it: 0x800280E3
+set 0x6 through the opened UID: 0x00000000
+the WAITCLEAR_PAT waiter's result: 0x00000000
+the WAITCLEAR_PAT waiter's out bits: 0x00000006
+WAITCLEAR and WAITCLEAR_PAT together for 0x1 through the opened UID: 0x80020010
+its out bits: 0x00000000
+the pattern after, through the creating UID: 0x00000004
+the pattern through the opened UID is the same: 0x00000001
+DONE

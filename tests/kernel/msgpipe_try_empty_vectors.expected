@@ -1,0 +1,11 @@
+try send of two empty pieces ASAP: 0x80028222
+try send of two empty pieces ASAP, its size: 0x00000000
+try send of two empty pieces FULL: 0x00000000
+try send of two empty pieces FULL, its size: 0x00000000
+try receive of two empty pieces ASAP: 0x80028223
+try receive of two empty pieces ASAP, its size: 0x00000000
+try receive of two empty pieces FULL: 0x00000000
+try receive of two empty pieces FULL, its size: 0x00000000
+try send of an empty piece with a NULL buffer FULL: 0x80020006
+try send of an empty piece with a NULL buffer FULL, its size: 0x0000DEAD
+DONE

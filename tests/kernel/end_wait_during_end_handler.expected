@@ -1,0 +1,18 @@
+register the END handler: 0x00000000
+W1's wait type while T is in its handler: 0x00000002
+W1's wait UID is T: 0x00000001
+T's status in its handler: 0x00000001
+T's exit status in its handler: 0x80028028
+the exit status written: 0x0000DEAD
+W3's wait for T's end: 0x80028005
+W2 still waits for T's end: 0x00000001
+a wait for T's end by main with timeout 0: 0x80028005
+W1's result after T returned: 0x00000000
+W1's status: 0x00000066
+W2's result: 0x00000000
+W2's status: 0x00000066
+the handler's spin ended by the flag: 0x00000001
+a new wait for T's end: 0x00000000
+the status of the new wait: 0x00000066
+unregister the handler: 0x00000000
+DONE

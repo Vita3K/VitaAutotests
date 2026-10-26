@@ -1,0 +1,95 @@
+event flag: T waits when the main thread wakes it: 0x00000001
+event flag: the wake: 0x00000000
+event flag: T's status after the wake: 0x00000002
+event flag: the notify: 0x00000000
+event flag: T's status after the notify: 0x00000002
+event flag: the wait's result: 0x00000000
+event flag: runs of the callback when the wait returned: 0x00000001
+event flag: the check's result: 0x00000000
+event flag: runs of the callback after the check: 0x00000001
+mutex: T waits when the main thread wakes it: 0x00000001
+mutex: the wake: 0x00000000
+mutex: T's status after the wake: 0x00000002
+mutex: the notify: 0x00000000
+mutex: T's status after the notify: 0x00000002
+mutex: the wait's result: 0x00000000
+mutex: runs of the callback when the wait returned: 0x00000001
+mutex: the check's result: 0x00000000
+mutex: runs of the callback after the check: 0x00000001
+mutex: T's unlock: 0x00000000
+lightweight mutex: T waits when the main thread wakes it: 0x00000001
+lightweight mutex: the wake: 0x00000000
+lightweight mutex: T's status after the wake: 0x00000002
+lightweight mutex: the notify: 0x00000000
+lightweight mutex: T's status after the notify: 0x00000002
+lightweight mutex: the wait's result: 0x00000000
+lightweight mutex: runs of the callback when the wait returned: 0x00000001
+lightweight mutex: the check's result: 0x00000000
+lightweight mutex: runs of the callback after the check: 0x00000001
+lightweight mutex: T's unlock: 0x00000000
+read lock: T waits when the main thread wakes it: 0x00000001
+read lock: the wake: 0x00000000
+read lock: T's status after the wake: 0x00000002
+read lock: the notify: 0x00000000
+read lock: T's status after the notify: 0x00000002
+read lock: the wait's result: 0x00000000
+read lock: runs of the callback when the wait returned: 0x00000001
+read lock: the check's result: 0x00000000
+read lock: runs of the callback after the check: 0x00000001
+read lock: T's unlock: 0x00000000
+write lock: T waits when the main thread wakes it: 0x00000001
+write lock: the wake: 0x00000000
+write lock: T's status after the wake: 0x00000002
+write lock: the notify: 0x00000000
+write lock: T's status after the notify: 0x00000002
+write lock: the wait's result: 0x00000000
+write lock: runs of the callback when the wait returned: 0x00000001
+write lock: the check's result: 0x00000000
+write lock: runs of the callback after the check: 0x00000001
+write lock: T's unlock: 0x00000000
+simple event: T waits when the main thread wakes it: 0x00000001
+simple event: the wake: 0x00000000
+simple event: T's status after the wake: 0x00000002
+simple event: the notify: 0x00000000
+simple event: T's status after the notify: 0x00000002
+simple event: the wait's result: 0x00000000
+simple event: runs of the callback when the wait returned: 0x00000001
+simple event: the check's result: 0x00000000
+simple event: runs of the callback after the check: 0x00000001
+timer: T waits when the main thread wakes it: 0x00000001
+timer: the wake: 0x00000000
+timer: T's status after the wake: 0x00000002
+timer: the notify: 0x00000000
+timer: T's status after the notify: 0x00000002
+timer: the wait's result: 0x00000000
+timer: runs of the callback when the wait returned: 0x00000001
+timer: the check's result: 0x00000000
+timer: runs of the callback after the check: 0x00000001
+message pipe receive: T waits when the main thread wakes it: 0x00000001
+message pipe receive: the wake: 0x00000000
+message pipe receive: T's status after the wake: 0x00000002
+message pipe receive: the notify: 0x00000000
+message pipe receive: T's status after the notify: 0x00000002
+message pipe receive: the wait's result: 0x00000000
+message pipe receive: runs of the callback when the wait returned: 0x00000001
+message pipe receive: the check's result: 0x00000000
+message pipe receive: runs of the callback after the check: 0x00000001
+message pipe send: T waits when the main thread wakes it: 0x00000001
+message pipe send: the wake: 0x00000000
+message pipe send: T's status after the wake: 0x00000002
+message pipe send: the notify: 0x00000000
+message pipe send: T's status after the notify: 0x00000002
+message pipe send: the wait's result: 0x00000000
+message pipe send: runs of the callback when the wait returned: 0x00000001
+message pipe send: the check's result: 0x00000000
+message pipe send: runs of the callback after the check: 0x00000001
+delay: T waits when the main thread wakes it: 0x00000001
+delay: the wake: 0x00000001
+delay: T's status after the wake: 0x00000002
+delay: the notify: 0x00000000
+delay: T's status after the notify: 0x00000002
+delay: the wait's result: 0x00000000
+delay: runs of the callback when the wait returned: 0x00000000
+delay: the check's result: 0x00000001
+delay: runs of the callback after the check: 0x00000001
+DONE

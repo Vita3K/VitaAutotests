@@ -1,0 +1,17 @@
+semaphore: create with a 32 character name and no openable attribute: 0x00000000
+semaphore: its info name is the first 31 characters: 0x00000001
+event flag: create with a 32 character name and no openable attribute: 0x00000000
+event flag: its info name is the first 31 characters: 0x00000001
+mutex: create with a 32 character name and no openable attribute: 0x00000000
+mutex: its info name is the first 31 characters: 0x00000001
+condition variable: create with a 32 character name and no openable attribute: 0x00000000
+condition variable: its info name is the first 31 characters: 0x00000001
+reader/writer lock: create with a 32 character name and no openable attribute: 0x00000000
+reader/writer lock: its info name is the first 31 characters: 0x00000001
+message pipe: create with a 32 character name and no openable attribute: 0x00000000
+message pipe: its info name is the first 31 characters: 0x00000001
+simple event: create with a 32 character name and no openable attribute: 0x00000000
+simple event: its info name is the first 31 characters: 0x00000001
+timer: create with a 32 character name and no openable attribute: 0x00000000
+timer: its info name is the first 31 characters: 0x00000001
+DONE

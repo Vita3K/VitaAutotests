@@ -1,0 +1,20 @@
+timer, pattern 0 with a timeout: the wait: 0x80028005
+timer, pattern 0 with a timeout: it took at least 300 ms: 0x00000001
+timer, pattern 0 with a timeout: the result pattern: 0x00000000
+timer, pattern 0 with a timeout: the user data, low word: 0x00000000
+timer, pattern 0 with a timeout: the user data, high word: 0x00000000
+timer, pattern 0 and a cancel: the waiter waits for the timer: 0x00000001
+timer, pattern 0 and a cancel: the cancel: 0x00000000
+timer, pattern 0 and a cancel: the count the cancel wrote: 0x00000001
+timer, pattern 0 and a cancel: the wait: 0x80028007
+timer, pattern 0 and a cancel: the result pattern: 0x00000010
+timer, pattern 0 and a cancel: the user data, low word: 0x00000000
+timer, pattern 0 and a cancel: the user data, high word: 0x00000000
+callback, pattern 0: the notify: 0x00000000
+callback, pattern 0: runs of the callback during the wait: 0x00000001
+callback, pattern 0: the wait: 0x80028005
+callback, pattern 0: it took at least 400 ms: 0x00000001
+callback, pattern 0: the result pattern: 0x00000000
+callback, pattern 0: the user data, low word: 0x00000000
+callback, pattern 0: the user data, high word: 0x00000000
+DONE

@@ -1,0 +1,22 @@
+core 0: a spinner alone, its thread switch count grew by less than 10: 0x00000001
+core 0: a spinner alone, its idle clock stayed under half the window: 0x00000001
+core 0: idle, its idle clock grew by at least half the window: 0x00000001
+core 0: 20 delay wakes, its comes-out-of-idle count grew by at least 10: 0x00000001
+core 0: 20 delay wakes, its thread switch count grew by at least 10: 0x00000001
+core 0: two spinners, its thread switch count grew by less than 10: 0x00000001
+core 0: two spinners, its idle clock stayed under half the window: 0x00000001
+core 1: a spinner alone, its thread switch count grew by less than 10: 0x00000001
+core 1: a spinner alone, its idle clock stayed under half the window: 0x00000001
+core 1: idle, its idle clock grew by at least half the window: 0x00000001
+core 1: 20 delay wakes, its comes-out-of-idle count grew by at least 10: 0x00000001
+core 1: 20 delay wakes, its thread switch count grew by at least 10: 0x00000001
+core 1: two spinners, its thread switch count grew by less than 10: 0x00000001
+core 1: two spinners, its idle clock stayed under half the window: 0x00000001
+core 2: a spinner alone, its thread switch count grew by less than 10: 0x00000001
+core 2: a spinner alone, its idle clock stayed under half the window: 0x00000001
+core 2: idle, its idle clock grew by at least half the window: 0x00000001
+core 2: 20 delay wakes, its comes-out-of-idle count grew by at least 10: 0x00000001
+core 2: 20 delay wakes, its thread switch count grew by at least 10: 0x00000001
+core 2: two spinners, its thread switch count grew by less than 10: 0x00000001
+core 2: two spinners, its idle clock stayed under half the window: 0x00000001
+DONE

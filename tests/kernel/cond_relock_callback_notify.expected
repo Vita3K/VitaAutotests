@@ -1,0 +1,130 @@
+heavy, a: the signal: 0x00000000
+heavy, a: the notify: 0x00000000
+heavy, a: T waits for the mutex right after the notify: 0x00000000
+heavy, a: the condition's waiters right after the notify: 0x00000000
+heavy, a: SignalCondTo(T) right after the notify: 0x80028022
+heavy, a: T waits on the gate in the callback: 0x00000001
+heavy, a: T's status in the callback: 0x00000008
+heavy, a: T's wait type in the callback: 0x00000020
+heavy, a: T waits for the mutex in the callback: 0x00000000
+heavy, a: the mutex's waiters in the callback: 0x00000000
+heavy, a: the condition's waiters in the callback: 0x00000000
+heavy, a: T waits for the mutex again after the callback: 0x00000001
+heavy, a: the main thread's unlock: 0x00000000
+heavy, a: T's wait: 0x00000000
+heavy, a: runs of the callback when the wait returned: 0x00000001
+heavy, a: T owns the mutex after the wait: 0x00000001
+heavy, a: T's unlock: 0x00000000
+heavy, a: T's check: 0x00000000
+heavy, b: the signal: 0x00000000
+heavy, b: the notify: 0x00000000
+heavy, b: the main thread's unlock while the callback waits: 0x00000000
+heavy, b: the main thread's try lock: 0x00000000
+heavy, b: the main thread's unlock after the try lock: 0x00000000
+heavy, b: T's wait: 0x00000000
+heavy, b: runs of the callback when the wait returned: 0x00000001
+heavy, b: T's time left is above 75 percent of its timeout: 0x00000001
+heavy, b: T owns the mutex after the wait: 0x00000001
+heavy, b: T's unlock: 0x00000000
+heavy, b: T's check: 0x00000000
+heavy, c: the signal: 0x00000000
+heavy, c: the notify: 0x00000000
+heavy, c: the main thread's unlock: 0x00000000
+heavy, c: L owns the mutex after the unlock: 0x00000001
+heavy, c: the mutex's waiters after the unlock: 0x00000000
+heavy, c: T waits for the mutex again after the callback: 0x00000001
+heavy, c: the mutex's waiters while L owns it: 0x00000001
+heavy, c: L owns the mutex while T waits: 0x00000001
+heavy, c: L's lock: 0x00000000
+heavy, c: L's unlock: 0x00000000
+heavy, c: the order the threads took the mutex, as hex digits: 0x00000012
+heavy, c: T's wait: 0x00000000
+heavy, c: runs of the callback when the wait returned: 0x00000001
+heavy, c: T owns the mutex after the wait: 0x00000001
+heavy, c: T's unlock: 0x00000000
+heavy, c: T's check: 0x00000000
+heavy, d: the signal: 0x00000000
+heavy, d: step 0: 0x00000000
+heavy, d: step 1: 0x00000001
+heavy, d: step 2: 0x00000002
+heavy, d: the notify: 0x00000000
+heavy, d: T's wait type after the notify, once it waits again: 0x80000200
+heavy, d: T waits for the mutex after the notify: 0x00000001
+heavy, d: the mutex's waiters after the notify: 0x00000001
+heavy, d: runs of the callback after the notify: 0x00000001
+heavy, d: the main thread's unlock: 0x00000000
+heavy, d: T's wait: 0x00000000
+heavy, d: runs of the callback when the wait returned: 0x00000001
+heavy, d: T owns the mutex after the wait: 0x00000001
+heavy, d: T's unlock: 0x00000000
+heavy, d: T's check: 0x00000000
+lightweight, a: the signal: 0x00000000
+lightweight, a: the notify: 0x00000000
+lightweight, a: T waits for the mutex right after the notify: 0x00000000
+lightweight, a: the condition's waiters right after the notify: 0x00000000
+lightweight, a: SignalCondTo(T) right after the notify: 0x80028022
+lightweight, a: T waits on the gate in the callback: 0x00000001
+lightweight, a: T's status in the callback: 0x00000008
+lightweight, a: T's wait type in the callback: 0x00000020
+lightweight, a: T waits for the mutex in the callback: 0x00000000
+lightweight, a: the mutex's waiters in the callback: 0x00000000
+lightweight, a: the condition's waiters in the callback: 0x00000000
+lightweight, a: T waits for the mutex again after the callback: 0x00000001
+lightweight, a: the main thread's unlock: 0x00000000
+lightweight, a: T's wait: 0x00000000
+lightweight, a: runs of the callback when the wait returned: 0x00000001
+lightweight, a: T owns the mutex after the wait: 0x00000001
+lightweight, a: T's unlock: 0x00000000
+lightweight, a: T's check: 0x00000000
+lightweight, b: the signal: 0x00000000
+lightweight, b: the notify: 0x00000000
+lightweight, b: the main thread's unlock while the callback waits: 0x00000000
+lightweight, b: the main thread's try lock: 0x00000000
+lightweight, b: the main thread's unlock after the try lock: 0x00000000
+lightweight, b: T's wait: 0x00000000
+lightweight, b: runs of the callback when the wait returned: 0x00000001
+lightweight, b: T's time left is above 75 percent of its timeout: 0x00000001
+lightweight, b: T owns the mutex after the wait: 0x00000001
+lightweight, b: T's unlock: 0x00000000
+lightweight, b: T's check: 0x00000000
+lightweight, c: the signal: 0x00000000
+lightweight, c: the notify: 0x00000000
+lightweight, c: the main thread's unlock: 0x00000000
+lightweight, c: L owns the mutex after the unlock: 0x00000001
+lightweight, c: the mutex's waiters after the unlock: 0x00000000
+lightweight, c: T waits for the mutex again after the callback: 0x00000001
+lightweight, c: the mutex's waiters while L owns it: 0x00000001
+lightweight, c: L owns the mutex while T waits: 0x00000001
+lightweight, c: L's lock: 0x00000000
+lightweight, c: L's unlock: 0x00000000
+lightweight, c: the order the threads took the mutex, as hex digits: 0x00000012
+lightweight, c: T's wait: 0x00000000
+lightweight, c: runs of the callback when the wait returned: 0x00000001
+lightweight, c: T owns the mutex after the wait: 0x00000001
+lightweight, c: T's unlock: 0x00000000
+lightweight, c: T's check: 0x00000000
+lightweight, d: the signal: 0x00000000
+lightweight, d: step 0: 0x00000000
+lightweight, d: step 1: 0x00000001
+lightweight, d: step 2: 0x00000002
+lightweight, d: the notify: 0x00000000
+lightweight, d: T's wait type after the notify, once it waits again: 0x80400000
+lightweight, d: T waits for the mutex after the notify: 0x00000001
+lightweight, d: the mutex's waiters after the notify: 0x00000001
+lightweight, d: runs of the callback after the notify: 0x00000001
+lightweight, d: the main thread's unlock: 0x00000000
+lightweight, d: T's wait: 0x00000000
+lightweight, d: runs of the callback when the wait returned: 0x00000001
+lightweight, d: T owns the mutex after the wait: 0x00000001
+lightweight, d: T's unlock: 0x00000000
+lightweight, d: T's check: 0x00000000
+lightweight, f: the signal: 0x00000000
+lightweight, f: T waits for the mutex after the signal: 0x00000001
+lightweight, f: the main thread's unlock: 0x00000000
+lightweight, f: the notify: 0x00000000
+lightweight, f: T's wait: 0x00000000
+lightweight, f: runs of the callback when the wait returned: 0x00000000
+lightweight, f: T's unlock: 0x00000000
+lightweight, f: T's check: 0x00000001
+lightweight, f: runs of the callback after the check: 0x00000001
+DONE

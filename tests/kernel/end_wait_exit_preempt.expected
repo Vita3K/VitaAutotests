@@ -1,0 +1,7 @@
+L ready before T ends: run order: 0x00001232
+L ready before T ends: W1's end wait result: 0x00000000
+L ready before T ends: W2's end wait result: 0x00000000
+control, without L: run order: 0x00000122
+control, without L: W1's end wait result: 0x00000000
+control, without L: W2's end wait result: 0x00000000
+DONE

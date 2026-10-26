@@ -1,0 +1,18 @@
+try send of "abcdef": 0x00000000
+try send of "abcdef", its size: 0x00000006
+the free size after the send: 0x00000FFA
+DONT_REMOVE into pieces of 2, 0 and 3: the receive: 0x00000000
+DONT_REMOVE into pieces of 2, 0 and 3: its size: 0x00000005
+DONT_REMOVE into pieces of 2, 0 and 3: piece 1 got "ab", its size: 0x00000002
+DONT_REMOVE into pieces of 2, 0 and 3: piece 2 got "", its size: 0x00000000
+DONT_REMOVE into pieces of 2, 0 and 3: piece 3 got "cde", its size: 0x00000003
+DONT_REMOVE into pieces of 2, 0 and 3: the free size after it: 0x00000FFA
+DONT_REMOVE into pieces of 1 and 4: the receive: 0x00000000
+DONT_REMOVE into pieces of 1 and 4: its size: 0x00000005
+DONT_REMOVE into pieces of 1 and 4: piece 1 got "a", its size: 0x00000001
+DONT_REMOVE into pieces of 1 and 4: piece 2 got "bcde", its size: 0x00000004
+DONT_REMOVE into pieces of 1 and 4: the free size after it: 0x00000FFA
+FULL receive of 6: 0x00000000
+FULL receive of 6, it got "abcdef", its size: 0x00000006
+the free size after the FULL receive: 0x00001000
+DONE

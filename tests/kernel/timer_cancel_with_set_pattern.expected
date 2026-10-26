@@ -1,0 +1,11 @@
+cancel and set: 0x8002000D
+the waiting count: 0x00000000
+the waiter's result: 0x80028005
+the waiter's result pattern: 0x00000000
+the waiter's user data, low word: 0x00000000
+the waiter's user data, high word: 0x00000000
+the pattern after is the set pattern: 0x00000000
+the user data after is the given one: 0x00000000
+the timer's active flag: 0x00000001
+a poll for 0x8000: 0x80028202
+DONE

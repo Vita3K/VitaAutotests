@@ -1,0 +1,36 @@
+timeout then sends: W's status after the timeout: 0x00000002
+timeout then sends: W's wait type: 0x00000000
+timeout then sends: W's wait UID is -1: 0x00000001
+timeout then sends: the first send: 0x00000000
+timeout then sends: the second send: 0x80028121
+timeout then sends: W's result: 0x80028005
+timeout then sends: W's time left is 0: 0x00000001
+timeout then sends: W's first take: 0x00000000
+timeout then sends: W's second take: 0x80028005
+long timeout: the first send: 0x00000000
+long timeout: W's status after 2 s: 0x00000002
+long timeout: the second send: 0x00000000
+long timeout: W's result: 0x00000000
+long timeout: W's time left is above 1 s: 0x00000001
+long timeout: W's take: 0x00000000
+three sends: the first send: 0x00000000
+three sends: the second send: 0x00000000
+three sends: the third send: 0x80028121
+three sends: W's result: 0x00000000
+three sends: W's first take: 0x00000000
+three sends: W's second take: 0x80028005
+with callbacks, notify then send: the notify: 0x00000000
+with callbacks, notify then send: W still in its signal wait after the notify: 0x00000000
+with callbacks, notify then send: the send: 0x00000000
+with callbacks, notify then send: W's result: 0x00000000
+with callbacks, notify then send: runs of the callback: 0x00000001
+with callbacks, notify then send: W's time left is above 1 s: 0x00000001
+with callbacks, notify then send: W's take: 0x80028005
+delay control: W's status after the delay: 0x00000002
+delay control: W's wait type: 0x00000000
+delay control: W's wait UID is -1: 0x00000001
+delay control: W's result: 0x00000000
+semaphore control: the signal: 0x00000000
+semaphore control: W's result: 0x00000000
+semaphore control: W's time left is above 1 s: 0x00000001
+DONE

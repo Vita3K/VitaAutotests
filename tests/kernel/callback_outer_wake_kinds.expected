@@ -1,0 +1,70 @@
+timer: its waiters while the callback waits: 0x00000000
+timer: start it: 0x00000000
+timer: its event after it fired: 0x00008000
+timer: its waiters after it fired: 0x00000000
+timer: the callback's wait: 0x00000000
+timer: the inner semaphore's count at the end: 0x00000000
+timer: the outer wait: 0x800280A2
+timer: the outer wait has time left: 0x00000001
+timer: its event at the end: 0x00000000
+message pipe send: fill the pipe: 0x00000000
+message pipe send: its senders while the callback waits: 0x00000000
+message pipe send: empty the pipe: 0x00000000
+message pipe send: the bytes in it after the receive: 0x00000000
+message pipe send: its senders after the receive: 0x00000000
+message pipe send: the callback's wait: 0x00000000
+message pipe send: the inner semaphore's count at the end: 0x00000000
+message pipe send: the outer wait: 0x00000000
+message pipe send: the outer wait has time left: 0x00000001
+message pipe send: receive the message: 0x00000000
+message pipe send: it is the sent message: 0x00000001
+thread signal: send the signal: 0x00000000
+thread signal: the callback's wait: 0x00000000
+thread signal: the inner semaphore's count at the end: 0x00000000
+thread signal: the outer wait: 0x00000000
+thread signal: the outer wait has time left: 0x00000001
+event flag cancel: its waiters while the callback waits: 0x00000000
+event flag cancel: the cancel: 0x00000000
+event flag cancel: the waiters it counts: 0x00000000
+event flag cancel: the callback's wait: 0x00000000
+event flag cancel: the inner semaphore's count at the end: 0x00000000
+event flag cancel: the outer wait: 0x80028005
+event flag cancel: the outer wait has time left: 0x00000000
+event flag cancel: its bits at the end: 0x00000000
+event flag delete: the delete: 0x00000000
+event flag delete: the callback's wait: 0x00000000
+event flag delete: the inner semaphore's count at the end: 0x00000000
+event flag delete: the outer wait: 0x80028006
+event flag delete: the outer wait has time left: 0x00000001
+mutex cancel: the cancel: 0x00000000
+mutex cancel: the waiters it counts: 0x00000000
+mutex cancel: the callback's wait: 0x00000000
+mutex cancel: the inner semaphore's count at the end: 0x00000000
+mutex cancel: the outer wait: 0x00000000
+mutex cancel: the outer wait has time left: 0x00000001
+mutex cancel: its count at the end: 0x00000000
+rwlock cancel: the cancel: 0x00000000
+rwlock cancel: the readers it counts: 0x00000000
+rwlock cancel: the writers it counts: 0x00000000
+rwlock cancel: the callback's wait: 0x00000000
+rwlock cancel: the inner semaphore's count at the end: 0x00000000
+rwlock cancel: the outer wait: 0x00000000
+rwlock cancel: the outer wait has time left: 0x00000001
+rwlock cancel: its lock count at the end: 0x00000000
+rwlock delete: the delete: 0x00000000
+rwlock delete: the callback's wait: 0x00000000
+rwlock delete: the inner semaphore's count at the end: 0x00000000
+rwlock delete: the outer wait: 0x80028006
+rwlock delete: the outer wait has time left: 0x00000001
+simple event cancel: the cancel: 0x00000000
+simple event cancel: the waiters it counts: 0x00000000
+simple event cancel: the callback's wait: 0x00000000
+simple event cancel: the inner semaphore's count at the end: 0x00000000
+simple event cancel: the outer wait: 0x80028005
+simple event cancel: the outer wait has time left: 0x00000000
+simple event delete: the delete: 0x00000000
+simple event delete: the callback's wait: 0x00000000
+simple event delete: the inner semaphore's count at the end: 0x00000000
+simple event delete: the outer wait: 0x80028006
+simple event delete: the outer wait has time left: 0x00000001
+DONE

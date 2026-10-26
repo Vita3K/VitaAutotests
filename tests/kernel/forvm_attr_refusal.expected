@@ -1,0 +1,31 @@
+spinner without VM: its status before the suspend: 0x00000001
+spinner without VM: the suspend: 0x80020008
+spinner without VM: its status while suspended: 0x00000001
+spinner without VM: it makes progress over 250 ms while suspended: 0x00000001
+spinner without VM: the resume: 0x80020008
+spinner without VM: it makes progress over 250 ms after the resume: 0x00000001
+spinner without VM: its status after the resume: 0x00000001
+spinner without VM: a second resume, of a thread that isn't suspended: 0x80020008
+waiter without VM: its status before the suspend: 0x00000008
+waiter without VM: the suspend: 0x80020008
+waiter without VM: its status while suspended: 0x00000008
+waiter without VM: the signal: 0x00000000
+waiter without VM: it woke within 250 ms of the signal, before the resume: 0x00000001
+waiter without VM: the resume: 0x80020008
+waiter without VM: its wait's result: 0x00000000
+spinner with VM, control: its status before the suspend: 0x00000001
+spinner with VM, control: the suspend: 0x00000001
+spinner with VM, control: its status while suspended: 0x00000100
+spinner with VM, control: it makes progress over 250 ms while suspended: 0x00000000
+spinner with VM, control: the resume: 0x00000000
+spinner with VM, control: it makes progress over 250 ms after the resume: 0x00000001
+spinner with VM, control: its status after the resume: 0x00000001
+spinner with VM, control: a second resume, of a thread that isn't suspended: 0x80028033
+waiter with VM, control: its status before the suspend: 0x00000008
+waiter with VM, control: the suspend: 0x00000001
+waiter with VM, control: its status while suspended: 0x00000008
+waiter with VM, control: the signal: 0x00000000
+waiter with VM, control: it woke within 250 ms of the signal, before the resume: 0x00000000
+waiter with VM, control: the resume: 0x00000000
+waiter with VM, control: its wait's result: 0x00000000
+DONE

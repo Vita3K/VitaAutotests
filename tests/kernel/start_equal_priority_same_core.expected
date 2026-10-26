@@ -1,0 +1,22 @@
+T at 0x70, the same as the starter: the start: 0x00000000
+T at 0x70, the same as the starter: the starter's wait for T's signal: 0x00000000
+T at 0x70, the same as the starter: steps recorded: 0x00000004
+T at 0x70, the same as the starter: step 0: 0x00000000
+T at 0x70, the same as the starter: step 1: 0x00000001
+T at 0x70, the same as the starter: step 2: 0x00000002
+T at 0x70, the same as the starter: step 3: 0x00000003
+T at 0x60, above the starter: the start: 0x00000000
+T at 0x60, above the starter: the starter's wait for T's signal: 0x00000000
+T at 0x60, above the starter: steps recorded: 0x00000004
+T at 0x60, above the starter: step 0: 0x00000000
+T at 0x60, above the starter: step 1: 0x00000002
+T at 0x60, above the starter: step 2: 0x00000001
+T at 0x60, above the starter: step 3: 0x00000003
+T at 0x80, below the starter: the start: 0x00000000
+T at 0x80, below the starter: the starter's wait for T's signal: 0x00000000
+T at 0x80, below the starter: steps recorded: 0x00000004
+T at 0x80, below the starter: step 0: 0x00000000
+T at 0x80, below the starter: step 1: 0x00000001
+T at 0x80, below the starter: step 2: 0x00000002
+T at 0x80, below the starter: step 3: 0x00000003
+DONE

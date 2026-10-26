@@ -1,0 +1,26 @@
+the error when the partition is full: 0x80024302
+at least 4 MiB of USER_CDIALOG_RW fit: 0x00000001
+at least 32 MiB of USER_CDIALOG_RW fit: 0x00000000
+at least 128 MiB of USER_CDIALOG_RW fit: 0x00000000
+the cap of 1024 blocks is not reached: 0x00000001
+main, CDRAM and phycont free sizes are unchanged while it fills: 0x00000001
+USER_CDIALOG_NC_RW, 1 MiB, partition full: the error: 0x80024302
+USER_CDIALOG_NC_RW, 1 MiB, partition full: the same error as the full one: 0x00000001
+USER_MAIN_CDIALOG_RW, 1 MiB, partition full: the error: 0x80024302
+USER_MAIN_CDIALOG_RW, 1 MiB, partition full: the same error as the full one: 0x00000001
+USER_MAIN_CDIALOG_NC_RW, 1 MiB, partition full: the error: 0x80024302
+USER_MAIN_CDIALOG_NC_RW, 1 MiB, partition full: the same error as the full one: 0x00000001
+USER_CDIALOG_R, 1 MiB, partition full: the error: 0x80024302
+USER_CDIALOG_R, 1 MiB, partition full: the same error as the full one: 0x00000001
+USER_CDIALOG_NC_R, 1 MiB, partition full: the error: 0x80024302
+USER_CDIALOG_NC_R, 1 MiB, partition full: the same error as the full one: 0x00000001
+USER_CDIALOG_RW, 1 MiB: fits again after freeing one block: 0x00000001
+USER_CDIALOG_NC_RW, 1 MiB: fits in the freed MiB: 0x00000001
+USER_MAIN_CDIALOG_RW, 1 MiB: fits in the freed MiB: 0x00000000
+USER_MAIN_CDIALOG_NC_RW, 1 MiB: fits in the freed MiB: 0x00000000
+USER_CDIALOG_R, 1 MiB: fits in the freed MiB: 0x00000000
+USER_CDIALOG_NC_R, 1 MiB: fits in the freed MiB: 0x00000000
+4 KiB USER_CDIALOG_RW blocks: at least one fits in the freed MiB: 0x00000001
+4 KiB USER_CDIALOG_RW blocks: exactly 256 fit in the freed MiB: 0x00000000
+a CDRAM block and an uncached common dialog block share an address: 0x00000000
+DONE

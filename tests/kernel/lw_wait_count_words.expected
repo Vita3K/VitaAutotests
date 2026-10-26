@@ -1,0 +1,16 @@
+lock: 0x00000000
+W waits: word 0 is the owner's UID: 0x00000001
+W waits: word 1: 0x00000001
+W waits: word 2: 0x00000001
+the main thread's unlock: 0x00000000
+W holds it: word 0 is the owner's UID: 0x00000001
+W holds it: word 1: 0x00000000
+W holds it: word 2: 0x00000001
+W's result: 0x00000000
+W's unlock: 0x00000000
+lock again: 0x00000000
+W2's wait result: 0x80028005
+word 1 after W2 gave up: 0x00000001
+the main thread's unlock: 0x00000000
+word 1 after the unlock: 0x00000001
+DONE

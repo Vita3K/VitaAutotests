@@ -1,0 +1,83 @@
+a semaphore: T's registration of its callback to the event: 0x00000000
+a semaphore: the notify: 0x00000000
+a semaphore: the waiting threads after the notify: 0x00000000
+a semaphore: the callback's notifications after the notify: 0x00000001
+a semaphore: T's status after the notify: 0x00000002
+a semaphore: T's wait type after the notify: 0x00000000
+a semaphore: runs of the callback once T runs: 0x00000001
+a semaphore: the notify ID is the event: 0x00000001
+a semaphore: the count: 0x00000001
+a semaphore: the argument: 0x00000055
+a semaphore: T waits again: 0x00000001
+a semaphore: the waiting threads after T waits again: 0x00000001
+a semaphore: the release: 0x00000000
+a semaphore: T's wait result: 0x00000000
+an event flag: T's registration of its callback to the event: 0x00000000
+an event flag: the notify: 0x00000000
+an event flag: the waiting threads after the notify: 0x00000000
+an event flag: the callback's notifications after the notify: 0x00000001
+an event flag: T's status after the notify: 0x00000002
+an event flag: T's wait type after the notify: 0x00000000
+an event flag: runs of the callback once T runs: 0x00000001
+an event flag: the notify ID is the event: 0x00000001
+an event flag: the count: 0x00000001
+an event flag: the argument: 0x00000055
+an event flag: T waits again: 0x00000001
+an event flag: the waiting threads after T waits again: 0x00000001
+an event flag: the release: 0x00000000
+an event flag: T's wait result: 0x00000000
+a second simple event: T's registration of its callback to the event: 0x00000000
+a second simple event: the notify: 0x00000000
+a second simple event: the waiting threads after the notify: 0x00000000
+a second simple event: the callback's notifications after the notify: 0x00000001
+a second simple event: T's status after the notify: 0x00000002
+a second simple event: T's wait type after the notify: 0x00000000
+a second simple event: runs of the callback once T runs: 0x00000001
+a second simple event: the notify ID is the event: 0x00000001
+a second simple event: the count: 0x00000001
+a second simple event: the argument: 0x00000055
+a second simple event: T waits again: 0x00000001
+a second simple event: the waiting threads after T waits again: 0x00000001
+a second simple event: the release: 0x00000000
+a second simple event: T's wait result: 0x00000000
+the event itself: T's registration of its callback to the event: 0x00000000
+the event itself: the notify: 0x00000000
+the event itself: the waiting threads after the notify: 0x00000000
+the event itself: the callback's notifications after the notify: 0x00000001
+the event itself: T's status after the notify: 0x00000002
+the event itself: T's wait type after the notify: 0x00000000
+the event itself: runs of the callback once T runs: 0x00000001
+the event itself: the notify ID is the event: 0x00000001
+the event itself: the count: 0x00000001
+the event itself: the argument: 0x00000055
+the event itself: T waits again: 0x00000001
+the event itself: the waiting threads after T waits again: 0x00000001
+the event itself: the release: 0x00000000
+the event itself: T's wait result: 0x00000000
+a delay: T's registration of its callback to the event: 0x00000000
+a delay: the notify: 0x00000000
+a delay: the callback's notifications after the notify: 0x00000001
+a delay: T's status after the notify: 0x00000002
+a delay: T's wait type after the notify: 0x00000000
+a delay: runs of the callback once T runs: 0x00000001
+a delay: the notify ID is the event: 0x00000001
+a delay: the count: 0x00000001
+a delay: the argument: 0x00000055
+a delay: T waits again: 0x00000001
+a delay: T's wait result: 0x00000000
+a delay: T's wait ended within 1 s of the notify: 0x00000000
+a pulse on a semaphore: T's registration of its callback to the event: 0x00000000
+a pulse on a semaphore: the notify: 0x00000000
+a pulse on a semaphore: the waiting threads after the notify: 0x00000000
+a pulse on a semaphore: the callback's notifications after the notify: 0x00000001
+a pulse on a semaphore: T's status after the notify: 0x00000002
+a pulse on a semaphore: T's wait type after the notify: 0x00000000
+a pulse on a semaphore: runs of the callback once T runs: 0x00000001
+a pulse on a semaphore: the notify ID is the event: 0x00000001
+a pulse on a semaphore: the count: 0x00000001
+a pulse on a semaphore: the argument: 0x00000066
+a pulse on a semaphore: T waits again: 0x00000001
+a pulse on a semaphore: the waiting threads after T waits again: 0x00000001
+a pulse on a semaphore: the release: 0x00000000
+a pulse on a semaphore: T's wait result: 0x00000000
+DONE

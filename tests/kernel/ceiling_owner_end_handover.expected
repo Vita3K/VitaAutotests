@@ -1,0 +1,8 @@
+the waiter's lock: 0x00000000
+the waiter's current priority once it owns the mutex: 0x00000080
+the waiter's initial priority: 0x00000090
+the waiter owns the mutex: 0x00000001
+the count after the handover: 0x00000001
+the waiter's unlock: 0x00000000
+the waiter's priority after its unlock: 0x00000090
+DONE

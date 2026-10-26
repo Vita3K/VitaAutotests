@@ -1,0 +1,23 @@
+try send of 3 bytes: 0x00000000
+DONT_WAIT ASAP receive of 8 with 3 in the pipe: 0x00000000
+its size right after the call: 0x0000DEAD
+the ASAP receive: wait for the event: 0x00000000
+the ASAP receive: the event's bits: 0x00000002
+the ASAP receive: the low half of its user data: 0x00000000
+the ASAP receive: the high half of its user data: 0x00000003
+its size after the event: 0x0000DEAD
+the bytes it got are the ones sent: 0x00000001
+a FULL try receive of 8 after it: 0x80028223
+DONT_WAIT FULL receive of 8 from an empty pipe: 0x00000000
+its size right after the call: 0x0000DEAD
+blocking FULL send of 5: 0x00000000
+its size: 0x00000005
+blocking FULL send of 3: 0x00000000
+its size: 0x00000003
+the FULL receive: wait for the event: 0x00000000
+the FULL receive: the event's bits: 0x00000002
+the FULL receive: the low half of its user data: 0x00000000
+the FULL receive: the high half of its user data: 0x00000008
+its size after the event: 0x0000DEAD
+the bytes it got are the ones sent: 0x00000001
+DONE

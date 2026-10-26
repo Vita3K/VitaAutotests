@@ -1,0 +1,5 @@
+runs of the callback: 0x00000001
+the callback's send to its own thread: 0x80028121
+the wait with callbacks: 0x00000000
+a second wait for a signal with timeout 0: 0x80028005
+DONE

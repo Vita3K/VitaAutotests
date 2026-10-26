@@ -1,0 +1,21 @@
+lock of 2: 0x00000000
+after the lock of 2: word 0 is the owner's UID: 0x00000001
+after the lock of 2: word 2, the count: 0x00000002
+lock of 1: 0x00000000
+after the lock of 1: word 0 is the owner's UID: 0x00000001
+after the lock of 1: word 2, the count: 0x00000003
+lock of 0x7FFFFFFF: 0x00000000
+after the lock of 0x7FFFFFFF: word 0 is the owner's UID: 0x00000001
+after the lock of 0x7FFFFFFF: word 2, the count: 0x80000002
+try lock of 0x7FFFFFFE: 0x80028183
+after the try lock: word 0 is the owner's UID: 0x00000001
+after the try lock: word 2, the count: 0x80000002
+lock of 0x7FFFFFFE with a timeout: 0x00000000
+after the lock: word 0 is the owner's UID: 0x00000001
+after the lock: word 2, the count: 0x00000000
+unlock of 1: 0x80028184
+after the unlock: word 0 is the owner's UID: 0x00000001
+after the unlock: word 2, the count: 0x00000000
+another thread's try lock: 0x80028185
+delete: 0x00000000
+DONE

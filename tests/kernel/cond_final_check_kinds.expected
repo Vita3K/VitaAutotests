@@ -1,0 +1,53 @@
+heavy, signal, then notify: the call that ended the wait: 0x00000000
+heavy, signal, then notify: T's status after it: 0x00000002
+heavy, signal, then notify: the notify: 0x00000000
+heavy, signal, then notify: T's status after the notify: 0x00000002
+heavy, signal, then notify: T's wait: 0x00000000
+heavy, signal, then notify: runs of the callback when the wait returned: 0x00000001
+heavy, signal, then notify: T's unlock: 0x00000000
+heavy, signal, then notify: T's check: 0x00000000
+heavy, signal, then notify: runs of the callback after the check: 0x00000001
+heavy, timeout, then notify: T's status after it: 0x00000002
+heavy, timeout, then notify: the notify: 0x00000000
+heavy, timeout, then notify: T's status after the notify: 0x00000002
+heavy, timeout, then notify: T's wait: 0x80028005
+heavy, timeout, then notify: runs of the callback when the wait returned: 0x00000001
+heavy, timeout, then notify: T's unlock: 0x00000000
+heavy, timeout, then notify: T's check: 0x00000000
+heavy, timeout, then notify: runs of the callback after the check: 0x00000001
+heavy, condition deleted, then notify: the call that ended the wait: 0x00000000
+heavy, condition deleted, then notify: T's status after it: 0x00000002
+heavy, condition deleted, then notify: the notify: 0x00000000
+heavy, condition deleted, then notify: T's status after the notify: 0x00000002
+heavy, condition deleted, then notify: T's wait: 0x800281A4
+heavy, condition deleted, then notify: runs of the callback when the wait returned: 0x00000001
+heavy, condition deleted, then notify: T's unlock: 0x80028146
+heavy, condition deleted, then notify: T's check: 0x00000000
+heavy, condition deleted, then notify: runs of the callback after the check: 0x00000001
+light, signal, then notify: the call that ended the wait: 0x00000000
+light, signal, then notify: T's status after it: 0x00000002
+light, signal, then notify: the notify: 0x00000000
+light, signal, then notify: T's status after the notify: 0x00000002
+light, signal, then notify: T's wait: 0x00000000
+light, signal, then notify: runs of the callback when the wait returned: 0x00000001
+light, signal, then notify: T's unlock: 0x00000000
+light, signal, then notify: T's check: 0x00000000
+light, signal, then notify: runs of the callback after the check: 0x00000001
+light, timeout, then notify: T's status after it: 0x00000002
+light, timeout, then notify: the notify: 0x00000000
+light, timeout, then notify: T's status after the notify: 0x00000002
+light, timeout, then notify: T's wait: 0x80028005
+light, timeout, then notify: runs of the callback when the wait returned: 0x00000001
+light, timeout, then notify: T's unlock: 0x00000000
+light, timeout, then notify: T's check: 0x00000000
+light, timeout, then notify: runs of the callback after the check: 0x00000001
+light, condition deleted, then notify: the call that ended the wait: 0x00000000
+light, condition deleted, then notify: T's status after it: 0x00000002
+light, condition deleted, then notify: the notify: 0x00000000
+light, condition deleted, then notify: T's status after the notify: 0x00000002
+light, condition deleted, then notify: T's wait: 0x800281C3
+light, condition deleted, then notify: runs of the callback when the wait returned: 0x00000001
+light, condition deleted, then notify: T's unlock: 0x80028186
+light, condition deleted, then notify: T's check: 0x00000000
+light, condition deleted, then notify: runs of the callback after the check: 0x00000001
+DONE

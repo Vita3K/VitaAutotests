@@ -1,0 +1,7 @@
+DONT_WAIT FULL send to an unknown UID: 0x80028221
+its size: 0x0000DEAD
+DONT_WAIT FULL send to a semaphore: 0x00000000
+its size: 0x0000DEAD
+the semaphore's info: 0x00000000
+the semaphore's count 100 ms later: 0x00000001
+DONE

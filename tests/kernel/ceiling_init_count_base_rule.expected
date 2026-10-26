@@ -1,0 +1,8 @@
+init count 1, ceiling 0xB0: the create: 0x80028023
+init count 1, ceiling 0xA0: the create: 0x00000000
+init count 1, ceiling 0xA0: the ceiling in its info: 0x000000A0
+init count 1, ceiling 0x90: the create: 0x00000000
+init count 1, ceiling 0x90: the ceiling in its info: 0x00000090
+init count 0, ceiling 0xB0: the create: 0x00000000
+init count 0, ceiling 0xB0: the ceiling in its info: 0x000000B0
+DONE

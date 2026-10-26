@@ -1,0 +1,24 @@
+a plain wait with a timeout of 0: the wait with a signal pending: 0x00000000
+a plain wait with a timeout of 0: the timeout is untouched: 0x00000001
+a plain wait with a timeout of 0: a second wait: 0x80028005
+a plain wait with a timeout of 1: the wait with a signal pending: 0x00000000
+a plain wait with a timeout of 1: the timeout is untouched: 0x00000001
+a plain wait with a timeout of 1: a second wait: 0x80028005
+a wait with callbacks and a timeout of 0: the wait with a signal pending: 0x00000000
+a wait with callbacks and a timeout of 0: the timeout is untouched: 0x00000001
+a wait with callbacks and a timeout of 0: a second wait: 0x80028005
+a wait with callbacks and a timeout of 1: the wait with a signal pending: 0x00000000
+a wait with callbacks and a timeout of 1: the timeout is untouched: 0x00000001
+a wait with callbacks and a timeout of 1: a second wait: 0x80028005
+unk0 0 and delay 1 s: send it a signal: 0x00000000
+unk0 0 and delay 1 s: its wait: 0x00000000
+unk0 0 and delay 1 s: it returned within 500 ms of the send: 0x00000001
+unk0 1 and delay 0xFFFFFFFF: send it a signal: 0x00000000
+unk0 1 and delay 0xFFFFFFFF: its wait: 0x00000000
+unk0 1 and delay 0xFFFFFFFF: it returned within 500 ms of the send: 0x00000001
+unk0 0xFFFFFFFF and delay 2 s: send it a signal: 0x00000000
+unk0 0xFFFFFFFF and delay 2 s: its wait: 0x00000000
+unk0 0xFFFFFFFF and delay 2 s: it returned within 500 ms of the send: 0x00000001
+a wait of 800 ms with a delay argument of 2 s: the wait: 0x80028005
+a wait of 800 ms with a delay argument of 2 s: it ended within [550 ms, 1300 ms): 0x00000001
+DONE

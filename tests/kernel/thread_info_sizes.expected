@@ -1,0 +1,190 @@
+the running thread info with a size of 0x0: 0x00000000
+the running thread bytes written with a size of 0x0: 0x00000000
+the running thread size word left with a size of 0x0: 0x00000000
+the running thread last word is 0 with a size of 0x0: 0x00000000
+the running thread name[31] is 0 with a size of 0x0: 0x00000000
+the running thread nothing past the size written with a size of 0x0: 0x00000001
+the running thread info with a size of 0x1: 0x00000000
+the running thread bytes written with a size of 0x1: 0x00000000
+the running thread size word left with a size of 0x1: 0x00000080
+the running thread last word is 0 with a size of 0x1: 0x00000000
+the running thread name[31] is 0 with a size of 0x1: 0x00000000
+the running thread nothing past the size written with a size of 0x1: 0x00000001
+the running thread info with a size of 0x2: 0x00000000
+the running thread bytes written with a size of 0x2: 0x00000000
+the running thread size word left with a size of 0x2: 0x00000080
+the running thread last word is 0 with a size of 0x2: 0x00000000
+the running thread name[31] is 0 with a size of 0x2: 0x00000000
+the running thread nothing past the size written with a size of 0x2: 0x00000001
+the running thread info with a size of 0x3: 0x00000000
+the running thread bytes written with a size of 0x3: 0x00000000
+the running thread size word left with a size of 0x3: 0x00000080
+the running thread last word is 0 with a size of 0x3: 0x00000000
+the running thread name[31] is 0 with a size of 0x3: 0x00000000
+the running thread nothing past the size written with a size of 0x3: 0x00000001
+the running thread info with a size of 0x4: 0x00000000
+the running thread bytes written with a size of 0x4: 0x00000000
+the running thread size word left with a size of 0x4: 0x00000080
+the running thread last word is 0 with a size of 0x4: 0x00000000
+the running thread name[31] is 0 with a size of 0x4: 0x00000000
+the running thread nothing past the size written with a size of 0x4: 0x00000001
+the running thread info with a size of 0x8: 0x00000000
+the running thread bytes written with a size of 0x8: 0x00000008
+the running thread size word left with a size of 0x8: 0x00000080
+the running thread last word is 0 with a size of 0x8: 0x00000000
+the running thread name[31] is 0 with a size of 0x8: 0x00000000
+the running thread nothing past the size written with a size of 0x8: 0x00000001
+the running thread info with a size of 0x10: 0x00000000
+the running thread bytes written with a size of 0x10: 0x00000010
+the running thread size word left with a size of 0x10: 0x00000080
+the running thread last word is 0 with a size of 0x10: 0x00000000
+the running thread name[31] is 0 with a size of 0x10: 0x00000000
+the running thread nothing past the size written with a size of 0x10: 0x00000001
+the running thread info with a size of 0x7C: 0x00000000
+the running thread bytes written with a size of 0x7C: 0x0000007C
+the running thread size word left with a size of 0x7C: 0x00000080
+the running thread last word is 0 with a size of 0x7C: 0x00000000
+the running thread name[31] is 0 with a size of 0x7C: 0x00000001
+the running thread nothing past the size written with a size of 0x7C: 0x00000001
+the running thread info with a size of 0x7F: 0x00000000
+the running thread bytes written with a size of 0x7F: 0x0000007F
+the running thread size word left with a size of 0x7F: 0x00000080
+the running thread last word is 0 with a size of 0x7F: 0x00000000
+the running thread name[31] is 0 with a size of 0x7F: 0x00000001
+the running thread nothing past the size written with a size of 0x7F: 0x00000001
+the running thread info with a size of 0x80: 0x00000000
+the running thread bytes written with a size of 0x80: 0x00000080
+the running thread size word left with a size of 0x80: 0x00000080
+the running thread last word is 0 with a size of 0x80: 0x00000001
+the running thread name[31] is 0 with a size of 0x80: 0x00000001
+the running thread nothing past the size written with a size of 0x80: 0x00000001
+an ended thread info with a size of 0x0: 0x00000000
+an ended thread bytes written with a size of 0x0: 0x00000000
+an ended thread size word left with a size of 0x0: 0x00000000
+an ended thread last word is 0 with a size of 0x0: 0x00000000
+an ended thread name[31] is 0 with a size of 0x0: 0x00000000
+an ended thread nothing past the size written with a size of 0x0: 0x00000001
+an ended thread info with a size of 0x1: 0x00000000
+an ended thread bytes written with a size of 0x1: 0x00000000
+an ended thread size word left with a size of 0x1: 0x00000080
+an ended thread last word is 0 with a size of 0x1: 0x00000000
+an ended thread name[31] is 0 with a size of 0x1: 0x00000000
+an ended thread nothing past the size written with a size of 0x1: 0x00000001
+an ended thread info with a size of 0x2: 0x00000000
+an ended thread bytes written with a size of 0x2: 0x00000000
+an ended thread size word left with a size of 0x2: 0x00000080
+an ended thread last word is 0 with a size of 0x2: 0x00000000
+an ended thread name[31] is 0 with a size of 0x2: 0x00000000
+an ended thread nothing past the size written with a size of 0x2: 0x00000001
+an ended thread info with a size of 0x3: 0x00000000
+an ended thread bytes written with a size of 0x3: 0x00000000
+an ended thread size word left with a size of 0x3: 0x00000080
+an ended thread last word is 0 with a size of 0x3: 0x00000000
+an ended thread name[31] is 0 with a size of 0x3: 0x00000000
+an ended thread nothing past the size written with a size of 0x3: 0x00000001
+an ended thread info with a size of 0x4: 0x00000000
+an ended thread bytes written with a size of 0x4: 0x00000000
+an ended thread size word left with a size of 0x4: 0x00000080
+an ended thread last word is 0 with a size of 0x4: 0x00000000
+an ended thread name[31] is 0 with a size of 0x4: 0x00000000
+an ended thread nothing past the size written with a size of 0x4: 0x00000001
+an ended thread info with a size of 0x8: 0x00000000
+an ended thread bytes written with a size of 0x8: 0x00000008
+an ended thread size word left with a size of 0x8: 0x00000080
+an ended thread last word is 0 with a size of 0x8: 0x00000000
+an ended thread name[31] is 0 with a size of 0x8: 0x00000000
+an ended thread nothing past the size written with a size of 0x8: 0x00000001
+an ended thread info with a size of 0x10: 0x00000000
+an ended thread bytes written with a size of 0x10: 0x00000010
+an ended thread size word left with a size of 0x10: 0x00000080
+an ended thread last word is 0 with a size of 0x10: 0x00000000
+an ended thread name[31] is 0 with a size of 0x10: 0x00000000
+an ended thread nothing past the size written with a size of 0x10: 0x00000001
+an ended thread info with a size of 0x7C: 0x00000000
+an ended thread bytes written with a size of 0x7C: 0x0000007C
+an ended thread size word left with a size of 0x7C: 0x00000080
+an ended thread last word is 0 with a size of 0x7C: 0x00000000
+an ended thread name[31] is 0 with a size of 0x7C: 0x00000001
+an ended thread nothing past the size written with a size of 0x7C: 0x00000001
+an ended thread info with a size of 0x7F: 0x00000000
+an ended thread bytes written with a size of 0x7F: 0x0000007F
+an ended thread size word left with a size of 0x7F: 0x00000080
+an ended thread last word is 0 with a size of 0x7F: 0x00000000
+an ended thread name[31] is 0 with a size of 0x7F: 0x00000001
+an ended thread nothing past the size written with a size of 0x7F: 0x00000001
+an ended thread info with a size of 0x80: 0x00000000
+an ended thread bytes written with a size of 0x80: 0x00000080
+an ended thread size word left with a size of 0x80: 0x00000080
+an ended thread last word is 0 with a size of 0x80: 0x00000001
+an ended thread name[31] is 0 with a size of 0x80: 0x00000001
+an ended thread nothing past the size written with a size of 0x80: 0x00000001
+a waiting thread info with a size of 0x0: 0x00000000
+a waiting thread bytes written with a size of 0x0: 0x00000000
+a waiting thread size word left with a size of 0x0: 0x00000000
+a waiting thread last word is 0 with a size of 0x0: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x0: 0x00000000
+a waiting thread nothing past the size written with a size of 0x0: 0x00000001
+a waiting thread info with a size of 0x1: 0x00000000
+a waiting thread bytes written with a size of 0x1: 0x00000000
+a waiting thread size word left with a size of 0x1: 0x00000080
+a waiting thread last word is 0 with a size of 0x1: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x1: 0x00000000
+a waiting thread nothing past the size written with a size of 0x1: 0x00000001
+a waiting thread info with a size of 0x2: 0x00000000
+a waiting thread bytes written with a size of 0x2: 0x00000000
+a waiting thread size word left with a size of 0x2: 0x00000080
+a waiting thread last word is 0 with a size of 0x2: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x2: 0x00000000
+a waiting thread nothing past the size written with a size of 0x2: 0x00000001
+a waiting thread info with a size of 0x3: 0x00000000
+a waiting thread bytes written with a size of 0x3: 0x00000000
+a waiting thread size word left with a size of 0x3: 0x00000080
+a waiting thread last word is 0 with a size of 0x3: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x3: 0x00000000
+a waiting thread nothing past the size written with a size of 0x3: 0x00000001
+a waiting thread info with a size of 0x4: 0x00000000
+a waiting thread bytes written with a size of 0x4: 0x00000000
+a waiting thread size word left with a size of 0x4: 0x00000080
+a waiting thread last word is 0 with a size of 0x4: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x4: 0x00000000
+a waiting thread nothing past the size written with a size of 0x4: 0x00000001
+a waiting thread info with a size of 0x8: 0x00000000
+a waiting thread bytes written with a size of 0x8: 0x00000008
+a waiting thread size word left with a size of 0x8: 0x00000080
+a waiting thread last word is 0 with a size of 0x8: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x8: 0x00000000
+a waiting thread nothing past the size written with a size of 0x8: 0x00000001
+a waiting thread info with a size of 0x10: 0x00000000
+a waiting thread bytes written with a size of 0x10: 0x00000010
+a waiting thread size word left with a size of 0x10: 0x00000080
+a waiting thread last word is 0 with a size of 0x10: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x10: 0x00000000
+a waiting thread nothing past the size written with a size of 0x10: 0x00000001
+a waiting thread info with a size of 0x7C: 0x00000000
+a waiting thread bytes written with a size of 0x7C: 0x0000007C
+a waiting thread size word left with a size of 0x7C: 0x00000080
+a waiting thread last word is 0 with a size of 0x7C: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x7C: 0x00000001
+a waiting thread nothing past the size written with a size of 0x7C: 0x00000001
+a waiting thread info with a size of 0x7F: 0x00000000
+a waiting thread bytes written with a size of 0x7F: 0x0000007F
+a waiting thread size word left with a size of 0x7F: 0x00000080
+a waiting thread last word is 0 with a size of 0x7F: 0x00000000
+a waiting thread name[31] is 0 with a size of 0x7F: 0x00000001
+a waiting thread nothing past the size written with a size of 0x7F: 0x00000001
+a waiting thread info with a size of 0x80: 0x00000000
+a waiting thread bytes written with a size of 0x80: 0x00000080
+a waiting thread size word left with a size of 0x80: 0x00000080
+a waiting thread last word is 0 with a size of 0x80: 0x00000001
+a waiting thread name[31] is 0 with a size of 0x80: 0x00000001
+a waiting thread nothing past the size written with a size of 0x80: 0x00000001
+the running thread info with a size of 0x81: 0x8002710B
+the running thread info with a size of 0x100: 0x8002710B
+an ended thread info with a size of 0x81: 0x8002710B
+an ended thread info with a size of 0x100: 0x8002710B
+a waiting thread info with a size of 0x81: 0x8002710B
+a waiting thread info with a size of 0x100: 0x8002710B
+the running thread info with a NULL pointer: 0x80020006
+an ended thread info with a NULL pointer: 0x80020006
+a waiting thread info with a NULL pointer: 0x80020006
+DONE

@@ -1,0 +1,10 @@
+the first block for code named vm dup: 0x00000000
+the second block for code named vm dup: 0x00000000
+the 64 KiB ENABLE_OPEN block named vm dup: 0x00000000
+open vm dup with 0x10: 0x00000000
+open vm dup: it maps the ENABLE_OPEN block: 0x00000001
+close the opened block: 0x00000000
+free the ENABLE_OPEN block: 0x00000000
+free the second block for code: 0x00000000
+free the first block for code: 0x00000000
+DONE

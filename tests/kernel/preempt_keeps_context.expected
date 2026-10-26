@@ -1,0 +1,23 @@
+variant A, H started by the main thread: H ran during L's loop: 0x00000001
+variant A, H started by the main thread: the r0 to r11 kept, one bit each: 0x00000FFF
+variant A, H started by the main thread: the flags L set, NZCVQ and GE: 0x880A0000
+variant A, H started by the main thread: the flags kept: 0x00000001
+variant A, H started by the main thread: the d0 to d31 kept, one bit each: 0xFFFFFFFF
+variant A, H started by the main thread: FPSCR as L set it: 0x00000001
+variant A, H started by the main thread: FPSCR the same as before the loop: 0x00000001
+variant A, H started by the main thread: TPIDRURW as L set it: 0x00000001
+variant A, H started by the main thread: TPIDRURW the same as before the loop: 0x00000001
+variant A, H started by the main thread: TPIDRURO the same as before the loop: 0x00000001
+variant A, H started by the main thread: sp the same as before the loop: 0x00000001
+variant B, H woken by its delay: H ran during L's loop: 0x00000001
+variant B, H woken by its delay: the r0 to r11 kept, one bit each: 0x00000FFF
+variant B, H woken by its delay: the flags L set, NZCVQ and GE: 0x880A0000
+variant B, H woken by its delay: the flags kept: 0x00000001
+variant B, H woken by its delay: the d0 to d31 kept, one bit each: 0xFFFFFFFF
+variant B, H woken by its delay: FPSCR as L set it: 0x00000001
+variant B, H woken by its delay: FPSCR the same as before the loop: 0x00000001
+variant B, H woken by its delay: TPIDRURW as L set it: 0x00000001
+variant B, H woken by its delay: TPIDRURW the same as before the loop: 0x00000001
+variant B, H woken by its delay: TPIDRURO the same as before the loop: 0x00000001
+variant B, H woken by its delay: sp the same as before the loop: 0x00000001
+DONE

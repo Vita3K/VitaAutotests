@@ -1,0 +1,241 @@
+USER_CDRAM_L1WBWA_RW: allocate it: 0x00000000
+USER_CDRAM_L1WBWA_RW: its access: 0x00000006
+USER_CDRAM_L1WBWA_RW: the write: 0x00000000
+USER_CDRAM_L1WBWA_RW: the read: 0x00000000
+USER_CDRAM_L1WBWA_RW: info by range: 0x00000000
+USER_CDRAM_L1WBWA_RW: find by range: 0x00000000
+USER_CDRAM_R: allocate it: 0x00000000
+USER_CDRAM_R: its access: 0x00000004
+USER_CDRAM_R: the write: 0x80022005
+USER_CDRAM_R: the read: 0x00000000
+USER_CDRAM_R: info by range: 0x00000000
+USER_CDRAM_R: find by range: 0x00000000
+USER_CDRAM_RW: allocate it: 0x00000000
+USER_CDRAM_RW: its access: 0x00000006
+USER_CDRAM_RW: the write: 0x00000000
+USER_CDRAM_RW: the read: 0x00000000
+USER_CDRAM_RW: info by range: 0x00000000
+USER_CDRAM_RW: find by range: 0x00000000
+USER_MAIN_DEVICE_RW: allocate it: 0x00000000
+USER_MAIN_DEVICE_RW: its access: 0x00000006
+USER_MAIN_DEVICE_RW: the write: 0x00000000
+USER_MAIN_DEVICE_RW: the read: 0x00000000
+USER_MAIN_DEVICE_RW: info by range: 0x00000000
+USER_MAIN_DEVICE_RW: find by range: 0x00000000
+USER_MAIN_R: allocate it: 0x00000000
+USER_MAIN_R: its access: 0x00000004
+USER_MAIN_R: the write: 0x80022005
+USER_MAIN_R: the read: 0x00000000
+USER_MAIN_R: info by range: 0x00000000
+USER_MAIN_R: find by range: 0x00000000
+USER_MAIN_RW: allocate it: 0x00000000
+USER_MAIN_RW: its access: 0x00000006
+USER_MAIN_RW: the write: 0x00000000
+USER_MAIN_RW: the read: 0x00000000
+USER_MAIN_RW: info by range: 0x00000000
+USER_MAIN_RW: find by range: 0x00000000
+USER_MAIN_NC_RW: allocate it: 0x00000000
+USER_MAIN_NC_RW: its access: 0x00000006
+USER_MAIN_NC_RW: the write: 0x00000000
+USER_MAIN_NC_RW: the read: 0x00000000
+USER_MAIN_NC_RW: info by range: 0x00000000
+USER_MAIN_NC_RW: find by range: 0x00000000
+USER_MAIN_GAME_RW: allocate it: 0x00000000
+USER_MAIN_GAME_RW: its access: 0x00000006
+USER_MAIN_GAME_RW: the write: 0x00000000
+USER_MAIN_GAME_RW: the read: 0x00000000
+USER_MAIN_GAME_RW: info by range: 0x00000000
+USER_MAIN_GAME_RW: find by range: 0x00000000
+USER_MAIN_PHYCONT_RW: allocate it: 0x00000000
+USER_MAIN_PHYCONT_RW: its access: 0x00000006
+USER_MAIN_PHYCONT_RW: the write: 0x00000000
+USER_MAIN_PHYCONT_RW: the read: 0x00000000
+USER_MAIN_PHYCONT_RW: info by range: 0x00000000
+USER_MAIN_PHYCONT_RW: find by range: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: allocate it: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: its access: 0x00000006
+USER_MAIN_PHYCONT_NC_RW: the write: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: the read: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: info by range: 0x00000000
+USER_MAIN_PHYCONT_NC_RW: find by range: 0x00000000
+USER_MAIN_CDIALOG_RW: allocate it: 0x00000000
+USER_MAIN_CDIALOG_RW: its access: 0x00000006
+USER_MAIN_CDIALOG_RW: the write: 0x00000000
+USER_MAIN_CDIALOG_RW: the read: 0x00000000
+USER_MAIN_CDIALOG_RW: info by range: 0x00000000
+USER_MAIN_CDIALOG_RW: find by range: 0x00000000
+USER_MAIN_CDIALOG_NC_RW: allocate it: 0x00000000
+USER_MAIN_CDIALOG_NC_RW: its access: 0x00000006
+USER_MAIN_CDIALOG_NC_RW: the write: 0x00000000
+USER_MAIN_CDIALOG_NC_RW: the read: 0x00000000
+USER_MAIN_CDIALOG_NC_RW: info by range: 0x00000000
+USER_MAIN_CDIALOG_NC_RW: find by range: 0x00000000
+USER_CDIALOG_R: allocate it: 0x00000000
+USER_CDIALOG_R: its access: 0x00000004
+USER_CDIALOG_R: the write: 0x80022005
+USER_CDIALOG_R: the read: 0x00000000
+USER_CDIALOG_R: info by range: 0x00000000
+USER_CDIALOG_R: find by range: 0x00000000
+USER_CDIALOG_RW: allocate it: 0x00000000
+USER_CDIALOG_RW: its access: 0x00000006
+USER_CDIALOG_RW: the write: 0x00000000
+USER_CDIALOG_RW: the read: 0x00000000
+USER_CDIALOG_RW: info by range: 0x00000000
+USER_CDIALOG_RW: find by range: 0x00000000
+USER_CDIALOG_NC_R: allocate it: 0x00000000
+USER_CDIALOG_NC_R: its access: 0x00000004
+USER_CDIALOG_NC_R: the write: 0x80022005
+USER_CDIALOG_NC_R: the read: 0x00000000
+USER_CDIALOG_NC_R: info by range: 0x00000000
+USER_CDIALOG_NC_R: find by range: 0x00000000
+USER_CDIALOG_NC_RW: allocate it: 0x00000000
+USER_CDIALOG_NC_RW: its access: 0x00000006
+USER_CDIALOG_NC_RW: the write: 0x00000000
+USER_CDIALOG_NC_RW: the read: 0x00000000
+USER_CDIALOG_NC_RW: info by range: 0x00000000
+USER_CDIALOG_NC_RW: find by range: 0x00000000
+USER_CDRAM_L1WBWA_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDRAM_L1WBWA_RW alias 0x10: open: 0x80024B01
+USER_CDRAM_L1WBWA_RW alias 0x30: open: 0x80024B01
+USER_CDRAM_R: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDRAM_R alias 0x10: open: 0x80024804
+USER_CDRAM_R alias 0x30: open: 0x80024B0C
+USER_CDRAM_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDRAM_RW alias 0x10: open: 0x80024804
+USER_CDRAM_RW alias 0x30: open: 0x80024804
+USER_MAIN_DEVICE_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_DEVICE_RW alias 0x10: open: 0x80024B01
+USER_MAIN_DEVICE_RW alias 0x30: open: 0x80024B01
+USER_MAIN_R: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_R alias 0x10: open: 0x00000000
+USER_MAIN_R alias 0x10: its access: 0x00000004
+USER_MAIN_R alias 0x10: the write: 0x80022005
+USER_MAIN_R alias 0x10: the read: 0x00000000
+USER_MAIN_R alias 0x10: info by range: 0x00000000
+USER_MAIN_R alias 0x10: find by range: 0x00000000
+USER_MAIN_R alias 0x30: open: 0x80024B0C
+USER_MAIN_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_RW alias 0x10: open: 0x00000000
+USER_MAIN_RW alias 0x10: its access: 0x00000004
+USER_MAIN_RW alias 0x10: the write: 0x80022005
+USER_MAIN_RW alias 0x10: the read: 0x00000000
+USER_MAIN_RW alias 0x10: info by range: 0x00000000
+USER_MAIN_RW alias 0x10: find by range: 0x00000000
+USER_MAIN_RW alias 0x30: open: 0x00000000
+USER_MAIN_RW alias 0x30: its access: 0x00000006
+USER_MAIN_RW alias 0x30: the write: 0x00000000
+USER_MAIN_RW alias 0x30: the read: 0x00000000
+USER_MAIN_RW alias 0x30: info by range: 0x00000000
+USER_MAIN_RW alias 0x30: find by range: 0x00000000
+USER_MAIN_NC_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_NC_RW alias 0x10: open: 0x80024B01
+USER_MAIN_NC_RW alias 0x30: open: 0x00000000
+USER_MAIN_NC_RW alias 0x30: its access: 0x00000006
+USER_MAIN_NC_RW alias 0x30: the write: 0x00000000
+USER_MAIN_NC_RW alias 0x30: the read: 0x00000000
+USER_MAIN_NC_RW alias 0x30: info by range: 0x00000000
+USER_MAIN_NC_RW alias 0x30: find by range: 0x00000000
+USER_MAIN_GAME_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_GAME_RW alias 0x10: open: 0x80024B01
+USER_MAIN_GAME_RW alias 0x30: open: 0x80024B01
+USER_MAIN_PHYCONT_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_PHYCONT_RW alias 0x10: open: 0x80024B01
+USER_MAIN_PHYCONT_RW alias 0x30: open: 0x80024B01
+USER_MAIN_PHYCONT_NC_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_PHYCONT_NC_RW alias 0x10: open: 0x80024B01
+USER_MAIN_PHYCONT_NC_RW alias 0x30: open: 0x80024B01
+USER_MAIN_CDIALOG_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_CDIALOG_RW alias 0x10: open: 0x80024B01
+USER_MAIN_CDIALOG_RW alias 0x30: open: 0x80024B01
+USER_MAIN_CDIALOG_NC_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_MAIN_CDIALOG_NC_RW alias 0x10: open: 0x80024B01
+USER_MAIN_CDIALOG_NC_RW alias 0x30: open: 0x80024B01
+USER_CDIALOG_R: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDIALOG_R alias 0x10: open: 0x00000000
+USER_CDIALOG_R alias 0x10: its access: 0x00000004
+USER_CDIALOG_R alias 0x10: the write: 0x80022005
+USER_CDIALOG_R alias 0x10: the read: 0x00000000
+USER_CDIALOG_R alias 0x10: info by range: 0x00000000
+USER_CDIALOG_R alias 0x10: find by range: 0x00000000
+USER_CDIALOG_R alias 0x30: open: 0x80024B0C
+USER_CDIALOG_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDIALOG_RW alias 0x10: open: 0x00000000
+USER_CDIALOG_RW alias 0x10: its access: 0x00000004
+USER_CDIALOG_RW alias 0x10: the write: 0x80022005
+USER_CDIALOG_RW alias 0x10: the read: 0x00000000
+USER_CDIALOG_RW alias 0x10: info by range: 0x00000000
+USER_CDIALOG_RW alias 0x10: find by range: 0x00000000
+USER_CDIALOG_RW alias 0x30: open: 0x00000000
+USER_CDIALOG_RW alias 0x30: its access: 0x00000006
+USER_CDIALOG_RW alias 0x30: the write: 0x00000000
+USER_CDIALOG_RW alias 0x30: the read: 0x00000000
+USER_CDIALOG_RW alias 0x30: info by range: 0x00000000
+USER_CDIALOG_RW alias 0x30: find by range: 0x00000000
+USER_CDIALOG_NC_R: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDIALOG_NC_R alias 0x10: open: 0x00000000
+USER_CDIALOG_NC_R alias 0x10: its access: 0x00000004
+USER_CDIALOG_NC_R alias 0x10: the write: 0x80022005
+USER_CDIALOG_NC_R alias 0x10: the read: 0x00000000
+USER_CDIALOG_NC_R alias 0x10: info by range: 0x00000000
+USER_CDIALOG_NC_R alias 0x10: find by range: 0x00000000
+USER_CDIALOG_NC_R alias 0x30: open: 0x80024B0C
+USER_CDIALOG_NC_RW: allocate it with ENABLE_OPEN: 0x00000000
+USER_CDIALOG_NC_RW alias 0x10: open: 0x00000000
+USER_CDIALOG_NC_RW alias 0x10: its access: 0x00000004
+USER_CDIALOG_NC_RW alias 0x10: the write: 0x80022005
+USER_CDIALOG_NC_RW alias 0x10: the read: 0x00000000
+USER_CDIALOG_NC_RW alias 0x10: info by range: 0x00000000
+USER_CDIALOG_NC_RW alias 0x10: find by range: 0x00000000
+USER_CDIALOG_NC_RW alias 0x30: open: 0x00000000
+USER_CDIALOG_NC_RW alias 0x30: its access: 0x00000006
+USER_CDIALOG_NC_RW alias 0x30: the write: 0x00000000
+USER_CDIALOG_NC_RW alias 0x30: the read: 0x00000000
+USER_CDIALOG_NC_RW alias 0x30: info by range: 0x00000000
+USER_CDIALOG_NC_RW alias 0x30: find by range: 0x00000000
+a block for code: allocate it: 0x00000000
+a block for code, the domain closed: its access: 0x00000004
+a block for code, the domain closed: the write: 0x80022005
+a block for code, the domain closed: the read: 0x00000000
+a block for code, the domain closed: info by range: 0x00000000
+a block for code, the domain closed: find by range: 0x00000000
+open the domain: 0x00000000
+a block for code, the domain open: its access: 0x00000004
+a block for code, the domain open: the write: 0x80022005
+a block for code, the domain open: the read: 0x00000000
+a block for code, the domain open: info by range: 0x00000000
+a block for code, the domain open: find by range: 0x00000000
+a thread started before the open: its access: 0x00000004
+a thread started before the open: the write: 0x80022005
+a thread started before the open: the read: 0x00000000
+a thread started before the open: info by range: 0x00000000
+a thread started before the open: find by range: 0x00000000
+a thread started after the open: its access: 0x00000004
+a thread started after the open: the write: 0x80022005
+a thread started after the open: the read: 0x00000000
+a thread started after the open: info by range: 0x00000000
+a thread started after the open: find by range: 0x00000000
+close the domain: 0x00000000
+free the block for code: 0x00000000
+a const string: its access: 0x00000004
+a const string: the read: 0x00000000
+a const string: info by range: 0x00000000
+a const string: find by range: 0x80020001
+an initialized global: its access: 0x00000006
+an initialized global: the write: 0x00000000
+an initialized global: the read: 0x00000000
+an initialized global: info by range: 0x00000000
+an initialized global: find by range: 0x80024501
+a local on the main thread's stack: its access: 0x00000006
+a local on the main thread's stack: the read: 0x00000000
+a local on the main thread's stack: info by range: 0x00000000
+a local on the main thread's stack: find by range: 0x80020001
+TLS slot 0 of the main thread: its access: 0x00000006
+TLS slot 0 of the main thread: the read: 0x00000000
+TLS slot 0 of the main thread: info by range: 0x00000000
+TLS slot 0 of the main thread: find by range: 0x80024501
+memory from malloc: its access: 0x00000006
+memory from malloc: the write: 0x00000000
+memory from malloc: the read: 0x00000000
+memory from malloc: info by range: 0x00000000
+memory from malloc: find by range: 0x00000000
+DONE

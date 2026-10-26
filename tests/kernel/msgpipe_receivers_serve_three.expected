@@ -1,0 +1,115 @@
+FIFO three: the send: 0x00000000
+FIFO three: the send's size: 0x0000000A
+FIFO three: the free size after the send: 0x00001000
+FIFO three: the waiting receivers after the send: 0x00000001
+FIFO three: R1 still waits right after the send: 0x00000000
+FIFO three: R1's size right after the send: 0x00000004
+FIFO three: R1's buffer "ABCD----" after the send: 0x00000008
+FIFO three: R2 still waits right after the send: 0x00000000
+FIFO three: R2's size right after the send: 0x00000004
+FIFO three: R2's buffer "EFGH----" after the send: 0x00000008
+FIFO three: R3 still waits right after the send: 0x00000001
+FIFO three: R3's size right after the send: 0x00000002
+FIFO three: R3's buffer "IJ------" after the send: 0x00000008
+FIFO three: R1's result: 0x00000000
+FIFO three: R1's size: 0x00000004
+FIFO three: R1's buffer "ABCD----": 0x00000008
+FIFO three: R2's result: 0x00000000
+FIFO three: R2's size: 0x00000004
+FIFO three: R2's buffer "EFGH----": 0x00000008
+FIFO three: the second send: 0x00000000
+FIFO three: the second send's size: 0x00000006
+FIFO three: R3's result: 0x00000000
+FIFO three: R3's size: 0x00000008
+FIFO three: R3's buffer "IJKLMNOP": 0x00000008
+FIFO three: the free size after R3 ended: 0x00001000
+FIFO three: the waiting receivers after R3 ended: 0x00000000
+priority three: the send: 0x00000000
+priority three: the send's size: 0x0000000A
+priority three: the free size after the send: 0x00001000
+priority three: the waiting receivers after the send: 0x00000001
+priority three: R1 still waits: 0x00000001
+priority three: R1 still waits right after the send: 0x00000001
+priority three: R1's size right after the send: 0x00000000
+priority three: R1's buffer "--------" after the send: 0x00000008
+priority three: R2 still waits right after the send: 0x00000000
+priority three: R2's size right after the send: 0x00000002
+priority three: R2's buffer "IJ------" after the send: 0x00000008
+priority three: R3 still waits right after the send: 0x00000000
+priority three: R3's size right after the send: 0x00000008
+priority three: R3's buffer "ABCDEFGH" after the send: 0x00000008
+priority three: R3's result: 0x00000000
+priority three: R3's size: 0x00000008
+priority three: R3's buffer "ABCDEFGH": 0x00000008
+priority three: R2's result: 0x00000000
+priority three: R2's size: 0x00000002
+priority three: R2's buffer "IJ------": 0x00000008
+priority three: the second send: 0x00000000
+priority three: the second send's size: 0x00000004
+priority three: R1's result: 0x00000000
+priority three: R1's size: 0x00000004
+priority three: R1's buffer "KLMN----": 0x00000008
+ASAP 2 and 2: the send: 0x00000000
+ASAP 2 and 2: the send's size: 0x00000006
+ASAP 2 and 2: the free size after the send: 0x00000FFE
+ASAP 2 and 2: the waiting receivers after the send: 0x00000000
+ASAP 2 and 2: R1 still waits right after the send: 0x00000000
+ASAP 2 and 2: R1's size right after the send: 0x00000002
+ASAP 2 and 2: R1's buffer "AB------" after the send: 0x00000008
+ASAP 2 and 2: R2 still waits right after the send: 0x00000000
+ASAP 2 and 2: R2's size right after the send: 0x00000002
+ASAP 2 and 2: R2's buffer "CD------" after the send: 0x00000008
+ASAP 2 and 2: R1's result: 0x00000000
+ASAP 2 and 2: R1's size: 0x00000002
+ASAP 2 and 2: R1's buffer "AB------": 0x00000008
+ASAP 2 and 2: R2's result: 0x00000000
+ASAP 2 and 2: R2's size: 0x00000002
+ASAP 2 and 2: R2's buffer "CD------": 0x00000008
+ASAP 2 and 2: the drain: 0x00000000
+ASAP 2 and 2: the drain's size: 0x00000002
+ASAP 2 and 2: the drain's bytes "EF": 0x00000002
+FULL 4, send 4096: the send: 0x00000000
+FULL 4, send 4096: the send's size: 0x00001000
+FULL 4, send 4096: the free size after the send: 0x00000004
+FULL 4, send 4096: the waiting receivers after the send: 0x00000000
+FULL 4, send 4096: R1 still waits right after the send: 0x00000000
+FULL 4, send 4096: R1's size right after the send: 0x00000004
+FULL 4, send 4096: R1's buffer "abcd----" after the send: 0x00000008
+FULL 4, send 4096: R1's result: 0x00000000
+FULL 4, send 4096: R1's size: 0x00000004
+FULL 4, send 4096: R1's buffer "abcd----": 0x00000008
+FULL 4, send 4096: R1 got the first 4 bytes: 0x00000001
+FULL 4, send 4096: the drain: 0x00000000
+FULL 4, send 4096: the drain's size: 0x00000FFC
+FULL 4, send 4096: the drain holds the rest: 0x00000001
+FULL 4, send 4096: the free size after the drain: 0x00001000
+FULL 4096, send 4096: the send: 0x00000000
+FULL 4096, send 4096: the send's size: 0x00001000
+FULL 4096, send 4096: the free size after the send: 0x00001000
+FULL 4096, send 4096: the waiting receivers after the send: 0x00000000
+FULL 4096, send 4096: R1 still waits right after the send: 0x00000000
+FULL 4096, send 4096: R1's result: 0x00000000
+FULL 4096, send 4096: R1's size: 0x00001000
+FULL 4096, send 4096: R1's bytes are the pattern: 0x00000001
+ASAP 6, FULL 8, ASAP 4: the ASAP send of 6: 0x00000000
+ASAP 6, FULL 8, ASAP 4: the send's size: 0x00000006
+ASAP 6, FULL 8, ASAP 4: the free size after the send: 0x00001000
+ASAP 6, FULL 8, ASAP 4: the waiting receivers after the send: 0x00000002
+ASAP 6, FULL 8, ASAP 4: R1 still waits right after the send: 0x00000001
+ASAP 6, FULL 8, ASAP 4: R1's size right after the send: 0x00000006
+ASAP 6, FULL 8, ASAP 4: R1's buffer "ABCDEF--" after the send: 0x00000008
+ASAP 6, FULL 8, ASAP 4: R2 still waits right after the send: 0x00000001
+ASAP 6, FULL 8, ASAP 4: R2's size right after the send: 0x00000000
+ASAP 6, FULL 8, ASAP 4: R2's buffer "--------" after the send: 0x00000008
+ASAP 6, FULL 8, ASAP 4: the send of 2: 0x00000000
+ASAP 6, FULL 8, ASAP 4: the send of 2's size: 0x00000002
+ASAP 6, FULL 8, ASAP 4: R1's result: 0x00000000
+ASAP 6, FULL 8, ASAP 4: R1's size: 0x00000008
+ASAP 6, FULL 8, ASAP 4: R1's buffer "ABCDEFGH": 0x00000008
+ASAP 6, FULL 8, ASAP 4: R2 still waits: 0x00000001
+ASAP 6, FULL 8, ASAP 4: the send of 1: 0x00000000
+ASAP 6, FULL 8, ASAP 4: the send of 1's size: 0x00000001
+ASAP 6, FULL 8, ASAP 4: R2's result: 0x00000000
+ASAP 6, FULL 8, ASAP 4: R2's size: 0x00000001
+ASAP 6, FULL 8, ASAP 4: R2's buffer "I-------": 0x00000008
+DONE

@@ -1,0 +1,17 @@
+delay: the call: 0x00000000
+delay: the target is in its wait: 0x00000001
+delay: an entry holds the target: 0x00000000
+delay: an entry holds the caller: 0x00000001
+semaphore: the call: 0x00000000
+semaphore: the target is in its wait: 0x00000001
+semaphore: an entry holds the target: 0x00000000
+semaphore: an entry holds the caller: 0x00000001
+event flag: the call: 0x00000000
+event flag: the target is in its wait: 0x00000001
+event flag: an entry holds the target: 0x00000000
+event flag: an entry holds the caller: 0x00000001
+lightweight mutex: the call: 0x00000000
+lightweight mutex: the target is in its wait: 0x00000001
+lightweight mutex: an entry holds the target: 0x00000000
+lightweight mutex: an entry holds the caller: 0x00000001
+DONE

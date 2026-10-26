@@ -1,0 +1,30 @@
+dormant: the first run's priority: 0x00000060
+dormant: the first run's affinity: 0x00020000
+dormant: change the priority: 0x00000000
+dormant: change the affinity: 0x00020000
+dormant, changed: info: 0x00000000
+dormant, changed: the initial priority: 0x00000060
+dormant, changed: the current priority: 0x00000070
+dormant, changed: the initial affinity: 0x00020000
+dormant, changed: the current affinity: 0x00040000
+dormant: start it again: 0x00000000
+dormant: restarted run: its priority: 0x00000060
+dormant: restarted run: its affinity: 0x00020000
+waiting: its first run's priority: 0x00000060
+waiting: its first run's affinity: 0x00020000
+waiting: change the priority: 0x00000000
+waiting: change the affinity: 0x00020000
+waiting, changed: info: 0x00000000
+waiting, changed: the initial priority: 0x00000060
+waiting, changed: the current priority: 0x00000070
+waiting, changed: the initial affinity: 0x00020000
+waiting, changed: the current affinity: 0x00040000
+ended, changed while waiting: info: 0x00000000
+ended, changed while waiting: the initial priority: 0x00000060
+ended, changed while waiting: the current priority: 0x00000070
+ended, changed while waiting: the initial affinity: 0x00020000
+ended, changed while waiting: the current affinity: 0x00040000
+restart it: 0x00000000
+waiting: restarted run: its priority: 0x00000060
+waiting: restarted run: its affinity: 0x00020000
+DONE

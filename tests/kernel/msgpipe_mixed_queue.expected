@@ -1,0 +1,67 @@
+the event waiter waits on the pipe: 0x00000001
+the event waiter alone: the attr: 0x00000000
+the event waiter alone: the waiting senders: 0x00000000
+the event waiter alone: the waiting receivers: 0x00000000
+the event waiter alone: its result: 0x80028005
+the event waiter waits on the pipe: 0x00000001
+three waiters: the attr: 0x00000000
+three waiters: the waiting senders: 0x00000000
+three waiters: the waiting receivers: 0x00000003
+the send: 0x00000000
+the send's size: 0x00000006
+after the send: the attr: 0x00000000
+after the send: the waiting senders: 0x00000000
+after the send: the waiting receivers: 0x00000000
+receiver 1, FULL 4, gets "ABCD", size: 0x00000004
+receiver 1's result: 0x00000000
+the event waiter's result: 0x00000000
+the event waiter's event bits: 0x00000001
+the event waiter's user data, high half: 0x00000006
+the event waiter's user data, low half: 0x00000000
+receiver 2, ASAP 4, gets "EF", size: 0x00000002
+receiver 2's result: 0x00000000
+attr 0x0, a sender waits: the attr: 0x00000000
+attr 0x0, a sender waits: the waiting senders: 0x00000001
+attr 0x0, a sender waits: the waiting receivers: 0x00000000
+attr 0x0, the canceled sender's result: 0x80028007
+attr 0x0, after the sender's cancel: the attr: 0x00000000
+attr 0x0, after the sender's cancel: the waiting senders: 0x00000000
+attr 0x0, after the sender's cancel: the waiting receivers: 0x00000000
+attr 0x0, a receiver waits: the attr: 0x00000000
+attr 0x0, a receiver waits: the waiting senders: 0x00000000
+attr 0x0, a receiver waits: the waiting receivers: 0x00000001
+attr 0x0, the canceled receiver's result: 0x80028007
+attr 0x1, a sender waits: the attr: 0x00002001
+attr 0x1, a sender waits: the waiting senders: 0x00000001
+attr 0x1, a sender waits: the waiting receivers: 0x00000000
+attr 0x1, the canceled sender's result: 0x80028007
+attr 0x1, after the sender's cancel: the attr: 0x00002001
+attr 0x1, after the sender's cancel: the waiting senders: 0x00000000
+attr 0x1, after the sender's cancel: the waiting receivers: 0x00000000
+attr 0x1, a receiver waits: the attr: 0x00000001
+attr 0x1, a receiver waits: the waiting senders: 0x00000000
+attr 0x1, a receiver waits: the waiting receivers: 0x00000001
+attr 0x1, the canceled receiver's result: 0x80028007
+attr 0x2, a sender waits: the attr: 0x00000002
+attr 0x2, a sender waits: the waiting senders: 0x00000001
+attr 0x2, a sender waits: the waiting receivers: 0x00000000
+attr 0x2, the canceled sender's result: 0x80028007
+attr 0x2, after the sender's cancel: the attr: 0x00000002
+attr 0x2, after the sender's cancel: the waiting senders: 0x00000000
+attr 0x2, after the sender's cancel: the waiting receivers: 0x00000000
+attr 0x2, a receiver waits: the attr: 0x00002002
+attr 0x2, a receiver waits: the waiting senders: 0x00000000
+attr 0x2, a receiver waits: the waiting receivers: 0x00000001
+attr 0x2, the canceled receiver's result: 0x80028007
+attr 0x3, a sender waits: the attr: 0x00002003
+attr 0x3, a sender waits: the waiting senders: 0x00000001
+attr 0x3, a sender waits: the waiting receivers: 0x00000000
+attr 0x3, the canceled sender's result: 0x80028007
+attr 0x3, after the sender's cancel: the attr: 0x00002003
+attr 0x3, after the sender's cancel: the waiting senders: 0x00000000
+attr 0x3, after the sender's cancel: the waiting receivers: 0x00000000
+attr 0x3, a receiver waits: the attr: 0x00002003
+attr 0x3, a receiver waits: the waiting senders: 0x00000000
+attr 0x3, a receiver waits: the waiting receivers: 0x00000001
+attr 0x3, the canceled receiver's result: 0x80028007
+DONE

@@ -1,0 +1,25 @@
+rwlock readers behind a writer, attr 0x0, priorities 0x90 0x70 0x80: wake order: 0x00000120
+rwlock readers behind a writer, attr 0x0, priorities all 0x80: wake order: 0x00000012
+rwlock readers behind a writer, attr 0x0, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000210
+rwlock readers behind a writer, attr 0x2000, priorities 0x90 0x70 0x80: wake order: 0x00000120
+rwlock readers behind a writer, attr 0x2000, priorities all 0x80: wake order: 0x00000012
+rwlock readers behind a writer, attr 0x2000, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000210
+message pipe senders, attr 0x0, priorities 0x90 0x70 0x80: wake order: 0x00000012
+message pipe senders, attr 0x0, priorities all 0x80: wake order: 0x00000012
+message pipe senders, attr 0x0, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000012
+message pipe senders, attr 0x1, priorities 0x90 0x70 0x80: wake order: 0x00000120
+message pipe senders, attr 0x1, priorities all 0x80: wake order: 0x00000012
+message pipe senders, attr 0x1, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000210
+message pipe senders, attr 0x2, priorities 0x90 0x70 0x80: wake order: 0x00000012
+message pipe senders, attr 0x2, priorities all 0x80: wake order: 0x00000012
+message pipe senders, attr 0x2, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000012
+message pipe senders, attr 0x4, priorities 0x90 0x70 0x80: wake order: 0x00000012
+message pipe senders, attr 0x4, priorities all 0x80: wake order: 0x00000012
+message pipe senders, attr 0x4, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000012
+message pipe senders, attr 0x8, priorities 0x90 0x70 0x80: wake order: 0x00000012
+message pipe senders, attr 0x8, priorities all 0x80: wake order: 0x00000012
+message pipe senders, attr 0x8, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000012
+thread end waiters, priorities 0x90 0x70 0x80: wake order: 0x00000120
+thread end waiters, priorities all 0x80: wake order: 0x00000012
+thread end waiters, priorities 0x90 0x70 0x80, then waiter 2 raised to 0x60: wake order: 0x00000210
+DONE

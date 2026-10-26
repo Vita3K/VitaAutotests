@@ -1,0 +1,45 @@
+signal wait with callbacks, notified at 500 ms: the result: 0x80028005
+signal wait with callbacks, notified at 500 ms: it returned between 750 ms and 1250 ms: 0x00000001
+signal wait with callbacks, notified at 500 ms: the time left is 0: 0x00000001
+signal wait with callbacks, notified at 500 ms: runs of the callback: 0x00000001
+thread end wait with callbacks, notified at 500 ms: the result: 0x80028005
+thread end wait with callbacks, notified at 500 ms: it returned between 750 ms and 1250 ms: 0x00000001
+thread end wait with callbacks, notified at 500 ms: the time left is 0: 0x00000001
+thread end wait with callbacks, notified at 500 ms: runs of the callback: 0x00000001
+delay with callbacks, notified at 500 ms: the result: 0x00000000
+delay with callbacks, notified at 500 ms: it returned between 750 ms and 1250 ms: 0x00000001
+delay with callbacks, notified at 500 ms: runs of the callback: 0x00000001
+signal wait with callbacks, held, event at 1.25 s: the result: 0x00000000
+signal wait with callbacks, held, event at 1.25 s: the time left is above 0: 0x00000001
+signal wait with callbacks, held, event at 1.25 s: runs of the callback: 0x00000001
+thread end wait with callbacks, held, event at 1.25 s: the result: 0x00000000
+thread end wait with callbacks, held, event at 1.25 s: the time left is above 0: 0x00000001
+thread end wait with callbacks, held, event at 1.25 s: the status of the end: 0x0000005A
+thread end wait with callbacks, held, event at 1.25 s: runs of the callback: 0x00000001
+delay with callbacks, held, event at 1.25 s: the result: 0x00000000
+delay with callbacks, held, event at 1.25 s: runs of the callback: 0x00000001
+signal wait with callbacks, held, no event: the result: 0x80028005
+signal wait with callbacks, held, no event: runs of the callback: 0x00000001
+signal wait with callbacks, held, no event: it returned within 250 ms of the release: 0x00000001
+thread end wait with callbacks, held, no event: the result: 0x80028005
+thread end wait with callbacks, held, no event: runs of the callback: 0x00000001
+thread end wait with callbacks, held, no event: it returned within 250 ms of the release: 0x00000001
+delay with callbacks, held, no event: the result: 0x00000000
+delay with callbacks, held, no event: runs of the callback: 0x00000001
+delay with callbacks, held, no event: it returned within 250 ms of the release: 0x00000001
+plain signal wait, notified at 500 ms: it lasted at least 750 ms: 0x00000001
+plain signal wait, notified at 500 ms: the result: 0x80028005
+plain signal wait, notified at 500 ms: runs of the callback when it returned: 0x00000000
+plain signal wait, notified at 500 ms: the result of sceKernelCheckCallback: 0x00000001
+plain signal wait, notified at 500 ms: runs of the callback after the check: 0x00000001
+plain thread end wait, notified at 500 ms: it lasted at least 750 ms: 0x00000001
+plain thread end wait, notified at 500 ms: the result: 0x80028005
+plain thread end wait, notified at 500 ms: runs of the callback when it returned: 0x00000000
+plain thread end wait, notified at 500 ms: the result of sceKernelCheckCallback: 0x00000001
+plain thread end wait, notified at 500 ms: runs of the callback after the check: 0x00000001
+plain delay, notified at 500 ms: it lasted at least 750 ms: 0x00000001
+plain delay, notified at 500 ms: the result: 0x00000000
+plain delay, notified at 500 ms: runs of the callback when it returned: 0x00000000
+plain delay, notified at 500 ms: the result of sceKernelCheckCallback: 0x00000001
+plain delay, notified at 500 ms: runs of the callback after the check: 0x00000001
+DONE

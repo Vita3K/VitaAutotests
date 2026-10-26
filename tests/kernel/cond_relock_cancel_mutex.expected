@@ -1,0 +1,15 @@
+case a: W's wait type before the cancel: 0x00000200
+case a: the cancel to a count of 1: 0x00000000
+case a: the waiting threads the cancel wrote: 0x00000001
+case a: W's wait result: 0x800281A3
+case a: W owns the mutex after its wait: 0x00000000
+case a: the mutex's count after the cancel: 0x00000001
+case a: W's unlock after it: 0x80028146
+case b: W's wait type before the cancel: 0x00000200
+case b: the cancel to a count of 0: 0x00000000
+case b: the waiting threads the cancel wrote: 0x00000001
+case b: W's wait result: 0x800281A3
+case b: W owns the mutex after its wait: 0x00000000
+case b: the mutex's count after the cancel: 0x00000000
+case b: W's unlock after it: 0x80028146
+DONE

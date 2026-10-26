@@ -1,0 +1,52 @@
+register the handler: 0x00000000
+first start: the start handler: the FPSCR: 0x03000000
+first start: the start handler: the flags: 0x00000000
+first start: the entry: the FPSCR: 0x03000000
+first start: the entry: the flags: 0x00000000
+first start: after a division by zero: the flags: 0x00000002
+first start: after a float overflow: the flags: 0x00000016
+first start: after a saturating NEON add: the flags: 0x08000016
+first start: after a compare that is unordered: the flags: 0x38000016
+first start: after a compare that is greater: the flags: 0x28000016
+first start: after a compare that is equal: the flags: 0x68000016
+first start: after a compare that is less: the flags: 0x88000016
+first start: after a delay: the flags: 0x88000016
+first start: after a wait with another thread on its core: the flags: 0x88000016
+first start: the other thread's flags after its compare: 0x30000000
+first start: a callback run by a check: the FPSCR: 0x03000000
+first start: a callback run by a check: the flags: 0x00000000
+first start: after the callback run by a check: the flags: 0x88000016
+first start: a callback run by a wait: the FPSCR: 0x03000000
+first start: a callback run by a wait: the flags: 0x00000000
+first start: after the callback run by a wait: the flags: 0x88000016
+first start: a callback run by a delay: the FPSCR: 0x03000000
+first start: a callback run by a delay: the flags: 0x00000000
+first start: after the callback run by a delay: the flags: 0x88000016
+first start: the end handler: the FPSCR: 0x03000000
+first start: the end handler: the flags: 0x00000000
+restart: the start handler: the FPSCR: 0x03000000
+restart: the start handler: the flags: 0x00000000
+restart: the entry: the FPSCR: 0x03000000
+restart: the entry: the flags: 0x00000000
+restart: after a division by zero: the flags: 0x00000002
+restart: after a float overflow: the flags: 0x00000016
+restart: after a saturating NEON add: the flags: 0x08000016
+restart: after a compare that is unordered: the flags: 0x38000016
+restart: after a compare that is greater: the flags: 0x28000016
+restart: after a compare that is equal: the flags: 0x68000016
+restart: after a compare that is less: the flags: 0x88000016
+restart: after a delay: the flags: 0x88000016
+restart: after a wait with another thread on its core: the flags: 0x88000016
+restart: the other thread's flags after its compare: 0x30000000
+restart: a callback run by a check: the FPSCR: 0x03000000
+restart: a callback run by a check: the flags: 0x00000000
+restart: after the callback run by a check: the flags: 0x88000016
+restart: a callback run by a wait: the FPSCR: 0x03000000
+restart: a callback run by a wait: the flags: 0x00000000
+restart: after the callback run by a wait: the flags: 0x88000016
+restart: a callback run by a delay: the FPSCR: 0x03000000
+restart: a callback run by a delay: the flags: 0x00000000
+restart: after the callback run by a delay: the flags: 0x88000016
+restart: the end handler: the FPSCR: 0x03000000
+restart: the end handler: the flags: 0x00000000
+DONE

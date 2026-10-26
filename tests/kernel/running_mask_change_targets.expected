@@ -1,0 +1,25 @@
+L at 0x70, H at 0x50: the mask change to core 1: 0x00000001
+L at 0x70, H at 0x50: L READY or STANDBY 300 ms after: 0x00000001
+L at 0x70, H at 0x50: L's count moved in the next 300 ms: 0x00000000
+L at 0x70, H at 0x50: H's count moved in that time: 0x00000001
+L at 0x70, H at 0x50: L counted in the 300 ms after H stopped running: 0x00000001
+L at 0x70, H at 0x50: the core L noted then: 0x00000001
+L at 0x70, H at 0xB0: the mask change to core 1: 0x00000001
+L at 0x70, H at 0xB0: L READY or STANDBY 300 ms after: 0x00000000
+L at 0x70, H at 0xB0: L's count moved in the next 300 ms: 0x00000001
+L at 0x70, H at 0xB0: H's count moved in that time: 0x00000000
+L at 0x70, H at 0xB0: L counted in the 300 ms after H stopped running: 0x00000001
+L at 0x70, H at 0xB0: the core L noted then: 0x00000001
+L at 0xA0, H at 0x50: the mask change to core 1: 0x00000001
+L at 0xA0, H at 0x50: L READY or STANDBY 300 ms after: 0x00000001
+L at 0xA0, H at 0x50: L's count moved in the next 300 ms: 0x00000000
+L at 0xA0, H at 0x50: H's count moved in that time: 0x00000001
+L at 0xA0, H at 0x50: L counted in the 300 ms after H stopped running: 0x00000001
+L at 0xA0, H at 0x50: the core L noted then: 0x00000001
+L at 0xA0, H at 0xB0: the mask change to core 1: 0x00000001
+L at 0xA0, H at 0xB0: L READY or STANDBY 300 ms after: 0x00000000
+L at 0xA0, H at 0xB0: L's count moved in the next 300 ms: 0x00000001
+L at 0xA0, H at 0xB0: H's count moved in that time: 0x00000000
+L at 0xA0, H at 0xB0: L counted in the 300 ms after H stopped running: 0x00000001
+L at 0xA0, H at 0xB0: the core L noted then: 0x00000001
+DONE

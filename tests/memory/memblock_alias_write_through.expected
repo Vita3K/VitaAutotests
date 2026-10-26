@@ -1,0 +1,67 @@
+USER_RW: allocate the openable block: 0x00000000
+USER_RW: open a 0x30 alias: 0x00000000
+USER_RW: open a second 0x30 alias: 0x00000000
+USER_RW: open a 0x10 alias: 0x00000000
+USER_RW, first word: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW, first word: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW, first word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_RW, first word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_RW, first word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_RW, last word: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW, last word: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW, last word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_RW, last word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_RW, last word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_RW, page edge: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW, page edge: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW, page edge: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_RW_UNCACHE: allocate the openable block: 0x00000000
+USER_RW_UNCACHE: open a 0x30 alias: 0x00000000
+USER_RW_UNCACHE: open a second 0x30 alias: 0x00000000
+USER_RW_UNCACHE: open a 0x10 alias: 0x80024B01
+USER_RW_UNCACHE, first word: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW_UNCACHE, first word: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW_UNCACHE, first word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_RW_UNCACHE, first word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_RW_UNCACHE, last word: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW_UNCACHE, last word: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW_UNCACHE, last word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_RW_UNCACHE, last word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_RW_UNCACHE, page edge: store through the 0x30 alias, read through the original: 0x00000001
+USER_RW_UNCACHE, page edge: store through the original, read through the 0x30 alias: 0x00000001
+USER_RW_UNCACHE, page edge: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_RW: allocate the openable block: 0x00000000
+USER_CDIALOG_RW: open a 0x30 alias: 0x00000000
+USER_CDIALOG_RW: open a second 0x30 alias: 0x00000000
+USER_CDIALOG_RW: open a 0x10 alias: 0x00000000
+USER_CDIALOG_RW, first word: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_RW, first word: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_RW, first word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_RW, first word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_RW, first word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_CDIALOG_RW, last word: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_RW, last word: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_RW, last word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_RW, last word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_RW, last word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_CDIALOG_RW, page edge: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_RW, page edge: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_RW, page edge: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW: allocate the openable block: 0x00000000
+USER_CDIALOG_NC_RW: open a 0x30 alias: 0x00000000
+USER_CDIALOG_NC_RW: open a second 0x30 alias: 0x00000000
+USER_CDIALOG_NC_RW: open a 0x10 alias: 0x00000000
+USER_CDIALOG_NC_RW, first word: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_NC_RW, first word: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW, first word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW, first word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_NC_RW, first word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_CDIALOG_NC_RW, last word: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_NC_RW, last word: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW, last word: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW, last word: kernel write through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_NC_RW, last word: kernel write through the original, read through the 0x10 alias: 0x00000001
+USER_CDIALOG_NC_RW, page edge: store through the 0x30 alias, read through the original: 0x00000001
+USER_CDIALOG_NC_RW, page edge: store through the original, read through the 0x30 alias: 0x00000001
+USER_CDIALOG_NC_RW, page edge: store through the 0x30 alias, read through the second 0x30 alias: 0x00000001
+DONE

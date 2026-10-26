@@ -1,0 +1,24 @@
+create a semaphore before the others: 0x00000000
+plain semaphores: the error with nothing live: 0x8002450D
+plain semaphores: the error with the blocks live: 0x8002450D
+plain blocks: all 256 are made: 0x00000001
+plain blocks: every free works: 0x00000001
+plain blocks: the count drops by 0 while they are live: 0x00000001
+plain blocks: the count drops by 256 while they are live: 0x00000000
+plain blocks: the count is back after they are freed: 0x00000001
+openable semaphores: the error with nothing live: 0x8002450D
+openable semaphores: the error with the blocks live: 0x8002450D
+ENABLE_OPEN blocks: all 64 are made: 0x00000001
+ENABLE_OPEN blocks: every free works: 0x00000001
+ENABLE_OPEN blocks: the count drops by 0 while they are live: 0x00000001
+ENABLE_OPEN blocks: the count drops by 64 while they are live: 0x00000000
+ENABLE_OPEN blocks: the count is back after they are freed: 0x00000001
+openable opens: the error with nothing live: 0x8002450C
+openable opens: the error with the aliases live: 0x8002450C
+aliases: the original is made: 0x00000001
+aliases: all 128 open: 0x00000001
+aliases: every close works: 0x00000001
+aliases: the opens drop by 0 while they are live: 0x00000001
+aliases: the opens drop by 128 while they are live: 0x00000000
+aliases: the opens are back after they are closed: 0x00000001
+DONE

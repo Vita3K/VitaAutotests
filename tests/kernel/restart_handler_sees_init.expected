@@ -1,0 +1,28 @@
+register: 0x00000000
+handler events: 0x00000004
+event 1: the type: 0x00000004
+event 1: runs of the entry before it: 0x00000000
+event 1: the priority: 0x00000060
+event 1: the affinity: 0x00020000
+event 1: the status: 0x00000001
+event 2: the type: 0x00000008
+event 2: runs of the entry before it: 0x00000001
+event 2: the priority: 0x00000050
+event 2: the affinity: 0x00040000
+event 2: the status: 0x00000001
+event 3: the type: 0x00000004
+event 3: runs of the entry before it: 0x00000001
+event 3: the priority: 0x00000060
+event 3: the affinity: 0x00020000
+event 3: the status: 0x00000001
+event 4: the type: 0x00000008
+event 4: runs of the entry before it: 0x00000002
+event 4: the priority: 0x00000060
+event 4: the affinity: 0x00020000
+event 4: the status: 0x00000001
+run 1: the entry's priority: 0x00000060
+run 1: the entry's affinity: 0x00020000
+run 2: the entry's priority: 0x00000060
+run 2: the entry's affinity: 0x00020000
+unregister: 0x00000000
+DONE

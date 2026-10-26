@@ -1,0 +1,7 @@
+A waits for B: the result: 0x80028005
+A waits for B: whether its status is still 0xDEAD: 0x00000001
+B waits for A: the result: 0x80028005
+B waits for A: whether its status is still 0xDEAD: 0x00000001
+A: the join after its end: 0x00000000
+B: the join after its end: 0x00000000
+DONE

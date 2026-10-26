@@ -1,0 +1,79 @@
+simple event: T then W wait before the notify: 0x00000001
+simple event: the notify: 0x00000000
+simple event: the waiting threads right after the notify: 0x00000001
+simple event: the release: 0x00000000
+simple event: who got the unit: 0x00000001
+simple event: T waits again after its callback: 0x00000001
+simple event: the waiting threads when T waits again: 0x00000001
+simple event: the second release: 0x00000000
+simple event: runs of T's callback when its wait returned: 0x00000001
+simple event: the check of T's callbacks after its wait: 0x00000000
+simple event: runs of T's callback after the check: 0x00000001
+simple event: T's wait: 0x00000000
+simple event: W's wait: 0x00000000
+timer: T then W wait before the notify: 0x00000001
+timer: the notify: 0x00000000
+timer: the waiting threads right after the notify: 0x00000001
+timer: the release: 0x00000000
+timer: who got the unit: 0x00000001
+timer: T waits again after its callback: 0x00000001
+timer: the waiting threads when T waits again: 0x00000001
+timer: the second release: 0x00000000
+timer: runs of T's callback when its wait returned: 0x00000001
+timer: the check of T's callbacks after its wait: 0x00000000
+timer: runs of T's callback after the check: 0x00000001
+timer: T's wait: 0x00000000
+timer: W's wait: 0x00000000
+message pipe receive: T then W wait before the notify: 0x00000001
+message pipe receive: the notify: 0x00000000
+message pipe receive: the waiting threads right after the notify: 0x00000001
+message pipe receive: the release: 0x00000000
+message pipe receive: who got the unit: 0x00000001
+message pipe receive: T waits again after its callback: 0x00000001
+message pipe receive: the waiting threads when T waits again: 0x00000001
+message pipe receive: the second release: 0x00000000
+message pipe receive: runs of T's callback when its wait returned: 0x00000001
+message pipe receive: the check of T's callbacks after its wait: 0x00000000
+message pipe receive: runs of T's callback after the check: 0x00000001
+message pipe receive: T's wait: 0x00000000
+message pipe receive: W's wait: 0x00000000
+message pipe send: T then W wait before the notify: 0x00000001
+message pipe send: the notify: 0x00000000
+message pipe send: the waiting threads right after the notify: 0x00000001
+message pipe send: the release: 0x00000000
+message pipe send: who got the unit: 0x00000001
+message pipe send: T waits again after its callback: 0x00000001
+message pipe send: the waiting threads when T waits again: 0x00000001
+message pipe send: the second release: 0x00000000
+message pipe send: runs of T's callback when its wait returned: 0x00000001
+message pipe send: the check of T's callbacks after its wait: 0x00000000
+message pipe send: runs of T's callback after the check: 0x00000001
+message pipe send: T's wait: 0x00000000
+message pipe send: W's wait: 0x00000000
+condition: T then W wait before the notify: 0x00000001
+condition: the notify: 0x00000000
+condition: the waiting threads right after the notify: 0x00000001
+condition: the release: 0x00000000
+condition: who got the unit: 0x00000001
+condition: T waits again after its callback: 0x00000001
+condition: the waiting threads when T waits again: 0x00000001
+condition: the second release: 0x00000000
+condition: runs of T's callback when its wait returned: 0x00000001
+condition: the check of T's callbacks after its wait: 0x00000000
+condition: runs of T's callback after the check: 0x00000001
+condition: T's wait: 0x00000000
+condition: W's wait: 0x00000000
+lightweight condition: T then W wait before the notify: 0x00000001
+lightweight condition: the notify: 0x00000000
+lightweight condition: the waiting threads right after the notify: 0x00000001
+lightweight condition: the release: 0x00000000
+lightweight condition: who got the unit: 0x00000001
+lightweight condition: T waits again after its callback: 0x00000001
+lightweight condition: the waiting threads when T waits again: 0x00000001
+lightweight condition: the second release: 0x00000000
+lightweight condition: runs of T's callback when its wait returned: 0x00000001
+lightweight condition: the check of T's callbacks after its wait: 0x00000000
+lightweight condition: runs of T's callback after the check: 0x00000001
+lightweight condition: T's wait: 0x00000000
+lightweight condition: W's wait: 0x00000000
+DONE

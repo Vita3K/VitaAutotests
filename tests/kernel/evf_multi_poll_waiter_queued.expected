@@ -1,0 +1,8 @@
+poll 0x2 with WAITOR and WAITCLEAR: 0x00000000
+the bits the poll for 0x2 got: 0x00000002
+poll 0x1 with WAITOR: 0x800280E3
+the bits the poll for 0x1 got: 0x00000000
+A ended before the set: 0x00000000
+A's result: 0x00000000
+the bits A got: 0x00000001
+DONE

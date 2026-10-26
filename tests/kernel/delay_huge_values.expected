@@ -1,0 +1,13 @@
+delay of 0x7FFFFFFF: its wait type after 300 ms: 0x00000001
+delay of 0x80000000: its wait type after 300 ms: 0x00000001
+delay of 0xFFFFFFFE: its wait type after 300 ms: 0x00000001
+delay with callbacks of 0x7FFFFFFF: its wait type after 300 ms: 0x80000001
+delay with callbacks of 0x80000000: its wait type after 300 ms: 0x80000001
+delay with callbacks of 0xFFFFFFFE: its wait type after 300 ms: 0x80000001
+delay 200 of 0x7FFFFFFF: its wait type after 300 ms: 0x00000001
+delay 200 of 0x80000000: its wait type after 300 ms: 0x00000001
+delay 200 of 0xFFFFFFFE: its wait type after 300 ms: 0x00000001
+delay 200 with callbacks of 0x7FFFFFFF: its wait type after 300 ms: 0x80000001
+delay 200 with callbacks of 0x80000000: its wait type after 300 ms: 0x80000001
+delay 200 with callbacks of 0xFFFFFFFE: its wait type after 300 ms: 0x80000001
+DONE

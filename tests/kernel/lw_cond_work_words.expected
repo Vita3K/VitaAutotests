@@ -1,0 +1,58 @@
+the waiter holds the mutex once: word 0 is the main thread: 0x00000000
+the waiter holds the mutex once: word 0 is the waiter: 0x00000001
+the waiter holds the mutex once: word 0 is 0: 0x00000000
+the waiter holds the mutex once: word 1: 0x00000000
+the waiter holds the mutex once: word 2: 0x00000001
+the waiter holds the mutex once: the waiter's unlocks after it: 0x00000001
+the waiter waits on the condition variable, the mutex free: word 0 is the main thread: 0x00000000
+the waiter waits on the condition variable, the mutex free: word 0 is the waiter: 0x00000000
+the waiter waits on the condition variable, the mutex free: word 0 is 0: 0x00000001
+the waiter waits on the condition variable, the mutex free: word 1: 0x00000000
+the waiter waits on the condition variable, the mutex free: word 2: 0x00000000
+the waiter waits on the condition variable, the mutex free: the waiter's wait: 0x00000000
+the waiter waits on the condition variable, the mutex free: the waiter's unlocks after it: 0x00000001
+recursive, the waiter holds it twice: word 0 is the main thread: 0x00000000
+recursive, the waiter holds it twice: word 0 is the waiter: 0x00000001
+recursive, the waiter holds it twice: word 0 is 0: 0x00000000
+recursive, the waiter holds it twice: word 1: 0x00000000
+recursive, the waiter holds it twice: word 2: 0x00000002
+recursive, the waiter waits on the condition variable: word 0 is the main thread: 0x00000000
+recursive, the waiter waits on the condition variable: word 0 is the waiter: 0x00000001
+recursive, the waiter waits on the condition variable: word 0 is 0: 0x00000000
+recursive, the waiter waits on the condition variable: word 1: 0x00000000
+recursive, the waiter waits on the condition variable: word 2: 0x00000001
+recursive, after the waiter's wait returned: word 0 is the main thread: 0x00000000
+recursive, after the waiter's wait returned: word 0 is the waiter: 0x00000001
+recursive, after the waiter's wait returned: word 0 is 0: 0x00000000
+recursive, after the waiter's wait returned: word 1: 0x00000000
+recursive, after the waiter's wait returned: word 2: 0x00000002
+recursive: the waiter's wait: 0x00000000
+recursive: the waiter's unlocks after it: 0x00000002
+the main thread holds the mutex, the waiter is signaled: word 0 is the main thread: 0x00000001
+the main thread holds the mutex, the waiter is signaled: word 0 is the waiter: 0x00000000
+the main thread holds the mutex, the waiter is signaled: word 0 is 0: 0x00000000
+the main thread holds the mutex, the waiter is signaled: word 1: 0x00000001
+the main thread holds the mutex, the waiter is signaled: word 2: 0x00000001
+right after the main thread's unlock, the waiter ready: word 0 is the main thread: 0x00000000
+right after the main thread's unlock, the waiter ready: word 0 is the waiter: 0x00000001
+right after the main thread's unlock, the waiter ready: word 0 is 0: 0x00000000
+right after the main thread's unlock, the waiter ready: word 1: 0x00000000
+right after the main thread's unlock, the waiter ready: word 2: 0x00000001
+the main thread's unlock: 0x00000000
+the waiter's wait returned, it holds the mutex: word 0 is the main thread: 0x00000000
+the waiter's wait returned, it holds the mutex: word 0 is the waiter: 0x00000001
+the waiter's wait returned, it holds the mutex: word 0 is 0: 0x00000000
+the waiter's wait returned, it holds the mutex: word 1: 0x00000000
+the waiter's wait returned, it holds the mutex: word 2: 0x00000001
+the main thread holds the mutex and signals: the waiter's wait: 0x00000000
+the main thread holds the mutex and signals: the waiter's unlocks after it: 0x00000001
+notified while the waiter relocks, the waiter in its callback: word 0 is the main thread: 0x00000001
+notified while the waiter relocks, the waiter in its callback: word 0 is the waiter: 0x00000000
+notified while the waiter relocks, the waiter in its callback: word 0 is 0: 0x00000000
+notified while the waiter relocks, the waiter in its callback: word 1: 0x00000001
+notified while the waiter relocks, the waiter in its callback: word 2: 0x00000001
+the notify: 0x00000000
+the main thread's unlock: 0x00000000
+notified while the waiter relocks: the waiter's wait: 0x00000000
+notified while the waiter relocks: the waiter's unlocks after it: 0x00000001
+DONE

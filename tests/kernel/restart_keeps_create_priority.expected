@@ -1,0 +1,6 @@
+run 1: it runs at the creator's priority at creation: 0x00000001
+run 1: its initial priority in the info is the creator's priority at creation: 0x00000001
+run 2: it runs at the creator's priority at creation: 0x00000001
+run 2: its initial priority in the info is the creator's priority at creation: 0x00000001
+delete it: 0x00000000
+DONE

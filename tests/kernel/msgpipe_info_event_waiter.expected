@@ -1,0 +1,23 @@
+before the senders: the attr: 0x00000001
+before the senders: the waiting senders: 0x00000000
+before the senders: the waiting receivers: 0x00000000
+sender 1 waits on the pipe: 0x00000001
+sender 2 waits on the pipe: 0x00000001
+with the senders: the attr: 0x00002001
+with the senders: the waiting senders: 0x00000002
+with the senders: the waiting receivers: 0x00000000
+the event waiter waits on the pipe: 0x00000001
+with the event waiter: the attr: 0x00002001
+with the event waiter: the waiting senders: 0x00000003
+with the event waiter: the waiting receivers: 0x00000000
+cancel: 0x00000000
+cancel counts the waiting senders: 0x00000002
+cancel counts the waiting receivers: 0x00000000
+sender 1's result: 0x80028007
+sender 2's result: 0x80028007
+the event waiter's result: 0x80028005
+the event waiter's event bits: 0x00000000
+after the cancel: the attr: 0x00002001
+after the cancel: the waiting senders: 0x00000000
+after the cancel: the waiting receivers: 0x00000000
+DONE

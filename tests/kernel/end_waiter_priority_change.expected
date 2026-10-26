@@ -1,0 +1,8 @@
+priorities left alone: run order: 0x00000021
+priorities left alone: W1's wait result: 0x00000000
+priorities left alone: W2's wait result: 0x00000000
+W2 set to its own priority while both wait: the change of W2 to its own priority: 0x00000000
+W2 set to its own priority while both wait: run order: 0x00000021
+W2 set to its own priority while both wait: W1's wait result: 0x00000000
+W2 set to its own priority while both wait: W2's wait result: 0x00000000
+DONE

@@ -1,0 +1,16 @@
+sceKernelWaitSema with a timeout of 0 on an empty semaphore: the call: 0x80028005
+sceKernelWaitSema with a timeout of 0 on an empty semaphore: steps recorded: 0x00000003
+sceKernelWaitSema with a timeout of 0 on an empty semaphore: step 0: 0x00000000
+sceKernelWaitSema with a timeout of 0 on an empty semaphore: step 1: 0x00000002
+sceKernelWaitSema with a timeout of 0 on an empty semaphore: step 2: 0x00000001
+sceKernelPollSema on an empty semaphore: the call: 0x80028102
+sceKernelPollSema on an empty semaphore: steps recorded: 0x00000003
+sceKernelPollSema on an empty semaphore: step 0: 0x00000000
+sceKernelPollSema on an empty semaphore: step 1: 0x00000002
+sceKernelPollSema on an empty semaphore: step 2: 0x00000001
+sceKernelPollEventFlag for an unset bit: the call: 0x800280E3
+sceKernelPollEventFlag for an unset bit: steps recorded: 0x00000003
+sceKernelPollEventFlag for an unset bit: step 0: 0x00000000
+sceKernelPollEventFlag for an unset bit: step 1: 0x00000002
+sceKernelPollEventFlag for an unset bit: step 2: 0x00000001
+DONE

@@ -1,0 +1,31 @@
+below main: start: 0x00000000
+below main: the entry ran: 0x00000001
+below main: bytes the entry got that were sent: 0x00000010
+below main: bytes the entry got that are 0x55: 0x00000000
+above main: start: 0x00000000
+above main: the entry ran: 0x00000001
+above main: bytes the entry got that were sent: 0x00000010
+above main: bytes the entry got that are 0x55: 0x00000000
+entry writes: start: 0x00000000
+entry writes: the entry ran: 0x00000001
+entry writes: bytes the entry got that were sent: 0x00000010
+entry writes: bytes of its copy that read back as written: 0x00000010
+entry writes: bytes of the sender's buffer that changed: 0x00000000
+restart: first start: 0x00000000
+restart: first start, bytes the entry got that were sent: 0x00000010
+restart: start with new bytes: 0x00000000
+restart: the entry ran: 0x00000001
+restart: bytes the entry got that are the new ones: 0x00000010
+restart: bytes the entry got that are the first ones: 0x00000000
+stack 0x1000, argument 0xFF0: start: 0x00000000
+stack 0x1000, argument 0xFF0: stack size: 0x00001000
+stack 0x1000, argument 0xFF0: the entry ran: 0x00000001
+stack 0x1000, argument 0xFF0: the entry's r0: 0x00000FF0
+stack 0x1000, argument 0xFF0: sp below the top by: 0x00000FF0
+stack 0x1000, argument 0x1001: start: 0x80020005
+stack 0x1001, argument 0x1800: start: 0x00000000
+stack 0x1001, argument 0x1800: stack size: 0x00002000
+stack 0x1001, argument 0x1800: the entry ran: 0x00000001
+stack 0x1001, argument 0x1800: the entry's r0: 0x00001800
+stack 0x1001, argument 0x1800: sp below the top by: 0x00001800
+DONE

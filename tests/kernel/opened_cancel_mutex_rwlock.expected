@@ -1,0 +1,32 @@
+mutex, cancel to -1 through the opened UID: create and open the mutex: 0x00000000
+mutex, cancel to -1 through the opened UID: the cancel: 0x00000000
+mutex, cancel to -1 through the opened UID: the waiters it counted: 0x00000001
+mutex, cancel to -1 through the opened UID: the waiter's lock: 0x80028007
+mutex, cancel to -1 through the opened UID: the count after, through the creating UID: 0x00000001
+mutex, cancel to -1 through the opened UID: the count through the opened UID is the same: 0x00000001
+mutex, cancel to -1 through the opened UID: the main thread owns it: 0x00000001
+mutex, cancel to -1 through the opened UID: the owner through the opened UID is the same: 0x00000001
+mutex, cancel to -1 through the opened UID: the waiters after: 0x00000000
+rwlock, cancel with flag 1 through the opened UID: create and open the rwlock: 0x00000000
+rwlock, cancel with flag 1 through the opened UID: the write lock through the creating UID: 0x00000000
+rwlock, cancel with flag 1 through the opened UID: the cancel: 0x00000000
+rwlock, cancel with flag 1 through the opened UID: the readers it counted: 0x00000001
+rwlock, cancel with flag 1 through the opened UID: the writers it counted: 0x00000000
+rwlock, cancel with flag 1 through the opened UID: the reader's lock: 0x80028007
+rwlock, cancel with flag 1 through the opened UID: the lock count after, through the creating UID: 0x00000001
+rwlock, cancel with flag 1 through the opened UID: the lock count through the opened UID is the same: 0x00000001
+rwlock, cancel with flag 1 through the opened UID: the main thread owns it: 0x00000001
+rwlock, cancel with flag 1 through the opened UID: the owner through the opened UID is the same: 0x00000001
+rwlock, cancel with flag 1 through the opened UID: the write unlock through the creating UID: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: create and open the rwlock: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the write lock through the creating UID: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the cancel: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the readers it counted: 0x00000001
+rwlock, cancel with flag 0 through the opened UID: the writers it counted: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the reader's lock: 0x80028007
+rwlock, cancel with flag 0 through the opened UID: the lock count after, through the creating UID: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the lock count through the opened UID is the same: 0x00000001
+rwlock, cancel with flag 0 through the opened UID: the main thread owns it: 0x00000000
+rwlock, cancel with flag 0 through the opened UID: the owner through the opened UID is the same: 0x00000001
+rwlock, cancel with flag 0 through the opened UID: the write unlock through the creating UID: 0x800281E4
+DONE

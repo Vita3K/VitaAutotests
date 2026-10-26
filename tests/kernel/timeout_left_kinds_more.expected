@@ -1,0 +1,14 @@
+semaphore, woken: the wait: 0x00000000
+semaphore, woken: the time left is less than the timeout: 0x00000001
+semaphore, woken: the time left is more than half of it: 0x00000001
+timer, woken: the wait: 0x00000000
+timer, woken: the time left is less than the timeout: 0x00000001
+timer, woken: the time left is more than half of it: 0x00000001
+multiple events, one of them a timer, woken: the wait: 0x00000001
+multiple events, one of them a timer, woken: the time left is less than the timeout: 0x00000001
+multiple events, one of them a timer, woken: the time left is more than half of it: 0x00000001
+semaphore, timed out: the wait: 0x80028005
+semaphore, timed out: the time left is 0: 0x00000001
+timer, timed out: the wait: 0x80028005
+timer, timed out: the time left is 0: 0x00000001
+DONE

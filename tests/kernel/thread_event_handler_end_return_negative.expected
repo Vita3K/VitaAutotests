@@ -1,0 +1,13 @@
+an end handler that returns -1: register: 0x00000001
+an end handler that returns -1: start 1: the wait for the end: 0x00000000
+an end handler that returns -1: start 1: runs of the handler: 0x00000001
+an end handler that returns -1: start 2: the wait for the end: 0x00000000
+an end handler that returns -1: start 2: runs of the handler: 0x00000001
+an end handler that returns -1: unregister it after: 0x80028061
+a control end handler that returns 0: register: 0x00000001
+a control end handler that returns 0: start 1: the wait for the end: 0x00000000
+a control end handler that returns 0: start 1: runs of the handler: 0x00000001
+a control end handler that returns 0: start 2: the wait for the end: 0x00000000
+a control end handler that returns 0: start 2: runs of the handler: 0x00000002
+a control end handler that returns 0: unregister it after: 0x00000000
+DONE

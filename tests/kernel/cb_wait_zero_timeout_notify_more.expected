@@ -1,0 +1,41 @@
+mutex: the wait: 0x80028005
+mutex: the time left: 0x00000000
+mutex: runs of the callback: 0x00000002
+mutex: the object holds what the second run gave: 0x00000001
+lightweight mutex: the wait: 0x80028005
+lightweight mutex: the time left: 0x00000000
+lightweight mutex: runs of the callback: 0x00000002
+lightweight mutex: the object holds what the second run gave: 0x00000001
+read lock: the wait: 0x80028005
+read lock: the time left: 0x00000000
+read lock: runs of the callback: 0x00000002
+read lock: the object holds what the second run gave: 0x00000001
+write lock: the wait: 0x80028005
+write lock: the time left: 0x00000000
+write lock: runs of the callback: 0x00000002
+write lock: the object holds what the second run gave: 0x00000001
+timer: the wait: 0x80028005
+timer: the time left: 0x00000000
+timer: runs of the callback: 0x00000002
+timer: the object holds what the second run gave: 0x00000001
+condition: the wait: 0x80028005
+condition: the time left: 0x00000000
+condition: runs of the callback: 0x00000002
+condition: the object holds what the second run gave: 0x00000001
+lightweight condition: the wait: 0x80028005
+lightweight condition: the time left: 0x00000000
+lightweight condition: runs of the callback: 0x00000002
+lightweight condition: the object holds what the second run gave: 0x00000001
+message pipe send: the wait: 0x80028005
+message pipe send: the time left: 0x00000000
+message pipe send: runs of the callback: 0x00000002
+message pipe send: the object holds what the second run gave: 0x00000001
+thread signal: the wait: 0x80028005
+thread signal: the time left: 0x00000000
+thread signal: runs of the callback: 0x00000001
+thread signal: the object holds what the second run gave: 0x00000000
+thread end: the wait: 0x80028005
+thread end: the time left: 0x00000000
+thread end: runs of the callback: 0x00000001
+thread end: the object holds what the second run gave: 0x00000000
+DONE

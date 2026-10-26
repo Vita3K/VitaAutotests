@@ -1,0 +1,43 @@
+read lock: T waits with callbacks before it is released: 0x00000001
+read lock: T's wait: 0x00000000
+read lock: the timeout the callback saw is the one passed: 0x00000001
+read lock: the timeout the callback saw is above 1 s: 0x00000001
+read lock: the time left after the call is below the timeout passed: 0x00000001
+read lock: the time left after the call is above 1 s: 0x00000001
+message pipe send: T waits with callbacks before it is released: 0x00000001
+message pipe send: T's wait: 0x00000000
+message pipe send: the timeout the callback saw is the one passed: 0x00000000
+message pipe send: the timeout the callback saw is above 1 s: 0x00000001
+message pipe send: the time left after the call is below the timeout passed: 0x00000001
+message pipe send: the time left after the call is above 1 s: 0x00000001
+timer: T waits with callbacks before it is released: 0x00000001
+timer: T's wait: 0x00000000
+timer: the timeout the callback saw is the one passed: 0x00000001
+timer: the timeout the callback saw is above 1 s: 0x00000001
+timer: the time left after the call is below the timeout passed: 0x00000001
+timer: the time left after the call is above 1 s: 0x00000001
+lightweight condition: T waits with callbacks before it is released: 0x00000001
+lightweight condition: T's wait: 0x00000000
+lightweight condition: the timeout the callback saw is the one passed: 0x00000001
+lightweight condition: the timeout the callback saw is above 1 s: 0x00000001
+lightweight condition: the time left after the call is below the timeout passed: 0x00000001
+lightweight condition: the time left after the call is above 1 s: 0x00000001
+thread signal: T waits with callbacks before it is released: 0x00000001
+thread signal: T's wait: 0x00000000
+thread signal: the timeout the callback saw is the one passed: 0x00000001
+thread signal: the timeout the callback saw is above 1 s: 0x00000001
+thread signal: the time left after the call is below the timeout passed: 0x00000001
+thread signal: the time left after the call is above 1 s: 0x00000001
+thread end: T waits with callbacks before it is released: 0x00000001
+thread end: T's wait: 0x00000000
+thread end: the timeout the callback saw is the one passed: 0x00000001
+thread end: the timeout the callback saw is above 1 s: 0x00000001
+thread end: the time left after the call is below the timeout passed: 0x00000001
+thread end: the time left after the call is above 1 s: 0x00000001
+multiple events: T waits with callbacks before it is released: 0x00000001
+multiple events: T's wait: 0x00000001
+multiple events: the timeout the callback saw is the one passed: 0x00000001
+multiple events: the timeout the callback saw is above 1 s: 0x00000001
+multiple events: the time left after the call is below the timeout passed: 0x00000001
+multiple events: the time left after the call is above 1 s: 0x00000001
+DONE

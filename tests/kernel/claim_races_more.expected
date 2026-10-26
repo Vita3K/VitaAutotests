@@ -1,0 +1,86 @@
+event flag set then delete: the set: 0x00000000
+event flag set then delete: W's status after the set: 0x00000002
+event flag set then delete: the delete: 0x00000000
+event flag set then delete: W's result: 0x00000000
+event flag set then delete: the state after W ran: 0xFFFFFFFF
+event flag set then cancel: the set: 0x00000000
+event flag set then cancel: W's status after the set: 0x00000002
+event flag set then cancel: the cancel: 0x00000000
+event flag set then cancel: the waiters it counts: 0x00000000
+event flag set then cancel: W's result: 0x00000000
+event flag set then cancel: the state after W ran: 0x00000000
+event flag timeout then set: W's status once the timeout passed: 0x00000002
+event flag timeout then set: the set: 0x00000000
+event flag timeout then set: W's result: 0x80028005
+event flag timeout then set: the state after W ran: 0x00000001
+mutex unlock then cancel: the unlock: 0x00000000
+mutex unlock then cancel: W's status after the unlock: 0x00000002
+mutex unlock then cancel: the cancel: 0x00000000
+mutex unlock then cancel: the waiters it counts: 0x00000000
+mutex unlock then cancel: W's result: 0x00000000
+mutex unlock then cancel: the state after W ran: 0x00000000
+mutex unlock then cancel: W's unlock: 0x80028146
+read lock unlock then delete: the unlock: 0x00000000
+read lock unlock then delete: W's status after the unlock: 0x00000002
+read lock unlock then delete: the delete: 0x00000000
+read lock unlock then delete: W's result: 0x00000000
+read lock unlock then delete: the state after W ran: 0xFFFFFFFF
+read lock unlock then delete: W's unlock: 0x800281E1
+read lock unlock then cancel: the unlock: 0x00000000
+read lock unlock then cancel: W's status after the unlock: 0x00000002
+read lock unlock then cancel: the cancel: 0x00000000
+read lock unlock then cancel: the readers it counts: 0x00000000
+read lock unlock then cancel: the writers it counts: 0x00000000
+read lock unlock then cancel: W's result: 0x00000000
+read lock unlock then cancel: the state after W ran: 0x00000000
+read lock unlock then cancel: W's unlock: 0x800281E5
+write lock unlock then delete: the unlock: 0x00000000
+write lock unlock then delete: W's status after the unlock: 0x00000002
+write lock unlock then delete: the delete: 0x00000000
+write lock unlock then delete: W's result: 0x00000000
+write lock unlock then delete: the state after W ran: 0xFFFFFFFF
+write lock unlock then delete: W's unlock: 0x800281E1
+write lock unlock then cancel: the unlock: 0x00000000
+write lock unlock then cancel: W's status after the unlock: 0x00000002
+write lock unlock then cancel: the cancel: 0x00000000
+write lock unlock then cancel: the readers it counts: 0x00000000
+write lock unlock then cancel: the writers it counts: 0x00000000
+write lock unlock then cancel: W's result: 0x00000000
+write lock unlock then cancel: the state after W ran: 0x00000000
+write lock unlock then cancel: W's unlock: 0x800281E4
+simple event set then delete: the set: 0x00000000
+simple event set then delete: W's status after the set: 0x00000002
+simple event set then delete: the delete: 0x00000000
+simple event set then delete: W's result: 0x00000000
+simple event set then delete: the state after W ran: 0xFFFFFFFF
+simple event set then cancel: the set: 0x00000000
+simple event set then cancel: W's status after the set: 0x00000002
+simple event set then cancel: the cancel: 0x00000000
+simple event set then cancel: the waiters it counts: 0x00000000
+simple event set then cancel: W's result: 0x00000000
+simple event set then cancel: the state after W ran: 0x00000004
+message pipe send then delete: the send: 0x00000000
+message pipe send then delete: W's status after the send: 0x00000002
+message pipe send then delete: the delete: 0x00000000
+message pipe send then delete: W's result: 0x00000000
+message pipe send then delete: the state after W ran: 0xFFFFFFFF
+message pipe send then delete: W got the message: 0x00000001
+message pipe send then cancel: the send: 0x00000000
+message pipe send then cancel: W's status after the send: 0x00000002
+message pipe send then cancel: the cancel: 0x00000000
+message pipe send then cancel: the receivers it counts: 0x00000000
+message pipe send then cancel: W's result: 0x00000000
+message pipe send then cancel: the state after W ran: 0x00000000
+message pipe send then cancel: W got the message: 0x00000001
+condition signal then delete: the signal: 0x00000000
+condition signal then delete: W's status after the signal: 0x00000002
+condition signal then delete: the delete: 0x00000000
+condition signal then delete: W's result: 0x00000000
+condition signal then delete: the state after W ran: 0x00000000
+condition signal then delete: W's unlock: 0x80028146
+condition signal then the timeout passes: the signal: 0x00000000
+condition signal then the timeout passes: W's status: 0x00000002
+condition signal then the timeout passes: W's result: 0x00000000
+condition signal then the timeout passes: the state after W ran: 0x00000000
+condition signal then the timeout passes: W's unlock: 0x00000000
+DONE

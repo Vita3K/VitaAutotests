@@ -1,0 +1,12 @@
+first run: info at the gate: 0x00000000
+first run: info after the spin: 0x00000000
+the spin grew the run clocks by at least 250 ms: 0x00000001
+delay: info: 0x00000000
+the one second delay grew the run clocks by less than 250 ms: 0x00000001
+first run ended: info: 0x00000000
+second run: info after the spin: 0x00000000
+the second run's total is above the first run's by at least 250 ms: 0x00000001
+ended: info: 0x00000000
+ended: info 100 ms later: 0x00000000
+the two reads after the end are equal: 0x00000001
+DONE

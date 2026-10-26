@@ -1,0 +1,45 @@
+main: StartThread with UID 0: 0x80028022
+main: StartThread with its own UID: 0x80028022
+main: GetThreadExitStatus with UID 0 and a status: 0x80028022
+main: the status variable after the UID 0 call: 0x0000DEAD
+main: GetThreadExitStatus with UID 0 and no status: 0x80028022
+main: GetThreadExitStatus with its own UID and a status: 0x80028022
+main: the status variable after the own UID call: 0x0000DEAD
+main callback: it ran: 0x00000001
+main callback: StartThread with UID 0: 0x80028022
+main callback: StartThread with its own UID: 0x80028022
+main callback: GetThreadExitStatus with UID 0 and a status: 0x80028022
+main callback: the status variable after the UID 0 call: 0x0000DEAD
+main callback: GetThreadExitStatus with UID 0 and no status: 0x80028022
+main callback: GetThreadExitStatus with its own UID and a status: 0x80028022
+main callback: the status variable after the own UID call: 0x0000DEAD
+child: StartThread with UID 0: 0x80028022
+child: StartThread with its own UID: 0x80028022
+child: GetThreadExitStatus with UID 0 and a status: 0x80028022
+child: the status variable after the UID 0 call: 0x0000DEAD
+child: GetThreadExitStatus with UID 0 and no status: 0x80028022
+child: GetThreadExitStatus with its own UID and a status: 0x80028022
+child: the status variable after the own UID call: 0x0000DEAD
+child: StartThread with the main thread's UID: 0x80028028
+child: GetThreadExitStatus with the main thread's UID: 0x80028028
+child: the status variable after that call: 0x0000DEAD
+child: WaitThreadEnd with the main thread's UID and 300 ms: 0x80028005
+child: its wait with callbacks, after the callback: 0x00000000
+child callback: it ran: 0x00000001
+child callback: StartThread with UID 0: 0x80028022
+child callback: StartThread with its own UID: 0x80028022
+child callback: GetThreadExitStatus with UID 0 and a status: 0x80028022
+child callback: the status variable after the UID 0 call: 0x0000DEAD
+child callback: GetThreadExitStatus with UID 0 and no status: 0x80028022
+child callback: GetThreadExitStatus with its own UID and a status: 0x80028022
+child callback: the status variable after the own UID call: 0x0000DEAD
+child: DeleteThread with the main thread's UID: 0x80028028
+child: DeleteThread with UID 0: 0x80028022
+child: its status afterward: 0x00000001
+child: its exit status afterward: 0x80028028
+child: its status and exit status unchanged: 0x00000001
+main: its status afterward: 0x00000001
+main: its exit status afterward: 0x80028028
+main: its status and exit status unchanged: 0x00000001
+main: DeleteThread with UID 0: 0x80028022
+DONE

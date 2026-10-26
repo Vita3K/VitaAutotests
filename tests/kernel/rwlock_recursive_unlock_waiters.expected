@@ -1,0 +1,33 @@
+first write lock: 0x00000000
+second write lock: 0x00000000
+both queued: the reader's wait type: 0x00000080
+both queued: the writer's wait type: 0x00000080
+both queued: the lock count: 0x00000002
+both queued: the main thread is the write owner: 0x00000001
+both queued: the waiting readers: 0x00000001
+both queued: the waiting writers: 0x00000001
+first write unlock: 0x00000000
+after the first unlock: the reader's wait type: 0x00000080
+after the first unlock: the writer's wait type: 0x00000080
+after the first unlock: the lock count: 0x00000001
+after the first unlock: the main thread is the write owner: 0x00000001
+after the first unlock: the waiting readers: 0x00000001
+after the first unlock: the waiting writers: 0x00000001
+second write unlock: 0x00000000
+after the second unlock: the reader's wait type: 0x00000080
+after the second unlock: the writer's wait type: 0x00000020
+after the second unlock: the lock count: 0x00000001
+after the second unlock: the main thread is the write owner: 0x00000000
+after the second unlock: the waiting readers: 0x00000001
+after the second unlock: the waiting writers: 0x00000000
+W's result: 0x00000000
+W's unlock: 0x00000000
+after W's unlock: the reader's wait type: 0x00000020
+after W's unlock: the writer's wait type: 0x00000000
+after W's unlock: the lock count: 0x00000001
+after W's unlock: the main thread is the write owner: 0x00000000
+after W's unlock: the waiting readers: 0x00000000
+after W's unlock: the waiting writers: 0x00000000
+R's result: 0x00000000
+R's unlock: 0x00000000
+DONE

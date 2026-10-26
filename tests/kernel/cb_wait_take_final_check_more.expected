@@ -1,0 +1,33 @@
+lightweight mutex: the wait: 0x00000000
+lightweight mutex: runs of the callback when the wait returned: 0x00000000
+lightweight mutex: the check: 0x00000001
+lightweight mutex: runs of the callback after the check: 0x00000001
+timer: the wait: 0x00000000
+timer: runs of the callback when the wait returned: 0x00000001
+timer: the check: 0x00000001
+timer: runs of the callback after the check: 0x00000002
+condition: the wait: 0x00000000
+condition: runs of the callback when the wait returned: 0x00000002
+condition: the check: 0x00000000
+condition: runs of the callback after the check: 0x00000002
+lightweight condition: the wait: 0x00000000
+lightweight condition: runs of the callback when the wait returned: 0x00000002
+lightweight condition: the check: 0x00000000
+lightweight condition: runs of the callback after the check: 0x00000002
+thread signal: the wait: 0x00000000
+thread signal: runs of the callback when the wait returned: 0x00000001
+thread signal: the check: 0x00000001
+thread signal: runs of the callback after the check: 0x00000002
+thread end: the wait: 0x00000000
+thread end: runs of the callback when the wait returned: 0x00000001
+thread end: the check: 0x00000001
+thread end: runs of the callback after the check: 0x00000002
+delay: the wait: 0x00000000
+delay: runs of the callback when the wait returned: 0x00000001
+delay: the check: 0x00000001
+delay: runs of the callback after the check: 0x00000002
+multiple events: the wait: 0x00000001
+multiple events: runs of the callback when the wait returned: 0x00000001
+multiple events: the check: 0x00000000
+multiple events: runs of the callback after the check: 0x00000001
+DONE

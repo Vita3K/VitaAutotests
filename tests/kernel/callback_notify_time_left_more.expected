@@ -1,0 +1,121 @@
+mutex, notify first: T waits when the main thread notifies: 0x00000001
+mutex, notify first: T's wait result: 0x00000000
+mutex, notify first: runs of T's callback: 0x00000001
+mutex, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+mutex, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+mutex, busy first: T waits when the main thread notifies: 0x00000001
+mutex, busy first: T's wait result: 0x00000000
+mutex, busy first: runs of T's callback: 0x00000001
+mutex, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+mutex, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+lightweight mutex, notify first: T waits when the main thread notifies: 0x00000001
+lightweight mutex, notify first: T's wait result: 0x00000000
+lightweight mutex, notify first: runs of T's callback: 0x00000001
+lightweight mutex, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+lightweight mutex, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+lightweight mutex, busy first: T waits when the main thread notifies: 0x00000001
+lightweight mutex, busy first: T's wait result: 0x00000000
+lightweight mutex, busy first: runs of T's callback: 0x00000001
+lightweight mutex, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+lightweight mutex, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+read lock, notify first: T waits when the main thread notifies: 0x00000001
+read lock, notify first: T's wait result: 0x00000000
+read lock, notify first: runs of T's callback: 0x00000001
+read lock, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+read lock, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+read lock, busy first: T waits when the main thread notifies: 0x00000001
+read lock, busy first: T's wait result: 0x00000000
+read lock, busy first: runs of T's callback: 0x00000001
+read lock, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+read lock, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+write lock, notify first: T waits when the main thread notifies: 0x00000001
+write lock, notify first: T's wait result: 0x00000000
+write lock, notify first: runs of T's callback: 0x00000001
+write lock, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+write lock, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+write lock, busy first: T waits when the main thread notifies: 0x00000001
+write lock, busy first: T's wait result: 0x00000000
+write lock, busy first: runs of T's callback: 0x00000001
+write lock, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+write lock, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+simple event, notify first: T waits when the main thread notifies: 0x00000001
+simple event, notify first: T's wait result: 0x800280A2
+simple event, notify first: runs of T's callback: 0x00000001
+simple event, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+simple event, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+simple event, busy first: T waits when the main thread notifies: 0x00000001
+simple event, busy first: T's wait result: 0x800280A2
+simple event, busy first: runs of T's callback: 0x00000001
+simple event, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+simple event, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+timer, notify first: T waits when the main thread notifies: 0x00000001
+timer, notify first: T's wait result: 0x00000000
+timer, notify first: runs of T's callback: 0x00000001
+timer, notify first: the time left is within 200 ms of the one at the notify: 0x00000000
+timer, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000001
+timer, busy first: T waits when the main thread notifies: 0x00000001
+timer, busy first: T's wait result: 0x00000000
+timer, busy first: runs of T's callback: 0x00000001
+timer, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+timer, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+message pipe receive, notify first: T waits when the main thread notifies: 0x00000001
+message pipe receive, notify first: T's wait result: 0x00000000
+message pipe receive, notify first: runs of T's callback: 0x00000001
+message pipe receive, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+message pipe receive, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+message pipe receive, busy first: T waits when the main thread notifies: 0x00000001
+message pipe receive, busy first: T's wait result: 0x00000000
+message pipe receive, busy first: runs of T's callback: 0x00000001
+message pipe receive, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+message pipe receive, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+message pipe send, notify first: T waits when the main thread notifies: 0x00000001
+message pipe send, notify first: T's wait result: 0x00000000
+message pipe send, notify first: runs of T's callback: 0x00000001
+message pipe send, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+message pipe send, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+message pipe send, busy first: T waits when the main thread notifies: 0x00000001
+message pipe send, busy first: T's wait result: 0x00000000
+message pipe send, busy first: runs of T's callback: 0x00000001
+message pipe send, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+message pipe send, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+condition, notify first: T waits when the main thread notifies: 0x00000001
+condition, notify first: T's wait result: 0x00000000
+condition, notify first: runs of T's callback: 0x00000001
+condition, notify first: the time left is within 200 ms of the one at the notify: 0x00000000
+condition, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000001
+condition, busy first: T waits when the main thread notifies: 0x00000001
+condition, busy first: T's wait result: 0x00000000
+condition, busy first: runs of T's callback: 0x00000001
+condition, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+condition, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+lightweight condition, notify first: T waits when the main thread notifies: 0x00000001
+lightweight condition, notify first: T's wait result: 0x00000000
+lightweight condition, notify first: runs of T's callback: 0x00000001
+lightweight condition, notify first: the time left is within 200 ms of the one at the notify: 0x00000000
+lightweight condition, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000001
+lightweight condition, busy first: T waits when the main thread notifies: 0x00000001
+lightweight condition, busy first: T's wait result: 0x00000000
+lightweight condition, busy first: runs of T's callback: 0x00000001
+lightweight condition, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+lightweight condition, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+thread signal, notify first: T waits when the main thread notifies: 0x00000001
+thread signal, notify first: T's wait result: 0x00000000
+thread signal, notify first: runs of T's callback: 0x00000001
+thread signal, notify first: the time left is within 200 ms of the one at the notify: 0x00000001
+thread signal, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+thread signal, busy first: T waits when the main thread notifies: 0x00000001
+thread signal, busy first: T's wait result: 0x00000000
+thread signal, busy first: runs of T's callback: 0x00000001
+thread signal, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+thread signal, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+thread end, notify first: T waits when the main thread notifies: 0x00000001
+thread end, notify first: T's wait result: 0x00000000
+thread end, notify first: runs of T's callback: 0x00000001
+thread end, notify first: the time left is within 200 ms of the one at the notify: 0x00000000
+thread end, notify first: the time left is at least 300 ms less than the one at the notify: 0x00000001
+thread end, busy first: T waits when the main thread notifies: 0x00000001
+thread end, busy first: T's wait result: 0x00000000
+thread end, busy first: runs of T's callback: 0x00000001
+thread end, busy first: the time left is within 200 ms of the one at the notify: 0x00000001
+thread end, busy first: the time left is at least 300 ms less than the one at the notify: 0x00000000
+DONE

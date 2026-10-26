@@ -1,0 +1,15 @@
+the signal: 0x00000000
+the notify: 0x00000000
+the main thread's unlock while the callback waits: 0x00000000
+T waits for the mutex with its callback taken: 0x00000001
+the mutex's owner is T while it waits: 0x00000001
+the mutex's waiters while T waits: 0x00000001
+the callback's lock: 0x00000000
+runs of the callback: 0x00000001
+the cancel to 0: 0x00000000
+the waiters the cancel woke: 0x00000001
+T's wait: 0x800281A3
+T owns the mutex after the wait: 0x00000000
+T's unlock: 0x80028146
+T's check: 0x00000000
+DONE

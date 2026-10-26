@@ -1,0 +1,77 @@
+multi flag, plain wait: the wait's result: 0x00000000
+multi flag, plain wait: the wait returned within 1 s: 0x00000001
+multi flag, plain wait: the bits the wait got: 0x00000001
+multi flag, plain wait: the waiter is still waiting: 0x00000001
+multi flag, plain wait: the number of waiters: 0x00000001
+multi flag, plain wait: the pattern: 0x00000000
+multi flag, plain wait: the waiter's result: 0x00000000
+multi flag, plain wait: the bits the waiter got: 0x00000003
+multi flag, callback wait: the wait's result: 0x00000000
+multi flag, callback wait: the wait returned within 1 s: 0x00000001
+multi flag, callback wait: the bits the wait got: 0x00000001
+multi flag, callback wait: the waiter is still waiting: 0x00000001
+multi flag, callback wait: the number of waiters: 0x00000001
+multi flag, callback wait: the pattern: 0x00000000
+multi flag, callback wait: the waiter's result: 0x00000000
+multi flag, callback wait: the bits the waiter got: 0x00000003
+priority multi flag, plain wait: the wait's result: 0x00000000
+priority multi flag, plain wait: the wait returned within 1 s: 0x00000001
+priority multi flag, plain wait: the bits the wait got: 0x00000001
+priority multi flag, plain wait: the waiter is still waiting: 0x00000001
+priority multi flag, plain wait: the number of waiters: 0x00000001
+priority multi flag, plain wait: the pattern: 0x00000000
+priority multi flag, plain wait: the waiter's result: 0x00000000
+priority multi flag, plain wait: the bits the waiter got: 0x00000003
+priority multi flag, callback wait: the wait's result: 0x00000000
+priority multi flag, callback wait: the wait returned within 1 s: 0x00000001
+priority multi flag, callback wait: the bits the wait got: 0x00000001
+priority multi flag, callback wait: the waiter is still waiting: 0x00000001
+priority multi flag, callback wait: the number of waiters: 0x00000001
+priority multi flag, callback wait: the pattern: 0x00000000
+priority multi flag, callback wait: the waiter's result: 0x00000000
+priority multi flag, callback wait: the bits the waiter got: 0x00000003
+manual reset simple event, plain wait: the set of A: 0x00000000
+manual reset simple event, plain wait: the wait's result: 0x00000000
+manual reset simple event, plain wait: the wait returned within 1 s: 0x00000001
+manual reset simple event, plain wait: the bits the wait got: 0x01000000
+manual reset simple event, plain wait: the user data the wait got: 0x00001234
+manual reset simple event, plain wait: the waiter is still waiting: 0x00000001
+manual reset simple event, plain wait: the number of waiters: 0x00000001
+manual reset simple event, plain wait: the pattern: 0x01000000
+manual reset simple event, plain wait: the waiter's result: 0x00000000
+manual reset simple event, plain wait: the bits the waiter got: 0x02000000
+manual reset simple event, plain wait: the user data the waiter got: 0x00000077
+manual reset simple event, callback wait: the set of A: 0x00000000
+manual reset simple event, callback wait: the wait's result: 0x00000000
+manual reset simple event, callback wait: the wait returned within 1 s: 0x00000001
+manual reset simple event, callback wait: the bits the wait got: 0x01000000
+manual reset simple event, callback wait: the user data the wait got: 0x00001234
+manual reset simple event, callback wait: the waiter is still waiting: 0x00000001
+manual reset simple event, callback wait: the number of waiters: 0x00000001
+manual reset simple event, callback wait: the pattern: 0x01000000
+manual reset simple event, callback wait: the waiter's result: 0x00000000
+manual reset simple event, callback wait: the bits the waiter got: 0x02000000
+manual reset simple event, callback wait: the user data the waiter got: 0x00000077
+auto reset simple event, plain wait: the set of A: 0x00000000
+auto reset simple event, plain wait: the wait's result: 0x00000000
+auto reset simple event, plain wait: the wait returned within 1 s: 0x00000001
+auto reset simple event, plain wait: the bits the wait got: 0x01000000
+auto reset simple event, plain wait: the user data the wait got: 0x00001234
+auto reset simple event, plain wait: the waiter is still waiting: 0x00000001
+auto reset simple event, plain wait: the number of waiters: 0x00000001
+auto reset simple event, plain wait: the pattern: 0x00000000
+auto reset simple event, plain wait: the waiter's result: 0x00000000
+auto reset simple event, plain wait: the bits the waiter got: 0x02000000
+auto reset simple event, plain wait: the user data the waiter got: 0x00000077
+auto reset simple event, callback wait: the set of A: 0x00000000
+auto reset simple event, callback wait: the wait's result: 0x00000000
+auto reset simple event, callback wait: the wait returned within 1 s: 0x00000001
+auto reset simple event, callback wait: the bits the wait got: 0x01000000
+auto reset simple event, callback wait: the user data the wait got: 0x00001234
+auto reset simple event, callback wait: the waiter is still waiting: 0x00000001
+auto reset simple event, callback wait: the number of waiters: 0x00000001
+auto reset simple event, callback wait: the pattern: 0x00000000
+auto reset simple event, callback wait: the waiter's result: 0x00000000
+auto reset simple event, callback wait: the bits the waiter got: 0x02000000
+auto reset simple event, callback wait: the user data the waiter got: 0x00000077
+DONE
