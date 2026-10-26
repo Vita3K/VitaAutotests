@@ -1,0 +1,9 @@
+M at 0xA0: L's run clocks grew by less than 100 ms during T's run: 0x00000001
+M at 0xA0: T's run clocks grew by more than 250 ms: 0x00000001
+M at 0xA0: M's run clocks did not grow: 0x00000001
+M at 0xA0: M's status once T has ended: 0x00000002
+M at 0x70: L's run clocks grew by less than 100 ms during T's run: 0x00000001
+M at 0x70: T's run clocks grew by more than 250 ms: 0x00000001
+M at 0x70: M's run clocks did not grow: 0x00000001
+M at 0x70: M's status once T has ended: 0x00000002
+DONE

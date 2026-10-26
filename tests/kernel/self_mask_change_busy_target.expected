@@ -1,0 +1,61 @@
+S at 0x70, H at 0x50, self: the change to core 1: 0x00010000
+S at 0x70, H at 0x50, self: S's step after the call ran in 300 ms: 0x00000000
+S at 0x70, H at 0x50, self: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0x50, self: S's status 300 ms after the change: 0x00000004
+S at 0x70, H at 0x50, self: the core S ran on after H stopped: 0x00000001
+S at 0x70, H at 0x70, self: the change to core 1: 0x00010000
+S at 0x70, H at 0x70, self: S's step after the call ran in 300 ms: 0x00000000
+S at 0x70, H at 0x70, self: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0x70, self: S's status 300 ms after the change: 0x00000004
+S at 0x70, H at 0x70, self: the core S ran on after H stopped: 0x00000001
+S at 0x70, H at 0xB8, self: the change to core 1: 0x00010000
+S at 0x70, H at 0xB8, self: S's step after the call ran in 300 ms: 0x00000001
+S at 0x70, H at 0xB8, self: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0xB8, self: S's status 300 ms after the change: 0x00000010
+S at 0x70, H at 0xB8, self: the core S ran on after H stopped: 0x00000001
+S at 0x70, H at 0x50, remote: the change to core 1: 0x00010000
+S at 0x70, H at 0x50, remote: S counted in the second 300 ms: 0x00000000
+S at 0x70, H at 0x50, remote: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0x50, remote: S's status 300 ms after the change: 0x00000004
+S at 0x70, H at 0x50, remote: the core S ran on after H stopped: 0x00000001
+S at 0x70, H at 0x70, remote: the change to core 1: 0x00010000
+S at 0x70, H at 0x70, remote: S counted in the second 300 ms: 0x00000000
+S at 0x70, H at 0x70, remote: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0x70, remote: S's status 300 ms after the change: 0x00000004
+S at 0x70, H at 0x70, remote: the core S ran on after H stopped: 0x00000001
+S at 0x70, H at 0xB8, remote: the change to core 1: 0x00010000
+S at 0x70, H at 0xB8, remote: S counted in the second 300 ms: 0x00000001
+S at 0x70, H at 0xB8, remote: R ran within 300 ms: 0x00000001
+S at 0x70, H at 0xB8, remote: S's status 300 ms after the change: 0x00000001
+S at 0x70, H at 0xB8, remote: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0x50, self: the change to core 1: 0x00010000
+S at 0xA0, H at 0x50, self: S's step after the call ran in 300 ms: 0x00000000
+S at 0xA0, H at 0x50, self: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0x50, self: S's status 300 ms after the change: 0x00000002
+S at 0xA0, H at 0x50, self: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0xA0, self: the change to core 1: 0x00010000
+S at 0xA0, H at 0xA0, self: S's step after the call ran in 300 ms: 0x00000000
+S at 0xA0, H at 0xA0, self: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0xA0, self: S's status 300 ms after the change: 0x00000002
+S at 0xA0, H at 0xA0, self: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0xB8, self: the change to core 1: 0x00010000
+S at 0xA0, H at 0xB8, self: S's step after the call ran in 300 ms: 0x00000001
+S at 0xA0, H at 0xB8, self: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0xB8, self: S's status 300 ms after the change: 0x00000010
+S at 0xA0, H at 0xB8, self: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0x50, remote: the change to core 1: 0x00010000
+S at 0xA0, H at 0x50, remote: S counted in the second 300 ms: 0x00000000
+S at 0xA0, H at 0x50, remote: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0x50, remote: S's status 300 ms after the change: 0x00000002
+S at 0xA0, H at 0x50, remote: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0xA0, remote: the change to core 1: 0x00010000
+S at 0xA0, H at 0xA0, remote: S counted in the second 300 ms: 0x00000000
+S at 0xA0, H at 0xA0, remote: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0xA0, remote: S's status 300 ms after the change: 0x00000002
+S at 0xA0, H at 0xA0, remote: the core S ran on after H stopped: 0x00000001
+S at 0xA0, H at 0xB8, remote: the change to core 1: 0x00010000
+S at 0xA0, H at 0xB8, remote: S counted in the second 300 ms: 0x00000001
+S at 0xA0, H at 0xB8, remote: R ran within 300 ms: 0x00000001
+S at 0xA0, H at 0xB8, remote: S's status 300 ms after the change: 0x00000001
+S at 0xA0, H at 0xB8, remote: the core S ran on after H stopped: 0x00000001
+DONE

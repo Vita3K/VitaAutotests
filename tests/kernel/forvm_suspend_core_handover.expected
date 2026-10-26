@@ -1,0 +1,49 @@
+U started by T, T 0xA0, U 0xA0: the suspend: 0x00000001
+U started by T, T 0xA0, U 0xA0: U ran within 300 ms of the suspend: 0x00000001
+U started by T, T 0xA0, U 0xA0: the resume: 0x00000000
+U started by T, T 0xA0, U 0xA0: step 0: 0x00000000
+U started by T, T 0xA0, U 0xA0: step 1: 0x00000002
+U started by T, T 0xA0, U 0xA0: step 2: 0x00000001
+U started by T, T 0xA0, U 0xA8: the suspend: 0x00000001
+U started by T, T 0xA0, U 0xA8: U ran within 300 ms of the suspend: 0x00000001
+U started by T, T 0xA0, U 0xA8: the resume: 0x00000000
+U started by T, T 0xA0, U 0xA8: step 0: 0x00000000
+U started by T, T 0xA0, U 0xA8: step 1: 0x00000001
+U started by T, T 0xA0, U 0xA8: step 2: 0x00000002
+U started by main, T 0xA0, U 0xA0: the suspend: 0x00000001
+U started by main, T 0xA0, U 0xA0: U ran within 300 ms of the suspend: 0x00000001
+U started by main, T 0xA0, U 0xA0: the resume: 0x00000000
+U started by main, T 0xA0, U 0xA0: step 0: 0x00000000
+U started by main, T 0xA0, U 0xA0: step 1: 0x00000002
+U started by main, T 0xA0, U 0xA0: step 2: 0x00000001
+U started by main, T 0xA0, U 0xA8: the suspend: 0x00000001
+U started by main, T 0xA0, U 0xA8: U ran within 300 ms of the suspend: 0x00000001
+U started by main, T 0xA0, U 0xA8: the resume: 0x00000000
+U started by main, T 0xA0, U 0xA8: step 0: 0x00000000
+U started by main, T 0xA0, U 0xA8: step 1: 0x00000001
+U started by main, T 0xA0, U 0xA8: step 2: 0x00000002
+U started by T, T 0x70, U 0x70: the suspend: 0x00000001
+U started by T, T 0x70, U 0x70: U ran within 300 ms of the suspend: 0x00000001
+U started by T, T 0x70, U 0x70: the resume: 0x00000000
+U started by T, T 0x70, U 0x70: step 0: 0x00000000
+U started by T, T 0x70, U 0x70: step 1: 0x00000002
+U started by T, T 0x70, U 0x70: step 2: 0x00000001
+U started by T, T 0x70, U 0x78: the suspend: 0x00000001
+U started by T, T 0x70, U 0x78: U ran within 300 ms of the suspend: 0x00000001
+U started by T, T 0x70, U 0x78: the resume: 0x00000000
+U started by T, T 0x70, U 0x78: step 0: 0x00000000
+U started by T, T 0x70, U 0x78: step 1: 0x00000001
+U started by T, T 0x70, U 0x78: step 2: 0x00000002
+U started by main, T 0x70, U 0x70: the suspend: 0x00000001
+U started by main, T 0x70, U 0x70: U ran within 300 ms of the suspend: 0x00000001
+U started by main, T 0x70, U 0x70: the resume: 0x00000000
+U started by main, T 0x70, U 0x70: step 0: 0x00000000
+U started by main, T 0x70, U 0x70: step 1: 0x00000002
+U started by main, T 0x70, U 0x70: step 2: 0x00000001
+U started by main, T 0x70, U 0x78: the suspend: 0x00000001
+U started by main, T 0x70, U 0x78: U ran within 300 ms of the suspend: 0x00000001
+U started by main, T 0x70, U 0x78: the resume: 0x00000000
+U started by main, T 0x70, U 0x78: step 0: 0x00000000
+U started by main, T 0x70, U 0x78: step 1: 0x00000001
+U started by main, T 0x70, U 0x78: step 2: 0x00000002
+DONE

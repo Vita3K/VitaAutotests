@@ -1,0 +1,31 @@
+S at 0x70, T started from core 1 at 0x78, raised to 0x68: S's read of T's status before the change: 0x00000004
+S at 0x70, T started from core 1 at 0x78, raised to 0x68: the change's result: 0x00000000
+S at 0x70, T started from core 1 at 0x78, raised to 0x68: step 0: 0x00000000
+S at 0x70, T started from core 1 at 0x78, raised to 0x68: step 1: 0x00000001
+S at 0x70, T started from core 1 at 0x78, raised to 0x68: step 2: 0x00000002
+S at 0x70, T started from core 1 at 0x78, raised to 0x70: S's read of T's status before the change: 0x00000004
+S at 0x70, T started from core 1 at 0x78, raised to 0x70: the change's result: 0x00000000
+S at 0x70, T started from core 1 at 0x78, raised to 0x70: step 0: 0x00000000
+S at 0x70, T started from core 1 at 0x78, raised to 0x70: step 1: 0x00000002
+S at 0x70, T started from core 1 at 0x78, raised to 0x70: step 2: 0x00000001
+S at 0x70, T woken by S at 0x78, raised to 0x68: S's read of T's status before the change: 0x00000002
+S at 0x70, T woken by S at 0x78, raised to 0x68: the change's result: 0x00000000
+S at 0x70, T woken by S at 0x78, raised to 0x68: step 0: 0x00000000
+S at 0x70, T woken by S at 0x78, raised to 0x68: step 1: 0x00000001
+S at 0x70, T woken by S at 0x78, raised to 0x68: step 2: 0x00000002
+S at 0xA0, T started from core 1 at 0xA8, raised to 0x98: S's read of T's status before the change: 0x00000002
+S at 0xA0, T started from core 1 at 0xA8, raised to 0x98: the change's result: 0x00000000
+S at 0xA0, T started from core 1 at 0xA8, raised to 0x98: step 0: 0x00000000
+S at 0xA0, T started from core 1 at 0xA8, raised to 0x98: step 1: 0x00000001
+S at 0xA0, T started from core 1 at 0xA8, raised to 0x98: step 2: 0x00000002
+S at 0xA0, T started from core 1 at 0xA8, raised to 0xA0: S's read of T's status before the change: 0x00000002
+S at 0xA0, T started from core 1 at 0xA8, raised to 0xA0: the change's result: 0x00000000
+S at 0xA0, T started from core 1 at 0xA8, raised to 0xA0: step 0: 0x00000000
+S at 0xA0, T started from core 1 at 0xA8, raised to 0xA0: step 1: 0x00000002
+S at 0xA0, T started from core 1 at 0xA8, raised to 0xA0: step 2: 0x00000001
+S at 0xA0, T woken by S at 0xA8, raised to 0x98: S's read of T's status before the change: 0x00000002
+S at 0xA0, T woken by S at 0xA8, raised to 0x98: the change's result: 0x00000000
+S at 0xA0, T woken by S at 0xA8, raised to 0x98: step 0: 0x00000000
+S at 0xA0, T woken by S at 0xA8, raised to 0x98: step 1: 0x00000001
+S at 0xA0, T woken by S at 0xA8, raised to 0x98: step 2: 0x00000002
+DONE

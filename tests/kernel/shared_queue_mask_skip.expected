@@ -1,0 +1,11 @@
+R1 and R2 at 0xA0: R1's status before the first release: 0x00000002
+R1 and R2 at 0xA0: R2's status before the first release: 0x00000002
+R1 and R2 at 0xA0: after core 0 is released, R2 ran and R1 did not: 0x00000001
+R1 and R2 at 0xA0: after core 1 is released, R1 ran: 0x00000001
+R1 and R2 at 0xA0: the order the threads ran in: 0x00000021
+R1 at 0x90, R2 at 0xA0: R1's status before the first release: 0x00000002
+R1 at 0x90, R2 at 0xA0: R2's status before the first release: 0x00000002
+R1 at 0x90, R2 at 0xA0: after core 0 is released, R2 ran and R1 did not: 0x00000001
+R1 at 0x90, R2 at 0xA0: after core 1 is released, R1 ran: 0x00000001
+R1 at 0x90, R2 at 0xA0: the order the threads ran in: 0x00000021
+DONE
