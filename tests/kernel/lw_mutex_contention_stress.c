@@ -48,12 +48,12 @@ static int worker(SceSize args, void *argp) {
                 break;
             }
         }
-        if (in_section)
-            overlaps++;
-        in_section = 1;
+        // The occupancy changes are atomic, so two workers inside at once always count an overlap
+        if (__atomic_add_fetch(&in_section, 1, __ATOMIC_SEQ_CST) != 1)
+            __atomic_add_fetch(&overlaps, 1, __ATOMIC_SEQ_CST);
         const int seen = counter;
         counter = seen + 1;
-        in_section = 0;
+        __atomic_sub_fetch(&in_section, 1, __ATOMIC_SEQ_CST);
         if (nested && sceKernelUnlockLwMutex(&mutex, 2) != 0) {
             failed_unlocks++;
             break;
