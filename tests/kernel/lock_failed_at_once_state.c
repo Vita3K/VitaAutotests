@@ -11,8 +11,8 @@
 //   timeout 0 must both work, the waiter counts must be 0, and three read unlocks leave the count
 //   at 0.
 // - c: main holds a read lock and a writer waits. A read lock fails at once behind the writer. Then
-//   main's read unlock gives the lock to the writer, and after the writer's unlock nothing is left
-//   queued or held.
+//   main's read unlock gives the lock to the writer, which keeps it until main read the owner, and
+//   after the writer's unlock nothing is left queued or held.
 // - d: main holds a mutex and a lock on it fails at once. Then main unlocks, the mutex is free for
 //   a third thread's try lock, and no thread waits for it.
 //
@@ -35,6 +35,8 @@ static SceUID rwlock, mutex, main_thread;
 static int fail_kind, fail_cb;
 static SceUInt fail_timeout;
 static volatile int fail_result, waiter_result, try_result;
+// Set once main read who owns the write lock, which the writer keeps until then
+static volatile int writer_may_unlock;
 
 // Makes the lock call of kind, plain or with callbacks, with timeout, and returns its result
 static int lock_once(int kind, int cb, SceUInt *timeout) {
@@ -64,14 +66,16 @@ static int failing_entry(SceSize args, void *argp) {
     return 0;
 }
 
-// Waits a long time for the write lock, and unlocks it again if it gets it
+// Waits a long time for the write lock, and if it gets it, unlocks it again once main read the owner
 static int write_waiter(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     SceUInt timeout = TEST_WAIT_US;
     waiter_result = sceKernelLockWriteRWLock(rwlock, &timeout);
-    if (waiter_result == 0)
+    if (waiter_result == 0) {
+        TEST_WAIT_FOR(writer_may_unlock);
         sceKernelUnlockWriteRWLock(rwlock);
+    }
     return 0;
 }
 
@@ -222,6 +226,7 @@ static void case_c(SceUInt timeout, int cb) {
     rwlock = sceKernelCreateRWLock("rwlock", 0, NULL);
     SceUInt wait = TEST_WAIT_US;
     sceKernelLockReadRWLock(rwlock, &wait);
+    writer_may_unlock = 0;
     const SceUID writer = start_thread(write_waiter, LOW_PRIORITY);
     TEST_WAIT_FOR(waits_for_rwlock(writer));
     fail_kind = READ_LOCK;
@@ -241,6 +246,7 @@ static void case_c(SceUInt timeout, int cb) {
     const int owner = owner_code(info.writeOwnerId);
     const int writers_after_unlock = info.numWriteWaitThreads;
 
+    writer_may_unlock = 1;
     test_join_thread(writer);
     const int writer_result = waiter_result;
     sceKernelGetRWLockInfo(rwlock, &info);
