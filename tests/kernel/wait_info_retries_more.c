@@ -4,8 +4,9 @@
 // covers the read lock, write lock, simple event, timer, lightweight mutex, condition variable,
 // thread end and thread signal kinds. Every thread is pinned to core 0 and the waiters have a lower
 // priority than the main thread, so a waiter the kernel made ready can't run and change what it
-// reports until the main thread blocks. Each state is read first and printed later, since printing
-// lets the waiters run. Cases:
+// reports until the main thread blocks. A waiter that got a lock also keeps it until the main thread
+// read the states its unlock would change, so those states don't depend on when it runs. Each state
+// is read first and printed later, since printing lets the waiters run. Cases:
 // - a read lock waiter behind a writer, after the read unlock that leaves the writer holding the
 //   lock, then after the writer's unlock
 // - a write lock waiter, after one of two read locks is unlocked, then after the second unlock
@@ -29,6 +30,8 @@
 #define CHANGED_PRIORITY 0xA8
 // The timer's set event fires this long after the timer starts, well before a wait times out
 #define FIRE_US 100000
+// The longest a waiter that got a lock spins before it unlocks anyway
+#define SPIN_LIMIT_US 10000000
 
 typedef struct State {
     int status, wait_type, on_object;
@@ -38,6 +41,9 @@ typedef struct State {
 #define STATUS_WAITING 0x8
 
 static volatile int result[2];
+// Set once the main thread read the states that the unlock of a waiter that got a lock would change.
+// A case that reads such states clears it before it starts its waiters.
+static volatile int holder_may_unlock = 1;
 static SceUID rwlock, event, cond, cond_mutex, target, release;
 static SceKernelLwMutexWork lw_mutex;
 static volatile SceUInt32 event_bits;
@@ -73,14 +79,25 @@ static void print_signal_ended(const char *name, State state) {
     PRINTF(state.wait_type, "%s: its wait type", name);
 }
 
-// Takes the write lock into slot i, and unlocks it if it got it
+// Spins until the main thread lets a waiter that got a lock unlock it. Each pass reads the process
+// time, a call that doesn't block, so the waiter reports no wait while the main thread reads the
+// states. A waiter that only runs once the main thread blocks finds the flag already set.
+static void wait_until_holder_may_unlock(void) {
+    const SceUInt64 start = sceKernelGetProcessTimeWide();
+    while (!holder_may_unlock && sceKernelGetProcessTimeWide() - start < SPIN_LIMIT_US)
+        ;
+}
+
+// Takes the write lock into slot i, and unlocks it once allowed if it got it
 static int write_waiter(SceSize args, void *argp) {
     (void)args;
     const int i = *(const int *)argp;
     SceUInt timeout = TEST_WAIT_US;
     result[i] = sceKernelLockWriteRWLock(rwlock, &timeout);
-    if (result[i] == 0)
+    if (result[i] == 0) {
+        wait_until_holder_may_unlock();
         sceKernelUnlockWriteRWLock(rwlock);
+    }
     return 0;
 }
 
@@ -107,14 +124,16 @@ static int event_waiter(SceSize args, void *argp) {
     return 0;
 }
 
-// Locks the lightweight mutex into slot i, and unlocks it if it got it
+// Locks the lightweight mutex into slot i, and unlocks it once allowed if it got it
 static int lw_waiter(SceSize args, void *argp) {
     (void)args;
     const int i = *(const int *)argp;
     SceUInt timeout = TEST_WAIT_US;
     result[i] = sceKernelLockLwMutex(&lw_mutex, 1, &timeout);
-    if (result[i] == 0)
+    if (result[i] == 0) {
+        wait_until_holder_may_unlock();
         sceKernelUnlockLwMutex(&lw_mutex, 1);
+    }
     return 0;
 }
 
@@ -169,6 +188,8 @@ static SceUID start_waiter(SceKernelThreadEntry entry, int i) {
 static void read_lock_case(void) {
     rwlock = sceKernelCreateRWLock("rwlock", 0, NULL);
     sceKernelLockReadRWLock(rwlock, NULL);
+    // The writer keeps the lock until the reader's state and the waiting readers were read
+    holder_may_unlock = 0;
     const SceUID writer = start_waiter(write_waiter, 0);
     const SceUID reader = start_waiter(read_waiter, 1);
     const State reader_waiting = state_of(reader, rwlock);
@@ -176,6 +197,7 @@ static void read_lock_case(void) {
     const State reader_after_unlock = state_of(reader, rwlock);
     SceKernelRWLockInfo info = { .size = sizeof(info) };
     sceKernelGetRWLockInfo(rwlock, &info);
+    holder_may_unlock = 1;
     test_join_thread(writer);
     const State reader_after_writer = state_of(reader, rwlock);
     test_join_thread(reader);
@@ -260,6 +282,9 @@ static void lw_mutex_case(void) {
     LwMutexInfo info = { .size = sizeof(info) };
     sceKernelGetLwMutexInfo(&lw_mutex, &info);
     const SceUID object = info.uid;
+    // The first waiter keeps the lock until the second waiter's state and the waiting threads were
+    // read
+    holder_may_unlock = 0;
     const SceUID first = start_waiter(lw_waiter, 0);
     const SceUID second = start_waiter(lw_waiter, 1);
     const State first_waiting = state_of(first, object);
@@ -268,6 +293,7 @@ static void lw_mutex_case(void) {
     const State second_behind = state_of(second, object);
     LwMutexInfo after = { .size = sizeof(after) };
     sceKernelGetLwMutexInfo(&lw_mutex, &after);
+    holder_may_unlock = 1;
     test_join_thread(first);
     test_join_thread(second);
 
