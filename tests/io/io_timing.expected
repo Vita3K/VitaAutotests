@@ -1,0 +1,24 @@
+app0: calls that didn't do what they should: 0x00000000
+app0: open a file the first time, median at least 100 us: 0x00000001
+app0: open it again, median at least 100 us: 0x00000001
+app0: getstat a file, median at least 50 us: 0x00000001
+app0: getstat a missing file, median at least 250 us: 0x00000001
+app0: open a missing file, median at least 50 us: 0x00000001
+app0: read a whole 16 KiB file, median at least 1000 us: 0x00000001
+app0: close a file, median at least 20 us: 0x00000001
+app0: read a 1 MiB file through in 64 KiB reads, the first time, median at least 10000 us: 0x00000001
+app0: read it through again, median at least 10000 us: 0x00000001
+app0: seek and read 4 KiB in another 1 MiB file, median at least 250 us: 0x00000001
+copy the files to ux0: 0x00000000
+ux0: calls that didn't do what they should: 0x00000000
+ux0: open a file the first time, median at least 100 us: 0x00000001
+ux0: open it again, median at least 100 us: 0x00000001
+ux0: getstat a file, median at least 50 us: 0x00000001
+ux0: getstat a missing file, median at least 250 us: 0x00000001
+ux0: open a missing file, median at least 50 us: 0x00000001
+ux0: read a whole 16 KiB file, median at least 1000 us: 0x00000001
+ux0: close a file, median at least 20 us: 0x00000001
+ux0: read a 1 MiB file through in 64 KiB reads, the first time, median at least 10000 us: 0x00000001
+ux0: read it through again, median at least 10000 us: 0x00000001
+ux0: seek and read 4 KiB in another 1 MiB file, median at least 250 us: 0x00000001
+DONE
