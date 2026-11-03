@@ -747,4 +747,7 @@ vita_test(cache_mount apputil/cache_mount.c)
 vita_test(appmgr_system_event appmgr/appmgr_system_event.c)
 vita_test(appmgr_app_param_string appmgr/appmgr_app_param_string.c)
 
+vita_test(cpu_writeback_same_register cpu/cpu_writeback_same_register.c)
+vita_test(cpu_strex_overlap cpu/cpu_strex_overlap.c)
+
 vita_tests_vpk(VTST00000)
