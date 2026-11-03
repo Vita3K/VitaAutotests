@@ -1,0 +1,41 @@
+load the ngs module: 0x00000000
+init a system: 0x00000000
+update it with no racks: 0x00000000
+update it again: 0x00000000
+init a master rack: 0x00000000
+update with an idle master: 0x00000000
+the idle master: its state: 0x00000000
+the idle master: its updates: 0x00000000
+init a rack of two simple voices: 0x00000000
+patch voice 0 into the master: 0x00000000
+update with idle voices: 0x00000000
+the idle voice: its state: 0x00000000
+the idle voice: its updates: 0x00000000
+play the master: 0x00000000
+the master after play: its state: 0x00000011
+the master after play: its updates: 0x00000000
+update with the master playing: 0x00000000
+the master after the update: its state: 0x00000001
+the master after the update: its updates: 0x00000001
+update again: 0x00000000
+the master after two updates: its state: 0x00000001
+the master after two updates: its updates: 0x00000002
+play voice 0 without a buffer: 0x00000000
+voice 0 after play: its state: 0x00000011
+voice 0 after play: its updates: 0x00000000
+update with it playing: 0x00000000
+voice 0 after the update: its state: 0x00000000
+voice 0 after the update: its updates: 0x00000001
+update again: 0x00000000
+voice 0 after two updates: its state: 0x00000000
+voice 0 after two updates: its updates: 0x00000001
+key off voice 0: 0x00000000
+update after it: 0x00000000
+voice 0 after key off and an update: its state: 0x00000000
+voice 0 after key off and an update: its updates: 0x00000001
+release the voice rack: 0x00000000
+release the master rack: 0x00000000
+update without racks: 0x00000000
+release the system: 0x00000000
+update the released system: 0x804A000C
+DONE

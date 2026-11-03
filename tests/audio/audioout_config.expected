@@ -1,0 +1,177 @@
+bgm: open with 64 samples at 8000 Hz: 0x00000000
+bgm: open with 64 samples at 11025 Hz: 0x00000000
+bgm: open with 64 samples at 22050 Hz: 0x00000000
+bgm: open with 64 samples at 44100 Hz: 0x00000000
+bgm: open with 64 samples at 44184 Hz: 0x80260008
+bgm: open with 64 samples at 48000 Hz: 0x00000000
+bgm: open with 128 samples at 8000 Hz: 0x00000000
+bgm: open with 128 samples at 11025 Hz: 0x00000000
+bgm: open with 128 samples at 22050 Hz: 0x00000000
+bgm: open with 128 samples at 44100 Hz: 0x00000000
+bgm: open with 128 samples at 44184 Hz: 0x80260008
+bgm: open with 128 samples at 48000 Hz: 0x00000000
+bgm: open with 192 samples at 8000 Hz: 0x00000000
+bgm: open with 192 samples at 11025 Hz: 0x00000000
+bgm: open with 192 samples at 22050 Hz: 0x00000000
+bgm: open with 192 samples at 44100 Hz: 0x00000000
+bgm: open with 192 samples at 44184 Hz: 0x80260008
+bgm: open with 192 samples at 48000 Hz: 0x00000000
+bgm: open with 320 samples at 8000 Hz: 0x00000000
+bgm: open with 320 samples at 11025 Hz: 0x00000000
+bgm: open with 320 samples at 22050 Hz: 0x00000000
+bgm: open with 320 samples at 44100 Hz: 0x00000000
+bgm: open with 320 samples at 44184 Hz: 0x80260008
+bgm: open with 320 samples at 48000 Hz: 0x00000000
+bgm: open with 480 samples at 8000 Hz: 0x80260006
+bgm: open with 480 samples at 11025 Hz: 0x80260006
+bgm: open with 480 samples at 22050 Hz: 0x80260006
+bgm: open with 480 samples at 44100 Hz: 0x80260006
+bgm: open with 480 samples at 44184 Hz: 0x80260006
+bgm: open with 480 samples at 48000 Hz: 0x80260006
+bgm: open with 1024 samples at 8000 Hz: 0x00000000
+bgm: open with 1024 samples at 11025 Hz: 0x00000000
+bgm: open with 1024 samples at 22050 Hz: 0x00000000
+bgm: open with 1024 samples at 44100 Hz: 0x00000000
+bgm: open with 1024 samples at 44184 Hz: 0x80260008
+bgm: open with 1024 samples at 48000 Hz: 0x00000000
+bgm: open with 2048 samples at 8000 Hz: 0x00000000
+bgm: open with 2048 samples at 11025 Hz: 0x00000000
+bgm: open with 2048 samples at 22050 Hz: 0x00000000
+bgm: open with 2048 samples at 44100 Hz: 0x00000000
+bgm: open with 2048 samples at 44184 Hz: 0x80260008
+bgm: open with 2048 samples at 48000 Hz: 0x00000000
+bgm: open with 4032 samples at 8000 Hz: 0x00000000
+bgm: open with 4032 samples at 11025 Hz: 0x00000000
+bgm: open with 4032 samples at 22050 Hz: 0x00000000
+bgm: open with 4032 samples at 44100 Hz: 0x00000000
+bgm: open with 4032 samples at 44184 Hz: 0x80260008
+bgm: open with 4032 samples at 48000 Hz: 0x00000000
+bgm: open with 65408 samples at 8000 Hz: 0x00000000
+bgm: open with 65408 samples at 11025 Hz: 0x00000000
+bgm: open with 65408 samples at 22050 Hz: 0x00000000
+bgm: open with 65408 samples at 44100 Hz: 0x00000000
+bgm: open with 65408 samples at 44184 Hz: 0x80260008
+bgm: open with 65408 samples at 48000 Hz: 0x00000000
+bgm: open with 65472 samples at 8000 Hz: 0x00000000
+bgm: open with 65472 samples at 11025 Hz: 0x00000000
+bgm: open with 65472 samples at 22050 Hz: 0x00000000
+bgm: open with 65472 samples at 44100 Hz: 0x00000000
+bgm: open with 65472 samples at 44184 Hz: 0x80260008
+bgm: open with 65472 samples at 48000 Hz: 0x00000000
+bgm: open with 1 samples: 0x80260006
+bgm: open with 32 samples: 0x80260006
+bgm: open with 100 samples: 0x80260006
+bgm: open with 127 samples: 0x80260006
+bgm: open with 129 samples: 0x80260006
+bgm: open with 255 samples: 0x80260006
+bgm: open with 4095 samples: 0x80260006
+bgm: open with 65471 samples: 0x80260006
+bgm: open with -64 samples: 0x80260006
+bgm: open with -1 samples: 0x80260006
+bgm: open at 0 Hz: 0x80260008
+bgm: open at -48000 Hz: 0x80260008
+bgm: open at 7999 Hz: 0x80260008
+bgm: open at 8001 Hz: 0x80260008
+bgm: open at 44099 Hz: 0x80260008
+bgm: open at 47999 Hz: 0x80260008
+bgm: open at 48001 Hz: 0x80260008
+bgm: open at 192000 Hz: 0x80260008
+main: open at 44184 Hz: 0x80260008
+voice: open at 44184 Hz: 0x80260008
+open with a bad type, length, frequency and mode: 0x80260006
+open with a bad length, frequency and mode: 0x80260006
+open with a bad frequency and mode: 0x80260008
+open with a bad length and frequency: 0x80260006
+open with a bad length and mode: 0x80260006
+open the compressed voice type: 0x8026000A
+main: open a port: 0x00000001
+main: set nothing: 0x80260007
+main: set a length of 1024: 0x80260007
+main: its length: 0x00000100
+main: set the frequency it has: 0x80260007
+main: set 16 kHz: 0x80260008
+main: its frequency: 0x0000BB80
+main: set mono: 0x00000000
+main: set mode 2: 0x80260007
+main: its mode: 0x00000000
+main: set all three: 0x00000000
+main: its length after that: 0x00000200
+main: its mode after that: 0x00000001
+main: set a length of 0: 0x80260006
+main: set a length of 65536: 0x80260006
+main: set a bad length, frequency and mode: 0x80260006
+main: config type -1: 0x8026000C
+main: release it: 0x00000000
+main: set the config of the released port: 0x80260001
+bgm: open a port: 0x00000001
+bgm: set nothing: 0x80260007
+bgm: set a length of 1024: 0x80260007
+bgm: its length: 0x00000100
+bgm: set the frequency it has: 0x80260007
+bgm: set 16 kHz: 0x80260007
+bgm: its frequency: 0x0000BB80
+bgm: set mono: 0x00000000
+bgm: set mode 2: 0x80260007
+bgm: its mode: 0x00000000
+bgm: set all three: 0x00000000
+bgm: its length after that: 0x00000200
+bgm: its mode after that: 0x00000001
+bgm: set a length of 0: 0x80260006
+bgm: set a length of 65536: 0x80260006
+bgm: set a bad length, frequency and mode: 0x80260006
+bgm: config type -1: 0x8026000C
+bgm: release it: 0x00000000
+bgm: set the config of the released port: 0x80260001
+voice: open a port: 0x00000001
+voice: set nothing: 0x80260007
+voice: set a length of 1024: 0x80260007
+voice: its length: 0x00000100
+voice: set the frequency it has: 0x80260007
+voice: set 16 kHz: 0x80260007
+voice: its frequency: 0x0000BB80
+voice: set mono: 0x00000000
+voice: set mode 2: 0x80260007
+voice: its mode: 0x00000000
+voice: set all three: 0x00000000
+voice: its length after that: 0x00000200
+voice: its mode after that: 0x00000001
+voice: set a length of 0: 0x80260006
+voice: set a length of 65536: 0x80260006
+voice: set a bad length, frequency and mode: 0x80260006
+voice: config type -1: 0x8026000C
+voice: release it: 0x00000000
+voice: set the config of the released port: 0x80260001
+open the ext port: 0x00000000
+the ext port's length: 0x00000100
+the ext port's frequency: 0x0000BB80
+release the ext port: 0x00000000
+open the ext port with 63 samples: 0x80260006
+ports of all types open at once: 0x0000000A
+the main ports have different IDs: 0x00000001
+open a main port after releasing one: 0x00000001
+it gets the released ID back: 0x00000001
+adopt of type 0: 0x00000001
+adopt of type 1: 0x00000001
+adopt of type 2: 0x00000000
+adopt of type 3: 0x8026000A
+adopt of type 4: 0x8026000A
+adopt of type -1: 0x8026000A
+set ALC mode 1: 0x00000000
+set ALC mode 0: 0x00000000
+set ALC mode 2: 0x80260200
+set ALC mode -1: 0x80260200
+set effect type 1: 0x00000000
+set effect type 4: 0x00000000
+set effect type 5: 0x80260200
+set effect type -1: 0x80260200
+set effect type 0: 0x00000000
+compress a bgm port: 0x00000000
+stop compressing it: 0x00000000
+compress it with 2: 0x80260220
+compress a main port: 0x8026000A
+compress an unknown port: 0x8026000A
+compress the released port: 0x80260001
+set adopt mode manual: 0x00000000
+set adopt mode 2: 0x00000000
+set adopt mode automatic: 0x00000000
+DONE

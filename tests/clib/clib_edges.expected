@@ -1,0 +1,68 @@
+format 100 characters into 16 bytes: 0x00000064
+it keeps 15 and terminates: 0x00000000
+vsnprintf 100 characters into 16 bytes: 0x00000064
+it keeps 15 and terminates: 0x00000000
+format a string of 70 characters into 64 bytes: 0x00000046
+it ends with the 63rd: 0x00000000
+format a width of 255: 0x00000100
+format a width of 255: its length: 0x00000100
+format a width of 255: it ends right: 0x00000001
+format a width of 256: 0x00000101
+format a width of 256: its length: 0x00000101
+format a width of 256: it ends right: 0x00000001
+format a width of 511: 0x00000200
+format a width of 511: its length: 0x00000200
+format a width of 511: it ends right: 0x00000001
+format a width of 512: 0x00000201
+format a width of 512: its length: 0x00000201
+format a width of 512: it ends right: 0x00000001
+format a width of 1023: 0x00000400
+format a width of 1023: its length: 0x00000400
+format a width of 1023: it ends right: 0x00000001
+format a width of 1024: 0x00000401
+format a width of 1024: its length: 0x00000401
+format a width of 1024: it ends right: 0x00000001
+format a width of 1025: 0x00000402
+format a width of 1025: its length: 0x00000402
+format a width of 1025: it ends right: 0x00000001
+format a width of 2048: 0x00000801
+format a width of 2048: its length: 0x00000801
+format a width of 2048: it ends right: 0x00000001
+format a width of 4095: 0x00001000
+format a width of 4095: its length: 0x00001000
+format a width of 4095: it ends right: 0x00000001
+format a precision of 3000: 0x00000BB8
+its length: 0x00000BB8
+format a string of 3000 characters: 0x00000BBA
+its length: 0x00000BBA
+format it into 10 bytes: 0x00000BBA
+format into a size of 0x7FFFFFFF: 0x00000004
+format into a size of 0x7FFFFFFF: it writes the text and a terminator: 0x00000001
+format into a size of 0x80000000: 0x00000004
+format into a size of 0x80000000: it writes the text and a terminator: 0x00000001
+format into a size of 0xFFFFFFFF: 0x00000004
+format into a size of 0xFFFFFFFF: it writes the text and a terminator: 0x00000001
+strncpy of 0 returns the destination: 0x00000001
+it writes nothing: 0x00000001
+strncat of 0 returns the destination: 0x00000001
+it appends nothing: 0x00000001
+strnlen up to 0: 0x00000000
+strncasecmp of 0: 0x00000000
+memchr of 0: 0x00000001
+memset of 0 returns the destination: 0x00000001
+memmove of 0 returns the destination: 0x00000001
+strnlen up to 0xFFFFFFFF: 0x00000005
+strncmp of equal strings up to 0xFFFFFFFF: 0x00000000
+strncmp of abc and abd up to 0xFFFFFFFF: 0xFFFFFFFF
+strncasecmp of ABC and abc up to 0xFFFFFFFF: 0x00000000
+strncasecmp of a and B: 0xFFFFFFFF
+strncasecmp of high bytes 0xC0 and 0xE0: 0xFFFFFFFF
+strncasecmp of [ and a: 0xFFFFFFFF
+strncat of hi up to 0xFFFFFFFF: 0x00000001
+strncpy pads to its length: 0x00000001
+strstr for a needle longer than the text: 0x00000001
+strstr in an empty text: 0x00000001
+strstr of an empty needle in an empty text: 0x00000001
+strrchr for a character past 0xFF: 0x00000001
+strchr for -1 in 0xFF: 0x00000001
+DONE

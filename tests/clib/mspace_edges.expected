@@ -1,0 +1,72 @@
+create a space: 0x00000001
+it is empty: 0x00000001
+fast stats: capacity: 0x00040000
+fast stats: second capacity field: 0x00040000
+fast stats: peak in use: 0x00000280
+fast stats: in use: 0x00000280
+the fast stats match the stats: 0x00000001
+allocate 1000 bytes: 0x00000001
+it isn't empty: 0x00000000
+fast stats with it: in use: 0x00000670
+it is empty after freeing it: 0x00000001
+calloc 0x10000 of 0x10001 bytes: 0x00000001
+calloc 0x80000000 of 2 bytes: 0x00000001
+calloc 0 of 100 bytes: 0x00000001
+malloc 0xFFFFFFFF bytes: 0x00000001
+malloc 0xFFFFFFF0 bytes: 0x00000001
+malloc 0x7FFFFFFF bytes: 0x00000001
+malloc all of the space: 0x00000001
+it is empty after the failed ones: 0x00000001
+in use after the failed ones: 0x00000280
+the largest allocation: 0x0003FD7C
+memalign to 0: 0x00000001
+memalign to 1: 0x00000001
+memalign to 2: 0x00000001
+memalign to 3: 0x00000001
+memalign to 4: 0x00000001
+memalign to 8: 0x00000001
+memalign to 12: 0x00000001
+memalign to 24: 0x00000001
+memalign to 100: 0x00000001
+memalign to 32768: 0x00000001
+memalign to 262144: 0x00000000
+memalign to 2147483648: 0x00000000
+realloc from NULL: 0x00000001
+shrink 64 bytes to 16 keeps the pointer: 0x00000001
+its usable size: 0x0000001C
+it keeps the data: 0x00000001
+realloc to 0 bytes: 0x00000001
+it keeps the pointer: 0x00000001
+reallocalign from NULL to 512: 0x00000001
+reallocalign it to 2000 bytes at 4096: 0x00000001
+it keeps the data: 0x00000001
+reallocalign it to an alignment of 3: 0x00000001
+realloc NULL to 0 bytes: 0x00000001
+peak in use after all of them: 0x00000001
+create a space of 0x0 bytes: 0x00000000
+create a space of 0x100 bytes: 0x00000000
+create a space of 0x27F bytes: 0x00000001
+allocate 8 bytes from the space of 0x27F bytes: 0x00000000
+create a space of 0x280 bytes: 0x00000001
+allocate 8 bytes from the space of 0x280 bytes: 0x00000000
+create a space of 0x2C0 bytes: 0x00000001
+allocate 8 bytes from the space of 0x2C0 bytes: 0x00000001
+create a space of 0x300 bytes: 0x00000001
+allocate 8 bytes from the space of 0x300 bytes: 0x00000001
+create a space of 0x1000 bytes: 0x00000001
+allocate 8 bytes from the space of 0x1000 bytes: 0x00000001
+create a space 1 bytes past the block base: 0x00000001
+its handle's offset past 8 byte alignment, at 1: 0x00000000
+allocate 100 bytes from it, at 1: 0x00000001
+create a space 4 bytes past the block base: 0x00000001
+its handle's offset past 8 byte alignment, at 4: 0x00000000
+allocate 100 bytes from it, at 4: 0x00000001
+create a space 8 bytes past the block base: 0x00000001
+its handle's offset past 8 byte alignment, at 8: 0x00000000
+allocate 100 bytes from it, at 8: 0x00000001
+create a space 12 bytes past the block base: 0x00000001
+its handle's offset past 8 byte alignment, at 12: 0x00000000
+allocate 100 bytes from it, at 12: 0x00000001
+free NULL: 0x00000001
+usable size of NULL: 0x00000000
+DONE

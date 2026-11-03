@@ -1,0 +1,268 @@
+memcpy of 0 bytes: wrong alignments: 0x00000000
+memcpy of 1 bytes: wrong alignments: 0x00000000
+memcpy of 2 bytes: wrong alignments: 0x00000000
+memcpy of 3 bytes: wrong alignments: 0x00000000
+memcpy of 4 bytes: wrong alignments: 0x00000000
+memcpy of 5 bytes: wrong alignments: 0x00000000
+memcpy of 7 bytes: wrong alignments: 0x00000000
+memcpy of 8 bytes: wrong alignments: 0x00000000
+memcpy of 9 bytes: wrong alignments: 0x00000000
+memcpy of 15 bytes: wrong alignments: 0x00000000
+memcpy of 16 bytes: wrong alignments: 0x00000000
+memcpy of 17 bytes: wrong alignments: 0x00000000
+memcpy of 31 bytes: wrong alignments: 0x00000000
+memcpy of 32 bytes: wrong alignments: 0x00000000
+memcpy of 33 bytes: wrong alignments: 0x00000000
+memcpy of 63 bytes: wrong alignments: 0x00000000
+memcpy of 64 bytes: wrong alignments: 0x00000000
+memcpy of 65 bytes: wrong alignments: 0x00000000
+memcpy of 127 bytes: wrong alignments: 0x00000000
+memcpy of 128 bytes: wrong alignments: 0x00000000
+memcpy of 129 bytes: wrong alignments: 0x00000000
+memcpy of 255 bytes: wrong alignments: 0x00000000
+memcpy of 256 bytes: wrong alignments: 0x00000000
+memcpy of 257 bytes: wrong alignments: 0x00000000
+memcpy of 1023 bytes: wrong alignments: 0x00000000
+memcpy of 1024 bytes: wrong alignments: 0x00000000
+memcpy of 1025 bytes: wrong alignments: 0x00000000
+memcpy of 4095 bytes: wrong alignments: 0x00000000
+memcpy of 4096 bytes: wrong alignments: 0x00000000
+memcpy of 4097 bytes: wrong alignments: 0x00000000
+memcpy_safe of 0 bytes: wrong alignments: 0x00000000
+memcpy_safe of 1 bytes: wrong alignments: 0x00000000
+memcpy_safe of 2 bytes: wrong alignments: 0x00000000
+memcpy_safe of 3 bytes: wrong alignments: 0x00000000
+memcpy_safe of 4 bytes: wrong alignments: 0x00000000
+memcpy_safe of 5 bytes: wrong alignments: 0x00000000
+memcpy_safe of 7 bytes: wrong alignments: 0x00000000
+memcpy_safe of 8 bytes: wrong alignments: 0x00000000
+memcpy_safe of 9 bytes: wrong alignments: 0x00000000
+memcpy_safe of 15 bytes: wrong alignments: 0x00000000
+memcpy_safe of 16 bytes: wrong alignments: 0x00000000
+memcpy_safe of 17 bytes: wrong alignments: 0x00000000
+memcpy_safe of 31 bytes: wrong alignments: 0x00000000
+memcpy_safe of 32 bytes: wrong alignments: 0x00000000
+memcpy_safe of 33 bytes: wrong alignments: 0x00000000
+memcpy_safe of 63 bytes: wrong alignments: 0x00000000
+memcpy_safe of 64 bytes: wrong alignments: 0x00000000
+memcpy_safe of 65 bytes: wrong alignments: 0x00000000
+memcpy_safe of 127 bytes: wrong alignments: 0x00000000
+memcpy_safe of 128 bytes: wrong alignments: 0x00000000
+memcpy_safe of 129 bytes: wrong alignments: 0x00000000
+memcpy_safe of 255 bytes: wrong alignments: 0x00000000
+memcpy_safe of 256 bytes: wrong alignments: 0x00000000
+memcpy_safe of 257 bytes: wrong alignments: 0x00000000
+memcpy_safe of 1023 bytes: wrong alignments: 0x00000000
+memcpy_safe of 1024 bytes: wrong alignments: 0x00000000
+memcpy_safe of 1025 bytes: wrong alignments: 0x00000000
+memcpy_safe of 4095 bytes: wrong alignments: 0x00000000
+memcpy_safe of 4096 bytes: wrong alignments: 0x00000000
+memcpy_safe of 4097 bytes: wrong alignments: 0x00000000
+memmove of 0 bytes: wrong alignments: 0x00000000
+memmove of 1 bytes: wrong alignments: 0x00000000
+memmove of 2 bytes: wrong alignments: 0x00000000
+memmove of 3 bytes: wrong alignments: 0x00000000
+memmove of 4 bytes: wrong alignments: 0x00000000
+memmove of 5 bytes: wrong alignments: 0x00000000
+memmove of 7 bytes: wrong alignments: 0x00000000
+memmove of 8 bytes: wrong alignments: 0x00000000
+memmove of 9 bytes: wrong alignments: 0x00000000
+memmove of 15 bytes: wrong alignments: 0x00000000
+memmove of 16 bytes: wrong alignments: 0x00000000
+memmove of 17 bytes: wrong alignments: 0x00000000
+memmove of 31 bytes: wrong alignments: 0x00000000
+memmove of 32 bytes: wrong alignments: 0x00000000
+memmove of 33 bytes: wrong alignments: 0x00000000
+memmove of 63 bytes: wrong alignments: 0x00000000
+memmove of 64 bytes: wrong alignments: 0x00000000
+memmove of 65 bytes: wrong alignments: 0x00000000
+memmove of 127 bytes: wrong alignments: 0x00000000
+memmove of 128 bytes: wrong alignments: 0x00000000
+memmove of 129 bytes: wrong alignments: 0x00000000
+memmove of 255 bytes: wrong alignments: 0x00000000
+memmove of 256 bytes: wrong alignments: 0x00000000
+memmove of 257 bytes: wrong alignments: 0x00000000
+memmove of 1023 bytes: wrong alignments: 0x00000000
+memmove of 1024 bytes: wrong alignments: 0x00000000
+memmove of 1025 bytes: wrong alignments: 0x00000000
+memmove of 4095 bytes: wrong alignments: 0x00000000
+memmove of 4096 bytes: wrong alignments: 0x00000000
+memmove of 4097 bytes: wrong alignments: 0x00000000
+memset of 0 bytes: wrong alignments: 0x00000000
+memset of 1 bytes: wrong alignments: 0x00000000
+memset of 2 bytes: wrong alignments: 0x00000000
+memset of 3 bytes: wrong alignments: 0x00000000
+memset of 4 bytes: wrong alignments: 0x00000000
+memset of 5 bytes: wrong alignments: 0x00000000
+memset of 7 bytes: wrong alignments: 0x00000000
+memset of 8 bytes: wrong alignments: 0x00000000
+memset of 9 bytes: wrong alignments: 0x00000000
+memset of 15 bytes: wrong alignments: 0x00000000
+memset of 16 bytes: wrong alignments: 0x00000000
+memset of 17 bytes: wrong alignments: 0x00000000
+memset of 31 bytes: wrong alignments: 0x00000000
+memset of 32 bytes: wrong alignments: 0x00000000
+memset of 33 bytes: wrong alignments: 0x00000000
+memset of 63 bytes: wrong alignments: 0x00000000
+memset of 64 bytes: wrong alignments: 0x00000000
+memset of 65 bytes: wrong alignments: 0x00000000
+memset of 127 bytes: wrong alignments: 0x00000000
+memset of 128 bytes: wrong alignments: 0x00000000
+memset of 129 bytes: wrong alignments: 0x00000000
+memset of 255 bytes: wrong alignments: 0x00000000
+memset of 256 bytes: wrong alignments: 0x00000000
+memset of 257 bytes: wrong alignments: 0x00000000
+memset of 1023 bytes: wrong alignments: 0x00000000
+memset of 1024 bytes: wrong alignments: 0x00000000
+memset of 1025 bytes: wrong alignments: 0x00000000
+memset of 4095 bytes: wrong alignments: 0x00000000
+memset of 4096 bytes: wrong alignments: 0x00000000
+memset of 4097 bytes: wrong alignments: 0x00000000
+memset of 64 bytes with 0x1234: wrong alignments: 0x00000000
+memset of 64 bytes with -1: wrong alignments: 0x00000000
+memmove of 1 bytes by -8: wrong alignments: 0x00000000
+memmove of 7 bytes by -8: wrong alignments: 0x00000000
+memmove of 16 bytes by -8: wrong alignments: 0x00000000
+memmove of 33 bytes by -8: wrong alignments: 0x00000000
+memmove of 64 bytes by -8: wrong alignments: 0x00000000
+memmove of 257 bytes by -8: wrong alignments: 0x00000000
+memmove of 1024 bytes by -8: wrong alignments: 0x00000000
+memmove of 1 bytes by -7: wrong alignments: 0x00000000
+memmove of 7 bytes by -7: wrong alignments: 0x00000000
+memmove of 16 bytes by -7: wrong alignments: 0x00000000
+memmove of 33 bytes by -7: wrong alignments: 0x00000000
+memmove of 64 bytes by -7: wrong alignments: 0x00000000
+memmove of 257 bytes by -7: wrong alignments: 0x00000000
+memmove of 1024 bytes by -7: wrong alignments: 0x00000000
+memmove of 1 bytes by -4: wrong alignments: 0x00000000
+memmove of 7 bytes by -4: wrong alignments: 0x00000000
+memmove of 16 bytes by -4: wrong alignments: 0x00000000
+memmove of 33 bytes by -4: wrong alignments: 0x00000000
+memmove of 64 bytes by -4: wrong alignments: 0x00000000
+memmove of 257 bytes by -4: wrong alignments: 0x00000000
+memmove of 1024 bytes by -4: wrong alignments: 0x00000000
+memmove of 1 bytes by -3: wrong alignments: 0x00000000
+memmove of 7 bytes by -3: wrong alignments: 0x00000000
+memmove of 16 bytes by -3: wrong alignments: 0x00000000
+memmove of 33 bytes by -3: wrong alignments: 0x00000000
+memmove of 64 bytes by -3: wrong alignments: 0x00000000
+memmove of 257 bytes by -3: wrong alignments: 0x00000000
+memmove of 1024 bytes by -3: wrong alignments: 0x00000000
+memmove of 1 bytes by -1: wrong alignments: 0x00000000
+memmove of 7 bytes by -1: wrong alignments: 0x00000000
+memmove of 16 bytes by -1: wrong alignments: 0x00000000
+memmove of 33 bytes by -1: wrong alignments: 0x00000000
+memmove of 64 bytes by -1: wrong alignments: 0x00000000
+memmove of 257 bytes by -1: wrong alignments: 0x00000000
+memmove of 1024 bytes by -1: wrong alignments: 0x00000000
+memmove of 1 bytes by 1: wrong alignments: 0x00000000
+memmove of 7 bytes by 1: wrong alignments: 0x00000000
+memmove of 16 bytes by 1: wrong alignments: 0x00000000
+memmove of 33 bytes by 1: wrong alignments: 0x00000000
+memmove of 64 bytes by 1: wrong alignments: 0x00000000
+memmove of 257 bytes by 1: wrong alignments: 0x00000000
+memmove of 1024 bytes by 1: wrong alignments: 0x00000000
+memmove of 1 bytes by 3: wrong alignments: 0x00000000
+memmove of 7 bytes by 3: wrong alignments: 0x00000000
+memmove of 16 bytes by 3: wrong alignments: 0x00000000
+memmove of 33 bytes by 3: wrong alignments: 0x00000000
+memmove of 64 bytes by 3: wrong alignments: 0x00000000
+memmove of 257 bytes by 3: wrong alignments: 0x00000000
+memmove of 1024 bytes by 3: wrong alignments: 0x00000000
+memmove of 1 bytes by 4: wrong alignments: 0x00000000
+memmove of 7 bytes by 4: wrong alignments: 0x00000000
+memmove of 16 bytes by 4: wrong alignments: 0x00000000
+memmove of 33 bytes by 4: wrong alignments: 0x00000000
+memmove of 64 bytes by 4: wrong alignments: 0x00000000
+memmove of 257 bytes by 4: wrong alignments: 0x00000000
+memmove of 1024 bytes by 4: wrong alignments: 0x00000000
+memmove of 1 bytes by 7: wrong alignments: 0x00000000
+memmove of 7 bytes by 7: wrong alignments: 0x00000000
+memmove of 16 bytes by 7: wrong alignments: 0x00000000
+memmove of 33 bytes by 7: wrong alignments: 0x00000000
+memmove of 64 bytes by 7: wrong alignments: 0x00000000
+memmove of 257 bytes by 7: wrong alignments: 0x00000000
+memmove of 1024 bytes by 7: wrong alignments: 0x00000000
+memmove of 1 bytes by 8: wrong alignments: 0x00000000
+memmove of 7 bytes by 8: wrong alignments: 0x00000000
+memmove of 16 bytes by 8: wrong alignments: 0x00000000
+memmove of 33 bytes by 8: wrong alignments: 0x00000000
+memmove of 64 bytes by 8: wrong alignments: 0x00000000
+memmove of 257 bytes by 8: wrong alignments: 0x00000000
+memmove of 1024 bytes by 8: wrong alignments: 0x00000000
+memcpy_safe of 1 bytes to right after them: wrong alignments: 0x00000000
+memcpy_safe of 1 bytes to right before them: wrong alignments: 0x00000000
+memcpy_safe of 7 bytes to right after them: wrong alignments: 0x00000000
+memcpy_safe of 7 bytes to right before them: wrong alignments: 0x00000000
+memcpy_safe of 16 bytes to right after them: wrong alignments: 0x00000000
+memcpy_safe of 16 bytes to right before them: wrong alignments: 0x00000000
+memcpy_safe of 33 bytes to right after them: wrong alignments: 0x00000000
+memcpy_safe of 33 bytes to right before them: wrong alignments: 0x00000000
+memcpy_safe of 64 bytes to right after them: wrong alignments: 0x00000000
+memcpy_safe of 64 bytes to right before them: wrong alignments: 0x00000000
+memcmp of 1 bytes: wrong at some alignment: 0x00000000
+memcmp of 2 bytes: wrong at some alignment: 0x00000000
+memcmp of 3 bytes: wrong at some alignment: 0x00000000
+memcmp of 4 bytes: wrong at some alignment: 0x00000000
+memcmp of 5 bytes: wrong at some alignment: 0x00000000
+memcmp of 7 bytes: wrong at some alignment: 0x00000000
+memcmp of 8 bytes: wrong at some alignment: 0x00000000
+memcmp of 9 bytes: wrong at some alignment: 0x00000000
+memcmp of 15 bytes: wrong at some alignment: 0x00000000
+memcmp of 16 bytes: wrong at some alignment: 0x00000000
+memcmp of 17 bytes: wrong at some alignment: 0x00000000
+memcmp of 31 bytes: wrong at some alignment: 0x00000000
+memcmp of 32 bytes: wrong at some alignment: 0x00000000
+memcmp of 33 bytes: wrong at some alignment: 0x00000000
+memcmp of 63 bytes: wrong at some alignment: 0x00000000
+memcmp of 64 bytes: wrong at some alignment: 0x00000000
+memcmp of 65 bytes: wrong at some alignment: 0x00000000
+memcmp of 127 bytes: wrong at some alignment: 0x00000000
+memcmp of 128 bytes: wrong at some alignment: 0x00000000
+memcmp of 129 bytes: wrong at some alignment: 0x00000000
+memcmp of 255 bytes: wrong at some alignment: 0x00000000
+memcmp of 256 bytes: wrong at some alignment: 0x00000000
+memcmp of 257 bytes: wrong at some alignment: 0x00000000
+memcmp of 1023 bytes: wrong at some alignment: 0x00000000
+memcmp of 1024 bytes: wrong at some alignment: 0x00000000
+memcmp of 1025 bytes: wrong at some alignment: 0x00000000
+memcmp of 4095 bytes: wrong at some alignment: 0x00000000
+memcmp of 4096 bytes: wrong at some alignment: 0x00000000
+memcmp of 4097 bytes: wrong at some alignment: 0x00000000
+memcmp of bytes 0x80 and 0x7F: 0x00000001
+memcmp of bytes 0x01 and 0x02: 0xFFFFFFFF
+memcmp of bytes 0x10 and 0x01: 0x0000000F
+memcmp of bytes 0x00 and 0xFF: 0xFFFFFF01
+memchr of 0 bytes: wrong at some position: 0x00000000
+memchr of 1 bytes: wrong at some position: 0x00000000
+memchr of 2 bytes: wrong at some position: 0x00000000
+memchr of 3 bytes: wrong at some position: 0x00000000
+memchr of 4 bytes: wrong at some position: 0x00000000
+memchr of 5 bytes: wrong at some position: 0x00000000
+memchr of 7 bytes: wrong at some position: 0x00000000
+memchr of 8 bytes: wrong at some position: 0x00000000
+memchr of 9 bytes: wrong at some position: 0x00000000
+memchr of 15 bytes: wrong at some position: 0x00000000
+memchr of 16 bytes: wrong at some position: 0x00000000
+memchr of 17 bytes: wrong at some position: 0x00000000
+memchr of 31 bytes: wrong at some position: 0x00000000
+memchr of 32 bytes: wrong at some position: 0x00000000
+memchr of 33 bytes: wrong at some position: 0x00000000
+memchr of 63 bytes: wrong at some position: 0x00000000
+memchr of 64 bytes: wrong at some position: 0x00000000
+memchr of 65 bytes: wrong at some position: 0x00000000
+memchr of 127 bytes: wrong at some position: 0x00000000
+memchr of 128 bytes: wrong at some position: 0x00000000
+memchr of 129 bytes: wrong at some position: 0x00000000
+memchr of 255 bytes: wrong at some position: 0x00000000
+memchr of 256 bytes: wrong at some position: 0x00000000
+memchr of 257 bytes: wrong at some position: 0x00000000
+memchr of 1023 bytes: wrong at some position: 0x00000000
+memchr of 1024 bytes: wrong at some position: 0x00000000
+memchr of 1025 bytes: wrong at some position: 0x00000000
+memchr of 4095 bytes: wrong at some position: 0x00000000
+memchr of 4096 bytes: wrong at some position: 0x00000000
+memchr of 4097 bytes: wrong at some position: 0x00000000
+memchr finds byte 0 in zeros: 0x00000001
+memchr for -1 finds byte 0xFF: 0x00000001
+DONE

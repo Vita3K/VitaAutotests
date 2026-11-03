@@ -1,0 +1,102 @@
+open type 0: 0x00000000
+open type 1: 0x80260104
+open type 2: 0x00000000
+open type 3: 0x80260104
+open type 14: 0x80260104
+open type 32: 0x00000000
+open type -1: 0x80260104
+type 0: open with a grain of 0: 0x80260102
+type 0: open with a grain of 1: 0x80260102
+type 0: open with a grain of 64: 0x80260102
+type 0: open with a grain of 128: 0x80260102
+type 0: open with a grain of 160: 0x80260102
+type 0: open with a grain of 255: 0x80260102
+type 0: open with a grain of 256: 0x00000000
+type 0: open with a grain of 320: 0x80260102
+type 0: open with a grain of 512: 0x00000000
+type 0: open with a grain of 1024: 0x80260102
+type 0: open with a grain of 2048: 0x80260102
+type 0: open with a grain of 4096: 0x80260102
+type 0: open with a grain of 65536: 0x80260102
+type 0: open with a grain of -256: 0x80260102
+type 0: open at 8000 Hz: 0x80260103
+type 0: open at 11025 Hz: 0x80260103
+type 0: open at 16000 Hz: 0x00000000
+type 0: open at 22050 Hz: 0x80260103
+type 0: open at 44100 Hz: 0x80260103
+type 0: open at 48000 Hz: 0x80260103
+type 0: open at 0 Hz: 0x80260103
+type 0: open with a grain of 160 at 8000 Hz: 0x80260103
+type 0: open with a grain of 160 at 11025 Hz: 0x80260103
+type 0: open with a grain of 160 at 16000 Hz: 0x80260102
+type 0: open with a grain of 160 at 22050 Hz: 0x80260103
+type 0: open with a grain of 160 at 44100 Hz: 0x80260103
+type 0: open with a grain of 160 at 48000 Hz: 0x80260103
+type 0: open with param 1: 0x80260106
+type 0: open with param -1: 0x80260106
+type 2: open with a grain of 0: 0x80260102
+type 2: open with a grain of 1: 0x80260102
+type 2: open with a grain of 64: 0x80260102
+type 2: open with a grain of 128: 0x80260102
+type 2: open with a grain of 160: 0x80260102
+type 2: open with a grain of 255: 0x80260102
+type 2: open with a grain of 256: 0x00000000
+type 2: open with a grain of 320: 0x80260102
+type 2: open with a grain of 512: 0x80260102
+type 2: open with a grain of 1024: 0x80260102
+type 2: open with a grain of 2048: 0x80260102
+type 2: open with a grain of 4096: 0x80260102
+type 2: open with a grain of 65536: 0x80260102
+type 2: open with a grain of -256: 0x80260102
+type 2: open at 8000 Hz: 0x80260103
+type 2: open at 11025 Hz: 0x80260103
+type 2: open at 16000 Hz: 0x00000000
+type 2: open at 22050 Hz: 0x80260103
+type 2: open at 44100 Hz: 0x80260103
+type 2: open at 48000 Hz: 0x80260102
+type 2: open at 0 Hz: 0x80260103
+type 2: open with a grain of 160 at 8000 Hz: 0x80260103
+type 2: open with a grain of 160 at 11025 Hz: 0x80260103
+type 2: open with a grain of 160 at 16000 Hz: 0x80260102
+type 2: open with a grain of 160 at 22050 Hz: 0x80260103
+type 2: open with a grain of 160 at 44100 Hz: 0x80260103
+type 2: open with a grain of 160 at 48000 Hz: 0x80260102
+type 2: open with param 1: 0x80260106
+type 2: open with param -1: 0x80260106
+open with a bad type, grain, frequency and param: 0x80260104
+open with a bad grain, frequency and param: 0x80260103
+open with a bad frequency and param: 0x80260103
+open for diag with the diag type: 0x80260104
+open a port for diag: 0x00000000
+open a voice port: 0x00000000
+open another voice port: 0x80260107
+open a raw port beside it: 0x80260107
+adopt of the voice type: 0x00000001
+adopt of the raw type: 0x00000001
+adopt of type 1: 0x80260104
+the mute status: 0x00000000
+status 0: 0x8026010B
+status 2: 0x8026010B
+the input it reads from: 0x00000000
+get the mic gain: 0x00000000
+get the mic gain of an unknown port: 0x80260104
+read a grain: 0x00000000
+it writes no further than the grain: 0x00000001
+read 16 more grains: 0x00000000
+they take at least 192 ms: 0x00000001
+and at most 320 ms: 0x00000001
+read with the input device state: 0x00000000
+the device state was written: 0x00000000
+read into a buffer 1 byte past alignment: 0x00000000
+read into a buffer 2 bytes past alignment: 0x00000000
+read into NULL: 0x80260105
+read with the state into NULL: 0x00000000
+release it: 0x00000000
+release it again: 0x80260109
+read from the released port: 0x80260109
+get the mic gain of the released port: 0x80260104
+release an unknown port: 0x80260109
+release port -1: 0x80260109
+open a voice port again: 0x00000000
+open a raw port at 48 kHz: 0x80260102
+DONE

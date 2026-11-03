@@ -1,0 +1,46 @@
+open a bgm port: 0x00000001
+output NULL with nothing queued: 0x00000000
+output a buffer: 0x00000100
+the samples left after it are at most twice the length: 0x00000001
+output another: 0x00000100
+the samples left after that are at most twice the length: 0x00000001
+output NULL to wait for the end: 0x00000000
+the samples left after that: 0x00000000
+output NULL again: 0x00000000
+set the volume while it plays: 0x00000000
+set mono while it plays: 0x00000000
+output a mono buffer: 0x00000100
+set stereo again: 0x00000000
+output a stereo buffer: 0x00000100
+output from a buffer 2 bytes past alignment: 0x00000100
+output from a buffer 1 byte past alignment: 0x00000100
+output from a buffer 4 bytes past alignment: 0x00000100
+output from a buffer 32 bytes past alignment: 0x00000100
+release it: 0x00000000
+output to the released port: 0x80260001
+output NULL to the released port: 0x80260001
+output to an unknown port: 0x8026000A
+output to port -1: 0x8026000A
+bgm with 256 samples at 48 kHz: 40 outputs take at least 3/4 of their play time: 0x00000001
+bgm with 256 samples at 48 kHz: and at most 5/4 of it: 0x00000001
+bgm with 256 samples at 8 kHz: 12 outputs take at least 3/4 of their play time: 0x00000001
+bgm with 256 samples at 8 kHz: and at most 5/4 of it: 0x00000001
+bgm with 1024 samples at 22.05 kHz: 12 outputs take at least 3/4 of their play time: 0x00000001
+bgm with 1024 samples at 22.05 kHz: and at most 5/4 of it: 0x00000001
+bgm with 64 samples at 48 kHz: 100 outputs take at least 3/4 of their play time: 0x00000001
+bgm with 64 samples at 48 kHz: and at most 5/4 of it: 0x00000001
+main with 256 samples at 48 kHz: 40 outputs take at least 3/4 of their play time: 0x00000001
+main with 256 samples at 48 kHz: and at most 5/4 of it: 0x00000001
+voice with 512 samples at 16 kHz: 12 outputs take at least 3/4 of their play time: 0x00000001
+voice with 512 samples at 16 kHz: and at most 5/4 of it: 0x00000001
+output to the port another thread waits in: 0x80260002
+release the port another thread waits in: 0x80260002
+the thread's output 0: 0x00001000
+the thread's output 1: 0x00001000
+the thread's output 2: 0x00001000
+the thread's output 3: 0x00001000
+release the port after the thread ends: 0x00000000
+output NULL to a voice port that never played: 0x00000000
+the samples it has left: 0x00000000
+the samples left on the released port: 0x80260001
+DONE

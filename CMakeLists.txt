@@ -30,11 +30,17 @@ function(vita_test_file source dest)
 	set_property(GLOBAL APPEND PROPERTY VITA_TEST_FILES ${source} ${dest})
 endfunction()
 
+# Adds a library the tests link with, a target or a path
+function(vita_test_library library)
+	set_property(GLOBAL APPEND PROPERTY VITA_TEST_LIBRARIES ${library})
+endfunction()
+
 # Builds every test added so far into one vpk with the given title ID. Each launch runs one test.
 function(vita_tests_vpk title_id)
 	get_property(sources GLOBAL PROPERTY VITA_TEST_SOURCES)
 	get_property(names GLOBAL PROPERTY VITA_TEST_NAMES)
 	get_property(files GLOBAL PROPERTY VITA_TEST_FILES)
+	get_property(libraries GLOBAL PROPERTY VITA_TEST_LIBRARIES)
 	set(table "")
 	foreach(name ${names})
 		string(APPEND table "TEST(${name})\n")
@@ -44,7 +50,7 @@ function(vita_tests_vpk title_id)
 	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${sources})
 	target_include_directories(vita-autotests PRIVATE ${PROJECT_SOURCE_DIR}/common ${CMAKE_CURRENT_BINARY_DIR})
 	# Not SceProcessmgr_stub: a Vita refuses to install a vpk that imports from it, with C2-12845-0
-	target_link_libraries(vita-autotests SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceSysmem_stub SceFiber_stub SceSysmodule_stub SceRtc_stub SceAudio_stub SceDisplay_stub SceGxm_stub SceAppUtil_stub SceFios2Kernel_stub)
+	target_link_libraries(vita-autotests ${libraries} SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceSysmem_stub SceFiber_stub SceSysmodule_stub SceRtc_stub SceAudio_stub SceAudioIn_stub SceAudiodec_stub SceNgsUser_stub SceAtrac_stub SceDisplay_stub SceGxm_stub SceAppUtil_stub SceFios2Kernel_stub)
 	# Room for the import tables vita-elf-create adds after the code, which outgrow the page padding
 	target_link_options(vita-autotests PRIVATE -Wl,--defsym,__sce_headroom=0x4000)
 	vita_create_self(vita-autotests.self vita-autotests)

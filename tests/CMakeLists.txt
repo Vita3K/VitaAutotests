@@ -731,10 +731,40 @@ vita_test(rtc rtc/rtc.c)
 vita_test(strings clib/strings.c)
 vita_test(format clib/format.c)
 vita_test(mspace clib/mspace.c)
+vita_test(mem_bounds clib/mem_bounds.c)
+vita_test(mspace_edges clib/mspace_edges.c)
+vita_test(clib_edges clib/clib_edges.c)
+vita_test(clib_null_args clib/clib_null_args.c)
+vita_test(libc_qsort clib/libc_qsort.c)
+vita_test(libc_math clib/libc_math.c)
+
+# The SceLibc stubs libc_qsort and libc_math call, renamed to scelibc_<name> so they don't take the
+# place of newlib's functions in the other tests
+set(scelibc_functions
+	qsort qsort_s bsearch bsearch_s set_constraint_handler_s ignore_handler_s _sceLibcErrnoLoc
+	sin cos tan asin acos atan atan2 exp log log10 pow sqrt fmod remainder floor ceil round trunc rint
+	lround lrint modf frexp ldexp hypot cbrt fma nextafter copysign sinf cosf sqrtf expf logf powf fmodf atan2f)
+find_library(scelibc_original SceLibc_stub REQUIRED)
+set(scelibc_stub ${CMAKE_CURRENT_BINARY_DIR}/libSceLibcRenamed_stub.a)
+add_custom_command(OUTPUT ${scelibc_stub}
+	COMMAND ${CMAKE_COMMAND} -DAR=${CMAKE_AR} -DOBJCOPY=${CMAKE_OBJCOPY} -DLIB=${scelibc_original}
+		-DOUT=${scelibc_stub} -DDIR=${CMAKE_CURRENT_BINARY_DIR}/scelibc_stub "-DFUNCS=${scelibc_functions}"
+		-P ${CMAKE_CURRENT_SOURCE_DIR}/clib/scelibc_stub.cmake
+	DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/clib/scelibc_stub.cmake ${scelibc_original}
+	VERBATIM)
+add_custom_target(scelibc_stub ALL DEPENDS ${scelibc_stub})
+vita_test_library(${scelibc_stub})
 
 vita_test(sysmodule sysmodule/sysmodule.c)
 
 vita_test(audioout audio/audioout.c)
+vita_test(audioout_config audio/audioout_config.c)
+vita_test(audioout_output audio/audioout_output.c)
+vita_test(audioin audio/audioin.c)
+vita_test(audiodec audio/audiodec.c)
+vita_test(ngs audio/ngs.c)
+vita_test(ngs_update audio/ngs_update.c)
+vita_test(atrac audio/atrac.c)
 
 vita_test(display display/display.c)
 vita_test(display_framebuf_blocks display/display_framebuf_blocks.c)

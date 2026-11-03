@@ -1,0 +1,16 @@
+memcpy of 0 from and to NULL: 0x00000001
+memcpy_safe of 0 from and to NULL: 0x00000001
+memmove of 0 from and to NULL: 0x00000001
+memset of 0 at NULL: 0x00000001
+memcmp of 0 at NULL: 0x00000000
+memchr of 0 at NULL: 0x00000001
+strncmp of 0 at NULL: 0x00000000
+strncasecmp of 0 at NULL: 0x00000000
+strnlen of 0 at NULL: 0x00000000
+strncpy of 0 to NULL: 0x00000001
+snprintf into NULL of 0 bytes: 0x00000005
+"%.3s|", (const char *)NULL gives [(null)|]: 0x00000001
+"%.0s|", (const char *)NULL gives [(null)|]: 0x00000001
+"%10s|", (const char *)NULL gives [(null)|]: 0x00000001
+"%-10s|", (const char *)NULL gives [(null)|]: 0x00000001
+DONE

@@ -1,0 +1,263 @@
+load the ngs module: 0x00000000
+system memory with 4 racks, 8 voices and a granularity of 512: 0x00000300
+system memory with 0 racks: 0x804A0002
+system memory with 1 racks: 0x00000300
+system memory with 64 racks: 0x00000D00
+system memory with 65 racks: 0x804A0002
+system memory with 0 voices: 0x804A0002
+system memory with 1 voices: 0x00000200
+system memory with 256 voices: 0x00001A00
+system memory with 257 voices: 0x804A0002
+system memory with a granularity of 0: 0x804A0002
+system memory with a granularity of 32: 0x804A0002
+system memory with a granularity of 64: 0x00000300
+system memory with a granularity of 100: 0x804A0002
+system memory with a granularity of 128: 0x00000300
+system memory with a granularity of 256: 0x00000300
+system memory with a granularity of 448: 0x00000300
+system memory with a granularity of 576: 0x804A0002
+system memory with a granularity of 1024: 0x804A0002
+system memory with a rate of 0: 0x804A0002
+system memory with a rate of 44100: 0x804A0002
+system memory with a rate of 96000: 0x804A0002
+system memory with reserved -1: 0x804A0002
+system memory with reserved 7: 0x00000300
+init a system in a byte less than it needs: 0x804A000D
+init a system 4 bytes past alignment: 0x804A0003
+init a system with a granularity of 100: 0x804A0002
+init a system: 0x00000000
+its handle is set: 0x00000001
+set its flags: 0x00000000
+lock it: 0x00000000
+unlock it: 0x00000000
+unlock it again: 0x804A0001
+master buss: has a definition: 0x00000001
+master buss: the same one each time: 0x00000001
+master buss: rack memory for 2 voices of 1 channels: 0x00000C00
+master buss: rack memory for 2 voices of 2 channels: 0x00001400
+simple voice: has a definition: 0x00000001
+simple voice: the same one each time: 0x00000001
+simple voice: rack memory for 2 voices of 1 channels: 0x00000800
+simple voice: rack memory for 2 voices of 2 channels: 0x00000A00
+atrac9 voice: has a definition: 0x00000001
+atrac9 voice: the same one each time: 0x00000001
+atrac9 voice: rack memory for 2 voices of 1 channels: 0x00000C00
+atrac9 voice: rack memory for 2 voices of 2 channels: 0x00001000
+simple atrac9 voice: has a definition: 0x00000001
+simple atrac9 voice: the same one each time: 0x00000001
+simple atrac9 voice: rack memory for 2 voices of 1 channels: 0x00000800
+simple atrac9 voice: rack memory for 2 voices of 2 channels: 0x00000A00
+scream voice: has a definition: 0x00000001
+scream voice: the same one each time: 0x00000001
+scream voice: rack memory for 2 voices of 1 channels: 0x00000800
+scream voice: rack memory for 2 voices of 2 channels: 0x00000A00
+scream atrac9 voice: has a definition: 0x00000001
+scream atrac9 voice: the same one each time: 0x00000001
+scream atrac9 voice: rack memory for 2 voices of 1 channels: 0x00000900
+scream atrac9 voice: rack memory for 2 voices of 2 channels: 0x00000A00
+sas emu voice: has a definition: 0x00000001
+sas emu voice: the same one each time: 0x00000001
+sas emu voice: rack memory for 2 voices of 1 channels: 0x00000700
+sas emu voice: rack memory for 2 voices of 2 channels: 0x00000700
+template 1: has a definition: 0x00000001
+template 1: the same one each time: 0x00000001
+template 1: rack memory for 2 voices of 1 channels: 0x00000C00
+template 1: rack memory for 2 voices of 2 channels: 0x00001000
+mixer buss: has a definition: 0x00000001
+mixer buss: the same one each time: 0x00000001
+mixer buss: rack memory for 2 voices of 1 channels: 0x00000500
+mixer buss: rack memory for 2 voices of 2 channels: 0x00000500
+reverb buss: has a definition: 0x00000001
+reverb buss: the same one each time: 0x00000001
+reverb buss: rack memory for 2 voices of 1 channels: 0x00000500
+reverb buss: rack memory for 2 voices of 2 channels: 0x00000600
+delay buss: has a definition: 0x00000001
+delay buss: the same one each time: 0x00000001
+delay buss: rack memory for 2 voices of 1 channels: 0x00000600
+delay buss: rack memory for 2 voices of 2 channels: 0x00000700
+distortion buss: has a definition: 0x00000001
+distortion buss: the same one each time: 0x00000001
+distortion buss: rack memory for 2 voices of 1 channels: 0x00000500
+distortion buss: rack memory for 2 voices of 2 channels: 0x00000500
+eq buss: has a definition: 0x00000001
+eq buss: the same one each time: 0x00000001
+eq buss: rack memory for 2 voices of 1 channels: 0x00000600
+eq buss: rack memory for 2 voices of 2 channels: 0x00000600
+envelope buss: has a definition: 0x00000001
+envelope buss: the same one each time: 0x00000001
+envelope buss: rack memory for 2 voices of 1 channels: 0x00000600
+envelope buss: rack memory for 2 voices of 2 channels: 0x00000600
+compressor buss: has a definition: 0x00000001
+compressor buss: the same one each time: 0x00000001
+compressor buss: rack memory for 2 voices of 1 channels: 0x00000500
+compressor buss: rack memory for 2 voices of 2 channels: 0x00000500
+compressor side chain buss: has a definition: 0x00000001
+compressor side chain buss: the same one each time: 0x00000001
+compressor side chain buss: rack memory for 2 voices of 1 channels: 0x00000500
+compressor side chain buss: rack memory for 2 voices of 2 channels: 0x00000500
+pauser buss: has a definition: 0x00000001
+pauser buss: the same one each time: 0x00000001
+pauser buss: rack memory for 2 voices of 1 channels: 0x00000500
+pauser buss: rack memory for 2 voices of 2 channels: 0x00000500
+pitch shift buss: has a definition: 0x00000001
+pitch shift buss: the same one each time: 0x00000001
+pitch shift buss: rack memory for 2 voices of 1 channels: 0x00000500
+pitch shift buss: rack memory for 2 voices of 2 channels: 0x00000500
+master buss: rack memory with 0 voices: 0x804A0002
+simple voice: rack memory with 0 voices: 0x804A0002
+master buss: rack memory with 9 voices: 0x804A0006
+simple voice: rack memory with 9 voices: 0x804A0006
+master buss: rack memory with 0 channels: 0x804A0002
+simple voice: rack memory with 0 channels: 0x804A0002
+master buss: rack memory with 3 channels: 0x804A0002
+simple voice: rack memory with 3 channels: 0x804A0002
+master buss: rack memory with no input patches: 0x00000C00
+simple voice: rack memory with no input patches: 0x00000700
+master buss: rack memory with no output patches: 0x00000C00
+simple voice: rack memory with no output patches: 0x00000600
+master buss: rack memory with -1 output patches: 0x804A0002
+simple voice: rack memory with -1 output patches: 0x804A0002
+init the voice rack in a byte less than it needs: 0x00000000
+init the master rack: 0x00000000
+init the voice rack: 0x00000000
+init a rack in an unknown system: 0x804A000C
+get the master voice: 0x00000000
+get voice 0: 0x00000000
+get voice 1: 0x00000000
+get voice 2 of 2: 0x804A0002
+voice 2 is left alone: 0x00000000
+the voices differ: 0x00000001
+master: get its info: 0x00000000
+master: its state: 0x00000000
+master: its modules: 0x00000002
+master: its inputs: 0x00000001
+master: its outputs: 0x00000000
+master: its patches per output: 0x00000000
+master: its updates: 0x00000000
+voice 0: get its info: 0x00000000
+voice 0: its state: 0x00000000
+voice 0: its modules: 0x00000006
+voice 0: its inputs: 0x00000000
+voice 0: its outputs: 0x00000002
+voice 0: its patches per output: 0x00000001
+voice 0: its updates: 0x00000000
+voice 0: the type of module 0: 0x00005CE6
+voice 0: the bypass of module 0: 0x00000000
+voice 0: the type of module 1: 0x00005CEC
+voice 0: the bypass of module 1: 0x00000002
+voice 0: the type of module 2: 0x00005CE3
+voice 0: the bypass of module 2: 0x00000002
+voice 0: the type of module 3: 0x00005CE5
+voice 0: the bypass of module 3: 0x00000002
+voice 0: the type of module 4: 0x00005CE4
+voice 0: the bypass of module 4: 0x00000002
+voice 0: the type of module 5: 0x00005CE4
+voice 0: the bypass of module 5: 0x00000002
+voice 0: the type of module 6: 0x804A0002
+voice 0: the bypass of module 6: 0x804A0002
+master: the type of module 0: 0x00005CE0
+master: the type of module 1: 0x00005CED
+master: the type of module 2: 0x804A0002
+bypass module 0 of voice 0: 0x00000000
+its bypass after that: 0x00000002
+bypass it with flag 1: 0x804A0002
+stop bypassing it: 0x00000000
+patch voice 0 into the master: 0x00000000
+patch voice 0 into it again: 0x804A0001
+patch voice 1 into the first free slot: 0x00000000
+patch from output 1: 0x00000000
+patch into input 1: 0x804A000A
+patch into a voice without inputs: 0x804A000A
+get voice 0's output patch: 0x00000000
+it is the patch: 0x00000001
+get voice 0's output patch 1: 0x804A0002
+get the patch info: 0x00000000
+its output channels: 0x00000002
+its input channels: 0x00000002
+its volume from 0 to 0: 0x00000000
+its volume from 0 to 1: 0x00000000
+its volume from 1 to 0: 0x00000000
+its volume from 1 to 1: 0x00000000
+its setup's source: 0x00000001
+its setup's indices: 0x00000000
+set a volume: 0x00000000
+set a volume of channel 2: 0x804A0002
+set the volumes of a channel: 0x00000000
+set 3 volumes of a channel: 0x804A0002
+set the matrix: 0x00000000
+its volume from 0 to 0 after that: 0x3F800000
+its volume from 0 to 1 after that: 0x00000000
+its volume from 1 to 0 after that: 0xBF800000
+its volume from 1 to 1 after that: 0x41000000
+play the master: 0x00000000
+play voice 0: 0x00000000
+voice 0 after play: get its info: 0x00000000
+voice 0 after play: its state: 0x00000011
+voice 0 after play: its modules: 0x00000006
+voice 0 after play: its inputs: 0x00000000
+voice 0 after play: its outputs: 0x00000002
+voice 0 after play: its patches per output: 0x00000001
+voice 0 after play: its updates: 0x00000000
+pause voice 1: 0x00000000
+resume voice 1: 0x00000000
+play voice 1: 0x00000000
+pause voice 1 after that: 0x00000000
+voice 1 paused: get its info: 0x00000000
+voice 1 paused: its state: 0x00000031
+voice 1 paused: its modules: 0x00000006
+voice 1 paused: its inputs: 0x00000000
+voice 1 paused: its outputs: 0x00000002
+voice 1 paused: its patches per output: 0x00000001
+voice 1 paused: its updates: 0x00000000
+pause it again: 0x00000000
+resume it: 0x00000000
+key off voice 1: 0x00000000
+voice 1 after key off: get its info: 0x00000000
+voice 1 after key off: its state: 0x00000054
+voice 1 after key off: its modules: 0x00000006
+voice 1 after key off: its inputs: 0x00000000
+voice 1 after key off: its outputs: 0x00000002
+voice 1 after key off: its patches per output: 0x00000001
+voice 1 after key off: its updates: 0x00000000
+kill voice 0: 0x00000000
+voice 0 after kill: get its info: 0x00000000
+voice 0 after kill: its state: 0x00000000
+voice 0 after kill: its modules: 0x00000006
+voice 0 after kill: its inputs: 0x00000000
+voice 0 after kill: its outputs: 0x00000002
+voice 0 after kill: its patches per output: 0x00000001
+voice 0 after kill: its updates: 0x00000000
+kill it again: 0x00000000
+init voice 0 with everything: 0x00000000
+voice 0 after init: get its info: 0x00000000
+voice 0 after init: its state: 0x00000000
+voice 0 after init: its modules: 0x00000006
+voice 0 after init: its inputs: 0x00000000
+voice 0 after init: its outputs: 0x00000002
+voice 0 after init: its patches per output: 0x00000001
+voice 0 after init: its updates: 0x00000000
+voice 0's patch after init: 0x804A000E
+init voice 0 with flag 8: 0x00000000
+remove voice 1's patch: 0x00000000
+remove it again: 0x804A0001
+remove an unknown patch: 0x804A000C
+release the system with its racks: 0x00000000
+release the master rack with a voice patched in: 0x804A000C
+release the voice rack: 0x804A000C
+release it again: 0x804A000C
+get a voice of the released rack: 0x804A000C
+get the info of a released voice: 0x804A000C
+release the system: 0x804A000C
+release it again: 0x804A000C
+release an unknown system: 0x804A000C
+system memory with NULL params: 0x804A0002
+system memory into NULL: 0x804A0002
+init a system in NULL: 0x804A0002
+init a system: 0x00000000
+rack memory without a definition: 0x804A0002
+rack memory with a NULL description: 0x804A0002
+init a rack with a NULL buffer: 0x804A0002
+get a voice into NULL: 0x804A000C
+create a patch with NULL setup: 0x804A0002
+unload the ngs module: 0x00000000
+DONE

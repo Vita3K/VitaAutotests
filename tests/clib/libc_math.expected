@@ -1,0 +1,401 @@
+sin of 0: 0x0000000000000000
+sin of -0: 0x8000000000000000
+sin of the smallest denormal: 0x0000000000000001
+sin of 0.5: 0x3FDEAEE8744B05F0
+sin of 1: 0x3FEAED548F090CEE
+sin of -1: 0xBFEAED548F090CEE
+sin of 2: 0x3FED18F6EAD1B446
+sin of pi: 0x3CA1A62633145C07
+sin of -2.5: 0xBFE326AF0DCFCAB0
+sin of 100: 0xBFE03425B78C4DB8
+sin of 1e22: 0xBFD4BD4CBA14452F
+sin of the largest double: 0x3F7452FC98B34E96
+sin of infinity: 0x7FF8000000000000
+sin of -infinity: 0x7FF8000000000000
+sin of NaN: 0x7FF8000000000000
+sin of -NaN with a payload: 0xFFF8000000001234
+cos of 0: 0x3FF0000000000000
+cos of -0: 0x3FF0000000000000
+cos of the smallest denormal: 0x3FF0000000000000
+cos of 0.5: 0x3FEC1528065B7D50
+cos of 1: 0x3FE14A280FB5068C
+cos of -1: 0x3FE14A280FB5068C
+cos of 2: 0xBFDAA22657537205
+cos of pi: 0xBFF0000000000000
+cos of -2.5: 0xBFE9A2F7EF858B7D
+cos of 100: 0x3FEB981DBF665FE0
+cos of 1e22: 0x3FEE45F2C19A7C80
+cos of the largest double: 0xBFEFFFE62ECFAB75
+cos of infinity: 0x7FF8000000000000
+cos of -infinity: 0x7FF8000000000000
+cos of NaN: 0x7FF8000000000000
+cos of -NaN with a payload: 0xFFF8000000001234
+tan of 0: 0x0000000000000000
+tan of -0: 0x8000000000000000
+tan of the smallest denormal: 0x0000000000000001
+tan of 0.5: 0x3FE17B4F5BF3474A
+tan of 1: 0x3FF8EB245CBEE3A4
+tan of -1: 0xBFF8EB245CBEE3A4
+tan of 2: 0xC0017AF62E0950F8
+tan of pi: 0xBCA1A62633145C07
+tan of -2.5: 0x3FE7E79B4E00BB14
+tan of 100: 0xBFE2CA74D62B5D37
+tan of 1e22: 0xBFD5EC237697CE49
+tan of the largest double: 0xBF74530CFE729484
+tan of infinity: 0x7FF8000000000000
+tan of -infinity: 0x7FF8000000000000
+tan of NaN: 0x7FF8000000000000
+tan of -NaN with a payload: 0xFFF8000000001234
+asin of 0: 0x0000000000000000
+asin of -0: 0x8000000000000000
+asin of the smallest denormal: 0x0000000000000000
+asin of 0.5: 0x3FE0C152382D7366
+asin of 1: 0x3FF921FB54442D18
+asin of -1: 0xBFF921FB54442D18
+asin of 2: 0x7FF8000000000000
+asin of pi: 0x7FF8000000000000
+asin of -2.5: 0x7FF8000000000000
+asin of 100: 0x7FF8000000000000
+asin of 1e22: 0x7FF8000000000000
+asin of the largest double: 0x7FF8000000000000
+asin of infinity: 0x7FF8000000000000
+asin of -infinity: 0x7FF8000000000000
+asin of NaN: 0x7FF8000000000000
+asin of -NaN with a payload: 0xFFF8000000001234
+acos of 0: 0x3FF921FB54442D18
+acos of -0: 0x3FF921FB54442D18
+acos of the smallest denormal: 0x3FF921FB54442D18
+acos of 0.5: 0x3FF0C152382D7366
+acos of 1: 0x0000000000000000
+acos of -1: 0x400921FB54442D18
+acos of 2: 0x7FF8000000000000
+acos of pi: 0x7FF8000000000000
+acos of -2.5: 0x7FF8000000000000
+acos of 100: 0x7FF8000000000000
+acos of 1e22: 0x7FF8000000000000
+acos of the largest double: 0x7FF8000000000000
+acos of infinity: 0x7FF8000000000000
+acos of -infinity: 0x7FF8000000000000
+acos of NaN: 0x7FF8000000000000
+acos of -NaN with a payload: 0xFFF8000000001234
+atan of 0: 0x0000000000000000
+atan of -0: 0x8000000000000000
+atan of the smallest denormal: 0x0000000000000001
+atan of 0.5: 0x3FDDAC670561BB50
+atan of 1: 0x3FE921FB54442D18
+atan of -1: 0xBFE921FB54442D18
+atan of 2: 0x3FF1B6E192EBBE45
+atan of pi: 0x3FF433B8A322DDD3
+atan of -2.5: 0xBFF30B6D796A4DA9
+atan of 100: 0x3FF8F905EB2DEF21
+atan of 1e22: 0x3FF921FB54442D18
+atan of the largest double: 0x3FF921FB54442D18
+atan of infinity: 0x3FF921FB54442D18
+atan of -infinity: 0xBFF921FB54442D18
+atan of NaN: 0x7FF8000000000000
+atan of -NaN with a payload: 0xFFF8000000001234
+exp of 0: 0x3FF0000000000000
+exp of -0: 0x3FF0000000000000
+exp of the smallest denormal: 0x3FF0000000000000
+exp of 0.5: 0x3FFA61298E1E069C
+exp of 1: 0x4005BF0A8B145769
+exp of -1: 0x3FD78B56362CEF38
+exp of 2: 0x401D8E64B8D4DDAE
+exp of pi: 0x403724046EB09338
+exp of -2.5: 0x3FB50385C094F425
+exp of 100: 0x48F3494A9B171BF5
+exp of 1e22: 0x7FF0000000000000
+exp of the largest double: 0x7FF0000000000000
+exp of infinity: 0x7FF0000000000000
+exp of -infinity: 0x0000000000000000
+exp of NaN: 0x7FF8000000000000
+exp of -NaN with a payload: 0xFFF8000000001234
+log of 0: 0xFFF0000000000000
+log of -0: 0xFFF0000000000000
+log of the smallest denormal: 0xC0874385446D71C3
+log of 0.5: 0xBFE62E42FEFA39EF
+log of 1: 0x0000000000000000
+log of -1: 0x7FF8000000000000
+log of 2: 0x3FE62E42FEFA39EF
+log of pi: 0x3FF250D048E7A1BD
+log of -2.5: 0x7FF8000000000000
+log of 100: 0x40126BB1BBB55516
+log of 1e22: 0x404A7ACF7DD4AA4F
+log of the largest double: 0x40862E42FEFA39EF
+log of infinity: 0x7FF0000000000000
+log of -infinity: 0x7FF8000000000000
+log of NaN: 0x7FF8000000000000
+log of -NaN with a payload: 0xFFF8000000001234
+log10 of 0: 0xFFF0000000000000
+log10 of -0: 0xFFF0000000000000
+log10 of the smallest denormal: 0xC07434E6420F4374
+log10 of 0.5: 0xBFD34413509F79FF
+log10 of 1: 0x0000000000000000
+log10 of -1: 0x7FF8000000000000
+log10 of 2: 0x3FD34413509F79FF
+log10 of pi: 0x3FDFD14DB31BA3BA
+log10 of -2.5: 0x7FF8000000000000
+log10 of 100: 0x4000000000000000
+log10 of 1e22: 0x4037000000000000
+log10 of the largest double: 0x40734413509F79FF
+log10 of infinity: 0x7FF0000000000000
+log10 of -infinity: 0x7FF8000000000000
+log10 of NaN: 0x7FF8000000000000
+log10 of -NaN with a payload: 0xFFF8000000001234
+sqrt of 0: 0x0000000000000000
+sqrt of -0: 0x8000000000000000
+sqrt of the smallest denormal: 0x1E60000000000000
+sqrt of 0.5: 0x3FE6A09E667F3BCC
+sqrt of 1: 0x3FF0000000000000
+sqrt of -1: 0x7FF8000000000000
+sqrt of 2: 0x3FF6A09E667F3BCC
+sqrt of pi: 0x3FFC5BF891B4EF6A
+sqrt of -2.5: 0x7FF8000000000000
+sqrt of 100: 0x4024000000000000
+sqrt of 1e22: 0x4252682931C035A0
+sqrt of the largest double: 0x5FF0000000000000
+sqrt of infinity: 0x7FF0000000000000
+sqrt of -infinity: 0x7FF8000000000000
+sqrt of NaN: 0x7FF8000000000000
+sqrt of -NaN with a payload: 0xFFF8000000001234
+cbrt of 0: 0x0000000000000000
+cbrt of -0: 0x8000000000000000
+cbrt of the smallest denormal: 0x2990000000000000
+cbrt of 0.5: 0x3FE965FEA53D6E3C
+cbrt of 1: 0x3FF0000000000000
+cbrt of -1: 0xBFF0000000000000
+cbrt of 2: 0x3FF428A2F98D728A
+cbrt of pi: 0x3FF76EF7E73104B8
+cbrt of -2.5: 0xBFF5B7209557B0EE
+cbrt of 100: 0x401290FCA9C761F8
+cbrt of 1e22: 0x4186220082B063C4
+cbrt of the largest double: 0x554428A2F98D728B
+cbrt of infinity: 0x7FF0000000000000
+cbrt of -infinity: 0xFFF0000000000000
+cbrt of NaN: 0x7FF8000000000000
+cbrt of -NaN with a payload: 0xFFF8000000001234
+floor of 0: 0x0000000000000000
+floor of -0: 0x8000000000000000
+floor of the smallest denormal: 0x0000000000000000
+floor of 0.5: 0x0000000000000000
+floor of 1: 0x3FF0000000000000
+floor of -1: 0xBFF0000000000000
+floor of 2: 0x4000000000000000
+floor of pi: 0x4008000000000000
+floor of -2.5: 0xC008000000000000
+floor of 100: 0x4059000000000000
+floor of 1e22: 0x44B52D02C7E14AF6
+floor of the largest double: 0x7FEFFFFFFFFFFFFF
+floor of infinity: 0x7FF0000000000000
+floor of -infinity: 0xFFF0000000000000
+floor of NaN: 0x7FF8000000000000
+floor of -NaN with a payload: 0xFFF8000000001234
+ceil of 0: 0x0000000000000000
+ceil of -0: 0x8000000000000000
+ceil of the smallest denormal: 0x0000000000000000
+ceil of 0.5: 0x3FF0000000000000
+ceil of 1: 0x3FF0000000000000
+ceil of -1: 0xBFF0000000000000
+ceil of 2: 0x4000000000000000
+ceil of pi: 0x4010000000000000
+ceil of -2.5: 0xC000000000000000
+ceil of 100: 0x4059000000000000
+ceil of 1e22: 0x44B52D02C7E14AF6
+ceil of the largest double: 0x7FEFFFFFFFFFFFFF
+ceil of infinity: 0x7FF0000000000000
+ceil of -infinity: 0xFFF0000000000000
+ceil of NaN: 0x7FF8000000000000
+ceil of -NaN with a payload: 0xFFF8000000001234
+round of 0: 0x0000000000000000
+round of -0: 0x8000000000000000
+round of the smallest denormal: 0x0000000000000000
+round of 0.5: 0x3FF0000000000000
+round of 1: 0x3FF0000000000000
+round of -1: 0xBFF0000000000000
+round of 2: 0x4000000000000000
+round of pi: 0x4008000000000000
+round of -2.5: 0xC008000000000000
+round of 100: 0x4059000000000000
+round of 1e22: 0x44B52D02C7E14AF6
+round of the largest double: 0x7FEFFFFFFFFFFFFF
+round of infinity: 0x7FF0000000000000
+round of -infinity: 0xFFF0000000000000
+round of NaN: 0x7FF8000000000000
+round of -NaN with a payload: 0xFFF8000000001234
+trunc of 0: 0x0000000000000000
+trunc of -0: 0x8000000000000000
+trunc of the smallest denormal: 0x0000000000000000
+trunc of 0.5: 0x0000000000000000
+trunc of 1: 0x3FF0000000000000
+trunc of -1: 0xBFF0000000000000
+trunc of 2: 0x4000000000000000
+trunc of pi: 0x4008000000000000
+trunc of -2.5: 0xC000000000000000
+trunc of 100: 0x4059000000000000
+trunc of 1e22: 0x44B52D02C7E14AF6
+trunc of the largest double: 0x7FEFFFFFFFFFFFFF
+trunc of infinity: 0x7FF0000000000000
+trunc of -infinity: 0xFFF0000000000000
+trunc of NaN: 0x7FF8000000000000
+trunc of -NaN with a payload: 0xFFF8000000001234
+rint of 0: 0x0000000000000000
+rint of -0: 0x8000000000000000
+rint of the smallest denormal: 0x0000000000000000
+rint of 0.5: 0x0000000000000000
+rint of 1: 0x3FF0000000000000
+rint of -1: 0xBFF0000000000000
+rint of 2: 0x4000000000000000
+rint of pi: 0x4008000000000000
+rint of -2.5: 0xC000000000000000
+rint of 100: 0x4059000000000000
+rint of 1e22: 0x44B52D02C7E14AF6
+rint of the largest double: 0x7FEFFFFFFFFFFFFF
+rint of infinity: 0x7FF0000000000000
+rint of -infinity: 0xFFF0000000000000
+rint of NaN: 0x7FF8000000000000
+rint of -NaN with a payload: 0xFFF8000000001234
+sinf of 0: 0x00000000
+sinf of -0: 0x80000000
+sinf of the smallest denormal: 0x00000001
+sinf of 1: 0x3F576AA4
+sinf of -1: 0xBF576AA4
+sinf of pi: 0xB3BBBD2E
+sinf of 1e10: 0xBEF99A64
+sinf of infinity: 0x7FC00000
+sinf of NaN: 0x7FC00000
+cosf of 0: 0x3F800000
+cosf of -0: 0x3F800000
+cosf of the smallest denormal: 0x3F800000
+cosf of 1: 0x3F0A5140
+cosf of -1: 0x3F0A5140
+cosf of pi: 0xBF800000
+cosf of 1e10: 0x3F5F84C4
+cosf of infinity: 0x7FC00000
+cosf of NaN: 0x7FC00000
+sqrtf of 0: 0x00000000
+sqrtf of -0: 0x80000000
+sqrtf of the smallest denormal: 0x1A3504F4
+sqrtf of 1: 0x3F800000
+sqrtf of -1: 0x7FC00000
+sqrtf of pi: 0x3FE2DFC5
+sqrtf of 1e10: 0x47C35000
+sqrtf of infinity: 0x7F800000
+sqrtf of NaN: 0x7FC00000
+expf of 0: 0x3F800000
+expf of -0: 0x3F800000
+expf of the smallest denormal: 0x3F800000
+expf of 1: 0x402DF854
+expf of -1: 0x3EBC5AB2
+expf of pi: 0x41B92024
+expf of 1e10: 0x7F800000
+expf of infinity: 0x7F800000
+expf of NaN: 0x7FC00000
+logf of 0: 0xFF800000
+logf of -0: 0xFF800000
+logf of the smallest denormal: 0xC2CE8ED0
+logf of 1: 0x00000000
+logf of -1: 0x7FC00000
+logf of pi: 0x3F928682
+logf of 1e10: 0x41B834F2
+logf of infinity: 0x7F800000
+logf of NaN: 0x7FC00000
+powf of 2 and 0.5: 0x3FB504F3
+fmodf of 10 and 3: 0x3F800000
+atan2f of 1 and -1: 0x4016CBE4
+lround of 1/2: 0x00000001
+lrint of 1/2: 0x00000000
+rint of 1/2: 0x0000000000000000
+round of 1/2: 0x3FF0000000000000
+lround of 3/2: 0x00000002
+lrint of 3/2: 0x00000002
+rint of 3/2: 0x4000000000000000
+round of 3/2: 0x4000000000000000
+lround of 5/2: 0x00000003
+lrint of 5/2: 0x00000002
+rint of 5/2: 0x4000000000000000
+round of 5/2: 0x4008000000000000
+lround of -1/2: 0xFFFFFFFF
+lrint of -1/2: 0x00000000
+rint of -1/2: 0x8000000000000000
+round of -1/2: 0xBFF0000000000000
+lround of -3/2: 0xFFFFFFFE
+lrint of -3/2: 0xFFFFFFFE
+rint of -3/2: 0xC000000000000000
+round of -3/2: 0xC000000000000000
+lround of -5/2: 0xFFFFFFFD
+lrint of -5/2: 0xFFFFFFFE
+rint of -5/2: 0xC000000000000000
+round of -5/2: 0xC008000000000000
+atan2 of 0 and 0: 0x0000000000000000
+atan2 of 0 and -0: 0x400921FB54442D18
+atan2 of -0 and -1: 0xC00921FB54442D18
+atan2 of 1 and -infinity: 0x400921FB54442D18
+atan2 of infinity and infinity: 0x3FE921FB54442D1A
+pow of 2 and 10: 0x4090000000000000
+pow of 2 and 0.5: 0x3FF6A09E667F3BCC
+pow of -2 and 3: 0xC020000000000000
+pow of -8 and a third: 0x7FF8000000000000
+pow of NaN and 0: 0x3FF0000000000000
+pow of 1 and NaN: 0x3FF0000000000000
+pow of -1 and infinity: 0x3FF0000000000000
+pow of -0 and -3: 0xFFF0000000000000
+pow of 10 and -310: 0x000012688B70E62B
+fmod of 10 and 3: 0x3FF0000000000000
+fmod of -10 and 3: 0xBFF0000000000000
+fmod of 1e300 and 3: 0x0000000000000000
+fmod of 5 and infinity: 0x4014000000000000
+remainder of 5.5 and 2: 0xBFE0000000000000
+remainder of -7 and 2: 0x3FF0000000000000
+hypot of 3 and 4: 0x4014000000000000
+hypot of infinity and NaN: 0x7FF0000000000000
+hypot of 1e300 and 1e300: 0x7E40E4D50F99B211
+fma of 0.1, 10 and -1: 0x3C90000000000000
+nextafter of 0 toward 1: 0x0000000000000001
+nextafter of 1 toward 2: 0x3FF0000000000001
+nextafter of 1 toward 1: 0x3FF0000000000000
+copysign of 1 and -0: 0xBFF0000000000000
+copysign of NaN and -1: 0xFFF8000000000000
+frexp of 48: 0x3FE8000000000000
+its exponent: 0x00000006
+frexp of the smallest denormal: 0x3FE0000000000000
+its exponent: 0xFFFFFBCF
+frexp of 0: 0x0000000000000000
+its exponent: 0x00000000
+frexp of infinity: 0x7FF0000000000000
+its exponent: 0x00000000
+modf of -3.75: 0xBFE8000000000000
+its integer part: 0xC008000000000000
+modf of infinity: 0x0000000000000000
+its integer part: 0x7FF0000000000000
+ldexp of 1 and 1023: 0x7FE0000000000000
+ldexp of 1 and 1024: 0x7FF0000000000000
+ldexp of 1 and -1074: 0x0000000000000001
+ldexp of 1 and -1075: 0x0000000000000000
+ldexp of 3 and -1074: 0x0000000000000003
+log of -1: 0x7FF8000000000000
+log of -1: errno: 0x00000021
+log of 0: 0xFFF0000000000000
+log of 0: errno: 0x00000021
+sqrt of -1: 0x7FF8000000000000
+sqrt of -1: errno: 0x00000021
+acos of 2: 0x7FF8000000000000
+acos of 2: errno: 0x00000021
+exp of 1000: 0x7FF0000000000000
+exp of 1000: errno: 0x00000022
+exp of -1000: 0x0000000000000000
+exp of -1000: errno: 0x00000022
+pow of 0 and -1: 0x7FF0000000000000
+pow of 0 and -1: errno: 0x00000021
+pow of -2 and 0.5: 0x7FF8000000000000
+pow of -2 and 0.5: errno: 0x00000021
+pow of 10 and 400: 0x7FF0000000000000
+pow of 10 and 400: errno: 0x00000022
+fmod of 1 and 0: 0x7FF8000000000000
+fmod of 1 and 0: errno: 0x00000021
+fmod of infinity and 1: 0x7FF8000000000000
+fmod of infinity and 1: errno: 0x00000021
+ldexp of 1 and 2000: 0x7FF0000000000000
+ldexp of 1 and 2000: errno: 0x00000022
+sqrt of NaN: 0x7FF8000000000000
+sqrt of NaN: errno: 0x00000000
+DONE

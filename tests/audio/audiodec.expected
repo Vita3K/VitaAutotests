@@ -1,0 +1,155 @@
+create an mp3 decoder before init: 0x807F0005
+term mp3 before init: 0x807F0005
+init codec 0x0: 0x807F0001
+init codec 0x1002: 0x807F0001
+init codec 0x1007: 0x807F000E
+init codec 0x2003: 0x807F0001
+init codec 0xFFFFFFFF: 0x807F0001
+term codec 0x1007: 0x807F0005
+mp3: init with a size of 0: 0x807F000D
+mp3: init with a size of 4: 0x807F000D
+mp3: init with a size of 12: 0x807F000D
+mp3: init 0 streams: 0x807F0002
+mp3: init 9 streams: 0x807F0002
+mp3: init 8 streams: 0x00000000
+mp3: init again: 0x807F0003
+mp3: term: 0x00000000
+mp3: term again: 0x807F0005
+aac: init with a size of 0: 0x807F000D
+aac: init with a size of 4: 0x807F000D
+aac: init with a size of 12: 0x807F000D
+aac: init 0 streams: 0x807F0002
+aac: init 9 streams: 0x807F0002
+aac: init 8 streams: 0x00000000
+aac: init again: 0x807F0003
+aac: term: 0x00000000
+aac: term again: 0x807F0005
+celp: init with a size of 0: 0x807F000D
+celp: init with a size of 4: 0x807F000D
+celp: init with a size of 12: 0x807F000D
+celp: init 0 streams: 0x807F0002
+celp: init 9 streams: 0x807F0002
+celp: init 8 streams: 0x00000000
+celp: init again: 0x807F0003
+celp: term: 0x00000000
+celp: term again: 0x807F0005
+at9: init with a size of 4: 0x807F000D
+at9: init 0 channels: 0x807F0002
+at9: init 17 channels: 0x807F0002
+at9: init 16 channels: 0x00000000
+at9: init again: 0x807F0003
+at9: term: 0x00000000
+at9: init 1 channel: 0x00000000
+at9: term that: 0x00000000
+init mp3 and aac together: mp3: 0x00000000
+init mp3 and aac together: aac: 0x00000000
+term aac while mp3 stays: 0x00000000
+create an mp3 decoder with a control size of 0x24: 0x807F000D
+create an mp3 decoder with a control size of 0x2C: 0x807F000D
+create an mp3 decoder with an info size of 8: 0x807F000D
+create an mp3 decoder with an info size of 0x1C: 0x807F000D
+create an mp3 decoder with 0 channels: 0x807F2800
+create an mp3 decoder with 3 channels: 0x807F2800
+create an mp3 decoder with the reserved version: 0x807F2801
+create an mp3 decoder with version 4: 0x807F2801
+create an mp3 decoder with 24 bit words: 0x807F000C
+create an mp3 decoder with 0 bit words: 0x807F000C
+create an aac decoder after aac's term: 0x807F000D
+the context size of an mpeg-1 stereo decoder: 0x00000000
+the context size of an mpeg-2 mono decoder: 0x00000000
+create an mpeg-1 stereo decoder: 0x00000000
+its handle is set: 0x00000001
+its largest input: 0x000005A1
+its largest output: 0x00001200
+mpeg-1 stereo frame 1: decode: 0x00000000
+mpeg-1 stereo frame 1: bytes read: 0x000001A1
+mpeg-1 stereo frame 1: bytes written: 0x00001200
+mpeg-1 stereo frame 1: it is silence: 0x00000001
+mpeg-1 stereo frame 1: nothing is written past it: 0x00000001
+mpeg-1 stereo frame 2: decode: 0x00000000
+mpeg-1 stereo frame 2: bytes read: 0x000001A1
+mpeg-1 stereo frame 2: bytes written: 0x00001200
+mpeg-1 stereo frame 2: it is silence: 0x00000001
+mpeg-1 stereo frame 2: nothing is written past it: 0x00000001
+clear its context: 0x00000000
+mpeg-1 stereo frame 3 after clearing: decode: 0x00000000
+mpeg-1 stereo frame 3 after clearing: bytes read: 0x000001A1
+mpeg-1 stereo frame 3 after clearing: bytes written: 0x00001200
+mpeg-1 stereo frame 3 after clearing: it is silence: 0x00000001
+mpeg-1 stereo frame 3 after clearing: nothing is written past it: 0x00000001
+decode 2 frames at once: 0x807F000F
+decode 0 frames at once: 0x807F000F
+decode 1 frame with DecodeNFrames: 0x00000000
+its bytes read: 0x000001A1
+an mpeg-2 frame to the mpeg-1 decoder: decode: 0x807F2801
+an mpeg-2 frame to the mpeg-1 decoder: bytes read: 0x55555555
+an mpeg-2 frame to the mpeg-1 decoder: bytes written: 0x55555555
+an mpeg-2 frame to the mpeg-1 decoder: it is silence: 0x00000001
+an mpeg-2 frame to the mpeg-1 decoder: nothing is written past it: 0x00000001
+get the internal error: 0x00000000
+the internal error: 0x00000000
+zeros: decode: 0x807F2801
+zeros: bytes read: 0x55555555
+zeros: bytes written: 0x55555555
+zeros: it is silence: 0x00000001
+zeros: nothing is written past it: 0x00000001
+the internal error after the zeros: 0x00000000
+a frame with a largest input of 100: decode: 0x00000000
+a frame with a largest input of 100: bytes read: 0x000001A1
+a frame with a largest input of 100: bytes written: 0x00001200
+a frame with a largest input of 100: it is silence: 0x00000001
+a frame with a largest input of 100: nothing is written past it: 0x00000001
+a frame with a largest output of 1000: decode: 0x00000000
+a frame with a largest output of 1000: bytes read: 0x000001A1
+a frame with a largest output of 1000: bytes written: 0x00001200
+a frame with a largest output of 1000: it is silence: 0x00000001
+a frame with a largest output of 1000: nothing is written past it: 0x00000001
+a frame after putting the sizes back: decode: 0x00000000
+a frame after putting the sizes back: bytes read: 0x000001A1
+a frame after putting the sizes back: bytes written: 0x00001200
+a frame after putting the sizes back: it is silence: 0x00000001
+a frame after putting the sizes back: nothing is written past it: 0x00000001
+create an mpeg-1 mono decoder: 0x00000000
+its largest output: 0x00000900
+mpeg-1 mono: decode: 0x00000000
+mpeg-1 mono: bytes read: 0x000001A1
+mpeg-1 mono: bytes written: 0x00000900
+mpeg-1 mono: it is silence: 0x00000001
+mpeg-1 mono: nothing is written past it: 0x00000001
+a stereo frame to the mono decoder: decode: 0x807F2800
+a stereo frame to the mono decoder: bytes read: 0x55555555
+a stereo frame to the mono decoder: bytes written: 0x55555555
+a stereo frame to the mono decoder: it is silence: 0x00000001
+a stereo frame to the mono decoder: nothing is written past it: 0x00000001
+create a third decoder: 0x807F0007
+term mp3 with decoders left: 0x807F0006
+delete the mono decoder: 0x00000000
+delete it again: 0x807F000A
+decode with it: 0x807F000A
+create an mpeg-2 stereo decoder: 0x00000000
+its largest output: 0x00000900
+mpeg-2 stereo frame 1: decode: 0x00000000
+mpeg-2 stereo frame 1: bytes read: 0x000000D0
+mpeg-2 stereo frame 1: bytes written: 0x00000900
+mpeg-2 stereo frame 1: it is silence: 0x00000001
+mpeg-2 stereo frame 1: nothing is written past it: 0x00000001
+mpeg-2 stereo frame 2: decode: 0x00000000
+mpeg-2 stereo frame 2: bytes read: 0x000000D0
+mpeg-2 stereo frame 2: bytes written: 0x00000900
+mpeg-2 stereo frame 2: it is silence: 0x00000001
+mpeg-2 stereo frame 2: nothing is written past it: 0x00000001
+decode two streams of different versions at once: 0x807F2801
+decode the same stream twice at once: 0x807F0012
+decode 0 streams at once: 0x807F0010
+delete it: 0x00000000
+delete the mpeg-1 stereo decoder: 0x00000000
+term mp3: 0x00000000
+decode after the term: 0x807F0005
+init mp3 with NULL params: 0x807F0008
+create a decoder with a NULL control: 0x807F0008
+create a decoder with NULL info: 0x807F0008
+decode from NULL: 0x807F0008
+decode to NULL: 0x807F0008
+get the internal error into NULL: 0x807F0008
+decode a NULL control: 0x807F0008
+DONE

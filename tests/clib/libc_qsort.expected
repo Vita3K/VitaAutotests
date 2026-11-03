@@ -1,0 +1,105 @@
+sort 16 ints: 0x00000001
+the smallest: 0x80000000
+the largest: 0x7FFFFFFF
+sort 100 sorted ints: 0x00000001
+sort 100 reversed ints: 0x00000001
+sort 100 equal ints: 0x00000001
+sort with a comparison that subtracts: 0x00000001
+sort elements of 37 bytes: 0x00000001
+sorted record 0: its original index: 0x00000009
+sorted record 1: its original index: 0x00000001
+sorted record 2: its original index: 0x00000004
+sorted record 3: its original index: 0x00000007
+sorted record 4: its original index: 0x0000000B
+sorted record 5: its original index: 0x00000002
+sorted record 6: its original index: 0x00000005
+sorted record 7: its original index: 0x00000008
+sorted record 8: its original index: 0x00000000
+sorted record 9: its original index: 0x00000003
+sorted record 10: its original index: 0x00000006
+sorted record 11: its original index: 0x0000000A
+sort 0 ints: compares: 0x00000000
+sort 0 ints: sorted: 0x00000001
+sort 1 ints: compares: 0x00000000
+sort 1 ints: sorted: 0x00000001
+sort 2 ints: compares: 0x00000002
+sort 2 ints: sorted: 0x00000001
+sort 3 ints: compares: 0x00000004
+sort 3 ints: sorted: 0x00000001
+sort 4 ints: compares: 0x00000008
+sort 4 ints: sorted: 0x00000001
+sort 7 ints: compares: 0x00000015
+sort 7 ints: sorted: 0x00000001
+sort 8 ints: compares: 0x00000017
+sort 8 ints: sorted: 0x00000001
+sort 16 ints: compares: 0x00000051
+sort 16 ints: sorted: 0x00000001
+sort 0 ints at NULL: compares: 0x00000000
+search 9 ints for 0: 0xFFFFFFFF
+search 9 ints for 1: 0x00000000
+search 9 ints for 2: 0xFFFFFFFF
+search 9 ints for 3: 0x00000002
+search 9 ints for 4: 0xFFFFFFFF
+search 9 ints for 5: 0x00000004
+search 9 ints for 6: 0xFFFFFFFF
+search 9 ints for 7: 0x00000005
+search 9 ints for 8: 0xFFFFFFFF
+search 9 ints for 9: 0x00000007
+search 9 ints for 10: 0xFFFFFFFF
+search 9 ints for 11: 0x00000008
+search 9 ints for 12: 0xFFFFFFFF
+search 0 ints: 0x00000001
+search 1 int: 0x00000001
+the default constraint handler is set: 0x00000000
+sort 6 ints with qsort_s: 0x00000000
+sort 6 ints with qsort_s: handler calls: 0x00000000
+sort 6 ints with qsort_s: error passed to the handler: 0x00000000
+sort 6 ints with qsort_s: errno: 0x00000000
+they are sorted: 0x00000001
+the comparison got the context: 0x00000001
+search them with bsearch_s: 0x00000002
+the comparison got the context: 0x00000001
+qsort_s of 0 ints at NULL: 0x00000000
+qsort_s of 0 ints at NULL: handler calls: 0x00000000
+qsort_s of 0 ints at NULL: error passed to the handler: 0x00000000
+qsort_s of 0 ints at NULL: errno: 0x00000000
+qsort_s of 2 ints at NULL: 0x00000022
+qsort_s of 2 ints at NULL: handler calls: 0x00000001
+qsort_s of 2 ints at NULL: error passed to the handler: 0x00000022
+qsort_s of 2 ints at NULL: errno: 0x00000000
+qsort_s without a comparison: 0x00000022
+qsort_s without a comparison: handler calls: 0x00000001
+qsort_s without a comparison: error passed to the handler: 0x00000022
+qsort_s without a comparison: errno: 0x00000000
+qsort_s of 0x80000000 ints: 0x00000022
+qsort_s of 0x80000000 ints: handler calls: 0x00000001
+qsort_s of 0x80000000 ints: error passed to the handler: 0x00000022
+qsort_s of 0x80000000 ints: errno: 0x00000000
+qsort_s of ints of 0x80000000 bytes: 0x00000022
+qsort_s of ints of 0x80000000 bytes: handler calls: 0x00000001
+qsort_s of ints of 0x80000000 bytes: error passed to the handler: 0x00000022
+qsort_s of ints of 0x80000000 bytes: errno: 0x00000000
+qsort_s of ints of 0 bytes: 0x00000000
+qsort_s of ints of 0 bytes: handler calls: 0x00000000
+qsort_s of ints of 0 bytes: error passed to the handler: 0x00000000
+qsort_s of ints of 0 bytes: errno: 0x00000000
+bsearch_s without a key: 0x00000001
+bsearch_s without a key: handler calls: 0x00000001
+bsearch_s without a key: error passed to the handler: 0x00000022
+bsearch_s without a key: errno: 0x00000000
+bsearch_s of 6 ints at NULL: 0x00000001
+bsearch_s of 6 ints at NULL: handler calls: 0x00000001
+bsearch_s of 6 ints at NULL: error passed to the handler: 0x00000022
+bsearch_s of 6 ints at NULL: errno: 0x00000000
+bsearch_s without a comparison: 0x00000001
+bsearch_s without a comparison: handler calls: 0x00000001
+bsearch_s without a comparison: error passed to the handler: 0x00000022
+bsearch_s without a comparison: errno: 0x00000000
+bsearch_s of 0 ints at NULL: 0x00000001
+bsearch_s of 0 ints at NULL: handler calls: 0x00000000
+bsearch_s of 0 ints at NULL: error passed to the handler: 0x00000000
+bsearch_s of 0 ints at NULL: errno: 0x00000000
+qsort_s of 2 ints at NULL with the ignoring handler: 0x00000022
+its errno: 0x00000000
+put the first handler back: 0x00000001
+DONE
