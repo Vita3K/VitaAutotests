@@ -1,0 +1,19 @@
+set up rendering: 0x00000000
+set up texture 0: 0x00000000
+set up texture 1: 0x00000000
+set up texture 2: 0x00000000
+set up texture 3: 0x00000000
+set up texture 4: 0x00000000
+set up texture 5: 0x00000000
+set up texture 6: 0x00000000
+set up texture 7: 0x00000000
+set up texture 8: 0x00000000
+set up texture 9: 0x00000000
+set up texture 10: 0x00000000
+set up texture 11: 0x00000000
+set up checkerboard 0: 0x00000000
+set up checkerboard 1: 0x00000000
+begin a frame: 0x00000000
+draw each sampling case: 0x00000000
+capture cases: 0x00000000
+DONE
