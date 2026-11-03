@@ -1,0 +1,572 @@
+thumb strex r1, r1 with the monitor open: r0: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: r0: 0x0A0B0C0D
+thumb strex r1, r1 with the monitor open: r1: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: r1: 0x00000000
+thumb strex r1, r1 with the monitor open: r2: kind: 0x00000002
+thumb strex r1, r1 with the monitor open: r3: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: r3: 0xA5A5A5A5
+thumb strex r1, r1 with the monitor open: first word: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: first word: 0x12345678
+thumb strex r1, r1 with the monitor open: second word: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: second word: 0x5A5A5A5A
+thumb strex r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: status of the plain store after: 0x00000001
+thumb strex r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: first word after the plain store: 0x12345678
+thumb strex r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strex r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strex r1, r1 with the monitor closed: r0: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: r0: 0x0A0B0C0D
+thumb strex r1, r1 with the monitor closed: r1: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: r1: 0x00000001
+thumb strex r1, r1 with the monitor closed: r2: kind: 0x00000002
+thumb strex r1, r1 with the monitor closed: r3: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: r3: 0x33333333
+thumb strex r1, r1 with the monitor closed: first word: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: first word: 0xA5A5A5A5
+thumb strex r1, r1 with the monitor closed: second word: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: second word: 0x5A5A5A5A
+thumb strex r1, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: status of the plain store after: 0x00000001
+thumb strex r1, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strex r1, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strex r1, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb strex r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+thumb strex r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: r1: 0x12345678
+thumb strex r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: r2: 0x00000000
+thumb strex r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: r3: 0xA5A5A5A5
+thumb strex r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: first word: 0x12345678
+thumb strex r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+thumb strex r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+thumb strex r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: first word after the plain store: 0x12345678
+thumb strex r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strex r2, r1, [r2] with the monitor closed: r0: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: r0: 0x0A0B0C0D
+thumb strex r2, r1, [r2] with the monitor closed: r1: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: r1: 0x12345678
+thumb strex r2, r1, [r2] with the monitor closed: r2: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: r2: 0x00000001
+thumb strex r2, r1, [r2] with the monitor closed: r3: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: r3: 0x33333333
+thumb strex r2, r1, [r2] with the monitor closed: first word: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: first word: 0xA5A5A5A5
+thumb strex r2, r1, [r2] with the monitor closed: second word: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: second word: 0x5A5A5A5A
+thumb strex r2, r1, [r2] with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: status of the plain store after: 0x00000001
+thumb strex r2, r1, [r2] with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strex r2, r1, [r2] with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strex r2, r1, [r2] with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb strexb r1, r1 with the monitor open: r0: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: r0: 0x0A0B0C0D
+thumb strexb r1, r1 with the monitor open: r1: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: r1: 0x00000000
+thumb strexb r1, r1 with the monitor open: r2: kind: 0x00000002
+thumb strexb r1, r1 with the monitor open: r3: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: r3: 0x000000A5
+thumb strexb r1, r1 with the monitor open: first word: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: first word: 0xA5A5A578
+thumb strexb r1, r1 with the monitor open: second word: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: second word: 0x5A5A5A5A
+thumb strexb r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: status of the plain store after: 0x00000001
+thumb strexb r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: first word after the plain store: 0xA5A5A578
+thumb strexb r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexb r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strexb r1, r1 with the monitor closed: r0: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: r0: 0x0A0B0C0D
+thumb strexb r1, r1 with the monitor closed: r1: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: r1: 0x00000001
+thumb strexb r1, r1 with the monitor closed: r2: kind: 0x00000002
+thumb strexb r1, r1 with the monitor closed: r3: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: r3: 0x33333333
+thumb strexb r1, r1 with the monitor closed: first word: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: first word: 0xA5A5A5A5
+thumb strexb r1, r1 with the monitor closed: second word: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: second word: 0x5A5A5A5A
+thumb strexb r1, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: status of the plain store after: 0x00000001
+thumb strexb r1, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strexb r1, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strexb r1, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb strexb r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+thumb strexb r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: r1: 0x12345678
+thumb strexb r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: r2: 0x00000000
+thumb strexb r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: r3: 0x000000A5
+thumb strexb r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: first word: 0xA5A5A578
+thumb strexb r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+thumb strexb r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+thumb strexb r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: first word after the plain store: 0xA5A5A578
+thumb strexb r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexb r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strexh r1, r1 with the monitor open: r0: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: r0: 0x0A0B0C0D
+thumb strexh r1, r1 with the monitor open: r1: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: r1: 0x00000000
+thumb strexh r1, r1 with the monitor open: r2: kind: 0x00000002
+thumb strexh r1, r1 with the monitor open: r3: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: r3: 0x0000A5A5
+thumb strexh r1, r1 with the monitor open: first word: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: first word: 0xA5A55678
+thumb strexh r1, r1 with the monitor open: second word: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: second word: 0x5A5A5A5A
+thumb strexh r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: status of the plain store after: 0x00000001
+thumb strexh r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: first word after the plain store: 0xA5A55678
+thumb strexh r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexh r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strexh r1, r1 with the monitor closed: r0: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: r0: 0x0A0B0C0D
+thumb strexh r1, r1 with the monitor closed: r1: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: r1: 0x00000001
+thumb strexh r1, r1 with the monitor closed: r2: kind: 0x00000002
+thumb strexh r1, r1 with the monitor closed: r3: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: r3: 0x33333333
+thumb strexh r1, r1 with the monitor closed: first word: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: first word: 0xA5A5A5A5
+thumb strexh r1, r1 with the monitor closed: second word: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: second word: 0x5A5A5A5A
+thumb strexh r1, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: status of the plain store after: 0x00000001
+thumb strexh r1, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strexh r1, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strexh r1, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb strexh r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+thumb strexh r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: r1: 0x12345678
+thumb strexh r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: r2: 0x00000000
+thumb strexh r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: r3: 0x0000A5A5
+thumb strexh r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: first word: 0xA5A55678
+thumb strexh r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+thumb strexh r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+thumb strexh r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: first word after the plain store: 0xA5A55678
+thumb strexh r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexh r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strexd r0, r0, r1 with the monitor open: r0: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: r0: 0x00000000
+thumb strexd r0, r0, r1 with the monitor open: r1: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: r1: 0x12345678
+thumb strexd r0, r0, r1 with the monitor open: r2: kind: 0x00000002
+thumb strexd r0, r0, r1 with the monitor open: r3: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: r3: 0x33333333
+thumb strexd r0, r0, r1 with the monitor open: first word: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: first word: 0x0A0B0C0D
+thumb strexd r0, r0, r1 with the monitor open: second word: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: second word: 0x12345678
+thumb strexd r0, r0, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: status of the plain store after: 0x00000001
+thumb strexd r0, r0, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: first word after the plain store: 0x0A0B0C0D
+thumb strexd r0, r0, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor open: second word after the plain store: 0x12345678
+thumb strexd r0, r0, r1 with the monitor closed: r0: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: r0: 0x00000001
+thumb strexd r0, r0, r1 with the monitor closed: r1: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: r1: 0x12345678
+thumb strexd r0, r0, r1 with the monitor closed: r2: kind: 0x00000002
+thumb strexd r0, r0, r1 with the monitor closed: r3: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: r3: 0x33333333
+thumb strexd r0, r0, r1 with the monitor closed: first word: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: first word: 0xA5A5A5A5
+thumb strexd r0, r0, r1 with the monitor closed: second word: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: second word: 0x5A5A5A5A
+thumb strexd r0, r0, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: status of the plain store after: 0x00000001
+thumb strexd r0, r0, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strexd r0, r0, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strexd r0, r0, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb strexd r2, r0, r1, [r2] with the monitor open: r0: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+thumb strexd r2, r0, r1, [r2] with the monitor open: r1: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: r1: 0x12345678
+thumb strexd r2, r0, r1, [r2] with the monitor open: r2: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: r2: 0x00000000
+thumb strexd r2, r0, r1, [r2] with the monitor open: r3: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: r3: 0x33333333
+thumb strexd r2, r0, r1, [r2] with the monitor open: first word: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: first word: 0x0A0B0C0D
+thumb strexd r2, r0, r1, [r2] with the monitor open: second word: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: second word: 0x12345678
+thumb strexd r2, r0, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+thumb strexd r2, r0, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: first word after the plain store: 0x0A0B0C0D
+thumb strexd r2, r0, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strexd r2, r0, r1, [r2] with the monitor open: second word after the plain store: 0x12345678
+thumb strex r3, r1 with the monitor open: r0: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: r0: 0x0A0B0C0D
+thumb strex r3, r1 with the monitor open: r1: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: r1: 0x12345678
+thumb strex r3, r1 with the monitor open: r2: kind: 0x00000002
+thumb strex r3, r1 with the monitor open: r3: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: r3: 0x00000000
+thumb strex r3, r1 with the monitor open: first word: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: first word: 0x12345678
+thumb strex r3, r1 with the monitor open: second word: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: second word: 0x5A5A5A5A
+thumb strex r3, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: status of the plain store after: 0x00000001
+thumb strex r3, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: first word after the plain store: 0x12345678
+thumb strex r3, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+thumb strex r3, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+thumb strex r3, r1 with the monitor closed: r0: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: r0: 0x0A0B0C0D
+thumb strex r3, r1 with the monitor closed: r1: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: r1: 0x12345678
+thumb strex r3, r1 with the monitor closed: r2: kind: 0x00000002
+thumb strex r3, r1 with the monitor closed: r3: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: r3: 0x00000001
+thumb strex r3, r1 with the monitor closed: first word: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: first word: 0xA5A5A5A5
+thumb strex r3, r1 with the monitor closed: second word: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: second word: 0x5A5A5A5A
+thumb strex r3, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: status of the plain store after: 0x00000001
+thumb strex r3, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+thumb strex r3, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+thumb strex r3, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+thumb nothing after ldrex: r0: kind: 0x00000003
+thumb nothing after ldrex: r0: 0x0A0B0C0D
+thumb nothing after ldrex: r1: kind: 0x00000003
+thumb nothing after ldrex: r1: 0x12345678
+thumb nothing after ldrex: r2: kind: 0x00000002
+thumb nothing after ldrex: r3: kind: 0x00000003
+thumb nothing after ldrex: r3: 0xA5A5A5A5
+thumb nothing after ldrex: first word: kind: 0x00000003
+thumb nothing after ldrex: first word: 0xA5A5A5A5
+thumb nothing after ldrex: second word: kind: 0x00000003
+thumb nothing after ldrex: second word: 0x5A5A5A5A
+thumb nothing after ldrex: status of the plain store after: kind: 0x00000003
+thumb nothing after ldrex: status of the plain store after: 0x00000000
+thumb nothing after ldrex: first word after the plain store: kind: 0x00000003
+thumb nothing after ldrex: first word after the plain store: 0x0000005A
+thumb nothing after ldrex: second word after the plain store: kind: 0x00000003
+thumb nothing after ldrex: second word after the plain store: 0x5A5A5A5A
+thumb nothing after ldrexb: r0: kind: 0x00000003
+thumb nothing after ldrexb: r0: 0x0A0B0C0D
+thumb nothing after ldrexb: r1: kind: 0x00000003
+thumb nothing after ldrexb: r1: 0x12345678
+thumb nothing after ldrexb: r2: kind: 0x00000002
+thumb nothing after ldrexb: r3: kind: 0x00000003
+thumb nothing after ldrexb: r3: 0x000000A5
+thumb nothing after ldrexb: first word: kind: 0x00000003
+thumb nothing after ldrexb: first word: 0xA5A5A5A5
+thumb nothing after ldrexb: second word: kind: 0x00000003
+thumb nothing after ldrexb: second word: 0x5A5A5A5A
+thumb nothing after ldrexb: status of the plain store after: kind: 0x00000003
+thumb nothing after ldrexb: status of the plain store after: 0x00000000
+thumb nothing after ldrexb: first word after the plain store: kind: 0x00000003
+thumb nothing after ldrexb: first word after the plain store: 0xA5A5A55A
+thumb nothing after ldrexb: second word after the plain store: kind: 0x00000003
+thumb nothing after ldrexb: second word after the plain store: 0x5A5A5A5A
+thumb nothing after ldrexh: r0: kind: 0x00000003
+thumb nothing after ldrexh: r0: 0x0A0B0C0D
+thumb nothing after ldrexh: r1: kind: 0x00000003
+thumb nothing after ldrexh: r1: 0x12345678
+thumb nothing after ldrexh: r2: kind: 0x00000002
+thumb nothing after ldrexh: r3: kind: 0x00000003
+thumb nothing after ldrexh: r3: 0x0000A5A5
+thumb nothing after ldrexh: first word: kind: 0x00000003
+thumb nothing after ldrexh: first word: 0xA5A5A5A5
+thumb nothing after ldrexh: second word: kind: 0x00000003
+thumb nothing after ldrexh: second word: 0x5A5A5A5A
+thumb nothing after ldrexh: status of the plain store after: kind: 0x00000003
+thumb nothing after ldrexh: status of the plain store after: 0x00000000
+thumb nothing after ldrexh: first word after the plain store: kind: 0x00000003
+thumb nothing after ldrexh: first word after the plain store: 0xA5A5005A
+thumb nothing after ldrexh: second word after the plain store: kind: 0x00000003
+thumb nothing after ldrexh: second word after the plain store: 0x5A5A5A5A
+thumb nothing after ldrexd: r0: kind: 0x00000003
+thumb nothing after ldrexd: r0: 0x0A0B0C0D
+thumb nothing after ldrexd: r1: kind: 0x00000003
+thumb nothing after ldrexd: r1: 0x12345678
+thumb nothing after ldrexd: r2: kind: 0x00000002
+thumb nothing after ldrexd: r3: kind: 0x00000003
+thumb nothing after ldrexd: r3: 0x33333333
+thumb nothing after ldrexd: first word: kind: 0x00000003
+thumb nothing after ldrexd: first word: 0xA5A5A5A5
+thumb nothing after ldrexd: second word: kind: 0x00000003
+thumb nothing after ldrexd: second word: 0x5A5A5A5A
+thumb nothing after ldrexd: status of the plain store after: kind: 0x00000003
+thumb nothing after ldrexd: status of the plain store after: 0x00000000
+thumb nothing after ldrexd: first word after the plain store: kind: 0x00000003
+thumb nothing after ldrexd: first word after the plain store: 0x0000005A
+thumb nothing after ldrexd: second word after the plain store: kind: 0x00000003
+thumb nothing after ldrexd: second word after the plain store: 0x0000005A
+arm strex r1, r1 with the monitor open: r0: kind: 0x00000003
+arm strex r1, r1 with the monitor open: r0: 0x0A0B0C0D
+arm strex r1, r1 with the monitor open: r1: kind: 0x00000003
+arm strex r1, r1 with the monitor open: r1: 0x00000000
+arm strex r1, r1 with the monitor open: r2: kind: 0x00000002
+arm strex r1, r1 with the monitor open: r3: kind: 0x00000003
+arm strex r1, r1 with the monitor open: r3: 0xA5A5A5A5
+arm strex r1, r1 with the monitor open: first word: kind: 0x00000003
+arm strex r1, r1 with the monitor open: first word: 0x12345678
+arm strex r1, r1 with the monitor open: second word: kind: 0x00000003
+arm strex r1, r1 with the monitor open: second word: 0x5A5A5A5A
+arm strex r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+arm strex r1, r1 with the monitor open: status of the plain store after: 0x00000001
+arm strex r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+arm strex r1, r1 with the monitor open: first word after the plain store: 0x12345678
+arm strex r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+arm strex r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strex r1, r1 with the monitor closed: r0: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: r0: 0x0A0B0C0D
+arm strex r1, r1 with the monitor closed: r1: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: r1: 0x00000001
+arm strex r1, r1 with the monitor closed: r2: kind: 0x00000002
+arm strex r1, r1 with the monitor closed: r3: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: r3: 0x33333333
+arm strex r1, r1 with the monitor closed: first word: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: first word: 0xA5A5A5A5
+arm strex r1, r1 with the monitor closed: second word: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: second word: 0x5A5A5A5A
+arm strex r1, r1 with the monitor closed: status of the plain store after: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: status of the plain store after: 0x00000001
+arm strex r1, r1 with the monitor closed: first word after the plain store: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: first word after the plain store: 0xA5A5A5A5
+arm strex r1, r1 with the monitor closed: second word after the plain store: kind: 0x00000003
+arm strex r1, r1 with the monitor closed: second word after the plain store: 0x5A5A5A5A
+arm strex r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+arm strex r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: r1: 0x12345678
+arm strex r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: r2: 0x00000000
+arm strex r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: r3: 0xA5A5A5A5
+arm strex r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: first word: 0x12345678
+arm strex r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+arm strex r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+arm strex r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: first word after the plain store: 0x12345678
+arm strex r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strex r2, r1, [r2] with the monitor closed: r0: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: r0: 0x0A0B0C0D
+arm strex r2, r1, [r2] with the monitor closed: r1: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: r1: 0x12345678
+arm strex r2, r1, [r2] with the monitor closed: r2: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: r2: 0x00000001
+arm strex r2, r1, [r2] with the monitor closed: r3: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: r3: 0x33333333
+arm strex r2, r1, [r2] with the monitor closed: first word: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: first word: 0xA5A5A5A5
+arm strex r2, r1, [r2] with the monitor closed: second word: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: second word: 0x5A5A5A5A
+arm strex r2, r1, [r2] with the monitor closed: status of the plain store after: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: status of the plain store after: 0x00000001
+arm strex r2, r1, [r2] with the monitor closed: first word after the plain store: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: first word after the plain store: 0xA5A5A5A5
+arm strex r2, r1, [r2] with the monitor closed: second word after the plain store: kind: 0x00000003
+arm strex r2, r1, [r2] with the monitor closed: second word after the plain store: 0x5A5A5A5A
+arm strexb r1, r1 with the monitor open: r0: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: r0: 0x0A0B0C0D
+arm strexb r1, r1 with the monitor open: r1: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: r1: 0x00000000
+arm strexb r1, r1 with the monitor open: r2: kind: 0x00000002
+arm strexb r1, r1 with the monitor open: r3: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: r3: 0x000000A5
+arm strexb r1, r1 with the monitor open: first word: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: first word: 0xA5A5A578
+arm strexb r1, r1 with the monitor open: second word: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: second word: 0x5A5A5A5A
+arm strexb r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: status of the plain store after: 0x00000001
+arm strexb r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: first word after the plain store: 0xA5A5A578
+arm strexb r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+arm strexb r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strexb r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+arm strexb r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: r1: 0x12345678
+arm strexb r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: r2: 0x00000000
+arm strexb r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: r3: 0x000000A5
+arm strexb r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: first word: 0xA5A5A578
+arm strexb r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+arm strexb r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+arm strexb r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: first word after the plain store: 0xA5A5A578
+arm strexb r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+arm strexb r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strexh r1, r1 with the monitor open: r0: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: r0: 0x0A0B0C0D
+arm strexh r1, r1 with the monitor open: r1: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: r1: 0x00000000
+arm strexh r1, r1 with the monitor open: r2: kind: 0x00000002
+arm strexh r1, r1 with the monitor open: r3: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: r3: 0x0000A5A5
+arm strexh r1, r1 with the monitor open: first word: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: first word: 0xA5A55678
+arm strexh r1, r1 with the monitor open: second word: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: second word: 0x5A5A5A5A
+arm strexh r1, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: status of the plain store after: 0x00000001
+arm strexh r1, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: first word after the plain store: 0xA5A55678
+arm strexh r1, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+arm strexh r1, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strexh r2, r1, [r2] with the monitor open: r0: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+arm strexh r2, r1, [r2] with the monitor open: r1: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: r1: 0x12345678
+arm strexh r2, r1, [r2] with the monitor open: r2: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: r2: 0x00000000
+arm strexh r2, r1, [r2] with the monitor open: r3: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: r3: 0x0000A5A5
+arm strexh r2, r1, [r2] with the monitor open: first word: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: first word: 0xA5A55678
+arm strexh r2, r1, [r2] with the monitor open: second word: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: second word: 0x5A5A5A5A
+arm strexh r2, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+arm strexh r2, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: first word after the plain store: 0xA5A55678
+arm strexh r2, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+arm strexh r2, r1, [r2] with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm strexd r2, r0, r1, [r2] with the monitor open: r0: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: r0: 0x0A0B0C0D
+arm strexd r2, r0, r1, [r2] with the monitor open: r1: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: r1: 0x12345678
+arm strexd r2, r0, r1, [r2] with the monitor open: r2: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: r2: 0x00000000
+arm strexd r2, r0, r1, [r2] with the monitor open: r3: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: r3: 0x33333333
+arm strexd r2, r0, r1, [r2] with the monitor open: first word: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: first word: 0x0A0B0C0D
+arm strexd r2, r0, r1, [r2] with the monitor open: second word: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: second word: 0x12345678
+arm strexd r2, r0, r1, [r2] with the monitor open: status of the plain store after: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: status of the plain store after: 0x00000001
+arm strexd r2, r0, r1, [r2] with the monitor open: first word after the plain store: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: first word after the plain store: 0x0A0B0C0D
+arm strexd r2, r0, r1, [r2] with the monitor open: second word after the plain store: kind: 0x00000003
+arm strexd r2, r0, r1, [r2] with the monitor open: second word after the plain store: 0x12345678
+arm strex r3, r1 with the monitor open: r0: kind: 0x00000003
+arm strex r3, r1 with the monitor open: r0: 0x0A0B0C0D
+arm strex r3, r1 with the monitor open: r1: kind: 0x00000003
+arm strex r3, r1 with the monitor open: r1: 0x12345678
+arm strex r3, r1 with the monitor open: r2: kind: 0x00000002
+arm strex r3, r1 with the monitor open: r3: kind: 0x00000003
+arm strex r3, r1 with the monitor open: r3: 0x00000000
+arm strex r3, r1 with the monitor open: first word: kind: 0x00000003
+arm strex r3, r1 with the monitor open: first word: 0x12345678
+arm strex r3, r1 with the monitor open: second word: kind: 0x00000003
+arm strex r3, r1 with the monitor open: second word: 0x5A5A5A5A
+arm strex r3, r1 with the monitor open: status of the plain store after: kind: 0x00000003
+arm strex r3, r1 with the monitor open: status of the plain store after: 0x00000001
+arm strex r3, r1 with the monitor open: first word after the plain store: kind: 0x00000003
+arm strex r3, r1 with the monitor open: first word after the plain store: 0x12345678
+arm strex r3, r1 with the monitor open: second word after the plain store: kind: 0x00000003
+arm strex r3, r1 with the monitor open: second word after the plain store: 0x5A5A5A5A
+arm nothing after ldrex: r0: kind: 0x00000003
+arm nothing after ldrex: r0: 0x0A0B0C0D
+arm nothing after ldrex: r1: kind: 0x00000003
+arm nothing after ldrex: r1: 0x12345678
+arm nothing after ldrex: r2: kind: 0x00000002
+arm nothing after ldrex: r3: kind: 0x00000003
+arm nothing after ldrex: r3: 0xA5A5A5A5
+arm nothing after ldrex: first word: kind: 0x00000003
+arm nothing after ldrex: first word: 0xA5A5A5A5
+arm nothing after ldrex: second word: kind: 0x00000003
+arm nothing after ldrex: second word: 0x5A5A5A5A
+arm nothing after ldrex: status of the plain store after: kind: 0x00000003
+arm nothing after ldrex: status of the plain store after: 0x00000000
+arm nothing after ldrex: first word after the plain store: kind: 0x00000003
+arm nothing after ldrex: first word after the plain store: 0x0000005A
+arm nothing after ldrex: second word after the plain store: kind: 0x00000003
+arm nothing after ldrex: second word after the plain store: 0x5A5A5A5A
+arm nothing after ldrexb: r0: kind: 0x00000003
+arm nothing after ldrexb: r0: 0x0A0B0C0D
+arm nothing after ldrexb: r1: kind: 0x00000003
+arm nothing after ldrexb: r1: 0x12345678
+arm nothing after ldrexb: r2: kind: 0x00000002
+arm nothing after ldrexb: r3: kind: 0x00000003
+arm nothing after ldrexb: r3: 0x000000A5
+arm nothing after ldrexb: first word: kind: 0x00000003
+arm nothing after ldrexb: first word: 0xA5A5A5A5
+arm nothing after ldrexb: second word: kind: 0x00000003
+arm nothing after ldrexb: second word: 0x5A5A5A5A
+arm nothing after ldrexb: status of the plain store after: kind: 0x00000003
+arm nothing after ldrexb: status of the plain store after: 0x00000000
+arm nothing after ldrexb: first word after the plain store: kind: 0x00000003
+arm nothing after ldrexb: first word after the plain store: 0xA5A5A55A
+arm nothing after ldrexb: second word after the plain store: kind: 0x00000003
+arm nothing after ldrexb: second word after the plain store: 0x5A5A5A5A
+arm nothing after ldrexh: r0: kind: 0x00000003
+arm nothing after ldrexh: r0: 0x0A0B0C0D
+arm nothing after ldrexh: r1: kind: 0x00000003
+arm nothing after ldrexh: r1: 0x12345678
+arm nothing after ldrexh: r2: kind: 0x00000002
+arm nothing after ldrexh: r3: kind: 0x00000003
+arm nothing after ldrexh: r3: 0x0000A5A5
+arm nothing after ldrexh: first word: kind: 0x00000003
+arm nothing after ldrexh: first word: 0xA5A5A5A5
+arm nothing after ldrexh: second word: kind: 0x00000003
+arm nothing after ldrexh: second word: 0x5A5A5A5A
+arm nothing after ldrexh: status of the plain store after: kind: 0x00000003
+arm nothing after ldrexh: status of the plain store after: 0x00000000
+arm nothing after ldrexh: first word after the plain store: kind: 0x00000003
+arm nothing after ldrexh: first word after the plain store: 0xA5A5005A
+arm nothing after ldrexh: second word after the plain store: kind: 0x00000003
+arm nothing after ldrexh: second word after the plain store: 0x5A5A5A5A
+arm nothing after ldrexd: r0: kind: 0x00000003
+arm nothing after ldrexd: r0: 0x0A0B0C0D
+arm nothing after ldrexd: r1: kind: 0x00000003
+arm nothing after ldrexd: r1: 0x12345678
+arm nothing after ldrexd: r2: kind: 0x00000002
+arm nothing after ldrexd: r3: kind: 0x00000003
+arm nothing after ldrexd: r3: 0x33333333
+arm nothing after ldrexd: first word: kind: 0x00000003
+arm nothing after ldrexd: first word: 0xA5A5A5A5
+arm nothing after ldrexd: second word: kind: 0x00000003
+arm nothing after ldrexd: second word: 0x5A5A5A5A
+arm nothing after ldrexd: status of the plain store after: kind: 0x00000003
+arm nothing after ldrexd: status of the plain store after: 0x00000000
+arm nothing after ldrexd: first word after the plain store: kind: 0x00000003
+arm nothing after ldrexd: first word after the plain store: 0x0000005A
+arm nothing after ldrexd: second word after the plain store: kind: 0x00000003
+arm nothing after ldrexd: second word after the plain store: 0x0000005A
+DONE

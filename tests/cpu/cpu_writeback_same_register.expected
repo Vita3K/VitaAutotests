@@ -1,0 +1,71 @@
+thumb str post-indexed +12: r0: kind: 0x00000002
+thumb str post-indexed +12: r0: number: 0x0000000C
+thumb str post-indexed +12: word 4: kind: 0x00000002
+thumb str post-indexed +12: word 4: number: 0x00000000
+thumb str post-indexed +12: words changed: 0x00000001
+thumb str post-indexed -4: r0: kind: 0x00000002
+thumb str post-indexed -4: r0: number: 0xFFFFFFFC
+thumb str post-indexed -4: word 4: kind: 0x00000002
+thumb str post-indexed -4: word 4: number: 0x00000000
+thumb str post-indexed -4: words changed: 0x00000001
+thumb str pre-indexed +4 with writeback: r0: kind: 0x00000002
+thumb str pre-indexed +4 with writeback: r0: number: 0x00000004
+thumb str pre-indexed +4 with writeback: word 5: kind: 0x00000002
+thumb str pre-indexed +4 with writeback: word 5: number: 0x00000000
+thumb str pre-indexed +4 with writeback: words changed: 0x00000001
+thumb str pre-indexed -4 with writeback: r0: kind: 0x00000002
+thumb str pre-indexed -4 with writeback: r0: number: 0xFFFFFFFC
+thumb str pre-indexed -4 with writeback: word 3: kind: 0x00000002
+thumb str pre-indexed -4 with writeback: word 3: number: 0x00000000
+thumb str pre-indexed -4 with writeback: words changed: 0x00000001
+thumb strb post-indexed +1: r0: kind: 0x00000002
+thumb strb post-indexed +1: r0: number: 0x00000001
+thumb strb post-indexed +1: word 4: low byte minus the base's: 0x00000000
+thumb strb post-indexed +1: words changed: 0x00000001
+thumb strh post-indexed +2: r0: kind: 0x00000002
+thumb strh post-indexed +2: r0: number: 0x00000002
+thumb strh post-indexed +2: word 4: low halfword minus the base's: 0x00000000
+thumb strh post-indexed +2: words changed: 0x00000001
+thumb ldr post-indexed +4: r0: kind: 0x00000001
+thumb ldr post-indexed +4: r0: number: 0x00000004
+thumb ldr post-indexed +4: words changed: 0x00000000
+thumb ldr pre-indexed +4 with writeback: r0: kind: 0x00000001
+thumb ldr pre-indexed +4 with writeback: r0: number: 0x00000005
+thumb ldr pre-indexed +4 with writeback: words changed: 0x00000000
+thumb ldrb post-indexed +1: r0: kind: 0x00000003
+thumb ldrb post-indexed +1: r0: number: 0x00000004
+thumb ldrb post-indexed +1: words changed: 0x00000000
+thumb ldrh post-indexed +2: r0: kind: 0x00000003
+thumb ldrh post-indexed +2: r0: number: 0x00000004
+thumb ldrh post-indexed +2: words changed: 0x00000000
+arm str post-indexed +12: r0: kind: 0x00000002
+arm str post-indexed +12: r0: number: 0x0000000C
+arm str post-indexed +12: word 4: kind: 0x00000002
+arm str post-indexed +12: word 4: number: 0x00000000
+arm str post-indexed +12: words changed: 0x00000001
+arm str pre-indexed +4 with writeback: r0: kind: 0x00000002
+arm str pre-indexed +4 with writeback: r0: number: 0x00000004
+arm str pre-indexed +4 with writeback: word 5: kind: 0x00000002
+arm str pre-indexed +4 with writeback: word 5: number: 0x00000000
+arm str pre-indexed +4 with writeback: words changed: 0x00000001
+arm strb post-indexed +1: r0: kind: 0x00000002
+arm strb post-indexed +1: r0: number: 0x00000001
+arm strb post-indexed +1: word 4: low byte minus the base's: 0x00000000
+arm strb post-indexed +1: words changed: 0x00000001
+arm strh post-indexed +2: r0: kind: 0x00000002
+arm strh post-indexed +2: r0: number: 0x00000002
+arm strh post-indexed +2: word 4: low halfword minus the base's: 0x00000000
+arm strh post-indexed +2: words changed: 0x00000001
+arm ldr post-indexed +4: r0: kind: 0x00000001
+arm ldr post-indexed +4: r0: number: 0x00000004
+arm ldr post-indexed +4: words changed: 0x00000000
+arm ldr pre-indexed +4 with writeback: r0: kind: 0x00000001
+arm ldr pre-indexed +4 with writeback: r0: number: 0x00000005
+arm ldr pre-indexed +4 with writeback: words changed: 0x00000000
+arm ldrb post-indexed +1: r0: kind: 0x00000003
+arm ldrb post-indexed +1: r0: number: 0x00000004
+arm ldrb post-indexed +1: words changed: 0x00000000
+arm ldrh post-indexed +2: r0: kind: 0x00000003
+arm ldrh post-indexed +2: r0: number: 0x00000004
+arm ldrh post-indexed +2: words changed: 0x00000000
+DONE
