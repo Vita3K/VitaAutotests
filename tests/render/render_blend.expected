@@ -1,0 +1,25 @@
+set up rendering: 0x00000000
+make a fragment program for no blending: 0x00000001
+make a fragment program for alpha blending: 0x00000001
+make a fragment program for add: 0x00000001
+make a fragment program for subtract: 0x00000001
+make a fragment program for reverse subtract: 0x00000001
+make a fragment program for min: 0x00000001
+make a fragment program for max: 0x00000001
+make a fragment program for multiply: 0x00000001
+make a fragment program for screen: 0x00000001
+make a fragment program for source color factors: 0x00000001
+make a fragment program for destination alpha: 0x00000001
+make a fragment program for one minus destination alpha: 0x00000001
+make a fragment program for source alpha saturate: 0x00000001
+make a fragment program for destination alpha saturate: 0x00000001
+make a fragment program for destination times source alpha: 0x00000001
+make a fragment program for alpha blending, alpha subtracted: 0x00000001
+make a fragment program for red and alpha masked in: 0x00000001
+make a fragment program for green and blue masked in, blended: 0x00000001
+make a fragment program for everything masked out: 0x00000001
+make a fragment program for alpha masked in, added: 0x00000001
+begin a frame: 0x00000000
+draw each blend mode: 0x00000000
+capture modes: 0x00000000
+DONE
