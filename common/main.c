@@ -2,6 +2,7 @@
 // psgm:play?titleid=VTST00000&arg=<name>, or by the first line of SELECTION_PATH. "list" prints the
 // name of every test.
 #include <psp2/appmgr.h>
+#include <psp2/io/dirent.h>
 #include <psp2/io/fcntl.h>
 #include <psp2/io/stat.h>
 #include <psp2/kernel/clib.h>
@@ -11,6 +12,7 @@
 #define SELECTION_PATH "ux0:data/vita-autotests/test.txt"
 
 char test_output_path[128];
+const char *test_name;
 
 #define TEST(name) int test_##name(void);
 #include "tests.inc"
@@ -42,6 +44,20 @@ static int read_selection(char *buf, int size) {
         }
     }
     return buf[0] != '\0';
+}
+
+// Removes every file in dir, the captures of an earlier run
+static void empty_dir(const char *dir) {
+    const SceUID fd = sceIoDopen(dir);
+    if (fd < 0)
+        return;
+    SceIoDirent entry;
+    while (sceIoDread(fd, &entry) > 0) {
+        char path[192];
+        sceClibSnprintf(path, sizeof(path), "%s/%s", dir, entry.d_name);
+        sceIoRemove(path);
+    }
+    sceIoDclose(fd);
 }
 
 // Reads the arg of the launch URI into buf. Returns 0 if there is none.
@@ -87,6 +103,11 @@ int main(int argc, char *argv[]) {
             sceIoMkdir(TEST_OUTPUT_DIR, 0777);
             sceClibSnprintf(test_output_path, sizeof(test_output_path), TEST_OUTPUT_DIR "/%s.txt", tests[i].name);
             sceIoRemove(test_output_path);
+            // And empties the directory its captures go to, see capture.h
+            char capture_dir[128];
+            sceClibSnprintf(capture_dir, sizeof(capture_dir), TEST_OUTPUT_DIR "/%s", tests[i].name);
+            empty_dir(capture_dir);
+            test_name = tests[i].name;
             return tests[i].run();
         }
     }
