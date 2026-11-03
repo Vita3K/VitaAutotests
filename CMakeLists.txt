@@ -41,7 +41,7 @@ function(vita_tests_vpk title_id)
 	endforeach()
 	file(CONFIGURE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/tests.inc CONTENT "${table}")
 
-	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${sources})
+	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${PROJECT_SOURCE_DIR}/common/capture.c ${sources})
 	target_include_directories(vita-autotests PRIVATE ${PROJECT_SOURCE_DIR}/common ${CMAKE_CURRENT_BINARY_DIR})
 	# Not SceProcessmgr_stub: a Vita refuses to install a vpk that imports from it, with C2-12845-0
 	target_link_libraries(vita-autotests SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceSysmem_stub SceFiber_stub SceSysmodule_stub SceRtc_stub SceAudio_stub SceDisplay_stub SceGxm_stub SceAppUtil_stub SceFios2Kernel_stub)
