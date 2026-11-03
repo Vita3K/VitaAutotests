@@ -1,0 +1,9 @@
+# How far a capture may be from the image a Vita gave and still pass, for run_tests.py: the test or
+# <test>.<capture>, the largest difference in a channel that still counts as the same, and how many
+# pixels may differ by more. A capture without a line here must match exactly.
+#
+# A Vita gives the same image every time, so these only matter to an emulator, where interpolation,
+# blending and filtering round a little differently.
+render_vertex_color 2 0
+render_blend 2 0
+render_texture_sampling 2 0
