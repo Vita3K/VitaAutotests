@@ -810,6 +810,17 @@ vita_test(gxm_fragment_program_cache gxm/gxm_fragment_program_cache.c)
 vita_test(gxm_color_surface_init_checks gxm/gxm_color_surface_init_checks.c)
 vita_test(gxm_color_surface_wide_stride gxm/gxm_color_surface_wide_stride.c)
 
+# Render tests, which capture what they draw, see common/capture.h and common/render.h
+vita_test(render_clear render/render_clear.c)
+vita_test(render_rasterization render/render_rasterization.c)
+vita_test(render_vertex_color render/render_vertex_color.c)
+vita_test(render_blend render/render_blend.c)
+vita_test(render_depth render/render_depth.c)
+vita_test(render_stencil render/render_stencil.c)
+vita_test(render_texture_formats render/render_texture_formats.c)
+vita_test(render_texture_sampling render/render_texture_sampling.c)
+vita_test(render_cull render/render_cull.c)
+
 vita_test(rtc rtc/rtc.c)
 
 vita_test(strings clib/strings.c)
