@@ -98,6 +98,14 @@ python run_tests.py -E "path/to/Vita3K --frontend sdl -r VTST00000 -Z {test}" --
 
 It runs the command for each test, and waits for it to end, for at most `--timeout` seconds. `-g` doesn't work with an emulator, since the `.expected` files and images hold what a Vita gives.
 
+`-j` runs that many tests at a time, each on an instance of the emulator with its own `ux0:` folder, since two instances that write to one folder get in each other's way. `{worker}` in `--ux0` and in the command becomes the number of the instance, from 0. For Vita3K, give each instance a config file whose `pref-path` is a folder of its own:
+
+```
+python run_tests.py -j 8 -E "path/to/Vita3K -c cfg{worker} --frontend sdl -r VTST00000 -Z {test}" --ux0 "pref{worker}/ux0"
+```
+
+Turn off `async-pipeline-compilation` in those config files, or Vita3K may skip draws while it compiles their pipelines, and a render test gives a different image in each run.
+
 ## Render tests
 
 The tests in `tests/render/` draw with libgxm, through `common/render.h`, and save what the display shows with `test_capture_display()` from `common/capture.h`, as `ux0:data/vita-autotests/output/<test>/<capture>.png`. The test writes the PNG itself, from the framebuffer in memory, so it holds exactly what the GPU wrote, alpha included, at 960x544. An emulator runs the same code, so its capture is the frame as it rendered it, at the Vita's resolution, whatever it shows on the screen.

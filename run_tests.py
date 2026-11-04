@@ -16,15 +16,19 @@ file, within the tolerances in tests/tolerances.txt.
   python run_tests.py -H 192.168.1.20       runs every test over Wi-Fi with vitacompanion
   python run_tests.py -E "Vita3K --frontend sdl -r VTST00000 -Z {test}" --ux0 path/to/ux0 tests/render
                                             runs the render tests on Vita3K
+  python run_tests.py -j 8 -E "Vita3K -c cfg{worker} --frontend sdl -r VTST00000 -Z {test}" --ux0 pref{worker}/ux0
+                                            runs every test on 8 instances of Vita3K at a time
 
 The host can also be set in the VITA_HOST environment variable.
 """
 
 import argparse
+import concurrent.futures
 import difflib
 import ftplib
 import io
 import os
+import queue
 import re
 import shlex
 import socket
@@ -508,6 +512,31 @@ def save_run(name, output, files, text_path, image_path):
     return missing
 
 
+def run_all(vitas, names, timeout_s):
+    """Runs the tests, each on a Vita that is free, and yields each name with the future of its run, in order."""
+    free = queue.Queue()
+    for vita in vitas:
+        free.put(vita)
+
+    def run(name):
+        vita = free.get()
+        try:
+            return vita.run(name, timeout_s)
+        finally:
+            free.put(vita)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(vitas)) as executor:
+        futures = [executor.submit(run, name) for name in names]
+        try:
+            for name, future in zip(names, futures):
+                concurrent.futures.wait([future])
+                yield name, future
+        finally:
+            # A run that ends early doesn't start the tests that are left
+            for future in futures:
+                future.cancel()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("tests", nargs="*", help="test names, source paths or directories, all tests if none")
@@ -518,6 +547,9 @@ def main():
     parser.add_argument("-E", "--emulator",
                         help="command that runs one test on an emulator, with {test} where the test name goes")
     parser.add_argument("--ux0", help="the ux0: folder of the emulator, where the tests write their output")
+    parser.add_argument("-j", "--jobs", type=int, default=1,
+                        help="how many tests run at a time on an emulator, each instance with its own ux0: "
+                             "folder, given with {worker} in --ux0 and --emulator, which becomes 0, 1 and so on")
     parser.add_argument("-t", "--timeout", type=float, default=60, help="seconds a test may run, 60 by default")
     parser.add_argument("-g", "--generate", action="store_true",
                         help="save the output as the .expected files, and the captures as the images next to them")
@@ -539,6 +571,14 @@ def main():
         parser.error("-g saves what a Vita gives, use --golden and --update-golden for an emulator")
     if args.update_golden and not args.golden:
         parser.error("--update-golden needs --golden")
+    if args.jobs < 1:
+        parser.error("--jobs needs at least 1")
+    if args.jobs > 1 and not args.emulator:
+        parser.error("--jobs needs --emulator, a Vita runs one test at a time")
+    if args.jobs > 1 and "{worker}" not in args.ux0:
+        parser.error("--jobs needs {worker} in --ux0, so the instances don't share a ux0: folder")
+    # A test's output can hold bytes the console can't show, like the replacement character
+    sys.stdout.reconfigure(errors="replace")
 
     tests = load_tests()
     names = select_tests(tests, args.tests)
@@ -546,16 +586,18 @@ def main():
     known_failures = load_list(args.known_failures)
     try:
         if args.emulator:
-            vita = EmulatorVita(args.emulator, args.ux0)
+            vitas = [EmulatorVita(args.emulator.replace("{worker}", str(worker)), args.ux0.replace("{worker}", str(worker)))
+                     for worker in range(args.jobs)]
         elif args.host:
-            vita = CompanionVita(args.host)
+            vitas = [CompanionVita(args.host)]
         else:
             try:
                 import serial  # noqa: F401
             except ImportError:
                 sys.exit("running over USB needs pyserial: python -m pip install pyserial")
-            vita = UsbVita(args.port or find_usb_port())
-        print(vita.start())
+            vitas = [UsbVita(args.port or find_usb_port())]
+        for vita in vitas:
+            print(vita.start())
     except OSError as error:
         where = (f"vitacompanion on {args.host}. Is the Vita on the same network, with vitacompanion loaded?"
                  if args.host else "the Vita over USB. Are the plugins from usb/ loaded?")
@@ -563,10 +605,10 @@ def main():
     args.captures.mkdir(parents=True, exist_ok=True)
 
     failed, skipped, known = [], [], []
-    for name in names:
+    for name, result in run_all(vitas, names, args.timeout):
         expected_path = tests[name]
         try:
-            output, status, files = vita.run(name, args.timeout)
+            output, status, files = result.result()
         except OSError as error:
             sys.exit(f"{name}: lost the {'emulator' if args.emulator else 'Vita'}: {error}")
         relative = expected_path.relative_to(ROOT).with_suffix("").as_posix()
