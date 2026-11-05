@@ -1,0 +1,29 @@
+heavy: suspend W: 0x00000001
+heavy: W's status after the timeout, suspended: 0x00000100
+heavy: W's wait type after the timeout, suspended: 0x00000000
+heavy: resume W while the main thread holds the mutex: 0x00000000
+heavy: W waits for the mutex after the resume: 0x00000001
+heavy: W's status after three times the timeout: 0x00000008
+heavy: W's wait type after three times the timeout: 0x00000200
+heavy: W still waits for the mutex: 0x00000001
+heavy: the mutex's waiters: 0x00000001
+heavy: W has no result before the unlock: 0x00000001
+heavy: unlock the mutex: 0x00000000
+heavy: W's result: 0x00000000
+heavy: W's time left is 0: 0x00000001
+heavy: W's unlock: 0x00000000
+lightweight: suspend W: 0x00000001
+lightweight: W's status after the timeout, suspended: 0x00000100
+lightweight: W's wait type after the timeout, suspended: 0x00000000
+lightweight: resume W while the main thread holds the mutex: 0x00000000
+lightweight: W waits for the mutex after the resume: 0x00000001
+lightweight: W's status after three times the timeout: 0x00000008
+lightweight: W's wait type after three times the timeout: 0x00400000
+lightweight: W still waits for the mutex: 0x00000001
+lightweight: the mutex's waiters: 0x00000001
+lightweight: W has no result before the unlock: 0x00000001
+lightweight: unlock the mutex: 0x00000000
+lightweight: W's result: 0x00000000
+lightweight: W's time left is 0: 0x00000001
+lightweight: W's unlock: 0x00000000
+DONE

@@ -1,0 +1,20 @@
+H woke once per signal: 0x00000001
+five signals that wake a higher priority thread on the same core: the interrupt preempt count grew by: 0x00000000
+five signals that wake a higher priority thread on the same core: the thread preempt count grew by: 0x00000005
+five signals that wake a higher priority thread on the same core: the release count grew by: 0x00000000
+five signals that wake a higher priority thread on the same core: the CPU change count grew by: 0x00000000
+a wait that takes a count at once: the interrupt preempt count grew by: 0x00000000
+a wait that takes a count at once: the thread preempt count grew by: 0x00000000
+a wait that takes a count at once: the release count grew by: 0x00000000
+a wait that takes a count at once: the CPU change count grew by: 0x00000000
+a wait that blocks: the interrupt preempt count grew by: 0x00000000
+a wait that blocks: the thread preempt count grew by: 0x00000000
+a wait that blocks: the release count grew by: 0x00000001
+a wait that blocks: the CPU change count grew by: 0x00000000
+the self change of the mask: the old mask it returns: 0x00010000
+the self change of the mask: the core after it: 0x00000001
+the self change of the mask from core 0 to core 1: the interrupt preempt count grew by: 0x00000001
+the self change of the mask from core 0 to core 1: the thread preempt count grew by: 0x00000000
+the self change of the mask from core 0 to core 1: the release count grew by: 0x00000000
+the self change of the mask from core 0 to core 1: the CPU change count grew by: 0x00000001
+DONE

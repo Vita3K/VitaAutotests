@@ -1,0 +1,20 @@
+W ran before it was suspended: 0x00000000
+suspend W: 0x00000001
+its status: 0x00000100
+read its registers: 0x00000000
+pc is the entry function, ignoring the Thumb bit: 0x00000001
+CPSR Thumb bit is the entry's address bit 0: 0x00000001
+CPSR mode: 0x00000010
+r0: 0x00000004
+r1 is the argument pointer W gets: 0x00000001
+r1, below the stack top by: 0x00000010
+sp, below the stack top by: 0x00000010
+mask of r2 to r12 that hold 0xDEADBEEF: 0x00001FFC
+its status after the read: 0x00000100
+W ran after G ended and its core was free: 0x00000000
+its status after that: 0x00000100
+resume W: 0x00000000
+W ran after the resume: 0x00000001
+W's argument size: 0x00000004
+W's argument value is the one passed: 0x00000001
+DONE

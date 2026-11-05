@@ -1,0 +1,24 @@
+register the END handler: 0x00000000
+T waits on the semaphore: the lightweight mutex's owner word is T: 0x00000001
+T waits on the semaphore: try lock of the lightweight mutex: 0x80028185
+T waits on the semaphore: try lock of the mutex: 0x80028145
+T waits on the semaphore: try read lock of the rwlock: 0x800281E6
+T waits on the semaphore: try write lock of the rwlock: 0x800281E6
+T waits on the semaphore: poll of the event flag: 0x800280E2
+the handler runs: 0x00000001
+T is in its END handler: the lightweight mutex's owner word is T: 0x00000001
+T is in its END handler: try lock of the lightweight mutex: 0x80028185
+T is in its END handler: try lock of the mutex: 0x80028145
+T is in its END handler: try read lock of the rwlock: 0x800281E6
+T is in its END handler: try write lock of the rwlock: 0x800281E6
+T is in its END handler: poll of the event flag: 0x800280E2
+the wait for T's end: 0x00000000
+T's exit status: 0x00000055
+T ended: the lightweight mutex's owner word is T: 0x00000001
+T ended: try lock of the lightweight mutex: 0x80028185
+T ended: try lock of the mutex: 0x00000000
+T ended: try read lock of the rwlock: 0x00000000
+T ended: try write lock of the rwlock: 0x00000000
+T ended: poll of the event flag: 0x00000000
+unregister the handler: 0x00000000
+DONE

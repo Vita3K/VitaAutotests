@@ -1,0 +1,42 @@
+suspended once: suspend 1: 0x00000001
+suspended once: its status while suspended: 0x00000008
+suspended once: its wait type while suspended: 0x00000020
+suspended once: the first resume: 0x00000000
+suspended once: its status after the first resume: 0x00000008
+suspended once: its wait type after the first resume: 0x00000020
+suspended once: the signal: 0x00000000
+suspended once: it went on within 200 ms of the signal: 0x00000001
+suspended once: its status 200 ms after the signal: 0x00000010
+suspended once: its wait type 200 ms after the signal: 0x00000000
+suspended once: the count 200 ms after the signal: 0x00000000
+suspended once: the waiters 200 ms after the signal: 0x00000000
+suspended once: its wait's result: 0x00000000
+suspended once: the count at the end: 0x00000000
+suspended once: the waiters at the end: 0x00000000
+suspended once: the wait for its end: 0x00000000
+suspended once: its exit status: 0x00000055
+suspended once: its status after its end: 0x00000010
+suspended once: its wait type after its end: 0x00000000
+suspended twice: suspend 1: 0x00000001
+suspended twice: suspend 2: 0x00000002
+suspended twice: its status while suspended: 0x00000008
+suspended twice: its wait type while suspended: 0x00000020
+suspended twice: the first resume: 0x00000001
+suspended twice: its status after the first resume: 0x00000008
+suspended twice: its wait type after the first resume: 0x00000020
+suspended twice: the signal: 0x00000000
+suspended twice: it went on within 200 ms of the signal: 0x00000000
+suspended twice: its status 200 ms after the signal: 0x00000100
+suspended twice: its wait type 200 ms after the signal: 0x00000000
+suspended twice: the count 200 ms after the signal: 0x00000000
+suspended twice: the waiters 200 ms after the signal: 0x00000000
+suspended twice: the second resume: 0x00000000
+suspended twice: it went on after the second resume: 0x00000001
+suspended twice: its wait's result: 0x00000000
+suspended twice: the count at the end: 0x00000000
+suspended twice: the waiters at the end: 0x00000000
+suspended twice: the wait for its end: 0x00000000
+suspended twice: its exit status: 0x00000055
+suspended twice: its status after its end: 0x00000010
+suspended twice: its wait type after its end: 0x00000000
+DONE

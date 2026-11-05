@@ -1,0 +1,16 @@
+suspend it: 0x00000001
+read it: 0x00000000
+word 19 keeps its marker: 0x00000001
+word 20 is the thread's TLS slot 2: 0x00000001
+word 21 is the thread's TLS slot 3: 0x00000001
+write new words 20 and 21: 0x00000000
+read it again: 0x00000000
+the read shows the new word 20: 0x00000001
+the read shows the new word 21: 0x00000001
+word 19 keeps its marker again: 0x00000001
+resume it: 0x00000000
+the thread got past its wait: 0x00000000
+the thread's status: 0x00000100
+the thread's wait type: 0x00000000
+the semaphore's count: 0x00000000
+DONE

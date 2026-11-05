@@ -1,0 +1,31 @@
+register the END handler: 0x00000000
+spin: suspend T in its END handler: 0x00000001
+spin: T's status: 0x00000100
+spin: T's exit status call: 0x80028028
+spin: the exit status written: 0x0000DEAD
+spin: T still owns M: 0x00000001
+spin: try lock M: 0x80028145
+spin: wait for T's end with 10 ms: 0x80028005
+spin: the count stays as it was right after the suspend: 0x00000001
+spin: resume T: 0x00000000
+spin: wait for T's end: 0x00000000
+spin: T's exit status: 0x00000077
+spin: try lock M after the end: 0x00000000
+unregister the handler: 0x00000000
+delete T: 0x00000000
+register the END handler: 0x00000000
+wait: suspend T while its handler waits: 0x00000001
+wait: T's status: 0x00000008
+wait: T's wait type: 0x00000020
+wait: signal the semaphore: 0x00000000
+wait: T's status after the signal: 0x00000100
+wait: T's wait type after the signal: 0x00000000
+wait: the handler went on after its wait: 0x00000000
+wait: resume T: 0x00000000
+wait: wait for T's end: 0x00000000
+wait: T's exit status: 0x00000077
+wait: the handler's wait result: 0x00000000
+wait: the handler went on after the resume: 0x00000001
+unregister the handler: 0x00000000
+delete T: 0x00000000
+DONE

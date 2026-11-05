@@ -1,0 +1,17 @@
+change from core 2, outside the mask: the change: 0x00030000
+change from core 2, outside the mask: A's status before the gate ends: 0x00000002
+change from core 2, outside the mask: B's status before the gate ends: 0x00000002
+change from core 2, outside the mask: A's current CPU before the gate ends: 0x00007FFF
+change from core 2, outside the mask: B's current CPU before the gate ends: 0x00007FFF
+change from core 2, outside the mask: threads that ran before the gate ends: 0x00000000
+change from core 2, outside the mask: the first to run, 1 for A and 2 for B: 0x00000002
+change from core 2, outside the mask: the core it ran on: 0x00000000
+change from the gate of core 0, inside the mask: the change: 0x00030000
+change from the gate of core 0, inside the mask: A's status before the gate ends: 0x00000002
+change from the gate of core 0, inside the mask: B's status before the gate ends: 0x00000002
+change from the gate of core 0, inside the mask: A's current CPU before the gate ends: 0x00007FFF
+change from the gate of core 0, inside the mask: B's current CPU before the gate ends: 0x00007FFF
+change from the gate of core 0, inside the mask: threads that ran before the gate ends: 0x00000000
+change from the gate of core 0, inside the mask: the first to run, 1 for A and 2 for B: 0x00000001
+change from the gate of core 0, inside the mask: the core it ran on: 0x00000000
+DONE

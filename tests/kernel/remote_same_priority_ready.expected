@@ -1,0 +1,15 @@
+T and U READY, no change: T's status before the gate lifts: 0x00000002
+T and U READY, no change: U's status before the gate lifts: 0x00000002
+T and U READY, no change: the first to run, 1 for T and 2 for U: 0x00000001
+T and U READY, T set to 0x70: the change: 0x00000000
+T and U READY, T set to 0x70: T's status before the gate lifts: 0x00000002
+T and U READY, T set to 0x70: U's status before the gate lifts: 0x00000002
+T and U READY, T set to 0x70: the first to run, 1 for T and 2 for U: 0x00000002
+T READY and U STANDBY, no change: T's status before the gate lifts: 0x00000002
+T READY and U STANDBY, no change: U's status before the gate lifts: 0x00000004
+T READY and U STANDBY, no change: the first to run, 1 for T and 2 for U: 0x00000001
+T READY and U STANDBY, T set to 0x70: the change: 0x00000000
+T READY and U STANDBY, T set to 0x70: T's status before the gate lifts: 0x00000002
+T READY and U STANDBY, T set to 0x70: U's status before the gate lifts: 0x00000004
+T READY and U STANDBY, T set to 0x70: the first to run, 1 for T and 2 for U: 0x00000001
+DONE

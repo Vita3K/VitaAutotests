@@ -1,0 +1,18 @@
+no write: suspend it: 0x00000001
+no write: read it: 0x00000000
+no write: the FPSCR control bits: 0x03000000
+no write: resume it: 0x00000000
+no write: signal it: 0x00000000
+no write: the wait result: 0x00000000
+no write: the thread's rounding mode after the wait: 0x00000001
+write: suspend it: 0x00000001
+write: read it: 0x00000000
+write: the FPSCR control bits: 0x03000000
+write: write the FPSCR with round towards minus infinity: 0x00000000
+write: read it again: 0x00000000
+write: the FPSCR control bits again: 0x03000000
+write: resume it: 0x00000000
+write: signal it: 0x00000000
+write: the wait result: 0x00000000
+write: the thread's rounding mode after the wait: 0x00000002
+DONE

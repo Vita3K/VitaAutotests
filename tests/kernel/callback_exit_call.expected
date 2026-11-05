@@ -1,0 +1,20 @@
+exit 7: the notify: 0x00000000
+exit 7: the callback reached the call: 0x00000001
+exit 7: the code after the call ran: 0x00000000
+exit 7: runs: 0x00000001
+exit 7: the info: 0x800280A1
+exit 7: the notify after: 0x800280A1
+exit 7: the thread still waits before the signal: 0x00000001
+exit 7: the wait: 0x00000000
+exit 0: the notify: 0x00000000
+exit 0: the callback reached the call: 0x00000001
+exit 0: the code after the call ran: 0x00000000
+exit 0: runs: 0x00000001
+exit 0: the info: 0x00000000
+exit 0: the second notify: 0x00000000
+exit 0: runs after the second notify: 0x00000002
+exit 0: the code after the call ran in the second run: 0x00000000
+exit 0: the info after the second run: 0x00000000
+exit 0: the thread still waits before the signal: 0x00000001
+exit 0: the wait: 0x00000000
+DONE

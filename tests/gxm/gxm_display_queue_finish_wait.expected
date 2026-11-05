@@ -1,0 +1,24 @@
+finish before initializing: 0x805B0000
+initialize libgxm: 0x00000000
+finish with an empty queue: 0x00000000
+create the old buffer's sync object: 0x00000000
+create the new buffer's sync object: 0x00000000
+add an entry: 0x00000000
+the display callback runs: 0x00000001
+F's info: 0x00000000
+F's status while it finishes: 0x00000008
+F's wait type while it finishes: 0x00000010
+F's wait ID is set: 0x00000001
+finish returned while waiting: 0x00000000
+notify F's callback: 0x00000000
+F's wait type after the notify: 0x00000010
+callback ran during finish: 0x00000000
+finish returned after the release: 0x00000001
+finish's result: 0x00000000
+callback ran after finish: 0x00000000
+the display callback ran once: 0x00000001
+callback ran after a check: 0x00000001
+destroy the old buffer's sync object: 0x00000000
+destroy the new buffer's sync object: 0x00000000
+terminate libgxm: 0x00000000
+DONE

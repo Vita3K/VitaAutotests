@@ -1,0 +1,12 @@
+start 1 by the main thread: its core is the previous core minus 1: 0x00000001
+start 2 by the main thread: its core is the previous core minus 1: 0x00000001
+start 3 by the main thread: its core is the previous core minus 1: 0x00000001
+start 4 by the main thread: its core is the previous core minus 1: 0x00000001
+start 5 by the main thread: its core is the previous core minus 1: 0x00000001
+start 6 by a spinner: its core is the previous core minus 1: 0x00000001
+start 7 by a spinner: its core is the previous core minus 1: 0x00000001
+start 8 by a spinner: its core is the previous core minus 1: 0x00000001
+start 9 by a spinner: its core is the previous core minus 1: 0x00000001
+start 10 by a spinner: its core is the previous core minus 1: 0x00000001
+start 11 by a spinner: its core is the previous core minus 1: 0x00000001
+DONE

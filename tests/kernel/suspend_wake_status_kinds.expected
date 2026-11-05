@@ -1,0 +1,128 @@
+event flag set: suspend W: 0x00000001
+event flag set: the wake: 0x00000000
+event flag set: get W's info: 0x00000000
+event flag set: W's status: 0x00000002
+event flag set: W's wait type: 0x00000000
+event flag set: W's status once it settles: 0x00000100
+event flag set: W's wait type once it settles: 0x00000000
+event flag set: the pattern: 0x00000002
+event flag set: the waiters: 0x00000000
+event flag set: resume W: 0x00000000
+event flag set: W's result: 0x00000000
+event flag set: the pattern W got: 0x00000003
+mutex unlock: suspend W: 0x00000001
+mutex unlock: the wake: 0x00000000
+mutex unlock: get W's info: 0x00000000
+mutex unlock: W's status: 0x00000002
+mutex unlock: W's wait type: 0x00000000
+mutex unlock: W's status once it settles: 0x00000100
+mutex unlock: W's wait type once it settles: 0x00000000
+mutex unlock: W owns the mutex: 0x00000001
+mutex unlock: the mutex's count: 0x00000001
+mutex unlock: the mutex's waiters: 0x00000000
+mutex unlock: try lock the mutex: 0x80028145
+mutex unlock: resume W: 0x00000000
+mutex unlock: W's result: 0x00000000
+mutex unlock: W's release after it: 0x00000000
+lightweight mutex unlock: suspend W: 0x00000001
+lightweight mutex unlock: the wake: 0x00000000
+lightweight mutex unlock: get W's info: 0x00000000
+lightweight mutex unlock: W's status: 0x00000002
+lightweight mutex unlock: W's wait type: 0x00000000
+lightweight mutex unlock: W's status once it settles: 0x00000100
+lightweight mutex unlock: W's wait type once it settles: 0x00000000
+lightweight mutex unlock: W owns the lightweight mutex: 0x00000001
+lightweight mutex unlock: its count: 0x00000001
+lightweight mutex unlock: its waiters: 0x00000000
+lightweight mutex unlock: try lock it: 0x80028185
+lightweight mutex unlock: resume W: 0x00000000
+lightweight mutex unlock: W's result: 0x00000000
+lightweight mutex unlock: W's release after it: 0x00000000
+write unlock to a reader: suspend W: 0x00000001
+write unlock to a reader: the wake: 0x00000000
+write unlock to a reader: get W's info: 0x00000000
+write unlock to a reader: W's status: 0x00000002
+write unlock to a reader: W's wait type: 0x00000000
+write unlock to a reader: W's status once it settles: 0x00000100
+write unlock to a reader: W's wait type once it settles: 0x00000000
+write unlock to a reader: the lock count: 0x00000001
+write unlock to a reader: W is the write owner: 0x00000000
+write unlock to a reader: the waiters: 0x00000000
+write unlock to a reader: try write lock: 0x800281E6
+write unlock to a reader: resume W: 0x00000000
+write unlock to a reader: W's result: 0x00000000
+write unlock to a reader: W's release after it: 0x00000000
+message pipe send: suspend W: 0x00000001
+message pipe send: the wake: 0x00000000
+message pipe send: get W's info: 0x00000000
+message pipe send: W's status: 0x00000002
+message pipe send: W's wait type: 0x00000000
+message pipe send: W's status once it settles: 0x00000100
+message pipe send: W's wait type once it settles: 0x00000000
+message pipe send: the free size: 0x00001000
+message pipe send: the senders: 0x00000000
+message pipe send: the receivers: 0x00000000
+message pipe send: resume W: 0x00000000
+message pipe send: W's result: 0x00000000
+message pipe send: the message W got: 0x64636261
+message pipe receive: suspend W: 0x00000001
+message pipe receive: the wake: 0x00000000
+message pipe receive: get W's info: 0x00000000
+message pipe receive: W's status: 0x00000002
+message pipe receive: W's wait type: 0x00000000
+message pipe receive: W's status once it settles: 0x00000100
+message pipe receive: W's wait type once it settles: 0x00000000
+message pipe receive: the free size: 0x00000FFC
+message pipe receive: the senders: 0x00000000
+message pipe receive: the receivers: 0x00000000
+message pipe receive: resume W: 0x00000000
+message pipe receive: W's result: 0x00000000
+message pipe receive: the free size after W sent: 0x00000FFC
+message pipe receive: receive what W sent: 0x00000000
+message pipe receive: the message: 0x64636261
+simple event set: suspend W: 0x00000001
+simple event set: the wake: 0x00000000
+simple event set: get W's info: 0x00000000
+simple event set: W's status: 0x00000002
+simple event set: W's wait type: 0x00000000
+simple event set: W's status once it settles: 0x00000100
+simple event set: W's wait type once it settles: 0x00000000
+simple event set: the bit: 0x00000000
+simple event set: the waiters: 0x00000000
+simple event set: resume W: 0x00000000
+simple event set: W's result: 0x00000000
+simple event set: the bit W got: 0x01000000
+timer event: suspend W: 0x00000001
+timer event: the wake: 0x00000000
+timer event: get W's info: 0x00000000
+timer event: W's status: 0x00000002
+timer event: W's wait type: 0x00000000
+timer event: W's status once it settles: 0x00000100
+timer event: W's wait type once it settles: 0x00000000
+timer event: the bit: 0x00008000
+timer event: the waiters: 0x00000000
+timer event: resume W: 0x00000000
+timer event: W's result: 0x00000000
+timer event: the bit W got: 0x00008000
+thread signal: suspend W: 0x00000001
+thread signal: the wake: 0x00000000
+thread signal: get W's info: 0x00000000
+thread signal: W's status: 0x00000002
+thread signal: W's wait type: 0x00000000
+thread signal: W's status once it settles: 0x00000100
+thread signal: W's wait type once it settles: 0x00000000
+thread signal: resume W: 0x00000000
+thread signal: W's result: 0x00000000
+thread end: suspend W: 0x00000001
+thread end: the wake: 0x00000000
+thread end: get W's info: 0x00000000
+thread end: W's status: 0x00000002
+thread end: W's wait type: 0x00000000
+thread end: W's status once it settles: 0x00000100
+thread end: W's wait type once it settles: 0x00000000
+thread end: the target's status: 0x00000010
+thread end: the target's exit status: 0x0000003C
+thread end: resume W: 0x00000000
+thread end: W's result: 0x00000000
+thread end: the exit status W got: 0x0000003C
+DONE

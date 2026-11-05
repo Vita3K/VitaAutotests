@@ -1,0 +1,13 @@
+a sample with the kernel view was caught: 0x00000001
+all suspends returned 1: 0x00000001
+all reads returned 0: 0x00000001
+all resumes returned 0: 0x00000001
+the counter moved after every resume: 0x00000001
+all samples are in user mode: 0x00000001
+all samples have sp on W's stack: 0x00000001
+all samples have the pc in the loop or in the stub: 0x00000001
+all samples have d8 to d15 as W set them: 0x00000001
+all samples with the kernel view have the pc in the stub: 0x00000001
+all samples with the kernel view have FPSCR control bits 0x03000000: 0x00000001
+all samples with the kernel view have the same pc: 0x00000001
+DONE
