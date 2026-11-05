@@ -2,7 +2,9 @@
 // reach: that a failed one leaves the object as it was, whether one gets past a thread that already
 // waits, and whether one right after a release takes what the release gave to a waiter. The waiters
 // have a lower priority than the main thread and share its core, so they only run once it blocks.
-// Also the vector forms of the message pipe calls that don't wait.
+// A waiter that gets a lock keeps it until the main thread signals the release semaphore, so a try
+// right after an unlock finds the lock with the waiter even if the waiter already ran. Also the
+// vector forms of the message pipe calls that don't wait.
 #include <psp2/kernel/clib.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -17,6 +19,12 @@ static SceUID sema, flag, rwlock, pipe, event, release;
 static SceKernelLwMutexWork lw_mutex;
 static volatile int wait_kind, wait_result;
 static char fill[4096];
+
+// Waits until the main thread signals the release semaphore
+static void hold(void) {
+    SceUInt timeout = TEST_WAIT_US;
+    sceKernelWaitSema(release, 1, &timeout);
+}
 
 static int waiter(SceSize args, void *argp) {
     (void)args;
@@ -33,23 +41,29 @@ static int waiter(SceSize args, void *argp) {
     case WAIT_FLAG: result = sceKernelWaitEventFlag(flag, 0x2, SCE_EVENT_WAITAND | SCE_EVENT_WAITCLEAR, &bits, &timeout); break;
     case WAIT_LW_MUTEX:
         result = sceKernelLockLwMutex(&lw_mutex, 1, &timeout);
-        if (result == 0)
+        if (result == 0) {
+            hold();
             sceKernelUnlockLwMutex(&lw_mutex, 1);
+        }
         break;
     case HOLD_LW_MUTEX:
         result = sceKernelLockLwMutex(&lw_mutex, 1, NULL);
-        sceKernelWaitSema(release, 1, &timeout);
+        hold();
         sceKernelUnlockLwMutex(&lw_mutex, 1);
         break;
     case WAIT_READ:
         result = sceKernelLockReadRWLock(rwlock, &timeout);
-        if (result == 0)
+        if (result == 0) {
+            hold();
             sceKernelUnlockReadRWLock(rwlock);
+        }
         break;
     case WAIT_WRITE:
         result = sceKernelLockWriteRWLock(rwlock, &timeout);
-        if (result == 0)
+        if (result == 0) {
+            hold();
             sceKernelUnlockWriteRWLock(rwlock);
+        }
         break;
     case WAIT_RECEIVE: result = sceKernelReceiveMsgPipe(pipe, buf, 8, MSG_PIPE_MODE_FULL, NULL, &timeout); break;
     case WAIT_SEND: result = sceKernelSendMsgPipe(pipe, "12345678", 8, MSG_PIPE_MODE_FULL, NULL, &timeout); break;
@@ -174,6 +188,7 @@ static void test_lw_mutex(void) {
     PRINT("lightweight mutex: try lock right after an unlock with a waiter", try_lock);
     if (try_lock == 0)
         sceKernelUnlockLwMutex(&lw_mutex, 1);
+    sceKernelSignalSema(release, 1);
     test_join_thread(thread);
     PRINT("lightweight mutex: the waiter", wait_result);
     sceKernelDeleteLwMutex(&lw_mutex);
@@ -194,6 +209,7 @@ static void test_rwlock(void) {
         sceKernelUnlockReadRWLock(rwlock);
     PRINT("reader/writer lock: try write lock right after a write unlock with a waiting reader", try_write);
     PRINT("reader/writer lock: try read lock right after it", try_read);
+    sceKernelSignalSema(release, 1);
     test_join_thread(thread);
     PRINT("reader/writer lock: the reader", wait_result);
 
@@ -205,6 +221,7 @@ static void test_rwlock(void) {
     if (try_again == 0)
         sceKernelUnlockReadRWLock(rwlock);
     PRINT("reader/writer lock: try read lock right after a read unlock with a waiting writer", try_again);
+    sceKernelSignalSema(release, 1);
     test_join_thread(thread);
     PRINT("reader/writer lock: the writer", wait_result);
     sceKernelDeleteRWLock(rwlock);
