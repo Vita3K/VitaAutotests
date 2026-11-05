@@ -1,0 +1,18 @@
+initialize libgxm: 0x00000000
+create deferred context 1: 0x00000000
+create deferred context 2: 0x00000000
+A's begin: 0x00000000
+B's begin: 0x00000000
+B's wait for S1: 0x00000000
+B's callback ran: 0x00000001
+B's callback ran while A was inside its callback: 0x00000001
+A's wait for S2: 0x00000000
+A's callback ran once: 0x00000001
+B's callback ran once: 0x00000001
+the begins called a vertex or fragment callback: 0x00000000
+end the command list of context 1: 0x00000000
+end the command list of context 2: 0x00000000
+destroy deferred context 1: 0x00000000
+destroy deferred context 2: 0x00000000
+terminate libgxm: 0x00000000
+DONE
