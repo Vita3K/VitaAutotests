@@ -1,0 +1,27 @@
+initialize libgxm: 0x00000000
+allocate the block: 0x00000000
+create the deferred context: 0x00000000
+create the shader patcher: 0x00000000
+register the vertex program: 0x00000000
+register the fragment program: 0x00000000
+create the vertex program: 0x00000000
+create the fragment program: 0x00000000
+B's first failing call: 0x00000000
+A's begin: 0x00000000
+B's wait for A's begin: 0x00000000
+the VDM callback of the begin ran on A: 0x00000001
+a callback ran on B during its calls: 0x00000001
+every callback during B's calls ran on B: 0x00000001
+a callback ran on A during B's calls: 0x00000000
+the VDM ring needed a refill during B's calls: 0x00000001
+the vertex ring needed a refill during B's calls: 0x00000001
+the fragment ring needed a refill during B's calls: 0x00000001
+A's end: 0x00000000
+destroy the deferred context: 0x00000000
+release the fragment program: 0x00000000
+release the vertex program: 0x00000000
+unregister the fragment program: 0x00000000
+unregister the vertex program: 0x00000000
+destroy the shader patcher: 0x00000000
+terminate libgxm: 0x00000000
+DONE
