@@ -751,7 +751,9 @@ vita_test(gxm_sync_objects gxm/gxm_sync_objects.c)
 vita_test(gxm_wait_errors gxm/gxm_wait_errors.c)
 vita_test(gxm_shader_patcher_memory gxm/gxm_shader_patcher_memory.c)
 vita_test(gxm_terminate_wait gxm/gxm_terminate_wait.c)
+vita_test(gxm_terminate_wait_between gxm/gxm_terminate_wait_between.c)
 vita_test(gxm_display_queue_finish_wait gxm/gxm_display_queue_finish_wait.c)
+vita_test(gxm_deferred_callback_threads gxm/gxm_deferred_callback_threads.c)
 
 vita_test(rtc rtc/rtc.c)
 

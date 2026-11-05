@@ -1,0 +1,35 @@
+initialize libgxm: 0x00000000
+create the sync objects: 0x00000000
+add entry 0: 0x00000000
+callback 0 finished: 0x00000001
+the idle worker's info: 0x00000000
+the idle worker's status: 0x00000008
+the idle worker waits for an event flag: 0x00000001
+first callback started: 0x00000001
+add entry 1: 0x00000000
+add entry 2: 0x00000000
+T's info: 0x00000000
+T's status: 0x00000008
+T's wait type: 0x00000002
+T waits for the worker: 0x00000001
+signal T: 0x00000000
+T's info after the signal: 0x00000000
+T's status after the signal: 0x00000008
+T's wait type after the signal: 0x00000002
+T waits for the worker after the signal: 0x00000001
+second callback started: 0x00000001
+callbacks finished while the second one holds: 0x00000002
+terminate returned while the second callback holds: 0x00000000
+the second callback read T's info: 0x00000000
+T's status in the second callback: 0x00000008
+T's wait type in the second callback: 0x00000002
+T waits for the worker in the second callback: 0x00000001
+the second callback runs on the thread of callback 0: 0x00000001
+the second callback runs on the thread of callback 1: 0x00000001
+the TLS marker of callback 0 is still there: 0x00000001
+terminate returned: 0x00000001
+terminate: 0x00000000
+callbacks finished when terminate returned: 0x00000003
+one thread ran all three callbacks: 0x00000001
+the worker's info after terminate: 0x80028021
+DONE
