@@ -1,0 +1,26 @@
+semaphore: suspend W: 0x00000001
+semaphore: the signal: 0x00000000
+semaphore: get W's info at once: 0x00000000
+semaphore: W's status at once: 0x00000002
+semaphore: W's wait type at once: 0x00000000
+semaphore: get the semaphore's info: 0x00000000
+semaphore: the count: 0x00000000
+semaphore: the waiters: 0x00000000
+semaphore: W's status later: 0x00000100
+semaphore: W's wait type later: 0x00000000
+semaphore: resume W: 0x00000000
+semaphore: W's result: 0x00000000
+condition: suspend W: 0x00000001
+condition: the signal: 0x00000000
+condition: get W's info at once: 0x00000000
+condition: W's status at once: 0x00000002
+condition: W's wait type at once: 0x00000000
+condition: get the mutex's info: 0x00000000
+condition: W owns the mutex at once: 0x00000000
+condition: the mutex's waiters: 0x00000000
+condition: W's status later: 0x00000100
+condition: W's wait type later: 0x00000000
+condition: W owns the mutex later: 0x00000001
+condition: resume W: 0x00000000
+condition: W's result: 0x00000000
+DONE

@@ -1,0 +1,51 @@
+a signal: suspend it: 0x00000001
+a signal, waiting: the read: 0x00000000
+a signal, waiting: FPSCR control bits are the call's: 0x00000001
+a signal, waiting: d0 is the NaN of a call: 0x00000001
+a signal: signal it while it is suspended: 0x00000000
+a signal, right after the signal: the read: 0x00000000
+a signal, right after the signal: FPSCR control bits are the call's: 0x00000001
+a signal, right after the signal: d0 is the NaN of a call: 0x00000001
+a signal, right after the signal: pc is the first read's: 0x00000001
+a signal, right after the signal: sp is the first read's: 0x00000001
+a signal, right after the signal: CPSR is the first read's: 0x00000001
+a signal, right after the signal: r0 is 0: 0x00000000
+a signal, right after the signal: r0 is the first read's: 0x00000001
+a signal, right after the signal: r0 is the timeout error: 0x00000000
+a signal: waiters of the semaphore: 0x00000000
+a signal: count of the semaphore: 0x00000000
+a signal: W reports SUSPENDED: 0x00000001
+a signal: W's wait type: 0x00000000
+a signal, the wait is over: the read: 0x00000000
+a signal, the wait is over: FPSCR control bits are the call's: 0x00000001
+a signal, the wait is over: d0 is the NaN of a call: 0x00000001
+a signal, the wait is over: pc is the first read's: 0x00000001
+a signal, the wait is over: sp is the first read's: 0x00000001
+a signal, the wait is over: CPSR is the first read's: 0x00000001
+a signal, the wait is over: r0 is 0: 0x00000000
+a signal, the wait is over: r0 is the first read's: 0x00000001
+a signal, the wait is over: r0 is the timeout error: 0x00000000
+a signal: W's result while it is suspended: 0x0000DEAD
+a signal: resume it: 0x00000000
+a signal: W's result after the resume: 0x00000000
+a timeout: suspend it: 0x00000001
+a timeout, waiting: the read: 0x00000000
+a timeout, waiting: FPSCR control bits are the call's: 0x00000001
+a timeout, waiting: d0 is the NaN of a call: 0x00000001
+a timeout: waiters of the semaphore: 0x00000000
+a timeout: count of the semaphore: 0x00000000
+a timeout: W reports SUSPENDED: 0x00000001
+a timeout: W's wait type: 0x00000000
+a timeout, the wait is over: the read: 0x00000000
+a timeout, the wait is over: FPSCR control bits are the call's: 0x00000001
+a timeout, the wait is over: d0 is the NaN of a call: 0x00000001
+a timeout, the wait is over: pc is the first read's: 0x00000001
+a timeout, the wait is over: sp is the first read's: 0x00000001
+a timeout, the wait is over: CPSR is the first read's: 0x00000001
+a timeout, the wait is over: r0 is 0: 0x00000000
+a timeout, the wait is over: r0 is the first read's: 0x00000001
+a timeout, the wait is over: r0 is the timeout error: 0x00000000
+a timeout: W's result while it is suspended: 0x0000DEAD
+a timeout: resume it: 0x00000000
+a timeout: W's result after the resume: 0x80028005
+DONE

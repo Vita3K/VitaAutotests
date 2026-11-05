@@ -1,0 +1,15 @@
+round 0: suspend: result: 0x00000001
+round 0: the interrupt preempt count grew by at least 1: 0x00000001
+round 0: resume: result: 0x00000000
+round 0: the thread made progress after the resume: 0x00000001
+round 1: suspend: result: 0x00000001
+round 1: the interrupt preempt count grew by at least 1: 0x00000001
+round 1: resume: result: 0x00000000
+round 1: the thread made progress after the resume: 0x00000001
+round 2: suspend: result: 0x00000001
+round 2: the interrupt preempt count grew by at least 1: 0x00000001
+round 2: resume: result: 0x00000000
+round 2: the thread made progress after the resume: 0x00000001
+after 3 rounds: the interrupt preempt count grew by at least 3: 0x00000001
+after 3 rounds: the thread preempt count did not grow: 0x00000001
+DONE

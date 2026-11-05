@@ -1,0 +1,17 @@
+initialize libgxm: 0x00000000
+create the sync objects: 0x00000000
+first callback started: 0x00000001
+add entry 1: 0x00000000
+add entry 2: 0x00000000
+T's status: 0x00000008
+T's wait type: 0x00000002
+T waits for the worker: 0x00000001
+terminate returned: 0x00000000
+second callback started: 0x00000000
+terminate returned now: 0x00000001
+terminate: 0x00000000
+terminate returned after both callbacks: 0x00000001
+callbacks ran in queue order: 0x00000001
+both callbacks ran on the same thread: 0x00000001
+the gap before the leftover callback is at least 9 ms: 0x00000000
+DONE

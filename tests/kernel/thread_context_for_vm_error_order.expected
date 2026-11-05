@@ -1,0 +1,27 @@
+Get, CPU size 0, an unknown UID: 0x80028021
+Get, CPU size 4 too small, an unknown UID: 0x80028021
+Set, no blocks, an unknown UID: 0x80028021
+Set, CPU size 0, an unknown UID: 0x80028021
+Get, CPU size 0, UID 0: 0x80028021
+Get, CPU size 4 too small, UID 0: 0x80028021
+Set, no blocks, UID 0: 0x80028021
+Set, CPU size 0, UID 0: 0x80028021
+Get, CPU size 0, the calling thread: 0x80028022
+Get, CPU size 4 too small, the calling thread: 0x80028022
+Set, no blocks, the calling thread: 0x80028022
+Set, CPU size 0, the calling thread: 0x80028022
+Get, CPU size 0, a semaphore: 0x8002000B
+Get, CPU size 4 too small, a semaphore: 0x8002000B
+Set, no blocks, a semaphore: 0x80020006
+Set, CPU size 0, a semaphore: 0x8002000B
+Get, CPU size 0, a thread without the VM attribute: 0x8002000B
+Get, CPU size 4 too small, a thread without the VM attribute: 0x8002000B
+Set, no blocks, a thread without the VM attribute: 0x80020006
+Set, CPU size 0, a thread without the VM attribute: 0x8002000B
+Get, CPU size 4 too big, an unknown UID: 0x8002710B
+Get, CPU size 4 too big, the calling thread: 0x8002710B
+Set, CPU size 4 too big, an unknown UID: 0x8002710B
+Set, CPU size 4 too big, the calling thread: 0x8002710B
+Get, VFP size 4 too small, an unknown UID: 0x80028021
+Get, VFP size 4 too small, the calling thread: 0x80028022
+DONE

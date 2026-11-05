@@ -1,0 +1,6 @@
+rounds where at most one call returned before the resumes: 0x00000005
+rounds where at most one thread was suspended before the resumes: 0x00000000
+rounds where a resume returned 0: 0x00000005
+rounds where both threads ended after the resumes: 0x00000005
+rounds where a thread ended with the exit status 1: 0x00000005
+DONE

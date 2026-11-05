@@ -1,0 +1,32 @@
+resume, then signal: suspend it: 0x00000001
+resume, then signal: read the context: 0x00000000
+resume, then signal: write the new registers: 0x00000000
+resume, then signal: read it again: 0x00000000
+resume, then signal: the read shows the new pc: 0x00000001
+resume, then signal: the read shows the new r0: 0x00000001
+resume, then signal: the read shows the new r4: 0x00000001
+resume, then signal: resume it: 0x00000000
+resume, then signal: it still waits on the semaphore: 0x00000001
+resume, then signal: signal the semaphore: 0x00000000
+resume, then signal: the landing function ran: 0x00000000
+resume, then signal: r0 in the landing function: 0x00000000
+resume, then signal: r4 in the landing function: 0x00000000
+resume, then signal: r6 in the landing function is its marker: 0x00000000
+resume, then signal: the code after the wait ran: 0x00000000
+resume, then signal: wait for the thread to end: 0x80028005
+signal, then resume: suspend it: 0x00000001
+signal, then resume: signal the semaphore: 0x00000000
+signal, then resume: read the context: 0x00000000
+signal, then resume: write the new registers: 0x00000000
+signal, then resume: read it again: 0x00000000
+signal, then resume: the read shows the new pc: 0x00000001
+signal, then resume: the read shows the new r0: 0x00000001
+signal, then resume: the read shows the new r4: 0x00000001
+signal, then resume: resume it: 0x00000000
+signal, then resume: the landing function ran: 0x00000000
+signal, then resume: r0 in the landing function: 0x00000000
+signal, then resume: r4 in the landing function: 0x00000000
+signal, then resume: r6 in the landing function is its marker: 0x00000000
+signal, then resume: the code after the wait ran: 0x00000000
+signal, then resume: wait for the thread to end: 0x80028005
+DONE

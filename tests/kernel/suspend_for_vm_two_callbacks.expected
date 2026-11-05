@@ -1,0 +1,22 @@
+suspend it: 0x00000001
+suspend it again: 0x00000002
+both notified while T can't run: A's notify count: 0x00000001
+both notified while T can't run: B's notify count: 0x00000001
+held: T's status: 0x00000100
+held: T's wait type: 0x00000000
+held: the lowest notify count of A: 0x00000000
+held: the lowest notify count of B: 0x00000001
+held: the callbacks' calls: 0x00000000
+resume it: 0x00000001
+after one resume: T's status: 0x00000100
+after one resume: T's wait type: 0x00000000
+after one resume: B's notify count: 0x00000001
+after one resume: the callbacks' calls: 0x00000000
+resume it again: 0x00000000
+after both resumes: A's calls: 0x00000001
+after both resumes: B's calls: 0x00000001
+after both resumes: the order they ran in, A is 1 and B is 2: 0x00000012
+after both resumes: the count A got: 0x00000001
+after both resumes: the count B got: 0x00000001
+its wait's result: 0x00000000
+DONE

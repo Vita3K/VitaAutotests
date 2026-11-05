@@ -1,0 +1,30 @@
+sceKernelDelayThread(1000): the result: 0x00000000
+sceKernelDelayThread(1000): the d registers that kept their marker, one bit each: 0x0000FF0C
+sceKernelDelayThread(1000): the d registers that share the other value: 0xFFFF00F3
+sceKernelDelayThread(1000): that value's high word: 0x7FF8DEAD
+sceKernelDelayThread(1000): that value's low word: 0x7F80DEAD
+sceKernelDelayThread(1000): the d registers with neither: 0x00000000
+sceKernelWaitSema timed out after 1 ms: the result: 0x80028005
+sceKernelWaitSema timed out after 1 ms: the d registers that kept their marker, one bit each: 0x0000FF0C
+sceKernelWaitSema timed out after 1 ms: the d registers that share the other value: 0xFFFF00F3
+sceKernelWaitSema timed out after 1 ms: that value's high word: 0x7FF8DEAD
+sceKernelWaitSema timed out after 1 ms: that value's low word: 0x7F80DEAD
+sceKernelWaitSema timed out after 1 ms: the d registers with neither: 0x00000000
+sceKernelPollSema with a count there: the result: 0x00000000
+sceKernelPollSema with a count there: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+sceKernelPollSema with a count there: the d registers that share the other value: 0x00000000
+sceKernelPollSema with a count there: that value's high word: 0x00000000
+sceKernelPollSema with a count there: that value's low word: 0x00000000
+sceKernelPollSema with a count there: the d registers with neither: 0x00000000
+sceKernelPollSema with no count there: the result: 0x80028102
+sceKernelPollSema with no count there: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+sceKernelPollSema with no count there: the d registers that share the other value: 0x00000000
+sceKernelPollSema with no count there: that value's high word: 0x00000000
+sceKernelPollSema with no count there: that value's low word: 0x00000000
+sceKernelPollSema with no count there: the d registers with neither: 0x00000000
+sceKernelGetThreadId: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+sceKernelGetThreadId: the d registers that share the other value: 0x00000000
+sceKernelGetThreadId: that value's high word: 0x00000000
+sceKernelGetThreadId: that value's low word: 0x00000000
+sceKernelGetThreadId: the d registers with neither: 0x00000000
+DONE

@@ -1,0 +1,14 @@
+suspend it: 0x00000001
+while its delay runs: its status: 0x00000008
+while its delay runs: its wait type: 0x00000001
+after its delay ended: its status: 0x00000100
+after its delay ended: its wait type: 0x00000000
+after its delay ended: the callback got past the delay: 0x00000000
+after its delay ended: the delay has returned a result: 0x00000000
+resume it: 0x00000000
+after the resume: the callback got past the delay: 0x00000001
+after the resume: the runs of the callback: 0x00000001
+after the resume: its wait type once it waits again: 0x80000020
+after the resume: the delay's result: 0x00000000
+its semaphore wait's result: 0x00000000
+DONE

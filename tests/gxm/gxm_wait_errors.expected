@@ -1,0 +1,24 @@
+initialize libgxm: 0x00000000
+notification wait: NULL: 0x805B0004
+notification wait: outside the region: 0x805B0003
+notification wait: in the region, already equal: 0x00000000
+finish: NULL: 0x805B0004
+finish: create the immediate context: 0x00000000
+finish: the immediate context: 0x00000000
+finish: create the deferred context: 0x00000000
+finish: the deferred context: 0x805B0003
+create a sync object: 0x00000000
+create another sync object: 0x00000000
+display queue: add an entry: 0x00000000
+display queue: the callback ran: 0x00000001
+display queue: finish it: 0x00000000
+callback: notification wait with NULL: 0x805B0018
+callback: notification wait outside the region: 0x805B0018
+callback: notification wait in the region: 0x805B0018
+callback: finish with NULL: 0x805B0004
+callback: finish the immediate context: 0x805B0018
+callback: finish the deferred context: 0x805B0003
+destroy the deferred context: 0x00000000
+destroy the immediate context: 0x00000000
+terminate libgxm: 0x00000000
+DONE

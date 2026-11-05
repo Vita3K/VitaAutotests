@@ -1,0 +1,24 @@
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: T woke on core 2 and B took it: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: T's status once B ended: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: T counted on: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: T's current CPU: 0x00000000
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: the spinner of core 0 counted on: 0x00000000
+T at 0x70, core 0 at 0xB0, core 1 at 0xB0: the spinner of core 1 counted on: 0x00000001
+T at 0xA0, core 0 at 0xB0, core 1 at 0xB0: T woke on core 2 and B took it: 0x00000001
+T at 0xA0, core 0 at 0xB0, core 1 at 0xB0: T's status once B ended: 0x00000001
+T at 0xA0, core 0 at 0xB0, core 1 at 0xB0: T counted on: 0x00000001
+T at 0xA0, core 0 at 0xB0, core 1 at 0xB0: T runs on core 0 or 1: 0x00000001
+T at 0xA0, core 0 at 0xB0, core 1 at 0xB0: how many spinners counted on: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: T woke on core 2 and B took it: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: T's status once B ended: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: T counted on: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: T's current CPU: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: the spinner of core 0 counted on: 0x00000001
+T at 0x70, core 0 at 0xB0, core 1 at 0xB8: the spinner of core 1 counted on: 0x00000000
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: T woke on core 2 and B took it: 0x00000001
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: T's status once B ended: 0x00000001
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: T counted on: 0x00000001
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: T's current CPU: 0x00000000
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: the spinner of core 0 counted on: 0x00000000
+T at 0x70, core 0 at 0xB8, core 1 at 0xB0: the spinner of core 1 counted on: 0x00000001
+DONE
