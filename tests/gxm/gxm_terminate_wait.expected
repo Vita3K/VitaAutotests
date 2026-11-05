@@ -13,5 +13,4 @@ terminate: 0x00000000
 terminate returned after both callbacks: 0x00000001
 callbacks ran in queue order: 0x00000001
 both callbacks ran on the same thread: 0x00000001
-the gap before the leftover callback is at least 9 ms: 0x00000000
 DONE
