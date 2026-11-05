@@ -6,15 +6,15 @@
 // context again. Each read after the first prints, compared with the first read:
 // - whether the pc, the sp and the CPSR are the same
 // - whether r0 is 0, the same as before, or the timeout error 0x80028005
-// Each read also prints whether it shows a thread inside a call, which a waiting thread does with
-// the FPSCR control bits 0x03000000 and d0 reading the NaN 0x7FF8DEAD7F80DEAD (see
-// thread_context_vfp). The test prints what the semaphore and W report after the wait ended, and W's
+// Each read also prints whether r0 is the semaphore's UID, the call's first argument, and whether it
+// shows a thread inside a call, which a waiting thread does with the FPSCR control bits 0x03000000
+// and d0 reading the NaN 0x7FF8DEAD7F80DEAD (see thread_context_vfp). The test prints what the semaphore and W report after the wait ended, and W's
 // stored result before and after the resume.
 //
 // On a PS Vita TV on firmware 3.65 the context of a suspended W does not change when its wait
-// ends. Every read after the first has the pc, sp, CPSR and r0 of the first read, with an r0 that
-// is neither 0 nor the timeout error, and every read has the FPSCR control bits 0x03000000 and
-// the NaN in d0. After the wait ended, the semaphore has no waiter and count 0, and W reports
+// ends. Every read has the semaphore's UID in r0, and every read after the first has the pc, sp,
+// CPSR and r0 of the first read, with an r0 that is neither 0 nor the timeout error. Every read
+// has the FPSCR control bits 0x03000000 and the NaN in d0. After the wait ended, the semaphore has no waiter and count 0, and W reports
 // SUSPENDED 0x100 with wait type 0. W's stored result is still 0xDEAD while it is suspended, and
 // after the resume it is 0 for the signal and 0x80028005 for the timeout.
 #include <psp2/kernel/threadmgr.h>
@@ -81,6 +81,7 @@ static void report(const char *name, const char *when, const Snapshot *snap, int
     const ThreadCpuRegisters cpu = snap->cpu;
     const ThreadVfpRegisters vfp = snap->vfp;
     PRINTF(snap->read, "%s, %s: the read", name, when);
+    PRINTF(cpu.reg[0] == (SceUInt32)sema, "%s, %s: r0 is the semaphore's UID", name, when);
     PRINTF((vfp.fpscr & FPSCR_CONTROL) == 0x03000000, "%s, %s: FPSCR control bits are the call's", name, when);
     PRINTF(vfp.reg[0] == 0x7F80DEAD && vfp.reg[1] == 0x7FF8DEAD, "%s, %s: d0 is the NaN of a call", name, when);
     if (is_first) {
