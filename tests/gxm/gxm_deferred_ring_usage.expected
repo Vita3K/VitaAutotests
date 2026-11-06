@@ -1,0 +1,312 @@
+initialize libgxm: 0x00000000
+allocate the block: 0x00000000
+map the block: 0x00000000
+create the deferred context: 0x00000000
+create the shader patcher: 0x00000000
+register the vertex program: 0x00000000
+register the fragment program: 0x00000000
+create the vertex program: 0x00000000
+create the fragment program: 0x00000000
+the precomputed draw fits its memory: 0x00000001
+init the precomputed draw: 0x00000000
+set the precomputed draw's stream: 0x00000000
+an empty list x1: first error: 0x00000000
+an empty list x1: VDM bytes: 0x00000000
+an empty list x1: vertex bytes: 0x00000000
+an empty list x1: fragment bytes: 0x00000000
+an empty list: command list word 2: 0x00000000
+an empty list: command list word 3: 0x00000000
+an empty list x2: first error: 0x00000000
+an empty list x2: VDM bytes: 0x00000000
+an empty list x2: vertex bytes: 0x00000000
+an empty list x2: fragment bytes: 0x00000000
+an empty list x3: first error: 0x00000000
+an empty list x3: VDM bytes: 0x00000000
+an empty list x3: vertex bytes: 0x00000000
+an empty list x3: fragment bytes: 0x00000000
+state setters x1: first error: 0x00000000
+state setters x1: VDM bytes: 0x00000000
+state setters x1: vertex bytes: 0x00000000
+state setters x1: fragment bytes: 0x00000000
+state setters: command list word 2: 0x00000000
+state setters: command list word 3: 0x00000000
+state setters x2: first error: 0x00000000
+state setters x2: VDM bytes: 0x00000000
+state setters x2: vertex bytes: 0x00000000
+state setters x2: fragment bytes: 0x00000000
+state setters x3: first error: 0x00000000
+state setters x3: VDM bytes: 0x00000000
+state setters x3: vertex bytes: 0x00000000
+state setters x3: fragment bytes: 0x00000000
+reserves and draws x1: first error: 0x00000000
+reserves and draws x1: VDM bytes: 0x00000028
+reserves and draws x1: vertex bytes: 0x00000154
+reserves and draws x1: fragment bytes: 0x0000005C
+reserves and draws: command list word 2: 0x00000000
+reserves and draws: command list word 3: 0x00000000
+reserves and draws x2: first error: 0x00000000
+reserves and draws x2: VDM bytes: 0x00000048
+reserves and draws x2: vertex bytes: 0x000001D0
+reserves and draws x2: fragment bytes: 0x0000005C
+reserves and draws x3: first error: 0x00000000
+reserves and draws x3: VDM bytes: 0x00000068
+reserves and draws x3: vertex bytes: 0x00000240
+reserves and draws x3: fragment bytes: 0x0000005C
+draws without a reserve x1: first error: 0x805B0011
+draws without a reserve x1: VDM bytes: 0x00000008
+draws without a reserve x1: vertex bytes: 0x0000008C
+draws without a reserve x1: fragment bytes: 0x0000005C
+draws without a reserve: command list word 2: 0x00000000
+draws without a reserve: command list word 3: 0x00000000
+draws without a reserve x2: first error: 0x805B0011
+draws without a reserve x2: VDM bytes: 0x00000008
+draws without a reserve x2: vertex bytes: 0x0000008C
+draws without a reserve x2: fragment bytes: 0x0000005C
+draws without a reserve x3: first error: 0x805B0011
+draws without a reserve x3: VDM bytes: 0x00000008
+draws without a reserve x3: vertex bytes: 0x0000008C
+draws without a reserve x3: fragment bytes: 0x0000005C
+two reserves before each draw x1: first error: 0x00000000
+two reserves before each draw x1: VDM bytes: 0x00000028
+two reserves before each draw x1: vertex bytes: 0x00000154
+two reserves before each draw x1: fragment bytes: 0x0000005C
+two reserves before each draw: command list word 2: 0x00000000
+two reserves before each draw: command list word 3: 0x00000000
+two reserves before each draw x2: first error: 0x00000000
+two reserves before each draw x2: VDM bytes: 0x00000048
+two reserves before each draw x2: vertex bytes: 0x000001D0
+two reserves before each draw x2: fragment bytes: 0x0000005C
+two reserves before each draw x3: first error: 0x00000000
+two reserves before each draw x3: VDM bytes: 0x00000068
+two reserves before each draw x3: vertex bytes: 0x00000240
+two reserves before each draw x3: fragment bytes: 0x0000005C
+reserves without a draw x1: first error: 0x00000000
+reserves without a draw x1: VDM bytes: 0x00000000
+reserves without a draw x1: vertex bytes: 0x00000000
+reserves without a draw x1: fragment bytes: 0x00000000
+reserves without a draw: command list word 2: 0x00000000
+reserves without a draw: command list word 3: 0x00000000
+reserves without a draw x2: first error: 0x00000000
+reserves without a draw x2: VDM bytes: 0x00000000
+reserves without a draw x2: vertex bytes: 0x00000000
+reserves without a draw x2: fragment bytes: 0x00000000
+reserves without a draw x3: first error: 0x00000000
+reserves without a draw x3: VDM bytes: 0x00000000
+reserves without a draw x3: vertex bytes: 0x00000000
+reserves without a draw x3: fragment bytes: 0x00000000
+draws with a cull mode change x1: first error: 0x00000000
+draws with a cull mode change x1: VDM bytes: 0x00000050
+draws with a cull mode change x1: vertex bytes: 0x00000200
+draws with a cull mode change x1: fragment bytes: 0x0000005C
+draws with a cull mode change: command list word 2: 0x00000000
+draws with a cull mode change: command list word 3: 0x00000000
+draws with a cull mode change x2: first error: 0x00000000
+draws with a cull mode change x2: VDM bytes: 0x00000078
+draws with a cull mode change x2: vertex bytes: 0x000002B0
+draws with a cull mode change x2: fragment bytes: 0x0000005C
+draws with a cull mode change x3: first error: 0x00000000
+draws with a cull mode change x3: VDM bytes: 0x000000A0
+draws with a cull mode change x3: vertex bytes: 0x00000360
+draws with a cull mode change x3: fragment bytes: 0x0000005C
+draws with a depth function change x1: first error: 0x00000000
+draws with a depth function change x1: VDM bytes: 0x00000050
+draws with a depth function change x1: vertex bytes: 0x00000200
+draws with a depth function change x1: fragment bytes: 0x0000005C
+draws with a depth function change: command list word 2: 0x00000001
+draws with a depth function change: command list word 3: 0x00000000
+draws with a depth function change x2: first error: 0x00000000
+draws with a depth function change x2: VDM bytes: 0x00000078
+draws with a depth function change x2: vertex bytes: 0x000002B0
+draws with a depth function change x2: fragment bytes: 0x0000005C
+draws with a depth function change x3: first error: 0x00000000
+draws with a depth function change x3: VDM bytes: 0x000000A0
+draws with a depth function change x3: vertex bytes: 0x00000360
+draws with a depth function change x3: fragment bytes: 0x0000005C
+draws with a depth write change x1: first error: 0x00000000
+draws with a depth write change x1: VDM bytes: 0x00000050
+draws with a depth write change x1: vertex bytes: 0x00000200
+draws with a depth write change x1: fragment bytes: 0x0000005C
+draws with a depth write change: command list word 2: 0x00000000
+draws with a depth write change: command list word 3: 0x00000000
+draws with a depth write change x2: first error: 0x00000000
+draws with a depth write change x2: VDM bytes: 0x00000078
+draws with a depth write change x2: vertex bytes: 0x000002B0
+draws with a depth write change x2: fragment bytes: 0x0000005C
+draws with a depth write change x3: first error: 0x00000000
+draws with a depth write change x3: VDM bytes: 0x000000A0
+draws with a depth write change x3: vertex bytes: 0x00000360
+draws with a depth write change x3: fragment bytes: 0x0000005C
+draws with a depth bias change x1: first error: 0x00000000
+draws with a depth bias change x1: VDM bytes: 0x00000050
+draws with a depth bias change x1: vertex bytes: 0x00000200
+draws with a depth bias change x1: fragment bytes: 0x0000005C
+draws with a depth bias change: command list word 2: 0x00000000
+draws with a depth bias change: command list word 3: 0x00000000
+draws with a depth bias change x2: first error: 0x00000000
+draws with a depth bias change x2: VDM bytes: 0x00000078
+draws with a depth bias change x2: vertex bytes: 0x000002B0
+draws with a depth bias change x2: fragment bytes: 0x0000005C
+draws with a depth bias change x3: first error: 0x00000000
+draws with a depth bias change x3: VDM bytes: 0x000000A0
+draws with a depth bias change x3: vertex bytes: 0x00000360
+draws with a depth bias change x3: fragment bytes: 0x0000005C
+draws with a stencil reference change x1: first error: 0x00000000
+draws with a stencil reference change x1: VDM bytes: 0x00000050
+draws with a stencil reference change x1: vertex bytes: 0x00000200
+draws with a stencil reference change x1: fragment bytes: 0x0000005C
+draws with a stencil reference change: command list word 2: 0x00000000
+draws with a stencil reference change: command list word 3: 0x00000000
+draws with a stencil reference change x2: first error: 0x00000000
+draws with a stencil reference change x2: VDM bytes: 0x00000078
+draws with a stencil reference change x2: vertex bytes: 0x000002B0
+draws with a stencil reference change x2: fragment bytes: 0x0000005C
+draws with a stencil reference change x3: first error: 0x00000000
+draws with a stencil reference change x3: VDM bytes: 0x000000A0
+draws with a stencil reference change x3: vertex bytes: 0x00000360
+draws with a stencil reference change x3: fragment bytes: 0x0000005C
+draws with a stencil function change x1: first error: 0x00000000
+draws with a stencil function change x1: VDM bytes: 0x00000050
+draws with a stencil function change x1: vertex bytes: 0x00000200
+draws with a stencil function change x1: fragment bytes: 0x0000005C
+draws with a stencil function change: command list word 2: 0x00000004
+draws with a stencil function change: command list word 3: 0x00000000
+draws with a stencil function change x2: first error: 0x00000000
+draws with a stencil function change x2: VDM bytes: 0x00000078
+draws with a stencil function change x2: vertex bytes: 0x000002B0
+draws with a stencil function change x2: fragment bytes: 0x0000005C
+draws with a stencil function change x3: first error: 0x00000000
+draws with a stencil function change x3: VDM bytes: 0x000000A0
+draws with a stencil function change x3: vertex bytes: 0x00000360
+draws with a stencil function change x3: fragment bytes: 0x0000005C
+draws with a polygon mode change x1: first error: 0x00000000
+draws with a polygon mode change x1: VDM bytes: 0x00000050
+draws with a polygon mode change x1: vertex bytes: 0x00000200
+draws with a polygon mode change x1: fragment bytes: 0x0000005C
+draws with a polygon mode change: command list word 2: 0x00000000
+draws with a polygon mode change: command list word 3: 0x00000000
+draws with a polygon mode change x2: first error: 0x00000000
+draws with a polygon mode change x2: VDM bytes: 0x00000078
+draws with a polygon mode change x2: vertex bytes: 0x000002B0
+draws with a polygon mode change x2: fragment bytes: 0x0000005C
+draws with a polygon mode change x3: first error: 0x00000000
+draws with a polygon mode change x3: VDM bytes: 0x000000A0
+draws with a polygon mode change x3: vertex bytes: 0x00000360
+draws with a polygon mode change x3: fragment bytes: 0x0000005C
+draws with a point and line width change x1: first error: 0x00000000
+draws with a point and line width change x1: VDM bytes: 0x00000050
+draws with a point and line width change x1: vertex bytes: 0x00000200
+draws with a point and line width change x1: fragment bytes: 0x0000005C
+draws with a point and line width change: command list word 2: 0x00000000
+draws with a point and line width change: command list word 3: 0x00000000
+draws with a point and line width change x2: first error: 0x00000000
+draws with a point and line width change x2: VDM bytes: 0x00000078
+draws with a point and line width change x2: vertex bytes: 0x000002B0
+draws with a point and line width change x2: fragment bytes: 0x0000005C
+draws with a point and line width change x3: first error: 0x00000000
+draws with a point and line width change x3: VDM bytes: 0x000000A0
+draws with a point and line width change x3: vertex bytes: 0x00000360
+draws with a point and line width change x3: fragment bytes: 0x0000005C
+draws with a two sided mode change x1: first error: 0x00000000
+draws with a two sided mode change x1: VDM bytes: 0x00000050
+draws with a two sided mode change x1: vertex bytes: 0x00000200
+draws with a two sided mode change x1: fragment bytes: 0x0000005C
+draws with a two sided mode change: command list word 2: 0x00000000
+draws with a two sided mode change: command list word 3: 0x00000000
+draws with a two sided mode change x2: first error: 0x00000000
+draws with a two sided mode change x2: VDM bytes: 0x00000078
+draws with a two sided mode change x2: vertex bytes: 0x000002B0
+draws with a two sided mode change x2: fragment bytes: 0x0000005C
+draws with a two sided mode change x3: first error: 0x00000000
+draws with a two sided mode change x3: VDM bytes: 0x000000A0
+draws with a two sided mode change x3: vertex bytes: 0x00000360
+draws with a two sided mode change x3: fragment bytes: 0x0000005C
+draws with a region clip change x1: first error: 0x00000000
+draws with a region clip change x1: VDM bytes: 0x00000050
+draws with a region clip change x1: vertex bytes: 0x00000200
+draws with a region clip change x1: fragment bytes: 0x0000005C
+draws with a region clip change: command list word 2: 0x00000000
+draws with a region clip change: command list word 3: 0x00000002
+draws with a region clip change x2: first error: 0x00000000
+draws with a region clip change x2: VDM bytes: 0x00000078
+draws with a region clip change x2: vertex bytes: 0x000002B0
+draws with a region clip change x2: fragment bytes: 0x0000005C
+draws with a region clip change x3: first error: 0x00000000
+draws with a region clip change x3: VDM bytes: 0x000000A0
+draws with a region clip change x3: vertex bytes: 0x00000360
+draws with a region clip change x3: fragment bytes: 0x0000005C
+draws with a viewport change x1: first error: 0x00000000
+draws with a viewport change x1: VDM bytes: 0x00000050
+draws with a viewport change x1: vertex bytes: 0x00000210
+draws with a viewport change x1: fragment bytes: 0x0000005C
+draws with a viewport change: command list word 2: 0x00000000
+draws with a viewport change: command list word 3: 0x00000000
+draws with a viewport change x2: first error: 0x00000000
+draws with a viewport change x2: VDM bytes: 0x00000078
+draws with a viewport change x2: vertex bytes: 0x000002D0
+draws with a viewport change x2: fragment bytes: 0x0000005C
+draws with a viewport change x3: first error: 0x00000000
+draws with a viewport change x3: VDM bytes: 0x000000A0
+draws with a viewport change x3: vertex bytes: 0x00000390
+draws with a viewport change x3: fragment bytes: 0x0000005C
+draws with a vertex stream change x1: first error: 0x00000000
+draws with a vertex stream change x1: VDM bytes: 0x00000048
+draws with a vertex stream change x1: vertex bytes: 0x00000214
+draws with a vertex stream change x1: fragment bytes: 0x0000005C
+draws with a vertex stream change: command list word 2: 0x00000000
+draws with a vertex stream change: command list word 3: 0x00000000
+draws with a vertex stream change x2: first error: 0x00000000
+draws with a vertex stream change x2: VDM bytes: 0x00000068
+draws with a vertex stream change x2: vertex bytes: 0x000002D4
+draws with a vertex stream change x2: fragment bytes: 0x0000005C
+draws with a vertex stream change x3: first error: 0x00000000
+draws with a vertex stream change x3: VDM bytes: 0x00000088
+draws with a vertex stream change x3: vertex bytes: 0x00000394
+draws with a vertex stream change x3: fragment bytes: 0x0000005C
+draws with the same programs set again x1: first error: 0x00000000
+draws with the same programs set again x1: VDM bytes: 0x00000048
+draws with the same programs set again x1: vertex bytes: 0x000001D0
+draws with the same programs set again x1: fragment bytes: 0x0000005C
+draws with the same programs set again: command list word 2: 0x00000000
+draws with the same programs set again: command list word 3: 0x00000000
+draws with the same programs set again x2: first error: 0x00000000
+draws with the same programs set again x2: VDM bytes: 0x00000068
+draws with the same programs set again x2: vertex bytes: 0x00000240
+draws with the same programs set again x2: fragment bytes: 0x0000005C
+draws with the same programs set again x3: first error: 0x00000000
+draws with the same programs set again x3: VDM bytes: 0x00000088
+draws with the same programs set again x3: vertex bytes: 0x000002B0
+draws with the same programs set again x3: fragment bytes: 0x0000005C
+precomputed draws x1: first error: 0x00000000
+precomputed draws x1: VDM bytes: 0x00000028
+precomputed draws x1: vertex bytes: 0x00000110
+precomputed draws x1: fragment bytes: 0x0000005C
+precomputed draws: command list word 2: 0x00000000
+precomputed draws: command list word 3: 0x00000000
+precomputed draws x2: first error: 0x00000000
+precomputed draws x2: VDM bytes: 0x00000048
+precomputed draws x2: vertex bytes: 0x00000180
+precomputed draws x2: fragment bytes: 0x0000005C
+precomputed draws x3: first error: 0x00000000
+precomputed draws x3: VDM bytes: 0x00000068
+precomputed draws x3: vertex bytes: 0x000001F0
+precomputed draws x3: fragment bytes: 0x0000005C
+memory callbacks during the cases: 0x00000000
+two lists: first error: 0x00000000
+two lists: the second starts this many bytes after the first's terminator: 0x00000008
+two lists: the context ID word is the same: 0x00000001
+two lists: words 4 to 6 are 0: 0x00000001
+1 KiB VDM: first error of the empty lists: 0x00000000
+1 KiB VDM: empty lists until the callback ran, the last one included: 0x00000061
+1 KiB VDM: the callback's request for an empty list: 0x00000400
+1 KiB VDM: first error of the draws: 0x00000000
+1 KiB VDM: draws until the callback ran, the last one included: 0x00000018
+1 KiB VDM: the callback's request for a draw: 0x00000400
+vertex and fragment callbacks: 0x00000000
+destroy the deferred context: 0x00000000
+release the fragment program: 0x00000000
+release the vertex program: 0x00000000
+unregister the fragment program: 0x00000000
+unregister the vertex program: 0x00000000
+destroy the shader patcher: 0x00000000
+terminate libgxm: 0x00000000
+DONE
