@@ -782,5 +782,6 @@ vita_test(appmgr_app_param_string appmgr/appmgr_app_param_string.c)
 
 vita_test(cpu_writeback_same_register cpu/cpu_writeback_same_register.c)
 vita_test(cpu_strex_overlap cpu/cpu_strex_overlap.c)
+vita_test(cpu_wfi_user cpu/cpu_wfi_user.c)
 
 vita_tests_vpk(VTST00000)

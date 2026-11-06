@@ -1,0 +1,7 @@
+ARM: start: 0x00000000
+ARM: the wait for its end: 0x00000000
+ARM: its exit status: 0x00000001
+Thumb: start: 0x00000000
+Thumb: the wait for its end: 0x00000000
+Thumb: its exit status: 0x00000001
+DONE
