@@ -756,6 +756,7 @@ vita_test(gxm_display_queue_finish_wait gxm/gxm_display_queue_finish_wait.c)
 vita_test(gxm_deferred_callback_threads gxm/gxm_deferred_callback_threads.c)
 vita_test(gxm_deferred_callback_recorder gxm/gxm_deferred_callback_recorder.c)
 vita_test(gxm_deferred_ring_usage gxm/gxm_deferred_ring_usage.c)
+vita_test(gxm_deferred_ring_usage_more gxm/gxm_deferred_ring_usage_more.c)
 
 vita_test(rtc rtc/rtc.c)
 
