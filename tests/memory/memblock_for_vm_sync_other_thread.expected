@@ -1,0 +1,9 @@
+allocate a block for code: 0x00000000
+write and sync the first function: 0x00000000
+the other thread ran it: 0x00000000
+write and sync the second function: 0x00000000
+the other thread waited for the rewrite: 0x00000000
+the first run returned: 0x00000001
+the second run returned: 0x00000002
+free the block: 0x00000000
+DONE
