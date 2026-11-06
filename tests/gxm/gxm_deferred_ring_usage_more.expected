@@ -1,0 +1,139 @@
+initialize libgxm: 0x00000000
+allocate the block: 0x00000000
+map the block: 0x00000000
+create the deferred context: 0x00000000
+create the shader patcher: 0x00000000
+register the programs: 0x00000000
+create the textured vertex program: 0x00000000
+create the clear vertex program: 0x00000000
+create the textured fragment program: 0x00000000
+create the clear fragment program: 0x00000000
+find uClearColor: 0x00000001
+init texture 0: 0x00000000
+init texture 1: 0x00000000
+textured draws x1: first error: 0x00000000
+textured draws x1: VDM bytes: 0x00000028
+textured draws x1: vertex bytes: 0x00000154
+textured draws x1: fragment bytes: 0x00000070
+textured draws x2: first error: 0x00000000
+textured draws x2: VDM bytes: 0x00000048
+textured draws x2: vertex bytes: 0x000001D0
+textured draws x2: fragment bytes: 0x00000070
+textured draws x3: first error: 0x00000000
+textured draws x3: VDM bytes: 0x00000068
+textured draws x3: vertex bytes: 0x00000240
+textured draws x3: fragment bytes: 0x00000070
+textured draws with a texture change x1: first error: 0x00000000
+textured draws with a texture change x1: VDM bytes: 0x00000050
+textured draws with a texture change x1: vertex bytes: 0x00000210
+textured draws with a texture change x1: fragment bytes: 0x000000A0
+textured draws with a texture change x2: first error: 0x00000000
+textured draws with a texture change x2: VDM bytes: 0x00000078
+textured draws with a texture change x2: vertex bytes: 0x000002C0
+textured draws with a texture change x2: fragment bytes: 0x000000D0
+textured draws with a texture change x3: first error: 0x00000000
+textured draws with a texture change x3: VDM bytes: 0x000000A0
+textured draws with a texture change x3: vertex bytes: 0x00000370
+textured draws with a texture change x3: fragment bytes: 0x00000100
+textured draws with the same texture set again x1: first error: 0x00000000
+textured draws with the same texture set again x1: VDM bytes: 0x00000048
+textured draws with the same texture set again x1: vertex bytes: 0x000001D0
+textured draws with the same texture set again x1: fragment bytes: 0x00000070
+textured draws with the same texture set again x2: first error: 0x00000000
+textured draws with the same texture set again x2: VDM bytes: 0x00000068
+textured draws with the same texture set again x2: vertex bytes: 0x00000240
+textured draws with the same texture set again x2: fragment bytes: 0x00000070
+textured draws with the same texture set again x3: first error: 0x00000000
+textured draws with the same texture set again x3: VDM bytes: 0x00000088
+textured draws with the same texture set again x3: vertex bytes: 0x000002B0
+textured draws with the same texture set again x3: fragment bytes: 0x00000070
+textured draws with a set vertex default uniform buffer x1: first error: 0x00000000
+textured draws with a set vertex default uniform buffer x1: VDM bytes: 0x00000028
+textured draws with a set vertex default uniform buffer x1: vertex bytes: 0x00000114
+textured draws with a set vertex default uniform buffer x1: fragment bytes: 0x00000070
+textured draws with a set vertex default uniform buffer x2: first error: 0x00000000
+textured draws with a set vertex default uniform buffer x2: VDM bytes: 0x00000048
+textured draws with a set vertex default uniform buffer x2: vertex bytes: 0x00000150
+textured draws with a set vertex default uniform buffer x2: fragment bytes: 0x00000070
+textured draws with a set vertex default uniform buffer x3: first error: 0x00000000
+textured draws with a set vertex default uniform buffer x3: VDM bytes: 0x00000068
+textured draws with a set vertex default uniform buffer x3: vertex bytes: 0x00000180
+textured draws with a set vertex default uniform buffer x3: fragment bytes: 0x00000070
+clear draws x1: first error: 0x00000000
+clear draws x1: VDM bytes: 0x00000028
+clear draws x1: vertex bytes: 0x00000100
+clear draws x1: fragment bytes: 0x00000068
+clear draws x2: first error: 0x00000000
+clear draws x2: VDM bytes: 0x00000048
+clear draws x2: vertex bytes: 0x0000013C
+clear draws x2: fragment bytes: 0x000000B0
+clear draws x3: first error: 0x00000000
+clear draws x3: VDM bytes: 0x00000068
+clear draws x3: vertex bytes: 0x0000017C
+clear draws x3: fragment bytes: 0x000000F0
+clear draws with uniform data written x1: first error: 0x00000000
+clear draws with uniform data written x1: VDM bytes: 0x00000028
+clear draws with uniform data written x1: vertex bytes: 0x00000100
+clear draws with uniform data written x1: fragment bytes: 0x00000068
+clear draws with uniform data written x2: first error: 0x00000000
+clear draws with uniform data written x2: VDM bytes: 0x00000048
+clear draws with uniform data written x2: vertex bytes: 0x0000013C
+clear draws with uniform data written x2: fragment bytes: 0x000000B0
+clear draws with uniform data written x3: first error: 0x00000000
+clear draws with uniform data written x3: VDM bytes: 0x00000068
+clear draws with uniform data written x3: vertex bytes: 0x0000017C
+clear draws with uniform data written x3: fragment bytes: 0x000000F0
+clear draws with a vertex uniform buffer change x1: first error: 0x00000000
+clear draws with a vertex uniform buffer change x1: VDM bytes: 0x00000048
+clear draws with a vertex uniform buffer change x1: vertex bytes: 0x0000013C
+clear draws with a vertex uniform buffer change x1: fragment bytes: 0x000000B0
+clear draws with a vertex uniform buffer change x2: first error: 0x00000000
+clear draws with a vertex uniform buffer change x2: VDM bytes: 0x00000068
+clear draws with a vertex uniform buffer change x2: vertex bytes: 0x0000017C
+clear draws with a vertex uniform buffer change x2: fragment bytes: 0x000000F0
+clear draws with a vertex uniform buffer change x3: first error: 0x00000000
+clear draws with a vertex uniform buffer change x3: VDM bytes: 0x00000088
+clear draws with a vertex uniform buffer change x3: vertex bytes: 0x000001BC
+clear draws with a vertex uniform buffer change x3: fragment bytes: 0x00000130
+clear draws with a fragment uniform buffer change x1: first error: 0x00000000
+clear draws with a fragment uniform buffer change x1: VDM bytes: 0x00000048
+clear draws with a fragment uniform buffer change x1: vertex bytes: 0x0000013C
+clear draws with a fragment uniform buffer change x1: fragment bytes: 0x000000B0
+clear draws with a fragment uniform buffer change x2: first error: 0x00000000
+clear draws with a fragment uniform buffer change x2: VDM bytes: 0x00000068
+clear draws with a fragment uniform buffer change x2: vertex bytes: 0x0000017C
+clear draws with a fragment uniform buffer change x2: fragment bytes: 0x000000F0
+clear draws with a fragment uniform buffer change x3: first error: 0x00000000
+clear draws with a fragment uniform buffer change x3: VDM bytes: 0x00000088
+clear draws with a fragment uniform buffer change x3: vertex bytes: 0x000001BC
+clear draws with a fragment uniform buffer change x3: fragment bytes: 0x00000130
+clear draws with a fragment program enable change x1: first error: 0x00000000
+clear draws with a fragment program enable change x1: VDM bytes: 0x00000048
+clear draws with a fragment program enable change x1: vertex bytes: 0x0000013C
+clear draws with a fragment program enable change x1: fragment bytes: 0x00000078
+clear draws with a fragment program enable change x2: first error: 0x00000000
+clear draws with a fragment program enable change x2: VDM bytes: 0x00000068
+clear draws with a fragment program enable change x2: vertex bytes: 0x0000017C
+clear draws with a fragment program enable change x2: fragment bytes: 0x000000C0
+clear draws with a fragment program enable change x3: first error: 0x00000000
+clear draws with a fragment program enable change x3: VDM bytes: 0x00000088
+clear draws with a fragment program enable change x3: vertex bytes: 0x000001BC
+clear draws with a fragment program enable change x3: fragment bytes: 0x000000D0
+draws switching between the program pairs x1: first error: 0x00000000
+draws switching between the program pairs x1: VDM bytes: 0x00000050
+draws switching between the program pairs x1: vertex bytes: 0x00000214
+draws switching between the program pairs x1: fragment bytes: 0x000000D0
+draws switching between the program pairs x2: first error: 0x00000000
+draws switching between the program pairs x2: VDM bytes: 0x00000078
+draws switching between the program pairs x2: vertex bytes: 0x000002D0
+draws switching between the program pairs x2: fragment bytes: 0x00000138
+draws switching between the program pairs x3: first error: 0x00000000
+draws switching between the program pairs x3: VDM bytes: 0x000000A0
+draws switching between the program pairs x3: vertex bytes: 0x000003E4
+draws switching between the program pairs x3: fragment bytes: 0x000001A0
+memory callbacks: 0x00000000
+destroy the deferred context: 0x00000000
+release and unregister the programs: 0x00000000
+destroy the shader patcher: 0x00000000
+terminate libgxm: 0x00000000
+DONE
