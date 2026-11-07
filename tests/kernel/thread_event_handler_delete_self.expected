@@ -1,0 +1,12 @@
+register the handler: 0x00000000
+the wait for the target's end: 0x00000000
+its exit status: 0x00000066
+its entry ran: 0x00000001
+the handler's runs: 0x00000002
+START: delete the target by its UID: 0x80027101
+START: delete thread 0: 0x80028022
+END: delete the target by its UID: 0x80027101
+END: delete thread 0: 0x80028022
+unregister the handler: 0x00000000
+delete the target: 0x00000000
+DONE

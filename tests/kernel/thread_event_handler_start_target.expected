@@ -1,0 +1,5 @@
+in its START handler: start the target: 0x80027101
+in its START handler: the wait for its end: 0x00000000
+in its END handler: start the target: 0x80027101
+in its END handler: the wait for its end: 0x00000000
+DONE
