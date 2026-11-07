@@ -1,0 +1,31 @@
+W at 0x70 changed to 0xB0: W's priority while it waits: 0x00000070
+W at 0x70 changed to 0xB0: X's priority while it waits: 0x00000080
+W at 0x70 changed to 0xB0: the change of W to 0xB0: 0x00000000
+W at 0x70 changed to 0xB0: W's priority after the change: 0x00000070
+W at 0x70 changed to 0xB0: the first woken (1 is W, 2 is X): 0x00000001
+W at 0x70 changed to 0xB0: the second woken: 0x00000002
+W at 0x70 changed to 0x80: W's priority while it waits: 0x00000070
+W at 0x70 changed to 0x80: X's priority while it waits: 0x00000080
+W at 0x70 changed to 0x80: the change of W to 0x80: 0x00000000
+W at 0x70 changed to 0x80: W's priority after the change: 0x00000080
+W at 0x70 changed to 0x80: the first woken (1 is W, 2 is X): 0x00000002
+W at 0x70 changed to 0x80: the second woken: 0x00000001
+W at 0x70 changed to 0x70: W's priority while it waits: 0x00000070
+W at 0x70 changed to 0x70: X's priority while it waits: 0x00000080
+W at 0x70 changed to 0x70: the change of W to 0x70: 0x00000000
+W at 0x70 changed to 0x70: W's priority after the change: 0x00000070
+W at 0x70 changed to 0x70: the first woken (1 is W, 2 is X): 0x00000001
+W at 0x70 changed to 0x70: the second woken: 0x00000002
+W at 0xB0 changed to 0xB8: W's priority while it waits: 0x00000080
+W at 0xB0 changed to 0xB8: X's priority while it waits: 0x00000080
+W at 0xB0 changed to 0xB8: the change of W to 0xB8: 0x00000000
+W at 0xB0 changed to 0xB8: W's priority after the change: 0x00000080
+W at 0xB0 changed to 0xB8: the first woken (1 is W, 2 is X): 0x00000001
+W at 0xB0 changed to 0xB8: the second woken: 0x00000002
+W at 0xB0 changed to 0xB0: W's priority while it waits: 0x00000080
+W at 0xB0 changed to 0xB0: X's priority while it waits: 0x00000080
+W at 0xB0 changed to 0xB0: the change of W to 0xB0: 0x00000000
+W at 0xB0 changed to 0xB0: W's priority after the change: 0x00000080
+W at 0xB0 changed to 0xB0: the first woken (1 is W, 2 is X): 0x00000001
+W at 0xB0 changed to 0xB0: the second woken: 0x00000002
+DONE

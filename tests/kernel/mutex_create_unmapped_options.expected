@@ -1,0 +1,9 @@
+option pointer 0x4: a mutex create: 0x80022005
+option pointer 0x4: a mutex create with the ceiling attribute: 0x80022005
+option pointer 0x4: a mutex create with an init count of 2: 0x80022005
+option pointer 0x4: a lightweight mutex create: 0x80022005
+a freed block: a mutex create: 0x80022005
+a freed block: a mutex create with the ceiling attribute: 0x80022005
+a freed block: a mutex create with an init count of 2: 0x80022005
+a freed block: a lightweight mutex create: 0x80022005
+DONE
