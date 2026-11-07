@@ -760,6 +760,17 @@ vita_test(gxm_deferred_callback_recorder gxm/gxm_deferred_callback_recorder.c)
 vita_test(gxm_deferred_ring_usage gxm/gxm_deferred_ring_usage.c)
 vita_test(gxm_deferred_ring_usage_more gxm/gxm_deferred_ring_usage_more.c)
 
+# Render tests, which capture what they draw, see common/capture.h and common/render.h
+vita_test(render_clear render/render_clear.c)
+vita_test(render_rasterization render/render_rasterization.c)
+vita_test(render_vertex_color render/render_vertex_color.c)
+vita_test(render_blend render/render_blend.c)
+vita_test(render_depth render/render_depth.c)
+vita_test(render_stencil render/render_stencil.c)
+vita_test(render_texture_formats render/render_texture_formats.c)
+vita_test(render_texture_sampling render/render_texture_sampling.c)
+vita_test(render_cull render/render_cull.c)
+
 vita_test(rtc rtc/rtc.c)
 
 vita_test(strings clib/strings.c)

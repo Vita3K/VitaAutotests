@@ -1,0 +1,8 @@
+set up rendering: 0x00000000
+begin a frame: 0x00000000
+clear it: 0x00000000
+capture clear: 0x00000000
+begin a frame: 0x00000000
+draw rectangles in flat colors: 0x00000000
+capture colors: 0x00000000
+DONE

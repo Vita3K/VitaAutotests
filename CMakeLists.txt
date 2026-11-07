@@ -41,7 +41,20 @@ function(vita_tests_vpk title_id)
 	endforeach()
 	file(CONFIGURE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/tests.inc CONTENT "${table}")
 
-	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${sources})
+	# The shader binaries the render tests draw with, as arrays named <name>_gxp in shaders.c
+	set(shaders "#include \"render.h\"\n")
+	foreach(name clear_v clear_f color_v color_f texture_v texture_f)
+		set(gxp ${PROJECT_SOURCE_DIR}/common/shaders/${name}.gxp)
+		set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS ${gxp})
+		file(READ ${gxp} hex HEX)
+		string(REGEX REPLACE "(..)" "0x\\1," bytes "${hex}")
+		string(APPEND shaders "static const unsigned char ${name}_data[] __attribute__((aligned(16))) = { ${bytes} };\n")
+		string(APPEND shaders "const SceGxmProgram *const ${name}_gxp = (const SceGxmProgram *)${name}_data;\n")
+	endforeach()
+	file(CONFIGURE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/shaders.c CONTENT "${shaders}" @ONLY)
+
+	add_executable(vita-autotests ${PROJECT_SOURCE_DIR}/common/main.c ${PROJECT_SOURCE_DIR}/common/capture.c
+		${PROJECT_SOURCE_DIR}/common/render.c ${CMAKE_CURRENT_BINARY_DIR}/shaders.c ${sources})
 	target_include_directories(vita-autotests PRIVATE ${PROJECT_SOURCE_DIR}/common ${CMAKE_CURRENT_BINARY_DIR})
 	# Not SceProcessmgr_stub: a Vita refuses to install a vpk that imports from it, with C2-12845-0
 	target_link_libraries(vita-autotests SceLibKernel_stub SceKernelThreadMgr_stub SceIofilemgr_stub SceAppMgr_stub SceSysmem_stub SceFiber_stub SceSysmodule_stub SceRtc_stub SceAudio_stub SceDisplay_stub SceGxm_stub SceAppUtil_stub SceFios2Kernel_stub)
