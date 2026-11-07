@@ -317,7 +317,9 @@ def main():
             continue
 
         if args.generate:
-            if status == "exited" and output:
+            # A test whose .expected file stops before DONE ends with a fault, so its run times out
+            fault_ending = expected_path.exists() and not normalize(expected_path.read_text()).endswith(DONE.decode())
+            if output and (status == "exited" or (status == "timeout" and fault_ending)):
                 expected_path.write_text(normalize(output))
                 print(f"SAVED {relative}")
             else:
@@ -328,6 +330,12 @@ def main():
         expected = normalize(expected_path.read_text()) if expected_path.exists() else None
         if status == "exited" and expected is not None and normalize(output) == expected:
             print(f"PASS  {relative}")
+            continue
+        # A .expected file that stops before DONE is the output of a test whose app the Vita ends with
+        # a fault, so the output stops there and the run times out. A hang at the same line looks the
+        # same from here.
+        if status == "timeout" and expected is not None and not expected.endswith(DONE.decode()) and normalize(output) == expected:
+            print(f"PASS  {relative} (the app ended without DONE, as expected)")
             continue
         failed.append(name)
         reason = status if status != "exited" else "no .expected file" if expected is None else "output differs"
