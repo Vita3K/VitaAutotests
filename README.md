@@ -4,7 +4,7 @@ Small PS Vita homebrew tests, each checking one area of system behavior, with th
 
 The tests so far cover the kernel thread manager and its sync primitives, memory blocks, file I/O, save data slots, fibers, system modules, audio output, the display, the RTC library, and the sceClib string, format and memory space calls. Other areas can be added in the same format.
 
-A test prints one line per value it observes, like `lock with a count of 0: 0x8002000F`, and ends with `DONE`. A run passes when the test exits with 0 and its output matches the `.expected` file next to its source. Tests print errors, counts and comparisons, never UIDs, addresses or times, so the output is the same on every run.
+A test prints one line per value it observes, like `lock with a count of 0: 0x8002000F`, and ends with `DONE`. A run passes when the test exits with 0 and its output matches the `.expected` file next to its source. A test whose app the Vita ends with a fault, like `cpu_fetch_null_arm`, has an `.expected` file that stops at the last line before the fault, without `DONE`. `run_tests.py -g` saves the output of such a test, which times out, only when its `.expected` file already stops before `DONE`, so the first one is saved by hand. Tests print errors, counts and comparisons, never UIDs, addresses or times, so the output is the same on every run.
 
 ## Build
 

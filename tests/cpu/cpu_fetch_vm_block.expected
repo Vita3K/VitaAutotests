@@ -1,0 +1,13 @@
+create the worker: 0x00000001
+allocate the block: 0x00000001
+its base: 0x00000000
+sync the code: 0x00000000
+release the worker: 0x00000001
+the wait for the worker's end: 0x00000000
+its exit status: 0x00000007
+its thread info: 0x00000000
+its status: 0x00000010
+the call returned: 0x00000001
+r0 after the call: 0x00000055
+the main thread goes on: 0x00000001
+DONE

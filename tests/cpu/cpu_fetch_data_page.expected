@@ -1,0 +1,5 @@
+create the worker: 0x00000001
+allocate the block: 0x00000001
+its base: 0x00000000
+sync the code: 0x00000000
+release the worker: 0x00000001
