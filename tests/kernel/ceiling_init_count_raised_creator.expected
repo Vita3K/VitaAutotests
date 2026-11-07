@@ -1,0 +1,17 @@
+lock the mutex with the ceiling 0x70: 0x00000000
+the main thread's priority: 0x00000070
+init count 1, ceiling 0x60: the create: 0x00000000
+init count 1, ceiling 0x60: the ceiling in its info: 0x00000060
+init count 1, ceiling 0x60: the priority after it: 0x00000060
+init count 1, ceiling 0x80: the create: 0x00000000
+init count 1, ceiling 0x80: the ceiling in its info: 0x00000080
+init count 1, ceiling 0x80: the priority after it: 0x00000070
+init count 1, ceiling 0x0: the create: 0x00000000
+init count 1, ceiling 0x0: the ceiling in its info: 0x00000070
+init count 1, ceiling 0x0: the priority after it: 0x00000070
+init count 0, ceiling 0x80: the create: 0x00000000
+init count 0, ceiling 0x80: the ceiling in its info: 0x00000080
+init count 0, ceiling 0x80: the priority after it: 0x00000070
+unlock the mutex with the ceiling 0x70: 0x00000000
+the main thread's priority after it: 0x000000B0
+DONE

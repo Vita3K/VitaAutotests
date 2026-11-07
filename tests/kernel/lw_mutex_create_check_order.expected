@@ -1,0 +1,19 @@
+attribute 0x4: 0x8002000E
+attribute 0x8000: 0x8002000E
+attribute 0x2000: 0x00000000
+attribute 0x2002: 0x00000000
+option size 0: 0x00000000
+option size 4: 0x00000000
+option size 8: 0x8002000B
+attribute 0x4, init count -1: 0x8002000E
+attribute 0x4, option size 8: 0x8002000E
+attribute 0x4, NULL name: 0x8002000E
+attribute 0x4, NULL work area: 0x80020006
+attribute 0x4, misaligned work area: 0x80020007
+option size 8, init count -1: 0x8002000B
+option size 8, NULL name: 0x8002000B
+init count -1, NULL name: 0x8002000F
+init count -1, NULL work area: 0x80020006
+NULL name, NULL work area: 0x80020006
+NULL name, misaligned work area: 0x80020007
+DONE

@@ -1,0 +1,14 @@
+no option struct, init count 2: 0x80020005
+no option struct, init count -1: 0x80020005
+no option struct, attribute 0x8: 0x8002000E
+no option struct, NULL name: 0x80020006
+option size 12, init count 2: 0x8002000B
+option size 12, init count -1: 0x8002000B
+option size 12, attribute 0x8: 0x8002000E
+option size 12, NULL name: 0x80020006
+option size 12 without the ceiling attribute, init count 2: 0x8002000B
+ceiling 0xC0, init count 2: 0x8002000F
+ceiling 0xC0, init count -1: 0x8002000F
+ceiling 0xC0, attribute 0x8: 0x8002000E
+ceiling 0xC0, NULL name: 0x80020006
+DONE

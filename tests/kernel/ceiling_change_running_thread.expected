@@ -1,0 +1,25 @@
+main changes T while it spins: T's priority before the change: 0x00000070
+main changes T while it spins: the change of T to 0xB0: 0x00000000
+main changes T while it spins: T's priority after the change: 0x00000070
+main changes T while it spins: T's own priority once it holds the mutex: 0x00000070
+main changes T while it spins: T's own priority in its info after the spin: 0x00000070
+main changes T while it spins: T's own priority after the unlock: 0x000000B0
+main changes T while it waits: T's priority before the change: 0x00000070
+main changes T while it waits: the change of T to 0xB0: 0x00000000
+main changes T while it waits: T's priority after the change: 0x00000070
+main changes T while it waits: T's own priority once it holds the mutex: 0x00000070
+main changes T while it waits: T's own priority in its info after the wait: 0x00000070
+main changes T while it waits: T's own priority after the unlock: 0x000000B0
+T changes itself: T's own priority once it holds the mutex: 0x00000070
+T changes itself: T's own priority from its TLS right after its change: 0x00000070
+T changes itself: T's own priority in its info after the change: 0x00000070
+T changes itself: T's own priority after the unlock: 0x000000B0
+T changes itself then delays: T's own priority once it holds the mutex: 0x00000070
+T changes itself then delays: T's own priority from its TLS right after its change: 0x00000070
+T changes itself then delays: T's own priority in its info after the delay: 0x00000070
+T changes itself then delays: T's own priority after the unlock: 0x000000B0
+T changes itself then uses a plain mutex: T's own priority once it holds the mutex: 0x00000070
+T changes itself then uses a plain mutex: T's own priority from its TLS right after its change: 0x00000070
+T changes itself then uses a plain mutex: T's own priority in its info after the plain mutex: 0x00000080
+T changes itself then uses a plain mutex: T's own priority after the unlock: 0x000000B0
+DONE
