@@ -1,0 +1,10 @@
+create the worker: 0x00000001
+allocate the block: 0x00000001
+its base: 0x00000000
+sync the code: 0x00000000
+start the worker: 0x00000000
+the first call returned: 0x00000000
+r0 after the first call: 0x00000055
+free the block: 0x00000000
+no block holds its base: 0x00000001
+release the worker: 0x00000001

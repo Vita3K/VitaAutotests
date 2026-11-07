@@ -40,8 +40,9 @@ static SceUID fetch_create_worker(SceKernelThreadEntry entry) {
     return sceKernelCreateThread("worker", entry, SCE_KERNEL_DEFAULT_PRIORITY_USER, 0x4000, 0, 0, NULL);
 }
 
-// Starts the worker on target, waits until its call returned, and prints what happened
-static void fetch_run(SceUID worker, SceUInt32 target) {
+// Starts the worker on target, waits until its call returned, and prints what happened. Every test
+// but cpu_fetch_freed_code uses it.
+__attribute__((unused)) static void fetch_run(SceUID worker, SceUInt32 target) {
     fetch_target = target;
     PRINT("release the worker", 1);
     const int start = sceKernelStartThread(worker, 0, NULL);
