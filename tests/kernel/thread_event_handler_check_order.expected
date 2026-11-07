@@ -1,0 +1,17 @@
+register the handler: 0x00000000
+the wait for the target's end: 0x00000000
+the handler's runs: 0x00000001
+start thread 0: 0x80028022
+start an unknown UID: 0x80028021
+create a thread with a NULL name: 0x80022005
+create a thread with the affinity mask 0x80000: 0x80027101
+register a handler with a NULL name: 0x80020006
+register a handler for an unknown thread: 0x80028021
+unregister a semaphore's UID: 0x80027101
+unregister an unknown UID: 0x80028061
+delete thread 0: 0x80028022
+delete an unknown UID: 0x80028021
+register a handler at a data address: 0x80020006
+register a handler at NULL: 0x80020006
+register a handler at a code address: 0x00000000
+DONE
