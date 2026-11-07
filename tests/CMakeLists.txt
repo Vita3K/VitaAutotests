@@ -545,6 +545,7 @@ vita_test(cb_wait_callback_writes_timeout_more kernel/cb_wait_callback_writes_ti
 vita_test(cb_wait_take_final_check kernel/cb_wait_take_final_check.c)
 vita_test(cb_wait_take_final_check_more kernel/cb_wait_take_final_check_more.c)
 vita_test(cb_wait_self_notify_during_sleep kernel/cb_wait_self_notify_during_sleep.c)
+vita_test(signal_wait_second_notify kernel/signal_wait_second_notify.c)
 vita_test(cb_wait_deadline_during_callback kernel/cb_wait_deadline_during_callback.c)
 vita_test(cond_callback_departure kernel/cond_callback_departure.c)
 vita_test(cond_callback_after_wake kernel/cond_callback_after_wake.c)

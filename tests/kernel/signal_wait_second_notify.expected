@@ -1,0 +1,17 @@
+signal wait with callbacks: runs of the callback when T sleeps again: 0x00000001
+signal wait with callbacks: T waits with callbacks again: 0x00000001
+signal wait with callbacks: runs of the callback after the second notify: 0x00000002
+signal wait with callbacks: the count of the second run: 0x00000002
+signal wait with callbacks: T waits with callbacks after the second notify: 0x00000001
+signal wait with callbacks: the result: 0x00000000
+signal wait with callbacks: the result of sceKernelCheckCallback: 0x00000000
+signal wait with callbacks: runs of the callback after the check: 0x00000002
+signal wait with callbacks and no timeout: runs of the callback when T sleeps again: 0x00000001
+signal wait with callbacks and no timeout: T waits with callbacks again: 0x00000001
+signal wait with callbacks and no timeout: runs of the callback after the second notify: 0x00000002
+signal wait with callbacks and no timeout: the count of the second run: 0x00000002
+signal wait with callbacks and no timeout: T waits with callbacks after the second notify: 0x00000001
+signal wait with callbacks and no timeout: the result: 0x00000000
+signal wait with callbacks and no timeout: the result of sceKernelCheckCallback: 0x00000000
+signal wait with callbacks and no timeout: runs of the callback after the check: 0x00000002
+DONE
