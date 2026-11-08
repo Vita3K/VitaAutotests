@@ -1,0 +1,17 @@
+a 32 character name with attr 0x80: 0x80024002
+a 255 character name with attr 0x80: 0x80024002
+a 31 character name with attr 0x80: 0x8002000E
+a 32 character name with attr 0x81: 0x80024002
+a 32 character name with attr 0x1: 0x8002000E
+a 32 character name, attr 0x80 and a function at a data address: 0x80024002
+a 31 character name, attr 0x80 and a function at a data address: 0x8002000E
+a 31 character name, attr 0 and a function at a data address: 0x80020006
+a 32 character name with attr 0: created: 0x00000000
+its info name length: 0x0000001F
+a NULL name with attr 0x80: 0x80020006
+a NULL name with attr 0x1: 0x80020006
+the unmapped name is in no block, for attr 0x80: 0x00000001
+an unmapped name with attr 0x80: 0x80022005
+the unmapped name is in no block, for attr 0x1: 0x00000001
+an unmapped name with attr 0x1: 0x80022005
+DONE

@@ -1,0 +1,13 @@
+create a semaphore before the others: 0x00000000
+plain semaphores created before an error or the end of the loop: 0x000007EC
+the error: 0x8002450D
+an openable semaphore while they are there: 0x00000000
+a thread while they are there: 0x00000000
+a callback while they are there: 0x8002450D
+every one deletes: 0x00000001
+openable semaphores created before an error or the end of the loop: 0x000000EC
+the error: 0x8002450D
+a plain semaphore while they are there: 0x00000000
+a callback while they are there: 0x00000000
+every one deletes: 0x00000001
+DONE

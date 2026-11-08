@@ -1,0 +1,27 @@
+suspend it: 0x00000001
+read the context: 0x00000000
+write the new registers: 0x00000000
+resume it: 0x00000000
+signal the semaphore: 0x00000000
+the landing function ran: 0x00000001
+r0 is 0, the result of the wait: 0x00000001
+r0 holds the set r0: 0x00000000
+r1 is 0xDEADBEEF: 0x00000001
+r2 is 0xDEADBEEF: 0x00000001
+r3 is 0xDEADBEEF: 0x00000001
+r4 is 0, the result of the wait: 0x00000001
+r4 holds the set r4: 0x00000000
+r5 holds the set r5: 0x00000000
+r6 holds the set r6: 0x00000000
+r7 holds the set r7: 0x00000000
+r8 holds the set r0: 0x00000001
+r9 holds the set r1: 0x00000001
+r10 holds the set r2: 0x00000001
+r11 holds the set r3: 0x00000001
+r8 holds the set r8: 0x00000000
+r9 holds the set r9: 0x00000000
+r10 holds the set r10: 0x00000000
+r11 holds the set r11: 0x00000000
+r12 is 0xDEADBEEF: 0x00000001
+wait for the thread to end: 0x00000000
+DONE

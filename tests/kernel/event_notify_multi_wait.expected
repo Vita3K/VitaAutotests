@@ -1,0 +1,53 @@
+the set completes the wait: register the callback to E: 0x00000000
+the set completes the wait: the notify: 0x00000000
+the set completes the wait: E's waiting threads after the notify: 0x00000000
+the set completes the wait: F's waiting threads after the notify: 0x00000001
+the set completes the wait: the callback's notifications after the notify: 0x00000001
+the set completes the wait: T's status after the notify: 0x00000002
+the set completes the wait: T's wait type after the notify: 0x00000000
+the set completes the wait: runs of the callback: 0x00000001
+the set completes the wait: the notify ID is E: 0x00000001
+the set completes the wait: the count: 0x00000001
+the set completes the wait: the argument: 0x00000055
+the set completes the wait: the join: 0x00000000
+the set completes the wait: T's wait result: 0x00000001
+the set completes the wait: runs of the callback when the wait returned: 0x00000001
+the callback's event isn't waited: register the callback to E: 0x00000000
+the callback's event isn't waited: the notify: 0x00000000
+the callback's event isn't waited: E's waiting threads after the notify: 0x00000000
+the callback's event isn't waited: F's waiting threads after the notify: 0x00000001
+the callback's event isn't waited: G's waiting threads after the notify: 0x00000001
+the callback's event isn't waited: the callback's notifications after the notify: 0x00000001
+the callback's event isn't waited: T's status after the notify: 0x00000002
+the callback's event isn't waited: T's wait type after the notify: 0x00000000
+the callback's event isn't waited: runs of the callback: 0x00000001
+the callback's event isn't waited: the notify ID is E: 0x00000001
+the callback's event isn't waited: the count: 0x00000001
+the callback's event isn't waited: the argument: 0x00000055
+the callback's event isn't waited: T waits again: 0x00000001
+the callback's event isn't waited: E's waiting threads then: 0x00000000
+the callback's event isn't waited: F's waiting threads then: 0x00000001
+the callback's event isn't waited: G's waiting threads then: 0x00000001
+the callback's event isn't waited: the release: 0x00000000
+the callback's event isn't waited: the join: 0x00000000
+the callback's event isn't waited: T's wait result: 0x00000001
+the callback's event isn't waited: runs of the callback when the wait returned: 0x00000001
+the callback's event is waited for another bit: register the callback to E: 0x00000000
+the callback's event is waited for another bit: the notify: 0x00000000
+the callback's event is waited for another bit: E's waiting threads after the notify: 0x00000001
+the callback's event is waited for another bit: F's waiting threads after the notify: 0x00000001
+the callback's event is waited for another bit: the callback's notifications after the notify: 0x00000001
+the callback's event is waited for another bit: T's status after the notify: 0x00000002
+the callback's event is waited for another bit: T's wait type after the notify: 0x00000000
+the callback's event is waited for another bit: runs of the callback: 0x00000001
+the callback's event is waited for another bit: the notify ID is E: 0x00000001
+the callback's event is waited for another bit: the count: 0x00000001
+the callback's event is waited for another bit: the argument: 0x00000055
+the callback's event is waited for another bit: T waits again: 0x00000001
+the callback's event is waited for another bit: E's waiting threads then: 0x00000001
+the callback's event is waited for another bit: F's waiting threads then: 0x00000001
+the callback's event is waited for another bit: the release: 0x00000000
+the callback's event is waited for another bit: the join: 0x00000000
+the callback's event is waited for another bit: T's wait result: 0x00000001
+the callback's event is waited for another bit: runs of the callback when the wait returned: 0x00000001
+DONE

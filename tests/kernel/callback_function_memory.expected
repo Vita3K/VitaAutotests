@@ -1,0 +1,6 @@
+a function in the app's code: 0x00000000
+a function in the app's read-only data: 0x00000000
+allocate a USER_RW block: 0x00000000
+a function in a USER_RW block: 0x80020006
+a function on the stack: 0x80020006
+DONE

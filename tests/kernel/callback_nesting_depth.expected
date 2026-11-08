@@ -1,0 +1,102 @@
+3 levels by checks: create the callback: 0x00000000
+3 levels by checks: the outer call: 0x00000001
+3 levels by checks: runs: 0x00000003
+3 levels by checks: the deepest level: 0x00000003
+3 levels by checks: levels still open after: 0x00000000
+3 levels by checks: level 1: the argument: 0x00000001
+3 levels by checks: level 1: the count: 0x00000001
+3 levels by checks: level 1: the call inside it: 0x00000001
+3 levels by checks: level 2: the argument: 0x00000002
+3 levels by checks: level 2: the count: 0x00000001
+3 levels by checks: level 2: the call inside it: 0x00000001
+3 levels by checks: level 3: the argument: 0x00000003
+3 levels by checks: level 3: the count: 0x00000001
+3 levels by checks: notifications left: 0x00000000
+3 levels by checks: the next check: 0x00000000
+3 levels by checks: delete the callback: 0x00000000
+4 levels by checks: create the callback: 0x00000000
+4 levels by checks: the outer call: 0x00000001
+4 levels by checks: runs: 0x00000004
+4 levels by checks: the deepest level: 0x00000004
+4 levels by checks: levels still open after: 0x00000000
+4 levels by checks: level 1: the argument: 0x00000001
+4 levels by checks: level 1: the count: 0x00000001
+4 levels by checks: level 1: the call inside it: 0x00000001
+4 levels by checks: level 2: the argument: 0x00000002
+4 levels by checks: level 2: the count: 0x00000001
+4 levels by checks: level 2: the call inside it: 0x00000001
+4 levels by checks: level 3: the argument: 0x00000003
+4 levels by checks: level 3: the count: 0x00000001
+4 levels by checks: level 3: the call inside it: 0x00000001
+4 levels by checks: level 4: the argument: 0x00000004
+4 levels by checks: level 4: the count: 0x00000001
+4 levels by checks: notifications left: 0x00000000
+4 levels by checks: the next check: 0x00000000
+4 levels by checks: delete the callback: 0x00000000
+3 levels by delays: create the callback: 0x00000000
+3 levels by delays: the outer call: 0x00000000
+3 levels by delays: runs: 0x00000003
+3 levels by delays: the deepest level: 0x00000003
+3 levels by delays: levels still open after: 0x00000000
+3 levels by delays: level 1: the argument: 0x00000001
+3 levels by delays: level 1: the count: 0x00000001
+3 levels by delays: level 1: the call inside it: 0x00000000
+3 levels by delays: level 2: the argument: 0x00000002
+3 levels by delays: level 2: the count: 0x00000001
+3 levels by delays: level 2: the call inside it: 0x00000000
+3 levels by delays: level 3: the argument: 0x00000003
+3 levels by delays: level 3: the count: 0x00000001
+3 levels by delays: notifications left: 0x00000000
+3 levels by delays: the next check: 0x00000000
+3 levels by delays: delete the callback: 0x00000000
+4 levels by delays: create the callback: 0x00000000
+4 levels by delays: the outer call: 0x00000000
+4 levels by delays: runs: 0x00000004
+4 levels by delays: the deepest level: 0x00000004
+4 levels by delays: levels still open after: 0x00000000
+4 levels by delays: level 1: the argument: 0x00000001
+4 levels by delays: level 1: the count: 0x00000001
+4 levels by delays: level 1: the call inside it: 0x00000000
+4 levels by delays: level 2: the argument: 0x00000002
+4 levels by delays: level 2: the count: 0x00000001
+4 levels by delays: level 2: the call inside it: 0x00000000
+4 levels by delays: level 3: the argument: 0x00000003
+4 levels by delays: level 3: the count: 0x00000001
+4 levels by delays: level 3: the call inside it: 0x00000000
+4 levels by delays: level 4: the argument: 0x00000004
+4 levels by delays: level 4: the count: 0x00000001
+4 levels by delays: notifications left: 0x00000000
+4 levels by delays: the next check: 0x00000000
+4 levels by delays: delete the callback: 0x00000000
+8 levels by checks: create the callback: 0x00000000
+8 levels by checks: the outer call: 0x00000001
+8 levels by checks: runs: 0x00000008
+8 levels by checks: the deepest level: 0x00000008
+8 levels by checks: levels still open after: 0x00000000
+8 levels by checks: level 1: the argument: 0x00000001
+8 levels by checks: level 1: the count: 0x00000001
+8 levels by checks: level 1: the call inside it: 0x00000001
+8 levels by checks: level 2: the argument: 0x00000002
+8 levels by checks: level 2: the count: 0x00000001
+8 levels by checks: level 2: the call inside it: 0x00000001
+8 levels by checks: level 3: the argument: 0x00000003
+8 levels by checks: level 3: the count: 0x00000001
+8 levels by checks: level 3: the call inside it: 0x00000001
+8 levels by checks: level 4: the argument: 0x00000004
+8 levels by checks: level 4: the count: 0x00000001
+8 levels by checks: level 4: the call inside it: 0x00000001
+8 levels by checks: level 5: the argument: 0x00000005
+8 levels by checks: level 5: the count: 0x00000001
+8 levels by checks: level 5: the call inside it: 0x00000001
+8 levels by checks: level 6: the argument: 0x00000006
+8 levels by checks: level 6: the count: 0x00000001
+8 levels by checks: level 6: the call inside it: 0x00000001
+8 levels by checks: level 7: the argument: 0x00000007
+8 levels by checks: level 7: the count: 0x00000001
+8 levels by checks: level 7: the call inside it: 0x00000001
+8 levels by checks: level 8: the argument: 0x00000008
+8 levels by checks: level 8: the count: 0x00000001
+8 levels by checks: notifications left: 0x00000000
+8 levels by checks: the next check: 0x00000000
+8 levels by checks: delete the callback: 0x00000000
+DONE

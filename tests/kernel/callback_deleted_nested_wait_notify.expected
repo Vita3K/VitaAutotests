@@ -1,0 +1,27 @@
+T waits in the nested wait before the notify: 0x00000001
+the notify of the deleted callback: 0x00000000
+T's status after the notify: 0x00000002
+T's wait type after the notify: 0x00000000
+T's notify flag after the notify: 0x00000001
+the semaphore's waiting threads after the notify: 0x00000000
+the notifications after the notify: 0x00000001
+the notify ID after the notify: 0xFFFFFFFF
+T waits in the nested wait again: 0x00000001
+T's status then: 0x00000008
+T's wait type then: 0x80000020
+T's notify flag then: 0x00000000
+the semaphore's waiting threads then: 0x00000001
+the notifications then: 0x00000001
+the notify ID then: 0xFFFFFFFF
+runs of the callback then: 0x00000001
+the signal: 0x00000000
+the nested wait: 0x00000000
+the delete inside the run: 0x00000000
+the notifications after the nested wait, inside the run: 0x00000001
+T's check: 0x00000001
+runs: 0x00000001
+after the run: the notifications: 0x800280A1
+after the run: the notify: 0x800280A1
+after the run: the delete: 0x800280A1
+T's next check: 0x00000000
+DONE
