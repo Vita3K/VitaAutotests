@@ -735,10 +735,12 @@ vita_test(files io/files.c)
 vita_test(directories io/directories.c)
 vita_test(stat_mode io/stat_mode.c)
 vita_test(io_concurrency io/io_concurrency.c)
+vita_test(path_normalize io/path_normalize.c)
 
 vita_test(fios_overlay_table fios/overlay_table.c)
 vita_test(fios_overlay_resolve fios/overlay_resolve.c)
 vita_test(fios_overlay02 fios/overlay02.c)
+vita_test(fios_path_normalize fios/path_normalize.c)
 
 vita_test(fibers fiber/fibers.c)
 vita_test(fiber_entry_returns fiber/fiber_entry_returns.c)

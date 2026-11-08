@@ -1,0 +1,10 @@
+dot in input after dst: ux0:data/vita-autotests/fios/pnorm/dst/./file -> [D/pnorm/src/file]: 0x00000000
+dot-dot in input after dst: ux0:data/vita-autotests/fios/pnorm/dst/sub/../file -> [D/pnorm/src/file]: 0x00000000
+dot-dot reaching dst: ux0:data/vita-autotests/fios/pnorm/other/../dst/file -> [D/pnorm/src/file]: 0x00000000
+dot-dot leaving dst: ux0:data/vita-autotests/fios/pnorm/dst/../other/file -> [D/pnorm/other/file]: 0x00000000
+double slash in input: ux0:data/vita-autotests/fios/pnorm/dst//file -> [D/pnorm/src/file]: 0x00000000
+multiple slashes in input: ux0:data/vita-autotests/fios/pnorm///dst///file -> [D/pnorm/src/file]: 0x00000000
+backslash in input: ux0:data/vita-autotests/fios/pnorm\dst\file -> [D/pnorm/src/file]: 0x00000000
+add overlay with dot-dot in dst: 0x00000000
+match overlay defined with dot-dot: ux0:data/vita-autotests/fios/pnorm/dst/file -> [D/pnorm/src/file]: 0x00000000
+DONE

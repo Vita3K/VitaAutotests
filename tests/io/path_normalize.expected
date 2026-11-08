@@ -1,0 +1,15 @@
+exact: ux0:data/vita-autotests/io/norm.txt: 0x00000000
+single dot: ux0:data/vita-autotests/io/./norm.txt: 0x00000000
+double dot: ux0:data/vita-autotests/io/subdir/../norm.txt: 0x00000000
+nested dot dot: ux0:data/vita-autotests/io/subdir/./.././norm.txt: 0x00000000
+double slash: ux0:data/vita-autotests/io//norm.txt: 0x00000000
+triple slash: ux0:data/vita-autotests/io///norm.txt: 0x00000000
+slash after device: ux0://data/vita-autotests/io/norm.txt: 0x00000000
+backslash separator: ux0:data/vita-autotests/io\norm.txt: 0x00000000
+backslash dot-dot: ux0:data/vita-autotests/io/subdir\..\norm.txt: 0x00000000
+escape ux0 root: ux0:../norm.txt: 0x80010002
+escape ux0 deep: ux0:../../../../norm.txt: 0x80010002
+file with trailing slash: ux0:data/vita-autotests/io/norm.txt/: 0x00000000
+file with trailing dot: ux0:data/vita-autotests/io/norm.txt/.: 0x00000000
+file with trailing dot-dot: ux0:data/vita-autotests/io/norm.txt/..: 0x80010015
+DONE
