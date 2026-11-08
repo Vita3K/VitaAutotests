@@ -32,7 +32,7 @@ static int reader_thread(SceSize args, void *argp) {
     (void)argp;
     char buf[16];
     while (!stop_threads) {
-        int ret = sceIoRead(shared_fd, buf, sizeof(buf));
+        int ret = sceIoPread(shared_fd, buf, sizeof(buf), 0);
         if (ret > 0)
             thread_read_count++;
         else if (ret < 0)
