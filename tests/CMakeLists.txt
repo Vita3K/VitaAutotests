@@ -734,6 +734,7 @@ vita_test(thread_entry_block_types memory/thread_entry_block_types.c)
 vita_test(files io/files.c)
 vita_test(directories io/directories.c)
 vita_test(stat_mode io/stat_mode.c)
+vita_test(io_concurrency io/io_concurrency.c)
 
 vita_test(fios_overlay_table fios/overlay_table.c)
 vita_test(fios_overlay_resolve fios/overlay_resolve.c)
