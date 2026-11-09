@@ -1,0 +1,11 @@
+register the handler: 0x00000000
+the wait for T's end: 0x00000000
+in the END handler: unregister T's UID: 0x80027101
+in the END handler: unregister a memory block's UID: 0x80027101
+in the END handler: unregister a semaphore's UID: 0x80027101
+in the END handler: unregister a UID nothing has: 0x80028061
+from the main thread: unregister T's UID: 0x80028061
+from the main thread: unregister a memory block's UID: 0x80028061
+from the main thread: unregister a semaphore's UID: 0x80028061
+from the main thread: unregister a UID nothing has: 0x80028061
+DONE

@@ -830,5 +830,8 @@ vita_test(cpu_fetch_data_page cpu/cpu_fetch_data_page.c)
 vita_test(cpu_fetch_vm_block cpu/cpu_fetch_vm_block.c)
 vita_test(cpu_fetch_null_callback cpu/cpu_fetch_null_callback.c)
 vita_test(cpu_fetch_freed_code cpu/cpu_fetch_freed_code.c)
+vita_test(thread_event_handler_release_unregister_running kernel/thread_event_handler_release_unregister_running.c)
+vita_test(thread_event_handler_unregister_other_uids kernel/thread_event_handler_unregister_other_uids.c)
+vita_test(ceiling_cancel_requeue_waiter kernel/ceiling_cancel_requeue_waiter.c)
 
 vita_tests_vpk(VTST00000)
