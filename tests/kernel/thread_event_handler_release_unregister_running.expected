@@ -1,0 +1,10 @@
+register the handler: 0x00000000
+A's run waits in the handler: 0x00000001
+B's end: 0x00000000
+runs of the handler on B: 0x00000001
+unregister it while A's run waits: 0x00000000
+the handler's UID has its class after that: 0x00000000
+A's end: 0x00000000
+unregister it after A's run: 0x80028061
+the handler's UID has its class after A's run: 0x00000000
+DONE

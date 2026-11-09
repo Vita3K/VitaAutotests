@@ -1,0 +1,10 @@
+O's priority with the mutex: 0x00000080
+the cancel: 0x00000000
+O's priority after the cancel: 0x000000B0
+S's count right after the cancel: 0x00000000
+S's waiters right after the cancel: 0x00000001
+W still waits right after the cancel: 0x00000000
+O's lock: 0x00000000
+O's wait: 0x00000000
+W's wait: 0x00000000
+DONE
