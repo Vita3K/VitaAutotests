@@ -1,0 +1,16 @@
+info with size 0x45 and an unknown UID: 0x8002710B
+info with size 0x45 and an unknown UID: the buffer after it is unchanged: 0x00000001
+info with size 0x45 and UID 0: 0x8002710B
+info with size 0x45 and UID 0: the buffer after it is unchanged: 0x00000001
+info with size 0x45 and a semaphore: 0x8002710B
+info with size 0x45 and a semaphore: the buffer after it is unchanged: 0x00000001
+info with size 0x45 and a deleted callback: 0x8002710B
+info with size 0x45 and a deleted callback: the buffer after it is unchanged: 0x00000001
+info with size 0x45 and a valid callback: 0x8002710B
+info with size 0x45 and a valid callback: the buffer after it is unchanged: 0x00000001
+info with size 0x44 and an unknown UID: 0x800280A1
+info with size 0x44 and an unknown UID: the buffer after it is unchanged: 0x00000001
+info with size 0xFFFFFFFF and an unknown UID: 0x8002710B
+info with size 0xFFFFFFFF and an unknown UID: the buffer after it is unchanged: 0x00000001
+info with NULL and an unknown UID: 0x800280A1
+DONE

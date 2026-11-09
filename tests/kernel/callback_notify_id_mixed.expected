@@ -1,0 +1,23 @@
+event, then direct: register: 0x00000000
+event, then direct: set with notification: 0x00000000
+event, then direct: notify: 0x00000000
+event, then direct: the info's notify ID is -1: 0x00000001
+event, then direct: the callback's notifications: 0x00000002
+event, then direct: the check: 0x00000001
+event, then direct: runs of the callback: 0x00000001
+event, then direct: its first argument is -1: 0x00000001
+event, then direct: its first argument is the event: 0x00000000
+event, then direct: the count it got: 0x00000002
+event, then direct: the argument it got: 0x00000022
+direct, then event: register: 0x00000000
+direct, then event: notify: 0x00000000
+direct, then event: set with notification: 0x00000000
+direct, then event: the info's notify ID is -1: 0x00000001
+direct, then event: the callback's notifications: 0x00000002
+direct, then event: the check: 0x00000001
+direct, then event: runs of the callback: 0x00000001
+direct, then event: its first argument is -1: 0x00000000
+direct, then event: its first argument is the event: 0x00000001
+direct, then event: the count it got: 0x00000002
+direct, then event: the argument it got: 0x00000011
+DONE

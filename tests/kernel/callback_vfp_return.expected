@@ -1,0 +1,18 @@
+create the callback: 0x00000000
+notify it: 0x00000000
+a check that runs the callback: the result: 0x00000001
+a check that runs the callback: the d registers with the caller's marker, one bit each: 0x0000FF00
+a check that runs the callback: the d registers with the callback's marker: 0x0000000C
+a check that runs the callback: the d registers that share another value: 0xFFFF00F3
+a check that runs the callback: that value's high word: 0x7FF8DEAD
+a check that runs the callback: that value's low word: 0x7F80DEAD
+a check that runs the callback: the d registers with none of these: 0x00000000
+a check with nothing notified: the result: 0x00000000
+a check with nothing notified: the d registers with the caller's marker, one bit each: 0xFFFFFFFF
+a check with nothing notified: the d registers with the callback's marker: 0x00000000
+a check with nothing notified: the d registers that share another value: 0x00000000
+a check with nothing notified: that value's high word: 0x00000000
+a check with nothing notified: that value's low word: 0x00000000
+a check with nothing notified: the d registers with none of these: 0x00000000
+delete the callback: 0x00000000
+DONE

@@ -1,0 +1,25 @@
+a check: create the objects: 0x00000000
+a check: the thread's setting before: 0x08000000
+a check: the call: 0x00000001
+a check: the callback: the setting it starts with: 0x00000000
+a check: the callback: its change returns: 0x00000000
+a check: the callback: the setting after its change: 0x00000002
+a check: the callback: its check: 0x00000001
+a check: the nested callback: the setting it starts with: 0x00000000
+a check: the nested callback: its change returns: 0x00000000
+a check: the nested callback: the setting after its change: 0x00000004
+a check: the callback: the setting after the nested one returned: 0x00000002
+a check: the thread's setting after: 0x08000000
+a wait with callbacks: create the objects: 0x00000000
+a wait with callbacks: the thread's setting before: 0x08000000
+a wait with callbacks: the call: 0x00000000
+a wait with callbacks: the callback: the setting it starts with: 0x00000000
+a wait with callbacks: the callback: its change returns: 0x00000000
+a wait with callbacks: the callback: the setting after its change: 0x00000002
+a wait with callbacks: the callback: its check: 0x00000001
+a wait with callbacks: the nested callback: the setting it starts with: 0x00000000
+a wait with callbacks: the nested callback: its change returns: 0x00000000
+a wait with callbacks: the nested callback: the setting after its change: 0x00000004
+a wait with callbacks: the callback: the setting after the nested one returned: 0x00000002
+a wait with callbacks: the thread's setting after: 0x08000000
+DONE

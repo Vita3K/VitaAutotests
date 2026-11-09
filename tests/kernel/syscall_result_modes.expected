@@ -1,0 +1,23 @@
+sceKernelGetSystemTimeWide: r1:r0 lies between two plain calls around it: 0x00000001
+sceKernelGetSystemTimeWide: r1 is 0xDEADBEEF: 0x00000000
+sceKernelGetSystemTimeWide: r1 still holds its marker: 0x00000000
+sceKernelGetSystemTimeWide: r2 after it: 0xDEADBEEF
+sceKernelGetSystemTimeWide: r3 after it: 0xDEADBEEF
+sceKernelGetSystemTimeWide: r12 after it: 0xDEADBEEF
+sceKernelGetTimerBaseWide(an unknown UID): r0 after it: 0xFFFFFFFF
+sceKernelGetTimerBaseWide(an unknown UID): r1 after it: 0xFFFFFFFF
+sceKernelGetTimerBaseWide(an unknown UID): r2 after it: 0xDEADBEEF
+sceKernelGetTimerBaseWide(an unknown UID): r3 after it: 0xDEADBEEF
+sceKernelGetTimerBaseWide(an unknown UID): r12 after it: 0xDEADBEEF
+sceKernelGetThreadTLSAddr(its own thread, 7): r0 is the plain call's result: 0x00000001
+sceKernelGetThreadTLSAddr(its own thread, 7): r0 is not 0: 0x00000001
+sceKernelGetThreadTLSAddr(its own thread, 7): r1 after it: 0xDEADBEEF
+sceKernelGetThreadTLSAddr(its own thread, 7): r2 after it: 0xDEADBEEF
+sceKernelGetThreadTLSAddr(its own thread, 7): r3 after it: 0xDEADBEEF
+sceKernelGetThreadTLSAddr(its own thread, 7): r12 after it: 0xDEADBEEF
+sceKernelRegisterCallbackToEvent(unknown, unknown): r0 after it: 0x80028201
+sceKernelRegisterCallbackToEvent(unknown, unknown): r1 after it: 0xDEADBEEF
+sceKernelRegisterCallbackToEvent(unknown, unknown): r2 after it: 0xDEADBEEF
+sceKernelRegisterCallbackToEvent(unknown, unknown): r3 after it: 0xDEADBEEF
+sceKernelRegisterCallbackToEvent(unknown, unknown): r12 after it: 0xDEADBEEF
+DONE

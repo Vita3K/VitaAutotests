@@ -1,0 +1,21 @@
+create the thread: 0x00000000
+register the START handler: 0x00000000
+register the END handler: 0x00000000
+a fresh thread: start: 0x00000000
+a fresh thread: wait for the end: 0x00000000
+a fresh thread: entry runs: 0x00000001
+a fresh thread: START handler runs: 0x00000001
+a fresh thread: END handler runs: 0x00000001
+a fresh thread: the START handler's sp equals the entry's sp: 0x00000001
+a fresh thread: the END handler's sp equals the entry's sp: 0x00000000
+started again: start: 0x00000000
+started again: wait for the end: 0x00000000
+started again: entry runs: 0x00000001
+started again: START handler runs: 0x00000001
+started again: END handler runs: 0x00000001
+started again: the START handler's sp equals the entry's sp: 0x00000001
+started again: the END handler's sp equals the entry's sp: 0x00000000
+unregister the START handler: 0x00000000
+unregister the END handler: 0x00000000
+delete the thread: 0x00000000
+DONE
