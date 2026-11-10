@@ -79,7 +79,9 @@ static void run_case(int t_priority, int spinner_priority) {
     const SceUID t = sceKernelCreateThread("t", t_entry, t_priority, 0x4000, 0,
                                            SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(t, 0, NULL);
-    TEST_WAIT_FOR(queued(t));
+    // A T that already ran is no longer queued. On the console T can't have run yet, since G
+    // holds core 0
+    TEST_WAIT_FOR(queued(t) || t_ran);
     const SceUID h = sceKernelCreateThread("h", spinner_entry, spinner_priority, 0x4000, 0,
                                            SCE_KERNEL_CPU_MASK_USER_1, NULL);
     sceKernelStartThread(h, 0, NULL);

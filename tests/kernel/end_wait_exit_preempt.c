@@ -129,12 +129,15 @@ static void run_case(const char *name, int with_l) {
     sceKernelStartThread(gate, 0, NULL);
     TEST_WAIT_FOR(gate_up);
     sceKernelSignalSema(sema, 1);
-    TEST_WAIT_FOR(queued(target));
+    // A T that already ran is no longer queued, and W1 and W2 then run too. On the console none of
+    // them can run yet, since G holds core 0
+    TEST_WAIT_FOR(queued(target) || run_count == 3);
     if (with_l) {
         l = sceKernelCreateThread("l", l_entry, L_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0,
                                   NULL);
         sceKernelStartThread(l, 0, NULL);
-        TEST_WAIT_FOR(queued(l));
+        // Same for an L that already ran
+        TEST_WAIT_FOR(queued(l) || run_count == 4);
     }
     gate_open = 1;
     sceKernelWaitThreadEnd(gate, NULL, NULL);

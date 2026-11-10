@@ -6,7 +6,9 @@
 // callback_outer_wake. Each case reads what the object reports while the callback waits, makes the
 // wake, then ends the callback's wait and prints how both waits ended. The thread stays blocked in
 // the callback's wait until the test signals it, so what the test reads in between can't change.
-// One cancel or delete per case.
+// One cancel or delete per case. The event flag and simple event cancels miss the outer wait, which
+// then runs out. Those waits get a shorter timeout, and the test ends the callback's wait before it
+// prints anything there.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -49,10 +51,12 @@ static int inner_wait_callback(int notify_id, int count, int arg, void *common) 
 static int outer_thread(SceSize args, void *argp) {
     (void)args;
     cb = sceKernelCreateCallback("inner", 0, inner_wait_callback, NULL);
-    outer_left = 4 * TEST_WAIT_US;
+    const int kind = *(const int *)argp;
+    // The cancels miss the outer wait, so it only has to outlast the callback
+    outer_left = kind == FLAG_CANCEL || kind == SIMPLE_CANCEL ? TEST_WAIT_US : 4 * TEST_WAIT_US;
     SceUInt32 pattern = 0;
     SceUInt64 user_data = 0;
-    switch (*(const int *)argp) {
+    switch (kind) {
     case TIMER: outer_result = sceKernelWaitEventCB(timer, EVENT_TIMER, &pattern, &user_data, &outer_left); break;
     case MSG_SEND:
         outer_result = sceKernelSendMsgPipeCB(pipe, message, sizeof(message), MSG_PIPE_MODE_FULL, NULL, &outer_left);
@@ -103,16 +107,25 @@ static SceUID start_in_callback(int kind) {
     return thread;
 }
 
-// Ends the callback's wait, waits for the thread to end and prints how both waits ended. If the
-// wake for the outer wait had ended the callback's wait too, the signal here is left over.
-static void finish(const char *name, SceUID thread) {
+// Ends the callback's wait and waits for the thread to end
+static void end_callback(SceUID thread) {
     sceKernelSignalSema(inner, 1);
     test_join_thread(thread);
+}
+
+// Prints how both waits ended. If the wake for the outer wait had ended the callback's wait too,
+// the signal in end_callback is left over.
+static void print_waits(const char *name) {
     PRINTF(inner_result, "%s: the callback's wait", name);
     PRINTF(sema_count(inner), "%s: the inner semaphore's count at the end", name);
     PRINTF(outer_result, "%s: the outer wait", name);
     PRINTF(outer_left > 0, "%s: the outer wait has time left", name);
     sceKernelDeleteSema(inner);
+}
+
+static void finish(const char *name, SceUID thread) {
+    end_callback(thread);
+    print_waits(name);
 }
 
 // A timer's event, which the outer wait waits for, comes while the callback waits
@@ -159,16 +172,20 @@ static void signal_case(void) {
     finish("thread signal", thread);
 }
 
+// The outer wait runs out, so the test keeps the values and prints them once the thread ended
 static void flag_cancel_case(void) {
     flag = sceKernelCreateEventFlag("flag", 0, 0, NULL);
     const SceUID thread = start_in_callback(FLAG_CANCEL);
     SceKernelEventFlagInfo info = { .size = sizeof(info) };
     sceKernelGetEventFlagInfo(flag, &info);
-    PRINT("event flag cancel: its waiters while the callback waits", info.numWaitThreads);
+    const int waiters = info.numWaitThreads;
     SceUInt32 waiting = 0xDEAD;
-    PRINT("event flag cancel: the cancel", sceKernelCancelEventFlag(flag, 0, &waiting));
+    const int cancel_result = sceKernelCancelEventFlag(flag, 0, &waiting);
+    end_callback(thread);
+    PRINT("event flag cancel: its waiters while the callback waits", waiters);
+    PRINT("event flag cancel: the cancel", cancel_result);
     PRINT("event flag cancel: the waiters it counts", waiting);
-    finish("event flag cancel", thread);
+    print_waits("event flag cancel");
     sceKernelGetEventFlagInfo(flag, &info);
     PRINT("event flag cancel: its bits at the end", info.currentPattern);
     sceKernelDeleteEventFlag(flag);
@@ -218,13 +235,16 @@ static void rwlock_delete_case(void) {
     finish("rwlock delete", thread);
 }
 
+// Printed like flag_cancel_case
 static void event_cancel_case(void) {
     event = sceKernelCreateSimpleEvent("event", EVENT_ATTR_AUTO_RESET, 0, NULL);
     const SceUID thread = start_in_callback(SIMPLE_CANCEL);
     SceUInt32 waiting = 0xDEAD;
-    PRINT("simple event cancel: the cancel", sceKernelCancelEvent(event, &waiting));
+    const int cancel_result = sceKernelCancelEvent(event, &waiting);
+    end_callback(thread);
+    PRINT("simple event cancel: the cancel", cancel_result);
     PRINT("simple event cancel: the waiters it counts", waiting);
-    finish("simple event cancel", thread);
+    print_waits("simple event cancel");
     sceKernelDeleteSimpleEvent(event);
 }
 

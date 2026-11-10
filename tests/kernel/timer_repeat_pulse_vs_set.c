@@ -1,7 +1,8 @@
 // What a repeating timer leaves for a poll or a wait when its events come while no thread waits,
 // for a set event and for a pulse event. Each case uses a fresh manual reset timer with an event
 // that repeats every 800 ms, which fires at 0.8 s, 1.6 s, 2.4 s and so on from its start. The main
-// thread sleeps to times between the fires, at least 300 ms from each. The cases:
+// thread sleeps to times between the fires of the timer it checks, at least 300 ms from each. The
+// cases:
 // - a set event: a poll at 8.4 s, ten intervals after the start, gets the bit, and a second poll at
 //   once gets it again, since a manual reset set event keeps its bit. A clear removes the bit, so
 //   the next poll fails, and a poll ten intervals after the clear gets the bit again, since a later
@@ -9,7 +10,8 @@
 // - a pulse event: a poll at 1.1 s fails, since a pulse leaves no bit. A wait gets the fire at
 //   1.6 s, and a poll right after the wait fails. A second wait gets the fire at 2.4 s.
 // Each prints the results and the bits, and the elapsed times of the waits as comparisons. The
-// pulse case prints only after its last wait.
+// pulse case runs while the set case sleeps to its first poll, with its timer started 400 ms after
+// the set timer, so the fires of the two timers are 400 ms apart. It prints after the set case.
 #include <psp2/kernel/processmgr.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -26,12 +28,12 @@ static void sleep_until(SceUInt64 until) {
         sceKernelDelayThread(1000);
 }
 
-// Creates a manual reset timer whose event of the given type repeats every 800 ms
-static SceUID create_timer(const char *name, int type) {
+// Creates a manual reset timer whose event of the given type repeats every 800 ms, and returns the
+// result of setting the event
+static int create_timer(const char *name, int type, SceUID *timer) {
     SceUInt64 interval = INTERVAL_US;
-    const SceUID timer = sceKernelCreateTimer(name, EVENT_ATTR_MANUAL_RESET, NULL);
-    PRINTF(sceKernelSetTimerEvent(timer, type, &interval, 1), "%s: set a repeating event", name);
-    return timer;
+    *timer = sceKernelCreateTimer(name, EVENT_ATTR_MANUAL_RESET, NULL);
+    return sceKernelSetTimerEvent(*timer, type, &interval, 1);
 }
 
 // A poll's result and the bits it got
@@ -70,11 +72,64 @@ static int wait_for_bit(SceUID timer, SceUInt32 *bits, SceUInt64 *elapsed) {
     return result;
 }
 
-// A set event: a manual reset timer keeps the bit after a poll, and a clear removes it
-static void set_case(void) {
-    const SceUID timer = create_timer("set event", TIMER_TYPE_SET_EVENT);
+// What the pulse case got
+typedef struct Pulse {
+    int set;
+    int started;
+    Poll early;
+    int first;
+    SceUInt32 first_bits;
+    SceUInt64 first_elapsed;
+    Poll after_first;
+    int second;
+    SceUInt32 second_bits;
+    SceUInt64 second_elapsed;
+} Pulse;
+
+// A pulse event: a poll between the fires fails, and each wait gets the next fire
+static void pulse_case(Pulse *pulse) {
+    SceUID timer;
+    pulse->set = create_timer("pulse event", TIMER_TYPE_PULSE_EVENT, &timer);
     const SceUInt64 origin = sceKernelGetProcessTimeWide();
-    PRINT("set event: start the timer", sceKernelStartTimer(timer));
+    pulse->started = sceKernelStartTimer(timer);
+    sleep_until(origin + 1100000);
+    pulse->early = poll_timer(timer);
+    pulse->first = wait_for_bit(timer, &pulse->first_bits, &pulse->first_elapsed);
+    pulse->after_first = poll_timer(timer);
+    pulse->second = wait_for_bit(timer, &pulse->second_bits, &pulse->second_elapsed);
+
+    sceKernelStopTimer(timer);
+    sceKernelDeleteTimer(timer);
+}
+
+// Prints what the pulse case got
+static void print_pulse(const Pulse *pulse) {
+    PRINT("pulse event: set a repeating event", pulse->set);
+    PRINT("pulse event: start the timer", pulse->started);
+    print_result("pulse event: the poll at 1.1 s", pulse->early);
+    PRINT("pulse event: the first wait", pulse->first);
+    PRINT("pulse event: the first wait's bits", pulse->first_bits);
+    PRINT("pulse event: the first wait returned after over 250 ms", pulse->first_elapsed > 250000);
+    print_result("pulse event: the poll right after the first wait", pulse->after_first);
+    PRINT("pulse event: the second wait", pulse->second);
+    PRINT("pulse event: the second wait's bits", pulse->second_bits);
+    PRINT("pulse event: the second wait returned after over 550 ms", pulse->second_elapsed > 550000);
+    PRINT("pulse event: the second wait returned under 1.05 s", pulse->second_elapsed < 1050000);
+}
+
+// A set event: a manual reset timer keeps the bit after a poll, and a clear removes it. The pulse
+// case runs in the sleep to the first poll and prints at the end.
+static void set_case(void) {
+    SceUID timer;
+    PRINT("set event: set a repeating event", create_timer("set event", TIMER_TYPE_SET_EVENT, &timer));
+    const SceUInt64 origin = sceKernelGetProcessTimeWide();
+    const int started = sceKernelStartTimer(timer);
+    // The pulse timer starts halfway between two set fires, so a pulse wait that a set fire ends
+    // returns too early
+    sleep_until(origin + INTERVAL_US / 2);
+    Pulse pulse = { 0 };
+    pulse_case(&pulse);
+    PRINT("set event: start the timer", started);
     sleep_until(origin + 10 * INTERVAL_US + INTERVAL_US / 2);
     const Poll first = poll_timer(timer);
     const Poll second = poll_timer(timer);
@@ -90,42 +145,8 @@ static void set_case(void) {
 
     sceKernelStopTimer(timer);
     sceKernelDeleteTimer(timer);
-}
 
-// A pulse event: a poll between the fires fails, and each wait gets the next fire
-static void pulse_case(void) {
-    const SceUID timer = create_timer("pulse event", TIMER_TYPE_PULSE_EVENT);
-    const SceUInt64 origin = sceKernelGetProcessTimeWide();
-    PRINT("pulse event: start the timer", sceKernelStartTimer(timer));
-    sleep_until(origin + 1100000);
-    print_poll("pulse event: the poll at 1.1 s", timer);
-
-    SceUInt32 bits = 0;
-    SceUInt64 elapsed = 0;
-    const int first = wait_for_bit(timer, &bits, &elapsed);
-    const SceUInt32 first_bits = bits;
-    const SceUInt64 first_elapsed = elapsed;
-    SceUInt32 poll_bits = NOT_DONE;
-    SceUInt64 poll_user_data = 0;
-    const int polled = sceKernelPollEvent(timer, EVENT_TIMER, &poll_bits, &poll_user_data);
-
-    bits = 0;
-    const int second = wait_for_bit(timer, &bits, &elapsed);
-
-    // Everything is printed after the second wait, since a print costs tens of milliseconds on the
-    // console and would eat into the time the second wait has before the fire
-    PRINT("pulse event: the first wait", first);
-    PRINT("pulse event: the first wait's bits", first_bits);
-    PRINT("pulse event: the first wait returned after over 250 ms", first_elapsed > 250000);
-    PRINT("pulse event: the poll right after the first wait", polled);
-    PRINT("pulse event: the poll right after the first wait: the bits it got", poll_bits);
-    PRINT("pulse event: the second wait", second);
-    PRINT("pulse event: the second wait's bits", bits);
-    PRINT("pulse event: the second wait returned after over 550 ms", elapsed > 550000);
-    PRINT("pulse event: the second wait returned under 1.05 s", elapsed < 1050000);
-
-    sceKernelStopTimer(timer);
-    sceKernelDeleteTimer(timer);
+    print_pulse(&pulse);
 }
 
 int main(void) {
@@ -134,7 +155,6 @@ int main(void) {
     sceKernelDelayThread(1000);
 
     set_case();
-    pulse_case();
 
     test_exit();
     return 0;

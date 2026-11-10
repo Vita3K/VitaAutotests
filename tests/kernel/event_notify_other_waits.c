@@ -154,12 +154,14 @@ static int waits_with_callbacks(SceUID thread, Kind kind) {
     return test_in_wait(thread, type, object);
 }
 
-// Waits until the callback ran and T waits with callbacks again, for at most 2 seconds on the
-// process clock. T's own deadline is 6 seconds after its wait began, so when the notification
-// doesn't reach T, the release below still comes before that deadline.
+// Waits until T waits with callbacks again and the callback ran or has no notification left to
+// run, for at most 2 seconds on the process clock. T's own deadline is 6 seconds after its wait
+// began, so when the notification doesn't reach T, the release below still comes before that
+// deadline.
 static void wait_for_callback_again(SceUID thread, Kind kind) {
     const SceUInt64 end = sceKernelGetProcessTimeWide() + 2000000;
-    while (!(callback_runs > 0 && waits_with_callbacks(thread, kind)) && sceKernelGetProcessTimeWide() < end)
+    while (!(waits_with_callbacks(thread, kind) && (callback_runs > 0 || sceKernelGetCallbackCount(callback) == 0))
+           && sceKernelGetProcessTimeWide() < end)
         sceKernelDelayThread(1000);
 }
 

@@ -72,6 +72,11 @@ static int waits_multi_cb(SceUID thread) {
     return info_of(thread).waitType == (WAIT_TYPE_MP_EVENTS | WAIT_TYPE_CB);
 }
 
+// Returns whether thread has ended, which T only does after its wait returned
+static int ended(SceUID thread) {
+    return info_of(thread).status == SCE_THREAD_DORMANT;
+}
+
 static void run_case(Kind kind, const char *name) {
     current = kind;
     e = sceKernelCreateSimpleEvent("e", EVENT_ATTR_NOTIFY_CB_ALL, 0, NULL);
@@ -85,16 +90,18 @@ static void run_case(Kind kind, const char *name) {
     wait_result = register_result = NOT_DONE;
     const SceUID thread = sceKernelCreateThread("t", waiter, WAITER_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(thread, 0, NULL);
-    TEST_WAIT_FOR(waits_multi_cb(thread));
+    // T can't end before it waits, and its wait only returns after a set below or its timeout
+    TEST_WAIT_FOR(waits_multi_cb(thread) || ended(thread));
 
     const int notify = sceKernelSetEventWithNotifyCallback(e, kind == OTHER_BIT ? EVENT_BIT_B : EVENT_BIT_A, 0, 0x55);
     const int e_waiting = waiting_threads(e), f_waiting = waiting_threads(f), g_waiting = waiting_threads(g);
     const int pending = sceKernelGetCallbackCount(callback);
     const SceKernelThreadInfo after = info_of(thread);
 
-    // Waits for the callback, and where T should wait again, for that, at most 2 seconds
+    // Waits for the callback, and where T should wait again, for that, at most 2 seconds. It also
+    // stops once T ended, since then neither can change anymore.
     const SceUInt64 end = sceKernelGetProcessTimeWide() + 2000000;
-    while (!(callback_runs > 0 && (kind == COMPLETES || waits_multi_cb(thread))) && sceKernelGetProcessTimeWide() < end)
+    while (!(callback_runs > 0 && (kind == COMPLETES || waits_multi_cb(thread))) && !ended(thread) && sceKernelGetProcessTimeWide() < end)
         sceKernelDelayThread(1000);
     const int runs = callback_runs;
     const int waits_again = kind != COMPLETES && waits_multi_cb(thread);

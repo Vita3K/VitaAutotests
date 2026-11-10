@@ -64,13 +64,15 @@ static void moved_earlier_case(void) {
 static void moved_later_case(void) {
     const SceUID timer = create_timer();
     PRINT("b: the set of the event, 2 s away", set_event(timer, 2000000));
-    PRINT("b: start", sceKernelStartTimer(timer));
+    // Printed after the wait, since a print here would bring the set closer to the event
+    const int start = sceKernelStartTimer(timer);
     sceKernelDelayThread(1000000);
     SceKernelSysClock time = 0;
     const SceUInt64 set = sceKernelGetProcessTimeWide();
     const int set_time = sceKernelSetTimerTime(timer, &time);
     const int wait = wait_for_bit(timer, 4000000);
     const SceUInt64 elapsed = sceKernelGetProcessTimeWide() - set;
+    PRINT("b: start", start);
     PRINT("b: the set of the time to 0", set_time);
     PRINT("b: the wait with a 4 s timeout", wait);
     PRINT("b: it returned over 1.5 s after the set", elapsed > 1500000);
@@ -141,10 +143,12 @@ static void far_schedule_case(void) {
           off > -50000 && off < 50000);
 
     time = 40000000;
-    PRINT("e: the set of the time to 40 s", sceKernelSetTimerTime(timer, &time));
+    // Read right after the set, since the timer runs and a print would add to the value
+    const int set_far = sceKernelSetTimerTime(timer, &time);
     left = 0;
     const int wrapped_result = sceKernelGetTimerEventRemainingTime(timer, &left);
     const SceUInt64 below_zero = (SceUInt64)0 - left;
+    PRINT("e: the set of the time to 40 s", set_far);
     PRINT("e: the remaining time after that", wrapped_result);
     PRINT("e: 0 minus the remaining time is within 9.75 to 10.25 s",
           below_zero > 9750000 && below_zero < 10250000);

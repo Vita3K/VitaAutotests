@@ -22,7 +22,9 @@
 
 #define NOT_DONE 0xDEAD
 #define TIMER_US 300000
-// Longer than the 5 s the gates poll for, so T can't time out before the main thread ends it
+// Polls of 1 ms the main thread waits for the callback, 1.2 s past the fire
+#define CALLBACK_POLLS 1500
+// Longer than the fire and the callback polls, so T can't time out before the main thread ends it
 #define WAIT_US (4 * TEST_WAIT_US)
 #define LONG_ENOUGH_US 4000000
 
@@ -185,12 +187,14 @@ static void run_case(const Case *c) {
     int pending = NOT_DONE;
     int end = NOT_DONE;
     if (kind == PLAIN_SEMA) {
-        TEST_WAIT_FOR(sceKernelGetCallbackCount(notify_cb) > 0);
+        for (int i = 0; i < CALLBACK_POLLS && sceKernelGetCallbackCount(notify_cb) <= 0; i++)
+            sceKernelDelayThread(1000);
         pending = sceKernelGetCallbackCount(notify_cb);
         threads = waiting_threads(kind);
         end = end_wait(kind);
     } else if (kind != TIMER_EVENT) {
-        TEST_WAIT_FOR(callback_runs > 0 && test_in_wait(thread, type, object));
+        for (int i = 0; i < CALLBACK_POLLS && !(callback_runs > 0 && test_in_wait(thread, type, object)); i++)
+            sceKernelDelayThread(1000);
         threads = waiting_threads(kind);
         type_after = wait_type_of(thread);
         end = end_wait(kind);

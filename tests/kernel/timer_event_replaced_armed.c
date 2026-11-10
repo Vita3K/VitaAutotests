@@ -68,13 +68,15 @@ static void later_case(void) {
     PRINT("later: the set of the first event, a one shot of 1.5 s",
           set_event(timer, TIMER_TYPE_SET_EVENT, 1500000));
     const SceUInt64 start = sceKernelGetProcessTimeWide();
-    PRINT("later: start", sceKernelStartTimer(timer));
+    // Printed after the wait, since a print here would move the replacement closer to the old fire
+    const int started = sceKernelStartTimer(timer);
     sleep_until(start + 500000);
     const SceUInt64 set = sceKernelGetProcessTimeWide();
     const int set_later = set_event(timer, TIMER_TYPE_SET_EVENT, 3000000);
     SceUInt32 bits = 0;
     const int wait = wait_for_bit(timer, 5000000, &bits);
     const SceUInt64 elapsed = sceKernelGetProcessTimeWide() - set;
+    PRINT("later: start", started);
     PRINT("later: the set of the replacement, a one shot of 3 s, at 0.5 s", set_later);
     PRINT("later: the wait with a 5 s timeout", wait);
     PRINT("later: it returned over 2 s after the set", elapsed > 2000000);
@@ -120,7 +122,8 @@ static void set_to_pulse_case(void) {
     PRINT("set to pulse: the set of a one shot set event of 1 s",
           set_event(timer, TIMER_TYPE_SET_EVENT, 1000000));
     const SceUInt64 start = sceKernelGetProcessTimeWide();
-    PRINT("set to pulse: start", sceKernelStartTimer(timer));
+    // Printed after the wait, since a print here would move the replacement closer to the old fire
+    const int started = sceKernelStartTimer(timer);
     sleep_until(start + 500000);
     const int replaced = set_event(timer, TIMER_TYPE_PULSE_EVENT, 1000000);
     TimerInfo info = { .size = sizeof(info) };
@@ -128,6 +131,7 @@ static void set_to_pulse_case(void) {
     SceUInt32 bits = 0;
     const int wait = wait_for_bit(timer, 3000000, &bits);
     const int poll = poll_event(timer);
+    PRINT("set to pulse: start", started);
     PRINT("set to pulse: the set of a one shot pulse of 1 s, at 0.5 s", replaced);
     PRINT("set to pulse: the info call", info_result);
     PRINT("set to pulse: the info type", info.type);
@@ -145,7 +149,8 @@ static void pulse_to_set_case(void) {
     PRINT("pulse to set: the set of a one shot pulse of 1 s",
           set_event(timer, TIMER_TYPE_PULSE_EVENT, 1000000));
     const SceUInt64 start = sceKernelGetProcessTimeWide();
-    PRINT("pulse to set: start", sceKernelStartTimer(timer));
+    // Printed after the wait, since a print here would move the replacement closer to the old fire
+    const int started = sceKernelStartTimer(timer);
     sleep_until(start + 500000);
     const int replaced = set_event(timer, TIMER_TYPE_SET_EVENT, 1000000);
     TimerInfo info = { .size = sizeof(info) };
@@ -153,6 +158,7 @@ static void pulse_to_set_case(void) {
     SceUInt32 bits = 0;
     const int wait = wait_for_bit(timer, 3000000, &bits);
     const int poll = poll_event(timer);
+    PRINT("pulse to set: start", started);
     PRINT("pulse to set: the set of a one shot set event of 1 s, at 0.5 s", replaced);
     PRINT("pulse to set: the info call", info_result);
     PRINT("pulse to set: the info type", info.type);
