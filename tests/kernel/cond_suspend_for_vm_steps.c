@@ -26,6 +26,8 @@
 #define WAITER_PRIORITY 0xA0
 // Long enough for a suspend and the reads after it to finish before the timeout of a case
 #define COND_TIMEOUT_US (2 * TEST_WAIT_US)
+// W's timeout in the cases that let it expire. Only a suspend and a lock have to come before it.
+#define EXPIRING_COND_TIMEOUT_US (TEST_WAIT_US / 2)
 #define NOT_SET 0xDEAD
 // A lightweight mutex is never deleted, so each lightweight run gets its own work area
 #define MAX_LW_RUNS 8
@@ -59,6 +61,7 @@ static SceUID cond_id, mutex_id;
 static int cond_gone, mutex_gone;
 static const Kind *kind;
 static volatile int w_result, w_left, w_unlock;
+static SceUInt w_timeout;
 
 static void heavy_create(void) {
     mutex = sceKernelCreateMutex("mutex", 0, 0, NULL);
@@ -195,16 +198,17 @@ static int w_entry(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     kind->lock();
-    SceUInt timeout = COND_TIMEOUT_US;
+    SceUInt timeout = w_timeout;
     w_result = kind->wait(&timeout);
     w_left = (int)timeout;
     w_unlock = kind->unlock();
     return 0;
 }
 
-// Creates fresh objects and W, and returns once W waits on the condition
-static SceUID start_w(const Kind *k) {
+// Creates fresh objects and W, and returns once W waits on the condition with the given timeout
+static SceUID start_w(const Kind *k, SceUInt timeout) {
     kind = k;
+    w_timeout = timeout;
     w_result = w_left = w_unlock = NOT_SET;
     k->create();
     const SceUID w = sceKernelCreateThread(
@@ -253,7 +257,7 @@ static void end_w(SceUID w) {
 // The main thread signals while W is suspended in its wait, holds the mutex, then unlocks it
 static void signal_while_held(const Kind *k) {
     const char *const name = "signal while the main thread holds the mutex";
-    const SceUID w = start_w(k);
+    const SceUID w = start_w(k, COND_TIMEOUT_US);
     const int suspended = sceKernelSuspendThreadForVM(w);
     k->lock();
     k->signal();
@@ -284,7 +288,7 @@ static void signal_while_held(const Kind *k) {
 // unlocks
 static void signal_then_suspend_queued(const Kind *k) {
     const char *const name = "W queued for the mutex, then suspended before the unlock";
-    const SceUID w = start_w(k);
+    const SceUID w = start_w(k, COND_TIMEOUT_US);
     k->lock();
     k->signal();
     wait_until_in(w, k->mutex_wait_type, mutex_id);
@@ -316,7 +320,7 @@ static void signal_then_suspend_queued(const Kind *k) {
 static void timeout_while_suspended(const Kind *k, int main_holds) {
     const char *const name = main_holds ? "timeout while suspended, the main thread holds the mutex"
                                         : "timeout while suspended, the mutex is free";
-    const SceUID w = start_w(k);
+    const SceUID w = start_w(k, EXPIRING_COND_TIMEOUT_US);
     const int suspended = sceKernelSuspendThreadForVM(w);
     if (main_holds)
         k->lock();
@@ -345,7 +349,7 @@ static void timeout_while_suspended(const Kind *k, int main_holds) {
 // The main thread deletes the condition while W is suspended in its wait
 static void delete_cond_while_suspended(const Kind *k) {
     const char *const name = "delete the condition while W is suspended in its wait";
-    const SceUID w = start_w(k);
+    const SceUID w = start_w(k, COND_TIMEOUT_US);
     const int suspended = sceKernelSuspendThreadForVM(w);
     const int deleted = k->delete_cond();
     const SceKernelThreadInfo info = settled_info(w);
@@ -365,7 +369,7 @@ static void delete_cond_while_suspended(const Kind *k) {
 static void delete_mutex_while_suspended(void) {
     const char *const name = "delete the mutex while W is suspended in its wait";
     const Kind *const k = &kinds[0];
-    const SceUID w = start_w(k);
+    const SceUID w = start_w(k, COND_TIMEOUT_US);
     const int suspended = sceKernelSuspendThreadForVM(w);
     const int deleted = heavy_delete_mutex();
     const SceKernelThreadInfo info = settled_info(w);

@@ -85,8 +85,11 @@ int main(void) {
     interval = REPEAT_US;
     PRINT("set a repeating 1 s event",
           sceKernelSetTimerEvent(armed, TIMER_TYPE_SET_EVENT, &interval, 1));
-    PRINT("start the second timer", sceKernelStartTimer(armed));
-    PRINT("delete the started timer", sceKernelDeleteTimer(armed));
+    // No print between the start and the delete, so the 1 s event can't fire before the delete
+    const int armed_start = sceKernelStartTimer(armed);
+    const int armed_delete = sceKernelDeleteTimer(armed);
+    PRINT("start the second timer", armed_start);
+    PRINT("delete the started timer", armed_delete);
     check("after deleting the started timer", cb, armed);
     sceKernelDelayThread(QUIET_US);
     PRINTF(sceKernelGetCallbackCount(cb), "notifications 1.5 s after the delete");

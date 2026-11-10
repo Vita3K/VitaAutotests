@@ -6,9 +6,9 @@
 // once, so R can take that core, and S waits on core 1 while H holds it. Each case prints the
 // change's result, then 300 ms after the change whether S's step after its own call ran (self) or
 // whether S counted (remote), whether R ran, and S's status. A remote case counts S again in the
-// next 300 ms. H is then stopped and 300 ms later the core S ran on is noted. A lower H is only
-// stopped once S has ended, since S preempts it at once. Cases: S at 0x70 and at 0xA0, self and
-// remote, each with H at 0x50, at S's priority and at 0xB8.
+// next 300 ms. H is then stopped and the core S ran on is noted once S ended (self) or counted
+// twice more (remote). A lower H is only stopped once S has ended, since S preempts it at once.
+// Cases: S at 0x70 and at 0xA0, self and remote, each with H at 0x50, at S's priority and at 0xB8.
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -104,11 +104,12 @@ static void run_case(int s_priority, int h_priority, int remote) {
                                            0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(s, 0, NULL);
     TEST_WAIT_FOR(s_up);
-    // R is queued behind S on core 0 before S changes its mask
+    // R is queued behind S on core 0 before S changes its mask. R can't run while S holds core 0,
+    // and a thread that already ran can't be queued anymore, so r_ran also ends the wait.
     const SceUID r = sceKernelCreateThread("r", r_entry, s_priority + 8, 0x4000, 0,
                                            SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(r, 0, NULL);
-    TEST_WAIT_FOR(queued(r));
+    TEST_WAIT_FOR(queued(r) || r_ran);
     if (remote)
         s_result = sceKernelChangeThreadCpuAffinityMask(s, SCE_KERNEL_CPU_MASK_USER_1);
     else
@@ -119,8 +120,10 @@ static void run_case(int s_priority, int h_priority, int remote) {
     const SceUInt32 status = status_of(s);
     int s_moved = 0;
     if (remote) {
+        // s_count only grows, so the window ends at the first count
         const unsigned int count_before = s_count;
-        sceKernelDelayThread(WINDOW_US);
+        for (int i = 0; i < WINDOW_US / 1000 && s_count == count_before; i++)
+            sceKernelDelayThread(1000);
         s_moved = s_count != count_before;
     }
 
@@ -135,9 +138,13 @@ static void run_case(int s_priority, int h_priority, int remote) {
     } else {
         h_stop = 1;
         join_timed(h);
-        sceKernelDelayThread(WINDOW_US);
-        if (remote)
+        if (remote) {
+            // The change may have stopped S in a loop it began on core 0, so the second count
+            // from here comes from a loop that ran on core 1 only
+            const unsigned int count_stopped = s_count;
+            TEST_WAIT_FOR(s_count - count_stopped >= 2);
             s_stop = 1;
+        }
         join_timed(s);
     }
     const int s_core_after = s_core;

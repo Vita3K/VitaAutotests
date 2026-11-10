@@ -21,6 +21,7 @@
 #define GATE_PRIORITY 0x40
 #define READY 0x2
 #define STANDBY 0x4
+#define DORMANT 0x10
 #define SUSPENDED 0x100
 
 static SceUID gate;
@@ -53,10 +54,11 @@ static SceUInt32 status_of(SceUID thread) {
     return info.status;
 }
 
-// Whether thread is ready to run on its core, STANDBY or READY
-static int queued(SceUID thread) {
+// Whether thread is ready to run on its core, STANDBY or READY, or has run and ended already.
+// On the console T can't end here, since G holds core 0 until the gate is lifted.
+static int queued_or_ended(SceUID thread) {
     const SceUInt32 status = status_of(thread);
-    return status == READY || status == STANDBY;
+    return status == READY || status == STANDBY || status == DORMANT;
 }
 
 static void run_case(int priority, int control) {
@@ -71,7 +73,7 @@ static void run_case(int priority, int control) {
     const SceUID t = sceKernelCreateThread("t", t_entry, priority, 0x4000, THREAD_ATTR_VM,
                                            SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(t, 0, NULL);
-    TEST_WAIT_FOR(queued(t));
+    TEST_WAIT_FOR(queued_or_ended(t));
     int suspended, resumed, moved;
     SceUInt32 status;
     if (control) {
@@ -85,7 +87,10 @@ static void run_case(int priority, int control) {
         status = status_of(t);
         resumed = sceKernelResumeThreadForVM(t);
     }
-    sceKernelDelayThread(250000);
+    // Gives T up to 250 ms to run while G still holds core 0
+    const SceUInt64 end = sceKernelGetProcessTimeWide() + 250000;
+    while (!t_ran && sceKernelGetProcessTimeWide() < end)
+        sceKernelDelayThread(1000);
     const int ran_early = t_ran;
     gate_open = 1;
     sceKernelWaitThreadEnd(gate, NULL, NULL);

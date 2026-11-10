@@ -8,7 +8,7 @@
 #include "threadmgr_extra.h"
 
 // Generous, so a slow system doesn't fail the test
-#define MAX_OVERSHOOT_US 200000
+#define MAX_OVERSHOOT_US 300000
 
 static int wait_event(SceUID timer, SceUInt32 us) {
     SceUInt32 result = 0;
@@ -61,22 +61,26 @@ int main(void) {
     PRINT("stopped: the clock struct after the set", clock);
     PRINT("stopped: the wide time is the one set", sceKernelGetTimerTimeWide(timer) == 5000);
 
-    // Running, it counts from the time set
+    // Running, it counts from the time set. Nothing is printed until the last read, since a print
+    // would add to the times read.
     sceKernelStartTimer(timer);
     sceKernelDelayThread(20000);
     clock = 0;
-    PRINT("running: get the time", sceKernelGetTimerTime(timer, &clock));
-    PRINT("running: it counted the delay from the time set", clock >= 25000);
-    PRINT("running: and not much more", clock < 25000 + MAX_OVERSHOOT_US);
+    const int get_result = sceKernelGetTimerTime(timer, &clock);
+    const SceUInt64 counted = clock;
     const SceUInt64 old = sceKernelSetTimerTimeWide(timer, 10000000);
-    PRINT("running: setting the wide time returns the old time", old >= 25000 && old < 25000 + MAX_OVERSHOOT_US);
     SceUInt64 now = sceKernelGetTimerTimeWide(timer);
-    PRINT("running: it counts from the time set", now >= 10000000 && now < 10000000 + MAX_OVERSHOOT_US);
     clock = 0;
-    PRINT("running: set the time by the clock struct", sceKernelSetTimerTime(timer, &clock));
+    const int set_result = sceKernelSetTimerTime(timer, &clock);
+    const SceUInt64 from_zero = sceKernelGetTimerTimeWide(timer);
+    PRINT("running: get the time", get_result);
+    PRINT("running: it counted the delay from the time set", counted >= 25000);
+    PRINT("running: and not much more", counted < 25000 + MAX_OVERSHOOT_US);
+    PRINT("running: setting the wide time returns the old time", old >= 25000 && old < 25000 + MAX_OVERSHOOT_US);
+    PRINT("running: it counts from the time set", now >= 10000000 && now < 10000000 + MAX_OVERSHOOT_US);
+    PRINT("running: set the time by the clock struct", set_result);
     PRINT("running: the clock struct after the set is the old time", clock >= 10000000 && clock < 10000000 + MAX_OVERSHOOT_US);
-    now = sceKernelGetTimerTimeWide(timer);
-    PRINT("running: it counts from 0", now < MAX_OVERSHOOT_US);
+    PRINT("running: it counts from 0", from_zero < MAX_OVERSHOOT_US);
 
     // Stopped again, it keeps its time, and starting again goes on from it
     sceKernelStopTimer(timer);

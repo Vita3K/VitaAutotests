@@ -3,9 +3,10 @@
 // timeout of 300 ms, once for a heavy condition (sceKernelCreateCond) and once for a lightweight
 // one (sceKernelCreateLwCond). The main thread runs on core 0 at 0x60 and W is pinned to core 0 at
 // 0xB0, so W doesn't run while the main thread keeps going. The main thread polls the thread info
-// with no delay until W is ready with no wait type, which is the state the timeout leaves W in, for
-// at most 5 s. Then it reads W's status and wait type, the waiters of C and M, and whether W owns
-// M, and only then acts, on fresh objects. The cases:
+// with no delay until W is ready with no wait type, which is the state the timeout leaves W in, or
+// until W has ended, for at most 5 s. W can only end there if it ran, which the main thread holding
+// core 0 rules out. Then it reads W's status and wait type, the waiters of C and M, and whether W
+// owns M, and only then acts, on fresh objects. The cases:
 // - delete C, then block so that W runs. Prints the delete's result, W's wait result, whether W
 //   owns M after it, W's unlock result and whether W's time left is 0
 // - heavy only: delete M, then block. Prints the delete's result, W's wait result and W's unlock
@@ -199,11 +200,14 @@ static int w_entry(SceSize args, void *argp) {
     return 0;
 }
 
-// Returns whether thread is ready and in no wait, which is the state a timeout leaves a waiter in
-static int is_claimed(SceUID thread) {
+// Returns whether thread is ready and in no wait, which is the state a timeout leaves a waiter in,
+// or whether W has recorded its results and ended
+static int is_claimed_or_ended(SceUID thread) {
     SceKernelThreadInfo info = { .size = sizeof(info) };
-    return sceKernelGetThreadInfo(thread, &info) == 0 && info.status == SCE_THREAD_READY &&
-        info.waitType == 0;
+    if (sceKernelGetThreadInfo(thread, &info) != 0)
+        return 0;
+    return (info.status == SCE_THREAD_READY && info.waitType == 0) ||
+        (w_done && info.status == SCE_THREAD_DORMANT);
 }
 
 // Creates the objects and W, and waits until W waits on the condition
@@ -219,10 +223,10 @@ static SceUID start_waiter(const Kind *k) {
     return w;
 }
 
-// Polls the thread info of w with no delay until w is claimed, for at most 5 s
+// Polls the thread info of w with no delay until w is claimed or has ended, for at most 5 s
 static void poll_claimed(SceUID w) {
     const SceUInt64 end = sceKernelGetProcessTimeWide() + POLL_US;
-    while (sceKernelGetProcessTimeWide() < end && !is_claimed(w))
+    while (sceKernelGetProcessTimeWide() < end && !is_claimed_or_ended(w))
         ;
 }
 

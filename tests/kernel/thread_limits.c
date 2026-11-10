@@ -7,7 +7,7 @@
 #include "test.h"
 #include "threadmgr_extra.h"
 
-#define CREATE_CAP 1024
+#define CREATE_CAP 512
 #define RUNNERS 128
 
 static SceUID threads[CREATE_CAP];

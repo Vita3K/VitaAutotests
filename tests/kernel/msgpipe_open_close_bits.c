@@ -135,8 +135,10 @@ static void run_wait(const char *name, SceUInt32 bit) {
     wait_pattern = NOT_SET;
     wait_user_data = 0;
     const SceUID thread = test_start_thread_arg(waiter, bit);
-    // With the pipe opened, the thread's info may report either of its UIDs as the one it waits on
-    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, pipe) || (opened >= 0 && test_in_wait(thread, WAIT_TYPE_EVENT, opened)));
+    // With the pipe opened, the thread's info may report either of its UIDs as the one it waits on.
+    // A wait that already returned can't change anymore, so the test goes on at once.
+    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, pipe) || (opened >= 0 && test_in_wait(thread, WAIT_TYPE_EVENT, opened)) ||
+                  wait_result != NOT_SET);
     if (bit == OPEN_BIT) {
         opened = sceKernelOpenMsgPipe(pipe_name);
         PRINTF(test_created(opened), "%s: open it", name);
@@ -183,7 +185,9 @@ static void run_delete(const char *name) {
     wait_pattern = NOT_SET;
     wait_user_data = 0;
     const SceUID thread = test_start_thread_arg(waiter, EVENT_DELETE);
-    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, opened) || test_in_wait(thread, WAIT_TYPE_EVENT, pipe));
+    // A wait that already returned can't change anymore, so the test goes on at once
+    TEST_WAIT_FOR(test_in_wait(thread, WAIT_TYPE_EVENT, opened) || test_in_wait(thread, WAIT_TYPE_EVENT, pipe) ||
+                  wait_result != NOT_SET);
     PRINTF(sceKernelDeleteMsgPipe(pipe), "%s: delete the creating UID", name);
     test_join_thread(thread);
     PRINTF(wait_result, "%s: the wait for the delete bit", name);

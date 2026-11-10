@@ -303,7 +303,8 @@ static void set_first_case(const char *name, Kind k) {
         }
     }
     const SceUID w = start(set_first_waiter, 0);
-    TEST_WAIT_FOR(waiting_in(w, k));
+    // A waiter that ended without waiting leaves nothing to wait for
+    TEST_WAIT_FOR(waiting_in(w, k) || status_of(w) == SCE_THREAD_DORMANT);
 
     const int set = k == FLAG ? sceKernelSetEventFlag(flag, 0x1)
                               : sceKernelSetEvent(event, EVENT_BIT_A, USER_DATA);
@@ -365,7 +366,8 @@ static void multi_case(const char *name, int with_plain) {
     plain_user_data = NOT_DONE;
 
     const SceUID w = start(multi_waiter, 0);
-    TEST_WAIT_FOR(test_in_wait(w, WAIT_TYPE_MP_EVENTS, MULTI_EVENTS_WAIT_ID));
+    // A waiter that ended without waiting leaves nothing to wait for
+    TEST_WAIT_FOR(waiting_in(w, MULTI_EVENTS) || status_of(w) == SCE_THREAD_DORMANT);
     SceUID s = 0;
     if (with_plain) {
         s = start(plain_waiter, 0);

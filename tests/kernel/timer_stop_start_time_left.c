@@ -25,11 +25,12 @@ int main(void) {
     SceUInt64 interval = EVENT_US;
     PRINT("set a one shot set event of 4 s",
           sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &interval, 0));
-    PRINT("start the timer", sceKernelStartTimer(timer));
+    // Nothing is printed until the wait returned, since a print would shift the time left
+    const int start = sceKernelStartTimer(timer);
     sceKernelDelayThread(STOP_AFTER_US);
-    PRINT("stop the timer after 1.5 s", sceKernelStopTimer(timer));
+    const int stop = sceKernelStopTimer(timer);
     sceKernelDelayThread(RESTART_AFTER_US);
-    PRINT("start the timer again after 1 s", sceKernelStartTimer(timer));
+    const int restart = sceKernelStartTimer(timer);
 
     SceUInt32 pattern = 0;
     SceUInt64 user_data = 0;
@@ -37,6 +38,9 @@ int main(void) {
     const SceUInt64 begin = sceKernelGetProcessTimeWide();
     const int result = sceKernelWaitEvent(timer, EVENT_TIMER, &pattern, &user_data, &timeout);
     const SceUInt64 elapsed = sceKernelGetProcessTimeWide() - begin;
+    PRINT("start the timer", start);
+    PRINT("stop the timer after 1.5 s", stop);
+    PRINT("start the timer again after 1 s", restart);
     PRINT("the wait for the event with a 3.25 s timeout", result);
     PRINT("it returned within 3 s", elapsed < 3000000);
     PRINT("it returned after 2 s", elapsed > 2000000);
