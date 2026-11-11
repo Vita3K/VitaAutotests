@@ -1,0 +1,6 @@
+allocate 1 MiB: 0x00000000
+free it: 0x00000000
+free the UID -1: 0x80020005
+allocate 16 MiB: 0x00000000
+allocate 1 MiB with the 16 MiB live: 0x00000000
+DONE

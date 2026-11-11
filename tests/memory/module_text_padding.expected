@@ -1,0 +1,5 @@
+the info of the code block: 0x00000000
+the block is a whole number of pages: 0x00000001
+the last byte of the block holds 0xB6: 0x00000001
+the run of 0xB6 bytes at its end is shorter than a page: 0x00000001
+DONE

@@ -1,0 +1,12 @@
+the info call: 0x00000000
+the name is VTST00000: 0x00000001
+the name ends with EntryCall: 0x00000000
+the attributes: 0x80000000
+the initial priority: 0x000000A0
+the current priority: 0x000000A0
+the stack size: 0x00040000
+the initial affinity mask: 0x00070000
+the current affinity mask: 0x00070000
+the current CPU is a user core: 0x00000001
+the current CPU field is a user core: 0x00000001
+DONE

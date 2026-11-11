@@ -1,0 +1,7 @@
+ten event sets: H woke ten times: 0x00000001
+ten event sets: the interrupt preempt count of T grew by: 0x0000000A
+ten event sets: the thread preempt count of T grew by: 0x00000000
+ten semaphore signals: H woke ten times: 0x00000001
+ten semaphore signals: the interrupt preempt count of T grew by: 0x00000000
+ten semaphore signals: the thread preempt count of T grew by: 0x0000000A
+DONE

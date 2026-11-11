@@ -1,0 +1,29 @@
+H1 woke once: 0x00000001
+H2 woke once: 0x00000001
+H3 woke once: 0x00000001
+a semaphore signal that wakes a better thread: the result: 0x00000000
+a semaphore signal that wakes a better thread: the d registers that kept their marker, one bit each: 0x0000FF0C
+a semaphore signal that wakes a better thread: the other registers all hold one value: 0x00000001
+a semaphore signal that wakes a better thread: that value's high word: 0x7FF8DEAD
+a semaphore signal that wakes a better thread: that value's low word: 0x7F80DEAD
+an event set that wakes a better thread: the result: 0x00000000
+an event set that wakes a better thread: the d registers that kept their marker, one bit each: 0xFFFFFFFC
+an event set that wakes a better thread: the other registers all hold one value: 0x00000001
+an event set that wakes a better thread: that value's high word: 0x00000000
+an event set that wakes a better thread: that value's low word: 0x00000000
+a semaphore signal that wakes nobody: the result: 0x00000000
+a semaphore signal that wakes nobody: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+a semaphore signal that wakes nobody: the other registers all hold one value: 0x00000001
+a semaphore signal that wakes nobody: that value's high word: 0x00000000
+a semaphore signal that wakes nobody: that value's low word: 0x00000000
+an event set that wakes nobody: the result: 0x00000000
+an event set that wakes nobody: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+an event set that wakes nobody: the other registers all hold one value: 0x00000001
+an event set that wakes nobody: that value's high word: 0x00000000
+an event set that wakes nobody: that value's low word: 0x00000000
+an event set that wakes a better thread waiting with no timeout: the result: 0x00000000
+an event set that wakes a better thread waiting with no timeout: the d registers that kept their marker, one bit each: 0xFFFFFFFF
+an event set that wakes a better thread waiting with no timeout: the other registers all hold one value: 0x00000001
+an event set that wakes a better thread waiting with no timeout: that value's high word: 0x00000000
+an event set that wakes a better thread waiting with no timeout: that value's low word: 0x00000000
+DONE

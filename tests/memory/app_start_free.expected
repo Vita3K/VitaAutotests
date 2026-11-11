@@ -1,0 +1,11 @@
+the measure found the size: 0x00000001
+the blocks of the app's code, data, heap, stack and TLS are found: 0x00000001
+the reported size is the measured one rounded down to a MiB, less 2 MiB: 0x00000001
+the reported size is a whole number of MiB: 0x00000001
+the reported size is between 96 MiB and 127 MiB: 0x00000001
+the heap block size: 0x08000000
+the TLS block size: 0x00001000
+the rest is a whole number of pages: 0x00000001
+the rest is at least 0x313000: 0x00000001
+the rest is under 1 MiB above 0x313000: 0x00000001
+DONE

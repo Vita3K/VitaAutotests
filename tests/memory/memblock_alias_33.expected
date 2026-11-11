@@ -1,0 +1,10 @@
+allocate the original: 0x00000000
+open every alias: 0x00000001
+open the 33rd alias: 0x00000000
+the first 32 aliases: how many are found before the free: 0x00000020
+the 33rd alias: find before the free: 0x00000000
+free E: 0x00000000
+the first 32 aliases: how many are found after the free: 0x00000000
+the 33rd alias: find after the free: 0x00000000
+close every alias: 0x00000001
+DONE

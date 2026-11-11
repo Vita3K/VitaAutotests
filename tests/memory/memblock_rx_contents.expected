@@ -1,0 +1,19 @@
+a block for code: allocate: 0x00000000
+a block for code: every word is zero: 0x00000000
+a block for code: a word holds the fill: 0x00000001
+USER_MAIN_R with no options: allocate: 0x00000000
+USER_MAIN_R with no options: every word is zero: 0x00000000
+USER_MAIN_R with no options: a word holds the fill: 0x00000001
+USER_MAIN_R with word 15 = 0: allocate: 0x00000000
+USER_MAIN_R with word 15 = 0: every word is zero: 0x00000000
+USER_MAIN_R with word 15 = 0: a word holds the fill: 0x00000001
+USER_MAIN_R with word 15 = 1: allocate: 0x00000000
+USER_MAIN_R with word 15 = 1: every word is zero: 0x00000001
+USER_MAIN_R with word 15 = 1: a word holds the fill: 0x00000000
+USER_MAIN_R with word 15 = 2: allocate: 0x00000000
+USER_MAIN_R with word 15 = 2: every word is zero: 0x00000000
+USER_MAIN_R with word 15 = 2: a word holds the fill: 0x00000001
+USER_MAIN_R with word 15 = 3: allocate: 0x00000000
+USER_MAIN_R with word 15 = 3: every word is zero: 0x00000000
+USER_MAIN_R with word 15 = 3: a word holds the fill: 0x00000001
+DONE
