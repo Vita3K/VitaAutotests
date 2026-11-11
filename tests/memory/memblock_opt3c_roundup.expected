@@ -1,0 +1,10 @@
+option size 0x40: allocate: 0x00000000
+option size 0x40: the base is 64 KiB aligned: 0x00000001
+option size 0x40: the mapped size: 0x00010000
+option size 0x3C: allocate: 0x80020005
+option size 0x3C: the base is 64 KiB aligned: 0x00000000
+option size 0x3C: the mapped size: 0x00000000
+option size 0x38: allocate: 0x80020005
+option size 0x38: the base is 64 KiB aligned: 0x00000000
+option size 0x38: the mapped size: 0x00000000
+DONE

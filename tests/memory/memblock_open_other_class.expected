@@ -1,0 +1,14 @@
+create the semaphore: 0x00000000
+create the event flag: 0x00000000
+the semaphore's name, flags 0x10: open as a memory block: 0x80024508
+the semaphore's name, flags 0x30: open as a memory block: 0x80024508
+the semaphore's name, flags 0x0: open as a memory block: 0x80020005
+the event flag's name, flags 0x10: open as a memory block: 0x80024508
+the event flag's name, flags 0x30: open as a memory block: 0x80024508
+the event flag's name, flags 0x0: open as a memory block: 0x80020005
+a name nobody has, flags 0x10: open as a memory block: 0x8002450A
+a name nobody has, flags 0x30: open as a memory block: 0x8002450A
+a name nobody has, flags 0x0: open as a memory block: 0x80020005
+the semaphore opens by its own call: 0x00000000
+the event flag opens by its own call: 0x00000000
+DONE

@@ -1,0 +1,9 @@
+pinned thread created: the count is 0xFFFFFFFF: 0x00000001
+unpinned thread created: the count is 0xFFFFFFFF: 0x00000001
+pinned thread after its first run: the count is 0: 0x00000001
+pinned thread after its second run: the count is 0: 0x00000001
+give it the mask of core 2 while dormant: the call is a success: 0x00000001
+pinned thread after its next run, whose start resets the mask: the count is 0: 0x00000001
+give a waiting thread the mask of core 2: the call is a success: 0x00000001
+that thread after it woke and ended: the count is 1: 0x00000001
+DONE

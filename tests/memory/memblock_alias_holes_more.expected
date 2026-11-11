@@ -1,0 +1,15 @@
+allocate the original: 0x00000000
+open the five aliases: 0x00000001
+close A0: 0x00000000
+close A1: 0x00000000
+A2: find before the free of E: 0x00000000
+A3: find before the free of E: 0x00000000
+A4: find before the free of E: 0x00000000
+free E: 0x00000000
+A2: find after the free of E: 0x80022007
+A3: find after the free of E: 0x00000000
+A4: find after the free of E: 0x00000000
+A2: close: 0x00000000
+A3: close: 0x00000000
+A4: close: 0x00000000
+DONE

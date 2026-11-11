@@ -1,0 +1,9 @@
+attr 0x1000000, option size 0x14: allocate: 0x80020005
+attr 0x1000000, option size 0x14: the KiB the CDRAM free size dropped by: 0x00000100
+attr 0x20, option size 0x38: allocate: 0x80020005
+attr 0x20, option size 0x38: the KiB the CDRAM free size dropped by: 0x00000100
+attr 0x2000 with word 14 at 0x2000, option size 0x40: allocate: 0x80020005
+attr 0x2000 with word 14 at 0x2000, option size 0x40: the KiB the CDRAM free size dropped by: 0x00000100
+no options: allocate: 0x00000000
+no options: the KiB the CDRAM free size dropped by: 0x00000100
+DONE

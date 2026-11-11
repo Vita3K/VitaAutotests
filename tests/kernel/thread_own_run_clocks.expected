@@ -1,0 +1,4 @@
+read the info of the waiting thread: 0x00000000
+the two reads of its own run clocks are equal: 0x00000001
+the read from outside is above the first by at least 250 ms: 0x00000001
+DONE

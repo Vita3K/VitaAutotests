@@ -1,0 +1,16 @@
+semaphores, first round: all were created: 0x00000001
+semaphores, first round: the KiB taken by the creates: 0x000000A0
+semaphores, first round: the KiB still taken after the deletes: 0x000000A0
+semaphores, second round: all were created: 0x00000001
+semaphores, second round: the KiB taken by the creates, from the free size after the first round: 0x00000000
+semaphores, second round: the KiB still taken after the deletes, in all: 0x000000A0
+lightweight mutexes, first round: all were created: 0x00000001
+lightweight mutexes, first round: the KiB taken by the creates: 0x00000000
+lightweight mutexes, first round: the KiB still taken after the deletes: 0x00000000
+lightweight mutexes, second round: all were created: 0x00000001
+lightweight mutexes, second round: the KiB taken by the creates, from the free size after the first round: 0x00000000
+lightweight mutexes, second round: the KiB still taken after the deletes, in all: 0x00000000
+threads: all were created: 0x00000001
+threads: the KiB taken by the creates: 0x00000620
+threads: the KiB still taken after the deletes: 0x00000020
+DONE

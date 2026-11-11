@@ -1,0 +1,3 @@
+the main thread calls it with 0x100000: 0x80010058
+a created thread calls it with 0x100000: 0x80010058
+DONE

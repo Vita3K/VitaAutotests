@@ -1,0 +1,6 @@
+allocate the block: 0x00000000
+ldr at an address one byte past a word: 0x04030201
+ldrh at an address one byte past a word: 0x00000201
+str of 0xAABBCCDD one byte past a word: the bytes 0 to 3: 0xBBCCDD00
+str of 0xAABBCCDD one byte past a word: the bytes 4 to 7: 0x070605AA
+DONE
