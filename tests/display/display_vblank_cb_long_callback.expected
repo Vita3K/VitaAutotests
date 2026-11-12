@@ -1,0 +1,20 @@
+notified: the notify: 0x00000000
+notified: the wait's result: 0x00000000
+notified: runs of the callback when the wait returned: 0x00000001
+notified: the callback started before the vblank the wait is for: 0x00000001
+notified: the callback lasted at least 3 vblanks: 0x00000001
+notified: the wait returned in the frame the callback ended in: 0x00000000
+notified: the wait returned at most 1 vblank after the callback ended: 0x00000001
+notified: the check's result: 0x00000000
+notified: runs of the callback after the check: 0x00000001
+the display's callback: the register: 0x00000000
+the display's callback: the wait's result: 0x00000000
+the display's callback: runs of the callback when the wait returned: 0x00000001
+the display's callback: the callback started before the vblank the wait is for: 0x00000000
+the display's callback: the callback lasted at least 3 vblanks: 0x00000001
+the display's callback: the wait returned in the frame the callback ended in: 0x00000001
+the display's callback: the wait returned at most 1 vblank after the callback ended: 0x00000001
+the display's callback: the unregister: 0x00000000
+the display's callback: the check's result: 0x00000001
+the display's callback: runs of the callback after the check: 0x00000002
+DONE

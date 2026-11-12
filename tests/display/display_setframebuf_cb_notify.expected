@@ -1,0 +1,22 @@
+allocate the framebuffer block: 0x00000000
+1 vblank: the set: 0x00000000
+1 vblank: W's wait type in the wait: 0x80010000
+1 vblank: the notify: 0x00000000
+1 vblank: the wait's result: 0x00000000
+1 vblank: runs of the callback when the wait returned: 0x00000001
+1 vblank: the callback first ran before the next vblank: 0x00000001
+1 vblank: the wait returned at least 1 vblank after it began: 0x00000001
+1 vblank: the wait returned at most 2 vblanks after it began: 0x00000001
+1 vblank: the check's result: 0x00000000
+1 vblank: runs of the callback after the check: 0x00000001
+4 vblanks: the set: 0x00000000
+4 vblanks: W's wait type in the wait: 0x80010000
+4 vblanks: the notify: 0x00000000
+4 vblanks: the wait's result: 0x00000000
+4 vblanks: runs of the callback when the wait returned: 0x00000001
+4 vblanks: the callback first ran 2 vblanks after the wait began: 0x00000001
+4 vblanks: the wait returned at least 4 vblanks after it began: 0x00000001
+4 vblanks: the wait returned at most 5 vblanks after it began: 0x00000001
+4 vblanks: the check's result: 0x00000000
+4 vblanks: runs of the callback after the check: 0x00000001
+DONE

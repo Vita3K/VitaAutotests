@@ -1,0 +1,15 @@
+W's wait type in its wait: 0x80010000
+the notify: 0x00000000
+W's wait type in the callback's wait: 0x00010000
+the callback's wait: 0x00000000
+the callback's wait returned at the first vblank after W's wait began: 0x00000001
+W's wait's result: 0x00000000
+runs of the callback when W's wait returned: 0x00000001
+order: steps: 0x00000003
+order: step 0: 0x00000001
+order: step 1: 0x00000002
+order: step 2: 0x00000003
+W's wait returned in the frame the callback ended in: 0x00000000
+W's wait returned at most 1 vblank after the callback ended: 0x00000001
+the check's result: 0x00000000
+DONE

@@ -1,0 +1,36 @@
+one notify: W's wait type in the wait: 0x80010000
+one notify: the notify: 0x00000000
+one notify: W's status after the notify: 0x00000002
+one notify: the wait's result: 0x00000000
+one notify: runs of the callback when the wait returned: 0x00000001
+one notify: the count the callback got at its first run: 0x00000001
+one notify: the argument the callback got at its first run: 0x00000001
+one notify: the callback first ran before the next vblank: 0x00000001
+one notify: the wait returned at the first vblank after it began: 0x00000001
+one notify: the check's result: 0x00000000
+one notify: runs of the callback after the check: 0x00000001
+two notifies: W's wait type in the wait: 0x80010000
+two notifies: the notify: 0x00000000
+two notifies: the second notify: 0x00000000
+two notifies: W's status after the notify: 0x00000002
+two notifies: the wait's result: 0x00000000
+two notifies: runs of the callback when the wait returned: 0x00000001
+two notifies: the count the callback got at its first run: 0x00000002
+two notifies: the argument the callback got at its first run: 0x00000002
+two notifies: the callback first ran before the next vblank: 0x00000001
+two notifies: the wait returned at the first vblank after it began: 0x00000001
+two notifies: the check's result: 0x00000000
+two notifies: runs of the callback after the check: 0x00000001
+notify before the wait: the notify: 0x00000000
+notify before the wait: W's status after the notify: 0x00000008
+notify before the wait: the gate signal: 0x00000000
+notify before the wait: runs of the callback before the wait: 0x00000000
+notify before the wait: the wait's result: 0x00000000
+notify before the wait: runs of the callback when the wait returned: 0x00000001
+notify before the wait: the count the callback got at its first run: 0x00000001
+notify before the wait: the argument the callback got at its first run: 0x00000001
+notify before the wait: the callback first ran before the next vblank: 0x00000001
+notify before the wait: the wait returned at the first vblank after it began: 0x00000001
+notify before the wait: the check's result: 0x00000000
+notify before the wait: runs of the callback after the check: 0x00000001
+DONE

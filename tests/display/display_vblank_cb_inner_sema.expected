@@ -1,0 +1,31 @@
+signal at once: W's wait type in the vblank wait: 0x80010000
+signal at once: the notify: 0x00000000
+signal at once: W's wait type in the callback's wait: 0x00000020
+signal at once: the signal: 0x00000000
+signal at once: the callback's wait: 0x00000000
+signal at once: the vblank wait's result: 0x00000000
+signal at once: runs of the callback when the vblank wait returned: 0x00000001
+signal at once: steps: 0x00000003
+signal at once: step 0: 0x00000001
+signal at once: step 1: 0x00000002
+signal at once: step 2: 0x00000003
+signal at once: the callback ended at least 2 vblanks after the wait began: 0x00000000
+signal at once: the wait returned in the frame the callback ended in: 0x00000000
+signal at once: the wait returned at most 1 vblank after the callback ended: 0x00000001
+signal at once: the check's result: 0x00000000
+signal after the target vblank: W's wait type in the vblank wait: 0x80010000
+signal after the target vblank: the notify: 0x00000000
+signal after the target vblank: W's wait type in the callback's wait: 0x00000020
+signal after the target vblank: the signal: 0x00000000
+signal after the target vblank: the callback's wait: 0x00000000
+signal after the target vblank: the vblank wait's result: 0x00000000
+signal after the target vblank: runs of the callback when the vblank wait returned: 0x00000001
+signal after the target vblank: steps: 0x00000003
+signal after the target vblank: step 0: 0x00000001
+signal after the target vblank: step 1: 0x00000002
+signal after the target vblank: step 2: 0x00000003
+signal after the target vblank: the callback ended at least 2 vblanks after the wait began: 0x00000001
+signal after the target vblank: the wait returned in the frame the callback ended in: 0x00000000
+signal after the target vblank: the wait returned at most 1 vblank after the callback ended: 0x00000001
+signal after the target vblank: the check's result: 0x00000000
+DONE
