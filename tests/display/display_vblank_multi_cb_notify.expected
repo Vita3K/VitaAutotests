@@ -1,0 +1,23 @@
+notify after 2 vblanks: W's wait type in the wait: 0x80010000
+notify after 2 vblanks: the notify: 0x00000000
+notify after 2 vblanks: the wait's result: 0x00000000
+notify after 2 vblanks: runs of the callback when the wait returned: 0x00000001
+notify after 2 vblanks: the callback started 2 vblanks after the wait began: 0x00000001
+notify after 2 vblanks: the wait returned at least 4 vblanks after it began: 0x00000001
+notify after 2 vblanks: the wait returned at most 5 vblanks after it began: 0x00000001
+notify after 2 vblanks: the wait returned in the frame the callback ended in: 0x00000000
+notify after 2 vblanks: the wait returned at most 1 vblank after the callback ended: 0x00000000
+notify after 2 vblanks: the check's result: 0x00000000
+notify after 2 vblanks: runs of the callback after the check: 0x00000001
+a callback past the target: W's wait type in the wait: 0x80010000
+a callback past the target: the notify: 0x00000000
+a callback past the target: the wait's result: 0x00000000
+a callback past the target: runs of the callback when the wait returned: 0x00000001
+a callback past the target: the callback started 1 vblank after the wait began: 0x00000001
+a callback past the target: the wait returned at least 4 vblanks after it began: 0x00000001
+a callback past the target: the wait returned at most 5 vblanks after it began: 0x00000000
+a callback past the target: the wait returned in the frame the callback ended in: 0x00000000
+a callback past the target: the wait returned at most 1 vblank after the callback ended: 0x00000001
+a callback past the target: the check's result: 0x00000000
+a callback past the target: runs of the callback after the check: 0x00000001
+DONE

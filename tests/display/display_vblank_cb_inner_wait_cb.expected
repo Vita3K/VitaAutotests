@@ -1,0 +1,35 @@
+nested wait: W's wait type in its wait: 0x80010000
+nested wait: the notify: 0x00000000
+nested wait: W's wait type in the nested wait: 0x80010000
+nested wait: the nested wait: 0x00000000
+nested wait: the nested wait returned at the first vblank after W's wait began: 0x00000001
+nested wait: W's wait's result: 0x00000000
+nested wait: runs of the callback when W's wait returned: 0x00000001
+nested wait: the deepest nesting of the callback: 0x00000001
+nested wait: steps: 0x00000003
+nested wait: step 0: 0x00000001
+nested wait: step 1: 0x00000002
+nested wait: step 2: 0x00000003
+nested wait: W's wait returned in the frame the nested wait returned in: 0x00000000
+nested wait: W's wait returned at most 1 vblank after the nested wait: 0x00000001
+nested wait: the check's result: 0x00000000
+nested wait: runs of the callback after the check: 0x00000001
+notify in the nested wait: W's wait type in its wait: 0x80010000
+notify in the nested wait: the notify: 0x00000000
+notify in the nested wait: W's wait type in the nested wait: 0x80010000
+notify in the nested wait: the notify in the nested wait: 0x00000000
+notify in the nested wait: the nested wait: 0x00000000
+notify in the nested wait: the nested wait returned at the first vblank after W's wait began: 0x00000001
+notify in the nested wait: W's wait's result: 0x00000000
+notify in the nested wait: runs of the callback when W's wait returned: 0x00000002
+notify in the nested wait: the deepest nesting of the callback: 0x00000002
+notify in the nested wait: steps: 0x00000004
+notify in the nested wait: step 0: 0x00000001
+notify in the nested wait: step 1: 0x00000004
+notify in the nested wait: step 2: 0x00000002
+notify in the nested wait: step 3: 0x00000003
+notify in the nested wait: W's wait returned in the frame the nested wait returned in: 0x00000000
+notify in the nested wait: W's wait returned at most 1 vblank after the nested wait: 0x00000001
+notify in the nested wait: the check's result: 0x00000000
+notify in the nested wait: runs of the callback after the check: 0x00000002
+DONE

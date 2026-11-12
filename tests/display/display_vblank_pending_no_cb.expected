@@ -1,0 +1,32 @@
+a later wait with callbacks: W's wait type in the wait: 0x00010000
+a later wait with callbacks: the notify: 0x00000000
+a later wait with callbacks: W's status after the notify: 0x00000008
+a later wait with callbacks: the callback's notify count after the notify: 0x00000001
+a later wait with callbacks: the wait's result: 0x00000000
+a later wait with callbacks: runs of the callback after the wait: 0x00000000
+a later wait with callbacks: the second wait's result: 0x00000000
+a later wait with callbacks: runs of the callback after the second wait: 0x00000000
+a later wait with callbacks: the wait with callbacks: 0x00000000
+a later wait with callbacks: runs of the callback after the wait with callbacks: 0x00000001
+a later wait with callbacks: the callback ran before the vblank the wait with callbacks is for: 0x00000001
+a later wait with callbacks: the check's result: 0x00000000
+a later wait with callbacks: runs of the callback after the check: 0x00000001
+a later wait with callbacks: the count the callback got at its first run: 0x00000001
+a check: W's wait type in the wait: 0x00010000
+a check: the notify: 0x00000000
+a check: W's status after the notify: 0x00000008
+a check: the callback's notify count after the notify: 0x00000001
+a check: the wait's result: 0x00000000
+a check: runs of the callback after the wait: 0x00000000
+a check: the check's result: 0x00000001
+a check: runs of the callback after the check: 0x00000001
+a check: the count the callback got at its first run: 0x00000001
+the display's callback: the register: 0x00000000
+the display's callback: the wait's result: 0x00000000
+the display's callback: the callback's notify count after the wait: 0x00000003
+the display's callback: runs of the callback after the wait: 0x00000000
+the display's callback: the unregister: 0x00000000
+the display's callback: the check's result: 0x00000001
+the display's callback: runs of the callback after the check: 0x00000001
+the display's callback: the count the callback got at its first run: 0x00000003
+DONE

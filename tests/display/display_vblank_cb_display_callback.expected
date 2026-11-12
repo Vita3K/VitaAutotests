@@ -1,0 +1,23 @@
+1 vblank: the register: 0x00000000
+1 vblank: the wait's result: 0x00000000
+1 vblank: the wait returned at vblank 1 after it began: 0x00000001
+1 vblank: runs of the callback when the wait returned: 0x00000001
+1 vblank: the unregister: 0x00000000
+1 vblank: the check's result: 0x00000000
+1 vblank: runs of the callback after the check: 0x00000001
+1 vblank: run 0: vblanks since the wait began: 0x00000001
+1 vblank: run 0: the count it got: 0x00000001
+3 vblanks: the register: 0x00000000
+3 vblanks: the wait's result: 0x00000000
+3 vblanks: the wait returned at vblank 3 after it began: 0x00000001
+3 vblanks: runs of the callback when the wait returned: 0x00000003
+3 vblanks: the unregister: 0x00000000
+3 vblanks: the check's result: 0x00000000
+3 vblanks: runs of the callback after the check: 0x00000003
+3 vblanks: run 0: vblanks since the wait began: 0x00000001
+3 vblanks: run 0: the count it got: 0x00000001
+3 vblanks: run 1: vblanks since the wait began: 0x00000002
+3 vblanks: run 1: the count it got: 0x00000001
+3 vblanks: run 2: vblanks since the wait began: 0x00000003
+3 vblanks: run 2: the count it got: 0x00000001
+DONE
