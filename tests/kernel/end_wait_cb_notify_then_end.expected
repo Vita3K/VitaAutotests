@@ -1,0 +1,35 @@
+notify then end: W waits for T's end with callbacks before the notify: 0x00000001
+notify then end: the notify: 0x00000000
+notify then end: W's status after the notify: 0x00000002
+notify then end: the gate signal: 0x00000000
+notify then end: T's status when the callback first ran: 0x00000010
+notify then end: the wait's result: 0x00000000
+notify then end: the status the wait got: 0x0000005A
+notify then end: the time left is above 1 s: 0x00000001
+notify then end: runs of the callback when the wait returned: 0x00000001
+notify then end: the check's result: 0x00000000
+notify then end: runs of the callback after the check: 0x00000001
+notify alone: W waits for T's end with callbacks before the notify: 0x00000001
+notify alone: the notify: 0x00000000
+notify alone: W's status after the notify: 0x00000002
+notify alone: runs of the callback before the gate is signaled: 0x00000001
+notify alone: W waits for T's end with callbacks before the gate is signaled: 0x00000001
+notify alone: the gate signal: 0x00000000
+notify alone: T's status when the callback first ran: 0x00000008
+notify alone: the wait's result: 0x00000000
+notify alone: the status the wait got: 0x0000005A
+notify alone: the time left is above 1 s: 0x00000001
+notify alone: runs of the callback when the wait returned: 0x00000001
+notify alone: the check's result: 0x00000000
+notify alone: runs of the callback after the check: 0x00000001
+notify then end, no timeout: W waits for T's end with callbacks before the notify: 0x00000001
+notify then end, no timeout: the notify: 0x00000000
+notify then end, no timeout: W's status after the notify: 0x00000002
+notify then end, no timeout: the gate signal: 0x00000000
+notify then end, no timeout: T's status when the callback first ran: 0x00000010
+notify then end, no timeout: the wait's result: 0x00000000
+notify then end, no timeout: the status the wait got: 0x0000005A
+notify then end, no timeout: runs of the callback when the wait returned: 0x00000001
+notify then end, no timeout: the check's result: 0x00000000
+notify then end, no timeout: runs of the callback after the check: 0x00000001
+DONE
