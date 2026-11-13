@@ -1,0 +1,71 @@
+from main: registered once: the call's result: 0x00000000
+from main: registered once: runs equal the vblanks: 0x00000001
+from main: registered once: more runs than vblanks: 0x00000000
+from main: registered once: no runs: 0x00000000
+from main: registered once: smallest count: 0x00000001
+from main: registered once: largest count: 0x00000001
+from main: registered once: last count: 0x00000001
+from main: registered once: every notify id was -1: 0x00000001
+from main: registered twice: the call's result: 0x00000000
+from main: registered twice: runs equal the vblanks: 0x00000001
+from main: registered twice: more runs than vblanks: 0x00000000
+from main: registered twice: no runs: 0x00000000
+from main: registered twice: smallest count: 0x00000002
+from main: registered twice: largest count: 0x00000002
+from main: registered twice: last count: 0x00000002
+from main: registered twice: every notify id was -1: 0x00000001
+from main: unregistered once: the call's result: 0x00000000
+from main: unregistered once: runs equal the vblanks: 0x00000001
+from main: unregistered once: more runs than vblanks: 0x00000000
+from main: unregistered once: no runs: 0x00000000
+from main: unregistered once: smallest count: 0x00000001
+from main: unregistered once: largest count: 0x00000001
+from main: unregistered once: last count: 0x00000001
+from main: unregistered once: every notify id was -1: 0x00000001
+from main: unregistered twice: the call's result: 0x00000000
+from main: unregistered twice: runs equal the vblanks: 0x00000000
+from main: unregistered twice: more runs than vblanks: 0x00000000
+from main: unregistered twice: no runs: 0x00000001
+from main: unregistered twice: smallest count: 0x0000DEAD
+from main: unregistered twice: largest count: 0x00000000
+from main: unregistered twice: last count: 0x00000000
+from main: unregistered twice: every notify id was -1: 0x00000001
+from main: unregistered three times: the call's result: 0x800280A3
+from owner: registered once: the call's result: 0x00000000
+from owner: registered once: runs equal the vblanks: 0x00000001
+from owner: registered once: more runs than vblanks: 0x00000000
+from owner: registered once: no runs: 0x00000000
+from owner: registered once: smallest count: 0x00000001
+from owner: registered once: largest count: 0x00000001
+from owner: registered once: last count: 0x00000001
+from owner: registered once: every notify id was -1: 0x00000001
+from owner: registered twice: the call's result: 0x00000000
+from owner: registered twice: runs equal the vblanks: 0x00000001
+from owner: registered twice: more runs than vblanks: 0x00000000
+from owner: registered twice: no runs: 0x00000000
+from owner: registered twice: smallest count: 0x00000002
+from owner: registered twice: largest count: 0x00000002
+from owner: registered twice: last count: 0x00000002
+from owner: registered twice: every notify id was -1: 0x00000001
+from owner: unregistered once: the call's result: 0x00000000
+from owner: unregistered once: runs equal the vblanks: 0x00000001
+from owner: unregistered once: more runs than vblanks: 0x00000000
+from owner: unregistered once: no runs: 0x00000000
+from owner: unregistered once: smallest count: 0x00000001
+from owner: unregistered once: largest count: 0x00000001
+from owner: unregistered once: last count: 0x00000001
+from owner: unregistered once: every notify id was -1: 0x00000001
+from owner: unregistered twice: the call's result: 0x00000000
+from owner: unregistered twice: runs equal the vblanks: 0x00000000
+from owner: unregistered twice: more runs than vblanks: 0x00000000
+from owner: unregistered twice: no runs: 0x00000001
+from owner: unregistered twice: smallest count: 0x0000DEAD
+from owner: unregistered twice: largest count: 0x00000000
+from owner: unregistered twice: last count: 0x00000000
+from owner: unregistered twice: every notify id was -1: 0x00000001
+from owner: unregistered three times: the call's result: 0x800280A3
+register a semaphore: 0x800280A1
+unregister a semaphore: 0x800280A3
+register 0: 0x800280A1
+unregister 0: 0x800280A1
+DONE

@@ -1,0 +1,50 @@
+allocate the framebuffer block: 0x00000000
+passed, CB: caught: 0x00000001
+passed, CB: the wait's result: 0x00000000
+passed, CB: runs of the callback when the wait returned: 0x00000000
+passed, CB: returned in the same vblank: 0x00000001
+passed, CB: returned in the next vblank: 0x00000000
+passed, CB: returned later: 0x00000000
+passed, CB: the check's result: 0x00000001
+passed, CB: runs of the callback after the check: 0x00000001
+not passed, CB: caught: 0x00000001
+not passed, CB: the wait's result: 0x00000000
+not passed, CB: runs of the callback when the wait returned: 0x00000001
+not passed, CB: returned in the same vblank: 0x00000000
+not passed, CB: returned in the next vblank: 0x00000001
+not passed, CB: returned later: 0x00000000
+not passed, CB: the check's result: 0x00000000
+not passed, CB: runs of the callback after the check: 0x00000001
+passed, multi CB 1: caught: 0x00000001
+passed, multi CB 1: the wait's result: 0x00000000
+passed, multi CB 1: runs of the callback when the wait returned: 0x00000000
+passed, multi CB 1: returned in the same vblank: 0x00000001
+passed, multi CB 1: returned in the next vblank: 0x00000000
+passed, multi CB 1: returned later: 0x00000000
+passed, multi CB 1: the check's result: 0x00000001
+passed, multi CB 1: runs of the callback after the check: 0x00000001
+not passed, multi CB 1: caught: 0x00000001
+not passed, multi CB 1: the wait's result: 0x00000000
+not passed, multi CB 1: runs of the callback when the wait returned: 0x00000001
+not passed, multi CB 1: returned in the same vblank: 0x00000000
+not passed, multi CB 1: returned in the next vblank: 0x00000001
+not passed, multi CB 1: returned later: 0x00000000
+not passed, multi CB 1: the check's result: 0x00000000
+not passed, multi CB 1: runs of the callback after the check: 0x00000001
+passed, multi CB 2: caught: 0x00000001
+passed, multi CB 2: the wait's result: 0x00000000
+passed, multi CB 2: runs of the callback when the wait returned: 0x00000000
+passed, multi CB 2: returned in the same vblank: 0x00000001
+passed, multi CB 2: returned in the next vblank: 0x00000000
+passed, multi CB 2: returned later: 0x00000000
+passed, multi CB 2: the check's result: 0x00000001
+passed, multi CB 2: runs of the callback after the check: 0x00000001
+passed, plain: caught: 0x00000001
+passed, plain: the wait's result: 0x00000000
+passed, plain: runs of the callback when the wait returned: 0x00000000
+passed, plain: returned in the same vblank: 0x00000001
+passed, plain: returned in the next vblank: 0x00000000
+passed, plain: returned later: 0x00000000
+passed, plain: the check's result: 0x00000000
+passed, plain: runs of the callback after the check: 0x00000000
+DONE
