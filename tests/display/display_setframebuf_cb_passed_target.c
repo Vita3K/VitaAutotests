@@ -8,8 +8,9 @@
 // attempt sets the framebuffer for the next frame. In the passed cases it then waits for 3
 // vblanks without callbacks, so the vblank of the set has passed. In the not passed cases it
 // waits for one vblank and then makes the set and the wait right after it, so the wait has to
-// wait for the vblank. The count is read before and after the notify, and an attempt where a
-// vblank came in between is dropped. An attempt is tried up to 50 times and only the accepted
+// wait for the vblank. The count is read after the 3 vblanks in the passed cases and before the
+// set in the not passed cases, and again after the notify. An attempt where a vblank came in
+// between is dropped. An attempt is tried up to 50 times and only the accepted
 // one is printed, with caught 0 if there was none. The cases:
 // - passed, CB: sceDisplayWaitSetFrameBufCB
 // - not passed, CB: sceDisplayWaitSetFrameBufCB
@@ -72,15 +73,17 @@ static void attempt(SceUID callback, int wait, int passed, struct result *r) {
     SceDisplayFrameBuf fb = { sizeof(SceDisplayFrameBuf), buf, WIDTH, SCE_DISPLAY_PIXELFORMAT_A8B8G8R8, WIDTH, HEIGHT };
     for (int i = 0; i < ATTEMPTS; i++) {
         runs = 0;
+        int v_a;
         if (passed) {
             sceDisplaySetFrameBuf(&fb, SCE_DISPLAY_SETBUF_NEXTFRAME);
             for (int j = 0; j < 3; j++)
                 sceDisplayWaitVblankStart();
+            v_a = sceDisplayGetVcount();
         } else {
             sceDisplayWaitVblankStart();
+            v_a = sceDisplayGetVcount();
             sceDisplaySetFrameBuf(&fb, SCE_DISPLAY_SETBUF_NEXTFRAME);
         }
-        const int v_a = sceDisplayGetVcount();
         if (wait != WAIT_PLAIN)
             sceKernelNotifyCallback(callback, 1);
         const int v_b = sceDisplayGetVcount();

@@ -1,24 +1,25 @@
 // What registering the same callback twice with sceDisplayRegisterVblankStartCallback does, and
-// what unregistering it once leaves. A helper thread T creates a callback and registers it once,
-// or leaves that to the caller as the variant says. Then T loops on sceDisplayWaitVblankStartCB
-// until it is told to stop. Every vblank notifies the registered callback. The callback records
-// its runs, the smallest, the largest and the last count it got and whether every notify id it
-// got was -1. Each phase makes one register or unregister call, then measures over the next 6
-// returns of T's wait. The stats are reset together with the call, while T cannot run a callback,
-// so a phase counts exactly 6 vblanks. The phases:
+// what unregistering it once leaves. A helper thread T creates a callback. Then T loops on
+// sceDisplayWaitVblankStartCB until it is told to stop. Every vblank notifies the registered
+// callback. The callback records its runs, the smallest, the largest and the last count it got
+// and whether every notify id it got was -1. Each phase makes one register or unregister call.
+// After the call has returned, T counts 6 returns of its wait that begin after the call. T reads
+// the vblank count at the start of the first counted wait and at the sixth return, and copies
+// the stats into a snapshot at that return. The main thread only coordinates. It prints nothing
+// while a phase is measured and prints all snapshots after T was stopped and joined. The phases:
 // - registered once
 // - registered a second time
 // - unregistered once
 // - unregistered a second time
 // - unregistered a third time, with nothing registered and no measurement
 // For each phase the call's result is printed, and for the measured ones the runs as relations to
-// 6, the smallest, the largest and the last count and whether every notify id was -1. The whole
-// sequence runs in two variants. In "from main" the main thread makes the calls on T's callback.
-// In "from owner" T makes them, told by the main thread, so the callback's owner makes every call.
-// The difference between the variants shows whether a call from another thread works at all.
-// After the variants the main thread registers and unregisters a semaphore UID, which is not a
-// callback, and registers and unregisters 0. The main thread is pinned to core 0 at 0x48 and T
-// runs at 0xB0 on the same core.
+// the vblanks T counted, the smallest, the largest and the last count and whether every notify id
+// was -1. The whole sequence runs in two variants. In "from main" the main thread makes the calls
+// on T's callback. In "from owner" T makes them, told by the main thread, so the callback's owner
+// makes every call. The difference between the variants shows whether a call from another thread
+// works at all. After the variants the main thread registers and unregisters a semaphore UID,
+// which is not a callback, and registers and unregisters 0. The main thread is pinned to core 0
+// at 0x48 and T runs at 0xB0 on the same core.
 //
 // On a PS Vita TV on firmware 3.65 a second registration of the same callback succeeds, and each
 // run of the callback then gets a count of 2. One unregister brings the count back to 1, a second
@@ -32,10 +33,20 @@
 #define OP_REGISTER 1
 #define OP_UNREGISTER 2
 
+#define PHASES 5
+
+typedef struct Snapshot {
+    int call_result, measured;
+    int runs, lo, hi, last, ids, vblanks;
+} Snapshot;
+
 static SceUID callback;
-static volatile int ready, stop, returns, base;
-static volatile int cmd, cmd_ret;
+static volatile int ready, stop, armed, counting, counted, done_phases;
+static volatile int cmd, cmd_measure, cmd_ret;
 static volatile int runs, min_count, max_count, last_count, all_ids_minus_1;
+static volatile int v_start;
+static Snapshot snaps[2][PHASES];
+static volatile int variant_index;
 
 static int callback_entry(int notify_id, int count, int arg, void *common) {
     (void)arg;
@@ -51,12 +62,14 @@ static int callback_entry(int notify_id, int count, int arg, void *common) {
     return 0;
 }
 
-static void reset_stats(void) {
+static void start_counting(void) {
     runs = last_count = 0;
     min_count = NOT_DONE;
     max_count = 0;
     all_ids_minus_1 = 1;
-    base = returns;
+    counted = 0;
+    v_start = sceDisplayGetVcount();
+    counting = 1;
 }
 
 static int do_op(int op) {
@@ -70,10 +83,30 @@ static int t_entry(SceSize args, void *argp) {
     ready = 1;
     while (!stop) {
         sceDisplayWaitVblankStartCB();
-        returns++;
+        if (stop)
+            break;
+        if (counting) {
+            counted++;
+            if (counted == PHASE_VBLANKS) {
+                Snapshot *snap = &snaps[variant_index][done_phases];
+                snap->measured = 1;
+                snap->runs = runs;
+                snap->lo = min_count;
+                snap->hi = max_count;
+                snap->last = last_count;
+                snap->ids = all_ids_minus_1;
+                snap->vblanks = (sceDisplayGetVcount() - v_start) & 0xFFFF;
+                counting = 0;
+                done_phases++;
+            }
+        } else if (armed) {
+            armed = 0;
+            start_counting();
+        }
         if (cmd != OP_NONE) {
-            reset_stats();
             cmd_ret = do_op(cmd);
+            if (cmd_measure)
+                start_counting();
             cmd = OP_NONE;
         }
     }
@@ -81,53 +114,66 @@ static int t_entry(SceSize args, void *argp) {
     return 0;
 }
 
-// Makes the call from the thread the variant says and returns its result
-static int call(int by_owner, int op) {
-    if (!by_owner) {
-        reset_stats();
-        return do_op(op);
+static void phase(int by_owner, int index, int op, int measure) {
+    int result;
+    if (by_owner) {
+        cmd_measure = measure;
+        cmd = op;
+        TEST_WAIT_FOR(cmd == OP_NONE);
+        result = cmd_ret;
+    } else {
+        result = do_op(op);
+        if (measure)
+            armed = 1;
     }
-    cmd = op;
-    TEST_WAIT_FOR(cmd == OP_NONE);
-    return cmd_ret;
+    snaps[variant_index][index].call_result = result;
+    if (measure)
+        TEST_WAIT_FOR(done_phases == index + 1);
+    else
+        done_phases++;
 }
 
-static void phase(const char *variant, const char *name, int by_owner, int op, int measure) {
-    const int result = call(by_owner, op);
-    PRINTF(result, "%s: %s: the call's result", variant, name);
-    if (!measure)
-        return;
-    TEST_WAIT_FOR(returns >= base + PHASE_VBLANKS);
-    const int n = runs, lo = min_count, hi = max_count, last = last_count, ids = all_ids_minus_1;
-    PRINTF(n == PHASE_VBLANKS, "%s: %s: runs equal the vblanks", variant, name);
-    PRINTF(n > PHASE_VBLANKS, "%s: %s: more runs than vblanks", variant, name);
-    PRINTF(n == 0, "%s: %s: no runs", variant, name);
-    PRINTF(lo, "%s: %s: smallest count", variant, name);
-    PRINTF(hi, "%s: %s: largest count", variant, name);
-    PRINTF(last, "%s: %s: last count", variant, name);
-    PRINTF(ids, "%s: %s: every notify id was -1", variant, name);
-}
-
-static void run_variant(const char *variant, int by_owner) {
-    ready = stop = returns = 0;
+static void run_variant(int by_owner) {
+    ready = stop = armed = counting = done_phases = 0;
     cmd = OP_NONE;
+    variant_index = by_owner;
     const SceUID t = start_w(t_entry);
-    TEST_WAIT_FOR(ready && returns >= 1);
+    TEST_WAIT_FOR(ready);
 
-    phase(variant, "registered once", by_owner, OP_REGISTER, 1);
-    phase(variant, "registered twice", by_owner, OP_REGISTER, 1);
-    phase(variant, "unregistered once", by_owner, OP_UNREGISTER, 1);
-    phase(variant, "unregistered twice", by_owner, OP_UNREGISTER, 1);
-    phase(variant, "unregistered three times", by_owner, OP_UNREGISTER, 0);
+    phase(by_owner, 0, OP_REGISTER, 1);
+    phase(by_owner, 1, OP_REGISTER, 1);
+    phase(by_owner, 2, OP_UNREGISTER, 1);
+    phase(by_owner, 3, OP_UNREGISTER, 1);
+    phase(by_owner, 4, OP_UNREGISTER, 0);
 
     stop = 1;
     test_join_thread(t);
 }
 
+static void print_variant(const char *variant, int index) {
+    static const char *const names[PHASES] = { "registered once", "registered twice", "unregistered once", "unregistered twice", "unregistered three times" };
+    for (int i = 0; i < PHASES; i++) {
+        const Snapshot *s = &snaps[index][i];
+        const char *name = names[i];
+        PRINTF(s->call_result, "%s: %s: the call's result", variant, name);
+        if (!s->measured)
+            continue;
+        PRINTF(s->runs == s->vblanks, "%s: %s: runs equal the vblanks", variant, name);
+        PRINTF(s->runs > s->vblanks, "%s: %s: more runs than vblanks", variant, name);
+        PRINTF(s->runs == 0, "%s: %s: no runs", variant, name);
+        PRINTF(s->lo, "%s: %s: smallest count", variant, name);
+        PRINTF(s->hi, "%s: %s: largest count", variant, name);
+        PRINTF(s->last, "%s: %s: last count", variant, name);
+        PRINTF(s->ids, "%s: %s: every notify id was -1", variant, name);
+    }
+}
+
 int main(void) {
     pin_main();
-    run_variant("from main", 0);
-    run_variant("from owner", 1);
+    run_variant(0);
+    run_variant(1);
+    print_variant("from main", 0);
+    print_variant("from owner", 1);
 
     const SceUID sema = sceKernelCreateSema("sema", 0, 0, 1, NULL);
     PRINT("register a semaphore", sceDisplayRegisterVblankStartCallback(sema));

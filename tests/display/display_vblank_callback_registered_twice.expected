@@ -1,6 +1,6 @@
 from main: registered once: the call's result: 0x00000000
-from main: registered once: runs equal the vblanks: 0x00000000
-from main: registered once: more runs than vblanks: 0x00000001
+from main: registered once: runs equal the vblanks: 0x00000001
+from main: registered once: more runs than vblanks: 0x00000000
 from main: registered once: no runs: 0x00000000
 from main: registered once: smallest count: 0x00000001
 from main: registered once: largest count: 0x00000001
