@@ -1,0 +1,8 @@
+open shared fd: 0x00000000
+concurrent close ret: 0x00000000
+writer executed ops: 0x00000001
+reader executed ops: 0x00000001
+read after close: 0x80010009
+write after close: 0x80010009
+seek after close: 0x80010009
+DONE
