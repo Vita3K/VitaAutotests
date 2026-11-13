@@ -1,0 +1,40 @@
+after the wake, callback ran in the wait: caught: 0x00000001
+after the wake, callback ran in the wait: A's status at the notify: 0x00000002
+after the wake, callback ran in the wait: A's wait type at the notify: 0x00000000
+after the wake, callback ran in the wait: the notify: 0x00000000
+after the wake, callback ran in the wait: the wait's result: 0x00000000
+after the wake, callback ran in the wait: runs of the callback when the wait returned: 0x00000001
+after the wake, callback ran in the wait: the check's result: 0x00000000
+after the wake, callback ran in the wait: runs of the callback after the check: 0x00000001
+after the wake, callback ran in the wait: the count the callback got at its first run: 0x00000001
+after the wake, callback ran in the wait: the argument the callback got at its first run: 0x00000001
+after the wake, callback ran in the wait: the wait returned in the vblank of the notify: 0x00000001
+after the wake, callback ran in the wait: the wait returned one vblank after the notify: 0x00000000
+after the wake, callback ran in the wait: the wait returned more than one vblank after the notify: 0x00000000
+after the wake, callback left pending: caught: 0x00000001
+after the wake, callback left pending: A's status at the notify: 0x00000002
+after the wake, callback left pending: A's wait type at the notify: 0x00000000
+after the wake, callback left pending: the notify: 0x00000000
+after the wake, callback left pending: the wait's result: 0x00000000
+after the wake, callback left pending: runs of the callback when the wait returned: 0x00000000
+after the wake, callback left pending: the check's result: 0x00000001
+after the wake, callback left pending: runs of the callback after the check: 0x00000001
+after the wake, callback left pending: the count the callback got at its first run: 0x00000001
+after the wake, callback left pending: the argument the callback got at its first run: 0x00000001
+after the wake, callback left pending: the wait returned in the vblank of the notify: 0x00000001
+after the wake, callback left pending: the wait returned one vblank after the notify: 0x00000000
+after the wake, callback left pending: the wait returned more than one vblank after the notify: 0x00000000
+notify during the wait: caught: 0x00000001
+notify during the wait: A's status at the notify: 0x00000008
+notify during the wait: A's wait type at the notify: 0x80010000
+notify during the wait: the notify: 0x00000000
+notify during the wait: the wait's result: 0x00000000
+notify during the wait: runs of the callback when the wait returned: 0x00000001
+notify during the wait: the check's result: 0x00000000
+notify during the wait: runs of the callback after the check: 0x00000001
+notify during the wait: the count the callback got at its first run: 0x00000001
+notify during the wait: the argument the callback got at its first run: 0x00000001
+notify during the wait: the wait returned in the vblank of the notify: 0x00000000
+notify during the wait: the wait returned one vblank after the notify: 0x00000001
+notify during the wait: the wait returned more than one vblank after the notify: 0x00000000
+DONE
