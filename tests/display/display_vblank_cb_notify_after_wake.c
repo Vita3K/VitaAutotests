@@ -16,6 +16,8 @@
 // - notify during the wait: the reference case. The main thread reads the vblank count and
 //   notifies the callback once A is in the wait, before the vblank. Attempts repeat until A's
 //   status at the notify is waiting. The last attempt is printed.
+// An attempt is dropped when A left the wait before the main thread saw it there, or when a vblank
+// came between the status read and the notify.
 // For each printed attempt the vblank count at the end of A's wait is compared with the count the
 // main thread read at the notify. Only the relations are printed, never the counts.
 //
@@ -65,13 +67,17 @@ static int a_entry(SceSize args, void *argp) {
     return 0;
 }
 
-// Runs one attempt and fills r
-static void attempt(int after_wake, Result *r) {
+// Runs one attempt and fills r. Returns 0 if the attempt must be dropped.
+static int attempt(int after_wake, Result *r) {
     ready = done = runs = 0;
     first_count = first_arg = NOT_DONE;
     runs_in_wait = wait_result = check_result = runs_after_check = v_after = NOT_DONE;
     const SceUID a = start_w(a_entry);
-    TEST_WAIT_FOR(ready && in_cb_wait(a));
+    TEST_WAIT_FOR(done || (ready && in_cb_wait(a)));
+    if (done) {
+        test_join_thread(a);
+        return 0;
+    }
     if (after_wake)
         sceDisplayWaitVblankStart();
     const int v_notify = sceDisplayGetVcount();
@@ -80,6 +86,7 @@ static void attempt(int after_wake, Result *r) {
     r->status = info.status;
     r->wait_type = info.waitType;
     r->notify = sceKernelNotifyCallback(callback, 1);
+    const int same_vblank = sceDisplayGetVcount() == v_notify;
     TEST_WAIT_FOR(done);
     test_join_thread(a);
     r->wait_result = wait_result;
@@ -89,6 +96,7 @@ static void attempt(int after_wake, Result *r) {
     r->first_count = first_count;
     r->first_arg = first_arg;
     r->wait_delta = (v_after - v_notify) & 0xFFFF;
+    return same_vblank;
 }
 
 static void print_result(const char *name, const Result *r) {
@@ -113,8 +121,7 @@ static void run_after_wake(void) {
     Result ran = {}, pending = {};
     for (int tries = 0; tries < MAX_TRIES && !(ran.caught && pending.caught); tries++) {
         Result r = {};
-        attempt(1, &r);
-        if (r.status != THREAD_STATUS_READY)
+        if (!attempt(1, &r) || r.status != THREAD_STATUS_READY)
             continue;
         if (r.runs_in_wait > 0 && r.runs_in_wait != NOT_DONE) {
             if (!ran.caught) {
@@ -133,8 +140,7 @@ static void run_after_wake(void) {
 static void run_during_wait(void) {
     Result r = {};
     for (int tries = 0; tries < MAX_TRIES && !r.caught; tries++) {
-        attempt(0, &r);
-        r.caught = r.status == THREAD_STATUS_WAITING;
+        r.caught = attempt(0, &r) && r.status == THREAD_STATUS_WAITING;
     }
     print_result("notify during the wait", &r);
 }
