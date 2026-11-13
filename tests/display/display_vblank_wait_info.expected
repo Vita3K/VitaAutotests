@@ -1,0 +1,39 @@
+plain: a snapshot in the wait was caught: 0x00000001
+plain: B's status: 0x00000008
+plain: B's wait type: 0x00010000
+plain: the wait id is -1: 0x00000000
+plain: the wait id is 0: 0x00000000
+plain: the wait id is positive: 0x00000001
+plain: the class of the wait id: 0x80024501
+plain: sceKernelGetEventInfo on the wait id: 0x80028201
+CB: a snapshot in the wait was caught: 0x00000001
+CB: B's status: 0x00000008
+CB: B's wait type: 0x80010000
+CB: the wait id is -1: 0x00000000
+CB: the wait id is 0: 0x00000000
+CB: the wait id is positive: 0x00000001
+CB: the class of the wait id: 0x80024501
+CB: sceKernelGetEventInfo on the wait id: 0x80028201
+multi: a snapshot in the wait was caught: 0x00000001
+multi: B's status: 0x00000008
+multi: B's wait type: 0x00010000
+multi: the wait id is -1: 0x00000000
+multi: the wait id is 0: 0x00000000
+multi: the wait id is positive: 0x00000001
+multi: the class of the wait id: 0x80024501
+multi: sceKernelGetEventInfo on the wait id: 0x80028201
+multi CB: a snapshot in the wait was caught: 0x00000001
+multi CB: B's status: 0x00000008
+multi CB: B's wait type: 0x80010000
+multi CB: the wait id is -1: 0x00000000
+multi CB: the wait id is 0: 0x00000000
+multi CB: the wait id is positive: 0x00000001
+multi CB: the class of the wait id: 0x80024501
+multi CB: sceKernelGetEventInfo on the wait id: 0x80028201
+two threads: both snapshots were caught at the same poll: 0x00000001
+two threads: same wait type: 0x00000001
+two threads: same wait id: 0x00000001
+same wait id in the plain and the CB wait: 0x00000001
+same wait id in the multi and the multi CB wait: 0x00000001
+same wait id in the plain and the multi wait: 0x00000001
+DONE
