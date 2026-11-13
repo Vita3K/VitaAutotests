@@ -821,6 +821,8 @@ vita_test(display_vblank_multi_cb_notify display/display_vblank_multi_cb_notify.
 vita_test(display_vblank_pending_no_cb display/display_vblank_pending_no_cb.c)
 vita_test(display_vblank_wait_info display/display_vblank_wait_info.c)
 vita_test(display_setframebuf_cb_notify display/display_setframebuf_cb_notify.c)
+vita_test(display_setframebuf_cb_passed_target display/display_setframebuf_cb_passed_target.c)
+vita_test(display_vblank_callback_registered_twice display/display_vblank_callback_registered_twice.c)
 
 vita_test(savedata_slot_id apputil/savedata_slot_id.c)
 vita_test(cache_mount apputil/cache_mount.c)
