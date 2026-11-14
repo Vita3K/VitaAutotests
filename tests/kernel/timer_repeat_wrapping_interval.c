@@ -9,7 +9,8 @@
 // - interval 0x8000000000000000, whose first deadline doesn't wrap, the reference for a huge
 //   interval
 // The counts are printed as ranges, so the output stays the same from run to run. The info's
-// schedule and active fields are printed while the timer runs, and every call's result is printed.
+// schedule and active fields are read while the timer runs, and every call's result is printed once
+// the samples are taken.
 //
 // On a PS Vita TV on firmware 3.65 the 10 ms reference fires 2 to 10 times by 20 ms and again by
 // 40 ms. The interval of all ones keeps firing: 11 to 1000 fires by 20 ms and more by 40 ms, and
@@ -40,10 +41,10 @@ static void print_count(const char *name, const char *when, int count) {
 static void run(const char *name, SceUInt64 interval) {
     const SceUID timer = sceKernelCreateTimer("wrap", 0, NULL);
     const SceUID cb = sceKernelCreateCallback("wrap", 0, callback, NULL);
-    PRINTF(sceKernelRegisterCallbackToEvent(timer, cb), "%s: register the callback", name);
+    const int register_result = sceKernelRegisterCallbackToEvent(timer, cb);
     SceUInt64 value = interval;
-    PRINTF(sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &value, 1), "%s: set the repeating event", name);
-    PRINTF(sceKernelStartTimer(timer), "%s: start the timer", name);
+    const int set_result = sceKernelSetTimerEvent(timer, TIMER_TYPE_SET_EVENT, &value, 1);
+    const int start_result = sceKernelStartTimer(timer);
 
     sceKernelDelayThread(20000);
     const int at_20 = sceKernelGetCallbackCount(cb);
@@ -56,6 +57,9 @@ static void run(const char *name, SceUInt64 interval) {
     sceKernelDelayThread(20000);
     const int after_stop = sceKernelGetCallbackCount(cb);
 
+    PRINTF(register_result, "%s: register the callback", name);
+    PRINTF(set_result, "%s: set the repeating event", name);
+    PRINTF(start_result, "%s: start the timer", name);
     print_count(name, "after 20 ms", at_20);
     print_count(name, "after 40 ms", at_40);
     PRINTF(at_40 > at_20, "%s: it fired between 20 ms and 40 ms", name);
