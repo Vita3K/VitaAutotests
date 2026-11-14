@@ -630,6 +630,7 @@ vita_test(timer_repeat_auto_reset_missed kernel/timer_repeat_auto_reset_missed.c
 vita_test(timer_callback_lifecycle_args kernel/timer_callback_lifecycle_args.c)
 vita_test(timer_interval_extremes kernel/timer_interval_extremes.c)
 vita_test(timer_interval_overflow kernel/timer_interval_overflow.c)
+vita_test(timer_repeat_wrapping_interval kernel/timer_repeat_wrapping_interval.c)
 vita_test(timer_repeat_info_steps kernel/timer_repeat_info_steps.c)
 vita_test(timer_waiter_patterns kernel/timer_waiter_patterns.c)
 vita_test(timer_time_base_steps kernel/timer_time_base_steps.c)
