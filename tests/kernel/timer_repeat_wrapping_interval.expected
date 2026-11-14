@@ -2,13 +2,11 @@ interval 10 ms: register the callback: 0x00000000
 interval 10 ms: set the repeating event: 0x00000000
 interval 10 ms: start the timer: 0x00000000
 interval 10 ms: after 20 ms: no fire: 0x00000000
-interval 10 ms: after 20 ms: one fire: 0x00000000
-interval 10 ms: after 20 ms: 2 to 10 fires: 0x00000001
+interval 10 ms: after 20 ms: 1 to 10 fires: 0x00000001
 interval 10 ms: after 20 ms: 11 to 1000 fires: 0x00000000
 interval 10 ms: after 20 ms: more than 1000 fires: 0x00000000
 interval 10 ms: after 40 ms: no fire: 0x00000000
-interval 10 ms: after 40 ms: one fire: 0x00000000
-interval 10 ms: after 40 ms: 2 to 10 fires: 0x00000001
+interval 10 ms: after 40 ms: 1 to 10 fires: 0x00000001
 interval 10 ms: after 40 ms: 11 to 1000 fires: 0x00000000
 interval 10 ms: after 40 ms: more than 1000 fires: 0x00000000
 interval 10 ms: it fired between 20 ms and 40 ms: 0x00000001
@@ -25,13 +23,11 @@ interval 0xFFFFFFFFFFFFFFFF: register the callback: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: set the repeating event: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: start the timer: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: after 20 ms: no fire: 0x00000000
-interval 0xFFFFFFFFFFFFFFFF: after 20 ms: one fire: 0x00000000
-interval 0xFFFFFFFFFFFFFFFF: after 20 ms: 2 to 10 fires: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: after 20 ms: 1 to 10 fires: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: after 20 ms: 11 to 1000 fires: 0x00000001
 interval 0xFFFFFFFFFFFFFFFF: after 20 ms: more than 1000 fires: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: after 40 ms: no fire: 0x00000000
-interval 0xFFFFFFFFFFFFFFFF: after 40 ms: one fire: 0x00000000
-interval 0xFFFFFFFFFFFFFFFF: after 40 ms: 2 to 10 fires: 0x00000000
+interval 0xFFFFFFFFFFFFFFFF: after 40 ms: 1 to 10 fires: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: after 40 ms: 11 to 1000 fires: 0x00000001
 interval 0xFFFFFFFFFFFFFFFF: after 40 ms: more than 1000 fires: 0x00000000
 interval 0xFFFFFFFFFFFFFFFF: it fired between 20 ms and 40 ms: 0x00000001
@@ -48,13 +44,11 @@ interval 0x8000000000000000: register the callback: 0x00000000
 interval 0x8000000000000000: set the repeating event: 0x00000000
 interval 0x8000000000000000: start the timer: 0x00000000
 interval 0x8000000000000000: after 20 ms: no fire: 0x00000001
-interval 0x8000000000000000: after 20 ms: one fire: 0x00000000
-interval 0x8000000000000000: after 20 ms: 2 to 10 fires: 0x00000000
+interval 0x8000000000000000: after 20 ms: 1 to 10 fires: 0x00000000
 interval 0x8000000000000000: after 20 ms: 11 to 1000 fires: 0x00000000
 interval 0x8000000000000000: after 20 ms: more than 1000 fires: 0x00000000
 interval 0x8000000000000000: after 40 ms: no fire: 0x00000001
-interval 0x8000000000000000: after 40 ms: one fire: 0x00000000
-interval 0x8000000000000000: after 40 ms: 2 to 10 fires: 0x00000000
+interval 0x8000000000000000: after 40 ms: 1 to 10 fires: 0x00000000
 interval 0x8000000000000000: after 40 ms: 11 to 1000 fires: 0x00000000
 interval 0x8000000000000000: after 40 ms: more than 1000 fires: 0x00000000
 interval 0x8000000000000000: it fired between 20 ms and 40 ms: 0x00000000
