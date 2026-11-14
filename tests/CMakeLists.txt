@@ -866,5 +866,6 @@ vita_test(memblock_alias_33 memory/memblock_alias_33.c)
 vita_test(memblock_cdram_failed_validation memory/memblock_cdram_failed_validation.c)
 vita_test(memblock_open_other_class memory/memblock_open_other_class.c)
 vita_test(memblock_for_vm_free_minus_one memory/memblock_for_vm_free_minus_one.c)
+vita_test(msgpipe_mixed_sides_sender_order kernel/msgpipe_mixed_sides_sender_order.c)
 
 vita_tests_vpk(VTST00000)

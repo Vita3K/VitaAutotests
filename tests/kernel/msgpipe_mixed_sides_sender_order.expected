@@ -1,0 +1,157 @@
+two peeks: 1, try send of 3000 'a': 0x00000000
+two peeks: 1, try send of 3000 'a', its size: 0x00000BB8
+two peeks: 1, after the held bytes: the free size: 0x00000448
+two peeks: 1, after the held bytes: the waiting senders: 0x00000000
+two peeks: 1, after the held bytes: the waiting receivers: 0x00000000
+two peeks: 2, the peeks wait: the free size: 0x00000448
+two peeks: 2, the peeks wait: the waiting senders: 0x00000000
+two peeks: 2, the peeks wait: the waiting receivers: 0x00000002
+two peeks: 2, the peeks wait: R1 waits on the pipe: 0x00000001
+two peeks: 2, the peeks wait: R2 waits on the pipe: 0x00000001
+two peeks: 3, after S1 sends 2000 'b': the free size: 0x00000448
+two peeks: 3, after S1 sends 2000 'b': the waiting senders: 0x00000001
+two peeks: 3, after S1 sends 2000 'b': the waiting receivers: 0x00000000
+two peeks: 3, after S1 sends 2000 'b': R1 waits on the pipe: 0x00000000
+two peeks: 3, after S1 sends 2000 'b': R2 waits on the pipe: 0x00000000
+two peeks: 3, after S1 sends 2000 'b': S1 waits on the pipe: 0x00000001
+two peeks: 4, after S2 sends 2000 'c': the free size: 0x00000448
+two peeks: 4, after S2 sends 2000 'c': the waiting senders: 0x00000002
+two peeks: 4, after S2 sends 2000 'c': the waiting receivers: 0x00000000
+two peeks: 4, after S2 sends 2000 'c': R1 waits on the pipe: 0x00000000
+two peeks: 4, after S2 sends 2000 'c': R2 waits on the pipe: 0x00000000
+two peeks: 4, after S2 sends 2000 'c': S1 waits on the pipe: 0x00000001
+two peeks: 4, after S2 sends 2000 'c': S2 waits on the pipe: 0x00000001
+two peeks: 5, after R2's timeout: the free size: 0x00000448
+two peeks: 5, after R2's timeout: the waiting senders: 0x00000002
+two peeks: 5, after R2's timeout: the waiting receivers: 0x00000000
+two peeks: 5, after R2's timeout: R1 waits on the pipe: 0x00000000
+two peeks: 5, after R2's timeout: R2 waits on the pipe: 0x00000000
+two peeks: 5, after R2's timeout: S1 waits on the pipe: 0x00000001
+two peeks: 5, after R2's timeout: S2 waits on the pipe: 0x00000001
+two peeks: 6, probe 1, its asked size: 0x00000388
+two peeks: 6, probe 1: 0x00000000
+two peeks: 6, probe 1, its size: 0x00000388
+two peeks: 6, probe 1 got: first "bbbb", last "bbbb", size: 0x00000388
+two peeks: 6, probe 1 got: a 0, b 904, c 0, w 0, x 0, y 0, other 0, runs "b904", run count: 0x00000001
+two peeks: 6, after probe 1: the free size: 0x00000000
+two peeks: 6, after probe 1: the waiting senders: 0x00000001
+two peeks: 6, after probe 1: the waiting receivers: 0x00000000
+two peeks: 6, after probe 1: R1 waits on the pipe: 0x00000000
+two peeks: 6, after probe 1: R2 waits on the pipe: 0x00000000
+two peeks: 6, after probe 1: S1 waits on the pipe: 0x00000000
+two peeks: 6, after probe 1: S2 waits on the pipe: 0x00000001
+two peeks: 6, probe 2, its asked size: 0x000007D0
+two peeks: 6, probe 2: 0x00000000
+two peeks: 6, probe 2, its size: 0x000007D0
+two peeks: 6, probe 2 got: first "bbbb", last "bbbb", size: 0x000007D0
+two peeks: 6, probe 2 got: a 0, b 2000, c 0, w 0, x 0, y 0, other 0, runs "b2000", run count: 0x00000001
+two peeks: 6, after probe 2: the free size: 0x00000000
+two peeks: 6, after probe 2: the waiting senders: 0x00000000
+two peeks: 6, after probe 2: the waiting receivers: 0x00000000
+two peeks: 6, after probe 2: R1 waits on the pipe: 0x00000000
+two peeks: 6, after probe 2: R2 waits on the pipe: 0x00000000
+two peeks: 6, after probe 2: S1 waits on the pipe: 0x00000000
+two peeks: 6, after probe 2: S2 waits on the pipe: 0x00000000
+two peeks: 7, drain 1, its asked size: 0x00001000
+two peeks: 7, drain 1: 0x00000000
+two peeks: 7, drain 1, its size: 0x00001000
+two peeks: 7, drain 1 got: first "bbbb", last "bbbb", size: 0x00001000
+two peeks: 7, drain 1 got: a 0, b 2096, c 2000, w 0, x 0, y 0, other 0, runs "b192 c2000 b1904", run count: 0x00000003
+two peeks: 7, drain 2, its asked size: 0x00001000
+two peeks: 7, drain 2: 0x80028005
+two peeks: 7, drain 2, its size: 0x00000000
+two peeks: 7, after the drains: the free size: 0x00001000
+two peeks: 7, after the drains: the waiting senders: 0x00000000
+two peeks: 7, after the drains: the waiting receivers: 0x00000000
+two peeks: 7, after the drains: R1 waits on the pipe: 0x00000000
+two peeks: 7, after the drains: R2 waits on the pipe: 0x00000000
+two peeks: 7, after the drains: S1 waits on the pipe: 0x00000000
+two peeks: 7, after the drains: S2 waits on the pipe: 0x00000000
+two peeks: every call ended: the free size: 0x00001000
+two peeks: every call ended: the waiting senders: 0x00000000
+two peeks: every call ended: the waiting receivers: 0x00000000
+two peeks: every call ended: R1 waits on the pipe: 0x00000000
+two peeks: every call ended: R2 waits on the pipe: 0x00000000
+two peeks: every call ended: S1 waits on the pipe: 0x00000000
+two peeks: every call ended: S2 waits on the pipe: 0x00000000
+two peeks: R1's result: 0x00000000
+two peeks: R1's size: 0x00001000
+two peeks: R1's buffer: first "aaaa", last "bbbb", size: 0x00001000
+two peeks: R1's buffer: a 3000, b 1096, c 0, w 0, x 0, y 0, other 0, runs "a3000 b1096", run count: 0x00000002
+two peeks: R2's result: 0x00000000
+two peeks: R2's size: 0x00001000
+two peeks: R2's buffer: first "aaaa", last "bbbb", size: 0x00001000
+two peeks: R2's buffer: a 3000, b 1096, c 0, w 0, x 0, y 0, other 0, runs "a3000 b1096", run count: 0x00000002
+two peeks: S1's result: 0x00000000
+two peeks: S1's size: 0x000007D0
+two peeks: S1's buffer: first "bbbb", last "bbbb", size: 0x000007D0
+two peeks: S1's buffer: a 0, b 2000, c 0, w 0, x 0, y 0, other 0, runs "b2000", run count: 0x00000001
+two peeks: S2's result: 0x00000000
+two peeks: S2's size: 0x000007D0
+two peeks: S2's buffer: first "cccc", last "cccc", size: 0x000007D0
+two peeks: S2's buffer: a 0, b 0, c 2000, w 0, x 0, y 0, other 0, runs "c2000", run count: 0x00000001
+two peeks: cancel: 0x00000000
+two peeks: delete: 0x00000000
+reference: 1, try send of 3000 'a': 0x00000000
+reference: 1, try send of 3000 'a', its size: 0x00000BB8
+reference: 1, after the held bytes: the free size: 0x00000448
+reference: 1, after the held bytes: the waiting senders: 0x00000000
+reference: 1, after the held bytes: the waiting receivers: 0x00000000
+reference: 3, after S1 sends 2000 'b': the free size: 0x00000448
+reference: 3, after S1 sends 2000 'b': the waiting senders: 0x00000001
+reference: 3, after S1 sends 2000 'b': the waiting receivers: 0x00000000
+reference: 3, after S1 sends 2000 'b': S1 waits on the pipe: 0x00000001
+reference: 4, after S2 sends 2000 'c': the free size: 0x00000448
+reference: 4, after S2 sends 2000 'c': the waiting senders: 0x00000002
+reference: 4, after S2 sends 2000 'c': the waiting receivers: 0x00000000
+reference: 4, after S2 sends 2000 'c': S1 waits on the pipe: 0x00000001
+reference: 4, after S2 sends 2000 'c': S2 waits on the pipe: 0x00000001
+reference: 6, probe 1, its asked size: 0x00000388
+reference: 6, probe 1: 0x00000000
+reference: 6, probe 1, its size: 0x00000388
+reference: 6, probe 1 got: first "aaaa", last "aaaa", size: 0x00000388
+reference: 6, probe 1 got: a 904, b 0, c 0, w 0, x 0, y 0, other 0, runs "a904", run count: 0x00000001
+reference: 6, after probe 1: the free size: 0x00000000
+reference: 6, after probe 1: the waiting senders: 0x00000001
+reference: 6, after probe 1: the waiting receivers: 0x00000000
+reference: 6, after probe 1: S1 waits on the pipe: 0x00000000
+reference: 6, after probe 1: S2 waits on the pipe: 0x00000001
+reference: 6, probe 2, its asked size: 0x000007D0
+reference: 6, probe 2: 0x00000000
+reference: 6, probe 2, its size: 0x000007D0
+reference: 6, probe 2 got: first "aaaa", last "aaaa", size: 0x000007D0
+reference: 6, probe 2 got: a 2000, b 0, c 0, w 0, x 0, y 0, other 0, runs "a2000", run count: 0x00000001
+reference: 6, after probe 2: the free size: 0x00000000
+reference: 6, after probe 2: the waiting senders: 0x00000000
+reference: 6, after probe 2: the waiting receivers: 0x00000000
+reference: 6, after probe 2: S1 waits on the pipe: 0x00000000
+reference: 6, after probe 2: S2 waits on the pipe: 0x00000000
+reference: 7, drain 1, its asked size: 0x00001000
+reference: 7, drain 1: 0x00000000
+reference: 7, drain 1, its size: 0x00001000
+reference: 7, drain 1 got: first "aaaa", last "cccc", size: 0x00001000
+reference: 7, drain 1 got: a 96, b 2000, c 2000, w 0, x 0, y 0, other 0, runs "a96 b2000 c2000", run count: 0x00000003
+reference: 7, drain 2, its asked size: 0x00001000
+reference: 7, drain 2: 0x80028005
+reference: 7, drain 2, its size: 0x00000000
+reference: 7, after the drains: the free size: 0x00001000
+reference: 7, after the drains: the waiting senders: 0x00000000
+reference: 7, after the drains: the waiting receivers: 0x00000000
+reference: 7, after the drains: S1 waits on the pipe: 0x00000000
+reference: 7, after the drains: S2 waits on the pipe: 0x00000000
+reference: every call ended: the free size: 0x00001000
+reference: every call ended: the waiting senders: 0x00000000
+reference: every call ended: the waiting receivers: 0x00000000
+reference: every call ended: S1 waits on the pipe: 0x00000000
+reference: every call ended: S2 waits on the pipe: 0x00000000
+reference: S1's result: 0x00000000
+reference: S1's size: 0x000007D0
+reference: S1's buffer: first "bbbb", last "bbbb", size: 0x000007D0
+reference: S1's buffer: a 0, b 2000, c 0, w 0, x 0, y 0, other 0, runs "b2000", run count: 0x00000001
+reference: S2's result: 0x00000000
+reference: S2's size: 0x000007D0
+reference: S2's buffer: first "cccc", last "cccc", size: 0x000007D0
+reference: S2's buffer: a 0, b 0, c 2000, w 0, x 0, y 0, other 0, runs "c2000", run count: 0x00000001
+reference: cancel: 0x00000000
+reference: delete: 0x00000000
+DONE
