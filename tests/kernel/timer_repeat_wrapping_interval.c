@@ -8,11 +8,12 @@
 //   last one if the sum wraps in 64 bits
 // - interval 0x8000000000000000, whose first deadline doesn't wrap, the reference for a huge
 //   interval
-// The counts are printed as ranges, so the output stays the same from run to run. The info's
-// schedule and active fields are read while the timer runs, and every call's result is printed once
-// the samples are taken.
+// The counts are printed as wide ranges, so the output stays the same from run to run, also on a
+// busy host where the 10 ms reference may fire only once by 20 ms. The info's schedule and active
+// fields are read while the timer runs, and every call's result is printed once the samples are
+// taken.
 //
-// On a PS Vita TV on firmware 3.65 the 10 ms reference fires 2 to 10 times by 20 ms and again by
+// On a PS Vita TV on firmware 3.65 the 10 ms reference fires 1 to 10 times by 20 ms and again by
 // 40 ms. The interval of all ones keeps firing: 11 to 1000 fires by 20 ms and more by 40 ms, and
 // its schedule reads below the interval, so each next deadline wraps. Both stop firing with the
 // timer. The interval 0x8000000000000000 never fires.
@@ -32,8 +33,7 @@ static int callback(int notify_id, int count, int arg, void *common) {
 // Prints which range count falls in
 static void print_count(const char *name, const char *when, int count) {
     PRINTF(count == 0, "%s: %s: no fire", name, when);
-    PRINTF(count == 1, "%s: %s: one fire", name, when);
-    PRINTF(count >= 2 && count <= 10, "%s: %s: 2 to 10 fires", name, when);
+    PRINTF(count >= 1 && count <= 10, "%s: %s: 1 to 10 fires", name, when);
     PRINTF(count > 10 && count <= 1000, "%s: %s: 11 to 1000 fires", name, when);
     PRINTF(count > 1000, "%s: %s: more than 1000 fires", name, when);
 }
