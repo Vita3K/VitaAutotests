@@ -1,11 +1,17 @@
 create a semaphore before the others: 0x00000000
-semaphores: created before an error or the end of the loop: 0x000007EC
-semaphores: the error: 0x8002450D
+semaphores: the error that stopped the fill: 0x8002450D
+semaphores: the fill made at least 0x7E0 and at most 0x800: 0x00000001
 semaphores: create a mutex while they are there: 0x8002450D
+semaphores: delete one: 0x00000000
+semaphores: create one after deleting one: 0x00000000
+semaphores: create another after that: 0x8002450D
 semaphores: every one deletes: 0x00000001
 semaphores: create one after deleting them: 0x00000000
-mutexes: created before an error or the end of the loop: 0x000007EC
-mutexes: the error: 0x8002450D
+mutexes: the error that stopped the fill: 0x8002450D
+mutexes: the fill made at least 0x7E0 and at most 0x800: 0x00000001
+mutexes: delete one: 0x00000000
+mutexes: create one after deleting one: 0x00000000
+mutexes: create another after that: 0x8002450D
 mutexes: every one deletes: 0x00000001
 mutexes: create one after deleting them: 0x00000000
 DONE
