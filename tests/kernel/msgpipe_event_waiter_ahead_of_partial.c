@@ -42,7 +42,7 @@ static int r1_entry(SceSize args, void *argp) {
     (void)argp;
     SceUInt timeout = LONG_TIMEOUT;
     r1_result = sceKernelReceiveMsgPipe(pipe, r1_buf, 8, MSG_PIPE_MODE_FULL, (SceSize *)&r1_size, &timeout);
-    r1_done = 1;
+    __atomic_store_n(&r1_done, 1, __ATOMIC_RELEASE);
     __atomic_fetch_add(&done_count, 1, __ATOMIC_SEQ_CST);
     return 0;
 }
@@ -52,7 +52,7 @@ static int r2_entry(SceSize args, void *argp) {
     (void)argp;
     SceUInt timeout = LONG_TIMEOUT;
     r2_result = sceKernelReceiveMsgPipe(pipe, r2_buf, 4, MSG_PIPE_MODE_FULL, (SceSize *)&r2_size, &timeout);
-    r2_done = 1;
+    __atomic_store_n(&r2_done, 1, __ATOMIC_RELEASE);
     __atomic_fetch_add(&done_count, 1, __ATOMIC_SEQ_CST);
     return 0;
 }
@@ -62,7 +62,7 @@ static int e_entry(SceSize args, void *argp) {
     (void)argp;
     SceUInt32 timeout = LONG_TIMEOUT;
     e_result = sceKernelWaitEvent(pipe, ERROR_BIT, &e_bits, &e_user_data, &timeout);
-    e_done = 1;
+    __atomic_store_n(&e_done, 1, __ATOMIC_RELEASE);
     return 0;
 }
 
@@ -88,7 +88,7 @@ int main(void) {
     const int r1_waits = test_in_wait(r1, WAIT_TYPE_MSG_PIPE, pipe);
     const int first_send = send("abcd");
     const int r1_size_after_first = r1_size;
-    const int r1_done_after_first = r1_done;
+    const int r1_done_after_first = __atomic_load_n(&r1_done, __ATOMIC_ACQUIRE);
 
     const SceUID e = start(e_entry, E_PRIORITY);
     const int e_waits = test_in_wait(e, WAIT_TYPE_EVENT, pipe);
@@ -99,12 +99,12 @@ int main(void) {
     sceKernelGetMsgPipeInfo(pipe, &all);
 
     const int second_send = send("efgh");
-    TEST_WAIT_FOR(done_count >= 1);
-    const int r1_done_after_second = r1_done;
-    const int r2_done_after_second = r2_done;
+    TEST_WAIT_FOR(__atomic_load_n(&done_count, __ATOMIC_ACQUIRE) >= 1);
+    const int r1_done_after_second = __atomic_load_n(&r1_done, __ATOMIC_ACQUIRE);
+    const int r2_done_after_second = __atomic_load_n(&r2_done, __ATOMIC_ACQUIRE);
     const int e_waits_after_second = test_in_wait(e, WAIT_TYPE_EVENT, pipe);
     const int third_send = send("ijkl");
-    TEST_WAIT_FOR(done_count >= 2);
+    TEST_WAIT_FOR(__atomic_load_n(&done_count, __ATOMIC_ACQUIRE) >= 2);
     const int e_waits_after_third = test_in_wait(e, WAIT_TYPE_EVENT, pipe);
     // Read before the cancel, which empties the pipe, so bytes left behind show
     SceKernelMppInfo after = { .size = sizeof(after) };
@@ -113,7 +113,7 @@ int main(void) {
     // A try receive on the empty pipe fails, which posts the error bit E waits for
     char none[4];
     const int failed_receive = sceKernelTryReceiveMsgPipe(pipe, none, 4, MSG_PIPE_MODE_FULL, NULL);
-    TEST_WAIT_FOR(e_done);
+    TEST_WAIT_FOR(__atomic_load_n(&e_done, __ATOMIC_ACQUIRE));
     // Ends a wait that still goes on, if any, so the joins return
     sceKernelCancelMsgPipe(pipe, NULL, NULL);
     test_join_thread(r1);

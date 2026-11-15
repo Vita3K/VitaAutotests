@@ -38,7 +38,7 @@ static int callback_entry(int notify_id, int count, int arg, void *common) {
     (void)count;
     (void)arg;
     (void)common;
-    callback_started = 1;
+    __atomic_store_n(&callback_started, 1, __ATOMIC_RELEASE);
     SceUInt timeout = LONG_TIMEOUT;
     sceKernelWaitSema(gate, 1, &timeout);
     return 0;
@@ -48,10 +48,10 @@ static int r_entry(SceSize args, void *argp) {
     (void)args;
     (void)argp;
     callback = sceKernelCreateCallback("callback", 0, callback_entry, NULL);
-    callback_ready = 1;
+    __atomic_store_n(&callback_ready, 1, __ATOMIC_RELEASE);
     SceUInt timeout = LONG_TIMEOUT;
     r_result = sceKernelReceiveMsgPipeCB(pipe, r_buf, 8, MSG_PIPE_MODE_FULL, (SceSize *)&r_size, &timeout);
-    r_done = 1;
+    __atomic_store_n(&r_done, 1, __ATOMIC_RELEASE);
     __atomic_fetch_add(&done_count, 1, __ATOMIC_SEQ_CST);
     sceKernelDeleteCallback(callback);
     return 0;
@@ -62,7 +62,7 @@ static int u_entry(SceSize args, void *argp) {
     (void)argp;
     SceUInt timeout = LONG_TIMEOUT;
     u_result = sceKernelReceiveMsgPipe(pipe, u_buf, 4, MSG_PIPE_MODE_FULL, (SceSize *)&u_size, &timeout);
-    u_done = 1;
+    __atomic_store_n(&u_done, 1, __ATOMIC_RELEASE);
     __atomic_fetch_add(&done_count, 1, __ATOMIC_SEQ_CST);
     return 0;
 }
@@ -92,14 +92,14 @@ int main(void) {
     gate = sceKernelCreateSema("gate", 0, 0, 1, NULL);
 
     const SceUID r = start(r_entry, R_PRIORITY);
-    TEST_WAIT_FOR(callback_ready && test_in_wait(r, WAIT_TYPE_MSG_PIPE | WAIT_TYPE_CB, pipe));
+    TEST_WAIT_FOR(__atomic_load_n(&callback_ready, __ATOMIC_ACQUIRE) && test_in_wait(r, WAIT_TYPE_MSG_PIPE | WAIT_TYPE_CB, pipe));
     const int r_waits = test_in_wait(r, WAIT_TYPE_MSG_PIPE | WAIT_TYPE_CB, pipe);
     const int first_send = send("abcd");
     const int r_size_after_first = r_size;
-    const int r_done_after_first = r_done;
+    const int r_done_after_first = __atomic_load_n(&r_done, __ATOMIC_ACQUIRE);
 
     const int notify = sceKernelNotifyCallback(callback, 1);
-    TEST_WAIT_FOR(callback_started && test_in_wait(r, WAIT_TYPE_SEMA, gate));
+    TEST_WAIT_FOR(__atomic_load_n(&callback_started, __ATOMIC_ACQUIRE) && test_in_wait(r, WAIT_TYPE_SEMA, gate));
     const int r_in_gate = test_in_wait(r, WAIT_TYPE_SEMA, gate);
 
     const SceUID u = start(u_entry, U_PRIORITY);
@@ -114,11 +114,11 @@ int main(void) {
     const SceKernelMppInfo both = pipe_info();
 
     const int second_send = send("efgh");
-    TEST_WAIT_FOR(done_count >= 1);
-    const int r_done_after_second = r_done;
-    const int u_done_after_second = u_done;
+    TEST_WAIT_FOR(__atomic_load_n(&done_count, __ATOMIC_ACQUIRE) >= 1);
+    const int r_done_after_second = __atomic_load_n(&r_done, __ATOMIC_ACQUIRE);
+    const int u_done_after_second = __atomic_load_n(&u_done, __ATOMIC_ACQUIRE);
     const int third_send = send("ijkl");
-    TEST_WAIT_FOR(done_count >= 2);
+    TEST_WAIT_FOR(__atomic_load_n(&done_count, __ATOMIC_ACQUIRE) >= 2);
     // Read before the cancel, which empties the pipe, so bytes left behind show
     const SceKernelMppInfo after = pipe_info();
     // Ends a wait that still goes on, if any, so the joins return

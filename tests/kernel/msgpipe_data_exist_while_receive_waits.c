@@ -41,7 +41,7 @@ static int r_entry(SceSize args, void *argp) {
     (void)argp;
     SceUInt timeout = LONG_TIMEOUT;
     r_result = sceKernelReceiveMsgPipe(pipe, r_buf, 8, MSG_PIPE_MODE_FULL, (SceSize *)&r_size, &timeout);
-    r_done = 1;
+    __atomic_store_n(&r_done, 1, __ATOMIC_RELEASE);
     return 0;
 }
 
@@ -82,13 +82,13 @@ int main(void) {
 
     const SceUID r = sceKernelCreateThread("thread", r_entry, R_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
     sceKernelStartThread(r, 0, NULL);
-    TEST_WAIT_FOR(r_done || test_in_wait(r, WAIT_TYPE_MSG_PIPE, pipe));
+    TEST_WAIT_FOR(__atomic_load_n(&r_done, __ATOMIC_ACQUIRE) || test_in_wait(r, WAIT_TYPE_MSG_PIPE, pipe));
     const int r_waits = test_in_wait(r, WAIT_TYPE_MSG_PIPE, pipe);
     const int r_size_while_waiting = r_size;
     const Snapshot waiting = snapshot();
 
     const int second_send = send("efgh");
-    TEST_WAIT_FOR(r_done);
+    TEST_WAIT_FOR(__atomic_load_n(&r_done, __ATOMIC_ACQUIRE));
     const Snapshot after = snapshot();
     // Ends a wait that still goes on, if any, so the join returns
     sceKernelCancelMsgPipe(pipe, NULL, NULL);
