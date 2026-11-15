@@ -1,0 +1,23 @@
+callback: try send "AB": 0x00000000
+callback: try send "AB", its size: 0x00000002
+callback: R waits after taking "AB": 0x00000001
+callback: the notify: 0x00000000
+callback: runs of R's callback: 0x00000001
+callback: R still waits then: 0x00000000
+callback: R then holds "ABAB", its size: 0x00000004
+callback: the bytes in the pipe then: 0x00000002
+callback: the cancel: 0x00000000
+callback: R's receive: 0x00000000
+callback: R got "ABAB", its size: 0x00000004
+receiver leaves: try send "AB": 0x00000000
+receiver leaves: try send "AB", its size: 0x00000002
+receiver leaves: R waits after taking "AB": 0x00000001
+receiver leaves: Q's receive: 0x80028005
+receiver leaves: Q got "", its size: 0x00000000
+receiver leaves: R still waits then: 0x00000001
+receiver leaves: R then holds "ABAB", its size: 0x00000004
+receiver leaves: the bytes in the pipe then: 0x00000002
+receiver leaves: the cancel: 0x00000000
+receiver leaves: R's receive: 0x80028007
+receiver leaves: R got "ABAB", its size: 0x00000004
+DONE

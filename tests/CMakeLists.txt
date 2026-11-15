@@ -872,5 +872,7 @@ vita_test(msgpipe_mixed_sides_sender_order kernel/msgpipe_mixed_sides_sender_ord
 vita_test(msgpipe_rejoin_untouched_head kernel/msgpipe_rejoin_untouched_head.c)
 vita_test(msgpipe_event_waiter_ahead_of_partial kernel/msgpipe_event_waiter_ahead_of_partial.c)
 vita_test(msgpipe_data_exist_while_receive_waits kernel/msgpipe_data_exist_while_receive_waits.c)
+vita_test(msgpipe_create_size_wrap kernel/msgpipe_create_size_wrap.c)
+vita_test(msgpipe_peek_retry kernel/msgpipe_peek_retry.c)
 
 vita_tests_vpk(VTST00000)
