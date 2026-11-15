@@ -875,5 +875,6 @@ vita_test(msgpipe_data_exist_while_receive_waits kernel/msgpipe_data_exist_while
 vita_test(msgpipe_create_size_wrap kernel/msgpipe_create_size_wrap.c)
 vita_test(msgpipe_peek_retry kernel/msgpipe_peek_retry.c)
 vita_test(msgpipe_buffer_total kernel/msgpipe_buffer_total.c)
+vita_test(msgpipe_requeue_same_priority kernel/msgpipe_requeue_same_priority.c)
 
 vita_tests_vpk(VTST00000)

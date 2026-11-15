@@ -1,0 +1,51 @@
+receivers attr 0x2: receivers done after "abcd": 0x00000000
+receivers attr 0x2: the change: 0x00000000
+receivers attr 0x2: receivers done after the change: 0x00000000
+receivers attr 0x2: the receiver "efgh" woke: 0x0000000B
+receivers attr 0x2: the receiver "ijkl" woke: 0x0000000A
+receivers attr 0x2: A's result: 0x00000000
+receivers attr 0x2: A got "abcdijkl", size: 0x00000008
+receivers attr 0x2: B's result: 0x00000000
+receivers attr 0x2: B got "efgh", size: 0x00000004
+receivers attr 0x2, then C: receivers done after "abcd": 0x00000000
+receivers attr 0x2, then C: the change: 0x00000000
+receivers attr 0x2, then C: receivers done after the change: 0x00000000
+receivers attr 0x2, then C: the receiver "efgh" woke: 0x0000000B
+receivers attr 0x2, then C: the receiver "ijkl" woke: 0x0000000C
+receivers attr 0x2, then C: the receiver "mnop" woke: 0x0000000A
+receivers attr 0x2, then C: A's result: 0x00000000
+receivers attr 0x2, then C: A got "abcdmnop", size: 0x00000008
+receivers attr 0x2, then C: B's result: 0x00000000
+receivers attr 0x2, then C: B got "efgh", size: 0x00000004
+receivers attr 0x2, then C: C's result: 0x00000000
+receivers attr 0x2, then C: C got "ijkl", size: 0x00000004
+receivers attr 0x0: receivers done after "abcd": 0x00000000
+receivers attr 0x0: the change: 0x00000000
+receivers attr 0x0: receivers done after the change: 0x00000000
+receivers attr 0x0: the receiver "efgh" woke: 0x0000000A
+receivers attr 0x0: the receiver "ijkl" woke: 0x0000000B
+receivers attr 0x0: A's result: 0x00000000
+receivers attr 0x0: A got "abcdefgh", size: 0x00000008
+receivers attr 0x0: B's result: 0x00000000
+receivers attr 0x0: B got "ijkl", size: 0x00000004
+senders attr 0x1: the change: 0x00000000
+senders attr 0x1: senders done after the change: 0x00000000
+senders attr 0x1: the free size after the change: 0x00000004
+senders attr 0x1: the waiting senders after the change: 0x00000002
+senders attr 0x1: cancel the pipe: 0x00000000
+senders attr 0x1: the senders the cancel ended: 0x00000002
+senders attr 0x1: A's result: 0x80028007
+senders attr 0x1: A's size sent: 0x00000000
+senders attr 0x1: B's result: 0x80028007
+senders attr 0x1: B's size sent: 0x00000000
+senders attr 0x0: the change: 0x00000000
+senders attr 0x0: senders done after the change: 0x00000000
+senders attr 0x0: the free size after the change: 0x00000004
+senders attr 0x0: the waiting senders after the change: 0x00000002
+senders attr 0x0: cancel the pipe: 0x00000000
+senders attr 0x0: the senders the cancel ended: 0x00000002
+senders attr 0x0: A's result: 0x80028007
+senders attr 0x0: A's size sent: 0x00000000
+senders attr 0x0: B's result: 0x80028007
+senders attr 0x0: B's size sent: 0x00000000
+DONE
