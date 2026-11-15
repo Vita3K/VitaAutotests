@@ -1,0 +1,13 @@
+1 MiB pipes: the error that stopped it: 0x8002000B
+page pipes after deleting one of them: the error that stopped it: 0x8002000B
+the fill made at least 31 MiB and at most 32 MiB: 0x00000001
+after deleting a page pipe: a pipe of 2 pages: 0x8002000B
+after deleting a page pipe: a pipe of 1 page: 0x00000000
+after deleting a 1 MiB pipe: a pipe of 1 MiB plus 1 byte: 0x8002000B
+after deleting a 1 MiB pipe: a pipe of 1 MiB minus 0xFFF bytes: 0x00000000
+then a pipe of 1 byte: 0x8002000B
+after deleting that: a pipe of 1 MiB: 0x00000000
+info of a pipe of 0x1001 bytes: 0x00000000
+its buffer size: 0x00002000
+its free size: 0x00002000
+DONE
