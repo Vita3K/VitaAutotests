@@ -43,21 +43,6 @@ heavy, c: runs of the callback when the wait returned: 0x00000001
 heavy, c: T owns the mutex after the wait: 0x00000001
 heavy, c: T's unlock: 0x00000000
 heavy, c: T's check: 0x00000000
-heavy, d: the signal: 0x00000000
-heavy, d: step 0: 0x00000000
-heavy, d: step 1: 0x00000001
-heavy, d: step 2: 0x00000002
-heavy, d: the notify: 0x00000000
-heavy, d: T's wait type after the notify, once it waits again: 0x80000200
-heavy, d: T waits for the mutex after the notify: 0x00000001
-heavy, d: the mutex's waiters after the notify: 0x00000001
-heavy, d: runs of the callback after the notify: 0x00000001
-heavy, d: the main thread's unlock: 0x00000000
-heavy, d: T's wait: 0x00000000
-heavy, d: runs of the callback when the wait returned: 0x00000001
-heavy, d: T owns the mutex after the wait: 0x00000001
-heavy, d: T's unlock: 0x00000000
-heavy, d: T's check: 0x00000000
 lightweight, a: the signal: 0x00000000
 lightweight, a: the notify: 0x00000000
 lightweight, a: T waits for the mutex right after the notify: 0x00000000
@@ -103,21 +88,6 @@ lightweight, c: runs of the callback when the wait returned: 0x00000001
 lightweight, c: T owns the mutex after the wait: 0x00000001
 lightweight, c: T's unlock: 0x00000000
 lightweight, c: T's check: 0x00000000
-lightweight, d: the signal: 0x00000000
-lightweight, d: step 0: 0x00000000
-lightweight, d: step 1: 0x00000001
-lightweight, d: step 2: 0x00000002
-lightweight, d: the notify: 0x00000000
-lightweight, d: T's wait type after the notify, once it waits again: 0x80400000
-lightweight, d: T waits for the mutex after the notify: 0x00000001
-lightweight, d: the mutex's waiters after the notify: 0x00000001
-lightweight, d: runs of the callback after the notify: 0x00000001
-lightweight, d: the main thread's unlock: 0x00000000
-lightweight, d: T's wait: 0x00000000
-lightweight, d: runs of the callback when the wait returned: 0x00000001
-lightweight, d: T owns the mutex after the wait: 0x00000001
-lightweight, d: T's unlock: 0x00000000
-lightweight, d: T's check: 0x00000000
 lightweight, f: the signal: 0x00000000
 lightweight, f: T waits for the mutex after the signal: 0x00000001
 lightweight, f: the main thread's unlock: 0x00000000

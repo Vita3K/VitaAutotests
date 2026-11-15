@@ -4,8 +4,8 @@
 // once T waits for M the main thread notifies T's callback. The cases differ in what happens next.
 // Each case runs for a heavy mutex and condition and for a lightweight pair, on fresh objects and
 // threads, except case f, which only runs for the lightweight pair. The threads are pinned to core
-// 0. T and the locker L run below the main thread, except in case d, where T runs above it. The
-// cases:
+// 0. T and the locker L run below the main thread. Case d, where T runs above the main thread,
+// moved to cond_relock_callback_preempt. The cases:
 // - a: right after the notify the main thread reads whether T waits for M, the condition's waiters
 //   and the result of SignalCondTo(T). Once the callback blocks on a gate, it reads T's state and
 //   the waiters again, opens the gate, and unlocks M once T waits for M again
@@ -15,13 +15,11 @@
 //   callback blocks on the gate, then unlocks M, which goes to L and not to T. Once L holds M and
 //   waits on its own gate, the main thread opens the callback's gate, so T waits for M behind L.
 //   Then L's gate opens, L unlocks M, and T takes it
-// - d: T runs above the main thread. The main thread records steps around the notify, then waits
-//   until the callback ran and T waits for M again, reads T's state, and unlocks M
 // - f: the main thread unlocks M, which hands it to T, then notifies T's callback. T waits on a
 //   gate right after its wait returns, so the notify comes while T is held there. Lightweight only.
-// Each case prints the results of the calls and the states the main thread reads, the steps of case
-// d, the order in which the threads took M as hex digits, and T's result, the runs of the callback
-// when its wait returned, whether T owns M after the wait, and the results of T's unlock and of
+// Each case prints the results of the calls and the states the main thread reads, the order in
+// which the threads took M as hex digits, and T's result, the runs of the callback when its wait
+// returned, whether T owns M after the wait, and the results of T's unlock and of
 // sceKernelCheckCallback. T's time left in case b is printed as a comparison.
 #include <psp2/kernel/threadmgr.h>
 
@@ -30,12 +28,10 @@
 
 #define MAIN_PRIORITY 0x60
 #define WAITER_PRIORITY 0xB0
-#define ABOVE_PRIORITY 0x50
 #define WAIT_US 8000000
 #define GATE_US 3000000
 #define NOT_DONE 0xDEAD
-#define STEP_COUNT 3
-#define LW_SLOTS 5
+#define LW_SLOTS 4
 
 // Whether the running case uses the lightweight pair. The heavy pair is used otherwise.
 static int lightweight;
@@ -49,13 +45,6 @@ static int lw_slot;
 static volatile int gated, held, callback_ready, callback_runs, t_done;
 static volatile int t_result, t_left, t_runs, t_owns, t_unlock, t_check, t_check_runs;
 static volatile int l_lock, l_unlock, order;
-static int step_count, steps[STEP_COUNT];
-
-static void record(int step) {
-    const int i = __atomic_fetch_add(&step_count, 1, __ATOMIC_SEQ_CST);
-    if (i < STEP_COUNT)
-        steps[i] = step;
-}
 
 // Counts its run, and in a gated case blocks on the gate until the main thread opens it
 static int callback_entry(int notify_id, int count, int arg, void *common) {
@@ -64,7 +53,6 @@ static int callback_entry(int notify_id, int count, int arg, void *common) {
     (void)arg;
     (void)common;
     callback_runs++;
-    record(1);
     if (gated) {
         SceUInt timeout = GATE_US;
         sceKernelWaitSema(gate, 1, &timeout);
@@ -223,9 +211,6 @@ static void reset_case(int with_gate) {
     t_result = t_left = t_runs = t_owns = t_unlock = t_check = t_check_runs = NOT_DONE;
     l_lock = l_unlock = NOT_DONE;
     order = 0;
-    step_count = 0;
-    for (int i = 0; i < STEP_COUNT; i++)
-        steps[i] = NOT_DONE;
 }
 
 // Locks M, waits on C with callbacks, then records how the wait ended and what the thread holds
@@ -403,47 +388,6 @@ static void case_locker(void) {
     PRINTF(t_check, "%s, c: T's check", kind);
 }
 
-// T runs above the main thread. The main thread records steps around the notify, then waits until
-// the callback ran and T waits for M again, reads T's state, and unlocks M, which T takes.
-static void case_above(void) {
-    const char *const kind = kind_name();
-    reset_case(0);
-    create_objects();
-    const SceUID t = sceKernelCreateThread("t", t_entry, ABOVE_PRIORITY, 0x4000, 0, SCE_KERNEL_CPU_MASK_USER_0, NULL);
-    sceKernelStartThread(t, 0, NULL);
-    TEST_WAIT_FOR(callback_ready && in_cond(t));
-    lock_mutex();
-    const int signal = signal_cond();
-    TEST_WAIT_FOR(in_relock(t));
-    record(0);
-    const int notify = sceKernelNotifyCallback(callback, 1);
-    record(2);
-    // Another thread can run T's callback after this, so wait until it ran and T waits again
-    TEST_WAIT_FOR(callback_runs != 0 && in_relock(t) && mutex_waiters() == 1);
-    const SceKernelThreadInfo after = info_of(t);
-    const int relock_after = in_relock(t);
-    const int waiters_after = mutex_waiters();
-    const int unlock = unlock_mutex();
-    TEST_WAIT_FOR(t_done);
-    join_thread(t);
-    destroy_objects();
-
-    PRINTF(signal, "%s, d: the signal", kind);
-    for (int i = 0; i < STEP_COUNT; i++)
-        PRINTF(steps[i], "%s, d: step %d", kind, i);
-    PRINTF(notify, "%s, d: the notify", kind);
-    PRINTF(after.waitType, "%s, d: T's wait type after the notify, once it waits again", kind);
-    PRINTF(relock_after, "%s, d: T waits for the mutex after the notify", kind);
-    PRINTF(waiters_after, "%s, d: the mutex's waiters after the notify", kind);
-    PRINTF(callback_runs, "%s, d: runs of the callback after the notify", kind);
-    PRINTF(unlock, "%s, d: the main thread's unlock", kind);
-    PRINTF(t_result, "%s, d: T's wait", kind);
-    PRINTF(t_runs, "%s, d: runs of the callback when the wait returned", kind);
-    PRINTF(t_owns, "%s, d: T owns the mutex after the wait", kind);
-    PRINTF(t_unlock, "%s, d: T's unlock", kind);
-    PRINTF(t_check, "%s, d: T's check", kind);
-}
-
 // The main thread unlocks M, which hands it to T, then notifies T's callback. T waits on a gate
 // right after its wait returns, and the main thread opens that gate after the notify.
 static void case_handover(void) {
@@ -488,7 +432,6 @@ int main(void) {
         case_reads();
         case_unlock();
         case_locker();
-        case_above();
     }
     lightweight = 1;
     case_handover();
