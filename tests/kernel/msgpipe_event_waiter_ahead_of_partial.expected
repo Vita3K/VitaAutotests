@@ -1,0 +1,28 @@
+R1 waits before the first send: 0x00000001
+the try send of "abcd": 0x00000000
+R1's size after the send of "abcd": 0x00000004
+R1 done after the send of "abcd": 0x00000000
+E waits on the pipe: 0x00000001
+R2 waits on the pipe: 0x00000001
+R1 still waits then: 0x00000001
+all three wait: the attr: 0x00002002
+all three wait: the free size: 0x00001000
+all three wait: the waiting senders: 0x00000000
+all three wait: the waiting receivers: 0x00000003
+the try send of "efgh": 0x00000000
+R1 done after the send of "efgh": 0x00000000
+R2 done after the send of "efgh": 0x00000001
+E still waits after the send of "efgh": 0x00000001
+the try send of "ijkl": 0x00000000
+E still waits after the send of "ijkl": 0x00000001
+the bytes left in the pipe after both receives: 0x00000000
+R1's result: 0x00000000
+R1 got "abcdijkl", size: 0x00000008
+R2's result: 0x00000000
+R2 got "efgh", size: 0x00000004
+the failed try receive: 0x80028223
+E's result: 0x00000000
+E's bits: 0x00000010
+E's user data, low half: 0x80028223
+E's user data, high half: 0xFFFFFFFF
+DONE

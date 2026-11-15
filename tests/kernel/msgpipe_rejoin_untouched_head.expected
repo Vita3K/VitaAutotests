@@ -1,0 +1,23 @@
+R waits with callbacks before the first send: 0x00000001
+the try send of "abcd": 0x00000000
+R's size after the send of "abcd": 0x00000004
+R done after the send of "abcd": 0x00000000
+the notify: 0x00000000
+R waits on the gate in its callback: 0x00000001
+U waits while R runs its callback: 0x00000001
+the free size with only U queued: 0x00001000
+the waiting receivers with only U queued: 0x00000001
+R waits on the pipe again after the gate: 0x00000001
+U still waits then: 0x00000001
+the free size with both queued: 0x00001000
+the waiting receivers with both queued: 0x00000002
+the try send of "efgh": 0x00000000
+R done after the send of "efgh": 0x00000000
+U done after the send of "efgh": 0x00000001
+the try send of "ijkl": 0x00000000
+R's result: 0x00000000
+R got "abcdijkl", size: 0x00000008
+U's result: 0x00000000
+U got "efgh", size: 0x00000004
+the bytes left in the pipe: 0x00000000
+DONE

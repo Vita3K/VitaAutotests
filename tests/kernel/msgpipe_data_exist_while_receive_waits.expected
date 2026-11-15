@@ -1,0 +1,22 @@
+the try send of "abcd": 0x00000000
+after the send of "abcd": the poll for 0x10000: 0x00000000
+after the send of "abcd": the poll's bits: 0x00010000
+after the send of "abcd": the event info: 0x00000000
+after the send of "abcd": the pattern: 0x00010005
+after the send of "abcd": the free size: 0x00000FFC
+R waits on the pipe: 0x00000001
+R's size while it waits: 0x00000004
+while R waits: the poll for 0x10000: 0x80028202
+while R waits: the poll's bits: 0x00000000
+while R waits: the event info: 0x00000000
+while R waits: the pattern: 0x00000005
+while R waits: the free size: 0x00001000
+the try send of "efgh": 0x00000000
+after the send of "efgh" and R's end: the poll for 0x10000: 0x80028202
+after the send of "efgh" and R's end: the poll's bits: 0x00000000
+after the send of "efgh" and R's end: the event info: 0x00000000
+after the send of "efgh" and R's end: the pattern: 0x00000007
+after the send of "efgh" and R's end: the free size: 0x00001000
+R's result: 0x00000000
+R got "abcdefgh", size: 0x00000008
+DONE
