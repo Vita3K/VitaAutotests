@@ -365,6 +365,7 @@ vita_test(ceiling_init_count_raised_creator kernel/ceiling_init_count_raised_cre
 vita_test(ceiling_create_check_order kernel/ceiling_create_check_order.c)
 vita_test(lw_mutex_create_check_order kernel/lw_mutex_create_check_order.c)
 vita_test(mutex_create_unmapped_options kernel/mutex_create_unmapped_options.c)
+vita_test(create_option_unreadable kernel/create_option_unreadable.c)
 vita_test(ceiling_waiter_base_change_order kernel/ceiling_waiter_base_change_order.c)
 vita_test(ceiling_change_running_thread kernel/ceiling_change_running_thread.c)
 vita_test(ceiling_cancel_drops_boost kernel/ceiling_cancel_drops_boost.c)
