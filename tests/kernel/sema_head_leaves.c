@@ -99,7 +99,8 @@ static void signal_case(SceUInt32 attr, const char *name) {
 }
 
 static void timeout_case(SceUInt32 attr, const char *name) {
-    start_waiters(attr, HIGH_PRIORITY, LOW_PRIORITY, 200000, 0);
+    // Long enough that starting B never takes longer, and short of B's own timeout
+    start_waiters(attr, HIGH_PRIORITY, LOW_PRIORITY, 1000000, 0);
     const int b_before = done[1];
     TEST_WAIT_FOR(done[0]);
     const int b_done = b_done_soon();
