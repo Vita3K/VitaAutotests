@@ -1,0 +1,21 @@
+heavy, FIFO: C and L wait before the delete: 0x00000001
+heavy, FIFO: the delete: 0x00000000
+heavy, FIFO: run order: 0x00000012
+heavy, FIFO: C's wait result: 0x800281A2
+heavy, FIFO: L's lock result: 0x80028006
+heavy, priority order: C and L wait before the delete: 0x00000001
+heavy, priority order: the delete: 0x00000000
+heavy, priority order: run order: 0x00000012
+heavy, priority order: C's wait result: 0x800281A2
+heavy, priority order: L's lock result: 0x80028006
+lightweight, FIFO: C and L wait before the delete: 0x00000001
+lightweight, FIFO: the delete: 0x00000000
+lightweight, FIFO: run order: 0x00000012
+lightweight, FIFO: C's wait result: 0x800281C2
+lightweight, FIFO: L's lock result: 0x80028006
+lightweight, priority order: C and L wait before the delete: 0x00000001
+lightweight, priority order: the delete: 0x00000000
+lightweight, priority order: run order: 0x00000012
+lightweight, priority order: C's wait result: 0x800281C2
+lightweight, priority order: L's lock result: 0x80028006
+DONE

@@ -1,0 +1,23 @@
+info before the delete: the result: 0x00000000
+info before the delete: the waiting threads: 0x00000000
+info before the delete: the mutex is the deleted work area: 0x00000001
+info before the delete: the mutex is NULL: 0x00000000
+delete the mutex: 0x00000000
+wait: 0x80028181
+wait: the timeout is unchanged: 0x00000001
+wait with callbacks: 0x80028181
+wait with callbacks: the timeout is unchanged: 0x00000001
+signal: 0x00000000
+signal all: 0x00000000
+signal to this thread: 0x80028022
+info by work area: the result: 0x00000000
+info by work area: the waiting threads: 0x00000000
+info by work area: the mutex is the deleted work area: 0x00000001
+info by work area: the mutex is NULL: 0x00000000
+info by UID: the result: 0x00000000
+info by UID: the waiting threads: 0x00000000
+info by UID: the mutex is the deleted work area: 0x00000001
+info by UID: the mutex is NULL: 0x00000000
+info by UID names the same work area: 0x00000001
+delete: 0x00000000
+DONE
