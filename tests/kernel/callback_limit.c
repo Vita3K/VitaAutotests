@@ -1,16 +1,26 @@
 // How many callbacks a process can have at once, and what gives their room back. Callbacks are made
-// in a loop of at most 4096 until one create fails, which prints the count reached and the error,
-// as object_limits does for semaphores and mutexes. The cases, in order:
+// in a loop of at most 4096 until one create fails, which prints the error and whether the count
+// is within bounds, as object_limits does for semaphores and mutexes, so the output doesn't depend
+// on how many objects the process holds when the test starts. The cases, in order:
 // - the main thread makes callbacks until the limit, then a semaphore is created, to see if the
 //   limit is shared with the other kinds
 // - a second thread, started before the limit was reached, makes one callback, to see if the limit
 //   is per thread or per process
-// - every callback is deleted, and the main thread makes callbacks until the limit again
+// - one callback is deleted, the next create works and the one after it fails
+// - every callback is deleted, and the main thread makes callbacks until the limit again, and the
+//   count is the same as the first time
 // - the main thread deletes them again, and a third thread makes callbacks until the limit and ends
-//   without deleting them, then the main thread makes callbacks until the limit again
+//   without deleting them, then the main thread makes callbacks until the limit again, and the
+//   count is the same again
 // - one callback is deleted and another created, to see if the new UID is the old one
 // The loops keep the UIDs of the callbacks the main thread made, and every one is deleted before
-// the test ends.
+// the test ends. The limit is shared with the semaphore that opens the second thread, so the fill
+// counts that one too.
+//
+// On a PS Vita TV on firmware 3.65 a process may have 0x800 plain objects. The test app already
+// holds 16 of them when it starts, created by system modules, and the gate semaphore is one more,
+// so 0x7EB callbacks fit, and a create past that fails with 0x8002450D (seen with an earlier form
+// of this test that printed the counts).
 #include <psp2/kernel/threadmgr.h>
 
 #include "test.h"
@@ -18,7 +28,7 @@
 
 #define LIMIT 4096
 
-static SceUID uids[LIMIT], thread_uids[LIMIT];
+static SceUID uids[LIMIT + 2], thread_uids[LIMIT];
 static SceUID gate;
 static int second_result, filler_error;
 static int filler_count;
@@ -75,6 +85,11 @@ static int delete_all(const SceUID *ids, int count) {
     return all_deleted;
 }
 
+// Whether the callbacks count and the gate semaphore together are within the plain limit bounds
+static int in_bounds(int callbacks) {
+    return callbacks + 1 >= 0x7E0 && callbacks + 1 <= 0x800;
+}
+
 int main(void) {
     // A line first, so the output file is open before the creates fill anything up
     const SceUID first = sceKernelCreateCallback("first", 0, callback, NULL);
@@ -85,7 +100,8 @@ int main(void) {
     const SceUID second = test_start_thread(second_thread);
 
     int error = 0;
-    const int count = make_callbacks(uids, &error);
+    int count = make_callbacks(uids, &error);
+    const int first_count = count;
     const SceUID sema = sceKernelCreateSema("limit", 0, 0, 1, NULL);
     const int sema_result = test_created(sema);
     if (sema >= 0)
@@ -94,34 +110,45 @@ int main(void) {
     // The thread is released only now, and the results are printed once it has ended
     sceKernelSignalSema(gate, 1);
     test_join_thread(second);
-    PRINTF(count, "callbacks the main thread created before an error or the limit");
-    PRINTF(error, "the error");
+    PRINTF(error, "the error that stopped the main thread's fill");
+    PRINTF(in_bounds(count), "the fill and the gate semaphore made at least 0x7E0 and at most 0x800");
     PRINTF(sema_result, "create a semaphore while they are there");
     PRINTF(second_result, "create a callback from another thread while they are there");
 
+    // One delete makes room for exactly one create
+    // Nothing to delete when not even the first create worked
+    if (count == 0)
+        test_exit();
+    PRINT("delete one while they are there", sceKernelDeleteCallback(uids[--count]));
+    for (int i = 0; i < 2; i++) {
+        const SceUID id = sceKernelCreateCallback("again", 0, callback, NULL);
+        PRINTF(test_created(id), "create callback %d after deleting one", i + 1);
+        if (id >= 0)
+            uids[count++] = id;
+    }
     PRINTF(delete_all(uids, count), "every one deletes");
 
     // The room is back after the deletes, and the limit is reached again
     error = 0;
     const int again = make_callbacks(uids, &error);
-    PRINTF(again, "callbacks the main thread created after deleting them");
     PRINTF(error, "the error after deleting them");
+    PRINTF(again == first_count, "the fill after deleting them made as many");
     PRINTF(delete_all(uids, again), "every one deletes the second time");
 
     // A third thread makes callbacks until the limit, then ends with them
     const SceUID filler = test_start_thread(filler_thread);
     test_join_thread(filler);
-    PRINTF(filler_count, "callbacks a thread created before an error or the limit");
     PRINTF(filler_error, "the error of the thread");
+    PRINTF(filler_count == first_count, "the thread's fill made as many");
 
     error = 0;
     const int after = make_callbacks(uids, &error);
-    PRINTF(after, "callbacks the main thread created after the thread ended");
     PRINTF(error, "the error after the thread ended");
+    PRINTF(after == first_count, "the fill after the thread ended made as many");
 
     // A deleted callback's UID, and the one created after it
     const SceUID old = uids[0];
-    PRINT("delete one", sceKernelDeleteCallback(old));
+    PRINT("delete one after the thread ended", sceKernelDeleteCallback(old));
     const SceUID new_one = sceKernelCreateCallback("new", 0, callback, NULL);
     PRINT("create one after it", test_created(new_one));
     PRINT("the new UID is the deleted one's", new_one == old);

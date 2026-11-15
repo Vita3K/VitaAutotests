@@ -1,13 +1,18 @@
 create a semaphore before the others: 0x00000000
-plain semaphores created before an error or the end of the loop: 0x000007EC
-the error: 0x8002450D
+plain semaphores: the error that stopped the fill: 0x8002450D
+plain semaphores: the fill made at least 0x7E0 and at most 0x800: 0x00000001
 an openable semaphore while they are there: 0x00000000
 a thread while they are there: 0x00000000
 a callback while they are there: 0x8002450D
-every one deletes: 0x00000001
-openable semaphores created before an error or the end of the loop: 0x000000EC
-the error: 0x8002450D
+delete one semaphore: 0x00000000
+a callback after deleting one: 0x00000000
+a plain semaphore after that: 0x8002450D
+every other one deletes: 0x00000001
+openable semaphores: the error that stopped the fill: 0x8002450D
+openable semaphores: the fill made at least 0xE0 and at most 0x100: 0x00000001
 a plain semaphore while they are there: 0x00000000
 a callback while they are there: 0x00000000
+an openable semaphore after deleting one: 0x00000000
+another openable semaphore after that: 0x8002450D
 every one deletes: 0x00000001
 DONE
