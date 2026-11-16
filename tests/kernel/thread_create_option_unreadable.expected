@@ -1,0 +1,6 @@
+thread: the option alone: 0x80022005
+thread: the option and a NULL name: 0x80022005
+thread: the option and a NULL entry: 0x80022005
+thread: the option and the priority above the highest game priority: 0x80022005
+thread: the option and a negative stack size: 0x80022005
+DONE
