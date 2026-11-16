@@ -885,5 +885,6 @@ vita_test(thread_tls_addr_libkernel kernel/thread_tls_addr_libkernel.c)
 vita_test(tls_random_slots kernel/tls_random_slots.c)
 vita_test(tls_slot_reads kernel/tls_slot_reads.c)
 vita_test(lwmutex_lockcb_arm kernel/lwmutex_lockcb_arm.c)
+vita_test(size_zero_page_start kernel/size_zero_page_start.c)
 
 vita_tests_vpk(VTST00000)
