@@ -1,0 +1,17 @@
+simple event: the option alone: 0x80022005
+timer: the option alone: 0x80022005
+simple event: the option and a NULL name: 0x80022005
+event flag: the option and a NULL name: 0x80022005
+semaphore: the option and a NULL name: 0x80022005
+mutex: the option and a NULL name: 0x80022005
+timer: the option and a NULL name: 0x80022005
+lightweight mutex: the option and a NULL name: 0x80022005
+simple event: the option and the attribute 0x80000000: 0x80022005
+event flag: the option and the attribute 0x80000000: 0x80022005
+semaphore: the option and the attribute 0x80000000: 0x80022005
+mutex: the option and the attribute 0x80000000: 0x80022005
+timer: the option and the attribute 0x80000000: 0x80022005
+lightweight mutex: the option and the attribute 0x80000000: 0x80022005
+lightweight mutex: the option and a NULL work area: 0x80022005
+lightweight mutex: the option and a misaligned work area: 0x80022005
+DONE
