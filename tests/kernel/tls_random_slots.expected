@@ -1,0 +1,8 @@
+slot 6 is the same in the two new threads: 0x00000000
+slot 6 is the same in the main thread and a new thread: 0x00000000
+slot 7 of the first new thread is the main thread's: 0x00000001
+slot 7 of the second new thread is the main thread's: 0x00000001
+slot 7 isn't 0: 0x00000001
+__stack_chk_guard is slot 7: 0x00000001
+SceKernelStackChkGuard is slot 7: 0x00000001
+DONE

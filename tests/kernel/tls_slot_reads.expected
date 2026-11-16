@@ -1,0 +1,5 @@
+slot 1 held the thread ID: 0x00000001
+sceKernelGetThreadId returns the written slot 1: 0x00000001
+slot 8 held the priority: 0x00000001
+sceKernelGetThreadCurrentPriority returns the written slot 8: 0x00000001
+DONE

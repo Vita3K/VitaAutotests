@@ -1,0 +1,5 @@
+lock a free mutex: 0x00000000
+the caller owns it once: 0x00000001
+lock with slot 5 set to 1: 0x80028004
+the mutex is free after the lock: 0x00000001
+DONE

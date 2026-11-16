@@ -1,0 +1,9 @@
+thread 0 gives the caller's slot: 0x00000001
+the caller's UID gives the caller's slot: 0x00000001
+key 1 of thread 0 is the next word: 0x00000001
+the thread manager call gives another thread a slot: 0x00000001
+another thread gives that thread's slot: 0x00000001
+an unknown UID gives NULL: 0x00000001
+key 256 gives NULL: 0x00000001
+key -1 gives NULL: 0x00000001
+DONE
