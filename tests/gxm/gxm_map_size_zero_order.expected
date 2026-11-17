@@ -1,0 +1,23 @@
+initialize libgxm: 0x00000000
+64 KiB, then size 0: map 64 KiB: 0x00000000
+64 KiB, then size 0: map size 0: 0x00000000
+64 KiB, then size 0: unmap the base once: 0x00000000
+64 KiB, then size 0: map 4 KiB in the range: 0x805B0017
+64 KiB, then size 0: unmap the base, try 1: 0x00000000
+64 KiB, then size 0: unmap the base, try 2: 0x805B0017
+size 0, then 64 KiB: map size 0: 0x00000000
+size 0, then 64 KiB: map 64 KiB: 0x00000000
+size 0, then 64 KiB: unmap the base once: 0x00000000
+size 0, then 64 KiB: map 4 KiB in the range: 0x805B0017
+size 0, then 64 KiB: unmap the base, try 1: 0x00000000
+size 0, then 64 KiB: unmap the base, try 2: 0x805B0017
+size 0 twice, then 64 KiB: map size 0: 0x00000000
+size 0 twice, then 64 KiB: map size 0: 0x00000000
+size 0 twice, then 64 KiB: map 64 KiB: 0x00000000
+size 0 twice, then 64 KiB: unmap the base once: 0x00000000
+size 0 twice, then 64 KiB: map 4 KiB in the range: 0x805B0017
+size 0 twice, then 64 KiB: unmap the base, try 1: 0x00000000
+size 0 twice, then 64 KiB: unmap the base, try 2: 0x00000000
+size 0 twice, then 64 KiB: unmap the base, try 3: 0x805B0017
+terminate libgxm: 0x00000000
+DONE

@@ -1,0 +1,67 @@
+initialize libgxm: 0x00000000
+vertex USSE: restart libgxm: 0x00000000
+vertex USSE: first map: allocate a block: 0x00000000
+vertex USSE: first map: 0x00000000
+vertex USSE: first map: the top byte is in its range: 0x00000001
+vertex USSE: first map: 4 KiB aligned: 0x00000001
+vertex USSE: first map: unmap it: 0x00000000
+vertex USSE: restart libgxm: 0x00000000
+vertex USSE: hole: allocate a block: 0x00000000
+vertex USSE: hole: map A: 0x00000000
+vertex USSE: hole: map B: 0x00000000
+vertex USSE: hole: map C: 0x00000000
+vertex USSE: hole: unmap B: 0x00000000
+vertex USSE: hole: map D: 0x00000000
+vertex USSE: hole: D equals B: 0x00000001
+vertex USSE: hole: D is 4 KiB past C: 0x00000000
+vertex USSE: hole: D equals A: 0x00000000
+vertex USSE: restart libgxm: 0x00000000
+vertex USSE: bigger: allocate a block: 0x00000000
+vertex USSE: bigger: map A: 0x00000000
+vertex USSE: bigger: unmap A: 0x00000000
+vertex USSE: bigger: map B of 8 KiB: 0x00000000
+vertex USSE: bigger: B equals A: 0x00000001
+vertex USSE: bigger: B is 4 KiB past A: 0x00000000
+vertex USSE: restart libgxm: 0x00000000
+vertex USSE: wrap: allocate a block: 0x00000000
+vertex USSE: wrap: map 8 MiB: 0x00000000
+vertex USSE: wrap: map 4 KiB after it: 0x00000000
+vertex USSE: wrap: the top byte is one more: 0x00000001
+fragment USSE: restart libgxm: 0x00000000
+fragment USSE: first map: allocate a block: 0x00000000
+fragment USSE: first map: 0x00000000
+fragment USSE: first map: the top byte is in its range: 0x00000001
+fragment USSE: first map: 4 KiB aligned: 0x00000001
+fragment USSE: first map: unmap it: 0x00000000
+fragment USSE: restart libgxm: 0x00000000
+fragment USSE: hole: allocate a block: 0x00000000
+fragment USSE: hole: map A: 0x00000000
+fragment USSE: hole: map B: 0x00000000
+fragment USSE: hole: map C: 0x00000000
+fragment USSE: hole: unmap B: 0x00000000
+fragment USSE: hole: map D: 0x00000000
+fragment USSE: hole: D equals B: 0x00000001
+fragment USSE: hole: D is 4 KiB past C: 0x00000000
+fragment USSE: hole: D equals A: 0x00000000
+fragment USSE: restart libgxm: 0x00000000
+fragment USSE: bigger: allocate a block: 0x00000000
+fragment USSE: bigger: map A: 0x00000000
+fragment USSE: bigger: unmap A: 0x00000000
+fragment USSE: bigger: map B of 8 KiB: 0x00000000
+fragment USSE: bigger: B equals A: 0x00000001
+fragment USSE: bigger: B is 4 KiB past A: 0x00000000
+fragment USSE: restart libgxm: 0x00000000
+fragment USSE: wrap: allocate a block: 0x00000000
+fragment USSE: wrap: map 8 MiB: 0x00000000
+fragment USSE: wrap: map 4 KiB after it: 0x00000000
+fragment USSE: wrap: the top byte is one more: 0x00000001
+context: restart libgxm: 0x00000000
+context: allocate the blocks: 0x00000000
+context: map the ring buffers: 0x00000000
+context: map the fragment USSE block: 0x00000000
+context: map the vertex USSE block: 0x00000000
+context: the offset of the fragment USSE map: 0x00000000
+context: the offset of the fragment USSE map: destroy it: 0x00000000
+context: the offset of a vertex USSE map: 0x805B0004
+terminate libgxm: 0x00000000
+DONE
