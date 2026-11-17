@@ -1,0 +1,9 @@
+attr 0x1, data entry: 0x80020006
+attr 0x1, code entry: 0x8002000E
+priority above the highest game priority, data entry: 0x80020006
+priority above the highest game priority, code entry: 0x80028023
+stack size 0x100, data entry: 0x80020006
+stack size 0x100, code entry: 0x00000000
+user stack type 0x0E20D060, data entry: 0x80020006
+user stack type 0x0E20D060, code entry: 0x8002000C
+DONE

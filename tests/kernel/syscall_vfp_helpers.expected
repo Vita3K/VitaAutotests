@@ -1,0 +1,31 @@
+message pipe try send of 4 KiB: the result: 0x00000000
+message pipe try send of 4 KiB: the d registers that changed, one bit each: 0x00000000
+message pipe try send of 4 KiB: FPSCR changed: 0x00000000
+message pipe try receive of 4 KiB: the result: 0x00000000
+message pipe try receive of 4 KiB: the d registers that changed, one bit each: 0x00000000
+message pipe try receive of 4 KiB: FPSCR changed: 0x00000000
+message pipe try send of 64 bytes: the result: 0x00000000
+message pipe try send of 64 bytes: the d registers that changed, one bit each: 0x00000000
+message pipe try send of 64 bytes: FPSCR changed: 0x00000000
+sceKernelGetThreadInfo: the result: 0x00000000
+sceKernelGetThreadInfo: the d registers that changed, one bit each: 0x00010003
+sceKernelGetThreadInfo: FPSCR changed: 0x00000000
+sceKernelGetSemaInfo: the result: 0x00000000
+sceKernelGetSemaInfo: the d registers that changed, one bit each: 0x00000003
+sceKernelGetSemaInfo: FPSCR changed: 0x00000000
+sceKernelGetProcessTimeWide: the d registers that changed, one bit each: 0x00000000
+sceKernelGetProcessTimeWide: FPSCR changed: 0x00000000
+sceKernelGetSystemTimeWide: the d registers that changed, one bit each: 0x00000000
+sceKernelGetSystemTimeWide: FPSCR changed: 0x00000000
+sceKernelPollSema that succeeds: the result: 0x00000000
+sceKernelPollSema that succeeds: the d registers that changed, one bit each: 0x00000000
+sceKernelPollSema that succeeds: FPSCR changed: 0x00000000
+sceKernelGetCallbackInfo: the result: 0x00000000
+sceKernelGetCallbackInfo: the d registers that changed, one bit each: 0x00000003
+sceKernelGetCallbackInfo: FPSCR changed: 0x00000000
+sceKernelAllocMemBlock of 64 KiB: the d registers that changed, one bit each: 0x00000003
+sceKernelAllocMemBlock of 64 KiB: FPSCR changed: 0x00000000
+sceKernelFreeMemBlock of it: the result: 0x00000000
+sceKernelFreeMemBlock of it: the d registers that changed, one bit each: 0x00000000
+sceKernelFreeMemBlock of it: FPSCR changed: 0x00000000
+DONE

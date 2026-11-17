@@ -1,0 +1,17 @@
+create the target thread: 0x00000000
+thread 0, mask 4, data handler: 0x80020005
+thread 0, mask 4, code handler: 0x80020005
+target, mask 1, data handler: 0x80020005
+target, mask 1, code handler: 0x80020005
+target, mask 0x10, data handler: 0x80020005
+target, mask 0x10, code handler: 0x80020005
+unknown thread, mask 4, data handler: 0x80028021
+unknown thread, mask 4, code handler: 0x80028021
+unknown thread, mask 1, data handler: 0x80028021
+thread 0, mask 8, data handler: 0x80020006
+thread 0, mask 8, code handler: 0x00000000
+target, mask 4, data handler: 0x80020006
+target, mask 4, code handler: 0x00000000
+target, mask 0, data handler: 0x80020006
+target, mask 0, code handler: 0x00000000
+DONE
