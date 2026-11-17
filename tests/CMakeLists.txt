@@ -774,6 +774,7 @@ vita_test(fiber_vfp fiber/fiber_vfp.c)
 
 vita_test(shader_patcher_callback gxm/shader_patcher_callback.c)
 vita_test(gxm_map_memory gxm/gxm_map_memory.c)
+vita_test(gxm_map_enclose gxm/gxm_map_enclose.c)
 vita_test(gxm_map_no_block gxm/gxm_map_no_block.c)
 vita_test(gxm_map_opened gxm/gxm_map_opened.c)
 vita_test(gxm_map_block_types gxm/gxm_map_block_types.c)
@@ -801,6 +802,9 @@ vita_test(gxm_deferred_callback_threads gxm/gxm_deferred_callback_threads.c)
 vita_test(gxm_deferred_callback_recorder gxm/gxm_deferred_callback_recorder.c)
 vita_test(gxm_deferred_ring_usage gxm/gxm_deferred_ring_usage.c)
 vita_test(gxm_deferred_ring_usage_more gxm/gxm_deferred_ring_usage_more.c)
+vita_test(gxm_texture_strided gxm/gxm_texture_strided.c)
+vita_test(gxm_fragment_program_cache gxm/gxm_fragment_program_cache.c)
+vita_test(gxm_color_surface_init_checks gxm/gxm_color_surface_init_checks.c)
 
 vita_test(rtc rtc/rtc.c)
 

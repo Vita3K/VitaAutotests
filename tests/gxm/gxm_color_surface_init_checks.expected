@@ -1,0 +1,38 @@
+initialize libgxm: 0x00000000
+allocate the block: 0x00000000
+map the block: 0x00000000
+the valid surface: 0x00000000
+format 0x70000000: 0x805B0003
+U8S8S8U8_ABGR: 0x805B0003
+F16F16F16F16_ABGR with the 32 bit size: 0x805B0009
+F16F16F16F16_ABGR with the 64 bit size: 0x00000000
+U8U8U8U8_ABGR with the 64 bit size: 0x00000000
+a stride of 65: 0x805B0005
+a stride of 62 for a width of 64: 0x805B0003
+a stride of 63 for a width of 64: 0x805B0005
+data 2 bytes in: 0x805B0003
+data 2 bytes in with a stride of 65: 0x805B0005
+a scale mode of 2: 0x805B0003
+MSAA downscale on U8U8U8U8_ABGR: 0x00000000
+MSAA downscale on F32_R: 0x805B0009
+a surface type of 0x01000000: 0x805B0003
+swizzled 64 by 64: 0x00000000
+swizzled 16 by 16: 0x00000000
+swizzled 8 by 8: 0x805B0003
+swizzled 48 by 64: 0x805B0003
+swizzled 64 by 48: 0x805B0003
+tiled 64 by 64: 0x00000000
+tiled 32 by 32: 0x00000000
+tiled 48 by 48: 0x00000000
+tiled 16 by 16: 0x805B0003
+tiled 31 by 32: 0x805B0003
+tiled 32 by 31: 0x805B0003
+U8U8U8_BGR 60 by 60 with a stride of 64: 0x00000000
+U8U8U8_BGR 60 by 60 with a stride of 62: 0x805B0003
+a stride of 32768 pixels: 0x00000000
+a stride of 32770 pixels: 0x805B0003
+a NULL surface: 0x805B0004
+NULL data: 0x00000000
+unmap the block: 0x00000000
+terminate libgxm: 0x00000000
+DONE
