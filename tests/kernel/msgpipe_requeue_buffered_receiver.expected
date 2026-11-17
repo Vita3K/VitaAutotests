@@ -1,0 +1,60 @@
+peek, lowered: try send "abcd": 0x00000000
+peek, lowered: try send "abcd", its size: 0x00000004
+peek, lowered: A waits: 0x00000001
+peek, lowered: B waits: 0x00000001
+peek, lowered: the bytes in the pipe before the change: 0x00000004
+peek, lowered: lowering A below B: 0x00000000
+peek, lowered: B ended within 1 s: 0x00000000
+peek, lowered: the bytes in the pipe after that: 0x00000004
+peek, lowered: the waiting receivers after that: 0x00000002
+peek, lowered: try send "efgh": 0x00000000
+peek, lowered: try send "efgh", its size: 0x00000004
+peek, lowered: A waits after it: 0x00000001
+peek, lowered: B waits after it: 0x00000000
+peek, lowered: the bytes in the pipe after it: 0x00000004
+peek, lowered: the waiting receivers after it: 0x00000001
+peek, lowered: the cancel: 0x00000000
+peek, lowered: A's result: 0x80028007
+peek, lowered: A got "abcdefgh", its size: 0x00000008
+peek, lowered: B's result: 0x00000000
+peek, lowered: B got "abcd", its size: 0x00000004
+peek, kept: try send "abcd": 0x00000000
+peek, kept: try send "abcd", its size: 0x00000004
+peek, kept: A waits: 0x00000001
+peek, kept: B waits: 0x00000001
+peek, kept: the bytes in the pipe before the change: 0x00000004
+peek, kept: B ended within 1 s: 0x00000000
+peek, kept: the bytes in the pipe after that: 0x00000004
+peek, kept: the waiting receivers after that: 0x00000002
+peek, kept: try send "efgh": 0x00000000
+peek, kept: try send "efgh", its size: 0x00000004
+peek, kept: A waits after it: 0x00000000
+peek, kept: B waits after it: 0x00000000
+peek, kept: the bytes in the pipe after it: 0x00000004
+peek, kept: the waiting receivers after it: 0x00000000
+peek, kept: the cancel: 0x00000000
+peek, kept: A's result: 0x00000000
+peek, kept: A got "abcdefgh", its size: 0x00000008
+peek, kept: B's result: 0x00000000
+peek, kept: B got "abcd", its size: 0x00000004
+remove, lowered: try send "abcd": 0x00000000
+remove, lowered: try send "abcd", its size: 0x00000004
+remove, lowered: A waits: 0x00000001
+remove, lowered: B waits: 0x00000001
+remove, lowered: the bytes in the pipe before the change: 0x00000000
+remove, lowered: lowering A below B: 0x00000000
+remove, lowered: B ended within 1 s: 0x00000000
+remove, lowered: the bytes in the pipe after that: 0x00000000
+remove, lowered: the waiting receivers after that: 0x00000002
+remove, lowered: try send "efgh": 0x00000000
+remove, lowered: try send "efgh", its size: 0x00000004
+remove, lowered: A waits after it: 0x00000001
+remove, lowered: B waits after it: 0x00000000
+remove, lowered: the bytes in the pipe after it: 0x00000000
+remove, lowered: the waiting receivers after it: 0x00000001
+remove, lowered: the cancel: 0x00000000
+remove, lowered: A's result: 0x80028007
+remove, lowered: A got "abcd", its size: 0x00000004
+remove, lowered: B's result: 0x00000000
+remove, lowered: B got "efgh", its size: 0x00000004
+DONE
