@@ -1,0 +1,43 @@
+initialize libgxm: 0x00000000
+create the shader patcher: 0x00000000
+register clear_f: 0x00000000
+register texture_f: 0x00000000
+the base call twice: create the first: 0x00000000
+the base call twice: create the second: 0x00000000
+the base call twice: the same object: 0x00000001
+the alpha blend twice: create the first: 0x00000000
+the alpha blend twice: create the second: 0x00000000
+the alpha blend twice: the same object: 0x00000001
+clear_f and texture_f: create the first: 0x00000000
+clear_f and texture_f: create the second: 0x00000000
+clear_f and texture_f: the same object: 0x00000000
+UCHAR4 and HALF4: create the first: 0x00000000
+UCHAR4 and HALF4: create the second: 0x00000000
+UCHAR4 and HALF4: the same object: 0x00000000
+UCHAR4 and HALF4 with the alpha blend: create the first: 0x00000000
+UCHAR4 and HALF4 with the alpha blend: create the second: 0x00000000
+UCHAR4 and HALF4 with the alpha blend: the same object: 0x00000000
+clear_v and texture_v: create the first: 0x00000000
+clear_v and texture_v: create the second: 0x00000000
+clear_v and texture_v: the same object: 0x00000000
+clear_v and NULL: create the first: 0x00000000
+clear_v and NULL: create the second: 0x00000000
+clear_v and NULL: the same object: 0x00000000
+no multisampling and 4X: create the first: 0x00000000
+no multisampling and 4X: create the second: 0x00000000
+no multisampling and 4X: the same object: 0x00000001
+no multisampling and 4X with the alpha blend: create the first: 0x00000000
+no multisampling and 4X with the alpha blend: create the second: 0x00000000
+no multisampling and 4X with the alpha blend: the same object: 0x00000000
+no blend info and a blend that doesn't blend: create the first: 0x00000000
+no blend info and a blend that doesn't blend: create the second: 0x00000000
+no blend info and a blend that doesn't blend: the same object: 0x00000001
+no blend info and the alpha blend: create the first: 0x00000000
+no blend info and the alpha blend: create the second: 0x00000000
+no blend info and the alpha blend: the same object: 0x00000000
+the first failing release: 0x00000000
+unregister clear_f: 0x00000000
+unregister texture_f: 0x00000000
+destroy the shader patcher: 0x00000000
+terminate libgxm: 0x00000000
+DONE

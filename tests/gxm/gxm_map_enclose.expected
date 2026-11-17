@@ -1,0 +1,13 @@
+initialize libgxm: 0x00000000
+map the 64 KiB at 256 KiB: 0x00000000
+the whole block over it: 0x805B0017
+96 KiB that end inside it: 0x805B0017
+the 64 KiB right before it: 0x00000000
+the 64 KiB right before it: unmap it: 0x00000000
+the 64 KiB right after it: 0x00000000
+the 64 KiB right after it: unmap it: 0x00000000
+unmap the 64 KiB at 256 KiB: 0x00000000
+the whole block after the unmap: 0x00000000
+the whole block after the unmap: unmap it: 0x00000000
+terminate libgxm: 0x00000000
+DONE

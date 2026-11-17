@@ -1,0 +1,85 @@
+initialize libgxm: 0x00000000
+allocate the block: 0x00000000
+map the block: 0x00000000
+stride 6: init: 0x805B0005
+stride 4: init: 0x00000000
+stride 4: get stride: 0x00000004
+stride 4: U address mode: 0x00000002
+stride 4: V address mode: 0x00000002
+stride 4: validate: 0x00000000
+stride 4: word 0 bits 2:0: 0x00000000
+stride 4: stride field: 0x00000000
+stride 4: word 0: 0x00000090
+stride 4: word 1: 0xCC007001
+stride 4: word 2 bits 1:0: 0x00000000
+stride 4: word 3: 0x80000000
+stride 32764: init: 0x00000000
+stride 32764: get stride: 0x00007FFC
+stride 32764: U address mode: 0x00000002
+stride 32764: V address mode: 0x00000002
+stride 32764: validate: 0x00000000
+stride 32764: word 0 bits 2:0: 0x00000000
+stride 32764: stride field: 0x00001FFE
+stride 32764: word 0: 0x07FE0C90
+stride 32764: word 1: 0xCC007001
+stride 32764: word 2 bits 1:0: 0x00000000
+stride 32764: word 3: 0x80000000
+stride 32768: init: 0x00000000
+stride 32768: get stride: 0x00008000
+stride 32768: U address mode: 0x00000002
+stride 32768: V address mode: 0x00000002
+stride 32768: validate: 0x00000000
+stride 32768: word 0 bits 2:0: 0x00000000
+stride 32768: stride field: 0x00001FFF
+stride 32768: word 0: 0x07FE0E90
+stride 32768: word 1: 0xCC007001
+stride 32768: word 2 bits 1:0: 0x00000000
+stride 32768: word 3: 0x80000000
+stride 32772: init: 0x00000000
+stride 32772: get stride: 0x00008004
+stride 32772: U address mode: 0x00000002
+stride 32772: V address mode: 0x00000002
+stride 32772: validate: 0x00000000
+stride 32772: word 0 bits 2:0: 0x00000002
+stride 32772: stride field: 0x00002000
+stride 32772: word 0: 0x00000092
+stride 32772: word 1: 0xCC007001
+stride 32772: word 2 bits 1:0: 0x00000000
+stride 32772: word 3: 0x80000000
+stride 65536: init: 0x00000000
+stride 65536: get stride: 0x00010000
+stride 65536: U address mode: 0x00000002
+stride 65536: V address mode: 0x00000002
+stride 65536: validate: 0x00000000
+stride 65536: word 0 bits 2:0: 0x00000002
+stride 65536: stride field: 0x00003FFF
+stride 65536: word 0: 0x07FE0E92
+stride 65536: word 1: 0xCC007001
+stride 65536: word 2 bits 1:0: 0x00000000
+stride 65536: word 3: 0x80000000
+stride 98304: init: 0x00000000
+stride 98304: get stride: 0x00018000
+stride 98304: U address mode: 0x00000002
+stride 98304: V address mode: 0x00000002
+stride 98304: validate: 0x00000000
+stride 98304: word 0 bits 2:0: 0x00000004
+stride 98304: stride field: 0x00005FFF
+stride 98304: word 0: 0x07FE0E94
+stride 98304: word 1: 0xCC007001
+stride 98304: word 2 bits 1:0: 0x00000000
+stride 98304: word 3: 0x80000000
+stride 131072: init: 0x00000000
+stride 131072: get stride: 0x00020000
+stride 131072: U address mode: 0x00000002
+stride 131072: V address mode: 0x00000002
+stride 131072: validate: 0x00000000
+stride 131072: word 0 bits 2:0: 0x00000006
+stride 131072: stride field: 0x00007FFF
+stride 131072: word 0: 0x07FE0E96
+stride 131072: word 1: 0xCC007001
+stride 131072: word 2 bits 1:0: 0x00000000
+stride 131072: word 3: 0x80000000
+stride 131076: init: 0x805B0003
+unmap the block: 0x00000000
+terminate libgxm: 0x00000000
+DONE
