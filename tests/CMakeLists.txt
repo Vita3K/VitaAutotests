@@ -805,6 +805,7 @@ vita_test(gxm_deferred_ring_usage_more gxm/gxm_deferred_ring_usage_more.c)
 vita_test(gxm_texture_strided gxm/gxm_texture_strided.c)
 vita_test(gxm_fragment_program_cache gxm/gxm_fragment_program_cache.c)
 vita_test(gxm_color_surface_init_checks gxm/gxm_color_surface_init_checks.c)
+vita_test(gxm_color_surface_wide_stride gxm/gxm_color_surface_wide_stride.c)
 
 vita_test(rtc rtc/rtc.c)
 
