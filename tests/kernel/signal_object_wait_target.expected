@@ -1,0 +1,30 @@
+priority change: the signal to W: 0x00000000
+priority change: W's status after the signal: 0x00000008
+priority change: W's wait type after the signal: 0x00000020
+priority change: W waits on the semaphore after the signal: 0x00000001
+priority change: the semaphore's waiting threads after the signal: 0x00000002
+priority change: raising W: 0x00000000
+priority change: the semaphore's waiting threads after the first count: 0x00000001
+priority change: W got the first count: 0x00000001
+priority change: A's wait: 0x00000000
+priority change: W's wait: 0x00000000
+priority change: W's wait for the signal after it: 0x00000000
+priority change: that wait returned at once: 0x00000001
+callback: the signal to W: 0x00000000
+callback: W's status after the signal: 0x00000008
+callback: W's wait type after the signal: 0x80000020
+callback: W waits on the semaphore after the signal: 0x00000001
+callback: the semaphore's waiting threads after the signal: 0x00000001
+callback: the notify: 0x00000000
+callback: the callback ran: 0x00000001
+callback: the semaphore's waiting threads in the callback: 0x00000000
+callback: W's status in the callback: 0x00000001
+callback: W's status after the callback: 0x00000008
+callback: W's wait type after the callback: 0x80000020
+callback: W waits on the semaphore after the callback: 0x00000001
+callback: the semaphore's waiting threads after the callback: 0x00000001
+callback: that wait type has the callback bit: 0x00000001
+callback: W's wait: 0x00000000
+callback: W's wait for the signal after it: 0x00000000
+callback: that wait returned at once: 0x00000001
+DONE
