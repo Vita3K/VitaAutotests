@@ -1,0 +1,19 @@
+initialize libgxm: 0x00000000
+a USER_RW block, attributes 0x100: 0x805B0017
+a USER_RW block, attributes 0x101: 0x00000000
+a USER_RW block, attributes 0x101: unmap it: 0x00000000
+a USER_RW block, attributes 0x102: 0x00000000
+a USER_RW block, attributes 0x102: unmap it: 0x00000000
+a USER_RW block, attributes 0x103: 0x00000000
+a USER_RW block, attributes 0x103: unmap it: 0x00000000
+a USER_RW block, attributes 0x201: 0x00000000
+a USER_RW block, attributes 0x201: unmap it: 0x00000000
+a USER_RW block, attributes 0x9: 0x805B0017
+a USER_RW block, attributes 0x11: 0x805B0017
+a USER_RW block, attributes 0x80000001: 0x00000000
+a USER_RW block, attributes 0x80000001: unmap it: 0x00000000
+a read only block, attributes 0x101: 0x00000000
+a read only block, attributes 0x101: unmap it: 0x00000000
+a read only block, attributes 0x102: 0x805B0017
+terminate libgxm: 0x00000000
+DONE

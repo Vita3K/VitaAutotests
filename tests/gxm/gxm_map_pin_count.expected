@@ -1,0 +1,43 @@
+initialize libgxm: 0x00000000
+two halves: allocate it: 0x00000000
+two halves: its base: 0x00000000
+two halves: map the first half: 0x00000000
+two halves: map the second half: 0x00000000
+two halves: unmap the first half: 0x00000000
+two halves: free it: 0x80024703
+two halves, after the free: find by its base: 0x80024501
+two halves: unmap the second half: 0x00000000
+two halves, after the last unmap: find by its base: 0x80024501
+MapMemory and USSE: allocate it: 0x00000000
+MapMemory and USSE: its base: 0x00000000
+MapMemory and USSE: map the block: 0x00000000
+MapMemory and USSE: map 4 KiB of it as vertex USSE: 0x00000000
+MapMemory and USSE: unmap the block: 0x00000000
+MapMemory and USSE: free it: 0x80024703
+MapMemory and USSE, after the free: find by its base: 0x80024501
+MapMemory and USSE: unmap the vertex USSE mapping: 0x00000000
+MapMemory and USSE, after the last unmap: find by its base: 0x80024501
+size 0 twice: allocate it: 0x00000000
+size 0 twice: its base: 0x00000000
+size 0 twice: map size 0 the first time: 0x00000000
+size 0 twice: map size 0 the second time: 0x00000000
+size 0 twice: unmap one: 0x00000000
+size 0 twice: free it: 0x80024703
+size 0 twice, after the free: find by its base: 0x80024501
+size 0 twice: unmap the other: 0x00000000
+size 0 twice, after the last unmap: find by its base: 0x80024501
+map, unmap, map, unmap: allocate it: 0x00000000
+map, unmap, map, unmap: its base: 0x00000000
+map, unmap, map, unmap: map it, round 1: 0x00000000
+map, unmap, map, unmap: unmap it, round 1: 0x00000000
+map, unmap, map, unmap: map it, round 2: 0x00000000
+map, unmap, map, unmap: unmap it, round 2: 0x00000000
+map, unmap, map, unmap: free it: 0x00000000
+map, unmap, map, unmap, after the free: find by its base: 0x80022007
+mapped at the terminate: allocate it: 0x00000000
+mapped at the terminate: its base: 0x00000000
+mapped at the terminate: map it: 0x00000000
+mapped at the terminate: terminate libgxm: 0x00000000
+mapped at the terminate: free it: 0x00000000
+mapped at the terminate, after the free: find by its base: 0x80022007
+DONE

@@ -1,0 +1,40 @@
+vertex USSE: before initialize: NULL base and offset: 0x805B0000
+vertex USSE: before initialize: NULL base: 0x805B0000
+vertex USSE: before initialize: unmap a NULL base: 0x805B0000
+fragment USSE: before initialize: NULL base and offset: 0x805B0000
+fragment USSE: before initialize: NULL base: 0x805B0000
+fragment USSE: before initialize: unmap a NULL base: 0x805B0000
+unmap a NULL base with sceGxmUnmapMemory before initialize: 0x805B0000
+initialize libgxm: 0x00000000
+vertex USSE: NULL base and offset, 4 KiB: 0x805B0004
+vertex USSE: NULL base and offset, 9 MiB: 0x805B0004
+vertex USSE: NULL base and offset, size 0: 0x805B0004
+vertex USSE: NULL base, valid offset, 9 MiB: 0x805B0004
+vertex USSE: NULL base, valid offset, size 0: 0x805B0004
+vertex USSE: valid base, NULL offset, 9 MiB: 0x805B0004
+vertex USSE: valid base, NULL offset, size 0: 0x805B0004
+vertex USSE: valid base, NULL offset, unaligned base: 0x805B0004
+vertex USSE: unaligned base, 9 MiB: 0x805B0003
+vertex USSE: unaligned base, size 0: 0x805B0017
+vertex USSE: aligned base, 9 MiB: 0x805B0003
+vertex USSE: aligned base, 4 KiB: 0x00000000
+vertex USSE: aligned base, 4 KiB: unmap it: 0x00000000
+fragment USSE: NULL base and offset, 4 KiB: 0x805B0004
+fragment USSE: NULL base and offset, 9 MiB: 0x805B0004
+fragment USSE: NULL base and offset, size 0: 0x805B0004
+fragment USSE: NULL base, valid offset, 9 MiB: 0x805B0004
+fragment USSE: NULL base, valid offset, size 0: 0x805B0004
+fragment USSE: valid base, NULL offset, 9 MiB: 0x805B0004
+fragment USSE: valid base, NULL offset, size 0: 0x805B0004
+fragment USSE: valid base, NULL offset, unaligned base: 0x805B0004
+fragment USSE: unaligned base, 9 MiB: 0x805B0003
+fragment USSE: unaligned base, size 0: 0x805B0017
+fragment USSE: aligned base, 9 MiB: 0x805B0003
+fragment USSE: aligned base, 4 KiB: 0x00000000
+fragment USSE: aligned base, 4 KiB: unmap it: 0x00000000
+vertex USSE: unmap a NULL base: 0x805B0004
+fragment USSE: unmap a NULL base: 0x805B0004
+terminate libgxm: 0x00000000
+vertex USSE: after terminate: unmap a NULL base: 0x805B0000
+fragment USSE: after terminate: unmap a NULL base: 0x805B0000
+DONE

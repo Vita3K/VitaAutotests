@@ -1,0 +1,191 @@
+initialize libgxm: 0x00000000
+vertex USSE: base: restart libgxm: 0x00000000
+vertex USSE: base: allocate the block of A: 0x00000000
+vertex USSE: base: map A: 0x00000000
+vertex USSE: base: map B: 0x00000000
+vertex USSE: base: unmap A: 0x00000000
+vertex USSE: base: map C: 0x00000000
+vertex USSE: base: C equals A: 0x00000000
+vertex USSE: base: C equals B: 0x00000000
+vertex USSE: base: C is the size of A past A: 0x00000000
+vertex USSE: base: C is the size of B past B: 0x00000001
+vertex USSE: warmup: restart libgxm: 0x00000000
+vertex USSE: warmup: allocate the warmup block: 0x00000000
+vertex USSE: warmup: warmup maps: 0x00000000
+vertex USSE: warmup: allocate the block of A: 0x00000000
+vertex USSE: warmup: map A: 0x00000000
+vertex USSE: warmup: map B: 0x00000000
+vertex USSE: warmup: unmap A: 0x00000000
+vertex USSE: warmup: map C: 0x00000000
+vertex USSE: warmup: C equals A: 0x00000000
+vertex USSE: warmup: C equals B: 0x00000000
+vertex USSE: warmup: C is the size of A past A: 0x00000000
+vertex USSE: warmup: C is the size of B past B: 0x00000001
+vertex USSE: separate blocks: restart libgxm: 0x00000000
+vertex USSE: separate blocks: allocate the block of A: 0x00000000
+vertex USSE: separate blocks: allocate the block of B: 0x00000000
+vertex USSE: separate blocks: map A: 0x00000000
+vertex USSE: separate blocks: map B: 0x00000000
+vertex USSE: separate blocks: unmap A: 0x00000000
+vertex USSE: separate blocks: map C: 0x00000000
+vertex USSE: separate blocks: C equals A: 0x00000000
+vertex USSE: separate blocks: C equals B: 0x00000000
+vertex USSE: separate blocks: C is the size of A past A: 0x00000000
+vertex USSE: separate blocks: C is the size of B past B: 0x00000001
+vertex USSE: another range: restart libgxm: 0x00000000
+vertex USSE: another range: allocate the block of A: 0x00000000
+vertex USSE: another range: map A: 0x00000000
+vertex USSE: another range: map B: 0x00000000
+vertex USSE: another range: unmap A: 0x00000000
+vertex USSE: another range: map C: 0x00000000
+vertex USSE: another range: C equals A: 0x00000000
+vertex USSE: another range: C equals B: 0x00000000
+vertex USSE: another range: C is the size of A past A: 0x00000000
+vertex USSE: another range: C is the size of B past B: 0x00000001
+vertex USSE: B unmapped too: restart libgxm: 0x00000000
+vertex USSE: B unmapped too: allocate the block of A: 0x00000000
+vertex USSE: B unmapped too: map A: 0x00000000
+vertex USSE: B unmapped too: map B: 0x00000000
+vertex USSE: B unmapped too: unmap A: 0x00000000
+vertex USSE: B unmapped too: unmap B: 0x00000000
+vertex USSE: B unmapped too: map C: 0x00000000
+vertex USSE: B unmapped too: C equals A: 0x00000001
+vertex USSE: B unmapped too: C equals B: 0x00000000
+vertex USSE: B unmapped too: C is the size of A past A: 0x00000000
+vertex USSE: B unmapped too: C is the size of B past B: 0x00000000
+vertex USSE: B first: restart libgxm: 0x00000000
+vertex USSE: B first: allocate the block of A: 0x00000000
+vertex USSE: B first: map A: 0x00000000
+vertex USSE: B first: map B: 0x00000000
+vertex USSE: B first: unmap A: 0x00000000
+vertex USSE: B first: map C: 0x00000000
+vertex USSE: B first: C equals A: 0x00000001
+vertex USSE: B first: C equals B: 0x00000000
+vertex USSE: B first: C is the size of A past A: 0x00000000
+vertex USSE: B first: C is the size of B past B: 0x00000001
+vertex USSE: C of 8 KiB: restart libgxm: 0x00000000
+vertex USSE: C of 8 KiB: allocate the block of A: 0x00000000
+vertex USSE: C of 8 KiB: map A: 0x00000000
+vertex USSE: C of 8 KiB: map B: 0x00000000
+vertex USSE: C of 8 KiB: unmap A: 0x00000000
+vertex USSE: C of 8 KiB: map C: 0x00000000
+vertex USSE: C of 8 KiB: C equals A: 0x00000000
+vertex USSE: C of 8 KiB: C equals B: 0x00000000
+vertex USSE: C of 8 KiB: C is the size of A past A: 0x00000000
+vertex USSE: C of 8 KiB: C is the size of B past B: 0x00000001
+vertex USSE: A of 8 KiB: restart libgxm: 0x00000000
+vertex USSE: A of 8 KiB: allocate the block of A: 0x00000000
+vertex USSE: A of 8 KiB: map A: 0x00000000
+vertex USSE: A of 8 KiB: map B: 0x00000000
+vertex USSE: A of 8 KiB: unmap A: 0x00000000
+vertex USSE: A of 8 KiB: map C: 0x00000000
+vertex USSE: A of 8 KiB: C equals A: 0x00000000
+vertex USSE: A of 8 KiB: C equals B: 0x00000000
+vertex USSE: A of 8 KiB: C is the size of A past A: 0x00000000
+vertex USSE: A of 8 KiB: C is the size of B past B: 0x00000001
+vertex USSE: B of 8 KiB: restart libgxm: 0x00000000
+vertex USSE: B of 8 KiB: allocate the block of A: 0x00000000
+vertex USSE: B of 8 KiB: map A: 0x00000000
+vertex USSE: B of 8 KiB: map B: 0x00000000
+vertex USSE: B of 8 KiB: unmap A: 0x00000000
+vertex USSE: B of 8 KiB: map C: 0x00000000
+vertex USSE: B of 8 KiB: C equals A: 0x00000000
+vertex USSE: B of 8 KiB: C equals B: 0x00000000
+vertex USSE: B of 8 KiB: C is the size of A past A: 0x00000000
+vertex USSE: B of 8 KiB: C is the size of B past B: 0x00000001
+fragment USSE: base: restart libgxm: 0x00000000
+fragment USSE: base: allocate the block of A: 0x00000000
+fragment USSE: base: map A: 0x00000000
+fragment USSE: base: map B: 0x00000000
+fragment USSE: base: unmap A: 0x00000000
+fragment USSE: base: map C: 0x00000000
+fragment USSE: base: C equals A: 0x00000000
+fragment USSE: base: C equals B: 0x00000000
+fragment USSE: base: C is the size of A past A: 0x00000000
+fragment USSE: base: C is the size of B past B: 0x00000001
+fragment USSE: warmup: restart libgxm: 0x00000000
+fragment USSE: warmup: allocate the warmup block: 0x00000000
+fragment USSE: warmup: warmup maps: 0x00000000
+fragment USSE: warmup: allocate the block of A: 0x00000000
+fragment USSE: warmup: map A: 0x00000000
+fragment USSE: warmup: map B: 0x00000000
+fragment USSE: warmup: unmap A: 0x00000000
+fragment USSE: warmup: map C: 0x00000000
+fragment USSE: warmup: C equals A: 0x00000000
+fragment USSE: warmup: C equals B: 0x00000000
+fragment USSE: warmup: C is the size of A past A: 0x00000000
+fragment USSE: warmup: C is the size of B past B: 0x00000001
+fragment USSE: separate blocks: restart libgxm: 0x00000000
+fragment USSE: separate blocks: allocate the block of A: 0x00000000
+fragment USSE: separate blocks: allocate the block of B: 0x00000000
+fragment USSE: separate blocks: map A: 0x00000000
+fragment USSE: separate blocks: map B: 0x00000000
+fragment USSE: separate blocks: unmap A: 0x00000000
+fragment USSE: separate blocks: map C: 0x00000000
+fragment USSE: separate blocks: C equals A: 0x00000000
+fragment USSE: separate blocks: C equals B: 0x00000000
+fragment USSE: separate blocks: C is the size of A past A: 0x00000000
+fragment USSE: separate blocks: C is the size of B past B: 0x00000001
+fragment USSE: another range: restart libgxm: 0x00000000
+fragment USSE: another range: allocate the block of A: 0x00000000
+fragment USSE: another range: map A: 0x00000000
+fragment USSE: another range: map B: 0x00000000
+fragment USSE: another range: unmap A: 0x00000000
+fragment USSE: another range: map C: 0x00000000
+fragment USSE: another range: C equals A: 0x00000000
+fragment USSE: another range: C equals B: 0x00000000
+fragment USSE: another range: C is the size of A past A: 0x00000000
+fragment USSE: another range: C is the size of B past B: 0x00000001
+fragment USSE: B unmapped too: restart libgxm: 0x00000000
+fragment USSE: B unmapped too: allocate the block of A: 0x00000000
+fragment USSE: B unmapped too: map A: 0x00000000
+fragment USSE: B unmapped too: map B: 0x00000000
+fragment USSE: B unmapped too: unmap A: 0x00000000
+fragment USSE: B unmapped too: unmap B: 0x00000000
+fragment USSE: B unmapped too: map C: 0x00000000
+fragment USSE: B unmapped too: C equals A: 0x00000001
+fragment USSE: B unmapped too: C equals B: 0x00000000
+fragment USSE: B unmapped too: C is the size of A past A: 0x00000000
+fragment USSE: B unmapped too: C is the size of B past B: 0x00000000
+fragment USSE: B first: restart libgxm: 0x00000000
+fragment USSE: B first: allocate the block of A: 0x00000000
+fragment USSE: B first: map A: 0x00000000
+fragment USSE: B first: map B: 0x00000000
+fragment USSE: B first: unmap A: 0x00000000
+fragment USSE: B first: map C: 0x00000000
+fragment USSE: B first: C equals A: 0x00000001
+fragment USSE: B first: C equals B: 0x00000000
+fragment USSE: B first: C is the size of A past A: 0x00000000
+fragment USSE: B first: C is the size of B past B: 0x00000001
+fragment USSE: C of 8 KiB: restart libgxm: 0x00000000
+fragment USSE: C of 8 KiB: allocate the block of A: 0x00000000
+fragment USSE: C of 8 KiB: map A: 0x00000000
+fragment USSE: C of 8 KiB: map B: 0x00000000
+fragment USSE: C of 8 KiB: unmap A: 0x00000000
+fragment USSE: C of 8 KiB: map C: 0x00000000
+fragment USSE: C of 8 KiB: C equals A: 0x00000000
+fragment USSE: C of 8 KiB: C equals B: 0x00000000
+fragment USSE: C of 8 KiB: C is the size of A past A: 0x00000000
+fragment USSE: C of 8 KiB: C is the size of B past B: 0x00000001
+fragment USSE: A of 8 KiB: restart libgxm: 0x00000000
+fragment USSE: A of 8 KiB: allocate the block of A: 0x00000000
+fragment USSE: A of 8 KiB: map A: 0x00000000
+fragment USSE: A of 8 KiB: map B: 0x00000000
+fragment USSE: A of 8 KiB: unmap A: 0x00000000
+fragment USSE: A of 8 KiB: map C: 0x00000000
+fragment USSE: A of 8 KiB: C equals A: 0x00000000
+fragment USSE: A of 8 KiB: C equals B: 0x00000000
+fragment USSE: A of 8 KiB: C is the size of A past A: 0x00000000
+fragment USSE: A of 8 KiB: C is the size of B past B: 0x00000001
+fragment USSE: B of 8 KiB: restart libgxm: 0x00000000
+fragment USSE: B of 8 KiB: allocate the block of A: 0x00000000
+fragment USSE: B of 8 KiB: map A: 0x00000000
+fragment USSE: B of 8 KiB: map B: 0x00000000
+fragment USSE: B of 8 KiB: unmap A: 0x00000000
+fragment USSE: B of 8 KiB: map C: 0x00000000
+fragment USSE: B of 8 KiB: C equals A: 0x00000000
+fragment USSE: B of 8 KiB: C equals B: 0x00000000
+fragment USSE: B of 8 KiB: C is the size of A past A: 0x00000000
+fragment USSE: B of 8 KiB: C is the size of B past B: 0x00000001
+terminate libgxm: 0x00000000
+DONE

@@ -1,0 +1,33 @@
+initialize libgxm: 0x00000000
+vertex USSE: 64 KiB over a 32 KiB block: allocate it: 0x00000000
+vertex USSE: 64 KiB over a 32 KiB block: 0x805B0017
+vertex USSE: a freed range: allocate the block: 0x00000000
+vertex USSE: a freed range: free the block: 0x00000000
+vertex USSE: a freed range: 0x805B0017
+vertex USSE: a whole USER_MAIN_DEVICE_RW block: allocate it: 0x00000000
+vertex USSE: a whole USER_MAIN_DEVICE_RW block: 0x805B0017
+vertex USSE: a whole USER_CDRAM_RW block: allocate it: 0x00000000
+vertex USSE: a whole USER_CDRAM_RW block: 0x00000000
+vertex USSE: a whole USER_CDRAM_RW block: unmap it: 0x00000000
+vertex USSE: a whole USER_MAIN_R block: allocate it: 0x00000000
+vertex USSE: a whole USER_MAIN_R block: 0x00000000
+vertex USSE: a whole USER_MAIN_R block: unmap it: 0x00000000
+vertex USSE: 6 KiB: allocate the block: 0x00000000
+vertex USSE: 6 KiB: 0x805B0017
+fragment USSE: 64 KiB over a 32 KiB block: allocate it: 0x00000000
+fragment USSE: 64 KiB over a 32 KiB block: 0x805B0017
+fragment USSE: a freed range: allocate the block: 0x00000000
+fragment USSE: a freed range: free the block: 0x00000000
+fragment USSE: a freed range: 0x805B0017
+fragment USSE: a whole USER_MAIN_DEVICE_RW block: allocate it: 0x00000000
+fragment USSE: a whole USER_MAIN_DEVICE_RW block: 0x805B0017
+fragment USSE: a whole USER_CDRAM_RW block: allocate it: 0x00000000
+fragment USSE: a whole USER_CDRAM_RW block: 0x00000000
+fragment USSE: a whole USER_CDRAM_RW block: unmap it: 0x00000000
+fragment USSE: a whole USER_MAIN_R block: allocate it: 0x00000000
+fragment USSE: a whole USER_MAIN_R block: 0x00000000
+fragment USSE: a whole USER_MAIN_R block: unmap it: 0x00000000
+fragment USSE: 6 KiB: allocate the block: 0x00000000
+fragment USSE: 6 KiB: 0x805B0017
+terminate libgxm: 0x00000000
+DONE

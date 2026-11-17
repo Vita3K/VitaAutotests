@@ -1,0 +1,35 @@
+initialize libgxm: 0x00000000
+mapped with sceGxmMapMemory: allocate the block: 0x00000000
+mapped with sceGxmMapMemory: its base: 0x00000000
+mapped with sceGxmMapMemory: map it: 0x00000000
+mapped with sceGxmMapMemory: free it: 0x80024703
+mapped with sceGxmMapMemory: unmap it: 0x00000000
+mapped with sceGxmMapMemory: zombie, map the range with sceGxmMapMemory: 0x00000000
+mapped with sceGxmMapMemory: zombie, map the range with sceGxmMapMemory: unmap it: 0x00000000
+mapped with sceGxmMapMemory: zombie, map the range as vertex USSE: 0x00000000
+mapped with sceGxmMapMemory: zombie, map the range as vertex USSE: unmap it: 0x00000000
+mapped with sceGxmMapMemory: zombie, find its base: 0x80024501
+mapped with sceGxmMapMemory: zombie, create a semaphore named by its base: 0x00000000
+mapped with sceGxmMapMemory: zombie, delete the semaphore: 0x00000000
+mapped with sceGxmMapMemory: zombie, allocate a fresh block: 0x00000000
+mapped with sceGxmMapMemory: zombie, its base: 0x00000000
+mapped with sceGxmMapMemory: zombie, the fresh block is at the zombie's base: 0x00000000
+mapped with sceGxmMapMemory: zombie, free the fresh block: 0x00000000
+mapped as vertex USSE: allocate the block: 0x00000000
+mapped as vertex USSE: its base: 0x00000000
+mapped as vertex USSE: map it: 0x00000000
+mapped as vertex USSE: free it: 0x80024703
+mapped as vertex USSE: unmap it: 0x00000000
+mapped as vertex USSE: zombie, map the range with sceGxmMapMemory: 0x00000000
+mapped as vertex USSE: zombie, map the range with sceGxmMapMemory: unmap it: 0x00000000
+mapped as vertex USSE: zombie, map the range as vertex USSE: 0x00000000
+mapped as vertex USSE: zombie, map the range as vertex USSE: unmap it: 0x00000000
+mapped as vertex USSE: zombie, find its base: 0x80024501
+mapped as vertex USSE: zombie, create a semaphore named by its base: 0x00000000
+mapped as vertex USSE: zombie, delete the semaphore: 0x00000000
+mapped as vertex USSE: zombie, allocate a fresh block: 0x00000000
+mapped as vertex USSE: zombie, its base: 0x00000000
+mapped as vertex USSE: zombie, the fresh block is at the zombie's base: 0x00000000
+mapped as vertex USSE: zombie, free the fresh block: 0x00000000
+terminate libgxm: 0x00000000
+DONE

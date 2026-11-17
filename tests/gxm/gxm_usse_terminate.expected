@@ -1,0 +1,25 @@
+initialize libgxm: 0x00000000
+unmapped: allocate the vertex block: 0x00000000
+unmapped: allocate the fragment block: 0x00000000
+unmapped: map vertex USSE: 0x00000000
+unmapped: map fragment USSE: 0x00000000
+unmapped: terminate libgxm with them mapped: 0x00000000
+unmapped: initialize libgxm again: 0x00000000
+unmapped: unmap vertex USSE: 0x805B0017
+unmapped: unmap fragment USSE: 0x805B0017
+unmapped: map the vertex USSE range again: 0x00000000
+unmapped: map the fragment USSE range again: 0x00000000
+unmapped: unmap vertex USSE again: 0x00000000
+unmapped: unmap fragment USSE again: 0x00000000
+unmapped: free the vertex block: 0x00000000
+unmapped: free the fragment block: 0x00000000
+freed: allocate the vertex block: 0x00000000
+freed: allocate the fragment block: 0x00000000
+freed: map vertex USSE: 0x00000000
+freed: map fragment USSE: 0x00000000
+freed: terminate libgxm with them mapped: 0x00000000
+freed: free the vertex block: 0x00000000
+freed: free the fragment block: 0x00000000
+freed: initialize libgxm again: 0x00000000
+terminate libgxm: 0x00000000
+DONE

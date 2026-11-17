@@ -1,0 +1,53 @@
+initialize libgxm: 0x00000000
+a USER_RW block, attributes 0x5: 0x805B0017
+a USER_RW block, attributes 0x21: 0x805B0017
+a USER_RW block, attributes 0x41: 0x805B0017
+a USER_RW block, attributes 0x81: 0x805B0017
+a USER_RW block, attributes 0x401: 0x00000000
+a USER_RW block, attributes 0x401: unmap it: 0x00000000
+a USER_RW block, attributes 0x801: 0x00000000
+a USER_RW block, attributes 0x801: unmap it: 0x00000000
+a USER_RW block, attributes 0x1001: 0x00000000
+a USER_RW block, attributes 0x1001: unmap it: 0x00000000
+a USER_RW block, attributes 0x2001: 0x00000000
+a USER_RW block, attributes 0x2001: unmap it: 0x00000000
+a USER_RW block, attributes 0x4001: 0x00000000
+a USER_RW block, attributes 0x4001: unmap it: 0x00000000
+a USER_RW block, attributes 0x8001: 0x00000000
+a USER_RW block, attributes 0x8001: unmap it: 0x00000000
+a USER_RW block, attributes 0x10001: 0x00000000
+a USER_RW block, attributes 0x10001: unmap it: 0x00000000
+a USER_RW block, attributes 0x20001: 0x00000000
+a USER_RW block, attributes 0x20001: unmap it: 0x00000000
+a USER_RW block, attributes 0x40001: 0x00000000
+a USER_RW block, attributes 0x40001: unmap it: 0x00000000
+a USER_RW block, attributes 0x80001: 0x00000000
+a USER_RW block, attributes 0x80001: unmap it: 0x00000000
+a USER_RW block, attributes 0x100001: 0x00000000
+a USER_RW block, attributes 0x100001: unmap it: 0x00000000
+a USER_RW block, attributes 0x200001: 0x00000000
+a USER_RW block, attributes 0x200001: unmap it: 0x00000000
+a USER_RW block, attributes 0x400001: 0x00000000
+a USER_RW block, attributes 0x400001: unmap it: 0x00000000
+a USER_RW block, attributes 0x800001: 0x00000000
+a USER_RW block, attributes 0x800001: unmap it: 0x00000000
+a USER_RW block, attributes 0x1000001: 0x00000000
+a USER_RW block, attributes 0x1000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x2000001: 0x00000000
+a USER_RW block, attributes 0x2000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x4000001: 0x00000000
+a USER_RW block, attributes 0x4000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x8000001: 0x00000000
+a USER_RW block, attributes 0x8000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x10000001: 0x00000000
+a USER_RW block, attributes 0x10000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x20000001: 0x00000000
+a USER_RW block, attributes 0x20000001: unmap it: 0x00000000
+a USER_RW block, attributes 0x40000001: 0x00000000
+a USER_RW block, attributes 0x40000001: unmap it: 0x00000000
+a USER_RW block, attributes 0xA: 0x805B0017
+a USER_RW block, attributes 0x12: 0x805B0017
+a USER_RW block, attributes 0x80000303: 0x00000000
+a USER_RW block, attributes 0x80000303: unmap it: 0x00000000
+terminate libgxm: 0x00000000
+DONE
