@@ -1,0 +1,5 @@
+set up rendering: 0x00000000
+begin a frame: 0x00000000
+draw the primitives: 0x00000000
+capture coverage: 0x00000000
+DONE

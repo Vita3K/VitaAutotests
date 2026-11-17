@@ -15,6 +15,8 @@
 // debug output can drop lines in a burst. main.c sets the path before it runs the test.
 #define TEST_OUTPUT_DIR "ux0:data/vita-autotests/output"
 extern char test_output_path[128];
+// The name of the running test
+extern const char *test_name;
 
 // Writes one line of the test's output to the debug output and to test_output_path
 static inline void test_output(const char *line, int len) {

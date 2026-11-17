@@ -1,0 +1,49 @@
+set up rendering: 0x00000000
+set up a U8U8U8U8_ABGR texture: 0x00000000
+set up a U8U8U8U8_ARGB texture: 0x00000000
+set up a U8U8U8U8_RGBA texture: 0x00000000
+set up a U8U8U8U8_BGRA texture: 0x00000000
+set up a X8U8U8U8_1BGR texture: 0x00000000
+set up a X8U8U8U8_1RGB texture: 0x00000000
+set up a U4U4U4U4_ABGR texture: 0x00000000
+set up a U4U4U4U4_ARGB texture: 0x00000000
+set up a U4U4U4U4_RGBA texture: 0x00000000
+set up a U4U4U4U4_BGRA texture: 0x00000000
+set up a X4U4U4U4_1BGR texture: 0x00000000
+set up a U4U4U4X4_RGB1 texture: 0x00000000
+set up a U1U5U5U5_ABGR texture: 0x00000000
+set up a U1U5U5U5_ARGB texture: 0x00000000
+set up a U5U5U5U1_RGBA texture: 0x00000000
+set up a U5U5U5U1_BGRA texture: 0x00000000
+set up a X1U5U5U5_1BGR texture: 0x00000000
+set up a U5U5U5X1_RGB1 texture: 0x00000000
+set up a U5U6U5_BGR texture: 0x00000000
+set up a U5U6U5_RGB texture: 0x00000000
+set up a U8U3U3U2_ARGB texture: 0x00000000
+set up a U8_R texture: 0x00000000
+set up a U8_000R texture: 0x00000000
+set up a U8_111R texture: 0x00000000
+set up a U8_RRRR texture: 0x00000000
+set up a U8_0RRR texture: 0x00000000
+set up a U8_1RRR texture: 0x00000000
+set up a U8_R000 texture: 0x00000000
+set up a U8_R111 texture: 0x00000000
+set up a S8_000R texture: 0x00000000
+set up a S8_RRRR texture: 0x00000000
+set up a U8U8_GR texture: 0x00000000
+set up a U8U8_00GR texture: 0x00000000
+set up a U8U8_GRRR texture: 0x00000000
+set up a U8U8_RGGG texture: 0x00000000
+set up a U8U8_GRGR texture: 0x00000000
+set up a U8U8_00RG texture: 0x00000000
+set up a S8S8_00GR texture: 0x00000000
+set up a U16_000R texture: 0x00000000
+set up a U16_RRRR texture: 0x00000000
+set up a S16_000R texture: 0x00000000
+set up a F16_000R texture: 0x00000000
+set up a F16_RRRR texture: 0x00000000
+set up a F16_R111 texture: 0x00000000
+begin a frame: 0x00000000
+draw each format: 0x00000000
+capture formats: 0x00000000
+DONE

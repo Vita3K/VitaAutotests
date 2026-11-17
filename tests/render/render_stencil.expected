@@ -1,0 +1,5 @@
+set up rendering: 0x00000000
+begin a frame: 0x00000000
+draw each stencil case: 0x00000000
+capture cases: 0x00000000
+DONE
