@@ -1,0 +1,97 @@
+A holds 4 of 8, set to its own priority: the first send: 0x00000000
+A holds 4 of 8, set to its own priority: the first send's size: 0x00000004
+A holds 4 of 8, set to its own priority: A still waits after the first send: 0x00000001
+A holds 4 of 8, set to its own priority: changing A's priority: 0x00000000
+A holds 4 of 8, set to its own priority: A still waits after the change: 0x00000001
+A holds 4 of 8, set to its own priority: the receivers waiting before the last send: 0x00000003
+A holds 4 of 8, set to its own priority: the last send: 0x00000000
+A holds 4 of 8, set to its own priority: the last send's size: 0x00000014
+A holds 4 of 8, set to its own priority: A's result: 0x00000000
+A holds 4 of 8, set to its own priority: A got "abcduvwx", size: 0x00000008
+A holds 4 of 8, set to its own priority: B's result: 0x00000000
+A holds 4 of 8, set to its own priority: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, set to its own priority: C's result: 0x00000000
+A holds 4 of 8, set to its own priority: C got "mnopqrst", size: 0x00000008
+A holds 4 of 8, set to its own priority: the bytes left in the pipe: 0x00000000
+A holds 4 of 8, lowered below B: the first send: 0x00000000
+A holds 4 of 8, lowered below B: the first send's size: 0x00000004
+A holds 4 of 8, lowered below B: A still waits after the first send: 0x00000001
+A holds 4 of 8, lowered below B: changing A's priority: 0x00000000
+A holds 4 of 8, lowered below B: A still waits after the change: 0x00000001
+A holds 4 of 8, lowered below B: the receivers waiting before the last send: 0x00000003
+A holds 4 of 8, lowered below B: the last send: 0x00000000
+A holds 4 of 8, lowered below B: the last send's size: 0x00000014
+A holds 4 of 8, lowered below B: A's result: 0x00000000
+A holds 4 of 8, lowered below B: A got "abcduvwx", size: 0x00000008
+A holds 4 of 8, lowered below B: B's result: 0x00000000
+A holds 4 of 8, lowered below B: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, lowered below B: C's result: 0x00000000
+A holds 4 of 8, lowered below B: C got "mnopqrst", size: 0x00000008
+A holds 4 of 8, lowered below B: the bytes left in the pipe: 0x00000000
+A holds 4 of 8, raised: the first send: 0x00000000
+A holds 4 of 8, raised: the first send's size: 0x00000004
+A holds 4 of 8, raised: A still waits after the first send: 0x00000001
+A holds 4 of 8, raised: changing A's priority: 0x00000000
+A holds 4 of 8, raised: A still waits after the change: 0x00000001
+A holds 4 of 8, raised: the receivers waiting before the last send: 0x00000003
+A holds 4 of 8, raised: the last send: 0x00000000
+A holds 4 of 8, raised: the last send's size: 0x00000014
+A holds 4 of 8, raised: A's result: 0x00000000
+A holds 4 of 8, raised: A got "abcduvwx", size: 0x00000008
+A holds 4 of 8, raised: B's result: 0x00000000
+A holds 4 of 8, raised: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, raised: C's result: 0x00000000
+A holds 4 of 8, raised: C got "mnopqrst", size: 0x00000008
+A holds 4 of 8, raised: the bytes left in the pipe: 0x00000000
+A holds nothing, set to its own priority: changing A's priority: 0x00000000
+A holds nothing, set to its own priority: A still waits after the change: 0x00000001
+A holds nothing, set to its own priority: the receivers waiting before the last send: 0x00000003
+A holds nothing, set to its own priority: the last send: 0x00000000
+A holds nothing, set to its own priority: the last send's size: 0x00000018
+A holds nothing, set to its own priority: A's result: 0x00000000
+A holds nothing, set to its own priority: A got "ijklmnop", size: 0x00000008
+A holds nothing, set to its own priority: B's result: 0x00000000
+A holds nothing, set to its own priority: B got "qrstuvwx", size: 0x00000008
+A holds nothing, set to its own priority: C's result: 0x00000000
+A holds nothing, set to its own priority: C got "abcdefgh", size: 0x00000008
+A holds nothing, set to its own priority: the bytes left in the pipe: 0x00000000
+A holds 4 of 8, set to its own priority, no C: the first send: 0x00000000
+A holds 4 of 8, set to its own priority, no C: the first send's size: 0x00000004
+A holds 4 of 8, set to its own priority, no C: A still waits after the first send: 0x00000001
+A holds 4 of 8, set to its own priority, no C: changing A's priority: 0x00000000
+A holds 4 of 8, set to its own priority, no C: A still waits after the change: 0x00000001
+A holds 4 of 8, set to its own priority, no C: the receivers waiting before the last send: 0x00000002
+A holds 4 of 8, set to its own priority, no C: the last send: 0x00000000
+A holds 4 of 8, set to its own priority, no C: the last send's size: 0x0000000C
+A holds 4 of 8, set to its own priority, no C: A's result: 0x00000000
+A holds 4 of 8, set to its own priority, no C: A got "abcdmnop", size: 0x00000008
+A holds 4 of 8, set to its own priority, no C: B's result: 0x00000000
+A holds 4 of 8, set to its own priority, no C: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, set to its own priority, no C: the bytes left in the pipe: 0x00000000
+A holds 4 of 8, lowered below B, no C: the first send: 0x00000000
+A holds 4 of 8, lowered below B, no C: the first send's size: 0x00000004
+A holds 4 of 8, lowered below B, no C: A still waits after the first send: 0x00000001
+A holds 4 of 8, lowered below B, no C: changing A's priority: 0x00000000
+A holds 4 of 8, lowered below B, no C: A still waits after the change: 0x00000001
+A holds 4 of 8, lowered below B, no C: the receivers waiting before the last send: 0x00000002
+A holds 4 of 8, lowered below B, no C: the last send: 0x00000000
+A holds 4 of 8, lowered below B, no C: the last send's size: 0x0000000C
+A holds 4 of 8, lowered below B, no C: A's result: 0x00000000
+A holds 4 of 8, lowered below B, no C: A got "abcdmnop", size: 0x00000008
+A holds 4 of 8, lowered below B, no C: B's result: 0x00000000
+A holds 4 of 8, lowered below B, no C: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, lowered below B, no C: the bytes left in the pipe: 0x00000000
+A holds 4 of 8, raised, no C: the first send: 0x00000000
+A holds 4 of 8, raised, no C: the first send's size: 0x00000004
+A holds 4 of 8, raised, no C: A still waits after the first send: 0x00000001
+A holds 4 of 8, raised, no C: changing A's priority: 0x00000000
+A holds 4 of 8, raised, no C: A still waits after the change: 0x00000001
+A holds 4 of 8, raised, no C: the receivers waiting before the last send: 0x00000002
+A holds 4 of 8, raised, no C: the last send: 0x00000000
+A holds 4 of 8, raised, no C: the last send's size: 0x0000000C
+A holds 4 of 8, raised, no C: A's result: 0x00000000
+A holds 4 of 8, raised, no C: A got "abcdmnop", size: 0x00000008
+A holds 4 of 8, raised, no C: B's result: 0x00000000
+A holds 4 of 8, raised, no C: B got "efghijkl", size: 0x00000008
+A holds 4 of 8, raised, no C: the bytes left in the pipe: 0x00000000
+DONE
