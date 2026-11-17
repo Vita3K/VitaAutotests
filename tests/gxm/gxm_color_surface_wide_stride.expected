@@ -1,0 +1,85 @@
+initialize libgxm: 0x00000000
+create the context: 0x00000000
+create the render target: 0x00000000
+create the shader patcher: 0x00000000
+make the programs: 0x00000000
+allocate the surface blocks: 0x00000000
+map the surface blocks: 0x00000000
+U8_R stride 32768: init: 0x00000000
+U8_R stride 32768: stride it reports: 0x00008000
+U8_R stride 32768: draw and finish: 0x00000000
+U8_R stride 32768: row 0 starts at byte: 0x00000000
+U8_R stride 32768: row 1 starts at byte: 0x00008000
+U8_R stride 32768: row 2 starts at byte: 0x00010000
+U8_R stride 32768: row 3 starts at byte: 0x00018000
+U8_R stride 32768: bytes changed: 0x00000080
+U8_R stride 32768: matches the wrapped pitch of 32768 pixels: 0x00000001
+U8_R stride 32768: matches the full stride: 0x00000001
+U8_R stride 32770: init: 0x805B0005
+U8_R stride 32772: init: 0x00000000
+U8_R stride 32772: stride it reports: 0x00000004
+U8_R stride 32772: draw and finish: 0x00000000
+U8_R stride 32772: row 0 starts at byte: 0x00000000
+U8_R stride 32772: row 1 starts at byte: 0x00000004
+U8_R stride 32772: row 2 starts at byte: 0x00000008
+U8_R stride 32772: row 3 starts at byte: 0x0000000C
+U8_R stride 32772: bytes changed: 0x0000002C
+U8_R stride 32772: matches the wrapped pitch of 4 pixels: 0x00000001
+U8_R stride 32772: matches the full stride: 0x00000000
+U8_R stride 32832: init: 0x00000000
+U8_R stride 32832: stride it reports: 0x00000040
+U8_R stride 32832: draw and finish: 0x00000000
+U8_R stride 32832: row 0 starts at byte: 0x00000000
+U8_R stride 32832: row 1 starts at byte: 0x00000040
+U8_R stride 32832: row 2 starts at byte: 0x00000080
+U8_R stride 32832: row 3 starts at byte: 0x000000C0
+U8_R stride 32832: bytes changed: 0x00000080
+U8_R stride 32832: matches the wrapped pitch of 64 pixels: 0x00000001
+U8_R stride 32832: matches the full stride: 0x00000000
+U8_R stride 40000: init: 0x00000000
+U8_R stride 40000: stride it reports: 0x00001C40
+U8_R stride 40000: draw and finish: 0x00000000
+U8_R stride 40000: row 0 starts at byte: 0x00000000
+U8_R stride 40000: row 1 starts at byte: 0x00001C40
+U8_R stride 40000: row 2 starts at byte: 0x00003880
+U8_R stride 40000: row 3 starts at byte: 0x000054C0
+U8_R stride 40000: bytes changed: 0x00000080
+U8_R stride 40000: matches the wrapped pitch of 7232 pixels: 0x00000001
+U8_R stride 40000: matches the full stride: 0x00000000
+U8_R stride 65536: init: 0x00000000
+U8_R stride 65536: stride it reports: 0x00008000
+U8_R stride 65536: draw and finish: 0x00000000
+U8_R stride 65536: row 0 starts at byte: 0x00000000
+U8_R stride 65536: row 1 starts at byte: 0x00008000
+U8_R stride 65536: row 2 starts at byte: 0x00010000
+U8_R stride 65536: row 3 starts at byte: 0x00018000
+U8_R stride 65536: bytes changed: 0x00000080
+U8_R stride 65536: matches the wrapped pitch of 32768 pixels: 0x00000001
+U8_R stride 65536: matches the full stride: 0x00000000
+U8_R stride 131072: init: 0x00000000
+U8_R stride 131072: stride it reports: 0x00008000
+U8_R stride 131072: draw and finish: 0x00000000
+U8_R stride 131072: row 0 starts at byte: 0x00000000
+U8_R stride 131072: row 1 starts at byte: 0x00008000
+U8_R stride 131072: row 2 starts at byte: 0x00010000
+U8_R stride 131072: row 3 starts at byte: 0x00018000
+U8_R stride 131072: bytes changed: 0x00000080
+U8_R stride 131072: matches the wrapped pitch of 32768 pixels: 0x00000001
+U8_R stride 131072: matches the full stride: 0x00000000
+U8_R stride 131076: init: 0x805B0003
+U8U8_GR stride 40000: init: 0x00000000
+U8U8_GR stride 40000: stride it reports: 0x00001C40
+U8U8_GR stride 40000: draw and finish: 0x00000000
+U8U8_GR stride 40000: row 0 starts at byte: 0x00000000
+U8U8_GR stride 40000: row 1 starts at byte: 0x00003880
+U8U8_GR stride 40000: row 2 starts at byte: 0x00007100
+U8U8_GR stride 40000: row 3 starts at byte: 0x0000A980
+U8U8_GR stride 40000: bytes changed: 0x00000100
+U8U8_GR stride 40000: matches the wrapped pitch of 7232 pixels: 0x00000001
+U8U8_GR stride 40000: matches the full stride: 0x00000000
+release and unregister the programs: 0x00000000
+destroy the shader patcher: 0x00000000
+destroy the render target: 0x00000000
+destroy the context: 0x00000000
+terminate libgxm: 0x00000000
+DONE
