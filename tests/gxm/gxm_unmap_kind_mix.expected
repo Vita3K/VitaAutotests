@@ -1,0 +1,52 @@
+initialize libgxm: 0x00000000
+memory first, vertex: map memory: 0x00000000
+memory first, vertex: map USSE: 0x00000000
+memory first, vertex: unmap USSE: 0x00000000
+memory first, vertex: probe map: 0x00000000
+memory first, vertex: probe unmap: 0x00000000
+memory first, vertex: unmap memory: 0x805B0017
+memory first, vertex: unmap USSE again: 0x00000000
+memory first, vertex: probe map: 0x00000000
+memory first, vertex: probe unmap: 0x00000000
+memory first, vertex: unmap memory, leftover check: 0x805B0017
+memory first, vertex: unmap USSE, leftover check: 0x805B0017
+memory first, vertex: probe map: 0x00000000
+memory first, vertex: probe unmap: 0x00000000
+memory first, vertex: done: 0x00000000
+USSE first, vertex: map USSE: 0x00000000
+USSE first, vertex: map memory: 0x00000000
+USSE first, vertex: unmap USSE: 0x00000000
+USSE first, vertex: probe map: 0x805B0017
+USSE first, vertex: unmap memory: 0x00000000
+USSE first, vertex: unmap USSE again: 0x805B0017
+USSE first, vertex: probe map: 0x00000000
+USSE first, vertex: probe unmap: 0x00000000
+USSE first, vertex: unmap memory, leftover check: 0x805B0017
+USSE first, vertex: unmap USSE, leftover check: 0x805B0017
+USSE first, vertex: probe map: 0x00000000
+USSE first, vertex: probe unmap: 0x00000000
+USSE first, vertex: done: 0x00000000
+memory first, fragment: map memory: 0x00000000
+memory first, fragment: map USSE: 0x00000000
+memory first, fragment: unmap USSE: 0x00000000
+memory first, fragment: probe map: 0x00000000
+memory first, fragment: probe unmap: 0x00000000
+memory first, fragment: unmap memory: 0x805B0017
+memory first, fragment: unmap USSE again: 0x00000000
+memory first, fragment: probe map: 0x00000000
+memory first, fragment: probe unmap: 0x00000000
+memory first, fragment: unmap memory, leftover check: 0x805B0017
+memory first, fragment: unmap USSE, leftover check: 0x805B0017
+memory first, fragment: probe map: 0x00000000
+memory first, fragment: probe unmap: 0x00000000
+memory first, fragment: done: 0x00000000
+control: map memory: 0x00000000
+control: map USSE: 0x00000000
+control: unmap USSE: 0x00000000
+control: probe map: 0x805B0017
+control: unmap memory: 0x00000000
+control: probe map: 0x00000000
+control: probe unmap: 0x00000000
+control: done: 0x00000000
+terminate libgxm: 0x00000000
+DONE
