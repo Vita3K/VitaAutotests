@@ -1,0 +1,11 @@
+NULL path: 0x80802016
+NULL path with opt: 0x80802016
+opt not NULL: 0x8080201A
+subdirectory: 0x8080201E
+upper case device: 0x8080201E
+other device: 0x8080201E
+name with colon: 0x8080201E
+name with backslash inside: 0x8080201E
+two slashes: 0x8080201E
+path of 0x124 bytes or more: 0x8002710B
+DONE

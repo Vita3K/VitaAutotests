@@ -1,0 +1,30 @@
+process default priority: 0x00000002
+thread default priority: 0x00000002
+priority of a new descriptor: 0x00000002
+set 5: 0x80010016
+priority after set 5: 0x00000002
+set -1: 0x80010016
+set 15: 0x80010016
+set 0: 0x00000000
+priority after set 0: 0x00000000
+set 4: 0x00000000
+priority after set 4: 0x00000004
+set 2: 0x00000000
+priority after set 2: 0x00000002
+read async at priority 2 wait: 0x00000000
+read async at priority 2 pattern: 0x00000001
+read async at priority 2 result: 0x00000004
+read async at priority 2 result high word: 0x00000000
+set the thread default to 5: 0x80010016
+set the thread default to 4: 0x00000000
+thread default priority after 4: 0x00000004
+priority of a descriptor opened after it: 0x00000004
+set the process default to 5: 0x80010016
+set the process default to -1: 0x80010016
+set the process default to 0: 0x00000000
+process default priority after 0: 0x00000000
+thread default priority after the process one: 0x00000004
+get on a closed descriptor: 0x80010009
+set on a closed descriptor: 0x80010009
+get on a bad descriptor: 0x80010009
+DONE

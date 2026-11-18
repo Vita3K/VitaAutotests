@@ -1,0 +1,52 @@
+open async of an existing file: 0x00000001
+open async wait: 0x00000000
+open async pattern: 0x00000001
+open async result: 0x400200B1
+open async result high word: 0x00000000
+read from the opened descriptor: 0x00000004
+it read the file's first bytes: 0x00000001
+wait again for the same event: 0x80028005
+complete it: 0x00000000
+complete it again: 0x80028201
+close the descriptor: 0x00000000
+open async of a missing file: 0x00000001
+open async of a missing file wait: 0x00000000
+open async of a missing file pattern: 0x00000001
+open async of a missing file result: 0x80010002
+open async of a missing file result high word: 0xFFFFFFFF
+complete it: 0x00000000
+open async of a null path: 0x8001000E
+open async of a path with no device: 0x80010016
+read async of a closed descriptor: 0x80010009
+close async of a closed descriptor: 0x80010009
+complete a descriptor: 0x80028201
+first read async: 0x00000001
+second read async: 0x00000001
+the two events differ: 0x00000001
+first read wait: 0x00000000
+first read pattern: 0x00000001
+first read result: 0x00000004
+first read result high word: 0x00000000
+second read wait: 0x00000000
+second read pattern: 0x00000001
+second read result: 0x00000004
+second read result high word: 0x00000000
+the first read got the first bytes: 0x00000001
+the second read got the next bytes: 0x00000001
+complete the first: 0x00000000
+complete the second: 0x00000000
+close async: 0x00000001
+close async wait: 0x00000000
+close async pattern: 0x00000001
+close async result: 0x00000000
+close async result high word: 0x00000000
+read from the closed descriptor: 0x80010009
+complete it: 0x00000000
+write async: 0x00000001
+write async wait: 0x00000000
+write async pattern: 0x00000001
+write async result: 0x00000003
+write async result high word: 0x00000000
+stat the written file: 0x00000000
+its size: 0x00000003
+DONE

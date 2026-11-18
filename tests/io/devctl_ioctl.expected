@@ -1,0 +1,43 @@
+devctl 0x3001 with a 0x18 byte output: 0x80010030
+word at +0x14: 0xABABABAB
+word at +0x18 is untouched: 0x00000001
+free is not above the total: 0x00000001
+the cluster size is a power of two: 0x00000000
+the total is a multiple of the cluster size: 0x00000001
+free is a multiple of the cluster size: 0x00000001
+devctl 0x3001 with a 0x28 byte output: 0x80010030
+the same total: 0x00000001
+word at +0x14 with 0x28 bytes: 0xABABABAB
+volume label bytes that are spaces: 0x00000000
+byte at +0x27: 0x000000AB
+byte at +0x28 is untouched: 0x00000001
+devctl 0x3001 with a 0x10 byte output: 0x80010030
+devctl 0x3001 with a 0x30 byte output: 0x80010030
+devctl 0x3001 with no output: 0x80010030
+devctl 0x3004: 0x80010030
+devctl 0x3005: 0x80010030
+devctl 0x3401: 0x80010030
+devctl 0x3002: 0x80010030
+devctl 0x3802: 0x80010030
+devctl 0x80000001: 0x80010030
+devctl on a missing device: 0x80010013
+devctl on a file path: 0x80010013
+ioctl 0x1002 with a 0x20 byte output: 0x00000000
+buffer cache word 0: 0x00002000
+buffer cache word 1: 0x00000200
+buffer cache word 2: 0x00000002
+buffer cache word 3: 0x00008000
+buffer cache word 4: 0x00000000
+buffer cache word 5: 0x00000000
+the word after is untouched: 0x00000001
+ioctl 0x1002 with word 6 set: 0x80010016
+ioctl 0x1002 with a 0x1C byte output: 0x80010016
+ioctl 0x1002 with no output: 0x80010016
+ioctl 0x201: 0x80010030
+ioctl 0x1800: 0x80010030
+ioctl 0x1001 with no input: 0x80010016
+ioctl 0x8000: 0x80010016
+ioctl on a bad descriptor: 0x80010009
+ioctl 0x1002 after closing: 0x80010009
+ioctl 0x1002 on a directory: 0x80010015
+DONE

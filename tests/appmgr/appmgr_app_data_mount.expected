@@ -1,0 +1,37 @@
+id 100: mount: 0x00000000
+id 100: name is photo0:: 0x00000001
+id 100: stat of the name works: 0x00000001
+id 100: unmount: 0x00000000
+id 105: mount: 0x00000000
+id 105: name is music0:: 0x00000001
+id 105: stat of the name works: 0x00000001
+id 105: unmount: 0x00000000
+id 109: mount: 0x00000000
+id 109: name is video0:: 0x00000001
+id 109: stat of the name works: 0x00000001
+id 109: unmount: 0x00000000
+id 101: mount: 0x00000000
+id 101: name has 15 characters: 0x00000001
+id 101: name starts with ad: 0x00000001
+id 101: 12 hex digits: 0x00000001
+id 101: name ends with a colon: 0x00000001
+id 101: unmount: 0x00000000
+id 104: mount: 0x80800001
+id 104: buffer is 16 zero bytes: 0x00000001
+id 106: mount: 0x80800001
+id 106: buffer is 16 zero bytes: 0x00000001
+id 110: mount: 0x80800001
+id 110: buffer is 16 zero bytes: 0x00000001
+id 99: mount: 0x80800001
+id 99: buffer is 16 zero bytes: 0x00000001
+id 113: mount: 0x80800001
+id 113: buffer is 16 zero bytes: 0x00000001
+id 0: mount: 0x80800001
+id 0: buffer is 16 zero bytes: 0x00000001
+NULL out: 0x80800001
+first mount of 100: 0x00000000
+second mount of 100: 0x80800003
+second mount gives the same name: 0x00000001
+unmount after both: 0x00000000
+unmount again: 0x80800002
+DONE

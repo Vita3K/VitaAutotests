@@ -1,0 +1,50 @@
+sync a read only descriptor: 0x8001000D
+sync a write descriptor: 0x00000000
+sync a write descriptor with a flag: 0x00000000
+sync a closed descriptor: 0x80010009
+sync a closed descriptor again: 0x80010009
+change the size of a directory: 0x80010015
+change the size of a file: 0x00000000
+stat the file: 0x00000000
+its size: 0x00000003
+change the time to month 13: 0x80010016
+change the time to a valid date: 0x00000000
+the modification date is the new one: 0x00000001
+mode before: 0x00002186
+attributes before: 0x00000000
+change the mode to 0: 0x80010016
+mode after: 0x00002186
+attributes after: 0x00000000
+change the mode back: 0x00000000
+mode at the end: 0x00002186
+attributes at the end: 0x00000000
+change a missing file: 0x80010002
+pread at 4: 0x00000004
+it read the right bytes: 0x00000001
+the position after the pread: 0x00000000
+pread at a negative offset: 0x80010016
+pread at the size: 0x00000000
+pread past the size: 0x00000000
+pread across the end: 0x00000004
+pread of 0 bytes: 0x00000000
+pread into a null buffer: 0x8001000E
+pread into a null buffer at the size: 0x8001000E
+pwrite on a read only descriptor: 0x8001000D
+pread on a write only descriptor: 0x8001000D
+pread on a directory: 0x80010015
+pwrite on a directory: 0x80010015
+pwrite at 0 on an append descriptor: 0x00000002
+the position after the pwrite: 0x00000000
+pwrite at a negative offset: 0x80010016
+the file size after: 0x00000010
+read the file: 0x00000010
+the bytes at offset 0 are the pwrite: 0x00000001
+the bytes at the end are the pwrite: 0x00000000
+the entries: 0x00000002
+the last result: 0x00000000
+entries with a nonzero attribute: 0x00000000
+entries with a nonzero byte after the name: 0x00000000
+entries that changed d_private: 0x00000002
+entries that changed the last word: 0x00000002
+the bytes after the name at the end: 0x00000000
+DONE

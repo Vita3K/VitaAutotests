@@ -1,0 +1,11 @@
+create a small pipe first: 0x00000000
+the error that ended the semaphores: 0x8002450D
+pipe creates that worked at the limit: 0x00000000
+pipe creates refused by the object limit: 0x0000001F
+pipe creates refused by the size: 0x00000009
+pipe creates refused by anything else: 0x00000000
+every semaphore deleted: 0x00000001
+the error that ended the pipe creates, 0 if the cap was reached: 0x8002000B
+1 MiB pipes created after the semaphores are gone: 0x00000000
+every pipe deleted: 0x00000001
+DONE
