@@ -1,7 +1,7 @@
 open async of an existing file: 0x00000001
 open async wait: 0x00000000
 open async pattern: 0x00000001
-open async result: 0x400200B1
+open async result: 0x00000000
 open async result high word: 0x00000000
 read from the opened descriptor: 0x00000004
 it read the file's first bytes: 0x00000001

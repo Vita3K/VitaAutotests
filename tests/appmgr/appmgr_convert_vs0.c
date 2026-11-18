@@ -6,7 +6,8 @@
 
 #define FILL 0xAA
 
-static char out[0x200];
+// Large enough for the biggest size the test passes
+static char out[0x1000];
 
 // Converts src into out with size and prints the result
 static int convert(const char *src, int size) {

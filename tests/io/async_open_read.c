@@ -18,7 +18,10 @@ int main(void) {
     SceUID uid = sceIoOpenAsync(FILE_PATH, SCE_O_RDONLY, 0, NULL);
     PRINT("open async of an existing file", uid > 0);
     AsyncResult result = async_wait(uid);
-    async_print("open async", result);
+    PRINT("open async wait", result.wait);
+    PRINT("open async pattern", result.pattern);
+    PRINT("open async result", test_created((SceUID)result.user_data));
+    PRINT("open async result high word", (int)(result.user_data >> 32));
     const SceUID fd = (SceUID)result.user_data;
     char buf[8] = { 0 };
     PRINT("read from the opened descriptor", sceIoRead(fd, buf, 4));

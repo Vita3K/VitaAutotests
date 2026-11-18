@@ -6,7 +6,8 @@
 
 #define FILL 0xAA
 
-static char out[0x200];
+// Large enough for the biggest size the test passes
+static char out[0x1000];
 
 static int is_hex(char c) {
     return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');

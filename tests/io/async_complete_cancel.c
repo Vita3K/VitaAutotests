@@ -50,7 +50,7 @@ int main(void) {
     int consistent;
     if (cancel == 0) {
         // The cancel took the request out, so its UID is gone
-        consistent = sceIoComplete(uid) < 0 && sceIoComplete(uid) < 0;
+        consistent = sceIoComplete(uid) == (int)0x80028201;
     } else {
         async_wait(uid);
         consistent = sceIoComplete(uid) == 0;
