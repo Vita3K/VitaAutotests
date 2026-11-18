@@ -769,6 +769,8 @@ vita_test(thread_create_entry_check_order kernel/thread_create_entry_check_order
 vita_test(files io/files.c)
 vita_test(directories io/directories.c)
 vita_test(stat_mode io/stat_mode.c)
+vita_test(create_modes io/create_modes.c)
+vita_test(wrong_handles io/wrong_handles.c)
 
 vita_test(fios_overlay_table fios/overlay_table.c)
 vita_test(fios_overlay_resolve fios/overlay_resolve.c)

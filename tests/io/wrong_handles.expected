@@ -1,0 +1,27 @@
+open the directory: 0x00000000
+seek on the directory: 0x80010009
+read from the directory: 0x80010015
+write to the directory: 0x80010015
+stat the directory by descriptor: 0x00000000
+close the directory: 0x00000000
+create a semaphore: 0x00000000
+read from the semaphore: 0x80010009
+write to the semaphore: 0x80010009
+seek on the semaphore: 0x80010009
+read the semaphore as a directory: 0x80010009
+close the semaphore as a file: 0x80010009
+close the semaphore as a directory: 0x80010009
+the semaphore is still there: 0x00000000
+delete the semaphore: 0x00000000
+stat a missing file: 0x80010002
+the mode word after it: 0x00000000
+the size after it: 0x00000000
+stat an empty path: 0x80010002
+the mode word after it: 0x00000000
+stat a path without a device: 0x80010016
+the mode word after it: 0x00000000
+create a file under a missing directory: 0x80010002
+stat the missing directory after it: 0x80010002
+open a path with two spaces in front: 0x00000000
+remove the test directory: 0x00000000
+DONE
