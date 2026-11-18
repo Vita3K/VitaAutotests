@@ -1,0 +1,62 @@
+create a file with mode 0444: 0x8001000D
+a file with mode 0444: its mode: 0x00002106
+create a file with mode 0222: 0x80010016
+a file with mode 0222: its mode: 0x80010002
+create a file with mode 0400: 0x8001000D
+a file with mode 0400: its mode: 0x00002106
+create a file with mode 04: 0x80010016
+a file with mode 04: its mode: 0x80010002
+create a file with mode 0100: 0x80010016
+a file with mode 0100: its mode: 0x80010002
+create a file with mode 0600: 0x00000000
+a file with mode 0600: its mode: 0x00002186
+create a file with mode 060: 0x80010016
+a file with mode 060: its mode: 0x80010002
+create a file with mode 06: 0x80010016
+a file with mode 06: its mode: 0x80010002
+create a file with mode 0555: 0x8001000D
+a file with mode 0555: its mode: 0x00002106
+create a directory with mode 0444: 0x00000000
+a directory with mode 0444: its mode: 0x00001106
+create a directory with mode 0222: 0x80010016
+a directory with mode 0222: its mode: 0x80010002
+create a directory with mode 0400: 0x00000000
+a directory with mode 0400: its mode: 0x00001106
+create a directory with mode 04: 0x80010016
+a directory with mode 04: its mode: 0x80010002
+create a directory with mode 0100: 0x80010016
+a directory with mode 0100: its mode: 0x80010002
+create a directory with mode 0600: 0x00000000
+a directory with mode 0600: its mode: 0x00001186
+create a directory with mode 060: 0x80010016
+a directory with mode 060: its mode: 0x80010002
+create a directory with mode 06: 0x80010016
+a directory with mode 06: its mode: 0x80010002
+create a directory with mode 0555: 0x00000000
+a directory with mode 0555: its mode: 0x00001106
+open the mode 0444 file to read: 0x00000000
+open the mode 0444 file to write: 0x8001000D
+change the mode 0600 file to 0444: 0x00000000
+the changed file with mode 0444: its mode: 0x00002106
+change it to mode 0: 0x80010016
+the changed file with mode 00: its mode: 0x00002106
+remove the mode 0444 file: 0x00000000
+remove the mode 0444 directory: 0x00000000
+remove the mode 0222 file: 0x80010002
+remove the mode 0222 directory: 0x80010002
+remove the mode 0400 file: 0x00000000
+remove the mode 0400 directory: 0x00000000
+remove the mode 04 file: 0x80010002
+remove the mode 04 directory: 0x80010002
+remove the mode 0100 file: 0x80010002
+remove the mode 0100 directory: 0x80010002
+remove the mode 0600 file: 0x00000000
+remove the mode 0600 directory: 0x00000000
+remove the mode 060 file: 0x80010002
+remove the mode 060 directory: 0x80010002
+remove the mode 06 file: 0x80010002
+remove the mode 06 directory: 0x80010002
+remove the mode 0555 file: 0x00000000
+remove the mode 0555 directory: 0x00000000
+remove the test directory: 0x00000000
+DONE
