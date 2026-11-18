@@ -1,5 +1,5 @@
 create the worker: 0x00000001
-start the worker: 0x00000000
+release the worker: 0x00000001
 wait for the exception: 0x00000000
 the record is of the worker: 0x00000001
 its type: 0x00000200
