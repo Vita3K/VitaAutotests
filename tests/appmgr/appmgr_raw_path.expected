@@ -1,0 +1,18 @@
+app0 file: 0x00000000
+length: 0x0000001B
+starts with PD: 0x00000001
+12 hex digits after PD: 0x00000001
+suffix is d0:eboot.bin: 0x00000000
+app0 root: 0x00000000
+root length: 0x00000012
+root suffix is d0:: 0x00000000
+ux0 path: 0x00000000
+ux0 path is unchanged: 0x00000000
+unknown device: 0x00000000
+unknown device is unchanged: 0x00000000
+size 5: 0x80820018
+size 0: 0x80820018
+size 0x1000: 0x00000000
+length with size 0x1000 is at most 0x123: 0x00000001
+path longer than 0x124: 0x8002710B
+DONE

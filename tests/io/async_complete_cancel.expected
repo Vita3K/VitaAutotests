@@ -1,0 +1,21 @@
+read async: 0x00000001
+the event's pattern call: 0x00000000
+the result is set: 0x00000001
+complete without taking the result: 0x80010010
+poll for the result: 0x00000000
+the polled pattern: 0x00000001
+the polled result: 0x00000004
+poll again: 0x80028202
+complete after taking the result: 0x00000000
+complete again: 0x80028201
+read async wait: 0x00000000
+read async pattern: 0x00000001
+read async result: 0x00000004
+read async result high word: 0x00000000
+cancel a finished request: 0x80010002
+complete it: 0x00000000
+cancel it after completing: 0x80024501
+cancel a file descriptor: 0x80024508
+complete a file descriptor: 0x80028201
+a cancel either removes the request or leaves it to finish: 0x00000001
+DONE

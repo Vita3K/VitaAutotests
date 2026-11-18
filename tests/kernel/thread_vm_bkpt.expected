@@ -1,0 +1,8 @@
+create the worker: 0x00000001
+release the worker: 0x00000001
+wait for the exception: 0x00000000
+the record is of the worker: 0x00000001
+its type: 0x00000200
+get the worker's info: 0x00000000
+its status: 0x00000100
+DONE

@@ -1,0 +1,22 @@
+size 0x3F: 0x80800001
+size 0: 0x80800001
+size 0x40: 0x00000000
+size 0x40 copy: 0x00000001
+size 0x124: 0x00000000
+size 0x124 copy: 0x00000001
+rest of out is zero: 0x00000000
+size 0x1000: 0x00000000
+other device: 0x00000000
+vs0 sys external: 0x00000000
+vs0 sys external is a copy: 0x00000000
+vs0 sys external changed: 0x00000001
+vs0 sys external with slash: 0x00000000
+vs0 sys external with slash is a copy: 0x00000000
+vs0 data external: 0x00000000
+vs0 data external is a copy: 0x00000000
+vs0 data external with slash: 0x00000000
+vs0 other path: 0x00000000
+vs0 other path is a copy: 0x00000001
+NULL src: 0x80800001
+NULL dst: 0x80800001
+DONE

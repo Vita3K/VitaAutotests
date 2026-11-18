@@ -1,0 +1,16 @@
+the error that ended the creates: 0x8002450D
+creates before the error: 0x0000007F
+create the helper: 0x00000000
+start the helper: 0x00000000
+the helper waits on the semaphore: 0x00000001
+the error with the helper waiting: 0x8002450D
+creates with the helper waiting: 0x0000007E
+one fewer than without the helper: 0x00000001
+release the helper: 0x00000000
+wait for its end: 0x00000000
+the error with the helper ended: 0x8002450D
+creates with the helper ended and not deleted: 0x0000007E
+one fewer than without the helper after its end: 0x00000001
+creates after deleting the helper: 0x0000007F
+the same as the first count: 0x00000001
+DONE

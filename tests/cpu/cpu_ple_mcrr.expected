@@ -1,0 +1,6 @@
+the word before the call is the mcrr: 0x00000001
+run the mcrr: 0x00000001
+the call returned: 0x00000001
+the word is now a nop: 0x00000000
+a second call returned: 0x00000001
+DONE

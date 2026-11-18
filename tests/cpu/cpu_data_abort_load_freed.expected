@@ -1,0 +1,6 @@
+create the worker: 0x00000001
+allocate the block: 0x00000001
+its base: 0x00000000
+free it: 0x00000000
+no block holds its base: 0x00000001
+release the worker: 0x00000001

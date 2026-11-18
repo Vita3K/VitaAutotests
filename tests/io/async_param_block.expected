@@ -1,0 +1,28 @@
+read async with a block: 0x00000001
+wait: 0x00000000
+the pattern: 0x00000001
+the event's user data is the block's address: 0x00000001
+its high word: 0x00000000
+read result low word: 0x00000004
+read result high word: 0x00000000
+read saved word: 0x11111111
+read fourth word is untouched: 0x00000000
+read fourth word is zero: 0x00000000
+read fifth word is untouched: 0x00000000
+read fifth word is zero: 0x00000000
+read last word: 0x00000000
+the user data of the failed open is the block's address: 0x00000001
+failed open result low word: 0x80010002
+failed open result high word: 0xFFFFFFFF
+failed open saved word: 0x11111111
+failed open fourth word is untouched: 0x00000000
+failed open fourth word is zero: 0x00000000
+failed open fifth word is untouched: 0x00000000
+failed open fifth word is zero: 0x00000000
+failed open last word: 0x00000000
+the user data of the open is the block's address: 0x00000001
+the result in the block is a descriptor: 0x00000000
+the result high word: 0x00000000
+the saved word: 0x11111111
+without a block the user data is the result: 0x00000004
+DONE

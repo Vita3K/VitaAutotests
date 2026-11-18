@@ -1,0 +1,25 @@
+limit 0x0: create the pipe: 0x00000000
+limit 0x0: the error that ended the opens, 0 if the cap was reached: 0x8002450C
+limit 0x0: opens that worked: 0x00000000
+limit 0x0: every opened UID closed: 0x00000001
+limit 0x0: delete the pipe: 0x00000000
+limit 0x1: create the pipe: 0x00000000
+limit 0x1: the error that ended the opens, 0 if the cap was reached: 0x8002450C
+limit 0x1: opens that worked: 0x00000001
+limit 0x1: every opened UID closed: 0x00000001
+limit 0x1: delete the pipe: 0x00000000
+limit 0x5: create the pipe: 0x00000000
+limit 0x5: the error that ended the opens, 0 if the cap was reached: 0x8002450C
+limit 0x5: opens that worked: 0x00000005
+limit 0x5: every opened UID closed: 0x00000001
+limit 0x5: delete the pipe: 0x00000000
+limit 0x7F: create the pipe: 0x00000000
+limit 0x7F: the error that ended the opens, 0 if the cap was reached: 0x8002450C
+limit 0x7F: opens that worked: 0x0000007F
+limit 0x7F: every opened UID closed: 0x00000001
+limit 0x7F: delete the pipe: 0x00000000
+limit 0x80: create the pipe: 0x80020011
+no option: create the pipe: 0x00000000
+no option: the error that ended the opens, 0 if the cap was reached: 0x00000000
+no option: opens that worked: 0x00000090
+DONE
