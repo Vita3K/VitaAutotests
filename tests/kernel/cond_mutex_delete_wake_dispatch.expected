@@ -1,0 +1,17 @@
+condition waiter: delete the mutex: 0x00000000
+condition waiter: W already ran when the delete returned: 0x00000000
+condition waiter: W's wait: 0x800281A2
+condition waiter: W ran after the join: 0x00000001
+condition waiter, mutex owned by the deleter: delete the mutex: 0x00000000
+condition waiter, mutex owned by the deleter: W already ran when the delete returned: 0x00000000
+condition waiter, mutex owned by the deleter: W's wait: 0x800281A2
+condition waiter, mutex owned by the deleter: W ran after the join: 0x00000001
+mutex waiter: delete the mutex: 0x00000000
+mutex waiter: W already ran when the delete returned: 0x00000001
+mutex waiter: W's wait: 0x80028006
+mutex waiter: W ran after the join: 0x00000001
+lightweight condition waiter: delete the mutex: 0x00000000
+lightweight condition waiter: W already ran when the delete returned: 0x00000001
+lightweight condition waiter: W's wait: 0x800281C2
+lightweight condition waiter: W ran after the join: 0x00000001
+DONE

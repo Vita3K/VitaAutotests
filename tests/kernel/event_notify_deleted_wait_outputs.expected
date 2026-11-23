@@ -1,0 +1,23 @@
+simple event, notify callback: the delete in the callback: 0x00000000
+simple event, notify callback: runs of the callback: 0x00000001
+simple event, notify callback: the wait: 0x80028006
+simple event, notify callback: the result pattern: 0x00000010
+simple event, notify callback: the user data, low word: 0x00000000
+simple event, notify callback: the user data, high word: 0x00000000
+simple event, set with notification: the delete in the callback: 0x00000000
+simple event, set with notification: runs of the callback: 0x00000001
+simple event, set with notification: the wait: 0x80028006
+simple event, set with notification: the result pattern: 0x00000010
+simple event, set with notification: the user data, low word: 0x00000000
+simple event, set with notification: the user data, high word: 0x00000000
+event flag, notify callback: the delete in the callback: 0x00000000
+event flag, notify callback: runs of the callback: 0x00000001
+event flag, notify callback: the wait: 0x80028006
+event flag, notify callback: the result pattern: 0x00000000
+timer event, notify callback: the delete in the callback: 0x00000000
+timer event, notify callback: runs of the callback: 0x00000001
+timer event, notify callback: the wait: 0x80028006
+timer event, notify callback: the result pattern: 0x00000010
+timer event, notify callback: the user data, low word: 0x00000000
+timer event, notify callback: the user data, high word: 0x00000000
+DONE

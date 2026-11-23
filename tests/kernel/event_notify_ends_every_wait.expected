@@ -1,0 +1,37 @@
+registered A, B, C: the three threads wait before the notify: 0x00000001
+registered A, B, C: the notify: 0x00000000
+registered A, B, C: A's status after the notify: 0x00000002
+registered A, B, C: A's wait type after the notify: 0x00000000
+registered A, B, C: B's status after the notify: 0x00000002
+registered A, B, C: B's wait type after the notify: 0x00000000
+registered A, B, C: C's status after the notify: 0x00000002
+registered A, B, C: C's wait type after the notify: 0x00000000
+registered A, B, C: callbacks run: 0x00000003
+registered A, B, C: A's wait result: 0x00000000
+registered A, B, C: B's wait result: 0x00000000
+registered A, B, C: C's wait result: 0x00000000
+registered C, B, A: the three threads wait before the notify: 0x00000001
+registered C, B, A: the notify: 0x00000000
+registered C, B, A: A's status after the notify: 0x00000002
+registered C, B, A: A's wait type after the notify: 0x00000000
+registered C, B, A: B's status after the notify: 0x00000002
+registered C, B, A: B's wait type after the notify: 0x00000000
+registered C, B, A: C's status after the notify: 0x00000002
+registered C, B, A: C's wait type after the notify: 0x00000000
+registered C, B, A: callbacks run: 0x00000003
+registered C, B, A: A's wait result: 0x00000000
+registered C, B, A: B's wait result: 0x00000000
+registered C, B, A: C's wait result: 0x00000000
+registered B, C, A: the three threads wait before the notify: 0x00000001
+registered B, C, A: the notify: 0x00000000
+registered B, C, A: A's status after the notify: 0x00000002
+registered B, C, A: A's wait type after the notify: 0x00000000
+registered B, C, A: B's status after the notify: 0x00000002
+registered B, C, A: B's wait type after the notify: 0x00000000
+registered B, C, A: C's status after the notify: 0x00000002
+registered B, C, A: C's wait type after the notify: 0x00000000
+registered B, C, A: callbacks run: 0x00000003
+registered B, C, A: A's wait result: 0x00000000
+registered B, C, A: B's wait result: 0x00000000
+registered B, C, A: C's wait result: 0x00000000
+DONE
