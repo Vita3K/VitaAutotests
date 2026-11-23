@@ -1,0 +1,62 @@
+walk, end by a receive: A and B wait before the receive: 0x00000001
+walk, end by a receive: the waiting senders before it: 0x00000002
+walk, end by a receive: the receive: 0x00000000
+walk, end by a receive: the receive's size: 0x00000040
+walk, end by a receive: runs of A's callback: 0x00000001
+walk, end by a receive: A waits again: 0x00000001
+walk, end by a receive: B still waits: 0x00000001
+walk, end by a receive: B's result so far: 0x0000DEAD
+walk, end by a receive: the waiting senders: 0x00000002
+walk, end by a receive: the free size: 0x00000040
+walk, end by a receive: the ending receive: 0x00000000
+walk, end by a receive: its size: 0x00000040
+walk, end by a receive: A's final result: 0x00000000
+walk, end by a receive: A's final size: 0x00000064
+walk, end by a receive: B's final result: 0x00000000
+walk, end by a receive: B's final size: 0x00000008
+walk, end by a receive: the free size at the end: 0x00000014
+walk, zero-size calls then a cancel: A and B wait before the receive: 0x00000001
+walk, zero-size calls then a cancel: the waiting senders before it: 0x00000002
+walk, zero-size calls then a cancel: the receive: 0x00000000
+walk, zero-size calls then a cancel: the receive's size: 0x00000040
+walk, zero-size calls then a cancel: runs of A's callback: 0x00000001
+walk, zero-size calls then a cancel: A waits again: 0x00000001
+walk, zero-size calls then a cancel: B still waits: 0x00000001
+walk, zero-size calls then a cancel: B's result so far: 0x0000DEAD
+walk, zero-size calls then a cancel: the waiting senders: 0x00000002
+walk, zero-size calls then a cancel: the free size: 0x00000040
+walk, zero-size calls then a cancel: the send of 0 bytes: 0x00000000
+walk, zero-size calls then a cancel: its size: 0x00000000
+walk, zero-size calls then a cancel: the receive of 0 bytes: 0x00000000
+walk, zero-size calls then a cancel: its size: 0x00000000
+walk, zero-size calls then a cancel: A still waits after them: 0x00000001
+walk, zero-size calls then a cancel: B still waits after them: 0x00000001
+walk, zero-size calls then a cancel: the waiting senders after them: 0x00000002
+walk, zero-size calls then a cancel: the cancel: 0x00000000
+walk, zero-size calls then a cancel: the senders it counted: 0x00000002
+walk, zero-size calls then a cancel: the receivers it counted: 0x00000000
+walk, zero-size calls then a cancel: A's final result: 0x80028007
+walk, zero-size calls then a cancel: A's final size: 0x00000000
+walk, zero-size calls then a cancel: B's final result: 0x80028007
+walk, zero-size calls then a cancel: B's final size: 0x00000000
+walk, zero-size calls then a cancel: the free size at the end: 0x00001000
+direct notify, end by a receive: A and B wait before the receive: 0x00000001
+direct notify, end by a receive: the waiting senders before it: 0x00000002
+direct notify, end by a receive: unregister the callback: 0x00000000
+direct notify, end by a receive: the direct notify: 0x00000000
+direct notify, end by a receive: the receive: 0x00000000
+direct notify, end by a receive: the receive's size: 0x00000040
+direct notify, end by a receive: runs of A's callback: 0x00000001
+direct notify, end by a receive: A waits again: 0x00000001
+direct notify, end by a receive: B still waits: 0x00000000
+direct notify, end by a receive: B's result so far: 0x00000000
+direct notify, end by a receive: the waiting senders: 0x00000001
+direct notify, end by a receive: the free size: 0x00000038
+direct notify, end by a receive: the ending receive: 0x00000000
+direct notify, end by a receive: its size: 0x00000040
+direct notify, end by a receive: A's final result: 0x00000000
+direct notify, end by a receive: A's final size: 0x00000064
+direct notify, end by a receive: B's final result: 0x00000000
+direct notify, end by a receive: B's final size: 0x00000008
+direct notify, end by a receive: the free size at the end: 0x00000014
+DONE
