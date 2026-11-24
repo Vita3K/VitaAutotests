@@ -1,0 +1,49 @@
+lock P, lock 0x80, unlock 0x80, unlock P, step 1, lock P: the result: 0x00000000
+lock P, lock 0x80, unlock 0x80, unlock P, step 1, lock P: the priority after it: 0x000000B0
+lock P, lock 0x80, unlock 0x80, unlock P, step 2, lock 0x80: the result: 0x00000000
+lock P, lock 0x80, unlock 0x80, unlock P, step 2, lock 0x80: the priority after it: 0x00000080
+lock P, lock 0x80, unlock 0x80, unlock P, step 3, unlock 0x80: the result: 0x00000000
+lock P, lock 0x80, unlock 0x80, unlock P, step 3, unlock 0x80: the priority after it: 0x000000B0
+lock P, lock 0x80, unlock 0x80, unlock P, step 4, unlock P: the result: 0x00000000
+lock P, lock 0x80, unlock 0x80, unlock P, step 4, unlock P: the priority after it: 0x000000B0
+lock 0x80, lock P, unlock 0x80, unlock P, step 1, lock 0x80: the result: 0x00000000
+lock 0x80, lock P, unlock 0x80, unlock P, step 1, lock 0x80: the priority after it: 0x00000080
+lock 0x80, lock P, unlock 0x80, unlock P, step 2, lock P: the result: 0x00000000
+lock 0x80, lock P, unlock 0x80, unlock P, step 2, lock P: the priority after it: 0x00000080
+lock 0x80, lock P, unlock 0x80, unlock P, step 3, unlock 0x80: the result: 0x00000000
+lock 0x80, lock P, unlock 0x80, unlock P, step 3, unlock 0x80: the priority after it: 0x000000B0
+lock 0x80, lock P, unlock 0x80, unlock P, step 4, unlock P: the result: 0x00000000
+lock 0x80, lock P, unlock 0x80, unlock P, step 4, unlock P: the priority after it: 0x000000B0
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 1, lock P: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 1, lock P: the priority after it: 0x000000B0
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 2, lock 0x90: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 2, lock 0x90: the priority after it: 0x00000090
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 3, lock 0x80: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 3, lock 0x80: the priority after it: 0x00000080
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 4, unlock 0x80: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 4, unlock 0x80: the priority after it: 0x00000090
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 5, unlock 0x90: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 5, unlock 0x90: the priority after it: 0x000000B0
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 6, unlock P: the result: 0x00000000
+lock P, lock 0x90, lock 0x80, unlock 0x80, unlock 0x90, unlock P, step 6, unlock P: the priority after it: 0x000000B0
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 1, lock 0x80: the result: 0x00000000
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 1, lock 0x80: the priority after it: 0x00000080
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 2, set its priority to 0xB8: the result: 0x00000000
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 2, set its priority to 0xB8: the priority after it: 0x00000080
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 3, lock P: the result: 0x00000000
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 3, lock P: the priority after it: 0x00000080
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 4, unlock P: the result: 0x00000000
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 4, unlock P: the priority after it: 0x00000080
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 5, unlock 0x80: the result: 0x00000000
+lock 0x80, set 0xB8, lock P, unlock P, unlock 0x80, step 5, unlock 0x80: the priority after it: 0x000000B8
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 1, lock 0x80: the result: 0x00000000
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 1, lock 0x80: the priority after it: 0x00000070
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 2, lock P: the result: 0x00000000
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 2, lock P: the priority after it: 0x00000070
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 3, set its priority to 0xB0: the result: 0x00000000
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 3, set its priority to 0xB0: the priority after it: 0x00000070
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 4, unlock 0x80: the result: 0x00000000
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 4, unlock 0x80: the priority after it: 0x000000B0
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 5, unlock P: the result: 0x00000000
+O at 0x70, lock 0x80, lock P, set 0xB0, unlock 0x80, unlock P, step 5, unlock P: the priority after it: 0x000000B0
+DONE

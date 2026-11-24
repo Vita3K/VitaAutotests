@@ -1,0 +1,30 @@
+main unlocks, W below the ceiling: W's status once it settles: 0x00000100
+main unlocks, W below the ceiling: W's current priority: 0x00000080
+main unlocks, W below the ceiling: W's initial priority: 0x000000B8
+main unlocks, W below the ceiling: W owns the mutex: 0x00000001
+main unlocks, W below the ceiling: the count: 0x00000001
+main unlocks, W below the ceiling: the main thread's priority after its unlock: 0x000000A0
+main unlocks, W below the ceiling: W's lock: 0x00000000
+main unlocks, W below the ceiling: W's unlock: 0x00000000
+main unlocks, W below the ceiling: W's priority after its unlock: 0x000000B8
+main unlocks, W above the ceiling: W's status once it settles: 0x00000100
+main unlocks, W above the ceiling: W's current priority: 0x00000060
+main unlocks, W above the ceiling: W's initial priority: 0x00000060
+main unlocks, W above the ceiling: W owns the mutex: 0x00000001
+main unlocks, W above the ceiling: the count: 0x00000001
+main unlocks, W above the ceiling: the main thread's priority after its unlock: 0x000000A0
+main unlocks, W above the ceiling: W's lock: 0x00000000
+main unlocks, W above the ceiling: W's unlock: 0x00000000
+main unlocks, W above the ceiling: W's priority after its unlock: 0x00000060
+owner ends with a waiter: O's current priority after its end: 0x000000B8
+owner ends with a waiter: W's status once it settles: 0x00000100
+owner ends with a waiter: W's current priority: 0x00000080
+owner ends with a waiter: W's initial priority: 0x00000090
+owner ends with a waiter: W owns the mutex: 0x00000001
+owner ends with a waiter: the count: 0x00000001
+owner ends with a waiter: W's lock: 0x00000000
+owner ends with a waiter: W's priority after its unlock: 0x00000090
+owner ends alone: O's current priority after its end: 0x000000B0
+owner ends alone: the count: 0x00000000
+owner ends alone: O's priority when it runs again: 0x000000B8
+DONE

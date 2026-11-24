@@ -1,0 +1,15 @@
+(a) the delete: 0x00000000
+(a) O's priority right after the delete: 0x000000B0
+(a) S's count right after the delete: 0x00000000
+(a) S's waiters right after the delete: 0x00000001
+(a) W still waits right after the delete: 0x00000000
+(a) O's wait: 0x00000000
+(a) W's wait: 0x00000000
+(b) O's priority after the delete of A: 0x00000080
+(b) O's priority after the delete of B: 0x000000B0
+(c) Y's wait: 0x800281A2
+(c) Y's priority after it: 0x000000B8
+(c) X's lock: 0x80028006
+(c) X's priority after it: 0x000000B8
+(c) O's priority after the delete: 0x000000B0
+DONE
