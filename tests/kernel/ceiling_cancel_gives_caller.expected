@@ -1,0 +1,47 @@
+a: the unlock after the create: 0x00000000
+a: O's lock: 0x00000000
+a: O's priority before the cancel: 0x00000080
+a: the cancel with -1: 0x00000000
+a: the number of waiters it writes: 0x00000000
+a: O's priority after: 0x000000B0
+a: the main thread's priority after: 0x00000080
+a: the count after: 0x00000001
+a: the main thread owns it: 0x00000001
+a: the unlock: 0x00000000
+a: the main thread's priority after the unlock: 0x000000A0
+a: O's lock at the end: 0x00000000
+a: O's wait: 0x00000000
+b: the cancel to 2: 0x00000000
+b: the number of waiters it writes: 0x00000000
+b: the main thread's priority after: 0x00000080
+b: the count after: 0x00000002
+b: the first unlock: 0x00000000
+b: the main thread's priority after it: 0x00000080
+b: the count after it: 0x00000001
+b: the second unlock: 0x00000000
+b: the main thread's priority after it: 0x000000A0
+c: the main thread's lock: 0x00000000
+c: its priority after the lock: 0x00000080
+c: the cancel to 1: 0x00000000
+c: the main thread's priority after it: 0x00000080
+c: the count after it: 0x00000001
+c: the main thread owns it: 0x00000001
+c: the unlock: 0x00000000
+c: the main thread's priority after it: 0x000000A0
+c: the cancel to 0: 0x00000000
+c: the main thread's priority after it: 0x000000A0
+c: the count after it: 0x00000000
+d: the cancel to 1 at 0x60: 0x00000000
+d: the main thread's priority after it: 0x00000060
+d: the change to 0xA0: 0x00000000
+d: the main thread's priority after it: 0x00000060
+d: the unlock: 0x00000000
+d: the main thread's priority after it: 0x000000A0
+e: the cancel to 1: 0x00000000
+e: the number of waiters it writes: 0x00000001
+e: W's lock: 0x80028007
+e: W's priority after its lock: 0x00000090
+e: O's priority: 0x000000B0
+e: the main thread's priority: 0x00000080
+e: the unlock: 0x00000000
+DONE

@@ -1,0 +1,25 @@
+O at 0xB0: the change to 0xB8 returns: 0x00000080
+O at 0xB0: O's priority after the change to 0xB8: 0x00000080
+O at 0xB0: the change to 0xBC returns: 0x00000080
+O at 0xB0: O's priority after the change to 0xBC: 0x00000080
+O at 0xB0: O's priority after its unlock: 0x000000BC
+O at 0xB0 and the exact ceiling: the change to 0x80 returns: 0x00000080
+O at 0xB0 and the exact ceiling: O's priority after the change to 0x80: 0x00000080
+O at 0xB0 and the exact ceiling: O's priority after its unlock: 0x00000080
+O at 0x70: the change to 0x78 returns: 0x00000070
+O at 0x70: O's priority after the change to 0x78: 0x00000078
+O at 0x70: the change to 0x84 returns: 0x00000078
+O at 0x70: O's priority after the change to 0x84: 0x00000078
+O at 0x70: the change to 0xB0 returns: 0x00000078
+O at 0x70: O's priority after the change to 0xB0: 0x00000078
+O at 0x70: O's priority after its unlock: 0x000000B0
+main holds the mutex: its priority: 0x00000080
+main holds the mutex: the change of itself to 0xB0 returns: 0x00000080
+main holds the mutex: its priority after the change to 0xB0: 0x00000080
+main holds the mutex: the change of itself to 0 returns: 0x00000080
+main holds the mutex: its priority after the change to 0: 0x00000080
+main holds the mutex: the unlock returns: 0x00000000
+main holds the mutex: its priority after the unlock: 0x00000080
+main holds the mutex: the change of W to 0 returns: 0x000000B0
+main holds the mutex: W's priority after the change to 0: 0x00000080
+DONE
