@@ -187,6 +187,7 @@ vita_test(thread_create_attr kernel/thread_create_attr.c)
 vita_test(thread_vfp_exception kernel/thread_vfp_exception.c)
 vita_test(module_start_thread kernel/module_start_thread.c)
 vita_test(module_start_vfp kernel/module_start_vfp.c)
+vita_test(module_thread_params kernel/module_thread_params.c)
 vita_test(thread_event_handler_vfp kernel/thread_event_handler_vfp.c)
 vita_test(thread_event_handler_exit_start kernel/thread_event_handler_exit_start.c)
 vita_test(thread_event_handler_exit_end kernel/thread_event_handler_exit_end.c)
@@ -701,6 +702,30 @@ function(probe_module_self)
 endfunction()
 probe_module_self()
 vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx)
+
+# probe_module variants with a thread parameter block, for module_thread_params. vita-elf-create can't
+# export a variable of our choice in the main export, so the block takes the module SDK version
+# variable's entry (NID 936C8A78) and set_nid.py rewrites that NID to the block's.
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
+function(probe_module_variant name nid words)
+	add_executable(${name} kernel/probe_module/probe_module.c)
+	target_compile_definitions(${name} PRIVATE THREAD_PARAMS=${words})
+	target_link_libraries(${name} SceLibKernel_stub SceKernelThreadMgr_stub)
+	target_include_directories(${name} PRIVATE ${PROJECT_SOURCE_DIR}/common)
+	target_link_options(${name} PRIVATE -nostartfiles -Wl,-e,module_start)
+	set(dir ${CMAKE_CURRENT_BINARY_DIR})
+	add_custom_command(OUTPUT ${dir}/${name}.suprx
+		COMMAND ${VITA_ELF_CREATE} -e ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/exports.yml $<TARGET_FILE:${name}> ${dir}/${name}.velf
+		COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/set_nid.py ${dir}/${name}.velf 936C8A78 ${nid}
+		COMMAND ${VITA_MAKE_FSELF} -c -s ${dir}/${name}.velf ${dir}/${name}.suprx
+		DEPENDS ${name} ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/exports.yml ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_module/set_nid.py
+		VERBATIM)
+	add_custom_target(${name}-suprx ALL DEPENDS ${dir}/${name}.suprx)
+	vita_test_file(${dir}/${name}.suprx ${name}.suprx)
+endfunction()
+probe_module_variant(probe_start_params 1A9822A4 "4,0x60,0x8000,0,0")
+probe_module_variant(probe_stop_params D20886EB "4,0x50,0x6000,0,0")
+probe_module_variant(probe_start_params_size 1A9822A4 "0x14,0x60,0x8000,0,0")
 
 vita_test(memblock memory/memblock.c)
 vita_test(memblock_contents memory/memblock_contents.c)

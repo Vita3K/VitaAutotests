@@ -1,0 +1,37 @@
+probe_start_params: load and start: 0x00000000
+probe_start_params: the start status: 0x00000000
+probe_start_params: stop and unload: 0x00000000
+probe_start_params: the stop status: 0x00000000
+probe_start_params: runs of its start function: 0x00000001
+probe_start_params: its start thread's priority: 0x00000060
+probe_start_params: its start thread's initial priority: 0x00000060
+probe_start_params: its start thread's stack size: 0x00008000
+probe_start_params: runs of its stop function: 0x00000001
+probe_start_params: its stop thread's priority: 0x000000A0
+probe_start_params: its stop thread's initial priority: 0x000000A0
+probe_start_params: its stop thread's stack size: 0x00004000
+probe_stop_params: load and start: 0x00000000
+probe_stop_params: the start status: 0x00000000
+probe_stop_params: stop and unload: 0x00000000
+probe_stop_params: the stop status: 0x00000000
+probe_stop_params: runs of its start function: 0x00000001
+probe_stop_params: its start thread's priority: 0x000000A0
+probe_stop_params: its start thread's initial priority: 0x000000A0
+probe_stop_params: its start thread's stack size: 0x00004000
+probe_stop_params: runs of its stop function: 0x00000001
+probe_stop_params: its stop thread's priority: 0x00000050
+probe_stop_params: its stop thread's initial priority: 0x00000050
+probe_stop_params: its stop thread's stack size: 0x00006000
+probe_start_params_size: load and start: 0x00000000
+probe_start_params_size: the start status: 0x00000000
+probe_start_params_size: stop and unload: 0x00000000
+probe_start_params_size: the stop status: 0x00000000
+probe_start_params_size: runs of its start function: 0x00000001
+probe_start_params_size: its start thread's priority: 0x000000A0
+probe_start_params_size: its start thread's initial priority: 0x000000A0
+probe_start_params_size: its start thread's stack size: 0x00004000
+probe_start_params_size: runs of its stop function: 0x00000001
+probe_start_params_size: its stop thread's priority: 0x000000A0
+probe_start_params_size: its stop thread's initial priority: 0x000000A0
+probe_start_params_size: its stop thread's stack size: 0x00004000
+DONE
