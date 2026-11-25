@@ -1,11 +1,18 @@
-// A module whose start and stop functions record the thread they run on, for module_start_thread
-// and module_start_vfp
+// A module whose start and stop functions record the thread they run on, for module_start_thread,
+// module_start_vfp and module_thread_params
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/threadmgr.h>
 
 #include "probe_module.h"
 #include "registers.h"
 #include "threadmgr_extra.h"
+
+#ifdef THREAD_PARAMS
+// The 20 byte thread parameter block of the variants that have one: size word 4, priority, stack
+// size, a word left unused and the CPU affinity mask. vita-elf-create puts only this symbol's
+// variable in the main export, and the build rewrites that entry's NID to the block's NID.
+__attribute__((used)) const SceUInt32 module_sdk_version[5] = { THREAD_PARAMS };
+#endif
 
 static void record(SceSize args, void *argp) {
     if (args < sizeof(ModuleArgs) || !argp)
