@@ -208,6 +208,7 @@ vita_test(thread_event_handler_start_target kernel/thread_event_handler_start_ta
 vita_test(thread_event_handler_delete_refused kernel/thread_event_handler_delete_refused.c)
 vita_test(thread_event_handler_unregister_in_entry kernel/thread_event_handler_unregister_in_entry.c)
 vita_test(module_start_threads kernel/module_start_threads.c)
+vita_test(module_start_no_thread kernel/module_start_no_thread.c)
 vita_test(thread_nouse_vfp kernel/thread_nouse_vfp.c)
 vita_test(thread_stack_free kernel/thread_stack_free.c)
 vita_test(thread_stack_fill kernel/thread_stack_fill.c)
