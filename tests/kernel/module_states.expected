@@ -1,0 +1,156 @@
+load: 0x00000000
+load: the status: 0x0000DEAD
+load: runs of the functions: 0x00000000
+load: the module's state: 0x00000002
+stop before a start: 0x8002D015
+stop before a start: the status: 0x00000000
+stop before a start: runs of the functions: 0x00000000
+stop before a start: the module's state: 0x00000002
+start: 0x00000000
+start: the status: 0x00000000
+start: runs of the functions: 0x00000001
+start: the module's state: 0x00000006
+start again: 0x8002D014
+start again: the status: 0x00000000
+start again: runs of the functions: 0x00000001
+start again: the module's state: 0x00000006
+unload while started: 0x8002D016
+unload while started: the status: 0x00000000
+unload while started: runs of the functions: 0x00000001
+unload while started: the module's state: 0x00000006
+stop: 0x00000000
+stop: the status: 0x00000000
+stop: runs of the functions: 0x00000002
+stop: the module's state: 0x00000009
+stop again: 0x8002D022
+stop again: the status: 0x00000000
+stop again: runs of the functions: 0x00000002
+stop again: the module's state: 0x00000009
+start after the stop: 0x8002D022
+start after the stop: the status: 0x00000000
+start after the stop: runs of the functions: 0x00000002
+start after the stop: the module's state: 0x00000009
+unload: 0x00000000
+unload: the status: 0x00000000
+unload: runs of the functions: 0x00000002
+unload: the module's state: 0x80024501
+unload again: 0x80024501
+unload again: the status: 0x00000000
+unload again: runs of the functions: 0x00000002
+unload again: the module's state: 0x80024501
+load to unload at once: 0x00000000
+load to unload at once: the status: 0x00000000
+load to unload at once: runs of the functions: 0x00000000
+load to unload at once: the module's state: 0x00000002
+unload before a start: 0x00000000
+unload before a start: the status: 0x00000000
+unload before a start: runs of the functions: 0x00000000
+unload before a start: the module's state: 0x80024501
+load the same file twice: both work: 0x00000001
+load the same file twice: two modules: 0x00000001
+start returns 1: load and start: 0x00000000
+start returns 1: load and start: the status: 0x00000001
+start returns 1: load and start: runs of the functions: 0x00000001
+start returns 1: load and start: the module's state: 0x80024501
+start returns 1: load and start: the UID is the module's: 0x00000001
+start returns 1: stop and unload: 0x80024501
+start returns 1: stop and unload: the status: 0x00000000
+start returns 1: stop and unload: runs of the functions: 0x00000001
+start returns 1: stop and unload: the module's state: 0x80024501
+start returns 1: start: 0x00000000
+start returns 1: start: the status: 0x00000001
+start returns 1: start: runs of the functions: 0x00000001
+start returns 1: start: the module's state: 0x80024501
+start returns 1: start again: 0x80024501
+start returns 1: start again: the status: 0x00000000
+start returns 1: start again: runs of the functions: 0x00000001
+start returns 1: start again: the module's state: 0x80024501
+start returns 1: unload: 0x80024501
+start returns 1: unload: the status: 0x00000000
+start returns 1: unload: runs of the functions: 0x00000001
+start returns 1: unload: the module's state: 0x80024501
+start returns 1: stop and unload: 0x80024501
+start returns 1: stop and unload: the status: 0x00000000
+start returns 1: stop and unload: runs of the functions: 0x00000001
+start returns 1: stop and unload: the module's state: 0x80024501
+start returns 2: load and start: 0x8002D000
+start returns 2: load and start: the status: 0x00000000
+start returns 2: load and start: runs of the functions: 0x00000001
+start returns 2: load and start: the module's state: 0x80024501
+start returns 2: load and start: the UID is the module's: 0x00000001
+start returns 2: start: 0x8002D000
+start returns 2: start: the status: 0x00000000
+start returns 2: start: runs of the functions: 0x00000001
+start returns 2: start: the module's state: 0x00000002
+start returns 2: start again: 0x8002D000
+start returns 2: start again: the status: 0x00000000
+start returns 2: start again: runs of the functions: 0x00000002
+start returns 2: start again: the module's state: 0x00000002
+start returns 2: unload: 0x00000000
+start returns 2: unload: the status: 0x00000000
+start returns 2: unload: runs of the functions: 0x00000002
+start returns 2: unload: the module's state: 0x80024501
+start returns 2: stop and unload: 0x80024501
+start returns 2: stop and unload: the status: 0x00000000
+start returns 2: stop and unload: runs of the functions: 0x00000002
+start returns 2: stop and unload: the module's state: 0x80024501
+start returns 0x1234: load and start: 0x00000000
+start returns 0x1234: load and start: the status: 0x00001234
+start returns 0x1234: load and start: runs of the functions: 0x00000001
+start returns 0x1234: load and start: the module's state: 0x00000006
+start returns 0x1234: load and start: the UID is the module's: 0x00000001
+start returns 0x1234: stop and unload: 0x00000000
+start returns 0x1234: stop and unload: the status: 0x00000000
+start returns 0x1234: stop and unload: runs of the functions: 0x00000002
+start returns 0x1234: stop and unload: the module's state: 0x80024501
+start returns 0x1234: start: 0x00000000
+start returns 0x1234: start: the status: 0x00001234
+start returns 0x1234: start: runs of the functions: 0x00000001
+start returns 0x1234: start: the module's state: 0x00000006
+start returns 0x1234: start again: 0x8002D014
+start returns 0x1234: start again: the status: 0x00000000
+start returns 0x1234: start again: runs of the functions: 0x00000001
+start returns 0x1234: start again: the module's state: 0x00000006
+start returns 0x1234: unload: 0x8002D016
+start returns 0x1234: unload: the status: 0x00000000
+start returns 0x1234: unload: runs of the functions: 0x00000001
+start returns 0x1234: unload: the module's state: 0x00000006
+start returns 0x1234: stop and unload: 0x00000000
+start returns 0x1234: stop and unload: the status: 0x00000000
+start returns 0x1234: stop and unload: runs of the functions: 0x00000002
+start returns 0x1234: stop and unload: the module's state: 0x80024501
+stop returns 1: load and start: 0x00000000
+stop returns 1: stop: 0x8002D001
+stop returns 1: stop: the status: 0x00000000
+stop returns 1: stop: runs of the functions: 0x00000002
+stop returns 1: stop: the module's state: 0x00000006
+stop returns 1: stop again: 0x8002D001
+stop returns 1: stop again: the status: 0x00000000
+stop returns 1: stop again: runs of the functions: 0x00000003
+stop returns 1: stop again: the module's state: 0x00000006
+stop returns 1: stop and unload: 0x8002D001
+stop returns 1: stop and unload: the status: 0x00000000
+stop returns 1: stop and unload: runs of the functions: 0x00000004
+stop returns 1: stop and unload: the module's state: 0x00000006
+stop returns 1: unload: 0x8002D016
+stop returns 1: unload: the status: 0x00000000
+stop returns 1: unload: runs of the functions: 0x00000004
+stop returns 1: unload: the module's state: 0x00000006
+stop returns 0x1234: load and start: 0x00000000
+stop returns 0x1234: stop: 0x00000000
+stop returns 0x1234: stop: the status: 0x00001234
+stop returns 0x1234: stop: runs of the functions: 0x00000002
+stop returns 0x1234: stop: the module's state: 0x00000009
+stop returns 0x1234: stop again: 0x8002D022
+stop returns 0x1234: stop again: the status: 0x00000000
+stop returns 0x1234: stop again: runs of the functions: 0x00000002
+stop returns 0x1234: stop again: the module's state: 0x00000009
+stop returns 0x1234: stop and unload: 0x8002D022
+stop returns 0x1234: stop and unload: the status: 0x00000000
+stop returns 0x1234: stop and unload: runs of the functions: 0x00000002
+stop returns 0x1234: stop and unload: the module's state: 0x00000009
+stop returns 0x1234: unload: 0x00000000
+stop returns 0x1234: unload: the status: 0x00000000
+stop returns 0x1234: unload: runs of the functions: 0x00000002
+stop returns 0x1234: unload: the module's state: 0x80024501
+DONE
