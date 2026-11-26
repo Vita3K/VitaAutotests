@@ -1,0 +1,33 @@
+event flag, bits that are set: 0x00000000
+event flag, bits that are set: the result pattern: 0x00000003
+event flag, bits that are set: the time left is 0: 0x00000000
+event flag, bits that are set: the time left is between 0 and the timeout: 0x00000001
+event flag, a bit that is never set: 0x80028005
+event flag, a bit that is never set: the result pattern: 0x00000003
+event flag, a bit that is never set: the time left is 0: 0x00000001
+event flag, a bit that is never set: the time left is between 0 and the timeout: 0x00000000
+event flag, no result or timeout pointer: 0x00000000
+event flag with callbacks, bits that are set: 0x00000000
+event flag with callbacks, bits that are set: the result pattern: 0x00000003
+event flag with callbacks, bits that are set: the time left is 0: 0x00000000
+event flag with callbacks, bits that are set: the time left is between 0 and the timeout: 0x00000001
+event flag with callbacks, a bit that is never set: 0x80028005
+event flag with callbacks, a bit that is never set: the result pattern: 0x00000003
+event flag with callbacks, a bit that is never set: the time left is 0: 0x00000001
+event flag with callbacks, a bit that is never set: the time left is between 0 and the timeout: 0x00000000
+event flag with callbacks, no result or timeout pointer: 0x00000000
+simple event, a bit that is set: 0x00000000
+simple event, a bit that is set: the result pattern: 0x01000000
+simple event, a bit that is set: the user data low word: 0x00005678
+simple event, a bit that is set: the user data high word: 0x00001234
+simple event, a bit that is set: the time left is between 0 and the timeout: 0x00000001
+simple event, a bit that is never set: 0x80028005
+simple event, a bit that is never set: the time left: 0x00000000
+simple event with callbacks, a bit that is set: 0x00000000
+simple event with callbacks, a bit that is set: the result pattern: 0x01000000
+simple event with callbacks, a bit that is set: the user data low word: 0x00005678
+simple event with callbacks, a bit that is set: the user data high word: 0x00001234
+simple event with callbacks, a bit that is set: the time left is between 0 and the timeout: 0x00000001
+simple event with callbacks, a bit that is never set: 0x80028005
+simple event with callbacks, a bit that is never set: the time left: 0x00000000
+DONE

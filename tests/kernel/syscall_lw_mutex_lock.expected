@@ -1,0 +1,11 @@
+lock a free mutex: 0x00000000
+unlock it: 0x00000000
+lock a free mutex with callbacks: 0x00000000
+unlock it again: 0x00000000
+without callbacks: the waiter's lock: 0x00000000
+without callbacks: callback runs when the lock returned: 0x00000000
+without callbacks: callback runs in the end: 0x00000001
+with callbacks: the waiter's lock: 0x00000000
+with callbacks: callback runs when the lock returned: 0x00000001
+with callbacks: callback runs in the end: 0x00000001
+DONE
