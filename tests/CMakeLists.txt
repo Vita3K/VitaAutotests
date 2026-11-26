@@ -188,6 +188,7 @@ vita_test(thread_vfp_exception kernel/thread_vfp_exception.c)
 vita_test(module_start_thread kernel/module_start_thread.c)
 vita_test(module_start_vfp kernel/module_start_vfp.c)
 vita_test(module_thread_params kernel/module_thread_params.c)
+vita_test(module_thread_param_affinity kernel/module_thread_param_affinity.c)
 vita_test(syscall_wait_blocks kernel/syscall_wait_blocks.c)
 vita_test(syscall_module_blocks kernel/syscall_module_blocks.c)
 vita_test(syscall_lw_mutex_lock kernel/syscall_lw_mutex_lock.c)
@@ -216,6 +217,7 @@ vita_test(module_library_partial_stop kernel/module_library_partial_stop.c)
 vita_test(module_start_no_thread kernel/module_start_no_thread.c)
 vita_test(sysmodule_partial kernel/sysmodule_partial.c)
 vita_test(sysmodule_ids kernel/sysmodule_ids.c)
+vita_test(sysmodule_lock_during_start kernel/sysmodule_lock_during_start.c)
 vita_test(thread_nouse_vfp kernel/thread_nouse_vfp.c)
 vita_test(thread_stack_free kernel/thread_stack_free.c)
 vita_test(thread_stack_fill kernel/thread_stack_fill.c)
@@ -715,9 +717,10 @@ endfunction()
 probe_module_self()
 vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/probe_module.suprx probe_module.suprx)
 
-# probe_module variants with a thread parameter block, for module_thread_params. vita-elf-create can't
-# export a variable of our choice in the main export, so the block takes the module SDK version
-# variable's entry (NID 936C8A78) and set_nid.py rewrites that NID to the block's.
+# probe_module variants with a thread parameter block, for module_thread_params and
+# module_thread_param_affinity. vita-elf-create can't export a variable of our choice in the main
+# export, so the block takes the module SDK version variable's entry (NID 936C8A78) and set_nid.py
+# rewrites that NID to the block's.
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 function(probe_module_variant name nid words)
 	add_executable(${name} kernel/probe_module/probe_module.c)
@@ -738,6 +741,10 @@ endfunction()
 probe_module_variant(probe_start_params 1A9822A4 "4,0x60,0x8000,0,0")
 probe_module_variant(probe_stop_params D20886EB "4,0x50,0x6000,0,0")
 probe_module_variant(probe_start_params_size 1A9822A4 "0x14,0x60,0x8000,0,0")
+# Start blocks with a CPU affinity mask, for module_thread_param_affinity
+probe_module_variant(probe_start_affinity_out 1A9822A4 "4,0x60,0x8000,0,0x80000")
+probe_module_variant(probe_start_affinity_in 1A9822A4 "4,0x60,0x8000,0,0x20000")
+probe_module_variant(probe_start_affinity_zero 1A9822A4 "4,0x60,0x8000,0,0")
 
 # probe_module variants whose start or stop function returns another value, for module_states
 function(probe_module_result name defines)

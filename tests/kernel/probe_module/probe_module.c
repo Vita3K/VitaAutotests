@@ -1,5 +1,5 @@
 // A module whose start and stop functions record the thread they run on, for module_start_thread,
-// module_start_vfp, module_thread_params and module_states
+// module_start_vfp, module_thread_params, module_thread_param_affinity and module_states
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/threadmgr.h>
 
@@ -30,6 +30,8 @@ static void record(SceSize args, void *argp) {
     probe->init_priority = info.initPriority;
     probe->stack_size = info.stackSize;
     probe->attr = info.attr;
+    probe->init_affinity = info.initCpuAffinityMask;
+    probe->affinity = info.currentCpuAffinityMask;
     probe->frame = (SceUIntPtr)&local;
     probe->argp = (SceUIntPtr)argp;
     probe->args = args;

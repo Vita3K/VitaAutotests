@@ -1,0 +1,18 @@
+probe_start_affinity_out: load and start: 0x80028025
+probe_start_affinity_out: the start status: 0x00000000
+probe_start_affinity_out: runs of its start function: 0x00000000
+probe_start_affinity_in: load and start: 0x00000000
+probe_start_affinity_in: the start status: 0x00000000
+probe_start_affinity_in: runs of its start function: 0x00000001
+probe_start_affinity_in: its start thread's priority: 0x00000060
+probe_start_affinity_in: its start thread's initial affinity mask: 0x00020000
+probe_start_affinity_in: its start thread's affinity mask: 0x00020000
+probe_start_affinity_in: stop and unload: 0x00000000
+probe_start_affinity_zero: load and start: 0x00000000
+probe_start_affinity_zero: the start status: 0x00000000
+probe_start_affinity_zero: runs of its start function: 0x00000001
+probe_start_affinity_zero: its start thread's priority: 0x00000060
+probe_start_affinity_zero: its start thread's initial affinity mask: 0x00000000
+probe_start_affinity_zero: its start thread's affinity mask: 0x00000000
+probe_start_affinity_zero: stop and unload: 0x00000000
+DONE
