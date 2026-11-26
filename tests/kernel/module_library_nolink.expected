@@ -1,0 +1,29 @@
+before any load: the app's ProbeLib import is linked to no module: 0x00000000
+load NOLINK copy A: 0x00000000
+start NOLINK copy A: 0x00000000
+start NOLINK copy A: the status: 0x00000000
+start NOLINK copy A: its state: 0x00000006
+NOLINK copy A started: the app's ProbeLib import is linked to NOLINK copy A: 0x00000000
+load and start the importer: 0x00000000
+the importer started: the app's ProbeLib import is linked to NOLINK copy A: 0x00000000
+the importer started: the importer's ProbeLib import is linked to no module: 0x00000000
+load plain probe_lib: 0x00000000
+start plain probe_lib: 0x8002D013
+start plain probe_lib: the status: 0x00000000
+start plain probe_lib: runs of its start function: 0x00000000
+start plain probe_lib: its state: 0x00000002
+plain probe_lib start tried: the app's ProbeLib import is linked to NOLINK copy A: 0x00000000
+plain probe_lib start tried: the importer's ProbeLib import is linked to no module: 0x00000000
+unload plain probe_lib: 0x00000000
+load NOLINK copy B: 0x00000000
+start NOLINK copy B: 0x00000000
+start NOLINK copy B: the status: 0x00000000
+start NOLINK copy B: its state: 0x00000006
+NOLINK copy B started: the app's ProbeLib import is linked to NOLINK copy A: 0x00000000
+NOLINK copy B started: the importer's ProbeLib import is linked to NOLINK copy B: 0x00000000
+stop and unload the importer: 0x00000000
+stop and unload NOLINK copy B: 0x00000000
+NOLINK copy B unloaded: the app's ProbeLib import is linked to NOLINK copy A: 0x00000000
+stop and unload NOLINK copy A: 0x00000000
+NOLINK copy A unloaded: the app's ProbeLib import is linked to no module: 0x00000000
+DONE

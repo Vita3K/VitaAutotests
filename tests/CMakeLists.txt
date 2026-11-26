@@ -210,6 +210,9 @@ vita_test(thread_event_handler_unregister_in_entry kernel/thread_event_handler_u
 vita_test(module_start_threads kernel/module_start_threads.c)
 vita_test(module_states kernel/module_states.c)
 vita_test(module_library_copies kernel/module_library_copies.c)
+vita_test(module_library_nolink kernel/module_library_nolink.c)
+vita_test(module_library_partial_start kernel/module_library_partial_start.c)
+vita_test(module_library_partial_stop kernel/module_library_partial_stop.c)
 vita_test(module_start_no_thread kernel/module_start_no_thread.c)
 vita_test(sysmodule_partial kernel/sysmodule_partial.c)
 vita_test(sysmodule_ids kernel/sysmodule_ids.c)
@@ -752,10 +755,14 @@ probe_module_result(probe_start_other START_RESULT=0x1234)
 probe_module_result(probe_stop_failed STOP_RESULT=1)
 probe_module_result(probe_stop_other STOP_RESULT=0x1234)
 
-# The module that exports the library ProbeLib, for module_library_copies, and the same module with
-# the library at version 2. The app links ProbeLib's weak stubs, so it starts without the library.
+# The module that exports the library ProbeLib, for module_library_copies, the same module with
+# the library at version 2, and probe_two_libs, which exports ProbeLibA and then ProbeLib. The app
+# links the weak stubs of ProbeLib and ProbeLibA, so it starts without the libraries.
 function(probe_lib_module name config)
 	add_executable(${name} kernel/probe_lib/probe_lib.c)
+	if(ARGN)
+		target_compile_definitions(${name} PRIVATE ${ARGN})
+	endif()
 	target_link_libraries(${name} SceLibKernel_stub SceKernelThreadMgr_stub)
 	target_link_options(${name} PRIVATE -nostartfiles -Wl,-e,module_start)
 	vita_create_self(${name}.suprx ${name} CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/${config})
@@ -764,6 +771,46 @@ endfunction()
 probe_lib_module(probe_lib exports.yml)
 probe_lib_module(probe_lib_v2 exports_v2.yml)
 vita_create_stubs(probe_lib_stubs probe_lib ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/exports.yml)
+probe_lib_module(probe_two_libs two_libs.yml PROBE_LIB_A)
+vita_create_stubs(probe_lib_a_stubs probe_two_libs ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/probe_lib_a.yml)
+
+# probe_lib with another attribute for its ProbeLib export, for module_library_nolink (0x0005).
+# vita-elf-create always writes 0x0001, so set_export_attr.py
+# rewrites the attribute of the export with ProbeLib's NID.
+function(probe_lib_attr name attr)
+	add_executable(${name} kernel/probe_lib/probe_lib.c)
+	target_link_libraries(${name} SceLibKernel_stub SceKernelThreadMgr_stub)
+	target_link_options(${name} PRIVATE -nostartfiles -Wl,-e,module_start)
+	set(dir ${CMAKE_CURRENT_BINARY_DIR})
+	set(src ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib)
+	add_custom_command(OUTPUT ${dir}/${name}.suprx
+		COMMAND ${VITA_ELF_CREATE} -e ${src}/exports.yml $<TARGET_FILE:${name}> ${dir}/${name}.velf
+		COMMAND ${Python3_EXECUTABLE} ${src}/set_export_attr.py ${dir}/${name}.velf 7D4779A9 ${attr}
+		COMMAND ${VITA_MAKE_FSELF} -c -s ${dir}/${name}.velf ${dir}/${name}.suprx
+		DEPENDS ${name} ${src}/exports.yml ${src}/set_export_attr.py
+		VERBATIM)
+	add_custom_target(${name}-suprx ALL DEPENDS ${dir}/${name}.suprx)
+	vita_test_file(${dir}/${name}.suprx ${name}.suprx)
+endfunction()
+probe_lib_attr(probe_lib_nolink 0005)
+
+# Modules that import a probe library, for module_library_nolink and module_library_partial_stop:
+# probe_lib_importer with ProbeLib's weak stubs, which exports ProbeImporter, and
+# probe_liba_strong with ProbeLibA's strong stubs
+function(probe_lib_importer name config stubs)
+	add_executable(${name} kernel/probe_lib/probe_lib_importer.c)
+	if(ARGN)
+		target_compile_definitions(${name} PRIVATE ${ARGN})
+	endif()
+	add_dependencies(${name} probe_lib_stubs probe_lib_a_stubs)
+	target_link_libraries(${name} ${CMAKE_CURRENT_BINARY_DIR}/${stubs})
+	target_link_options(${name} PRIVATE -nostartfiles -Wl,-e,module_start)
+	vita_create_self(${name}.suprx ${name} CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/${config})
+	vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/${name}.suprx ${name}.suprx)
+endfunction()
+probe_lib_importer(probe_lib_importer importer.yml libprobe_lib_stub_weak.a)
+probe_lib_importer(probe_liba_strong strong_importer.yml libprobe_lib_a_stub.a PROBE_IMPORT_A)
+vita_create_stubs(probe_lib_importer_stubs probe_lib_importer ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/importer.yml)
 
 vita_test(memblock memory/memblock.c)
 vita_test(memblock_contents memory/memblock_contents.c)
@@ -1008,5 +1055,5 @@ vita_test(ceiling_delete_drops_waiting_owner kernel/ceiling_delete_drops_waiting
 vita_test(ceiling_handover_suspended_and_end kernel/ceiling_handover_suspended_and_end.c)
 
 vita_tests_vpk(VTST00000)
-add_dependencies(vita-autotests probe_lib_stubs)
-target_link_libraries(vita-autotests ${CMAKE_CURRENT_BINARY_DIR}/libprobe_lib_stub_weak.a)
+add_dependencies(vita-autotests probe_lib_stubs probe_lib_a_stubs probe_lib_importer_stubs)
+target_link_libraries(vita-autotests ${CMAKE_CURRENT_BINARY_DIR}/libprobe_lib_stub_weak.a ${CMAKE_CURRENT_BINARY_DIR}/libprobe_lib_a_stub_weak.a ${CMAKE_CURRENT_BINARY_DIR}/libprobe_lib_importer_stub_weak.a)

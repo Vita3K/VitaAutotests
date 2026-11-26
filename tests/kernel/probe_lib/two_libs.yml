@@ -1,0 +1,21 @@
+probe_two_libs:
+  attributes: 0
+  version:
+    major: 1
+    minor: 0
+  main:
+    start: module_start
+    stop: module_stop
+  libraries:
+    ProbeLibA:
+      syscall: false
+      version: 1
+      nid: 0x5042A001
+      functions:
+        - probe_lib_a_function
+    ProbeLib:
+      syscall: false
+      version: 1
+      nid: 0x7D4779A9
+      functions:
+        - probe_lib_function

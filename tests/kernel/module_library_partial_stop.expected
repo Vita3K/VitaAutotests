@@ -1,0 +1,28 @@
+before any load: the app's ProbeLibA import is linked to no module: 0x00000000
+before any load: the app's ProbeLib import is linked to no module: 0x00000000
+load probe_two_libs: 0x00000000
+start probe_two_libs: 0x00000000
+start probe_two_libs: the status: 0x00000000
+start probe_two_libs: runs of the start function: 0x00000001
+start probe_two_libs: runs of the stop function: 0x00000000
+start probe_two_libs: the module's state: 0x00000006
+probe_two_libs started: the app's ProbeLibA import is linked to probe_two_libs: 0x00000000
+probe_two_libs started: the app's ProbeLib import is linked to probe_two_libs: 0x00000000
+load and start the strong importer: 0x00000000
+stop probe_two_libs: 0x8002D002
+stop probe_two_libs: the status: 0x00000000
+stop probe_two_libs: runs of the start function: 0x00000001
+stop probe_two_libs: runs of the stop function: 0x00000001
+stop probe_two_libs: the module's state: 0x00000006
+probe_two_libs stop tried: the app's ProbeLibA import is linked to probe_two_libs: 0x00000000
+probe_two_libs stop tried: the app's ProbeLib import is linked to probe_two_libs: 0x00000000
+stop and unload the strong importer: 0x00000000
+stop probe_two_libs again: 0x00000000
+stop probe_two_libs again: the status: 0x00000000
+stop probe_two_libs again: runs of the start function: 0x00000001
+stop probe_two_libs again: runs of the stop function: 0x00000002
+stop probe_two_libs again: the module's state: 0x00000009
+probe_two_libs stop tried again: the app's ProbeLibA import is linked to no module: 0x00000000
+probe_two_libs stop tried again: the app's ProbeLib import is linked to no module: 0x00000000
+unload probe_two_libs: 0x00000000
+DONE
