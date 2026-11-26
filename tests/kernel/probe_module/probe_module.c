@@ -1,11 +1,14 @@
 // A module whose start and stop functions record the thread they run on, for module_start_thread,
-// module_start_vfp and module_thread_params
+// module_start_vfp, module_thread_params and module_states
 #include <psp2/kernel/modulemgr.h>
 #include <psp2/kernel/threadmgr.h>
 
 #include "probe_module.h"
 #include "registers.h"
 #include "threadmgr_extra.h"
+
+// A libkernel export the vitasdk headers don't declare
+int sceKernelGetModuleInfoByAddr(void *addr, SceKernelModuleInfo *info);
 
 #ifdef THREAD_PARAMS
 // The 20 byte thread parameter block of the variants that have one: size word 4, priority, stack
@@ -34,6 +37,9 @@ static void record(SceSize args, void *argp) {
     probe->fpscr = get_fpscr() & FPSCR_CONTROL;
     probe->vfp_setting = sceKernelGetCurrentThreadVfpException();
     probe->tpidrurw = get_tpidrurw();
+    SceKernelModuleInfo module_info = { .size = sizeof(module_info) };
+    if (sceKernelGetModuleInfoByAddr((void *)record, &module_info) == 0)
+        probe->module = module_info.modid;
     // Values of its own, which the stop function and the caller shouldn't see
     set_fpscr(get_fpscr() & ~FPSCR_FLAGS);
     set_rmode(RMODE_MINUS);
@@ -41,12 +47,20 @@ static void record(SceSize args, void *argp) {
     set_tpidrurw(0x4444);
 }
 
+// The variants for module_states return other values
+#ifndef START_RESULT
+#define START_RESULT SCE_KERNEL_START_SUCCESS
+#endif
+#ifndef STOP_RESULT
+#define STOP_RESULT SCE_KERNEL_STOP_SUCCESS
+#endif
+
 int module_start(SceSize args, void *argp) {
     record(args, argp);
-    return SCE_KERNEL_START_SUCCESS;
+    return START_RESULT;
 }
 
 int module_stop(SceSize args, void *argp) {
     record(args, argp);
-    return SCE_KERNEL_STOP_SUCCESS;
+    return STOP_RESULT;
 }
