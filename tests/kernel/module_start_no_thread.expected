@@ -1,0 +1,44 @@
+fill the process with threads: 0x8002450D
+load and start: 0x8002450D
+load and start: the status: 0x00000000
+load and start: runs of the start function: 0x00000000
+load and start with room for one thread: 0x00000000
+load and start with room for one thread: the status: 0x00000000
+load and start with room for one thread: runs of the start function: 0x00000001
+load: 0x00000000
+fill the process with threads: 0x8002450D
+start: 0x8002450D
+start: the status: 0x00000000
+start: runs of the start function: 0x00000000
+start it again: 0x8002450D
+start it again: the status: 0x00000000
+start it with room for one thread: 0x00000000
+start it with room for one thread: the status: 0x00000000
+start it with room for one thread: runs of the start function: 0x00000001
+load and start before the fill: 0x00000000
+fill the process with threads: 0x8002450D
+stop: 0x8002450D
+stop: the status: 0x00000000
+stop: runs of both functions: 0x00000001
+stop and unload: 0x8002450D
+stop and unload: the status: 0x00000000
+stop and unload: runs of both functions: 0x00000001
+stop and unload with room for one thread: 0x00000000
+stop and unload with room for one thread: the status: 0x00000000
+stop and unload with room for one thread: runs of both functions: 0x00000002
+libfiber is loaded before: 0x805A1001
+fill the process with threads: 0x8002450D
+load libfiber: 0x8002450D
+load libfiber: it is loaded: 0x805A1001
+load libfiber again: 0x8002450D
+load libfiber again: it is loaded: 0x805A1001
+unload libfiber: 0x805A1001
+unload libfiber: it is loaded: 0x805A1001
+load libfiber with room for one thread: 0x00000000
+load libfiber with room for one thread: it is loaded: 0x00000000
+fill the process with threads again: 0x8002450D
+unload libfiber with no room: 0x8002450D
+unload libfiber with no room: it is loaded: 0x00000000
+unload libfiber with room for one thread: 0x00000000
+unload libfiber with room for one thread: it is loaded: 0x805A1001
+DONE
