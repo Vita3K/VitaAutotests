@@ -1,0 +1,34 @@
+register the handler: 0x00000000
+fill the process with threads: 0x8002450D
+load LOCATION_EXTENSION: 0x8002450D
+load LOCATION_EXTENSION: threads that started: 0x00000000
+load LOCATION_EXTENSION: new module 1 is SceLibLocation: 0x00000001
+load LOCATION_EXTENSION: new module 2 is SceLibLocationExtension: 0x00000001
+load LOCATION_EXTENSION: new modules: 0x00000002
+load LOCATION_EXTENSION: it is loaded: 0x805A1001
+load LOCATION_EXTENSION with room for one thread: 0x00000000
+load LOCATION_EXTENSION with room for one thread: threads that started: 0x00000001
+load LOCATION_EXTENSION with room for one thread: thread 1 is SceLibLocationExtension EntryCa: 0x00000001
+load LOCATION_EXTENSION with room for one thread: new module 1 is SceLibLocation: 0x00000001
+load LOCATION_EXTENSION with room for one thread: new module 2 is SceLibLocationExtension: 0x00000001
+load LOCATION_EXTENSION with room for one thread: new module 3 is SceLibLocationExtension: 0x00000001
+load LOCATION_EXTENSION with room for one thread: new modules: 0x00000003
+load LOCATION_EXTENSION with room for one thread: it is loaded: 0x00000000
+fill the process with threads: 0x8002450D
+unload LOCATION_EXTENSION: 0x8002450D
+unload LOCATION_EXTENSION: threads that started: 0x00000000
+unload LOCATION_EXTENSION: new module 1 is SceLibLocation: 0x00000001
+unload LOCATION_EXTENSION: new module 2 is SceLibLocationExtension: 0x00000001
+unload LOCATION_EXTENSION: new modules: 0x00000002
+unload LOCATION_EXTENSION: it is loaded: 0x805A1001
+unload LOCATION_EXTENSION with room for one thread: 0x00000000
+unload LOCATION_EXTENSION with room for one thread: threads that started: 0x00000001
+unload LOCATION_EXTENSION with room for one thread: thread 1 is SceLibLocation EntryCall: 0x00000001
+unload LOCATION_EXTENSION with room for one thread: new module 1 is SceLibLocationExtension: 0x00000001
+unload LOCATION_EXTENSION with room for one thread: new modules: 0x00000001
+unload LOCATION_EXTENSION with room for one thread: it is loaded: 0x805A1001
+unload it again: 0x805A1001
+unload it again: threads that started: 0x00000000
+unload it again: new module 1 is SceLibLocationExtension: 0x00000001
+unload it again: new modules: 0x00000001
+DONE
