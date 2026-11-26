@@ -1,0 +1,17 @@
+load and start: 0x00000000
+load and start: the status: 0x00000000
+load and start: runs of the start function: 0x00000001
+stop: 0x00000000
+stop: the status: 0x00000000
+stop: runs of both functions: 0x00000002
+start again: 0x8002D022
+start again: the status: 0x00000000
+start again: runs of both functions: 0x00000002
+stop and unload: 0x8002D022
+stop and unload: the status: 0x00000000
+stop and unload: runs of both functions: 0x00000002
+load and start with no status pointer: 0x00000000
+stop and unload with no status pointer: 0x00000000
+load and start with flags 0x1: 0x8002000A
+load and start with flags 0x1: the status: 0x00000000
+DONE

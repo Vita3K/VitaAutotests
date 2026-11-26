@@ -1,0 +1,35 @@
+make the test directory: 0x00000000
+write 10 bytes: 0x0000000A
+pread 4 bytes at 4: 0x00000004
+they are 4567: 0x00000001
+pwrite 2 bytes at 2: 0x00000002
+pread them back: 0x00000004
+the file starts with 01AB: 0x00000001
+the position is still at the end: 0x0000000A
+pread at 4 GiB: 0x00000000
+ioctl 0x1002 into a filled buffer: 0x80010016
+ioctl 0x1002: 0x00000000
+ioctl 0x1002: word 0: 0x00002000
+ioctl 0x1002: word 1: 0x00000200
+ioctl 0x1002: word 2: 0x00000002
+ioctl 0x1002: word 3: 0x00008000
+ioctl 0x1002: word 4: 0x00000000
+ioctl 0x1002: word 5: 0x00000000
+ioctl 0x8000: 0x80010016
+ioctl on a closed descriptor: 0x80010009
+devctl 0x3001 on ux0:: 0x80010030
+devctl 0x3005 on ux0:: 0x80010030
+devctl on a missing device: 0x80010013
+sync ux0:: 0x00000000
+rename a.bin to b.bin: 0x00000000
+a.bin is gone: 0x00000001
+b.bin is there: 0x00000001
+rename a missing file: 0x80010002
+remove b.bin: 0x00000000
+b.bin is gone: 0x00000001
+remove it again: 0x80010002
+make a subdirectory: 0x00000000
+remove it: 0x00000000
+remove it again: 0x80010002
+remove the test directory: 0x00000000
+DONE
