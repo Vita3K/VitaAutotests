@@ -1,0 +1,14 @@
+probe_lib:
+  attributes: 0
+  version:
+    major: 1
+    minor: 0
+  main:
+    start: module_start
+    stop: module_stop
+  libraries:
+    ProbeLib:
+      syscall: false
+      version: 1
+      functions:
+        - probe_lib_function

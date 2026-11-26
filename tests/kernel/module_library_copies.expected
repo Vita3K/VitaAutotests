@@ -1,0 +1,21 @@
+before any load: the import is linked to no copy: 0x00000000
+load and start copy A: 0x00000000
+copy A started: the import is linked to copy A: 0x00000000
+load copy B of the same file: 0x00000000
+copy B is another module: 0x00000001
+start copy B: 0x8002D013
+start copy B: the status: 0x00000000
+start copy B: its state: 0x00000002
+copy B start tried: the import is linked to copy A: 0x00000000
+unload copy B: 0x00000000
+copy B unloaded: the import is linked to copy A: 0x00000000
+load and start the v2 copy: 0x00000000
+the v2 copy started: the import is linked to copy A: 0x00000000
+stop and unload the v2 copy: 0x00000000
+the v2 copy unloaded: the import is linked to copy A: 0x00000000
+stop and unload copy A: 0x00000000
+copy A unloaded: the import is linked to no copy: 0x00000000
+load and start the file again: 0x00000000
+loaded again: the import is linked to the copy loaded again: 0x00000000
+unloaded again: the import is linked to no copy: 0x00000000
+DONE
