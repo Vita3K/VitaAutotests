@@ -209,6 +209,7 @@ vita_test(thread_event_handler_delete_refused kernel/thread_event_handler_delete
 vita_test(thread_event_handler_unregister_in_entry kernel/thread_event_handler_unregister_in_entry.c)
 vita_test(module_start_threads kernel/module_start_threads.c)
 vita_test(module_states kernel/module_states.c)
+vita_test(module_library_copies kernel/module_library_copies.c)
 vita_test(module_start_no_thread kernel/module_start_no_thread.c)
 vita_test(sysmodule_partial kernel/sysmodule_partial.c)
 vita_test(sysmodule_ids kernel/sysmodule_ids.c)
@@ -751,6 +752,19 @@ probe_module_result(probe_start_other START_RESULT=0x1234)
 probe_module_result(probe_stop_failed STOP_RESULT=1)
 probe_module_result(probe_stop_other STOP_RESULT=0x1234)
 
+# The module that exports the library ProbeLib, for module_library_copies, and the same module with
+# the library at version 2. The app links ProbeLib's weak stubs, so it starts without the library.
+function(probe_lib_module name config)
+	add_executable(${name} kernel/probe_lib/probe_lib.c)
+	target_link_libraries(${name} SceLibKernel_stub SceKernelThreadMgr_stub)
+	target_link_options(${name} PRIVATE -nostartfiles -Wl,-e,module_start)
+	vita_create_self(${name}.suprx ${name} CONFIG ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/${config})
+	vita_test_file(${CMAKE_CURRENT_BINARY_DIR}/${name}.suprx ${name}.suprx)
+endfunction()
+probe_lib_module(probe_lib exports.yml)
+probe_lib_module(probe_lib_v2 exports_v2.yml)
+vita_create_stubs(probe_lib_stubs probe_lib ${CMAKE_CURRENT_SOURCE_DIR}/kernel/probe_lib/exports.yml)
+
 vita_test(memblock memory/memblock.c)
 vita_test(memblock_contents memory/memblock_contents.c)
 vita_test(memblock_opt_attrs memory/memblock_opt_attrs.c)
@@ -994,3 +1008,5 @@ vita_test(ceiling_delete_drops_waiting_owner kernel/ceiling_delete_drops_waiting
 vita_test(ceiling_handover_suspended_and_end kernel/ceiling_handover_suspended_and_end.c)
 
 vita_tests_vpk(VTST00000)
+add_dependencies(vita-autotests probe_lib_stubs)
+target_link_libraries(vita-autotests ${CMAKE_CURRENT_BINARY_DIR}/libprobe_lib_stub_weak.a)
