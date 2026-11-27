@@ -1,0 +1,21 @@
+open with APPEND and TRUNC: 0x80010016
+the size after it: 0x00000010
+open to read with TRUNC: 0x80010016
+the size after it: 0x00000010
+open to read with APPEND: 0x80010016
+open with only APPEND: 0x80010016
+open to read and write with APPEND: 0x00000000
+open to write with TRUNC: 0x00000000
+the size after it: 0x00000000
+open to read and write with TRUNC: 0x00000000
+the size after it: 0x00000000
+open a missing file with APPEND and TRUNC: 0x80010016
+open a missing file to read with TRUNC: 0x80010002
+open a missing file with no access mode: 0x80010002
+create a file with no access mode: 0x80010016
+the file after it: 0x80010002
+create a file to read with TRUNC: 0x80010016
+the file after it: 0x80010002
+create a file to write with TRUNC: 0x00000000
+its size: 0x00000000
+DONE
