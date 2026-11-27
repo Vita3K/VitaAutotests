@@ -1,0 +1,21 @@
+open it with APPEND: 0x00000000
+open it again to read and write with APPEND: 0x00000000
+the first descriptor's position: 0x00000000
+write a through the first: 0x00000001
+write b through the second: 0x00000001
+write c through the first: 0x00000001
+the size: 0x0000000D
+the first descriptor's position after it: 0x00000000
+the second descriptor's position after it: 0x00000000
+seek the first to 2: 0x00000002
+write d through the first: 0x00000001
+the first descriptor's position after it: 0x00000002
+pwrite e at 1 through the second: 0x00000001
+the second descriptor's position after it: 0x00000000
+the size after both: 0x0000000E
+write f at the start without APPEND: 0x00000001
+its position after it: 0x00000001
+write g through the first: 0x00000001
+the size at the end: 0x0000000F
+the contents are fe23456789abcdg: 0x0000000F
+DONE

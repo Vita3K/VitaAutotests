@@ -1,0 +1,40 @@
+load and start with flags 0x10: 0x00000000
+load and start with flags 0x10: the status: 0x00000000
+start the started module with flags 0x1: 0x8002000A
+start the started module with flags 0x1: the status: 0x00000000
+start the started module with flags 0x1: runs of both functions: 0x00000001
+start the started module with no status pointer: 0x80020005
+start the started module with no status pointer: the status: 0x00000000
+start the started module with no status pointer: runs of both functions: 0x00000001
+stop with flags 0x1: 0x8002000A
+stop with flags 0x1: the status: 0x00000000
+stop with flags 0x1: runs of both functions: 0x00000001
+stop with no status pointer: 0x80020005
+stop with no status pointer: the status: 0x00000000
+stop with no status pointer: runs of both functions: 0x00000001
+stop and unload with flags 0x1: 0x8002000A
+stop and unload with flags 0x1: the status: 0x00000000
+stop and unload with flags 0x1: runs of both functions: 0x00000001
+stop and unload with no status pointer: 0x00000000
+stop and unload with no status pointer: the status: 0x0000DEAD
+stop and unload with no status pointer: runs of both functions: 0x00000002
+load: 0x00000000
+start with flags 0x1: 0x8002000A
+start with flags 0x1: the status: 0x00000000
+start with flags 0x1: runs of both functions: 0x00000002
+start with no status pointer: 0x80020005
+start with no status pointer: the status: 0x00000000
+start with no status pointer: runs of both functions: 0x00000002
+start: 0x00000000
+start: the status: 0x00000000
+start: runs of both functions: 0x00000003
+stop and unload: 0x00000000
+stop and unload: the status: 0x00000000
+stop and unload: runs of both functions: 0x00000004
+start an unknown module with flags 0x1: 0x80024501
+start an unknown module with flags 0x1: the status: 0x00000000
+start an unknown module with flags 0x1: runs of both functions: 0x00000004
+stop an unknown module with no status pointer: 0x80024501
+stop an unknown module with no status pointer: the status: 0x0000DEAD
+stop an unknown module with no status pointer: runs of both functions: 0x00000004
+DONE

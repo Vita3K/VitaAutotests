@@ -1,0 +1,4 @@
+open a file: 0x00000000
+ioctl 0x1001 with an unmapped input: 0x80022005
+ioctl 0x1002 with an unmapped output: 0x80022005
+DONE
