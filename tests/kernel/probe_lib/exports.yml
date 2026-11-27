@@ -10,5 +10,6 @@ probe_lib:
     ProbeLib:
       syscall: false
       version: 1
+      nid: 0x7D4779A9
       functions:
         - probe_lib_function

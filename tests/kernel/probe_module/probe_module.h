@@ -19,6 +19,8 @@ typedef struct ModuleProbe {
     unsigned int vfp_setting;
     unsigned int tpidrurw;
     SceUID module;
+    int init_affinity;
+    int affinity;
 } ModuleProbe;
 
 typedef struct ModuleArgs {

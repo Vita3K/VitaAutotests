@@ -1,0 +1,25 @@
+before any load: the app's ProbeLibA import is linked to no module: 0x00000000
+before any load: the app's ProbeLib import is linked to no module: 0x00000000
+load and start probe_lib: 0x00000000
+probe_lib started: the app's ProbeLibA import is linked to no module: 0x00000000
+probe_lib started: the app's ProbeLib import is linked to probe_lib: 0x00000000
+load probe_two_libs: 0x00000000
+start probe_two_libs: 0x8002D013
+start probe_two_libs: the status: 0x00000000
+start probe_two_libs: runs of the start function: 0x00000000
+start probe_two_libs: the module's state: 0x00000002
+probe_two_libs start tried: the app's ProbeLibA import is linked to probe_two_libs: 0x00000000
+probe_two_libs start tried: the app's ProbeLib import is linked to probe_lib: 0x00000000
+stop and unload probe_lib: 0x00000000
+probe_lib unloaded: the app's ProbeLibA import is linked to probe_two_libs: 0x00000000
+probe_lib unloaded: the app's ProbeLib import is linked to no module: 0x00000000
+start probe_two_libs again: 0x8002D013
+start probe_two_libs again: the status: 0x00000000
+start probe_two_libs again: runs of the start function: 0x00000000
+start probe_two_libs again: the module's state: 0x00000002
+probe_two_libs start tried again: the app's ProbeLibA import is linked to probe_two_libs: 0x00000000
+probe_two_libs start tried again: the app's ProbeLib import is linked to no module: 0x00000000
+unload probe_two_libs: 0x00000000
+probe_two_libs unloaded: the app's ProbeLibA import is linked to an address in no loaded module: 0x00000000
+probe_two_libs unloaded: the app's ProbeLib import is linked to no module: 0x00000000
+DONE

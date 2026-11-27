@@ -1,0 +1,9 @@
+register the handler: 0x00000000
+load libfiber: 0x00000000
+the handler ran for its start thread: 0x00000001
+the handler's wait for H: 0x80028005
+H made its call while the handler waited: 0x00000001
+H's sceSysmoduleIsLoaded: 0x00000000
+H returned after the handler ended: 0x00000001
+unload libfiber: 0x00000000
+DONE
