@@ -1,0 +1,18 @@
+open a file: 0x00000000
+write 10 bytes: 0x0000000A
+pread with no offset block: 0x80022005
+pread with an unmapped offset block: 0x80022005
+pwrite with no offset block: 0x80022005
+pwrite with an unmapped offset block: 0x80022005
+pread with an offset block: 0x0000000A
+the file is still 0123456789: 0x00000001
+ioctl 0x1002 with no block: 0x80022005
+ioctl 0x1002 with an unmapped block: 0x80022005
+ioctl 0x1002 with a block: 0x00000000
+ioctl on a closed descriptor with no block: 0x80022005
+devctl 0x3001 with no block: 0x80022005
+devctl 0x3001 with an unmapped block: 0x80022005
+devctl 0x3001 with an unmapped input: 0x80022005
+devctl on a missing device with an unmapped input: 0x80022005
+devctl 0x3401 with an unmapped input: 0x80010030
+DONE

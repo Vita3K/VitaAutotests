@@ -1,0 +1,17 @@
+write seed: 0x00000004
+open it to read: 0x00000000
+open it to write: 0x00000000
+open it to append: 0x00000000
+write through the read descriptor: 0x8001000D
+read through the write descriptor: 0x8001000D
+read through the APPEND descriptor: 0x8001000D
+the file after the refused calls: seed: 0x00000004
+seek the write descriptor to 4: 0x00000004
+write PP through it: 0x00000002
+the reader sees: seedPP: 0x00000006
+append A: 0x00000001
+the reader sees after the append: seedPPA: 0x00000007
+write Q through the write descriptor: 0x00000001
+the reader sees after Q: seedPPQ: 0x00000007
+the file after the writers close: seedPPQ: 0x00000007
+DONE
