@@ -1,0 +1,24 @@
+start with no block: 0x80022005
+start with an unmapped block: 0x80022005
+start with an unmapped option: 0x80022005
+start an unknown module with an unmapped status: 0x80022005
+stop with no block: 0x80022005
+stop with an unmapped block: 0x80022005
+stop with an unmapped option: 0x80022005
+stop an unknown module with an unmapped status: 0x80022005
+load and start with no block: 0x80022005
+load and start with an unmapped block: 0x80022005
+load and start with an unmapped option: 0x80022005
+load and start a missing file with an unmapped status: 0x80022005
+stop and unload with no block: 0x80022005
+stop and unload with an unmapped block: 0x80022005
+stop and unload with an unmapped option: 0x80022005
+stop and unload an unknown module with an unmapped status: 0x80022005
+runs of both functions so far: 0x00000000
+load: 0x00000000
+start it with an unmapped status: 0x80022005
+runs after the start: 0x00000001
+stop it with an unmapped status: 0x80022005
+runs after the stop: 0x00000002
+unload it: 0x00000000
+DONE
