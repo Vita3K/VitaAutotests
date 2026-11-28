@@ -1,0 +1,9 @@
+create the event flag: 0x00000000
+wait with the result pattern on the block's own field: 0x00000000
+the field holds the pattern: 0x00000005
+create the event: 0x00000000
+set the event: 0x00000000
+wait with the result pattern on the block's user data field: 0x00000000
+the field holds the pattern: 0x01000000
+the user data went where the field pointed: 0x00001234
+DONE
