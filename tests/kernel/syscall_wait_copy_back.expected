@@ -1,0 +1,12 @@
+wait on a bad flag id: 0x800280E1
+the result pattern after it: 0x00000000
+wait on a bad event id: 0x80028201
+the result pattern after it: 0x00000000
+the user data's low word after it: 0x00000000
+the user data's high word after it: 0x00000000
+lock no work area with an unmapped timeout: 0x80022005
+create a lightweight mutex: 0x00000000
+lock it with an unmapped timeout: 0x80022005
+lock it with a timeout: 0x00000000
+the timeout after it: 0x000003E8
+DONE
