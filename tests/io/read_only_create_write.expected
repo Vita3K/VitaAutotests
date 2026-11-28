@@ -1,0 +1,8 @@
+open to read with CREAT: 0x00000000
+write through it: 0x8001000D
+pwrite through it: 0x8001000D
+the size: 0x00000000
+open to read with CREAT and EXCL: 0x00000000
+write through it: 0x8001000D
+the size: 0x00000000
+DONE

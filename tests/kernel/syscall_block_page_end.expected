@@ -1,0 +1,7 @@
+wait on the flag with the block at the end: 0x80022005
+wait on the flag with the block 0x10 from the end: 0x00000000
+wait on the event with the block at the end: 0x80022005
+wait on the event with the block 0x10 from the end: 0x00000000
+pread with the offset block at the end: 0x80022005
+pread with the offset block 0x10 from the end: 0x00000004
+DONE
