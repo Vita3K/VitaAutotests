@@ -1,0 +1,17 @@
+create the event flag: 0x00000000
+wait on bit 0 with an unmapped result pattern: 0x80022005
+the flag's pattern after it: 0x00000000
+set bit 1: 0x00000000
+wait on bit 1 with callbacks and an unmapped result pattern: 0x80022005
+the flag's pattern after it: 0x00000000
+wait on a bad id with an unmapped result pattern: 0x80022005
+create the event: 0x00000000
+set the event: 0x00000000
+wait with an unmapped result pattern: 0x80022005
+poll the event after it: 0x80028005
+set the event again: 0x00000000
+wait with callbacks and an unmapped user data: 0x80022005
+poll the event after it: 0x80028005
+wait on a bad id with an unmapped result pattern: 0x80022005
+wait on a bad id with an unmapped user data: 0x80022005
+DONE
