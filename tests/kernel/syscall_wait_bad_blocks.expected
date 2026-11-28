@@ -1,0 +1,24 @@
+create the event flag: 0x00000000
+wait on the flag with no block: 0x80022005
+wait on the flag with an unmapped block: 0x80022005
+wait on the flag with an unmapped timeout: 0x80022005
+wait on the flag of a bad id with no block: 0x80022005
+wait on the flag with a block: 0x00000000
+wait on the flag with callbacks with no block: 0x80022005
+wait on the flag with callbacks with an unmapped block: 0x80022005
+wait on the flag with callbacks with an unmapped timeout: 0x80022005
+wait on the flag with callbacks of a bad id with no block: 0x80022005
+wait on the flag with callbacks with a block: 0x00000000
+create the event: 0x00000000
+set bit 24 of the event: 0x00000000
+wait on the event with no block: 0x80022005
+wait on the event with an unmapped block: 0x80022005
+wait on the event with an unmapped timeout: 0x80022005
+wait on the event of a bad id with no block: 0x80022005
+wait on the event with a block: 0x00000000
+wait on the event with callbacks with no block: 0x80022005
+wait on the event with callbacks with an unmapped block: 0x80022005
+wait on the event with callbacks with an unmapped timeout: 0x80022005
+wait on the event with callbacks of a bad id with no block: 0x80022005
+wait on the event with callbacks with a block: 0x00000000
+DONE

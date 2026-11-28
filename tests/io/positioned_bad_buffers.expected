@@ -1,0 +1,14 @@
+open a file: 0x00000000
+write 10 bytes: 0x0000000A
+pread into an unmapped buffer: 0x8001000E
+pread into an unmapped buffer at the size: 0x8001000E
+pread into an unmapped buffer at a negative offset: 0x8001000E
+pread of 0 bytes into an unmapped buffer: 0x00000000
+pread of 0 bytes into a null buffer: 0x00000000
+pwrite from an unmapped buffer: 0x8001000E
+pwrite of 0 bytes from an unmapped buffer: 0x00000000
+pwrite of 0 bytes from a null buffer: 0x00000000
+pread them back: 0x0000000A
+the file is still 0123456789: 0x00000001
+the size: 0x0000000A
+DONE
